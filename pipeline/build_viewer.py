@@ -14,9 +14,30 @@ for r in con.execute("SELECT id, canonical_name, life_dates, winch_entry, source
     people[r["id"]] = {"id": r["id"], "name": r["canonical_name"], "dates": r["life_dates"],
                        "src": r["source"], "refs": [], "mentions": [], "events": [], "articles": []}
 
+ORG_RE = re.compile(
+    r"(?:Member|Members|Secretary|Treasurer|President|Vice[- ][Pp]resident|Trustee|Deacon|Elder|"
+    r"Manager|Director|Steward|Founder|Delegate|Vestryman|Officer|Chaplain|Agent|Librarian|Counsellor)"
+    r"s?,?\s+(?:of\s+|to\s+|at\s+|in\s+)?(?:the\s+)?"
+    r"([A-Z][A-Za-z''&.\- ]{5,70}?(?:Society|Lodge|Church|Association|Assoc\.|Institute|League|"
+    r"Club|Union|Committee|Company|Academy|Beneficial|Masons|Grand Lodge|Conference|Convention|School))")
+def org_clean(s):
+    s = re.sub(r"\s+", " ", s).strip(" .,;-")
+    s = re.sub(r"^(?:of|the|to|at|in)\s+", "", s, flags=re.I)
+    s = re.sub(r"\s+(?:meeting|annual meeting|celebration)$", "", s, flags=re.I)
+    return s
+org_members = {}  # org (canonical lower) -> {"label":..., "pids": set}
+def add_org(pid, raw):
+    label = org_clean(raw)
+    if len(label) < 6: return
+    key = label.lower()
+    e = org_members.setdefault(key, {"label": label, "pids": set()})
+    e["pids"].add(pid)
+
 for r in con.execute("SELECT person_id, note, citation FROM winch_references"):
     if r["person_id"] in people:
         people[r["person_id"]]["refs"].append({"n": r["note"], "c": r["citation"]})
+        for m in ORG_RE.finditer(r["note"] or ""):
+            add_org(r["person_id"], m.group(1))
 
 issues = {r["id"]: {"slug": r["filename"], "date": r["issue_date"]}
           for r in con.execute("SELECT id, filename, issue_date FROM issues")}
@@ -104,6 +125,23 @@ if has_table("census_links"):
             m = m47.get(rec["cid"] or "")
             if m: rec["match"] = {"cert": g(m,"match_certainty"), "addr38": g(m,"1838_address"), "id38": g(m,"1838_id")}
             p.setdefault("census", []).append(rec)
+# orgs from event attendance (event names are org-flavored)
+for e in events.values():
+    for pid, _ in e["att"]:
+        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall", e["name"]):
+            add_org(pid, e["name"])
+# finalize orgs: keep those with >=2 members
+orgs_out = []
+for key, e in org_members.items():
+    if len(e["pids"]) >= 2:
+        orgs_out.append({"name": e["label"], "members": sorted(e["pids"])})
+orgs_out.sort(key=lambda o: (-len(o["members"]), o["name"]))
+for o in orgs_out:
+    for pid in o["members"]:
+        if pid in people:
+            people[pid].setdefault("orgs", []).append(o["name"])
+print("orgs (>=2 members):", len(orgs_out), "| top:", [(o['name'], len(o['members'])) for o in orgs_out[:5]])
+
 # prune people with no content at all (after census attach)
 keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census")}
 people = {pid: p for pid, p in people.items() if pid in keep}
@@ -113,7 +151,8 @@ data = {"people": list(people.values()),
         "events": list(events.values()),
         "articles": list(articles.values()),
         "edges": [[a, b, w] for (a, b), w in edges.items()],
-        "issueUrls": urls}
+        "issueUrls": urls,
+        "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people]} for o in orgs_out]}
 
 tpl = open(TPL, encoding="utf-8").read()
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
