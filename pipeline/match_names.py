@@ -14,6 +14,19 @@ DATE_OVERRIDE = {
  "PP_008": "1914-05-09", "PP_009": "1912-10-19", "PP_010": "1914-04-04", "PP_011": "1912-08-24",
  "PP_012": "1913-11-01", "PP_013": "1912-03-02", "PP_014": "1914-05-30"}
 
+ORG_TXT_RE = re.compile(
+    r"(?:[A-Z][A-Za-z''&.\-]+[ ,]+){1,6}(?:Anti-Slavery Society|Society|Lodge|Association|"
+    r"Institute|League|Library Company|Literary Company)"
+    r"|(?:[A-Z][A-Za-z''&.\-]+[ ]+){1,4}(?:Church|Club|Academy)")
+ORG_LEAD_STOP = re.compile(r"^(?:The|This|That|Whereupon|Resolved|Mr|Mrs|Rev|Dr|On|In|Of|At|And|A|An|To|For|From|By|With|Our|His|Her|Their|Its|Was|Is|Are|Were|Be|Been|Said|New|Late|Old)[ ,]+")
+def clean_org(s):
+    s = re.sub(r"[ ,]+", " ", s).strip(" .,;")
+    while True:
+        m = ORG_LEAD_STOP.match(s)
+        if not m: break
+        s = s[m.end():]
+    return s if len(s.split()) >= 2 and len(s) >= 10 and not re.search(r"\d", s) else None
+
 def norm_tok(t):
     return re.sub(r"[^A-Za-z]", "", t)
 
@@ -31,6 +44,8 @@ def main():
         except sqlite3.OperationalError: pass
     con.execute("DELETE FROM appearances")
     con.execute("DELETE FROM issues")
+    con.execute("CREATE TABLE IF NOT EXISTS newspaper_orgs(person_id INT, org TEXT, issue TEXT, page INT)")
+    con.execute("DELETE FROM newspaper_orgs")
     people = con.execute("SELECT id, canonical_name FROM people").fetchall()
     # parse "Surname, First Middle" -> (surname, [given tokens])
     idx = {}  # surname_lower -> list of (pid, surname, givens)
@@ -74,6 +89,10 @@ def main():
                             matched = True; strength = 1; break
                 if not matched: continue
                 span_matches.setdefault(pos // 60, []).append((pid, strength, pos))
+        page_orgs = []
+        for m in ORG_TXT_RE.finditer(clean):
+            label = clean_org(m.group(0))
+            if label: page_orgs.append((label, m.start()))
         for span, ms in span_matches.items():
             best = max(s for _, s, _ in ms)
             keep = [(p, s, po) for p, s, po in ms if s == best]
@@ -83,6 +102,12 @@ def main():
                 con.execute("INSERT INTO appearances(person_id, role, context, issue_id, page, strength) VALUES(?,?,?,?,?,?)",
                             (pid, "mentioned" + ("?" if amb else ""), ctx, iid, int(pg), strength))
                 total += 1
+                if strength == 2 and not amb:
+                    seen_po = set()
+                    for label, opos in page_orgs:
+                        if abs(opos - pos) <= 600 and label not in seen_po:
+                            seen_po.add(label)
+                            con.execute("INSERT INTO newspaper_orgs VALUES(?,?,?,?)", (pid, label, slug, int(pg)))
     con.commit()
     print("appearances:", total)
     for r in con.execute("""SELECT p.canonical_name, COUNT(*) c FROM appearances a

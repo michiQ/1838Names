@@ -50,6 +50,23 @@ articles = {r["id"]: {"id": r["id"], "hl": r["headline"], "au": r["author"], "ty
                       "sum": r["summary"], "pg": r["page"], "issue": issues.get(r["issue_id"], {}).get("slug")}
             for r in con.execute("SELECT * FROM articles")}
 
+# org names appearing in newspaper text near a person's name (OCR-tolerant, proximity-based)
+ORG_CTX_RE = re.compile(
+    r"(?:[A-Z][A-Za-z''&.\-]+[ ,]+){1,6}(?:Anti-Slavery Society|Society|Lodge|Church|Association|"
+    r"Institute|League|Club|Committee|Convention|Conference|Academy|Library Company)")
+ORG_STOP = re.compile(r"\b(?:The|This|That|Whereupon|Resolved|Mr|Mrs|Rev|Dr|On|In|Of|At|And|A|An)[ ,]", )
+def ctx_orgs(pid, ctx):
+    for m in ORG_CTX_RE.finditer(ctx or ""):
+        s = m.group(0)
+        # trim leading stop-words
+        while True:
+            sm = ORG_STOP.match(s)
+            if sm: s = s[sm.end():].lstrip(" ,")
+            else: break
+        s = re.sub(r"[ ,]+", " ", s).strip(" .,;")
+        if len(s.split()) >= 2 and len(s) >= 10 and not re.search(r"\d", s):
+            add_org(pid, s)
+
 # appearances
 cooc = {}  # (issue,page) -> set of pids (for mention co-occurrence)
 for r in con.execute("SELECT * FROM appearances"):
@@ -64,6 +81,8 @@ for r in con.execute("SELECT * FROM appearances"):
     elif r["role"] in ("mentioned", "mentioned?"):
         people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"],
                                         "amb": 1 if r["role"].endswith("?") else 0})
+        if not r["role"].endswith("?"):
+            ctx_orgs(pid, r["context"])
         if r["strength"] == 2 and not r["role"].endswith("?"):
             cooc.setdefault((isl, r["page"]), set()).add(pid)
     else:  # agent/other roles without event
@@ -125,6 +144,11 @@ if has_table("census_links"):
             m = m47.get(rec["cid"] or "")
             if m: rec["match"] = {"cert": g(m,"match_certainty"), "addr38": g(m,"1838_address"), "id38": g(m,"1838_id")}
             p.setdefault("census", []).append(rec)
+# orgs found in newspaper text near a person's name (from match_names pass)
+if has_table("newspaper_orgs"):
+    for pid, org in con.execute("SELECT DISTINCT person_id, org FROM newspaper_orgs"):
+        if pid in people: add_org(pid, org)
+
 # orgs from event attendance (event names are org-flavored)
 for e in events.values():
     for pid, _ in e["att"]:
