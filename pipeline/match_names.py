@@ -6,13 +6,13 @@ from difflib import SequenceMatcher
 DB = "/tmp/black_metropolis.db"
 OCR_DIR = "/sessions/loving-determined-fermi/mnt/outputs/ocr"
 
-PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman",
-         "PP": "Pencil Pusher (Philadelphia Tribune)", "FJ": "Freedom's Journal"}
-DATE_OVERRIDE = {  # real publication dates for Pencil Pusher clippings
- "PP_000": "1916", "PP_001": "1912-11-16", "PP_002": "1913-02-15", "PP_003": "1912-01-27",
+PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)"}
+
+DATE_OVERRIDE = {
+ "PP_000": "1914-10-24", "PP_001": "1912-11-16", "PP_002": "1913-02-15", "PP_003": "1912-01-27",
  "PP_004": "1913-04-19", "PP_005": "1914-06-20", "PP_006": "1914-05-02", "PP_007": "1912-11-23",
- "PP_008": "1914-05-09", "PP_009": "1912-10-19", "PP_010": "1914-04",
- "PP_011": "1912-08-24", "PP_012": "1913-11-01", "PP_013": "1912-03-02", "PP_014": "1914-05-30"}
+ "PP_008": "1914-05-09", "PP_009": "1912-10-19", "PP_010": "1914-04-04", "PP_011": "1912-08-24",
+ "PP_012": "1913-11-01", "PP_013": "1912-03-02", "PP_014": "1914-05-30"}
 
 def norm_tok(t):
     return re.sub(r"[^A-Za-z]", "", t)
