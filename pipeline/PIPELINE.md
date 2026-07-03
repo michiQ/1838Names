@@ -20,7 +20,8 @@ Instructions for any Claude session continuing this project. Priority order: **P
 2. Run `build_viewer.py` (regenerates the viewer; update its PAPERS slug-prefix map for new papers).
 3. Copy `/tmp/black_metropolis.db` back over `black_metropolis.db` in this folder, and the regenerated viewer HTML to BOTH `1838_black_metropolis_viewer.html` and `index.html` (the GitHub Pages copy).
 3. Update `progress.txt` in this folder: which files are done, any problem PDFs.
-4. Message summary: issues processed, new people matched, notable finds.
+4. GitHub auto-push: if `pipeline/github_token.txt` exists, clone https://github.com/michiQ/1838Names.git, sync index.html / black_metropolis.db / pages/ / ocr_text/ / pipeline/ (EXCLUDING github_token.txt — never commit it), commit and push with `git push "https://x-access-token:<token>@github.com/michiQ/1838Names.git" main`. Skip gracefully if the token file is absent or expired.
+5. Message summary: issues processed, new people matched, notable finds, whether GitHub was updated.
 
 ## State
 - Done so far: 10 pilot issues (CA_1838-*, PF_1838-*) — see ocr_text/.
