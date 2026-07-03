@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>1838 Black Metropolis — People & Papers Network</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--bg:#16130e;--panel:#221d15;--ink:#efe7d8;--dim:#a89c86;--gold:#d4a24e;--rust:#b4552d;--teal:#4e8f83;--line:#3a3226}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 Georgia,'Times New Roman',serif;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+header h1{font-size:19px;font-weight:normal;letter-spacing:.06em}
+header h1 b{color:var(--gold)}
+header .sub{color:var(--dim);font-size:12.5px;font-style:italic}
+#wrap{flex:1;display:flex;min-height:0}
+#left{width:290px;border-right:1px solid var(--line);display:flex;flex-direction:column;background:var(--panel)}
+#search{margin:12px;padding:9px 12px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font:inherit;border-radius:4px;outline:none}
+#search:focus{border-color:var(--gold)}
+#plist{overflow-y:auto;flex:1}
+.prow{padding:7px 14px;cursor:pointer;border-bottom:1px solid #2a2419;font-size:13.5px;display:flex;justify-content:space-between;gap:8px}
+.prow:hover{background:#2b2517}
+.prow.sel{background:#33290f;border-left:3px solid var(--gold)}
+.prow .ct{color:var(--dim);font-size:11.5px;white-space:nowrap}
+.badge{display:inline-block;font-size:10px;border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:1px}
+.b-w{background:#463818;color:var(--gold)} .b-n{background:#1d3a35;color:#7fc2b4}
+#center{flex:1;position:relative;min-width:0}
+canvas{display:block;width:100%;height:100%;cursor:grab}
+#hint{position:absolute;bottom:10px;left:14px;color:var(--dim);font-size:11.5px;font-style:italic;pointer-events:none}
+#legend{position:absolute;top:10px;left:14px;font-size:11.5px;color:var(--dim)}
+#legend span{margin-right:14px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+#right{width:400px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
+#right h2{font-size:17px;color:var(--gold);font-weight:normal;margin-bottom:2px}
+#right .dates{color:var(--dim);font-style:italic;font-size:13px;margin-bottom:10px}
+#right h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin:16px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:9px 11px;margin-bottom:8px;font-size:13px}
+.card .src{color:var(--teal);font-size:11.5px;margin-top:4px}
+.card .role{color:var(--gold);font-size:11.5px}
+.card q{color:var(--dim);font-style:italic;display:block;margin-top:3px}
+.card .hl{color:var(--ink);font-weight:bold}
+.pl{color:var(--gold);cursor:pointer;text-decoration:underline dotted}
+.src a{color:var(--teal);text-decoration:underline dotted}
+.src a:hover{color:var(--gold)}
+.empty{color:var(--dim);font-style:italic;font-size:13px}
+#stats{padding:9px 14px;font-size:11.5px;color:var(--dim);border-top:1px solid var(--line)}
+@media (max-width:900px){#right{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
+  <span class="sub">Winch Names Reference + Colored American &amp; Pennsylvania Freeman (pilot, 1838) — click a name to see every reference</span>
+</header>
+<div id="wrap">
+  <div id="left">
+    <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
+    <div id="plist"></div>
+    <div id="stats"></div>
+  </div>
+  <div id="center">
+    <div id="legend">
+      <span><i class="dot" style="background:#d4a24e"></i>person (selected)</span>
+      <span><i class="dot" style="background:#4e8f83"></i>connected person</span>
+      <span><i class="dot" style="background:#b4552d"></i>event</span>
+    </div>
+    <canvas id="cv"></canvas>
+    <div id="hint">drag to pan · scroll to zoom · click a node to navigate</div>
+  </div>
+  <div id="right"><p class="empty">Select a person to see their newspaper appearances, writings, events, co-attendees, and Winch reference entry.</p></div>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+const P = new Map(DATA.people.map(p=>[p.id,p]));
+const E = new Map(DATA.events.map(e=>[e.id,e]));
+const A = new Map(DATA.articles.map(a=>[a.id,a]));
+const NBR = new Map(); // pid -> Map(pid -> weight)
+for (const [a,b,w] of DATA.edges){
+  if(!NBR.has(a)) NBR.set(a,new Map()); if(!NBR.has(b)) NBR.set(b,new Map());
+  NBR.get(a).set(b,(NBR.get(a).get(b)||0)+w); NBR.get(b).set(a,(NBR.get(b).get(a)||0)+w);
+}
+function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.articles?.length||0)*2;}
+const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
+
+// ---------- left list ----------
+const plist = document.getElementById('plist'), search = document.getElementById('search');
+function renderList(q){
+  q=(q||'').toLowerCase();
+  const rows = sorted.filter(p=>p.name.toLowerCase().includes(q)).slice(0,400);
+  plist.innerHTML = rows.map(p=>{
+    const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>' : '<span class="badge b-n">paper</span>';
+    const ct = [];
+    if(p.mentions?.length) ct.push(p.mentions.length+'✎');
+    if(p.events?.length) ct.push(p.events.length+'★');
+    if(p.refs?.length) ct.push(p.refs.length+'§');
+    return `<div class="prow" data-id="${p.id}"><span>${p.name}${badge}</span><span class="ct">${ct.join(' ')}</span></div>`;
+  }).join('');
+}
+plist.addEventListener('click',ev=>{const r=ev.target.closest('.prow'); if(r) select(+r.dataset.id);});
+search.addEventListener('input',()=>renderList(search.value));
+document.getElementById('stats').textContent =
+  `${DATA.people.length} people · ${DATA.events.length} events · ${DATA.articles.length} articles · ${DATA.edges.length} connections`;
+renderList('');
+
+// ---------- detail panel ----------
+const right = document.getElementById('right');
+const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)'};
+const ISSUE_LABEL = s=>{ if(!s) return ''; const [c,d]=s.split('_'); return (PAPERS[c]||c)+' — '+d; };
+const URLS = DATA.issueUrls||{};
+function srcLinks(slug,pg){
+  if(!slug) return '';
+  let h = ` · <a href="pages/${slug}_p${pg}.jpg" target="_blank" title="open the scanned page">view page</a>`;
+  if(URLS[slug]) h += ` · <a href="${URLS[slug]}" target="_blank" title="full issue PDF on Google Drive">full issue</a>`;
+  return h;
+}
+function esc(t){return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function select(pid){
+  const p = P.get(pid); if(!p) return;
+  window._sel = pid;
+  document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', +r.dataset.id===pid));
+  let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':' · found in newspapers (pilot)'}</div>`;
+  // articles authored
+  const arts = (p.articles||[]).map(x=>A.get(x.a)).filter(Boolean);
+  if(arts.length){ h += `<h3>Wrote / signed in the paper</h3>` + arts.map(a=>
+    `<div class="card"><span class="hl">${esc(a.hl)}</span><q>${esc(a.sum)}</q><div class="src">${ISSUE_LABEL(a.issue)}, p.${a.pg} · ${esc(a.ty)}${srcLinks(a.issue,a.pg)}</div></div>`).join(''); }
+  // events
+  const evs = (p.events||[]).map(x=>({e:E.get(x.e),role:x.role})).filter(x=>x.e);
+  if(evs.length){ h += `<h3>Events</h3>` + evs.map(({e,role})=>{
+    const others = e.att.filter(([q])=>q!==pid).map(([q,r])=>{
+      const op=P.get(q); return op?`<span class="pl" data-p="${q}">${esc(op.name)}</span> <em style="color:var(--dim)">(${esc(r)})</em>`:'';
+    }).filter(Boolean).join(', ');
+    return `<div class="card"><span class="hl">${esc(e.name)}</span><div class="role">${esc(role)} · ${esc(e.date||'')} · ${esc(e.loc||'')}</div><q>${esc(e.desc)}</q>${others?`<div style="margin-top:5px;font-size:12.5px"><b style="color:var(--rust)">Also there:</b> ${others}</div>`:''}</div>`;
+  }).join(''); }
+  // mentions
+  if(p.mentions?.length){ h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + p.mentions.slice(0,25).map(m=>
+    `<div class="card">${m.role?`<span class="role">${esc(m.role)}</span> — `:''}<q>…${esc(m.ctx)}…</q><div class="src">${ISSUE_LABEL(m.i)}, p.${m.p}${m.amb?' · <em>name match uncertain</em>':''}${srcLinks(m.i,m.p)}</div></div>`).join(''); }
+  // winch refs
+  if(p.refs?.length){ h += `<h3>Winch reference entry (${p.refs.length})</h3>` + p.refs.map(r=>
+    `<div class="card">${esc(r.n||'')}${r.c?`<div class="src">(${esc(r.c)})</div>`:''}</div>`).join(''); }
+  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length) h += '<p class="empty">No records.</p>';
+  right.innerHTML = h;
+  right.scrollTop = 0;
+  right.querySelectorAll('.pl').forEach(el=>el.addEventListener('click',()=>select(+el.dataset.p)));
+  buildGraph(pid);
+}
+
+// ---------- ego network graph ----------
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+let nodes=[], links=[], view={x:0,y:0,k:1}, dragN=null, panning=false, px=0, py=0;
+function resize(){cv.width=cv.clientWidth*devicePixelRatio;cv.height=cv.clientHeight*devicePixelRatio;}
+window.addEventListener('resize',()=>{resize();});
+resize();
+function buildGraph(pid){
+  const p=P.get(pid); nodes=[]; links=[];
+  const nmap=new Map();
+  function addNode(id,type,label,r){ if(nmap.has(type+id))return nmap.get(type+id);
+    const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,vx:0,vy:0};
+    nmap.set(type+id,n); nodes.push(n); return n;}
+  const center=addNode(pid,'p',p.name,16); center.x=0;center.y=0;center.fixed=true;
+  // neighbor people
+  const nb=[...(NBR.get(pid)||new Map()).entries()].sort((a,b)=>b[1]-a[1]).slice(0,40);
+  for(const [q,w] of nb){ const op=P.get(q); if(!op)continue;
+    const n=addNode(q,'p',op.name,7+Math.min(6,w)); links.push({s:center,t:n,w}); }
+  // events of this person
+  for(const {e} of (p.events||[]).map(x=>({e:E.get(x.e)})).filter(x=>x.e)){
+    const en=addNode(e.id,'e',e.name,11); links.push({s:center,t:en,w:4});
+    for(const [q] of e.att){ if(q===pid)continue; const k=nmap.get('p'+q); if(k) links.push({s:en,t:k,w:2}); } }
+  // 2nd-degree light links among neighbors
+  for(let i=0;i<nb.length;i++)for(let j=i+1;j<nb.length;j++){
+    const w=(NBR.get(nb[i][0])||new Map()).get(nb[j][0]); if(w){
+      links.push({s:nmap.get('p'+nb[i][0]),t:nmap.get('p'+nb[j][0]),w:Math.min(w,2),faint:true});}}
+  view={x:0,y:0,k:1};
+  for(let it=0;it<300;it++) tick();
+}
+function tick(){
+  for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,d=Math.hypot(dx,dy)||1;
+    const target=60+240/(l.w+1), f=(d-target)*0.004*(l.faint?0.4:1);
+    const fx=dx/d*f,fy=dy/d*f;
+    if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;} }
+  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+    const a=nodes[i],b=nodes[j]; let dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy;
+    if(d2<1){dx=Math.random()-.5;dy=Math.random()-.5;d2=1;}
+    if(d2<22500){const d=Math.sqrt(d2),f=140/d2;const fx=dx/d*f,fy=dy/d*f;
+      if(!a.fixed){a.vx-=fx;a.vy-=fy;} if(!b.fixed){b.vx+=fx;b.vy+=fy;}}}
+  for(const n of nodes){ if(n.fixed)continue; n.vx*=.82;n.vy*=.82;n.x+=n.vx;n.y+=n.vy;}
+}
+function draw(){
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  ctx.clearRect(0,0,cv.clientWidth,cv.clientHeight);
+  ctx.save();
+  ctx.translate(cv.clientWidth/2+view.x,cv.clientHeight/2+view.y); ctx.scale(view.k,view.k);
+  for(const l of links){ ctx.strokeStyle=l.faint?'rgba(168,156,134,.10)':'rgba(212,162,78,.25)';
+    ctx.lineWidth=l.faint?0.6:Math.min(1+l.w*.3,3);
+    ctx.beginPath();ctx.moveTo(l.s.x,l.s.y);ctx.lineTo(l.t.x,l.t.y);ctx.stroke(); }
+  for(const n of nodes){
+    ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);
+    ctx.fillStyle = n.fixed ? '#d4a24e' : (n.type==='e' ? '#b4552d' : '#4e8f83');
+    ctx.fill();
+    if(n.fixed){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
+    const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
+    ctx.font=(n.fixed?'bold 12px':'10.5px')+' Georgia';
+    ctx.fillStyle=n.fixed?'#efe7d8':'#c9bda6';
+    ctx.textAlign='center'; ctx.fillText(label,n.x,n.y+n.r+11);
+  }
+  ctx.restore();
+  if(nodes.length){for(let i=0;i<2;i++)tick();}
+  requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+function pick(mx,my){
+  const x=(mx-cv.clientWidth/2-view.x)/view.k, y=(my-cv.clientHeight/2-view.y)/view.k;
+  return nodes.find(n=>Math.hypot(n.x-x,n.y-y)<n.r+6);
+}
+cv.addEventListener('mousedown',e=>{const n=pick(e.offsetX,e.offsetY);
+  if(n){dragN=n;n.fixed=true;} else {panning=true;} px=e.offsetX;py=e.offsetY; cv.style.cursor='grabbing';});
+window.addEventListener('mousemove',e=>{
+  if(dragN){dragN.x+=(e.movementX)/view.k;dragN.y+=(e.movementY)/view.k;}
+  else if(panning){view.x+=e.movementX;view.y+=e.movementY;}});
+window.addEventListener('mouseup',e=>{
+  if(dragN && Math.abs(e.offsetX-px)<4 && Math.abs(e.offsetY-py)<4){
+    if(dragN.type==='p' && !dragN.fixedCenter) select(dragN.id); }
+  if(dragN && !nodes[0]!==dragN) dragN.fixed = dragN===nodes[0];
+  dragN=null;panning=false;cv.style.cursor='grab';});
+cv.addEventListener('wheel',e=>{e.preventDefault();
+  const f=e.deltaY<0?1.12:0.89; view.k=Math.max(.25,Math.min(4,view.k*f));},{passive:false});
+
+// initial selection: most active person
+if(sorted.length) select(sorted[0].id);
+</script>
+</body>
+</html>
