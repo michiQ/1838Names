@@ -4,7 +4,7 @@ import sqlite3, re, os, glob, json
 from difflib import SequenceMatcher
 
 DB = "/tmp/black_metropolis.db"
-OCR_DIR = "/sessions/loving-determined-fermi/mnt/outputs/ocr"
+OCR_DIR = "/tmp/ocr"
 
 PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)"}
 
@@ -12,6 +12,10 @@ DATE_OVERRIDE = {
  "PP_000": "1914-10-24", "PP_001": "1912-11-16", "PP_002": "1913-02-15", "PP_003": "1912-01-27",
  "PP_004": "1913-04-19", "PP_005": "1914-06-20", "PP_006": "1914-05-02", "PP_007": "1912-11-23",
  "PP_008": "1914-05-09", "PP_009": "1912-10-19", "PP_010": "1914-04-04", "PP_011": "1912-08-24",
+ "PP_015": "1912-12-21", "PP_016": "1912-10-26", "PP_017": "1913-03-01", "PP_018": "1913-05-03",
+ "PP_019": "1913-11-29", "PP_020": "1914-01-24", "PP_021": "1912-04-06", "PP_022": "1913-12-06",
+ "PP_023": "1913-08-02", "PP_024": "1912-04-20", "PP_025": "1914-07-18", "PP_026": "1914-03-28",
+ "PP_027": "1913-01-25", "PP_028": "1913-01-18",
  "PP_012": "1913-11-01", "PP_013": "1912-03-02", "PP_014": "1914-05-30"}
 
 ORG_TXT_RE = re.compile(
