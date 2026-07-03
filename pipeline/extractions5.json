@@ -1,8 +1,108 @@
 {
-"articles": [
-{"issue":"PP_011","page":1,"headline":"Pencil Pusher Points — Early colored baseball: Excelsiors, Bachelors and Pythians","author":"William Carl Bolivar (Pencil Pusher)","type":"news","summary":"(Aug. 24, 1912) History of Philadelphia's pioneer colored baseball clubs after the Civil War: the Excelsiors (1866), the Bachelors, and the Pythians — promoted by James H. Francis, James F. Needham and Francis Wood, sponsored by Octavius V. Catto, Jacob C. White Jr., David Knight and J. Whipper Purnell. Octavius V. Catto was the Pythians' captain and manager; games were played near 11th and Wharton and against visiting clubs including the Mutuals and Alerts of Washington (contestants included Prof. Hugh M. Brown, William H. Harris, Major Charles R. Douglass — son of Frederick Douglass — and George F. T. Cook). Col. James M. Auter and Joseph Cline noted as survivors of the Excelsiors."},
-{"issue":"PP_012","page":1,"headline":"Pencil Pusher Points — The Emancipation celebrations compared","author":"William Carl Bolivar (Pencil Pusher)","type":"news","summary":"(Nov. 1, 1913) Assessment of the 1913 Emancipation semi-centennial celebrations in Pennsylvania, Illinois, New Jersey, New York and Connecticut, weighing their historical presentation of the race's progress."},
-{"issue":"PP_013","page":1,"headline":"Pencil Pusher Points — Samuel Ringgold Ward and the disenfranchised generation","author":"William Carl Bolivar (Pencil Pusher)","type":"news","summary":"(Mar. 2, 1912) Quotes an old account of Pennsylvania's constitution allowing colored suffrage in principle while custom, prejudice or design kept Black men from the polls. Highlights Samuel Ringgold Ward as one of the ablest men of the decades between 1830 and 1850, citing Campbell's 'Negro-Mania' on his powers as a debater."},
-{"issue":"PP_014","page":1,"headline":"Pencil Pusher Points — Little Wesley (A.M.E. Zion) Church at eighty-four","author":"William Carl Bolivar (Pencil Pusher)","type":"news","summary":"(May 30, 1914) On the jubilee of ('Little') Wesley A.M.E. Zion Church under Rev. Dr. Wallace — founded ~1830 on the north side of Lombard Street between Fifth and Sixth, in the heart of the old Black quarter; the original building later became a Jewish synagogue."}
-]
+ "articles": [
+  {
+   "issue": "PP_008",
+   "page": 1,
+   "headline": "Pencil Pusher Points \u2014 Four more race newspapers",
+   "author": "William Carl Bolivar (Pencil Pusher)",
+   "type": "news",
+   "summary": "(May 9, 1914) Continued newspaper survey: The Sun (1892, George W. Gardiner, Rev. William H. Heard associate), The Standard Echo (Apr. 1895, Abel P. Caldwell) with its account of a Frederick Douglass Monumental Association and the Caterers Supply Co. (P. A. Dutrieuille, Walter P. Hall, John S. Trower and others), and Robert G. Still's Sunday Journal with the roster of the Citizens Republican Club (Andrew F. Stevens, president). Notes Robert Purvis was then the only man of his race in the Philadelphia Blue Book."
+  },
+  {
+   "issue": "PP_009",
+   "page": 1,
+   "headline": "Pencil Pusher Points \u2014 Relics of early Methodism and the General Conference of 1848",
+   "author": "William Carl Bolivar (Pencil Pusher)",
+   "type": "news",
+   "summary": "(Oct. 19, 1912) Urges collecting relics of A.M.E. history before the 1916 centennial \u2014 citing Robert M. Adger's discovery of an early portrait of Bishop Richard Allen and the collections at the Home for Aged and Infirm Colored Persons and the American Negro Historical Society. Then details the Eighth General Conference of the A.M.E. Church, Philadelphia, May 1, 1848: Bishop William Paul Quinn presiding, M. M. Clark secretary, A. W. Wayman and A. Davis assistant secretaries, 74 delegates from nine states and Canada. Prominent figures: Daniel A. Payne ('omnipresent'), George Hogarth, John Peck, N. C. W. Cannon, Rev. Stephen Smith, Dr. J. J. G. Bias, Willis Nazrey, David Ware, John Cornish, Peter Gardner, John M. Brown (later bishop), A. R. Green, Walter Proctor, Joshua Woodlyn and others."
+  }
+ ],
+ "events": [
+  {
+   "issue": "PP_009",
+   "page": 1,
+   "name": "Eighth General Conference of the A.M.E. Church",
+   "date": "1848-05-01",
+   "location": "Philadelphia, PA",
+   "description": "74 delegates from PA, NJ, DE, NY, the Eastern States, MD, OH, IN and Canada; ministers of other denominations invited to seats without vote (recalled in Pencil Pusher Points, Oct. 19, 1912).",
+   "attendees": [
+    [
+     "William Paul Quinn",
+     "presiding bishop"
+    ],
+    [
+     "M. M. Clark",
+     "secretary"
+    ],
+    [
+     "A. W. Wayman",
+     "assistant secretary"
+    ],
+    [
+     "Daniel A. Payne",
+     "delegate (leading figure)"
+    ],
+    [
+     "George Hogarth",
+     "delegate"
+    ],
+    [
+     "John Peck",
+     "delegate"
+    ],
+    [
+     "N. C. W. Cannon",
+     "delegate (Canada)"
+    ],
+    [
+     "Stephen Smith",
+     "delegate"
+    ],
+    [
+     "J. J. G. Bias",
+     "delegate"
+    ],
+    [
+     "Willis Nazrey",
+     "delegate"
+    ],
+    [
+     "David Ware",
+     "delegate"
+    ],
+    [
+     "John Cornish",
+     "delegate"
+    ],
+    [
+     "Edward Crosby",
+     "delegate"
+    ],
+    [
+     "Peter Gardner",
+     "delegate"
+    ],
+    [
+     "John M. Brown",
+     "delegate"
+    ],
+    [
+     "A. R. Green",
+     "delegate"
+    ],
+    [
+     "Walter Proctor",
+     "delegate"
+    ],
+    [
+     "Joshua Woodlyn",
+     "delegate"
+    ],
+    [
+     "Dennis Stokes",
+     "delegate"
+    ]
+   ]
+  }
+ ]
 }

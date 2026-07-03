@@ -3,16 +3,10 @@
 import sqlite3, re, os, glob, json
 from difflib import SequenceMatcher
 
-DB = "/tmp/black_metropolis.db"
-OCR_DIR = "/sessions/loving-determined-fermi/mnt/outputs/ocr"
+DB = "/sessions/wonderful-nifty-ritchie/work/black_metropolis.db"
+OCR_DIR = "/sessions/wonderful-nifty-ritchie/mnt/Newspapers/1838 Names Database/ocr_text"
 
-PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman",
-         "PP": "Pencil Pusher (Philadelphia Tribune)", "FJ": "Freedom's Journal"}
-DATE_OVERRIDE = {  # real publication dates for Pencil Pusher clippings
- "PP_000": "1916", "PP_001": "1912-11-16", "PP_002": "1913-02-15", "PP_003": "1912-01-27",
- "PP_004": "1913-04-19", "PP_005": "1914-06-20", "PP_006": "1914-05-02", "PP_007": "1912-11-23",
- "PP_008": "1914-05-09", "PP_009": "1912-10-19", "PP_010": "1914-04",
- "PP_011": "1912-08-24", "PP_012": "1913-11-01", "PP_013": "1912-03-02", "PP_014": "1914-05-30"}
+PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)"}
 
 def norm_tok(t):
     return re.sub(r"[^A-Za-z]", "", t)
@@ -51,7 +45,7 @@ def main():
         if slug not in issue_ids:
             np_id = con.execute("SELECT id FROM newspapers WHERE name=?", (PAPER[code],)).fetchone()[0]
             cur = con.execute("INSERT OR IGNORE INTO issues(newspaper_id, issue_date, filename, ocr_status) VALUES(?,?,?, 'done')",
-                              (np_id, DATE_OVERRIDE.get(slug, date), slug))
+                              (np_id, date, slug))
             issue_ids[slug] = con.execute("SELECT id FROM issues WHERE filename=?", (slug,)).fetchone()[0]
         iid = issue_ids[slug]
         text = open(path, encoding="utf-8", errors="replace").read()
