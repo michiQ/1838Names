@@ -25,7 +25,10 @@ header .sub{color:var(--dim);font-size:12.5px;font-style:italic}
 .prow.sel{background:#33290f;border-left:3px solid var(--gold)}
 .prow .ct{color:var(--dim);font-size:11.5px;white-space:nowrap}
 .badge{display:inline-block;font-size:10px;border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:1px}
-.b-w{background:#463818;color:var(--gold)} .b-n{background:#1d3a35;color:#7fc2b4}
+.b-w{background:#463818;color:var(--gold)} .b-n{background:#1d3a35;color:#7fc2b4} .b-c{background:#3a2430;color:#d18aa8}
+#filters{display:flex;flex-wrap:wrap;gap:5px;margin:0 12px 8px}
+#filters .chip{font-size:10.5px;padding:3px 9px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--dim);cursor:pointer;font-family:Georgia}
+#filters .chip.on{background:#33290f;color:var(--gold);border-color:var(--gold)}
 #center{flex:1;position:relative;min-width:0}
 canvas{display:block;width:100%;height:100%;cursor:grab}
 #hint{position:absolute;bottom:10px;left:14px;color:var(--dim);font-size:11.5px;font-style:italic;pointer-events:none}
@@ -58,6 +61,13 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
   <div id="left">
     <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button></div>
     <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
+    <div id="filters">
+      <span class="chip on" data-f="all">All</span>
+      <span class="chip" data-f="winch">Winch</span>
+      <span class="chip" data-f="papers">In newspapers</span>
+      <span class="chip" data-f="c1838">1838 census</span>
+      <span class="chip" data-f="c1847">1847 census</span>
+    </div>
     <div id="plist"></div>
     <div id="stats"></div>
   </div>
@@ -92,13 +102,23 @@ const sortedEvents = [...E.values()].sort((a,b)=>(a.date||'').localeCompare(b.da
 function renderList(q){
   q=(q||'').toLowerCase();
   if(mode==='p'){
-    const rows = sorted.filter(p=>p.name.toLowerCase().includes(q)).slice(0,400);
+    const f = window._srcFilter||'all';
+    const pass = p=>{
+      if(f==='all') return true;
+      if(f==='winch') return p.src==='winch';
+      if(f==='papers') return (p.mentions?.length||p.articles?.length||p.events?.length);
+      if(f==='c1838') return (p.census||[]).some(c=>c.y===1838);
+      if(f==='c1847') return (p.census||[]).some(c=>c.y===1847);
+      return true;};
+    const rows = sorted.filter(p=>pass(p)&&p.name.toLowerCase().includes(q)).slice(0,400);
     plist.innerHTML = rows.map(p=>{
-      const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>' : '<span class="badge b-n">paper</span>';
+      const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>'
+        : p.src==='census' ? '<span class="badge b-c">census</span>' : '<span class="badge b-n">paper</span>';
       const ct = [];
       if(p.mentions?.length) ct.push(p.mentions.length+'✎');
       if(p.events?.length) ct.push(p.events.length+'★');
       if(p.refs?.length) ct.push(p.refs.length+'§');
+      if(p.census?.length) ct.push(p.census.length+'⌂');
       return `<div class="prow" data-id="${p.id}" data-t="p"><span>${p.name}${badge}</span><span class="ct">${ct.join(' ')}</span></div>`;
     }).join('');
   } else {
@@ -116,6 +136,12 @@ function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList
   renderList(search.value); }
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
+document.getElementById('filters').addEventListener('click',ev=>{
+  const c=ev.target.closest('.chip'); if(!c)return;
+  window._srcFilter=c.dataset.f;
+  document.querySelectorAll('#filters .chip').forEach(x=>x.classList.toggle('on',x===c));
+  if(mode!=='p') setMode('p'); else renderList(search.value);
+});
 document.getElementById('stats').textContent =
   `${DATA.people.length} people · ${DATA.events.length} events · ${DATA.articles.length} articles · ${DATA.edges.length} connections`;
 renderList('');
@@ -152,6 +178,23 @@ function select(pid){
   // mentions
   if(p.mentions?.length){ h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + p.mentions.slice(0,25).map(m=>
     `<div class="card">${m.role?`<span class="role">${esc(m.role)}</span> — `:''}<q>…${esc(m.ctx)}…</q><div class="src">${ISSUE_LABEL(m.i)}, p.${m.p}${m.amb?' · <em>name match uncertain</em>':''}${srcLinks(m.i,m.p)}</div></div>`).join(''); }
+  // census records
+  if(p.census?.length){ h += `<h3>Census records</h3>` + p.census.map(c=>{
+    const bits=[];
+    if(c.addr) bits.push(c.addr + (c.ward?` (Ward ${c.ward})`:''));
+    if(c.occM) bits.push('occupation: '+c.occM);
+    if(c.occF) bits.push('female occupation: '+c.occF);
+    if(c.fam) bits.push(c.fam+' in family');
+    if(c.church) bits.push('church: '+c.church);
+    if(c.wealth) bits.push('family wealth: $'+c.wealth);
+    if(c.read==='1') bits.push('can read');
+    if(c.write==='1') bits.push('can write');
+    if(c.born_slaves) bits.push(c.born_slaves+' born enslaved');
+    if(c.region) bits.push(c.region);
+    let mh='';
+    if(c.match) mh = `<div style="margin-top:4px;font-size:12px;color:var(--gold)">✓ Confirmed ${c.y===1838?'1847':'1838'} match${c.match.cert?` (${esc(c.match.cert)})`:''}${c.match.addr47?` — 1847 addr: ${esc(c.match.addr47)}`:''}${c.match.addr38?` — 1838 addr: ${esc(c.match.addr38)}`:''}</div>`;
+    return `<div class="card"><span class="hl">${c.y} census — ${esc(c.name)}</span><q>${esc(bits.join(' · '))}</q>${mh}<div class="src">${c.y===1838?'Pennsylvania Abolition Society census of 1838':'Society of Friends census of 1847 (SOFAAC)'} · household ID ${esc(c.cid||'?')} · <em>name-based link</em></div></div>`;
+  }).join(''); }
   // winch refs
   if(p.refs?.length){ h += `<h3>Winch reference entry (${p.refs.length})</h3>` + p.refs.map(r=>
     `<div class="card">${esc(r.n||'')}${r.c?`<div class="src">(${esc(r.c)})</div>`:''}</div>`).join(''); }

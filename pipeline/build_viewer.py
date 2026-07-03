@@ -63,15 +63,52 @@ for (isl, pg), ids in cooc.items():
             k = (ids[i], ids[j])
             edges[k] = edges.get(k, 0) + 1
 
-# prune people with no content at all (keep all winch though — they have refs)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"]}
-people = {pid: p for pid, p in people.items() if pid in keep}
-edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
-
 try:
     urls = json.load(open("/sessions/loving-determined-fermi/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
+
+# census records per person
+def has_table(t):
+    return con.execute("SELECT 1 FROM sqlite_master WHERE name=?", (t,)).fetchone()
+if has_table("census_links"):
+    c38 = {r["rowid_"]: r for r in con.execute("SELECT * FROM census_1838")}
+    c47 = {r["rowid_"]: r for r in con.execute("SELECT * FROM census_1847")}
+    m38 = {}; m47 = {}
+    for r in con.execute("SELECT * FROM census_matches"):
+        m38.setdefault(str(r["1838_id"]), r); m47.setdefault(str(r["1847_id"]), r)
+    def g(row, key):
+        try: v = row[key]
+        except (KeyError, IndexError): return None
+        return None if v is None or str(v).strip() in ("", "nan", "None") else str(v).strip()
+    for pid, cen, rid in con.execute("SELECT person_id, census, row_id FROM census_links"):
+        if pid not in people: continue
+        p = people[pid]
+        if cen == "1838" and rid in c38:
+            r = c38[rid]
+            rec = {"y": 1838, "name": f'{g(r,"first_name_of_head_of_family") or ""} {g(r,"last_name_of_head_of_family") or ""}'.strip(),
+                   "addr": g(r,"address"), "ward": g(r,"ward"), "occM": g(r,"male_occupation_title"),
+                   "occF": g(r,"female_s_occupational_title"), "fam": g(r,"number_in_family"),
+                   "church": g(r,"first_church_attended"), "wealth": g(r,"total_family_wealth"),
+                   "cid": g(r,"id")}
+            m = m38.get(rec["cid"] or "")
+            if m: rec["match"] = {"cert": g(m,"match_certainty"), "addr47": g(m,"1847_address"), "id47": g(m,"1847_id")}
+            p.setdefault("census", []).append(rec)
+        elif cen == "1847" and rid in c47:
+            r = c47[rid]
+            rec = {"y": 1847, "name": f'{g(r,"first_name") or ""} {g(r,"last_name") or ""}'.strip(),
+                   "addr": " ".join(x for x in (g(r,"residence_street_number"), g(r,"residence_street_name")) if x),
+                   "occM": g(r,"male_occupation_1"), "occF": g(r,"female_occupation_1"),
+                   "read": g(r,"can_read"), "write": g(r,"can_write"), "born_slaves": g(r,"born_slaves"),
+                   "region": g(r,"region"), "cid": g(r,"id")}
+            m = m47.get(rec["cid"] or "")
+            if m: rec["match"] = {"cert": g(m,"match_certainty"), "addr38": g(m,"1838_address"), "id38": g(m,"1838_id")}
+            p.setdefault("census", []).append(rec)
+# prune people with no content at all (after census attach)
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census")}
+people = {pid: p for pid, p in people.items() if pid in keep}
+edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
+
 data = {"people": list(people.values()),
         "events": list(events.values()),
         "articles": list(articles.values()),
