@@ -113,7 +113,8 @@ function renderList(q){
     const ch = window._churchFilter||null;
     const pass = p=>{
       if(om && !om.has(p.id)) return false;
-      if(ch && !(p.census||[]).some(c=>c.church===ch)) return false;
+      if(ch==='__none__'){ if(!(p.census||[]).some(NOCHURCH)) return false; }
+      else if(ch && !(p.census||[]).some(c=>c.church===ch)) return false;
       if(f==='all') return true;
       if(f==='winch') return p.src==='winch';
       if(f==='papers') return (p.mentions?.length||p.articles?.length||p.events?.length);
@@ -154,13 +155,17 @@ orgsel.addEventListener('change',()=>{
   window._orgFilter = orgsel.value || null;
   if(mode!=='p') setMode('p'); else renderList(search.value);});
 const churchsel = document.getElementById('churchsel');
-{ const cc = {};
-  for(const p of P.values()) for(const c of (p.census||[]))
-    if(c.church) cc[c.church]=(cc[c.church]||0)+1;
+const NOCHURCH = c => c.y===1838 && (!c.church || c.church==='0');
+{ const cc = {}; let none=0;
+  for(const p of P.values()) for(const c of (p.census||[])){
+    if(NOCHURCH(c)) none++;
+    else if(c.church && c.church!=='0') cc[c.church]=(cc[c.church]||0)+1; }
   Object.entries(cc).sort((a,b)=>b[1]-a[1]).forEach(([name,n])=>{
     const op=document.createElement('option'); op.value=name;
     const label = /^\d+$/.test(name) ? `Church code ${name}` : name;
-    op.textContent=`${label} (${n})`; churchsel.appendChild(op);}); }
+    op.textContent=`${label} (${n})`; churchsel.appendChild(op);});
+  const op=document.createElement('option'); op.value='__none__';
+  op.textContent=`None recorded (${none})`; churchsel.appendChild(op); }
 churchsel.addEventListener('change',()=>{
   window._churchFilter = churchsel.value || null;
   if(mode!=='p') setMode('p'); else renderList(search.value);});
