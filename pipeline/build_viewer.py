@@ -181,9 +181,11 @@ data = {"people": list(people.values()),
         "issueUrls": urls,
         "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people]} for o in orgs_out]}
 
+import datetime
 tpl = open(TPL, encoding="utf-8").read()
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 html = tpl.replace("/*__DATA__*/null", js)
+html = html.replace("__BUILD__", datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
 open(OUT, "w", encoding="utf-8").write(html)
 print("people:", len(people), "events:", len(events), "articles:", len(articles),
       "edges:", len(edges), "html bytes:", len(html))
