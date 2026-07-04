@@ -405,6 +405,16 @@ function tick(){
       // gentle centering so disconnected clumps stay on screen
       n.vx-=n.x*0.00018; n.vy-=n.y*0.00018; n.vz-=(n.z||0)*0.00018; }
   }
+  // gentle pull of each community toward its own centroid (full map only)
+  if(window._fullView && window._commGroups){
+    for(const g of window._commGroups){
+      let cx=0,cy=0,cz=0;
+      for(const n of g){cx+=n.x;cy+=n.y;cz+=n.z||0;}
+      cx/=g.length; cy/=g.length; cz/=g.length;
+      for(const n of g){ if(n.fixed||n.pin)continue;
+        n.vx+=(cx-n.x)*0.0012; n.vy+=(cy-n.y)*0.0012; n.vz+=(cz-(n.z||0))*0.0012; }
+    }
+  }
   for(const n of nodes){ if(n.fixed||n.pin)continue;
     n.vx*=.82;n.vy*=.82;n.vz*=.82; n.x+=n.vx;n.y+=n.vy;n.z=(n.z||0)+n.vz;}
 }
@@ -442,6 +452,36 @@ function buildFullGraph(){
     else if(n.type==='e'){ n.r = 9; }
     else { n.r = 8; }
   }
+  // ---- community detection (label propagation) -> cluster colors ----
+  const adj = new Map();
+  for(const l of links){
+    if(!adj.has(l.s)) adj.set(l.s,[]); if(!adj.has(l.t)) adj.set(l.t,[]);
+    const w = l.faint ? 1 : (l.w+1);
+    adj.get(l.s).push([l.t,w]); adj.get(l.t).push([l.s,w]);
+  }
+  nodes.forEach((n,i)=>n.comm=i);
+  for(let it=0; it<10; it++){
+    let changed=0;
+    for(const n of nodes){
+      const nb = adj.get(n); if(!nb||!nb.length) continue;
+      const tally = new Map();
+      for(const [m,w] of nb) tally.set(m.comm,(tally.get(m.comm)||0)+w);
+      let best=n.comm, bw=-1;
+      for(const [c,w] of tally) if(w>bw || (w===bw && c<best)){best=c;bw=w;}
+      if(best!==n.comm){n.comm=best;changed++;}
+    }
+    if(!changed) break;
+  }
+  const sizes = new Map();
+  for(const n of nodes) sizes.set(n.comm,(sizes.get(n.comm)||0)+1);
+  const PAL = ['#4e8f83','#6f9fd8','#c76f6f','#8fbf6f','#c9a24e','#9f7fd8','#d88fb8','#7fd8cf','#d8a06f','#8f9fb8','#b8d86f','#d86fd0'];
+  const top = [...sizes.entries()].sort((a,b)=>b[1]-a[1]).slice(0,PAL.length);
+  const cmap = new Map(top.map(([c],i)=>[c,PAL[i]]));
+  for(const n of nodes) n.ccol = cmap.get(n.comm) || '#5a6e6a';
+  // pull same-community nodes together a bit so color regions cohere spatially
+  const groups = new Map();
+  for(const n of nodes){ if(!groups.has(n.comm)) groups.set(n.comm,[]); groups.get(n.comm).push(n); }
+  window._commGroups = [...groups.values()].filter(g=>g.length>=4);
   view={x:0,y:0,k:0.34};
   rot={yaw:0.5,pitch:0.28}; window._spin=true;
   setHighlight(null);
@@ -489,7 +529,9 @@ function draw(){
     const isHl = !hlN || n===hlN || (hl && hl.has(n));
     ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
     ctx.beginPath();ctx.arc(n.px,n.py,Math.max(1.5,n.r*n.ps),0,7);
-    ctx.fillStyle = (n.fixed||n.sel) ? '#d4a24e' : (n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : '#4e8f83');
+    ctx.fillStyle = (n.fixed||n.sel) ? '#d4a24e'
+      : (n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8'
+      : (window._fullView && n.ccol) ? n.ccol : '#4e8f83');
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
     else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
