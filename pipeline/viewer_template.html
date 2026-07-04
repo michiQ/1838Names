@@ -350,22 +350,25 @@ function buildGraph(pid){
   for(let it=0;it<300;it++) tick();
 }
 function repulse(a,b){
+  const full = !!window._fullView;
   let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
   if(d2<1){dx=Math.random()-.5;dy=Math.random()-.5;d2=1;}
-  if(d2<22500){const d=Math.sqrt(d2),f=140/d2;const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
+  const cutoff = full ? 130000 : 22500, K = full ? 420 : 140;
+  if(d2<cutoff){const d=Math.sqrt(d2),f=K/d2;const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!a.fixed){a.vx-=fx;a.vy-=fy;a.vz-=fz;} if(!b.fixed){b.vx+=fx;b.vy+=fy;b.vz+=fz;}}
 }
 function tick(){
+  const SP = window._fullView ? 2.4 : 1;   // spacing multiplier for the full map
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
-    const target=60+240/(l.w+1), f=(d-target)*0.004*(l.faint?0.4:1);
+    const target=(60+240/(l.w+1))*SP, f=(d-target)*0.004*(l.faint?0.4:1);
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
   if(nodes.length<=160){
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++) repulse(nodes[i],nodes[j]);
   } else {
     // grid-bucketed repulsion for the full map
-    const CELL=150, grid=new Map();
+    const CELL=380, grid=new Map();
     for(const n of nodes){ const k=(Math.floor(n.x/CELL))+','+(Math.floor(n.y/CELL));
       (grid.get(k)||grid.set(k,[]).get(k)).push(n); }
     for(const n of nodes){
@@ -374,7 +377,7 @@ function tick(){
         const cell=grid.get(gx+','+gy); if(!cell)continue;
         for(const m of cell) if(m!==n && (m.x>n.x || (m.x===n.x&&m.y>n.y))) repulse(n,m); }
       // gentle centering so disconnected clumps stay on screen
-      n.vx-=n.x*0.0004; n.vy-=n.y*0.0004; n.vz-=(n.z||0)*0.0004; }
+      n.vx-=n.x*0.00018; n.vy-=n.y*0.00018; n.vz-=(n.z||0)*0.00018; }
   }
   for(const n of nodes){ if(n.fixed||n.pin)continue;
     n.vx*=.82;n.vy*=.82;n.vz*=.82; n.x+=n.vx;n.y+=n.vy;n.z=(n.z||0)+n.vz;}
@@ -387,24 +390,24 @@ function buildFullGraph(){
     const p=P.get(id); if(!p)return null;
     const d=deg.get(id)||0;
     const n={id,type:'p',label:p.name,r:4+Math.min(10,Math.sqrt(d)),deg:d,
-      x:(Math.random()-.5)*1400,y:(Math.random()-.5)*1000,z:(Math.random()-.5)*900,vx:0,vy:0,vz:0};
+      x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('p'+id,n); nodes.push(n); return n;}
   for(const [a,b,w] of DATA.edges){
     const na=addP(a), nb=addP(b);
     if(na&&nb) links.push({s:na,t:nb,w:Math.min(w,4),faint:w<2});}
   for(const e of E.values()){ if(!e.att.length)continue;
     const en={id:e.id,type:'e',label:e.name,r:9,deg:e.att.length,
-      x:(Math.random()-.5)*1400,y:(Math.random()-.5)*1000,z:(Math.random()-.5)*900,vx:0,vy:0,vz:0};
+      x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('e'+e.id,en); nodes.push(en);
     for(const [q] of e.att){ const pn=nmap.get('p'+q)||addP(q); if(pn) links.push({s:en,t:pn,w:2}); } }
   // organization nodes
   (DATA.orgs||[]).forEach((o,oi)=>{
     if(o.members.length<3) return;
     const on={id:'o'+oi,type:'o',label:o.name,r:6+Math.min(9,Math.sqrt(o.members.length)),deg:o.members.length,
-      org:o.name,x:(Math.random()-.5)*1400,y:(Math.random()-.5)*1000,z:(Math.random()-.5)*900,vx:0,vy:0,vz:0};
+      org:o.name,x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nodes.push(on);
-    for(const q of o.members){ const pn=nmap.get('p'+q); if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
-  view={x:0,y:0,k:0.55};
+    for(const q of o.members){ const pn=nmap.get('p'+q)||addP(q); if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
+  view={x:0,y:0,k:0.34};
   rot={yaw:0.5,pitch:0.28}; window._spin=true;
   setHighlight(null);
   for(let it=0;it<160;it++) tick();
