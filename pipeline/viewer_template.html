@@ -42,7 +42,9 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
 #legend span{margin-right:14px}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
-#right{width:400px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
+#right{width:400px;min-width:280px;max-width:760px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
+.vsplit{width:6px;cursor:col-resize;background:transparent;flex:0 0 6px;position:relative;z-index:5}
+.vsplit:hover,.vsplit.on{background:rgba(212,162,78,.25)}
 #right h2{font-size:17px;color:var(--gold);font-weight:normal;margin-bottom:2px}
 #right .dates{color:var(--dim);font-style:italic;font-size:13px;margin-bottom:10px}
 #right h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin:16px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px}
@@ -91,8 +93,29 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
     <canvas id="cv"></canvas>
     <div id="hint">drag to pan · scroll to zoom · click a node to navigate</div>
   </div>
+  <div class="vsplit" id="rsplit" title="drag to resize"></div>
   <div id="right"><p class="empty">Select a person to see their newspaper appearances, writings, events, co-attendees, and Winch reference entry.</p></div>
 </div>
+<script>
+// resizable detail panel
+(function(){
+  const right = document.getElementById('right'), split = document.getElementById('rsplit');
+  try{ const w = localStorage.getItem('bm_rightw'); if(w) right.style.width = w + 'px'; }catch(e){}
+  let dragging = false;
+  split.addEventListener('mousedown', e=>{ dragging = true; split.classList.add('on'); e.preventDefault(); });
+  window.addEventListener('mousemove', e=>{
+    if(!dragging) return;
+    const w = Math.max(280, Math.min(760, window.innerWidth - e.clientX));
+    right.style.width = w + 'px';
+    if(typeof resize === 'function') resize();
+  });
+  window.addEventListener('mouseup', ()=>{
+    if(!dragging) return;
+    dragging = false; split.classList.remove('on');
+    try{ localStorage.setItem('bm_rightw', parseInt(right.style.width)||400); }catch(e){}
+  });
+})();
+</script>
 <script>
 const DATA = /*__DATA__*/null;
 const P = new Map(DATA.people.map(p=>[p.id,p]));
