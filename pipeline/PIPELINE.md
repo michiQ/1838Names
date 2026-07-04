@@ -23,6 +23,9 @@ Instructions for any Claude session continuing this project. Priority order: **P
 4. GitHub auto-push: if `pipeline/github_token.txt` exists, clone https://github.com/michiQ/1838Names.git, sync index.html / black_metropolis.db / pages/ / ocr_text/ / pipeline/ (EXCLUDING github_token.txt — never commit it), commit and push with `git push "https://x-access-token:<token>@github.com/michiQ/1838Names.git" main`. Skip gracefully if the token file is absent or expired.
 5. Message summary: issues processed, new people matched, notable finds, whether GitHub was updated.
 
+## Census datasets (loaded)
+The DB contains `census_1838` (PAS census, 3,296 households), `census_1847` (SOFAAC, 4,284), `census_matches` (445 confirmed 1838↔1847 matches), and `census_links` (person↔household). ALL heads of household exist as `people` rows (source='census') unless they matched a Winch person unambiguously. Source files live in `../census/`. ORDER MATTERS each run: `import_census.py` (recreates census people) must run BEFORE `match_names.py` and `load_extractions.py`, else appearances reference deleted people ids. Full rebuild order: import_census.py → match_names.py → load_extractions.py → build_viewer.py.
+
 ## State
 - Done so far: 10 pilot issues (CA_1838-*, PF_1838-*) — see ocr_text/.
 - The Winch reference is fully loaded (2,909 people / 4,565 refs). Do NOT re-run build_db.py — it wipes and rebuilds people from the Winch PDF (only do this if the DB is lost; the Winch PDF is in this folder as backup: Julie Winch Names Reference).
