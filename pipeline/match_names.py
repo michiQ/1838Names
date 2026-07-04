@@ -4,7 +4,7 @@ import sqlite3, re, os, glob, json
 from difflib import SequenceMatcher
 
 DB = "/tmp/black_metropolis.db"
-OCR_DIR = "/tmp/ocr"
+OCR_DIR = "/sessions/loving-determined-fermi/mnt/Newspapers/1838 Names Database/ocr_text"
 
 PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)"}
 
@@ -28,7 +28,11 @@ DATE_OVERRIDE = {
  "PP_063": "1914-06-13", "PP_064": "1914-07-25", "PP_065": "1913-01-11", "PP_066": "1912-10-05",
  "PP_067": "1912-07-27", "PP_068": "1914-07-11", "PP_069": "1912-09-07", "PP_070": "1912-06-22",
  "PP_071": "1912-05-11",
- "PP_058": "1912-02-10"}
+ "PP_058": "1912-02-10",
+ "PP_072": "1914-09-12", "PP_073": "1914-08-29", "PP_074": "1914-04-11", "PP_075": "1913-04",
+ "PP_076": "1914-01-10", "PP_077": "1912-12-07", "PP_078": "1913-12-27", "PP_079": "1912-11-30",
+ "PP_080": "1914-02-14", "PP_081": "1913-03-08", "PP_082": "1914-09-19", "PP_083": "1914-01-03",
+ "PP_084": "1913-12-13", "PP_085": "1912-09-28"}
 
 ORG_TXT_RE = re.compile(
     r"(?:[A-Z][A-Za-z''&.\-]+[ ,]+){1,6}(?:Anti-Slavery Society|Society|Lodge|Association|"
