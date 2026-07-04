@@ -1,0 +1,212 @@
+{
+  "articles": [
+    {
+      "issue": "CA_1837-01-07",
+      "page": 1,
+      "headline": "Our Undertaking",
+      "author": "Philip A. Bell",
+      "type": "editorial",
+      "summary": "Inaugural editorial of the founding issue of the Weekly Advocate (New York, later renamed the Colored American), published by Philip A. Bell and printed by Robert Sears at 2 Frankfort St. Declares the paper's purpose: moral improvement of the 'people of colour,' opposition to colonization and infidelity, support for temperance and universal suffrage, and advocacy of immediate and universal emancipation. Appeals for subscriber support and announces the newspaper is owned and edited entirely by Black men."
+    },
+    {
+      "issue": "CA_1837-01-07",
+      "page": 3,
+      "headline": "Obituary and Mutual Relief Society resolutions for William Hamilton, Sen.",
+      "author": null,
+      "type": "obituary",
+      "summary": "Records the death (63d year, Dec. 1836) of Mr. William Hamilton, Sen., praised for sterling virtue and truth; signed 'B.' Followed by an extract from the minutes of the Mutual Relief Society meeting of Dec. 12, at which Hamilton's death was announced and resolutions of condolence adopted, including a 6-month mourning badge and a letter of condolence to the family. The Philomathean Society (William Brady, Scribe) separately adopted resolutions of sympathy on the same death."
+    },
+    {
+      "issue": "CA_1837-01-14",
+      "page": 2,
+      "headline": "Beware of Kidnappers",
+      "author": "David Ruggles",
+      "type": "letter",
+      "summary": "David Ruggles's detailed first-person account of an attempted kidnapping/mob attack against him on the night of Dec. 24, 1836, tied to his role in freeing enslaved people aboard the suspected slave ship Brig Brilliante. Names the slave-catchers Nash, Boudinot, and the notorious Southern slave-catcher Waddy, the ship's Portuguese mate, and references the earlier kidnapping of Peter John Lee from Rye by the same ring. Ruggles describes being pursued at his boarding house, his landlady threatened, and warns the Black community of the ongoing kidnapping ring operating with claimed authority from Governor Marcy."
+    },
+    {
+      "issue": "CA_1837-01-14",
+      "page": 3,
+      "headline": "Married: Butler-Ennalls",
+      "author": null,
+      "type": "notice",
+      "summary": "Marriage notice: on Thursday evening, Jan. 5, 1837, by the Rev. J. F. Schroeder, Mr. John Butler of Brooklyn to Miss Mary Ennalls, eldest daughter of Mr. Samuel Ennalls of New York City."
+    },
+    {
+      "issue": "CA_1837-01-21",
+      "page": 2,
+      "headline": "Commendable Liberality",
+      "author": null,
+      "type": "notice",
+      "summary": "Acknowledges a $5 donation to the Weekly Advocate from 'Mr. J. W.' of Bond Street, conveyed through Mr. Joseph Brown, toward the paper's support."
+    },
+    {
+      "issue": "CA_1837-01-21",
+      "page": 2,
+      "headline": "Awful Calumnies / The Right of Petition",
+      "author": null,
+      "type": "editorial",
+      "summary": "Denounces the New York Transcript's slanders against the free Black population as idle and criminal, and reports the House of Representatives resolution of Jan. 10, 1837 (carried 102 to ...) tabling all petitions relating to slavery without printing or reference -- an early instance of the 'gag rule' fight over the right of petition, which the editors call the most alarming symptom yet of the erosion of free discussion."
+    },
+    {
+      "issue": "CA_1837-01-28",
+      "page": 2,
+      "headline": "New Haven Colored People's Total Abstinence Society -- annual meeting",
+      "author": null,
+      "type": "minutes",
+      "summary": "Report of the annual meeting (New Haven, Nov. 19, 1836) of a total-abstinence temperance society of colored people, with delegates from Hartford, Middletown, and New Haven. Resolutions passed unanimously endorsing total abstinence and urging clergy, parents, and women to support the cause. Officers: Henry Foster, Vice President; A. G. Beman, Secretary; prayer offered by Rev. Mr. Pennington. Voted to organize an auxiliary society in New Haven and to hold the next annual meeting in Norwich, Ct. on May 11, 1837."
+    },
+    {
+      "issue": "CA_1837-02-04",
+      "page": 2,
+      "headline": "Notice: Samuel Conover appointed City Agent",
+      "author": null,
+      "type": "notice",
+      "summary": "Notice that Mr. Samuel Conover of 45 Suffolk Street is a City Agent for the Weekly Advocate, authorized to collect and receive subscriptions."
+    },
+    {
+      "issue": "CA_1837-02-04",
+      "page": 3,
+      "headline": "Information Wanted: John Young",
+      "author": null,
+      "type": "notice",
+      "summary": "Seeking information on John Young, who left Liverpool several years earlier aboard the ship Silas Richards; last known to be residing near Brooklyn. His father, John Young, requests information be sent to his Greene Street address or the Advocate office."
+    },
+    {
+      "issue": "CA_1837-02-04",
+      "page": 3,
+      "headline": "Society meeting notices: New York Union Society, Hicks Society, Philomathean Society",
+      "author": null,
+      "type": "notice",
+      "summary": "Three society notices in the same issue: members of the New York Union Society asked to attend an extra meeting Monday evening, Feb. 6, 1837 at 71 Bayard St. (Wm. S. Johnson, Secretary); members of the Hicks Society asked to attend their regular monthly meeting Wednesday, Feb. 9, at the Philomathean Hall, 161 Duane St. (W. Cornish, Secretary); and the Philomathean Society's own monthly meeting announced for Tuesday, Feb. 7."
+    }
+  ],
+  "events": [
+    {
+      "issue": "CA_1837-01-07",
+      "page": 3,
+      "name": "Death of William Hamilton, Sen. mourned by New York benevolent societies",
+      "date": "1836-12",
+      "location": "New York City",
+      "description": "William Hamilton, Sen. died in his 63rd year in December 1836; his death was announced to the Mutual Relief Society at its Dec. 12 meeting, which adopted resolutions of condolence (6-month mourning badge, letter to the family). The Philomathean Society, with William Brady as Scribe, separately passed resolutions of sympathy (Colored American/Weekly Advocate, Jan. 7, 1837).",
+      "attendees": [
+        ["William Hamilton", "deceased (honoree)"],
+        ["William Brady", "Philomathean Society Scribe"]
+      ]
+    },
+    {
+      "issue": "CA_1837-01-14",
+      "page": 4,
+      "name": "Weekly Advocate establishes agent network across the Northeast and Mid-Atlantic",
+      "date": "1837-01",
+      "location": "Boston, New Bedford, Providence, New Haven, New York, Newark, Philadelphia, Chester, Columbia, Carlisle, Wilkesbarre, Pittsburgh",
+      "description": "The Weekly Advocate (Philip A. Bell, proprietor) published its roster of city agents authorized to collect subscriptions, spanning Massachusetts, Rhode Island, Connecticut, New York, New Jersey, and Pennsylvania -- an early network of the Black abolitionist press linking prominent community leaders across the region (Colored American/Weekly Advocate, Jan. 1837 issues).",
+      "attendees": [
+        ["William Jennings", "agent, Boston"],
+        ["Richard Johnson", "agent, New Bedford"],
+        ["Charles Remond", "agent, Providence"],
+        ["George Moore", "agent, New Haven"],
+        ["Martin Cross", "agent, New York"],
+        ["William Payne", "agent, New York"],
+        ["William Rich", "agent, New York"],
+        ["William Griffen", "agent, New York"],
+        ["Robert Banks", "agent, New York"],
+        ["Samuel Ward", "agent, Newark"],
+        ["John Bowers", "agent, Philadelphia"],
+        ["John Peck", "agent, Pennsylvania"],
+        ["John Drew", "agent, Pennsylvania"],
+        ["Abraham Shadd", "agent, Pennsylvania"],
+        ["William Whipper", "agent, Columbia"],
+        ["William Brewer", "agent, Wilkesbarre"],
+        ["John Vashon", "agent, Pittsburgh"]
+      ]
+    },
+    {
+      "issue": "CA_1837-01-14",
+      "page": 2,
+      "name": "Attempted kidnapping / mob attack on David Ruggles tied to the Brig Brilliante",
+      "date": "1836-12-24",
+      "location": "New York City",
+      "description": "On the night of Dec. 24, 1836, slave-catchers led by Nash and accompanied by the Portuguese mate of the suspected slave ship Brig Brilliante forced open the door of David Ruggles's boarding house seeking to seize him, having missed him they assaulted his landlady. Ruggles published a detailed defense narrating his role in freeing enslaved people from the Brilliante and referencing the notorious slave-catcher Waddy and the prior kidnapping of Peter John Lee from Rye by the same ring, operating under a warrant Boudinot claimed to hold from Governor Marcy (Weekly Advocate, Jan. 14, 1837).",
+      "attendees": [
+        ["David Ruggles", "target / narrator"],
+        ["Peter Lee", "referenced prior kidnapping victim"],
+        ["Nash", "slave-catcher (opponent)"],
+        ["Boudinot", "constable / warrant-holder (opponent)"],
+        ["Waddy", "notorious Southern slave-catcher (opponent)"]
+      ]
+    },
+    {
+      "issue": "CA_1837-01-14",
+      "page": 3,
+      "name": "Marriage of John Butler and Mary Ennalls",
+      "date": "1837-01-05",
+      "location": "New York City",
+      "description": "On Thursday evening, Jan. 5, 1837, the Rev. J. F. Schroeder married Mr. John Butler of Brooklyn to Miss Mary Ennalls, eldest daughter of Mr. Samuel Ennalls of New York City (Weekly Advocate, Jan. 14, 1837).",
+      "attendees": [
+        ["John Butler", "groom"],
+        ["Mary Ennalls", "bride"],
+        ["Samuel Ennalls", "father of the bride"]
+      ]
+    },
+    {
+      "issue": "CA_1837-01-28",
+      "page": 2,
+      "name": "New Haven Colored People's Total Abstinence Society -- annual meeting",
+      "date": "1836-11-19",
+      "location": "New Haven, Connecticut",
+      "description": "Annual meeting of a total-abstinence temperance society of colored people, with delegates from Hartford, Middletown and New Haven; resolutions on temperance adopted unanimously. Henry Foster served as Vice President and A. G. Beman as Secretary; Rev. Mr. Pennington offered prayer. The society voted to form a New Haven auxiliary and to hold its next annual meeting in Norwich, Ct. on May 11, 1837 (Weekly Advocate, Jan. 28, 1837).",
+      "attendees": [
+        ["Henry Foster", "Vice President"],
+        ["Amos Beman", "Secretary"],
+        ["James Pennington", "chaplain (prayer)"]
+      ]
+    },
+    {
+      "issue": "CA_1837-02-04",
+      "page": 3,
+      "name": "Search for missing son John Young",
+      "date": "1837-02",
+      "location": "Brooklyn / New York City",
+      "description": "A father named John Young sought information on his son, also John Young, who had left Liverpool several years earlier aboard the ship Silas Richards and was last known to be residing near Brooklyn (Weekly Advocate, Feb. 4, 1837).",
+      "attendees": [
+        ["John Young (son)", "missing person sought"],
+        ["John Young (father)", "searcher"]
+      ]
+    },
+    {
+      "issue": "CA_1837-02-04",
+      "page": 3,
+      "name": "New York Union Society, Hicks Society and Philomathean Society meeting notices",
+      "date": "1837-02",
+      "location": "New York City",
+      "description": "Three Black New York societies published meeting notices in the same issue: the New York Union Society called an extra meeting for Feb. 6 at 71 Bayard St. (Wm. S. Johnson, Secretary); the Hicks Society called its regular monthly meeting for Feb. 9 at the Philomathean Hall, 161 Duane St. (W. Cornish, Secretary); and the Philomathean Society announced its own monthly meeting for Feb. 7 (Weekly Advocate, Feb. 4, 1837).",
+      "attendees": [
+        ["William Johnson", "New York Union Society, Secretary"],
+        ["W. Cornish", "Hicks Society, Secretary"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "CA_1837-01-14",
+      "page": 3,
+      "names": [
+        ["M. J. Wilson", "merchant (bootmaker, 67 Lispenard St)"],
+        ["John Carter", "merchant (grocer, 56 Church St)"],
+        ["Joseph Michaels", "merchant (floor mats and old iron dealer, Lespenard St)"],
+        ["William Johnson", "merchant (Swamp Leather and Finding Store, Frankfort St)"],
+        ["Anthony Gayle", "boarding house keeper, 35 Leonard St"]
+      ],
+      "note": "Black-owned New York City businesses advertising in the Weekly Advocate, January 1837."
+    },
+    {
+      "issue": "CA_1837-02-04",
+      "page": 2,
+      "names": [
+        ["Samuel Conover", "City Agent, 45 Suffolk St"]
+      ],
+      "note": "Appointed a city agent authorized to collect and receive subscriptions for the Weekly Advocate."
+    }
+  ]
+}
