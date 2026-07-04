@@ -126,7 +126,21 @@ function renderList(q){
       if(f==='c1838') return (p.census||[]).some(c=>c.y===1838);
       if(f==='c1847') return (p.census||[]).some(c=>c.y===1847);
       return true;};
-    const rows = sorted.filter(p=>pass(p)&&(p.name.toLowerCase().includes(q)||(p.aka||'').toLowerCase().includes(q))).slice(0,400);
+    const blob = p=>{
+      if(p._blob===undefined){
+        const parts=[p.name,p.aka||''];
+        for(const r of (p.refs||[])) parts.push(r.n||'',r.c||'');
+        for(const m of (p.mentions||[])) parts.push(m.ctx||'');
+        for(const c of (p.census||[])) parts.push(c.church||'',c.addr||'',c.occM||'',c.occF||'');
+        parts.push((p.orgs||[]).join(' '));
+        p._blob = parts.join(' ').toLowerCase();
+      }
+      return p._blob;};
+    const nameHit = p=>p.name.toLowerCase().includes(q)||(p.aka||'').toLowerCase().includes(q);
+    const deep = q.length>=3;
+    let rows = sorted.filter(p=>pass(p)&&(nameHit(p)||(deep&&blob(p).includes(q))));
+    if(deep && q) rows = [...rows.filter(nameHit), ...rows.filter(p=>!nameHit(p))];
+    rows = rows.slice(0,400);
     plist.innerHTML = rows.map(p=>{
       const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>'
         : p.src==='census' ? '<span class="badge b-c">census</span>' : '<span class="badge b-n">paper</span>';
@@ -153,7 +167,7 @@ function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
 const orgsel = document.getElementById('orgsel');
-(DATA.orgs||[]).forEach(o=>{
+[...(DATA.orgs||[])].sort((a,b)=>a.name.localeCompare(b.name)).forEach(o=>{
   const op=document.createElement('option'); op.value=o.name;
   op.textContent=`${o.name} (${o.members.length})`; orgsel.appendChild(op);});
 orgsel.addEventListener('change',()=>{
@@ -362,7 +376,7 @@ function tick(){
       // gentle centering so disconnected clumps stay on screen
       n.vx-=n.x*0.0004; n.vy-=n.y*0.0004; n.vz-=(n.z||0)*0.0004; }
   }
-  for(const n of nodes){ if(n.fixed)continue;
+  for(const n of nodes){ if(n.fixed||n.pin)continue;
     n.vx*=.82;n.vy*=.82;n.vz*=.82; n.x+=n.vx;n.y+=n.vy;n.z=(n.z||0)+n.vz;}
 }
 function buildFullGraph(){
@@ -400,7 +414,7 @@ allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
   document.getElementById('hint').textContent = window._fullView
-    ? 'drag to rotate in 3D · scroll to zoom · click a node to open it'
+    ? 'drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
     : 'drag to pan · scroll to zoom · click a node to navigate';
   if(window._fullView) buildFullGraph();
   else if(window._sel) buildGraph(window._sel);
@@ -432,6 +446,7 @@ function draw(){
     ctx.fillStyle = (n.fixed||n.sel) ? '#d4a24e' : (n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : '#4e8f83');
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
+    else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
     if((showAll || n.fixed || n.sel || n.deg>=14 || (hlN && isHl)) && (!is3d || n.ps>0.78 || (hlN && isHl))){
       const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
       ctx.font=((n.fixed||n.sel)?'bold 12px':'10.5px')+' Georgia';
@@ -478,8 +493,13 @@ window.addEventListener('mouseup',e=>{
     else if(dragN.type==='o' && dragN.org){ orgsel.value=dragN.org; window._orgFilter=dragN.org;
       if(mode!=='p') setMode('p'); else renderList(search.value); } }
   else if(!dragN && wasClick){ setHighlight(null); }   // click empty space clears highlight
+  if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them
   if(dragN && !window._fullView) dragN.fixed = dragN===nodes[0];
   dragN=null;panning=false;rotating=false;cv.style.cursor='grab';});
+cv.addEventListener('dblclick',e=>{
+  const n=pick(e.offsetX,e.offsetY);
+  if(n && n.pin){ n.pin=false; }   // double-click releases a pinned node back to the springs
+});
 cv.addEventListener('wheel',e=>{e.preventDefault();
   const f=e.deltaY<0?1.12:0.89; view.k=Math.max(.25,Math.min(4,view.k*f));},{passive:false});
 
