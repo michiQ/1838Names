@@ -10,9 +10,12 @@ con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
 
 people = {}
-for r in con.execute("SELECT id, canonical_name, life_dates, winch_entry, source FROM people"):
+has_aliases = bool(con.execute("SELECT 1 FROM pragma_table_info('people') WHERE name='aliases'").fetchone())
+cols = "id, canonical_name, life_dates, winch_entry, source" + (", aliases" if has_aliases else "")
+for r in con.execute(f"SELECT {cols} FROM people"):
     people[r["id"]] = {"id": r["id"], "name": r["canonical_name"], "dates": r["life_dates"],
-                       "src": r["source"], "refs": [], "mentions": [], "events": [], "articles": []}
+                       "src": r["source"], "refs": [], "mentions": [], "events": [], "articles": [],
+                       **({"aka": r["aliases"]} if has_aliases and r["aliases"] else {})}
 
 ORG_RE = re.compile(
     r"(?:Member|Members|Secretary|Treasurer|President|Vice[- ][Pp]resident|Trustee|Deacon|Elder|"

@@ -125,7 +125,7 @@ function renderList(q){
       if(f==='c1838') return (p.census||[]).some(c=>c.y===1838);
       if(f==='c1847') return (p.census||[]).some(c=>c.y===1847);
       return true;};
-    const rows = sorted.filter(p=>pass(p)&&p.name.toLowerCase().includes(q)).slice(0,400);
+    const rows = sorted.filter(p=>pass(p)&&(p.name.toLowerCase().includes(q)||(p.aka||'').toLowerCase().includes(q))).slice(0,400);
     plist.innerHTML = rows.map(p=>{
       const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>'
         : p.src==='census' ? '<span class="badge b-c">census</span>' : '<span class="badge b-n">paper</span>';
@@ -200,6 +200,7 @@ function select(pid){
   window._sel = pid;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', +r.dataset.id===pid));
   let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':p.src==='census'?' · from census records':' · found in newspapers'}</div>`;
+  if(p.aka) h += `<div class="dates" style="margin-top:-8px">also recorded as: ${esc(p.aka)}</div>`;
   if(p.orgs?.length) h += `<div class="orgchips">${p.orgs.map(o=>`<span data-o="${esc(o)}">${esc(o)}</span>`).join('')}</div>`;
   // articles authored
   const arts = (p.articles||[]).map(x=>A.get(x.a)).filter(Boolean);
