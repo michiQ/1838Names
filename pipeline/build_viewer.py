@@ -25,13 +25,14 @@ def org_clean(s):
     s = re.sub(r"^(?:of|the|to|at|in)\s+", "", s, flags=re.I)
     s = re.sub(r"\s+(?:meeting|annual meeting|celebration)$", "", s, flags=re.I)
     return s
-org_members = {}  # org (canonical lower) -> {"label":..., "pids": set}
-def add_org(pid, raw):
+org_members = {}  # org (canonical lower) -> {"label":..., "pids": set, "events": set}
+def add_org(pid, raw, eid=None):
     label = org_clean(raw)
     if len(label) < 6: return
     key = label.lower()
-    e = org_members.setdefault(key, {"label": label, "pids": set()})
+    e = org_members.setdefault(key, {"label": label, "pids": set(), "events": set()})
     e["pids"].add(pid)
+    if eid is not None: e["events"].add(eid)
 
 for r in con.execute("SELECT person_id, note, citation FROM winch_references"):
     if r["person_id"] in people:
@@ -149,16 +150,40 @@ if has_table("newspaper_orgs"):
     for pid, org in con.execute("SELECT DISTINCT person_id, org FROM newspaper_orgs"):
         if pid in people: add_org(pid, org)
 
-# orgs from event attendance (event names are org-flavored)
+# orgs from event attendance (extract the org proper from org-flavored event names)
+EVENT_ORG_RE = re.compile(
+    r"^(.*\b(?:Society|Lodge|Church|Association|Institute(?: for Colored Youth)?|League|Club|"
+    r"Union|Committee|Company|Academy|Conference|Convention|School|Hall))\b")
+GENERIC_ORG = {"society","lodge","church","association","institute","league","club","union",
+               "committee","company","academy","conference","convention","school","hall"}
+def _ok_org(s):
+    return len(s) >= 6 and s[:1].isupper() and s.lower() not in GENERIC_ORG
+def event_org(name):
+    m = EVENT_ORG_RE.search(name or "")
+    if not m: return None
+    s = m.group(1)
+    if "," in s: s = s.split(",")[-1].strip()
+    if ":" in s: s = s.split(":")[-1].strip()
+    cand = re.split(r"\b(?:of|at|from|to|in)\s+(?:the\s+)?", s)[-1].strip()
+    if _ok_org(cand): return cand
+    if _ok_org(s): return s
+    return None
 for e in events.values():
+    org = event_org(e["name"])
+    if not org: continue
     for pid, _ in e["att"]:
-        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall", e["name"]):
-            add_org(pid, e["name"])
-# finalize orgs: keep those with >=2 members
+        if pid in people:
+            add_org(pid, org, eid=e["id"])
+# finalize orgs: keep those with >=2 members; link orgs<->events by name containment
 orgs_out = []
 for key, e in org_members.items():
-    if len(e["pids"]) >= 2:
-        orgs_out.append({"name": e["label"], "members": sorted(e["pids"])})
+    if len(e["pids"]) >= 2 and key not in GENERIC_ORG:
+        ev_ids = set(e["events"])
+        for ev in events.values():
+            enl = (ev["name"] or "").lower()
+            if key in enl or (len(enl) >= 12 and enl in key) or (ev["loc"] and key in ev["loc"].lower()):
+                ev_ids.add(ev["id"])
+        orgs_out.append({"name": e["label"], "members": sorted(e["pids"]), "events": sorted(ev_ids)})
 orgs_out.sort(key=lambda o: (-len(o["members"]), o["name"]))
 for o in orgs_out:
     for pid in o["members"]:
@@ -176,7 +201,8 @@ data = {"people": list(people.values()),
         "articles": list(articles.values()),
         "edges": [[a, b, w] for (a, b), w in edges.items()],
         "issueUrls": urls,
-        "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people]} for o in orgs_out]}
+        "orgs": [{"id": i, "name": o["name"], "members": [p for p in o["members"] if p in people],
+                  "events": o["events"]} for i, o in enumerate(orgs_out)]}
 
 tpl = open(TPL, encoding="utf-8").read()
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))

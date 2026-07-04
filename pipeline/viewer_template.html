@@ -63,7 +63,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 </header>
 <div id="wrap">
   <div id="left">
-    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button></div>
+    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button></div>
     <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
     <div id="filters">
       <span class="chip on" data-f="all">All</span>
@@ -82,6 +82,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span><i class="dot" style="background:#d4a24e"></i>person (selected)</span>
       <span><i class="dot" style="background:#4e8f83"></i>connected person</span>
       <span><i class="dot" style="background:#b4552d"></i>event</span>
+      <span><i class="dot" style="background:#8f7bb5"></i>organization</span>
     </div>
     <canvas id="cv"></canvas>
     <div id="hint">drag to pan · scroll to zoom · click a node to navigate</div>
@@ -93,6 +94,14 @@ const DATA = /*__DATA__*/null;
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
 const A = new Map(DATA.articles.map(a=>[a.id,a]));
+(DATA.orgs||[]).forEach((o,i)=>{ if(o.id==null) o.id=i; });
+const O = new Map((DATA.orgs||[]).map(o=>[o.id,o]));
+const NORG = new Map((DATA.orgs||[]).map(o=>[o.name,o]));
+const PORG = new Map(), EORG = new Map(); // pid -> [org ids], event id -> [org ids]
+for (const o of O.values()){
+  for (const m of o.members){ if(!PORG.has(m)) PORG.set(m,[]); PORG.get(m).push(o.id); }
+  for (const e of (o.events||[])){ if(!EORG.has(e)) EORG.set(e,[]); EORG.get(e).push(o.id); }
+}
 const NBR = new Map(); // pid -> Map(pid -> weight)
 for (const [a,b,w] of DATA.edges){
   if(!NBR.has(a)) NBR.set(a,new Map()); if(!NBR.has(b)) NBR.set(b,new Map());
@@ -132,21 +141,26 @@ function renderList(q){
       if(p.census?.length) ct.push(p.census.length+'⌂');
       return `<div class="prow" data-id="${p.id}" data-t="p"><span>${p.name}${badge}</span><span class="ct">${ct.join(' ')}</span></div>`;
     }).join('');
-  } else {
+  } else if(mode==='e') {
     const rows = sortedEvents.filter(e=>(e.name+' '+(e.loc||'')+' '+(e.desc||'')+' '+(e.date||'')).toLowerCase().includes(q)).slice(0,400);
     plist.innerHTML = rows.map(e=>
       `<div class="prow" data-id="${e.id}" data-t="e"><span>${e.name}</span><span class="ct">${e.date||''} · ${e.att.length}♦</span></div>`).join('');
+  } else {
+    const rows = [...O.values()].filter(o=>o.name.toLowerCase().includes(q)).slice(0,400);
+    plist.innerHTML = rows.map(o=>
+      `<div class="prow" data-id="${o.id}" data-t="o"><span>${o.name}</span><span class="ct">${o.members.length}♦${o.events?.length?' '+o.events.length+'★':''}</span></div>`).join('');
   }
 }
 plist.addEventListener('click',ev=>{const r=ev.target.closest('.prow'); if(!r)return;
-  r.dataset.t==='e' ? selectEvent(+r.dataset.id) : select(+r.dataset.id);});
+  r.dataset.t==='e' ? selectEvent(+r.dataset.id) : r.dataset.t==='o' ? selectOrg(+r.dataset.id) : select(+r.dataset.id);});
 search.addEventListener('input',()=>renderList(search.value));
-const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e');
-function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e');
-  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : 'Search events… e.g. convention';
+const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e'), tabO=document.getElementById('tab-o');
+function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e'); tabO.classList.toggle('on',m==='o');
+  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : m==='e' ? 'Search events… e.g. convention' : 'Search organizations… e.g. Vigilant';
   renderList(search.value); }
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
+tabO.addEventListener('click',()=>setMode('o'));
 const orgsel = document.getElementById('orgsel');
 (DATA.orgs||[]).forEach(o=>{
   const op=document.createElement('option'); op.value=o.name;
@@ -176,7 +190,7 @@ document.getElementById('filters').addEventListener('click',ev=>{
   if(mode!=='p') setMode('p'); else renderList(search.value);
 });
 document.getElementById('stats').textContent =
-  `${DATA.people.length} people · ${DATA.events.length} events · ${DATA.articles.length} articles · ${DATA.edges.length} connections`;
+  `${DATA.people.length} people · ${DATA.events.length} events · ${(DATA.orgs||[]).length} orgs · ${DATA.articles.length} articles · ${DATA.edges.length} connections`;
 renderList('');
 
 // ---------- detail panel ----------
@@ -238,15 +252,55 @@ function select(pid){
   right.querySelectorAll('.pl').forEach(el=>el.addEventListener('click',()=>{
     if(el.dataset.e) selectEvent(+el.dataset.e); else select(+el.dataset.p);}));
   right.querySelectorAll('.orgchips span').forEach(el=>el.addEventListener('click',()=>{
-    orgsel.value = el.dataset.o; window._orgFilter = el.dataset.o;
-    if(mode!=='p') setMode('p'); else renderList(search.value);}));
+    const org = NORG.get(el.dataset.o);
+    if(org) selectOrg(org.id);
+    else { orgsel.value = el.dataset.o; window._orgFilter = el.dataset.o;
+      if(mode!=='p') setMode('p'); else renderList(search.value); }}));
   buildGraph(pid);
+}
+
+function selectOrg(oid){
+  const o = O.get(oid); if(!o) return;
+  document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='o' && +r.dataset.id===oid));
+  let h = `<h2>${esc(o.name)}</h2><div class="dates">organization · ${o.members.length} affiliated people${o.events?.length?` · ${o.events.length} event${o.events.length>1?'s':''}`:''}</div>`;
+  const evs = (o.events||[]).map(e=>E.get(e)).filter(Boolean);
+  if(evs.length){ h += `<h3>Related events</h3>` + evs.map(e=>
+    `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>${e.desc?`<q>${esc(e.desc)}</q>`:''}</div>`).join(''); }
+  const mem = o.members.map(m=>P.get(m)).filter(Boolean).sort((a,b)=>activity(b)-activity(a)||a.name.localeCompare(b.name));
+  if(mem.length){ h += `<h3>Members / affiliated (${mem.length})</h3>` + mem.map(p=>
+    `<div class="card"><span class="pl" data-p="${p.id}">${esc(p.name)}</span>${p.src==='winch'?' <span class="badge b-w">Winch</span>':''}${p.dates?` <span class="role">· ${esc(p.dates)}</span>`:''}</div>`).join(''); }
+  else h += '<p class="empty">No affiliated people recorded.</p>';
+  right.innerHTML = h; right.scrollTop = 0;
+  right.querySelectorAll('.pl').forEach(el=>el.addEventListener('click',()=>{
+    if(el.dataset.e) selectEvent(+el.dataset.e); else select(+el.dataset.p);}));
+  buildOrgGraph(oid);
+}
+function buildOrgGraph(oid){
+  const o=O.get(oid); nodes=[]; links=[];
+  const nmap=new Map();
+  function addNode(id,type,label,r){ if(nmap.has(type+id))return nmap.get(type+id);
+    const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,vx:0,vy:0};
+    nmap.set(type+id,n); nodes.push(n); return n;}
+  const center=addNode(oid,'o',o.name,15); center.x=0;center.y=0;center.fixed=true;
+  const ids=o.members.slice(0,50);
+  for(const m of ids){ const p=P.get(m); if(!p)continue;
+    const n=addNode(m,'p',p.name,7); links.push({s:center,t:n,w:3}); }
+  for(const eid of (o.events||[])){ const e=E.get(eid); if(!e)continue;
+    const en=addNode(eid,'e',e.name,11); links.push({s:center,t:en,w:4});
+    for(const [q] of e.att){ const k=nmap.get('p'+q); if(k) links.push({s:en,t:k,w:2,faint:true}); } }
+  for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
+    const w=(NBR.get(ids[i])||new Map()).get(ids[j]); if(w>3){
+      const a=nmap.get('p'+ids[i]),b=nmap.get('p'+ids[j]); if(a&&b)links.push({s:a,t:b,w:1,faint:true});}}
+  view={x:0,y:0,k:1};
+  for(let it=0;it<300;it++) tick();
 }
 
 function selectEvent(eid){
   const e = E.get(eid); if(!e) return;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='e' && +r.dataset.id===eid));
   let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>`;
+  const eorgs = (EORG.get(eid)||[]).map(i=>O.get(i)).filter(Boolean);
+  if(eorgs.length) h += `<div class="orgchips">${eorgs.map(o=>`<span data-oid="${o.id}">${esc(o.name)}</span>`).join('')}</div>`;
   if(e.desc) h += `<div class="card"><q>${esc(e.desc)}</q></div>`;
   if(e.att.length){
     h += `<h3>Who was there (${e.att.length})</h3>` + e.att.map(([q,role])=>{
@@ -256,6 +310,7 @@ function selectEvent(eid){
   } else h += '<p class="empty">No attendees recorded.</p>';
   right.innerHTML = h; right.scrollTop = 0;
   right.querySelectorAll('.pl').forEach(el=>el.addEventListener('click',()=>select(+el.dataset.p)));
+  right.querySelectorAll('.orgchips span').forEach(el=>el.addEventListener('click',()=>selectOrg(+el.dataset.oid)));
   buildEventGraph(eid);
 }
 function buildEventGraph(eid){
@@ -267,6 +322,10 @@ function buildEventGraph(eid){
   const center=addNode(eid,'e',e.name,15); center.x=0;center.y=0;center.fixed=true;
   for(const [q] of e.att){ const op=P.get(q); if(!op)continue;
     const n=addNode(q,'p',op.name,8); links.push({s:center,t:n,w:3}); }
+  // orgs tied to this event
+  for(const oid of (EORG.get(eid)||[])){ const o=O.get(oid); if(!o)continue;
+    const on=addNode(oid,'o',o.name,11); links.push({s:center,t:on,w:3});
+    for(const m of o.members){ const k=nmap.get('p'+m); if(k) links.push({s:on,t:k,w:1,faint:true}); } }
   // link attendees who share other events/co-occurrences
   const ids=e.att.map(([q])=>q);
   for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
@@ -296,6 +355,11 @@ function buildGraph(pid){
   for(const {e} of (p.events||[]).map(x=>({e:E.get(x.e)})).filter(x=>x.e)){
     const en=addNode(e.id,'e',e.name,11); links.push({s:center,t:en,w:4});
     for(const [q] of e.att){ if(q===pid)continue; const k=nmap.get('p'+q); if(k) links.push({s:en,t:k,w:2}); } }
+  // organizations of this person
+  for(const oid of (PORG.get(pid)||[]).slice(0,10)){ const o=O.get(oid); if(!o)continue;
+    const on=addNode(oid,'o',o.name,10); links.push({s:center,t:on,w:3});
+    for(const m of o.members){ if(m===pid)continue; const k=nmap.get('p'+m); if(k) links.push({s:on,t:k,w:1,faint:true}); }
+    for(const eid2 of (o.events||[])){ const k=nmap.get('e'+eid2); if(k) links.push({s:on,t:k,w:2,faint:true}); } }
   // 2nd-degree light links among neighbors
   for(let i=0;i<nb.length;i++)for(let j=i+1;j<nb.length;j++){
     const w=(NBR.get(nb[i][0])||new Map()).get(nb[j][0]); if(w){
@@ -325,7 +389,7 @@ function draw(){
     ctx.beginPath();ctx.moveTo(l.s.x,l.s.y);ctx.lineTo(l.t.x,l.t.y);ctx.stroke(); }
   for(const n of nodes){
     ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);
-    ctx.fillStyle = n.fixed ? '#d4a24e' : (n.type==='e' ? '#b4552d' : '#4e8f83');
+    ctx.fillStyle = n.fixed ? '#d4a24e' : (n.type==='e' ? '#b4552d' : n.type==='o' ? '#8f7bb5' : '#4e8f83');
     ctx.fill();
     if(n.fixed){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
     const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
@@ -350,7 +414,8 @@ window.addEventListener('mousemove',e=>{
 window.addEventListener('mouseup',e=>{
   if(dragN && Math.abs(e.offsetX-px)<4 && Math.abs(e.offsetY-py)<4){
     if(dragN.type==='p') select(dragN.id);
-    else if(dragN.type==='e') selectEvent(dragN.id); }
+    else if(dragN.type==='e') selectEvent(dragN.id);
+    else if(dragN.type==='o') selectOrg(dragN.id); }
   if(dragN && !nodes[0]!==dragN) dragN.fixed = dragN===nodes[0];
   dragN=null;panning=false;cv.style.cursor='grab';});
 cv.addEventListener('wheel',e=>{e.preventDefault();
