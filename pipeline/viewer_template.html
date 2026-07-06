@@ -29,8 +29,8 @@ header .sub{color:var(--dim);font-size:12.5px;font-style:italic}
 #filters{display:flex;flex-wrap:wrap;gap:5px;margin:0 12px 8px}
 #filters .chip{font-size:10.5px;padding:3px 9px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--dim);cursor:pointer;font-family:Georgia}
 #filters .chip.on{background:#33290f;color:var(--gold);border-color:var(--gold)}
-#orgsel,#churchsel{margin:0 12px 8px;padding:7px 9px;width:calc(100% - 24px);background:var(--bg);border:1px solid var(--line);color:var(--ink);font:12.5px Georgia;border-radius:4px;outline:none}
-#orgsel:focus,#churchsel:focus{border-color:var(--gold)}
+#orgsel,#churchsel,#papersel{margin:0 12px 8px;padding:7px 9px;width:calc(100% - 24px);background:var(--bg);border:1px solid var(--line);color:var(--ink);font:12.5px Georgia;border-radius:4px;outline:none}
+#orgsel:focus,#churchsel:focus,#papersel:focus{border-color:var(--gold)}
 .orgchips{margin:6px 0 2px}
 .orgchips span{display:inline-block;font-size:11px;background:#2c261a;color:#c9ab6b;border-radius:9px;padding:2px 8px;margin:2px 3px 0 0;cursor:pointer}
 #center{flex:1;position:relative;min-width:0}
@@ -42,6 +42,8 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
 #resetbtn{position:absolute;top:8px;right:158px;background:var(--panel);border:1px solid var(--line);color:var(--dim);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer;display:none}
 #resetbtn:hover{border-color:var(--gold);color:var(--gold)}
+#densbtn{position:absolute;top:8px;right:276px;background:var(--panel);border:1px solid var(--line);color:var(--dim);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer;display:none}
+#densbtn:hover{border-color:var(--gold);color:var(--gold)}
 #legend span{margin-right:14px}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
 #right{width:400px;min-width:280px;max-width:760px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
@@ -79,6 +81,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span class="chip" data-f="c1838">1838 census</span>
       <span class="chip" data-f="c1847">1847 census</span>
     </div>
+    <select id="papersel"><option value="">All newspapers…</option></select>
     <select id="orgsel"><option value="">All organizations…</option></select>
     <select id="churchsel"><option value="">All churches (1838 census)…</option></select>
     <div id="plist"></div>
@@ -91,6 +94,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span><i class="dot" style="background:#b4552d"></i>event</span>
       <span><i class="dot" style="background:#d18aa8"></i>organization</span>
     </div>
+    <button id="densbtn" title="toggle between the core network and every last member">◐ Core network</button>
     <button id="resetbtn" title="unpin everything and relax the layout">↺ Reset layout</button>
     <button id="allbtn">⦿ All connections</button>
     <canvas id="cv"></canvas>
@@ -142,7 +146,14 @@ function renderList(q){
     const f = window._srcFilter||'all';
     const om = window._orgFilter ? new Set((DATA.orgs.find(o=>o.name===window._orgFilter)||{members:[]}).members) : null;
     const ch = window._churchFilter||null;
+    const pf = window._paperFilter||null;
+    const inPaper = p=>{
+      if(!pf) return true;
+      for(const m of (p.mentions||[])) if(m.i && m.i.startsWith(pf)) return true;
+      for(const x of (p.articles||[])){ const a=A.get(x.a); if(a && a.issue && a.issue.startsWith(pf)) return true; }
+      return false;};
     const pass = p=>{
+      if(!inPaper(p)) return false;
       if(om && !om.has(p.id)) return false;
       if(ch==='__none__'){ if(!(p.census||[]).some(NOCHURCH)) return false; }
       else if(ch && !(p.census||[]).some(c=>c.church===ch)) return false;
@@ -198,6 +209,20 @@ const orgsel = document.getElementById('orgsel');
   op.textContent=`${o.name} (${o.members.length})`; orgsel.appendChild(op);});
 orgsel.addEventListener('change',()=>{
   window._orgFilter = orgsel.value || null;
+  if(mode!=='p') setMode('p'); else renderList(search.value);});
+const papersel = document.getElementById('papersel');
+{ const pc = {};
+  for(const p of P.values()){
+    const codes = new Set();
+    for(const m of (p.mentions||[])) if(m.i) codes.add(m.i.split('_')[0]);
+    for(const x of (p.articles||[])){ const a=A.get(x.a); if(a&&a.issue) codes.add(a.issue.split('_')[0]); }
+    for(const c of codes) pc[c]=(pc[c]||0)+1; }
+  for(const [code,label] of Object.entries(PAPERS)){
+    if(!pc[code]) continue;
+    const op=document.createElement('option'); op.value=code;
+    op.textContent=`${label} (${pc[code]})`; papersel.appendChild(op); } }
+papersel.addEventListener('change',()=>{
+  window._paperFilter = papersel.value || null;
   if(mode!=='p') setMode('p'); else renderList(search.value);});
 const churchsel = document.getElementById('churchsel');
 const NOCHURCH = c => c.y===1838 && (!c.church || c.church==='0');
@@ -420,8 +445,10 @@ function tick(){
 }
 function buildFullGraph(){
   nodes=[]; links=[];
-  const nmap=new Map(), deg=new Map();
-  for(const [a,b,w] of DATA.edges){ deg.set(a,(deg.get(a)||0)+w); deg.set(b,(deg.get(b)||0)+w); }
+  const core = !window._mapAll;   // default: core network only
+  const nmap=new Map(), deg=new Map(), edgeCt=new Map();
+  for(const [a,b,w] of DATA.edges){ deg.set(a,(deg.get(a)||0)+w); deg.set(b,(deg.get(b)||0)+w);
+    edgeCt.set(a,(edgeCt.get(a)||0)+1); edgeCt.set(b,(edgeCt.get(b)||0)+1); }
   function addP(id){ if(nmap.has('p'+id))return nmap.get('p'+id);
     const p=P.get(id); if(!p)return null;
     const d=deg.get(id)||0;
@@ -429,6 +456,7 @@ function buildFullGraph(){
       x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('p'+id,n); nodes.push(n); return n;}
   for(const [a,b,w] of DATA.edges){
+    if(core && (edgeCt.get(a)<2 || edgeCt.get(b)<2) && w<2) continue;  // trim one-off co-occurrences
     const na=addP(a), nb=addP(b);
     if(na&&nb) links.push({s:na,t:nb,w:Math.min(w,4),faint:w<2});}
   for(const e of E.values()){ if(!e.att.length)continue;
@@ -442,7 +470,9 @@ function buildFullGraph(){
     const on={id:'o'+oi,type:'o',label:o.name,r:6+Math.min(9,Math.sqrt(o.members.length)),deg:o.members.length,
       org:o.name,x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nodes.push(on);
-    for(const q of o.members){ const pn=nmap.get('p'+q)||addP(q); if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
+    for(const q of o.members){
+      const pn = core ? nmap.get('p'+q) : (nmap.get('p'+q)||addP(q));  // core: orgs link only to people already on the map
+      if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
   // size people by their actual connection count; events and orgs stay uniform
   const lc = new Map();
   for(const l of links){ lc.set(l.s,(lc.get(l.s)||0)+1); lc.set(l.t,(lc.get(l.t)||0)+1); }
@@ -488,6 +518,12 @@ function buildFullGraph(){
   for(let it=0;it<160;it++) tick();
 }
 const allbtn=document.getElementById('allbtn');
+const densbtn=document.getElementById('densbtn');
+densbtn.addEventListener('click',()=>{
+  window._mapAll=!window._mapAll;
+  densbtn.textContent = window._mapAll ? '◑ Everyone' : '◐ Core network';
+  if(window._fullView) buildFullGraph();
+});
 const resetbtn=document.getElementById('resetbtn');
 resetbtn.addEventListener('click',()=>{
   if(!window._fullView) return;
@@ -499,6 +535,7 @@ allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
   resetbtn.style.display = window._fullView ? 'block' : 'none';
+  densbtn.style.display = window._fullView ? 'block' : 'none';
   document.getElementById('hint').textContent = window._fullView
     ? 'drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
     : 'drag to pan · scroll to zoom · click a node to navigate';
