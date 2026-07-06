@@ -150,6 +150,7 @@ const DATA = /*__DATA__*/null;
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
 const A = new Map(DATA.articles.map(a=>[a.id,a]));
+const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)'};
 const NBR = new Map(); // pid -> Map(pid -> weight)
 for (const [a,b,w] of DATA.edges){
   if(!NBR.has(a)) NBR.set(a,new Map()); if(!NBR.has(b)) NBR.set(b,new Map());
@@ -273,7 +274,6 @@ renderList('');
 
 // ---------- detail panel ----------
 const right = document.getElementById('right');
-const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)'};
 const ISSUE_LABEL = s=>{ if(!s) return ''; const [c,d]=s.split('_'); return (PAPERS[c]||c)+' — '+d; };
 const URLS = DATA.issueUrls||{};
 function srcLinks(slug,pg){
