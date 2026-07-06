@@ -26,6 +26,9 @@ Instructions for any Claude session continuing this project. Priority order: **P
 ## Census datasets (loaded)
 The DB contains `census_1838` (PAS census, 3,296 households), `census_1847` (SOFAAC, 4,284), `census_matches` (445 confirmed 1838↔1847 matches), and `census_links` (person↔household). ALL heads of household exist as `people` rows (source='census') unless they matched a Winch person unambiguously. Source files live in `../census/`. ORDER MATTERS each run: `import_census.py` (recreates census people) must run BEFORE `match_names.py` and `load_extractions.py`, else appearances reference deleted people ids. Full rebuild order: import_census.py → match_names.py → load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py.
 
+## Viewer changes — MANDATORY smoke test
+Before pushing ANY change to viewer_template.html, run `node pipeline/smoke_test.js <built index.html>`. It executes both script blocks with a stubbed DOM and fails on runtime errors (a TDZ ordering bug shipped on 2026-07-06 and blanked the site; syntax checks alone do not catch this class of error).
+
 ## Person merges
 `pipeline/merges.json` is the curated list of duplicate-person merges (e.g. "J. J. G. Bias" = "Bias, James J. G."). `apply_merges.py` applies it (idempotent): reassigns appearances/references/census links to the kept person, records the other spellings in `people.aliases`, dedupes appearances. It MUST run after the other imports (they recreate alias people) and before build_viewer. When Michiko identifies new duplicates, append a group to merges.json — never edit the DB by hand.
 
