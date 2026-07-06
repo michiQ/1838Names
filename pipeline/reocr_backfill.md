@@ -12,7 +12,7 @@ Pencil Pusher) — work top to bottom across runs.
 - [x] CA_1837-01-14
 - [x] CA_1837-01-21
 - [x] CA_1837-01-28
-- [ ] CA_1837-02-04
+- [x] CA_1837-02-04
 - [ ] CA_1837-02-11
 - [ ] CA_1837-02-18
 - [ ] CA_1837-02-22
@@ -46,4 +46,5 @@ Pencil Pusher) — work top to bottom across runs.
 
 ## Progress log
 - 2026-07-06: List seeded (116 issues / ~204 pages total pending). Backfilled CA_1837-01-07, 01-14, 01-21, 01-28 (16 pages) at 300dpi this session -- overwrote ocr_text/ in place, rebuilt (match_names -> load_extractions -> apply_merges -> find_merge_candidates -> build_viewer), pushed. ~188 pages remain (22 CA issues, 4 PF issues, 86 PP issues).
+- 2026-07-06 (7th scheduled run): Backfilled CA_1837-02-04 (4 pages) at 300dpi -- page 4 timed out at 300dpi even at 43s, dropped to 200dpi per the documented fallback and it completed in 32s. Overwrote ocr_text/CA_1837-02-04_p*.txt in place. ~184 pages remain (21 CA issues, 4 PF issues, 86 PP issues, plus new CA_1837-05-20/05-27/06-03/06-10/06-17 issues processed this run at native 300dpi so they never need backfill).
 - Note on OCR tool flakiness: the first `tesseract` call on a just-rendered 300dpi page consistently produces an empty file or errors ("Error during processing" / timeout) — an immediate retry on the same .pgm file succeeds reliably. Budget 2 tesseract attempts per page when estimating run time.
