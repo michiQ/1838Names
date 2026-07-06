@@ -104,6 +104,28 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
   <div id="right"><p class="empty">Select a person to see their newspaper appearances, writings, events, co-attendees, and Winch reference entry.</p></div>
 </div>
 <script>
+// new-version check: compare our build stamp against the server's every few minutes
+(function(){
+  const mine = (document.querySelector('header .sub')?.textContent.match(/build ([\d\- :]+)/)||[])[1];
+  if(!mine) return;
+  async function check(){
+    try{
+      const r = await fetch(location.pathname.endsWith('/') ? 'index.html' : location.pathname, {cache:'no-store'});
+      const t = await r.text();
+      const theirs = (t.match(/build ([\d\- :]+)/)||[])[1];
+      if(theirs && theirs !== mine && !document.getElementById('updbar')){
+        const b = document.createElement('div');
+        b.id='updbar';
+        b.style.cssText='position:fixed;bottom:14px;right:14px;background:#33290f;border:1px solid #d4a24e;color:#efe7d8;font:13px Georgia;padding:10px 16px;border-radius:8px;cursor:pointer;z-index:99;box-shadow:0 2px 12px rgba(0,0,0,.5)';
+        b.textContent = '↻ Newer data available — click to reload';
+        b.onclick = ()=>location.reload(true);
+        document.body.appendChild(b);
+      }
+    }catch(e){}
+  }
+  setTimeout(check, 30000);
+  setInterval(check, 5*60*1000);
+})();
 // resizable detail panel
 (function(){
   const right = document.getElementById('right'), split = document.getElementById('rsplit');
