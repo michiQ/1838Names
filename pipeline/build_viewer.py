@@ -82,11 +82,11 @@ for r in con.execute("SELECT * FROM appearances"):
     elif r["article_id"] and r["article_id"] in articles:
         people[pid]["articles"].append({"a": r["article_id"], "role": r["role"]})
     elif r["role"] in ("mentioned", "mentioned?"):
-        people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"],
-                                        "amb": 1 if r["role"].endswith("?") else 0})
-        if not r["role"].endswith("?"):
-            ctx_orgs(pid, r["context"])
-        if r["strength"] == 2 and not r["role"].endswith("?"):
+        if r["role"].endswith("?"):
+            continue  # ambiguous match (tied between >1 candidate person) -- too unreliable to show, drop entirely
+        people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"], "amb": 0})
+        ctx_orgs(pid, r["context"])
+        if r["strength"] == 2:
             cooc.setdefault((isl, r["page"]), set()).add(pid)
     else:  # agent/other roles without event
         people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"], "role": r["role"], "amb": 0})
