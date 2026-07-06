@@ -11,6 +11,9 @@ def norm(name):
 
 def main():
     con = sqlite3.connect(DB)
+    for col in ("issue_id INT", "page INT"):
+        try: con.execute(f"ALTER TABLE events ADD COLUMN {col}")
+        except sqlite3.OperationalError: pass
     con.execute("DELETE FROM articles"); con.execute("DELETE FROM events")
     con.execute("DELETE FROM appearances WHERE role != 'mentioned' AND role != 'mentioned?'")
     # index winch people by normalized "first last"
@@ -59,8 +62,8 @@ def main():
                             (pid, aid, "author", a["headline"], iid, a["page"], 2))
         for e in data.get("events", []):
             iid = issue_id(e["issue"])
-            cur = con.execute("INSERT INTO events(name, event_date, location, description) VALUES(?,?,?,?)",
-                (e["name"], e.get("date"), e.get("location"), e.get("description")))
+            cur = con.execute("INSERT INTO events(name, event_date, location, description, issue_id, page) VALUES(?,?,?,?,?,?)",
+                (e["name"], e.get("date"), e.get("location"), e.get("description"), iid, e["page"]))
             eid = cur.lastrowid
             for nm, role in e.get("attendees", []):
                 pid, was_winch = person_id(nm, e["issue"])

@@ -344,7 +344,7 @@ function selectEvent(eid){
   const e = E.get(eid); if(!e) return;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='e' && +r.dataset.id===eid));
   let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>`;
-  if(e.desc) h += `<div class="card"><q>${esc(e.desc)}</q></div>`;
+  if(e.desc) h += `<div class="card"><q>${esc(e.desc)}</q>${e.issue?`<div class="src">${ISSUE_LABEL(e.issue)}, p.${e.pg}${srcLinks(e.issue,e.pg)}</div>`:''}</div>`;
   if(e.att.length){
     h += `<h3>Who was there (${e.att.length})</h3>` + e.att.map(([q,role])=>{
       const op=P.get(q); if(!op) return '';

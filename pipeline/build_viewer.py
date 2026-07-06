@@ -46,7 +46,8 @@ issues = {r["id"]: {"slug": r["filename"], "date": r["issue_date"]}
           for r in con.execute("SELECT id, filename, issue_date FROM issues")}
 
 events = {r["id"]: {"id": r["id"], "name": r["name"], "date": r["event_date"],
-                    "loc": r["location"], "desc": r["description"], "att": []}
+                    "loc": r["location"], "desc": r["description"], "att": [],
+                    "issue": issues.get(r["issue_id"], {}).get("slug"), "pg": r["page"]}
           for r in con.execute("SELECT * FROM events")}
 
 articles = {r["id"]: {"id": r["id"], "hl": r["headline"], "au": r["author"], "ty": r["article_type"],
