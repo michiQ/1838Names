@@ -13,5 +13,45 @@
     "keep": "Gibbs, Mifflin Wistar",
     "aliases": ["Gibbs, M.W.", "M.W. Gibbs", "Mifflin Wistar Gibbs"],
     "note": "Mifflin Wistar Gibbs — Reconstruction-era Black lawyer/businessman/judge (Winch) = 'M.W. Gibbs' in the Edmonia Lewis dissertation. Confirmed by Michiko 2026-07-06."
+  },
+  {
+    "keep": "Bowers, John C.",
+    "aliases": ["John C. Bowers", "John Bowers", "BOWERS, JOHN C"],
+    "note": "John C. Bowers Jr. — sailmaker/tailor, St. Thomas organist, PA Anti-Slavery Society founding delegate, denied hotel service in Lancaster PA 1837 (Weekly Advocate, Feb 25 1837). Confirmed by Michiko 2026-07-06. NOTE: deliberately excludes 'Bowers, John' (no middle initial) -- that Winch record is his FATHER, John Bowers Sr., a clothier who died Oct 1844 (will names John C., Henrietta, and Thomas J. Bowers as executors/heirs) -- a different person, not merged."
+  },
+  {
+    "keep": "Bustill, Joseph Cassey",
+    "aliases": ["Joseph C. Bustill"],
+    "note": "Confirmed by Michiko 2026-07-06."
+  },
+  {
+    "keep": "Cornish, James",
+    "aliases": ["CORNISH, JAMES", "James Cornish"],
+    "note": "James Cornish the sailmaker, Pine below 10th / N. Hubbell St, St. Thomas church -- secretary of the June 1837 Bethel meeting protesting Black disenfranchisement (Col. Amer., June 10 1837). Confirmed by Michiko 2026-07-06. NOTE: excludes 'Cornish, James C.' / 'Cornish, James C' (21 Bonsall St, shoemaker) -- a different James Cornish; see separate group below."
+  },
+  {
+    "keep": "Cornish, James C.",
+    "aliases": ["Cornish, James C"],
+    "note": "A distinct James Cornish (the shoemaker, 21 Bonsall St, 1847 census) -- separated from the sailmaker James Cornish above after checking underlying census rows (different address/occupation). Not part of Michiko's 2026-07-06 confirmation list but merged as a clear, unambiguous duplicate found while verifying that batch."
+  },
+  {
+    "keep": "Cornish, Samuel E.",
+    "aliases": ["Cornish, Samuel"],
+    "note": "Samuel E. Cornish, the paper's founding editor. Confirmed by Michiko 2026-07-06."
+  },
+  {
+    "keep": "Dorsey, Thomas",
+    "aliases": ["Thomas J. Dorsey", "DORSEY, THOMAS"],
+    "note": "Thomas J. Dorsey the Philadelphia caterer -- escaped enslaved person from Maryland, aided by Robert Purvis, entertained Garrison and Douglass (Nat. Enq., Oct 29 1836). Confirmed by Michiko 2026-07-06. NOTE: a second, unrelated Winch record also named 'Dorsey, Thomas' (a boot/shoemaker at 36 North 6th, Register of Trades 1838) was renamed to 'Dorsey, Thomas (shoemaker)' to prevent it from being swept into this merge -- they are different people who shared an identical Winch entry name."
+  },
+  {
+    "keep": "Flamer, William",
+    "aliases": ["Flamer, William H"],
+    "note": "Confirmed by Michiko 2026-07-06."
+  },
+  {
+    "keep": "Glasgow, Jesse",
+    "aliases": ["Glasgow, Jesse E"],
+    "note": "Jesse E. Glasgow of Washington St -- PAS-educated, Agricultural & Mechanics Association shareholder, PA Equal Rights League advisory committee (1865). Confirmed by Michiko 2026-07-06. NOTE: deliberately excludes 'Glasgow, Jesse Jr.' -- a different, well-documented person (Banneker Institute member who emigrated to study in Scotland and died there of tuberculosis in 1860, per Winch's own note) who could not have served on an 1865 committee. Not merged."
   }
 ]
