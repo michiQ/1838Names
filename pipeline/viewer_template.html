@@ -276,10 +276,19 @@ renderList('');
 const right = document.getElementById('right');
 const ISSUE_LABEL = s=>{ if(!s) return ''; const [c,d]=s.split('_'); return (PAPERS[c]||c)+' — '+d; };
 const URLS = DATA.issueUrls||{};
+const JPEG_ISSUES = new Set(DATA.jpegIssues||[]);
 function srcLinks(slug,pg){
   if(!slug) return '';
-  let h = ` · <a href="pages/${slug}_p${pg}.jpg" target="_blank" title="open the scanned page">view page</a>`;
-  if(URLS[slug]) h += ` · <a href="${URLS[slug]}" target="_blank" title="full issue PDF on Google Drive">full issue</a>`;
+  let h = '';
+  if(JPEG_ISSUES.has(slug)){
+    h += ` · <a href="pages/${slug}_p${pg}.jpg" target="_blank" title="open the scanned page">view page</a>`;
+    if(URLS[slug]) h += ` · <a href="${URLS[slug]}" target="_blank" title="full issue PDF on Google Drive">full issue</a>`;
+  } else if(URLS[slug]) {
+    // no local page scans for this source (e.g. a born-digital document) -- link straight into the
+    // PDF at the cited page via Google Drive's #page= fragment, plus a plain link to the whole document.
+    h += ` · <a href="${URLS[slug]}#page=${pg}" target="_blank" title="open this page in the source document">view page</a>`;
+    h += ` · <a href="${URLS[slug]}" target="_blank" title="full document on Google Drive">full document</a>`;
+  }
   return h;
 }
 function esc(t){return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}

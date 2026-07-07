@@ -113,6 +113,13 @@ try:
 except FileNotFoundError:
     urls = {}
 
+# which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
+# any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
+import glob as _glob, os as _os
+PAGES_DIR = "/sessions/gracious-sleepy-ptolemy/mnt/Newspapers/1838 Names Database/pages"
+jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
+                      for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
+
 # census records per person
 def has_table(t):
     return con.execute("SELECT 1 FROM sqlite_master WHERE name=?", (t,)).fetchone()
@@ -181,6 +188,7 @@ data = {"people": list(people.values()),
         "articles": list(articles.values()),
         "edges": [[a, b, w] for (a, b), w in edges.items()],
         "issueUrls": urls,
+        "jpegIssues": jpeg_slugs,
         "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people]} for o in orgs_out]}
 
 import datetime
