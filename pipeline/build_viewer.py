@@ -3,8 +3,8 @@
 import sqlite3, json, re
 
 DB = "/tmp/black_metropolis.db"
-OUT = "/sessions/loving-determined-fermi/mnt/outputs/1838_black_metropolis_viewer.html"
-TPL = "/sessions/loving-determined-fermi/mnt/outputs/viewer_template.html"
+OUT = "/sessions/gracious-sleepy-ptolemy/mnt/outputs/1838_black_metropolis_viewer.html"
+TPL = "/sessions/gracious-sleepy-ptolemy/mnt/outputs/viewer_template.html"
 
 con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
@@ -22,7 +22,8 @@ ORG_RE = re.compile(
     r"Manager|Director|Steward|Founder|Delegate|Vestryman|Officer|Chaplain|Agent|Librarian|Counsellor)"
     r"s?,?\s+(?:of\s+|to\s+|at\s+|in\s+)?(?:the\s+)?"
     r"([A-Z][A-Za-z''&.\- ]{5,70}?(?:Society|Lodge|Church|Association|Assoc\.|Institute|League|"
-    r"Club|Union|Committee|Company|Academy|Beneficial|Masons|Grand Lodge|Conference|Convention|School))")
+    r"Club|Union|Committee|Company|Academy|Beneficial|Masons|Grand Lodge|Conference|Convention|School|"
+    r"College|Colony|Studio|Circle))")
 def org_clean(s):
     s = re.sub(r"\s+", " ", s).strip(" .,;-")
     s = re.sub(r"^(?:of|the|to|at|in)\s+", "", s, flags=re.I)
@@ -108,7 +109,7 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/loving-determined-fermi/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/sessions/gracious-sleepy-ptolemy/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
 
@@ -156,7 +157,7 @@ if has_table("newspaper_orgs"):
 # orgs from event attendance (event names are org-flavored)
 for e in events.values():
     for pid, _ in e["att"]:
-        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall", e["name"]):
+        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall|College|Academy|Colony|Studio|Circle", e["name"]):
             add_org(pid, e["name"])
 # finalize orgs: keep those with >=2 members
 orgs_out = []
