@@ -29,6 +29,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Brister, J.** (winch, 1 Winch refs) ↔ **Brister, James** (census, 2 census records)
 - [HIGH] **Bull, Francis** (winch, 1 Winch refs) ↔ **Bull, Francis T** (census, 1 census records)
 - [HIGH] **Bull, Francis J.** (winch, 1 Winch refs) ↔ **BULL, FRANCIS** (census, 1 census records)
+- [HIGH] **BUTLER, JOHN** (census, 2 appearances, 2 census records) ↔ **Butler, John H.** (newspaper, 1 appearances)
 - [HIGH] **Campbell, Joshua B.** (winch, 1 Winch refs) ↔ **Campbell, Joshua** (census, 1 census records)
 - [HIGH] **Campbell, Joshua E.** (winch, 3 Winch refs) ↔ **Campbell, Joshua** (census, 1 census records)
 - [HIGH] **Cannon, Rev. Noah C** (winch, 2 appearances, 2 Winch refs) ↔ **N. C. W. Cannon** (newspaper, 2 appearances)
@@ -123,4 +124,3 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Martin, J. Sella** (dissertation, 3 appearances) ↔ **Martin, Josiah** (census, 1 census records)
 - [HIGH] **Martin, J. Sella** (dissertation, 3 appearances) ↔ **Martin, James** (census, 1 census records)
 - [HIGH] **Martin, J. Sella** (dissertation, 3 appearances) ↔ **Martin, Joseph** (census, 1 census records)
-- [HIGH] **Mathews, C.** (winch, 2 Winch refs) ↔ **MATHEWS, CHARLOTTE** (census, 1 census records)
