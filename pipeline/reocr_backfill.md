@@ -34,6 +34,9 @@ Pencil Pusher) — work top to bottom across runs.
 - [ ] CA_1838-02-03
 - [ ] CA_1838-03-15
 - [ ] CA_1838-04-12
+- [ ] CA_1837-08-19 (only p1 is at 300dpi; p2 at 200dpi, p3/p4 at 100dpi -- sandbox was under heavy CPU load during the 2026-07-07 10th scheduled run and 300dpi tesseract calls kept timing out even after retries)
+- [ ] CA_1837-08-26 (all 4 pages at 100dpi, same load-driven fallback as above)
+- [ ] CA_1837-09-02 (all 4 pages at 100dpi, same load-driven fallback as above)
 
 ## Pennsylvania Freeman (4 issues, ~16 pages)
 - [ ] PF_1838-01-18
@@ -48,3 +51,4 @@ Pencil Pusher) — work top to bottom across runs.
 - 2026-07-06: List seeded (116 issues / ~204 pages total pending). Backfilled CA_1837-01-07, 01-14, 01-21, 01-28 (16 pages) at 300dpi this session -- overwrote ocr_text/ in place, rebuilt (match_names -> load_extractions -> apply_merges -> find_merge_candidates -> build_viewer), pushed. ~188 pages remain (22 CA issues, 4 PF issues, 86 PP issues).
 - 2026-07-06 (7th scheduled run): Backfilled CA_1837-02-04 (4 pages) at 300dpi -- page 4 timed out at 300dpi even at 43s, dropped to 200dpi per the documented fallback and it completed in 32s. Overwrote ocr_text/CA_1837-02-04_p*.txt in place. ~184 pages remain (21 CA issues, 4 PF issues, 86 PP issues, plus new CA_1837-05-20/05-27/06-03/06-10/06-17 issues processed this run at native 300dpi so they never need backfill).
 - Note on OCR tool flakiness: the first `tesseract` call on a just-rendered 300dpi page consistently produces an empty file or errors ("Error during processing" / timeout) — an immediate retry on the same .pgm file succeeds reliably. Budget 2 tesseract attempts per page when estimating run time.
+- 2026-07-07 (10th scheduled run): sandbox was unusually slow all session (load average climbed from ~4 to ~7 on a 4-core box over the course of the run); even repeated retries at 300/200/150dpi kept hitting the 45s wall on most pages, so the 3 new issues processed this run (CA_1837-08-19/08-26/09-02) were OCR'd mostly at 100dpi rather than the 300dpi default -- added to this backfill list above rather than skipped, since the intent of the backfill tracker is "every page ends up at 300dpi eventually," not just pre-2026-07-06 pages. Did not touch the pre-existing backfill queue this run (25 items were already pending; still 25 pending, now +3 more added at the bottom of the CA section). Total remaining: ~184 pre-existing pages (21 CA + 4 PF + 86 PP, unchanged) + 3 new issues (11 sub-300dpi pages) = effectively 28 CA/PF issues + 86 PP issues still need a 300dpi pass.
