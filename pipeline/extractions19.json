@@ -3,224 +3,314 @@
     {
       "issue": "CA_1837-08-19",
       "page": 1,
-      "headline": "William Yates, Esq.: 'Slavery and Colored People in Delaware' (Concluded)",
+      "headline": "Letter from William Yates, Esq.: Slavery and Colored People in Delaware (concluded)",
       "author": "William Yates, Esq.",
       "type": "correspondence / investigative report",
-      "summary": "Conclusion of Yates's investigative report on Delaware. Argues Delaware's discriminatory laws are self-defeating (driving away capital and skilled Black labor it depends on), quotes Delaware's 1767 manumission-law preamble condemning free Black people as 'idle and slothful,' and profiles successful free Black Delawareans as counter-evidence: two Francisco brothers who farmed as tenants and left for Ohio with $10,000 in savings; a Black mechanic who built half the houses in Camden and whose son, also a mason, has $1,000 credit; and the builder of Dover's largest hotel. Also reprints a companion letter 'Ministerial Neutrality' (signed 'T.', from the Herald of Freedom) rebuking clergy who decline to take an anti-slavery stand from the pulpit."
+      "summary": "Conclusion of Yates's investigative report on Delaware, examining the state's manumission statutes in detail (an 1810 law holding slaves promised future freedom as slaves 'in the mean time'; an 1767 law calling free Black people 'idle and slothful'), interviewing multiple white Delawareans about slavery's economic drag on the state, and profiling several free Black tradesmen of substance in Camden and Dover -- a brick mason with $1,000 credit, a hotel builder, and others -- as evidence Black residents could prosper if allowed. Includes a reprinted account from the Herald of Freedom on 'Ministerial Neutrality,' criticizing clergy who refuse to take an anti-slavery stand, and a remarkable eyewitness account (signed W. J. Wilson, a New York bootmaker) of a formerly enslaved Baptist minister, Frank Spence, in Nassau, New Providence (Bahamas), who built his own church with his own hands and earnings after purchasing freedom for himself and his family."
     },
     {
       "issue": "CA_1837-08-19",
-      "page": 1,
-      "headline": "A Colored Baptist Preacher at Nassau, Bahamas",
+      "page": 2,
+      "headline": "Broadway Tabernacle -- editorial on segregated pews and Black attendance",
       "author": null,
-      "type": "reprint (from a London-published narrative by a Mr. Sweeney)",
-      "summary": "Reprints a British traveler's account of meeting Frank Spence, a Black Baptist minister born enslaved in the southern United States who came to Nassau, New Providence as a youth. Spence built his own meeting-house by hand and with his own earnings (estimated at over £1,000 currency), and used his savings to purchase freedom for his wife ($300) and each of his children ($100 each). He preached three times each Sunday plus a weekday service and held daily 6am prayer meetings so his congregation could attend before work.",
-      "notes": "Corroborates the paper's recurring argument that free/self-emancipated Black people are capable of institution-building; useful comparison point to the Philadelphia 'Facts for the People' statistical series in the same issue's page 4."
+      "type": "editorial",
+      "summary": "The editor objects to seeing Black worshippers crowded into the southern tier of pews at Broadway Tabernacle, arguing Black New Yorkers should instead worship at their own churches or scatter thinly among many white congregations rather than concentrate visibly in one place and thereby reinforce the practice of separate/proscribed seating; frames the practice as spiritual oppression comparable to that of an earthly despot and urges gradual, dignified pressure for integration."
     },
     {
       "issue": "CA_1837-08-19",
       "page": 2,
-      "headline": "Thomas Van Rensalaer's reply in the H. Pattinson Temperance House affair",
-      "author": "Thomas Van Rensalaer (letter); editorial response by Samuel E. Cornish",
-      "type": "correspondence / rebuttal",
-      "summary": "Follow-up to the paper's exposé of Cornish being refused tea at H. Pattinson's Temperance House on account of color (reported in the Aug. 12 issue). Van Rensalaer writes to clear himself of the charge that he instigated the attack on Pattinson's business, stating he never discussed Pattinson with the editors before the article ran. A separate correspondent's letter recounts a slaveholding 'Squire Smith' who candidly told a friend he lets his slaves 'shift for themselves' once 'old and useless,' and that the friend's gentle remonstrance visibly struck Smith's conscience. The editors accept Van Rensalaer's account and print it 'as the fact in the case.'"
-    },
-    {
-      "issue": "CA_1837-08-19",
-      "page": 2,
-      "headline": "'Prejudice Among Ourselves' -- anti-colorism essay",
-      "author": "signed 'A Colored American'",
-      "type": "opinion essay",
-      "summary": "Argues against prejudice based on shade of complexion among Black people themselves, urging unity: 'That colored man who is prejudiced against another colored man on account of color, should never complain of the prejudices of the whites.' Praises the paper's chosen name 'Colored American' as a unifying term embracing all complexions in place of divisive labels like 'blacks and mulattoes,' which the writer says only serves the interests of those who wish to 'keep the colored people distracted and divided among themselves.' Dated Boston, August 1837; signed 'Your brother, John [illegible surname]' in the body, with the byline 'A Colored American.'"
-    },
-    {
-      "issue": "CA_1837-08-19",
-      "page": 2,
-      "headline": "'Another Good Example' -- Frederick A. Hinton and Sabbath observance",
-      "author": "unsigned correspondent, Philadelphia",
-      "type": "correspondence",
-      "summary": "Reports learning in Philadelphia that Frederick A. Hinton, hairdresser, has for a year now kept his shop closed on the Sabbath, following the earlier example of agent John B. Vashon of Pittsburgh (previously noted in the paper). The writer proposes to publish the names of other Black tradesmen, especially hairdressers, who adopt the same practice, to encourage more to 'Remember the Sabbath day, to keep it holy.'"
-    },
-    {
-      "issue": "CA_1837-08-19",
-      "page": 2,
-      "headline": "New York suffrage-petition organizing letter",
-      "author": "signed 'Thomas Van Rensalaer' (per byline at close of a related letter on the same page)",
-      "type": "correspondence / organizing report",
-      "summary": "Recounts New York City's suffrage petition campaigns to date -- roughly 200-300 signatures in Feb./March 1834, about 620 in the following year, plus companion petitions from Brooklyn, Albany, Troy, Oswego and Genesee counties -- and estimates that of an estimated ~300 Black New Yorkers holding the $250 freehold property required to vote, only about 50 are registered and perhaps 10 actually vote in a given year. Calls for a renewed, better-organized, simultaneous statewide petition campaign to the state legislature."
+      "headline": "Mr. Pattinson's Temperance Eating House -- Samuel Cornish denied tea on account of color; Thomas Van Rensselaer cleared of malicious-motive accusation",
+      "author": "editorial, with letter from Thomas Van Rensalaer",
+      "type": "editorial / correspondence / exposé",
+      "summary": "Follow-up coverage of the refusal of a cup of tea to a Black clergyman (the editor, Rev. S. E. Cornish) at H. Pattinson's Temperance Eating House, Cedar and Nassau Sts., New York, on account of color. The editor rebuts the charge that Thomas Van Rensalaer publicized the incident to injure Pattinson's business, printing Van Rensalaer's own letter (dated New York, August 20, 1837) denying he authored or motivated the original report and affirming he never discussed his principles with Pattinson beforehand. Additional correspondence weighs whether prejudice against color among Black people themselves (over shades of complexion) is a separate, under-discussed evil, and reprints a lengthy petition-organizing letter signed 'A Colored American' urging Rev. Cornish to keep exposing such incidents."
     },
     {
       "issue": "CA_1837-08-19",
       "page": 3,
-      "headline": "Public meeting on Black disenfranchisement -- officers and call to petition",
-      "author": "T. S. Sidney and Samuel Enals (signers); James Forten Sr. presiding",
-      "type": "circular / meeting notice",
-      "summary": "A circular addressed 'To the Colored Citizens of the State of [Pennsylvania]' (page badly OCR-degraded) reporting a public meeting organized to oppose the pending constitutional disenfranchisement of Black voters, with James Forten Sr. as President, Jacob C. White as Vice President, and James Forten Jr. and William Whipper as Secretaries; calls for petitions to the state legislature at its next session. Dated New York, August 1, 1837, and signed by Thomas S. Sidney and Samuel Enals -- the same New York committeemen active in the Phoenix Hall suffrage-organizing meetings reported in the Aug. 5/12 issues -- indicating New York activists' solidarity with the Philadelphia-centered fight against Pennsylvania's 1837-38 disenfranchisement convention."
+      "headline": "Moral Reform Convention -- Editor's Correspondence from Philadelphia",
+      "author": "editor (S. E. Cornish), datelined Philadelphia",
+      "type": "correspondence / convention report",
+      "summary": "The editor, visiting Philadelphia -- birthplace of Absalom Jones, Richard Allen, and other 'noble dead' -- reports on the opening of the American Moral Reform Convention, presided over by the venerable James Forten Sr. (President) and Jacob C. White (Vice President), with Robert Purvis, James Forten Jr., and William Whipper as Secretaries. Frames Pennsylvania's Black community as uniquely positioned near the South to demonstrate the injustice of slavery and the feasibility of emancipation."
+    },
+    {
+      "issue": "CA_1837-08-19",
+      "page": 3,
+      "headline": "A Call to Colored Young Men -- Philip A. Bell and Charles B. Ray to tour the Hudson River counties for suffrage organizing",
+      "author": null,
+      "type": "notice / circular",
+      "summary": "Announces that Philip A. Bell (proprietor) and Rev. Charles B. Ray (General Agent) will tour the towns and villages of the Hudson River border to organize colored young men on the urgent question of the 1821 disenfranchisement, calling a public meeting at the African Methodist Episcopal Church, New York, and listing an extensive roster of committee signers including Wm. A. Tyson, Chs. S. Sidney (Thomas S. Sidney), Samuel Miles, Wm. B. Solucon, Edward V. Clark, John J. Zuille, Francis Myers, Daniel J. Elston, Edward Gills, Timothy Seaman, Albro Lyons, Ulysses C. Vidal, Peter Guignon, Wm. J. Wilson, P. Vogelsang Jr., George Kissam, H. Highland Garnet, Thomas Harris, James P. Harris, Jeremiah Mitchell, and Chas. L. Reason, dated New York, August 1, 1837."
+    },
+    {
+      "issue": "CA_1837-08-19",
+      "page": 3,
+      "headline": "To the Colored Citizens of the State of New York -- Public Meeting resolution on the disfranchising property clause",
+      "author": null,
+      "type": "resolution / notice",
+      "summary": "Minutes of a Public Meeting of colored inhabitants of the City and County of New York, held August 9, 1837, resolving that the $250 unincumbered-real-estate property requirement imposed on Black (but not white) voters by the revised State Constitution is degrading and unjust, and pledging immediate measures to have the clause stricken."
     },
     {
       "issue": "CA_1837-08-19",
       "page": 4,
-      "headline": "'Facts for the People,' Nos. 1-8: statistical portrait of Black Philadelphia",
+      "headline": "\"Facts\" series on free Black Philadelphia's institutions, wealth, and taxation",
       "author": "signed 'C.'",
-      "type": "statistical series (continuation)",
-      "summary": "Continues a monthly statistical series rebutting claims that Black Philadelphians are a public burden: colored paupers relieved by the Guardians of the Poor are ~4% of the total despite being ~8.5% of the city's population; the city's Black community pays roughly $500/year more in taxes than it draws in poor relief; supports 55 Benevolent Societies (some incorporated) spending $10,000/year in mutual aid, ensuring no Black pauper is buried at public expense; maintains 15 churches (worth $172,000), 34 ministers, 17 Sabbath schools, a public library (~800 volumes), literary, Bible, moral-reform and temperance societies; pays ~$18,000/year rent and owns real estate worth $600,000 plus $226,000 in personal property among roughly two-thirds of the population surveyed; and reports 400-500 Black tradesmen/mechanics in the city and suburbs despite apprenticeship prejudice."
+      "type": "statistical essay series",
+      "summary": "A numbered series of statistical 'Facts' on free Black Philadelphians: fifteen churches worth $172,400 with 34 ministers, 17 Sunday schools, a public library of ~2,000 volumes plus 438 in private libraries, three debating societies, two Female Literary societies, two tract societies, two Bible societies, two temperance societies; annual house/ground/water rents and newspaper spending; 55 Beneficial Societies with combined mutual-aid funds; assertions that Black Philadelphians pay their own poor-relief costs and additional sums toward white poor relief; and profiles of individual self-made men (a formerly enslaved man who purchased freedom for himself and his wife and built a substantial Philadelphia property; another who bought his freedom twice after being cheated the first time)."
     },
     {
       "issue": "CA_1837-08-19",
       "page": 4,
-      "headline": "Endorsement of the Colored American by Theodore S. Wright and Gerrit Smith; Whipper's matching-fund pledge",
-      "author": null,
-      "type": "endorsement / fundraising notice",
-      "summary": "Rev. Theodore S. Wright and Gerrit Smith sign a printed endorsement recommending the Colored American, edited by Rev. S. E. Cornish, to abolitionists and especially to Black readers, citing confidence in the editor's abilities. On the same page, William Whipper's earlier pledge to be 'ONE OF A HUNDRED' subscribers giving $10 each toward the editor's salary is renewed with a call for others to match it."
-    },
-    {
-      "issue": "CA_1837-08-19",
-      "page": 4,
-      "headline": "Edward V. Clark succeeds Charles B. Ray as bootmaker",
-      "author": null,
-      "type": "business notice / advertisement",
-      "summary": "Advertisement for Edward V. Clark, 'successor to Mr. Charles B. Ray,' Boot and Shoemaker on Pearl Street, New York -- documenting that General Agent Rev. Charles B. Ray's original trade before his ministry/agency work was bootmaking, a business now carried on by Edward V. Clark (who appears elsewhere in this issue and the Sept. 2 issue as an officer of New York's new Young Men's Literary and Moral Reform Society)."
+      "headline": "Robert Banks, Buffalo agent, forwards $20 and reports a successful Aug. 1 Emancipation Day celebration",
+      "author": "Robert Banks",
+      "type": "correspondence / financial report",
+      "summary": "Buffalo agent Robert Banks writes (Aug. 2, 1837) that David Ruggles is en route to Buffalo, encloses $20 (including $5 each from Samuel T. Wilcox and Charles Williams for the editor's salary fund), and reports a delightful Aug. 1 British West India Emancipation celebration with a collection taken up for the paper."
     },
     {
       "issue": "CA_1837-08-26",
       "page": 1,
-      "headline": "On the constitutionality of Congress abolishing the slave trade and slavery in the District of Columbia",
+      "headline": "Reply to Clarksox: Slavery and the slave trade in the District of Columbia, authorized by Congress",
       "author": null,
-      "type": "political / constitutional essay",
-      "summary": "Heavily degraded OCR, but the essay argues at length for Congress's exclusive constitutional authority over the District of Columbia and therefore its power to abolish both the domestic slave trade and slavery there, reviewing precedents including an 1816 act restricting slave importation into the District. Notes President Martin Van Buren's pledge, 'out of respect to the wishes of slaveholders,' not to sign any bill abolishing slavery in the District."
+      "type": "editorial / constitutional argument",
+      "summary": "Extended constitutional argument rebutting Judge Cranch's claim that Congress does not license slave traders in Washington DC, tracing Maryland's and Virginia's 1788/1789 cession of the federal district, Congress's exclusive legislative jurisdiction over it, and a series of DC municipal ordinances (1802-1816) taxing and licensing the domestic slave trade, jailing free Black travelers, and whipping enslaved people for a fee -- concluding Congress bears direct moral and legal responsibility for slavery and the slave trade in the nation's capital. Quotes Vice President Richard M. Johnson's own 1820 speech (as a slaveholding Missouri-restriction opponent) conceding Congress's exclusive power to abolish slavery in DC."
+    },
+    {
+      "issue": "CA_1837-08-26",
+      "page": 1,
+      "headline": "Moral Reform Convention -- editorial critique of the Philadelphia Moral Reform Society",
+      "author": "editor (S. E. Cornish)",
+      "type": "editorial",
+      "summary": "Sharply critical follow-up on the American Moral Reform Convention in Philadelphia: praises individual leaders (James Forten Sr. as President; Robert Purvis and William Whipper singled out for character) but faults the Society itself as directionless, adopting 'vague' universal objects instead of concrete plans targeted at Black uplift, and reports internal disorder in the proceedings. Notes James Forten Jr. delivered a much-admired hour-plus address on education, and that John C. Bowers of Philadelphia and 'Mr. Cook of Washington City' both spoke on temperance."
     },
     {
       "issue": "CA_1837-08-26",
       "page": 2,
-      "headline": "Planning for a Moral Reform Convention -- Philadelphia's leading role",
-      "author": null,
-      "type": "notice / organizing report",
-      "summary": "Discusses plans (heavily OCR-degraded) for a Moral Reform Convention to bring together delegates from colored citizens in various states, with the writer arguing Philadelphia's 'brethren' occupy the most favorable position to lead the cause of moral reform given the city's institutional strength. Names William Whipper and James Forten in connection with the effort."
+      "headline": "ON DRESS -- letter signed 'Agnes', Bucks County",
+      "author": "Agnes",
+      "type": "correspondence / advice column",
+      "summary": "A mother in Bucks County, PA writes urging parents to dress children plainly and teach that merit, not clothing, confers respectability, illustrated with a fictionalized mother-and-children dialogue on conchology (shell science) as a model of instructive family conversation; includes a full didactic dialogue about a Nautilus shell specimen."
     },
     {
       "issue": "CA_1837-08-26",
       "page": 4,
-      "headline": "'Doctrines of Abolitionists' -- catechism (installment)",
+      "headline": "Anti-Slavery doctrinal essay: 'What are the Doctrines of Anti-Slavery Men' (Part 1)",
       "author": null,
-      "type": "doctrinal essay / catechism",
-      "summary": "A numbered catechism of abolitionist doctrine (paralleling the American Anti-Slavery Society declaration reprinted in the June 17 issue): (1) slavery is a sin and its perpetuation can never be politically right; (2) enslavers, not those who brought Africans to America generations ago, bear the guilt; (3) American slavery is a legalized wrong against both God and the enslaved; (4) the Bible requires immediate repentance of sin, so slaveholders should immediately cease holding slaves; (5) all people are born free, so the status of 'slave' is itself illegitimate regardless of law. Answers the recurring charge that abolitionists secretly favor 'amalgamation' (racial intermarriage) by denying the charge and turning it back on slaveholders, citing the widespread mixed-race enslaved population as evidence of exploitation by slaveholders themselves."
+      "type": "reprint (from the Alton Observer) / doctrinal essay",
+      "summary": "First installment of a systematic statement of abolitionist first principles: slavery as sin against God and the enslaved; the duty of immediate repentance/emancipation; the master's sole responsibility (not the original importers') for holding people in bondage; extensive quotation of pro-slavery Senator Calhoun's own property-rights language turned against him; and practical guidance that emancipation must be voluntary but abolitionists' role is to persuade, drawing an extended analogy to the temperance movement's persuasion-not-coercion model. Followed by a historical list of all U.S. Presidents, Vice Presidents, and cabinet officers to date, framed as a reference item."
     },
     {
       "issue": "CA_1837-09-02",
       "page": 1,
-      "headline": "'Important Meeting' -- Public meeting of colored young men of New York City, Aug. 21 1837",
+      "headline": "Public Meeting of the Colored Young Men of New York, Philomathean Hall -- suffrage organizing resolutions",
       "author": null,
-      "type": "meeting minutes / founding notice",
-      "summary": "Minutes of 'A Public Meeting of the Colored young men of the city of New York,' held August 21, 1837 at Philomathean Hall (corrected date/detail from a cleaner Google-Drive-indexed OCR pass of the source PDF, which reads noticeably better than this run's tesseract pass on several key names). Called to order by Edward V. Clark; Henry Seaman elected President; Edward V. Clark, Henry Highland Garnet, and Charles L. Reason elected Vice Presidents; J. Zuille among the Secretaries. On motion of Peter P. Simons, constitutional/procedural business was handled; on motion of Thomas S. Riley, a resolution pledged mutual support among 'the colored young men of the State' and called for simultaneous, organized petitioning of the Legislature; a further resolution (moved, per this run's own OCR pass, by a 'Daniel Elston') declared laws depriving colored citizens of suffrage 'wholly unconstitutional.' The meeting explicitly invokes Black New Yorkers' War of 1812 militia service on the northern frontier as grounds for their claim to full citizenship rights.",
-      "notes": "This appears to be the SAME founding meeting referenced by the adjacent society-constitution text on this page (see next entry), not a separate rival body -- both entries should probably collapse into one event; kept partly separate here because the page layout/OCR made the boundary between 'meeting minutes' and 'society constitution' text hard to pin down with certainty. Recommend a future pass re-reading the original PDF page image to confirm."
+      "type": "meeting minutes / resolutions",
+      "summary": "Full minutes of a meeting of colored young men of New York City held at Philomathean Hall, August 21, 1837, called to organize systematic annual petitioning for suffrage. Timothy Seaman elected President; Edward V. Clark, Henry Highland Garnet, and Charles L. Reason Vice Presidents; John J. Zuille and George Downing Secretaries. Resolutions moved by Peter P. Simons, Thomas S. Sidney, Henry Highland Garnet, and Daniel Elston invoke the War of 1812 service of Black New Yorkers as grounds for suffrage and establish a Standing Corresponding Committee of ten (Henry H. Garnet, Timothy Seaman, Wm. J. Wilson, Thomas Harris, P. P. Simons, John J. Zuille, T. S. Sidney, Chas. Reason, George Kissam, Peter Guignon) to coordinate petitioning statewide, plus ward-level committees. Also includes the constitution of the Young Men's Literary and Moral Reform Society of Pittsburgh (auxiliary to the American Moral Reform Society), founded Feb. 17, 1837, naming founders Zulacher Newman (President), Wm. J. Granly (Vice President), Orang Lewis (Recording Secretary), Martin R. Delany (Librarian), John N. Templeton (Corresponding Secretary), and counsellors Charles T. Williamson, John H. Butler, U. A. Johnson, Matthew Jones, Wm. Barley, Benjamin Jones, Edward Parker."
     },
     {
       "issue": "CA_1837-09-02",
       "page": 1,
-      "headline": "Constitution and founders' roster of a Literary and Moral Reform Society (New York-area, possibly Newburgh)",
-      "author": "letter signed John N. Templeton (Corresponding Secretary)",
-      "type": "constitution / founding circular",
-      "summary": "Full constitution of a new young men's Literary and Moral Reform Society, styled auxiliary to the American Moral Reform Society: membership open to men of good habits and respectability aged 18-35 on payment of 50 cents entrance and 12.5 cents monthly dues; governed by a President, Vice President, two Secretaries (Corresponding and Recording), and seven Counselors forming a Board of Managers; annual meeting the second Monday in May; monthly meetings the first Friday. A 'Founders of the Young Men's [Society]' list (corrected via the cleaner Drive-indexed OCR) names: Turner Newman, Wm. J. Grandy, Martin Delany, Orange Lewis, Matthew Jones, Edward Parker, Vincent A. Jolly, George Barker (or Parker -- OCR ambiguous), John N. Templeton, and John H. Butler. A cover letter (signed John N. Templeton, Corresponding Secretary) reports the society is new and small ('number at present only sixteen') and still building its library, but hopes to grow, and thanks the paper for giving voice to 'a people here [who] have life, liberty ... and a paper edited by a colored man.'",
-      "notes": "FLAG FOR MICHIKO: one of the ten founders is transcribed (in the cleaner Drive OCR pass) as 'Martin Delany' -- possibly Martin R. Delany (b. 1812), who would have been ~24-25 in 1837. His documented 1837 base was Pittsburgh (he co-founded Pittsburgh's Theban Literary Society c.1832-33 and did not launch The Mystery until 1843), so a Hudson Valley/NYC-area founding membership this early would be a notable addition to his biography if confirmed -- but this could equally be a different, unrelated Martin Delany. Recommend checking the original PDF image directly before treating this as a confirmed Delany appearance; loaded into the DB as a plain 'newspaper'-source person for now rather than matched to any existing Delany record."
-    },
-    {
-      "issue": "CA_1837-09-02",
-      "page": 1,
-      "headline": "General Agent Charles B. Ray's travel letter -- Troy, Newburgh, Poughkeepsie",
+      "headline": "Letter from General Agent Charles B. Ray -- steamboat tea-service discrimination on the Hudson",
       "author": "Rev. Charles B. Ray",
-      "type": "correspondence / travel journal",
-      "summary": "Ray (dateline Troy, N.Y., Aug. 10, 1837) describes departing New York by the steamer Champlin, stopping at Newburgh and Poughkeepsie to organize suffrage-petition committees, then arriving in Troy. Describes a Monday evening meeting of Troy's Black community at a Presbyterian church that went well, followed by a Tuesday evening meeting at the Seaman's Bethel where Ray addressed a mixed-race audience for an hour and ten minutes on the condition of Black Americans; reports a favorable impression made on the white attendees. Also describes a Wednesday morning walk to a hill overlooking Troy and the U.S. Arsenal with friends including 'Van Rens[selaer?]' (name partly illegible).",
-      "notes": "Embedded in or immediately adjacent to this letter (attribution to Ray uncertain due to OCR page-layout confusion) is a vivid first-person dialogue recounting being refused tea in a steamboat's main cabin and directed to eat with the deck hands in the kitchen -- the narrator declines to eat 'from necessity' this time and presses the point of principle with the boat's officers, who repeatedly defer responsibility up the chain of command ('the owner of the boat says...'). See separate article entry."
+      "type": "correspondence / travel journal / exposé",
+      "summary": "Charles B. Ray, traveling with Philip A. Bell aboard the steamboat James Madison to Newburgh (Aug. 15, 1837), recounts in detail being refused tea in the ship's cabin and told to eat in the kitchen with 'all persons of color'; after firm but polite insistence on 'principle,' the captain's representatives never relent. Ray continues on to Poughkeepsie, Troy (preaching at the Seamen's Bethel Church and a Presbyterian church, meeting Thomas Van Rensselaer and Wm. Yates), and describes visiting Mount Ida above Troy, before proceeding toward Albany and Utica; encloses 30 new subscriber names from Troy."
     },
     {
       "issue": "CA_1837-09-02",
       "page": 1,
-      "headline": "Steamboat cabin discrimination -- 'we are willing to wait, and eat at the second table'",
-      "author": "unsigned first-person narrator (likely embedded in or appended to C. B. Ray's travel letter on the same page)",
-      "type": "first-person narrative / discrimination account",
-      "summary": "A Black traveler and companion, aboard a steamboat, are told at teatime that they cannot be served in the cabin because 'all our deck hands eat in the kitchen, and all persons of color, generally... this is the general rule.' The narrator offers to wait and eat at a 'second table' rather than accept exclusion outright; successive crew members (a steward, then someone 'acting as captain') each defer the decision further up the chain -- 'the captain is not on board... you can see what he will say' -- ending without full resolution in the excerpt as printed. A close parallel to the Samuel Cornish/Pattinson's Temperance House incident reported two issues earlier."
+      "headline": "Letter from Agent John N. Templeton, Pittsburgh",
+      "author": "John N. Templeton",
+      "type": "correspondence",
+      "summary": "Templeton, corresponding secretary of the new Pittsburgh Young Men's Literary and Moral Reform Society (16 members), writes to Cornish pledging support for the paper as a unifying force for Black Americans."
     },
     {
       "issue": "CA_1837-09-02",
-      "page": 3,
-      "headline": "William Appo advertisement/notice",
-      "author": null,
-      "type": "business notice",
-      "summary": "A notice for William Appo (partial OCR: 'Wm. Appo, 15[2/3] Church St.') -- likely the Philadelphia-connected Black musician of the well-known Appo family (Joseph and William Appo played in the mixed Kemble orchestra at the Walnut St. Theatre in 1826, per the Pencil Pusher batch of extractions). Flag for merge-candidate review against the existing Winch/Pencil-Pusher Appo record(s)."
+      "page": 2,
+      "headline": "Letter from Philadelphia describing the Moral Reform Convention's internal fight over the word 'colored'",
+      "author": "unsigned, datelined Philadelphia, Aug. 21, 1837",
+      "type": "correspondence / convention exposé",
+      "summary": "A detailed insider account of the American Moral Reform Convention's committee report recommending the establishment of schools for the 'free people of color,' which was initially adopted but later reversed on a second vote (helped by a contested chair ruling) after objectors argued the designation 'colored' implied degradation and that the Society's work should extend to the white population too -- an internal ideological fight the correspondent calls disgraceful and 'blind and furious.'"
     },
     {
       "issue": "CA_1837-09-02",
-      "page": 3,
-      "headline": "Subscriber and agent correspondence -- George Cary (Cincinnati) and a Palmyra Quaker reader",
-      "author": "George Cary; unnamed Palmyra, NY correspondent",
-      "type": "correspondence / subscriptions",
-      "summary": "George Cary, the paper's Cincinnati, Ohio agent, writes with subscription business and general encouragement for the paper's cause. Separately, a Quaker correspondent from Palmyra, NY (dated in Quaker month-numeral style, '6th month') encloses $10 for six copies of the paper, one intended for 'Mr. [name garbled], (Colored) man of our village of much promin[ence]... who takes great interest in the success of thy paper.'"
+      "page": 2,
+      "headline": "Letter to the Editor from F. A. Hinton, Philadelphia, warning against dropping racial identity in reform work",
+      "author": "F. A. Hinton",
+      "type": "correspondence",
+      "summary": "Frederick A. Hinton writes that reformers who refuse to identify with 'the colored man' as such, rather than only with 'condition,' will fail, drawing parallels to Moses's identification with his enslaved people and to British abolitionists Chatham, Wilberforce, and Pitt who fought for changed condition, not changed color."
+    },
+    {
+      "issue": "CA_1837-09-02",
+      "page": 2,
+      "headline": "Cincinnati correspondence -- George Cary reports on subscription efforts and a Toronto visit",
+      "author": "George Cary",
+      "type": "correspondence / financial report",
+      "summary": "Cincinnati agent George Cary (Aug. 13, 1837) reports difficulty raising subscriptions amid tight money, mentions a recent visit to Toronto, Upper Canada, and hands off day-to-day agency work to a Mr. Wm. M. Jolson (successor to Cary as Liberator agent in Cincinnati), enclosing $20."
+    },
+    {
+      "issue": "CA_1837-09-02",
+      "page": 2,
+      "headline": "Troy meeting resolutions on Charles B. Ray's visit -- William Rich and Edward Bishop",
+      "author": "William Rich, Edward Bishop",
+      "type": "resolutions",
+      "summary": "Resolutions from a Troy meeting of the colored community (Aug. 21-22, 1837) welcoming Charles B. Ray's visit and Thomas Van Rensselaer's presence, pledging fifty new subscribers to the Colored American; signed by William Rich and Edward Bishop."
     },
     {
       "issue": "CA_1837-09-02",
       "page": 4,
-      "headline": "'Amalgamation -- Equal Privileges' (concluded) and a rescue involving Robert Purvis",
-      "author": null,
-      "type": "opinion essay / anecdote",
-      "summary": "Concludes a series rebutting the charge that abolitionists secretly favor interracial 'amalgamation,' arguing the charge is hypocritical given how common forced sexual exploitation of enslaved women by enslavers already is, evidenced by the mixed-race complexions common among the enslaved population under partus sequitur ventrem. Embedded in the same column is a brief, garbled anecdote describing a tense public confrontation (jeers, a horse and carriage, a crowd escorting someone to the edge of a village) in which 'the friendly hand of R. Purvis... immediately relieved him from this embarrassment' -- likely Robert Purvis intervening to protect or assist someone facing a hostile crowd, possibly connected to the fugitive-slave case reported immediately below in the same issue."
+      "headline": "Slave Case in Bucks County -- Basil Dorsey (alias Ephraim) discharged; Robert Purvis and David Paul Brown",
+      "author": "W. J. (correspondent), reprinted from the National Inquirer",
+      "type": "correspondence / court report",
+      "summary": "Detailed eyewitness account of the Doylestown, PA hearing (fall 1837) of alleged fugitive slave Basil Dorsey, alias Ephraim, claimed by T. Sollers of Maryland. Judge Fox ruled the claimant's proof of Maryland slave law inadmissible (an uncertified volume of statutes was rejected), and the claimant's request for a continuance was refused; Dorsey was ordered discharged amid a large, tense crowd. Robert Purvis is credited as chiefly responsible for the defense's vigilance and promptness (retaining counsel David Paul Brown pro bono); a wagon was waiting and Dorsey was spirited away amid cheers as the crowd escorted him from town."
     },
     {
-      "issue": "CA_1837-09-02",
+      "issue": "CA_1837-09-09",
+      "page": 1,
+      "headline": "A Plea for Poor Gospel Ministers",
+      "author": "'R.S.'",
+      "type": "correspondence / essay",
+      "summary": "An appeal for a benevolent society to support poor and aged Black clergy, describing the acute hardships of underpaid Black ministers (families in want, no institutional safety net) compared to white clergy, and calling on named philanthropists ('our Tappans, our Jays, and our Smiths') to help establish such a fund."
+    },
+    {
+      "issue": "CA_1837-09-09",
+      "page": 1,
+      "headline": "An Address on Non-Resistance to Offensive Aggression",
+      "author": "William Whipper, of Columbia, Pa.",
+      "type": "address (reprinted in full, part 1)",
+      "summary": "William Whipper's major pacifist address arguing non-resistance to physical aggression is consistent with reason, tracing the argument through classical and biblical exempla (Aristides, the Sermon on the Mount), condemning war generally (citing Thomas Dick's global casualty estimates) and urging Black Americans specifically to renounce violent self-defense/retaliation as inconsistent with true reform, framed as an installment to be continued."
+    },
+    {
+      "issue": "CA_1837-09-09",
+      "page": 2,
+      "headline": "Editorial: 'Increase of Prejudice' -- abolitionist consciousness-raising explained",
+      "author": null,
+      "type": "editorial",
+      "summary": "Argues that apparent 'increased' white prejudice since abolitionism's rise is not really an increase but the visible friction of Black Americans now asserting equality as a right rather than accepting paternalistic favors, comparing the psychological shift to Ottoman Turks' difficulty accepting a 'Christian Dog' as an equal, and citing personal experience of Dr. Spring's congregation as an example of conditional white tolerance predating abolitionism's moral clarity."
+    },
+    {
+      "issue": "CA_1837-09-09",
+      "page": 2,
+      "headline": "William Whipper's public letter defending the Moral Reform Society against editor Cornish's criticism",
+      "author": "William Whipper",
+      "type": "correspondence / rebuttal",
+      "summary": "Whipper's point-by-point rebuttal (dated Columbia, July 29, 1837) of Cornish's editorial criticism of the American Moral Reform Society, defending named leaders James Forten Sr., Joseph Cassey (Treasurer), Jacob C. White, John P. Burr, Robert Purvis, Rev. Morris Brown, Rev. Charles W. Gardner, Frederick A. Hinton, Joshua Brown, John B. Roberts, Stephen H. Gloucester, James McCrummill, Thomas Butler, and Daniel A. Payne as men of high character, arguing the Society's broad, universal objects (education, temperance, economy, peace, universal liberty) are deliberately not race-restricted, and that disorder at the Convention reflected participation by outside/allied delegates rather than the Society's own members. Cornish's blistering reply follows in the same issue, restating that the Society is 'UNWORTHY' of confidence until it defines concrete race-specific objects."
+    },
+    {
+      "issue": "CA_1837-09-09",
+      "page": 3,
+      "headline": "Return of Dr. James McCune Smith -- welcomed home from five years' medical study in Scotland",
+      "author": null,
+      "type": "editorial / homecoming notice",
+      "summary": "Warmly welcomes Dr. James McCune Smith back to New York after five years studying medicine in Scotland (Glasgow), praising his character and scholarship and calling on the city's physicians to extend him professional courtesy and patronage rather than perpetuate the prejudice that drove him to study abroad in the first place."
+    },
+    {
+      "issue": "CA_1837-09-09",
+      "page": 3,
+      "headline": "David Ruggles's monthly report to the New York Committee of Vigilance",
+      "author": "David Ruggles",
+      "type": "committee report / letter",
+      "summary": "Ruggles's letter (Aug. 1837) to the Chairman of the New York Committee of Vigilance, written from the country due to declining health, reports 19 cases relieved and 5 unresolved for lack of funds during the past month, includes a financial statement (receipts $32, expenses $54, balance against the treasury $22), and clarifies that William Dixon is not in the hands of 'a gang of desperadoes' as rumored but has retired to the country on his friends' advice."
+    },
+    {
+      "issue": "CA_1837-09-09",
       "page": 4,
-      "headline": "Fugitive slave case in Bucks County, PA (Doylestown)",
-      "author": "reprinted from the National Inquirer",
-      "type": "legal report",
-      "summary": "Reports a habeas corpus hearing at Doylestown, Bucks County, PA (dateline 'Doylestown, [Aug.] 10, 1837') before Judge Fox concerning a Maryland claimant's attempt to reclaim an alleged fugitive under Maryland slave law. The claimant's attorney argued for recognizing the Maryland statute; the court overruled the offered proof, finding the copy of the Maryland digest submitted was not properly authenticated and so could not be received as evidence in a Pennsylvania court, on the same principle that a Pennsylvania law digest could not be self-authenticating evidence in a Maryland court. The claimant's counsel then sought a continuance, which was contested."
+      "headline": "Farewell Dinner to Dr. James M'Cune Smith, Glasgow -- full toast and speech, reprinted from the Glasgow Chronicle",
+      "author": null,
+      "type": "reprint / speech transcript",
+      "summary": "Full account of a farewell dinner given to Dr. James McCune Smith by fellow students and friends at the Tontine Hotel, Glasgow, on his departure for America after completing his M.D. Chairman John Crawford's toast is followed by Smith's own extended, eloquent speech, in which he describes an earlier insult -- refusal of a cabin passage from the Broomielaw to New York by an American captain solely because of his complexion -- and thanks his Glasgow friends for demonstrating that such prejudice is not universal, vowing the honor will strengthen his resolve against American racial prejudice."
     }
   ],
   "events": [
     {
+      "issue": "CA_1837-08-19",
+      "page": 3,
+      "name": "American Moral Reform Convention -- Philadelphia, opening session",
+      "date": "1837-08-14",
+      "location": "Philadelphia, PA",
+      "description": "Opening session of the first annual meeting of the American Moral Reform Society's Convention, convened at 10 o'clock; James Forten Sr. presiding as President, Jacob C. White as Vice President, with Robert Purvis, James Forten Jr., and William Whipper as Secretaries.",
+      "attendees": [
+        ["James Forten Sr.", "President"],
+        ["Jacob C. White", "Vice President"],
+        ["Robert Purvis", "Secretary"],
+        ["James Forten Jr.", "Secretary"],
+        ["William Whipper", "Secretary"]
+      ]
+    },
+    {
+      "issue": "CA_1837-08-19",
+      "page": 3,
+      "name": "Public Meeting of Colored Citizens of New York -- suffrage property-clause resolutions",
+      "date": "1837-08-09",
+      "location": "New York City",
+      "description": "Public meeting of colored inhabitants of the City and County of New York resolving against the $250 unincumbered-real-estate voting requirement imposed uniquely on Black citizens under the revised State Constitution, and resolving to seek its repeal.",
+      "attendees": []
+    },
+    {
       "issue": "CA_1837-09-02",
       "page": 1,
-      "name": "Public Meeting of the Colored Young Men of the City of New York",
+      "name": "Public Meeting of the Colored Young Men of the City of New York -- Philomathean Hall",
       "date": "1837-08-21",
       "location": "Philomathean Hall, New York City",
-      "description": "New York City's Black young men hold a public meeting combining self-improvement (a Literary and Moral Reform Society, library) with active suffrage-petition organizing, explicitly invoking Black New Yorkers' War of 1812 militia service as grounds for citizenship claims, and calling on young Black men of the Hudson River towns and Long Island to organize parallel petitions to the state legislature against Pennsylvania-style disenfranchisement.",
+      "description": "Meeting to organize a statewide effort by colored young men to petition the Legislature for suffrage; established a Standing Corresponding Committee of 10 and passed resolutions invoking Black veterans' War of 1812 service.",
       "attendees": [
-        ["Clark, Edward V.", "called meeting to order; Vice President"],
-        ["Seaman, Henry", "President"],
-        ["Garnet, Henry Highland", "Vice President"],
-        ["Reason, Charles L.", "Vice President"],
-        ["Zuille, J.", "Secretary"],
-        ["Simons, Peter P.", "moved constitutional/procedural business"],
-        ["Riley, Thomas S.", "moved the pledge/petitioning resolution"],
-        ["Elston, Daniel", "moved a resolution on unconstitutionality of disenfranchisement (per this run's own OCR pass)"]
+        ["Timothy Seaman", "President"],
+        ["Edward V. Clark", "Vice President"],
+        ["Henry Highland Garnet", "Vice President"],
+        ["Charles L. Reason", "Vice President"],
+        ["John J. Zuille", "Secretary"],
+        ["George Downing", "Secretary"],
+        ["Peter P. Simons", "resolution mover"],
+        ["Thomas S. Sidney", "resolution mover, Standing Committee"],
+        ["Daniel Elston", "resolution mover"],
+        ["Wm. J. Wilson", "Standing Committee"],
+        ["Thomas Harris", "Standing Committee"],
+        ["George Kissam", "Standing Committee"],
+        ["Peter Guignon", "Standing Committee"]
       ]
     },
     {
       "issue": "CA_1837-09-02",
       "page": 1,
-      "name": "Founding of a Literary and Moral Reform Society (New York-area)",
-      "date": "1837",
-      "location": "New York State (Newburgh area; exact town uncertain)",
-      "description": "A new young men's society (18-35 years old, 50-cent entrance, 12.5-cent monthly dues) organized as an auxiliary of the American Moral Reform Society, with a constitution establishing a President, Vice President, two Secretaries, and a seven-member Board of Counselors; annual meeting each May, monthly meetings the first Friday. Membership only sixteen at time of writing.",
+      "name": "Founding of the Young Men's Literary and Moral Reform Society of Pittsburgh",
+      "date": "1837-02-17",
+      "location": "Pittsburgh, PA",
+      "description": "Founding of a young men's literary and moral reform society in Pittsburgh, auxiliary to the American Moral Reform Society, adopting a constitution and electing officers; initial membership of 16.",
       "attendees": [
-        ["Templeton, John N.", "Corresponding Secretary"],
-        ["Newman, Turner", "founding member"],
-        ["Grandy, Wm. J.", "founding member"],
-        ["Delany, Martin", "founding member -- possibly Martin R. Delany; UNCONFIRMED, flagged for review"],
-        ["Lewis, Orange", "founding member"],
-        ["Jones, Matthew", "founding member"],
-        ["Parker, Edward", "founding member"],
-        ["Jolly, Vincent A.", "founding member"],
-        ["Barker, George", "founding member"],
-        ["Butler, John H.", "founding member"]
+        ["Zulacher Newman", "President"],
+        ["Wm. J. Granly", "Vice President"],
+        ["Orang Lewis", "Recording Secretary"],
+        ["Martin R. Delany", "Librarian"],
+        ["John N. Templeton", "Corresponding Secretary"],
+        ["Charles T. Williamson", "Counsellor"],
+        ["John H. Butler", "Counsellor"],
+        ["U. A. Johnson", "Counsellor"],
+        ["Matthew Jones", "Counsellor"],
+        ["Wm. Barley", "Counsellor"],
+        ["Benjamin Jones", "Counsellor"],
+        ["Edward Parker", "Counsellor"]
       ]
     },
     {
       "issue": "CA_1837-09-02",
       "page": 4,
-      "name": "Fugitive slave habeas hearing, Doylestown (Bucks County), PA",
-      "date": "1837-08-10",
-      "location": "Doylestown, Bucks County, PA",
-      "description": "Habeas corpus hearing before Judge Fox on a Maryland claimant's attempt to recover an alleged fugitive slave; the court ruled the claimant's proof of Maryland slave law inadmissible for lack of proper authentication of the statute-book copy offered. Robert Purvis appears to have assisted the accused/community in a related public confrontation described in the same issue.",
+      "name": "Bucks County fugitive slave hearing -- Basil Dorsey (alias Ephraim) discharged",
+      "date": "1837-09-01",
+      "location": "Doylestown, PA (Bucks County courthouse)",
+      "description": "Hearing before Judge Fox on the claim of T. Sollers of Maryland to Basil Dorsey, alias Ephraim, as a fugitive slave; the claimant's proof of Maryland slave law was ruled inadmissible and Dorsey was ordered discharged amid a large crowd. Robert Purvis organized the defense (retaining David Paul Brown pro bono) and arranged Dorsey's departure from town.",
       "attendees": [
-        ["Purvis, Robert", "assisted (per adjacent anecdote)"]
+        ["Basil Dorsey", "defendant / fugitive slave claimant"],
+        ["Robert Purvis", "organizer of defense"],
+        ["David Paul Brown", "defense counsel"],
+        ["Judge Fox", "presiding judge"]
+      ]
+    },
+    {
+      "issue": "CA_1837-09-09",
+      "page": 4,
+      "name": "Farewell dinner for Dr. James M'Cune Smith -- Tontine Hotel, Glasgow",
+      "date": "1837-06-02",
+      "location": "Tontine Hotel, Glasgow, Scotland",
+      "description": "Farewell dinner given by fellow students and friends to Dr. James McCune Smith on completing his M.D. at the University of Glasgow and departing for New York; chaired by John Crawford, Esq., with toasts and speeches praising Smith and denouncing American racial prejudice.",
+      "attendees": [
+        ["James McCune Smith", "honoree"],
+        ["John Crawford", "chairman"]
       ]
     }
   ],
