@@ -2,9 +2,9 @@
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
 import sqlite3, json, re
 
-DB = "/tmp/black_metropolis.db"
-OUT = "/tmp/1838_black_metropolis_viewer.html"
-TPL = "/sessions/inspiring-vibrant-albattani/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
+DB = "/tmp/bm/black_metropolis.db"
+OUT = "/tmp/bm/1838_black_metropolis_viewer.html"
+TPL = "/sessions/jolly-optimistic-brown/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
 
 con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
@@ -109,14 +109,14 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/inspiring-vibrant-albattani/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/sessions/jolly-optimistic-brown/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
 
 # which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
 # any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
 import glob as _glob, os as _os
-PAGES_DIR = "/sessions/inspiring-vibrant-albattani/mnt/Newspapers/1838 Names Database/pages"
+PAGES_DIR = "/sessions/jolly-optimistic-brown/mnt/Newspapers/1838 Names Database/pages"
 jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
                       for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
 
