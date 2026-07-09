@@ -3,7 +3,7 @@
 import sqlite3, json, glob, re, unicodedata
 
 DB = "/tmp/bm/black_metropolis.db"
-EXT = "/sessions/jolly-optimistic-brown/mnt/Newspapers/1838 Names Database/pipeline/extractions*.json"
+EXT = "/sessions/cool-busy-hopper/mnt/Newspapers/1838 Names Database/pipeline/extractions*.json"
 
 def norm(name):
     n = unicodedata.normalize("NFKD", name).encode("ascii","ignore").decode()

@@ -1,0 +1,440 @@
+{
+  "articles": [
+    {
+      "issue": "CA_1837-12-16",
+      "page": 2,
+      "headline": "Extracts from Dr. Smith's Journal",
+      "author": "James McCune Smith",
+      "type": "travel journal",
+      "summary": "Continuation of Dr. James McCune Smith's shipboard journal of his 1837 Atlantic crossing (Sept. 5-8), describing the Irish steerage passengers straining for sight of home, a red-headed Scottish cabin passenger's homesick complaints, a nimble English boy sailor, a collision between the captain and the Englishman on deck, a glorious sunset over the ocean, sailors dancing to a fiddle in the bow (one nicknamed for his resemblance to Cooper's Long Tom Coffin), and the ship's arrival off Liverpool the night of Sept. 8, the city's gaslights glowing in the dark."
+    },
+    {
+      "issue": "CA_1837-12-16",
+      "page": 3,
+      "headline": "Great Meeting -- public meeting mourning Rev. Elijah P. Lovejoy",
+      "author": null,
+      "type": "notice",
+      "summary": "Notice of a public meeting of citizens of color at the Presbyterian church, corner of Frankfort and William streets, to express sympathy with the widow and orphans of the late Rev. Elijah P. Lovejoy; addresses announced by Revs. J. T. Raymond, J. Richardson, S. E. Cornish, T. S. Wright and others, with a collection to be taken for the widow and orphans."
+    },
+    {
+      "issue": "CA_1837-12-16",
+      "page": 3,
+      "headline": "A Classical Scholar -- notice of Dr. J. McC. Smith's Adelphi address",
+      "author": null,
+      "type": "editorial note",
+      "summary": "Reprinted United States Gazette item praising the address delivered at the Adelphi by Dr. J. McCune Smith of New York (educated at the University of Glasgow) on the importance of classical and mathematical studies, comparing him to Pitt, Fox, Burke, and Lord Brougham as classically trained orators; closes by noting Daniel Webster is also a classical scholar."
+    },
+    {
+      "issue": "CA_1837-12-16",
+      "page": 4,
+      "headline": "Shocking Outrage -- kidnapping of Gabriel Johnson's wife near Ripley, Ohio",
+      "author": null,
+      "type": "news account",
+      "summary": "Four armed men (Plummer Thomas, James Fox son of Arthur Fox Esq. of Kentucky, and Peyton Huff and \"Cruet\" of Mowerytown, Highland Co., Ohio) seized the wife of Gabriel Johnson, a free colored man near Ripley, Ohio, whipped her to force submission, and dragged her to Kentucky under the false pretext she was Fox's father's slave; she was instead sent to Washington jail as a runaway. Huff and Cruet were arrested by Ohio civil authorities; Kentuckians attempted an armed rescue of Cruet from custody but were repelled. Citizens of Ripley praised for restraint and a fair trial."
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 2,
+      "headline": "Philadelphia Library Company of Colored Persons -- invitation to Dr. J. McCune Smith",
+      "author": null,
+      "type": "meeting proceedings",
+      "summary": "Special meeting of the Philadelphia Library Company of Colored People at Hains-St. Hall, S. C. Bowers presiding and J. C. White Secretary pro tem, resolved to invite Dr. J. McCune Smith of New York to visit Philadelphia and deliver lectures on the fallacy of Phrenology and on Education. F. A. Hinton addressed the meeting. A ten-member committee was appointed to extend the invitation and make arrangements. Dated Philadelphia, Nov. 20, 1837."
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 2,
+      "headline": "Moral Work for Colored Men (letter, Augustine)",
+      "author": "Augustine",
+      "type": "opinion letter",
+      "summary": "Letter from the recurring Pittsburgh correspondent \"Augustine,\" dated Dec. 7, 1837, arguing for organizing and concentrating the moral and pecuniary power of the free colored people of the United States; weighs numbers, means, and qualification, and lays out the financial case for a national organization (60,000 able-bodied men contributing 25 cents annually), before advocating a national Convention as the best vehicle over a Society."
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 2,
+      "headline": "A Dream",
+      "author": "L. J. G.",
+      "type": "allegory",
+      "summary": "First-person allegorical dream narrative in which the writer imagines himself a hereditary slaveholder confronted by scripture and conscience, ultimately freeing and dividing his estate among his enslaved people as brethren; travels to a city (implicitly a Northern city) expecting to find abolitionist practice matching preaching, but is disillusioned to find Black communicants segregated in the church gallery on communion day."
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 3,
+      "headline": "A Great Man has Fallen -- editorial on the Lovejoy meeting",
+      "author": null,
+      "type": "editorial",
+      "summary": "Editorial praising the spirit of the Dec. 18, 1837 Lovejoy memorial meeting at Rev. T. S. Wright's church, citing the prayer of Rev. J. Richardson, statements of Rev. T. S. Wright, and address of Rev. J. T. Raymond; reports $60 collected for the widow and orphans of Lovejoy, in addition to the sum raised at the Nov. 27 Tabernacle meeting."
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 3,
+      "headline": "Meeting of citizens of color to express sympathy for the widow and orphans of Rev. Elijah P. Lovejoy",
+      "author": null,
+      "type": "meeting proceedings",
+      "summary": "Full proceedings of the Dec. 18, 1837 meeting at the Presbyterian church, corner of Frankfort and William streets: Thomas Van Renselaer President; Henry Stoutenburgh and Thornton Kendle Vice-Presidents; Jacob Francis and William P. Johnson Secretaries. Addressed by Rev. J. T. Raymond, J. Richardson, S. E. Cornish, T. S. Wright, and Messrs. T. S. Sidney and James Fields; a letter from Rev. Joshua Leavitt (from the brother of the late Mr. Lovejoy) was read; choir conducted by George L. Phillips; $60 collected. Resolutions of condolence adopted and ordered published in the Liberator, Colored American, and Emancipator."
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 4,
+      "headline": "Preamble and Constitution of the Zion Baptist Anti-Slavery Society",
+      "author": null,
+      "type": "constitution",
+      "summary": "Full text of the Preamble and eight-article Constitution of the Zion Baptist Anti-Slavery Society (auxiliary to the American Anti-Slavery Society), submitted for publication by a correspondent to \"Brother Cornish\"; objects are emancipation of all slaves and enfranchisement of American citizens \"of the same or similar complexion to Euclid, Hannibal, Cyrus, Plato, Solon, Cyprian, Augustine, Tertullian, and Pythagoras.\""
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 4,
+      "headline": "Young Men's Wilberforce Debating Society -- resolutions on the murder of Elijah P. Lovejoy",
+      "author": null,
+      "type": "resolutions",
+      "summary": "At a meeting of the Young Men's Wilberforce Debating Society, New Bedford, held Dec. 6, 1837, resolutions were adopted mourning the murder of Elijah P. Lovejoy as an attack on the liberty of the press and freedom of speech, expressing sympathy for his widow, and calling for the resolutions to be published in the Boston Liberator and New York Colored American. Signed John Briggs, President, and Paul C. Howard, Secretary."
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 2,
+      "headline": "Wicked Conspiracy -- the Peter Paul Simons controversy",
+      "author": "Samuel E. Cornish",
+      "type": "editorial with reprinted address",
+      "summary": "Editor Cornish explains his refusal to publish, unedited, an address by Peter Paul Simons (delivered before the \"Rising Daughters of Wesley\" female society at Zion Church, Nov. 1837) because of its poor style, and reprints it verbatim along with two of Simons's angry letters after Simons circulated over fifty letters accusing Cornish and Philip A. Bell of complexion-based prejudice -- Simons alleging Bell said \"the mulatto persons\" have the most talent and \"ought to have the ascendancy,\" and that Robert Banks (whose Buffalo address was published) was favored over Simons because Simons was \"not of glasgow college, or of Degrasse's lineage.\""
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 2,
+      "headline": "The Turpin Legacy",
+      "author": null,
+      "type": "editorial",
+      "summary": "Editorial questioning the disposition of a legacy of $6,000-$32,000 left by the late Mr. Turpin \"for the education and benefit of colored people,\" which was given to the Female Asylum for Colored Orphans rather than the Phoenix Society, which the editors argue the donor (advised by Rev. Peter Williams and the editors) had intended, the money having been placed with Messrs. Corse, Tappan, and Jocelyn to found a classical school on the Manual Labor system."
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 2,
+      "headline": "Moral Work for Colored Men, letter IV",
+      "author": "Augustine",
+      "type": "opinion letter",
+      "summary": "Fourth installment of Augustine's series arguing for a national organization of free colored Americans; discusses who should compose a General Convention (self-selected voluntary founders followed by elected district delegates), and the utility of a Convention in developing national feeling, intellectual power, and self-respect. Dated Pittsburgh, Dec. 15, 1837."
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 3,
+      "headline": "First Annual Report of the Association for the Benefit of Colored Orphans",
+      "author": null,
+      "type": "annual report",
+      "summary": "First annual report of the Colored Orphan Asylum association, founded autumn 1836 after it was noted that three white orphan asylums existed in New York but none for colored children. A building on Twelfth Street near Sixth Avenue was purchased for $9,000, aided by a $1,000 grant from the Trustees of the Residuary Estate of the late Lindley Murray. Twenty-three children were in care as of the report (some half-orphans admitted on Half-Orphan Asylum terms); Dr. Macdonald provided gratuitous medical services; total seven-month expenditure was $234.03."
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 3,
+      "headline": "Names of the Ward Committees on the Right of Suffrage",
+      "author": null,
+      "type": "committee roster",
+      "summary": "Full roster of New York City Ward Committees (1st-16th Wards, 17th unfilled) appointed to obtain signatures for suffrage petitions to the state Legislature, naming roughly 40 individuals including W. A. Tyson, John Jackson, Nicholas Goldsbury (1st); Daniel Elston, J. C. Cowes, Thomas Vanrenselaer, Abm. Carpenter (2nd); Isaiah Graham, Z. S. Barbary, Thornton Kendle (3rd); T. L. Jinnings, Richard Augustus, Oliver Reason (4th); W. P. Johnson, Edward V. Clarke, Jacob Francis (5th); Thomas Zabiscoe, Charles Reason, Richard Dowes, Henry Davis (7th); Samuel Johnson, Wright Seaman (8th); Francis Bastien (9th); Charles Hicks, J. P. Richardson, Josiah E. Leanding (12th); William J. Wilson, Anthony Provost, Edward Marshall (13th); Edmund Crosby, Henry Sipkins, Thomas Sydney (14th); Samuel Hardenburg, Josiah Jackson (15th); Daniel Smith, Reuben Hogan, Nathan Lake (16th)."
+    },
+    {
+      "issue": "CA_1838-02-10",
+      "page": 2,
+      "headline": "The American Moral Reform Society -- Whipper/Cornish controversy continues",
+      "author": "William Whipper / Samuel E. Cornish",
+      "type": "controversy / constitution reprint",
+      "summary": "Continuing published debate between William Whipper (Columbia, Pa.) and editor Cornish over whether the American Moral Reform Society should organize on a race-neutral, \"national\" basis or focus definitely on the improvement of colored Americans; the full Preamble and eight-article Constitution of the American Moral Reform Society (founded per the fourth annual convention, Philadelphia) is reprinted."
+    },
+    {
+      "issue": "CA_1838-02-10",
+      "page": 3,
+      "headline": "Major Noah -- rebuke of Mordecai Noah's mockery of an acquitted colored woman",
+      "author": null,
+      "type": "editorial rebuttal",
+      "summary": "Reprints and rebuts an item from the Evening Star (edited by Mordecai M. Noah) mocking a colored woman acquitted of a kidnapping charge at an African church uptown, whom a hostile crowd tried to lynch at the watch-house before being scattered by an armed militia company. The Colored American identifies the mocked woman as \"an aged, christian philanthropist, who has given...more than two thousand dollars in charity\" and denounces Noah's cruelty."
+    },
+    {
+      "issue": "CA_1838-02-10",
+      "page": 4,
+      "headline": "To the Public -- Colored American Publishing Committee roster",
+      "author": null,
+      "type": "committee roster / statement",
+      "summary": "Statement explaining the Colored American's transfer from Philip A. Bell's sole proprietorship to a Committee of citizens, dated New York, Jan. 8, 1838, signed by Samuel E. Cornish, T. L. Jinnings (Chairman), Chas. B. Ray, John J. Washington, Ransom F. Wake, Isaiah Graham, William Wilkins, Joseph Harris, Philip A. Bell, Lewis H. Nelson, James Wallace, Joseph C. Brown, Morris Smith, Edward V. Clark, Henry Sipkins, Eli Hazzard, Richard Livingston, Zachariah S. Barbary, James R. Livingston, Richard Augustus, Jas. Hagerman, Wm. P. Johnson, George Lawrence, Thos. Downing, Thomas M. Jackson, Wm. A. Tyson, Anthony Gayle, Theodore S. Wright, and Dr. J. Brown (Secretary)."
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 2,
+      "headline": "Letter to Captain Bigley on the refusal of cabin passage to a colored gentleman (Dr. J. McCune Smith)",
+      "author": "John Murray",
+      "type": "open letter (reprint from Glasgow New Liberator)",
+      "summary": "Open letter from John Murray of Glasgow to Captain Bigley of the American brig Canonicus, published in the Glasgow New Liberator (May 1837), protesting Bigley's refusal to sell a cabin (as opposed to second-cabin) passage to New York to a young colored gentleman -- the unnamed applicant, elsewhere identified as the M.D. graduate of Glasgow University driven from New York by prejudice, is Dr. James McCune Smith. Murray argues at length that the refusal is unjust, anti-Christian, and un-Biblical, citing also the earlier case of Rev. Peter Williams of New York, similarly refused an American ship's cabin but received with honor by a British captain."
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 2,
+      "headline": "Letter from the Committee of the Glasgow Emancipation Society to James McCune Smith, M.D.",
+      "author": "John Murray and William Smeal",
+      "type": "farewell testimonial letter",
+      "summary": "Farewell letter from the Glasgow Emancipation Society Committee to Dr. James McCune Smith on his departure from Scotland to return to America, praising his character, scholarship, and role as an example refuting racial prejudice, and enrolling him as an Honorary Member of the Committee. Signed John Murray and William Smeal, Glasgow, June 1837."
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 2,
+      "headline": "Slander -- Committee of Investigation report on Mrs. Hester Lane",
+      "author": null,
+      "type": "meeting proceedings / committee report",
+      "summary": "Report of a public meeting of colored citizens at Asbury Church (Feb. 2, 1838, Samuel Hardenburgh Chairman, Edward V. Clark Secretary) reviewing the Jan. 26, 1838 Committee of Investigation report clearing Mrs. Hester Lane of allegations she had attempted to kidnap and sell into slavery a Mrs. Martha Johnson. The Committee of Investigation (chaired by E. Elston, with Thomas Downing, Samuel Hardenburgh, Peter Guignon, Wm. A. Tyson, Wm. Bryan, David Ruggles, and Revs. P. P. Grahams, E. Crosby, P. Isaacs, Wm. Cornish, and T. S. Wright; John Brown Secretary) found the charges malicious and false; Martha Johnson's signed statement (by mark) denying she ever charged Mrs. Lane is printed in full, along with resolutions of sympathy for Mrs. Lane."
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 3,
+      "headline": "A Friend Departed -- death of Charles Graham, Esq.",
+      "author": null,
+      "type": "obituary",
+      "summary": "Obituary of Charles Graham, Esq., a prominent white New York lawyer who died Feb. 12, 1838, aged 68; noted for having gratuitously drawn up the remonstrance presented to the 1821 New York Constitutional Convention against the disenfranchising property qualification imposed on colored voters. The New York bar adjourned its courts in his memory."
+    }
+  ],
+  "events": [
+    {
+      "issue": "CA_1837-12-16",
+      "page": 2,
+      "name": "Rev. Theodore S. Wright appointed Travelling Agent, American Anti-Slavery Society, New England",
+      "date": "1837-12",
+      "location": "New York",
+      "description": "The Executive Committee of the American Anti-Slavery Society appointed Rev. Theodore S. Wright of the First Colored Presbyterian Church, New York, a Travelling Agent of the Society for the New England States (the third such appointment offered to him), with a salary of $2,000 annually plus travel expenses.",
+      "attendees": [
+        ["Theodore S. Wright", "appointee"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-16",
+      "page": 4,
+      "name": "Kidnapping of Gabriel Johnson's wife near Ripley, Ohio",
+      "date": "1837-12",
+      "location": "near Ripley, Ohio",
+      "description": "Four armed Kentucky/Ohio men seized and whipped the wife of Gabriel Johnson, a free colored man, and dragged her to Kentucky under a false slavery claim; she was sent to Washington jail as a runaway. Two of the men (Huff, Cruet) were arrested by Ohio civil authorities after an evidentiary hearing; an armed Kentucky rescue attempt at Ripley was repelled.",
+      "attendees": [
+        ["Gabriel Johnson", "husband of the victim"],
+        ["Plummer Thomas", "kidnapper"],
+        ["James Fox", "kidnapper, son of Arthur Fox Esq."],
+        ["Peyton Huff", "kidnapper, arrested"],
+        ["Cruet", "kidnapper, arrested and jailed"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 2,
+      "name": "Philadelphia Library Company of Colored People special meeting inviting Dr. McCune Smith",
+      "date": "1837-11-20",
+      "location": "Hains-Street Hall, Philadelphia",
+      "description": "Special meeting of the Philadelphia Library Company of Colored People resolved to invite Dr. James McCune Smith of New York to Philadelphia to deliver lectures on Phrenology and Education, and appointed a ten-member committee to extend the invitation.",
+      "attendees": [
+        ["S. C. Bowers", "President"],
+        ["J. C. White", "Secretary pro tem"],
+        ["F. A. Hinton", "speaker"],
+        ["J. C. Bowers", "invitation committee"],
+        ["James Cornish", "invitation committee"],
+        ["J. G. Bias", "invitation committee"],
+        ["Stephen H. Gloucester", "invitation committee"],
+        ["R. C. Gordon Jr.", "invitation committee"],
+        ["James Needham", "invitation committee"],
+        ["William Reynolds", "invitation committee"],
+        ["Thomas Butler", "invitation committee"],
+        ["Jeremiah Bowers", "invitation committee"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 3,
+      "name": "New York meeting of citizens of color mourning Rev. Elijah P. Lovejoy",
+      "date": "1837-12-18",
+      "location": "Presbyterian church, corner of Frankfort and William streets, New York",
+      "description": "Large public meeting of colored citizens of New York to express sympathy with the widow and orphans of the murdered Elijah P. Lovejoy; addresses, a letter from Rev. Joshua Leavitt (from Lovejoy's brother), choir music, and $60 collected for the widow and orphans.",
+      "attendees": [
+        ["Thomas Van Renselaer", "President"],
+        ["Henry Stoutenburgh", "Vice-President"],
+        ["Thornton Kendle", "Vice-President"],
+        ["Jacob Francis", "Secretary"],
+        ["William P. Johnson", "Secretary"],
+        ["J. T. Raymond", "speaker"],
+        ["J. Richardson", "speaker"],
+        ["Samuel E. Cornish", "speaker"],
+        ["Theodore S. Wright", "speaker"],
+        ["Thomas S. Sidney", "speaker"],
+        ["James Fields", "speaker"],
+        ["George L. Phillips", "choir conductor"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 3,
+      "name": "Societe des Amis Reunis officer election",
+      "date": "1837-12-04",
+      "location": "New York",
+      "description": "Annual election of officers of the Societe des Amis Reunis; the society planned to celebrate its 4th anniversary on Dec. 25, 1837 at No. 72 Centre Street.",
+      "attendees": [
+        ["Theo. C. B. Videl", "President"],
+        ["Francis Myers", "Secretary"],
+        ["Peter Guignon", "Treasurer"],
+        ["Joseph Gaston", "Standing Committee"],
+        ["Elymas M. Reason", "Standing Committee"],
+        ["Adam K. Young", "Standing Committee"],
+        ["Ulysses B. Videl", "Standing Committee"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-23",
+      "page": 4,
+      "name": "Young Men's Wilberforce Debating Society meeting on the death of Elijah P. Lovejoy",
+      "date": "1837-12-06",
+      "location": "New Bedford, Massachusetts",
+      "description": "Meeting of the Young Men's Wilberforce Debating Society of New Bedford resolved to condemn the murder of Elijah P. Lovejoy as an assault on liberty of the press and free speech, and sent condolences to Mrs. Lovejoy.",
+      "attendees": [
+        ["John Briggs", "President"],
+        ["Paul C. Howard", "Secretary"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 2,
+      "name": "Peter Paul Simons address to the Rising Daughters of Wesley",
+      "date": "1837-11",
+      "location": "Zion's Church, New York",
+      "description": "Peter Paul Simons delivered an address before the female society \"Rising Daughters of Wesley\" at Zion's Church on the value of female benevolent societies; after the Colored American's editors declined to publish it as submitted, Simons circulated over fifty letters accusing editor Philip A. Bell and others of favoring lighter-complexioned (\"mulatto\") community members over darker-complexioned ones like himself.",
+      "attendees": [
+        ["Peter Paul Simons", "orator"],
+        ["Philip A. Bell", "accused of complexional favoritism"],
+        ["Frank Myers", "named in dispute"],
+        ["Robert Banks", "named in dispute (Buffalo address published for comparison)"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 3,
+      "name": "New York suffrage petition Ward Committees",
+      "date": "1837-12",
+      "location": "New York City (16 wards)",
+      "description": "Full published roster of Ward Committees appointed to circulate and collect signatures for petitions to the New York State Legislature for restoration of the colored right of suffrage.",
+      "attendees": [
+        ["W. A. Tyson", "1st Ward committee / overall chairman"],
+        ["John Jackson", "1st Ward committee"],
+        ["Nicholas Goldsbury", "1st Ward committee"],
+        ["Daniel Elston", "2nd Ward committee"],
+        ["Thomas Vanrenselaer", "2nd Ward committee"],
+        ["T. L. Jinnings", "4th Ward committee"],
+        ["Oliver Reason", "4th Ward committee"],
+        ["W. P. Johnson", "5th Ward committee"],
+        ["Edward V. Clarke", "5th Ward committee"],
+        ["Jacob Francis", "5th Ward committee"],
+        ["Charles Reason", "7th Ward committee"],
+        ["Francis Bastien", "9th Ward committee"],
+        ["William J. Wilson", "13th Ward committee"],
+        ["Edmund Crosby", "14th Ward committee"],
+        ["Henry Sipkins", "14th Ward committee"],
+        ["Thomas Sydney", "14th Ward committee"],
+        ["Samuel Hardenburg", "15th Ward committee"]
+      ]
+    },
+    {
+      "issue": "CA_1837-12-30",
+      "page": 3,
+      "name": "Colored Orphan Asylum -- First Annual Report",
+      "date": "1837-12",
+      "location": "Twelfth Street near Sixth Avenue, New York",
+      "description": "First annual report of the Association for the Benefit of Colored Orphans (founded autumn 1836), reporting purchase of a building for $9,000 (aided by a $1,000 grant from the Lindley Murray estate) and 23 orphans in care.",
+      "attendees": [
+        ["Dr. Macdonald", "attending physician (gratuitous services)"]
+      ]
+    },
+    {
+      "issue": "CA_1838-02-10",
+      "page": 3,
+      "name": "Young Men's suffrage petition meeting, Philomathean Hall",
+      "date": "1838-02",
+      "location": "Philomathean Hall, Duane Street, New York",
+      "description": "Public meeting of colored young men and others to call the attention of the Legislature by petition to the disfranchised condition of New York's colored citizens; correspondence between the Committee and a member of the Legislature to be read; petitions collected.",
+      "attendees": [
+        ["William J. Wilson", "Chairman"],
+        ["Charles L. Reason", "Secretary"]
+      ]
+    },
+    {
+      "issue": "CA_1838-02-10",
+      "page": 4,
+      "name": "Colored American Publishing Committee roster (To the Public)",
+      "date": "1838-01-08",
+      "location": "New York",
+      "description": "Formal statement and signed roster of the Committee of citizens who took over ownership and publication of the Colored American, explaining it as a non-profit organ of the colored people of the United States.",
+      "attendees": [
+        ["Samuel E. Cornish", "Editor / signer"],
+        ["Thomas L. Jinnings", "Chairman"],
+        ["Charles B. Ray", "signer / Publishing Agent"],
+        ["John J. Washington", "signer"],
+        ["Ransom F. Wake", "signer"],
+        ["Isaiah Graham", "signer"],
+        ["William Wilkins", "signer"],
+        ["Joseph Harris", "signer"],
+        ["Philip A. Bell", "signer"],
+        ["James Wallace", "signer"],
+        ["Joseph C. Brown", "signer"],
+        ["Morris Smith", "signer"],
+        ["Edward V. Clark", "signer"],
+        ["Henry Sipkins", "signer"],
+        ["Eli Hazzard", "signer"],
+        ["Richard Livingston", "signer"],
+        ["Zachariah S. Barbary", "signer"],
+        ["James R. Livingston", "signer"],
+        ["Richard Augustus", "signer"],
+        ["William P. Johnson", "signer"],
+        ["Thomas Downing", "signer"],
+        ["Thomas M. Jackson", "signer"],
+        ["William A. Tyson", "signer"],
+        ["Anthony Gayle", "signer"],
+        ["Theodore S. Wright", "signer"],
+        ["John Brown", "Secretary"]
+      ]
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 2,
+      "name": "Committee of the Glasgow Emancipation Society farewell to Dr. James McCune Smith",
+      "date": "1837-06",
+      "location": "Glasgow, Scotland",
+      "description": "The Glasgow Emancipation Society's Committee enrolled Dr. James McCune Smith, departing Glasgow for New York after completing his medical degree, as an Honorary Member, in a formal testimonial letter praising his character and scholarship.",
+      "attendees": [
+        ["James McCune Smith", "honoree"],
+        ["John Murray", "Committee signer"],
+        ["William Smeal", "Committee signer"]
+      ]
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 2,
+      "name": "Committee of Investigation into charges against Mrs. Hester Lane",
+      "date": "1838-01-26",
+      "location": "36 Lispenard Street, New York",
+      "description": "Committee of Investigation met to review allegations that Mrs. Hester Lane had attempted to kidnap Mrs. Martha Johnson and send her into slavery; took testimony from both women and concluded the charges were malicious and false.",
+      "attendees": [
+        ["E. Elston", "Chairman"],
+        ["Thomas Downing", "committee member"],
+        ["Samuel Hardenburgh", "committee member"],
+        ["Peter Guignon", "committee member"],
+        ["William A. Tyson", "committee member"],
+        ["William Bryan", "committee member"],
+        ["David Ruggles", "committee member"],
+        ["E. Crosby", "committee member (Rev.)"],
+        ["P. Isaacs", "committee member (Rev.)"],
+        ["William Cornish", "committee member (Rev.)"],
+        ["Theodore S. Wright", "committee member (Rev.)"],
+        ["John Brown", "Secretary"],
+        ["Hester Lane", "accused, cleared"],
+        ["Martha Johnson", "alleged victim, denied the charge"]
+      ]
+    },
+    {
+      "issue": "CA_1838-02-17",
+      "page": 2,
+      "name": "Public meeting on the Hester Lane / Martha Johnson slander case",
+      "date": "1838-02-02",
+      "location": "Asbury Church, New York",
+      "description": "Public meeting of colored citizens of New York to hear and adopt the Committee of Investigation's report clearing Mrs. Hester Lane of kidnapping allegations; resolutions of sympathy for Mrs. Lane adopted and the persons who circulated the false report declared guilty of public reproach.",
+      "attendees": [
+        ["Samuel Hardenburgh", "Chairman"],
+        ["Edward V. Clark", "Secretary"],
+        ["David Ruggles", "sent to fetch Martha Johnson"],
+        ["William A. Tyson", "sent to fetch Martha Johnson"]
+      ]
+    }
+  ]
+}
