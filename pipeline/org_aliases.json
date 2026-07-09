@@ -1,0 +1,22 @@
+[
+  {
+    "canonical": "Coachmen's Benevolent Society",
+    "aliases": ["Coachman's Benevolent Society"],
+    "note": "apostrophe-s vs s-apostrophe spelling variant. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "canonical": "A.M.E. Church",
+    "aliases": ["A. M. E. Church", "A.M. E. Church", "A.M.E Church"],
+    "note": "spelling/spacing/punctuation variants of African Methodist Episcopal Church. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "canonical": "Female Vigilant Committee",
+    "aliases": ["Female Vigilance Committee", "Female Vigilant Association"],
+    "note": "same organization despite 'Association'/'Committee' wording difference; canonical chosen as highest-count form. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "canonical": "Humane Mechanics Society",
+    "aliases": ["Humane Mechanics' Society"],
+    "note": "apostrophe variant. Confirmed by Michiko 2026-07-09."
+  }
+]

@@ -2,9 +2,25 @@
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
 import sqlite3, json, re
 
-DB = "/tmp/merge3/black_metropolis.db"
-OUT = "/tmp/merge3/1838_black_metropolis_viewer.html"
+DB = "/tmp/org1/black_metropolis.db"
+OUT = "/tmp/org1/1838_black_metropolis_viewer.html"
 TPL = "/sessions/charming-magical-davinci/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
+ORG_ALIASES = "/sessions/charming-magical-davinci/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
+
+# organization name normalization: fold known spelling/punctuation variants of the same
+# org into one canonical display name before counting/deduping. Curated by Michiko; see
+# org_aliases.json. Display-layer only -- does not touch the DB or any people/events tables.
+def _org_norm_key(s):
+    return re.sub(r"\s+", " ", s or "").strip().lower()
+ORG_ALIAS_LOOKUP = {}  # normalized variant/canonical string -> canonical display name
+try:
+    for group in json.load(open(ORG_ALIASES, encoding="utf-8")):
+        canon = group["canonical"]
+        ORG_ALIAS_LOOKUP[_org_norm_key(canon)] = canon
+        for alias in group.get("aliases", []):
+            ORG_ALIAS_LOOKUP[_org_norm_key(alias)] = canon
+except FileNotFoundError:
+    pass
 
 con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
@@ -33,6 +49,7 @@ org_members = {}  # org (canonical lower) -> {"label":..., "pids": set}
 def add_org(pid, raw):
     label = org_clean(raw)
     if len(label) < 6: return
+    label = ORG_ALIAS_LOOKUP.get(_org_norm_key(label), label)  # fold known spelling variants
     key = label.lower()
     e = org_members.setdefault(key, {"label": label, "pids": set()})
     e["pids"].add(pid)
