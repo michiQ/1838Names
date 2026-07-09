@@ -1,11 +1,26 @@
 #!/usr/bin/env python3
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
-import sqlite3, json, re
+import sqlite3, json, re, os
 
-import os
-DB = os.environ.get("BM_DB", "/tmp/black_metropolis.db")
-OUT = "/sessions/loving-determined-fermi/mnt/outputs/1838_black_metropolis_viewer.html"
-TPL = "/sessions/loving-determined-fermi/mnt/outputs/viewer_template.html"
+DB = os.environ.get("BM_DB", "/tmp/fj1/black_metropolis.db")
+OUT = "/sessions/optimistic-focused-goldberg/mnt/outputs/1838_black_metropolis_viewer.html"
+TPL = "/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
+ORG_ALIASES = "/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
+
+# organization name normalization: fold known spelling/punctuation variants of the same
+# org into one canonical display name before counting/deduping. Curated by Michiko; see
+# org_aliases.json. Display-layer only -- does not touch the DB or any people/events tables.
+def _org_norm_key(s):
+    return re.sub(r"\s+", " ", s or "").strip().lower()
+ORG_ALIAS_LOOKUP = {}  # normalized variant/canonical string -> canonical display name
+try:
+    for group in json.load(open(ORG_ALIASES, encoding="utf-8")):
+        canon = group["canonical"]
+        ORG_ALIAS_LOOKUP[_org_norm_key(canon)] = canon
+        for alias in group.get("aliases", []):
+            ORG_ALIAS_LOOKUP[_org_norm_key(alias)] = canon
+except FileNotFoundError:
+    pass
 
 con = sqlite3.connect(DB)
 con.row_factory = sqlite3.Row
@@ -23,31 +38,40 @@ ORG_RE = re.compile(
     r"Manager|Director|Steward|Founder|Delegate|Vestryman|Officer|Chaplain|Agent|Librarian|Counsellor)"
     r"s?,?\s+(?:of\s+|to\s+|at\s+|in\s+)?(?:the\s+)?"
     r"([A-Z][A-Za-z''&.\- ]{5,70}?(?:Society|Lodge|Church|Association|Assoc\.|Institute|League|"
-    r"Club|Union|Committee|Company|Academy|Beneficial|Masons|Grand Lodge|Conference|Convention|School))")
+    r"Club|Union|Committee|Company|Academy|Beneficial|Masons|Grand Lodge|Conference|Convention|School|"
+    r"College|Colony|Studio|Circle))")
 def org_clean(s):
     s = re.sub(r"\s+", " ", s).strip(" .,;-")
     s = re.sub(r"^(?:of|the|to|at|in)\s+", "", s, flags=re.I)
     s = re.sub(r"\s+(?:meeting|annual meeting|celebration)$", "", s, flags=re.I)
     return s
-org_members = {}  # org (canonical lower) -> {"label":..., "pids": set}
-def add_org(pid, raw):
+org_members = {}  # org (canonical lower) -> {"label":..., "pids": set, "src": {pid: source}}
+def _src_rank(s):  # newspaper page (linkable) > event > winch note
+    return 2 if "i" in s else (1 if "e" in s else 0)
+def add_org(pid, raw, src=None):
     label = org_clean(raw)
     if len(label) < 6: return
+    label = ORG_ALIAS_LOOKUP.get(_org_norm_key(label), label)  # fold known spelling variants
     key = label.lower()
-    e = org_members.setdefault(key, {"label": label, "pids": set()})
+    e = org_members.setdefault(key, {"label": label, "pids": set(), "src": {}})
     e["pids"].add(pid)
+    if src:
+        cur = e["src"].get(pid)
+        if cur is None or _src_rank(src) > _src_rank(cur):
+            e["src"][pid] = src
 
 for r in con.execute("SELECT person_id, note, citation FROM winch_references"):
     if r["person_id"] in people:
         people[r["person_id"]]["refs"].append({"n": r["note"], "c": r["citation"]})
         for m in ORG_RE.finditer(r["note"] or ""):
-            add_org(r["person_id"], m.group(1))
+            add_org(r["person_id"], m.group(1), {"w": 1})
 
 issues = {r["id"]: {"slug": r["filename"], "date": r["issue_date"]}
           for r in con.execute("SELECT id, filename, issue_date FROM issues")}
 
 events = {r["id"]: {"id": r["id"], "name": r["name"], "date": r["event_date"],
-                    "loc": r["location"], "desc": r["description"], "att": []}
+                    "loc": r["location"], "desc": r["description"], "att": [],
+                    "issue": issues.get(r["issue_id"], {}).get("slug"), "pg": r["page"]}
           for r in con.execute("SELECT * FROM events")}
 
 articles = {r["id"]: {"id": r["id"], "hl": r["headline"], "au": r["author"], "ty": r["article_type"],
@@ -59,7 +83,7 @@ ORG_CTX_RE = re.compile(
     r"(?:[A-Z][A-Za-z''&.\-]+[ ,]+){1,6}(?:Anti-Slavery Society|Society|Lodge|Church|Association|"
     r"Institute|League|Club|Committee|Convention|Conference|Academy|Library Company)")
 ORG_STOP = re.compile(r"\b(?:The|This|That|Whereupon|Resolved|Mr|Mrs|Rev|Dr|On|In|Of|At|And|A|An)[ ,]", )
-def ctx_orgs(pid, ctx):
+def ctx_orgs(pid, ctx, src=None):
     for m in ORG_CTX_RE.finditer(ctx or ""):
         s = m.group(0)
         # trim leading stop-words
@@ -69,7 +93,7 @@ def ctx_orgs(pid, ctx):
             else: break
         s = re.sub(r"[ ,]+", " ", s).strip(" .,;")
         if len(s.split()) >= 2 and len(s) >= 10 and not re.search(r"\d", s):
-            add_org(pid, s)
+            add_org(pid, s, src)
 
 # appearances
 cooc = {}  # (issue,page) -> set of pids (for mention co-occurrence)
@@ -83,11 +107,11 @@ for r in con.execute("SELECT * FROM appearances"):
     elif r["article_id"] and r["article_id"] in articles:
         people[pid]["articles"].append({"a": r["article_id"], "role": r["role"]})
     elif r["role"] in ("mentioned", "mentioned?"):
-        people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"],
-                                        "amb": 1 if r["role"].endswith("?") else 0})
-        if not r["role"].endswith("?"):
-            ctx_orgs(pid, r["context"])
-        if r["strength"] == 2 and not r["role"].endswith("?"):
+        if r["role"].endswith("?"):
+            continue  # ambiguous match (tied between >1 candidate person) -- too unreliable to show, drop entirely
+        people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"], "amb": 0})
+        ctx_orgs(pid, r["context"], {"i": isl, "p": r["page"]})
+        if r["strength"] == 2:
             cooc.setdefault((isl, r["page"]), set()).add(pid)
     else:  # agent/other roles without event
         people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"], "role": r["role"], "amb": 0})
@@ -108,9 +132,16 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/loving-determined-fermi/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
+
+# which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
+# any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
+import glob as _glob, os as _os
+PAGES_DIR = "/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pages"
+jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
+                      for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
 
 # census records per person
 def has_table(t):
@@ -150,19 +181,19 @@ if has_table("census_links"):
             p.setdefault("census", []).append(rec)
 # orgs found in newspaper text near a person's name (from match_names pass)
 if has_table("newspaper_orgs"):
-    for pid, org in con.execute("SELECT DISTINCT person_id, org FROM newspaper_orgs"):
-        if pid in people: add_org(pid, org)
+    for pid, org, isl, pg in con.execute("SELECT DISTINCT person_id, org, issue, page FROM newspaper_orgs"):
+        if pid in people: add_org(pid, org, {"i": isl, "p": pg})
 
 # orgs from event attendance (event names are org-flavored)
 for e in events.values():
     for pid, _ in e["att"]:
-        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall", e["name"]):
-            add_org(pid, e["name"])
+        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall|College|Academy|Colony|Studio|Circle", e["name"]):
+            add_org(pid, e["name"], {"e": e["id"]})
 # finalize orgs: keep those with >=2 members
 orgs_out = []
 for key, e in org_members.items():
     if len(e["pids"]) >= 2:
-        orgs_out.append({"name": e["label"], "members": sorted(e["pids"])})
+        orgs_out.append({"name": e["label"], "members": sorted(e["pids"]), "src": e["src"]})
 orgs_out.sort(key=lambda o: (-len(o["members"]), o["name"]))
 for o in orgs_out:
     for pid in o["members"]:
@@ -180,7 +211,9 @@ data = {"people": list(people.values()),
         "articles": list(articles.values()),
         "edges": [[a, b, w] for (a, b), w in edges.items()],
         "issueUrls": urls,
-        "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people]} for o in orgs_out]}
+        "jpegIssues": jpeg_slugs,
+        "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people],
+                  "src": {str(p): s for p, s in o["src"].items() if p in people}} for o in orgs_out]}
 
 import datetime
 tpl = open(TPL, encoding="utf-8").read()

@@ -40,10 +40,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 #allbtn{position:absolute;top:8px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer}
 #allbtn:hover{border-color:var(--gold)}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
-#mapbtns{position:absolute;top:44px;right:14px;display:none;gap:8px}
-#mapbtns button{background:var(--panel);border:1px solid var(--line);color:var(--dim);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer}
-#mapbtns button:hover{border-color:var(--gold);color:var(--gold)}
-#clusterbtn.on{background:#33290f;color:var(--gold);border-color:var(--gold)}
 #legend span{margin-right:14px}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
 #right{width:400px;min-width:280px;max-width:760px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
@@ -95,11 +91,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span><i class="dot" style="background:#d18aa8"></i>organization</span>
     </div>
     <button id="allbtn">⦿ All connections</button>
-    <div id="mapbtns">
-      <button id="clusterbtn" title="cluster people around their events or organizations">⊚ Group by: none</button>
-      <button id="densbtn" title="toggle between the core network and every last member">◐ Core network</button>
-      <button id="resetbtn" title="unpin everything and relax the layout">↺ Reset layout</button>
-    </div>
     <canvas id="cv"></canvas>
     <div id="hint">drag to pan · scroll to zoom · click a node to navigate</div>
   </div>
@@ -407,10 +398,16 @@ function selectOrg(name){
   h+=`<div style="margin:2px 0 6px;font-size:12.5px"><span class="pl" id="orgfilterbtn">filter the people list to this organization</span></div>`;
   if(mem.length){
     h+=`<h3>Members (${mem.length})</h3>`+mem.map(q=>{const op=P.get(q);
-      return `<div class="card"><span class="pl" data-p="${q}">${esc(op.name)}</span>${op.src==='winch'?' <span class="badge b-w">Winch</span>':''}</div>`;}).join('');
+      const s=(o.src||{})[q]; let sl='';
+      if(s&&s.i) sl=`<div class="src">${ISSUE_LABEL(s.i)}${s.p?', p.'+s.p:''}${srcLinks(s.i,s.p)}</div>`;
+      else if(s&&s.e&&E.get(s.e)){const ev=E.get(s.e);
+        sl=`<div class="src">from event: <span class="pl" data-e="${s.e}">${esc(ev.name)}</span>${ev.date?' · '+esc(ev.date):''}</div>`;}
+      else if(s&&s.w) sl=`<div class="src">named in Winch reference entry</div>`;
+      return `<div class="card"><span class="pl" data-p="${q}">${esc(op.name)}</span>${op.src==='winch'?' <span class="badge b-w">Winch</span>':''}${sl}</div>`;}).join('');
   } else h+='<p class="empty">No members on record.</p>';
   right.innerHTML=h; right.scrollTop=0;
-  right.querySelectorAll('.pl[data-p]').forEach(el=>el.addEventListener('click',()=>select(+el.dataset.p)));
+  right.querySelectorAll('.pl').forEach(el=>el.addEventListener('click',()=>{
+    if(el.dataset.e) selectEvent(+el.dataset.e); else if(el.dataset.p) select(+el.dataset.p);}));
   const fb=document.getElementById('orgfilterbtn');
   if(fb) fb.addEventListener('click',()=>{ orgsel.value=name; window._orgFilter=name;
     if(mode!=='p') setMode('p'); else renderList(search.value); });
@@ -513,32 +510,11 @@ function repulse(a,b){
 }
 function tick(){
   const SP = window._fullView ? 2.4 : 1;   // spacing multiplier for the full map
-  // cluster mode ("group by" button): each person is pulled tight to its strongest
-  // event ('e') or organization ('o') anchor; person-person springs are loosened so
-  // the anchor groupings win; anchors repel each other so clusters stay separated
-  const cm = window._fullView ? (window._cluster||null) : null;
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
-    let target=(60+240/(l.w+1))*SP, k=0.004*(l.faint?0.4:1);
-    if(cm){
-      const sp=l.s.type==='p'?l.s:null, tp=l.t.type==='p'?l.t:null;
-      if((sp && sp['anch_'+cm]===l.t) || (tp && tp['anch_'+cm]===l.s)){ target=80; k=0.02; }
-      else if(sp && tp) k*=0.25;
-      else k*=0.5;
-    }
-    const f=(d-target)*k;
+    const target=(60+240/(l.w+1))*SP, f=(d-target)*0.004*(l.faint?0.4:1);
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
-  if(cm && window._anchorNodes){
-    const AN=window._anchorNodes;
-    for(let i=0;i<AN.length;i++)for(let j=i+1;j<AN.length;j++){
-      const a=AN[i],b=AN[j];
-      let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
-      if(d2<1)d2=1;
-      if(d2<360000){const d=Math.sqrt(d2),f=5000/d2,fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
-        if(!a.fixed&&!a.pin){a.vx-=fx;a.vy-=fy;a.vz-=fz;}
-        if(!b.fixed&&!b.pin){b.vx+=fx;b.vy+=fy;b.vz+=fz;}}}
-  }
   if(nodes.length<=160){
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++) repulse(nodes[i],nodes[j]);
   } else {
@@ -554,9 +530,8 @@ function tick(){
       // gentle centering so disconnected clumps stay on screen
       n.vx-=n.x*0.00018; n.vy-=n.y*0.00018; n.vz-=(n.z||0)*0.00018; }
   }
-  // gentle pull of each community toward its own centroid (full map only; off in
-  // cluster mode -- the anchor springs define the grouping there)
-  if(window._fullView && window._commGroups && !cm){
+  // gentle pull of each community toward its own centroid (full map only)
+  if(window._fullView && window._commGroups){
     for(const g of window._commGroups){
       let cx=0,cy=0,cz=0;
       for(const n of g){cx+=n.x;cy+=n.y;cz+=n.z||0;}
@@ -601,17 +576,6 @@ function buildFullGraph(){
     for(const q of o.members){
       const pn = core ? nmap.get('p'+q) : (nmap.get('p'+q)||addP(q));  // core: orgs link only to people already on the map
       if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
-  // strongest event/org neighbor of every person -- the "group by" cluster modes
-  // pull each person to this anchor
-  for(const l of links){
-    const pr = l.s.type==='p' ? l.s : (l.t.type==='p' ? l.t : null); if(!pr) continue;
-    const other = pr===l.s ? l.t : l.s;
-    if(other.type==='e' || other.type==='o'){
-      const key='anch_'+other.type, kw='anchw_'+other.type;
-      if((l.w||1) > (pr[kw]||0)){ pr[key]=other; pr[kw]=l.w||1; }
-    }
-  }
-  window._anchorNodes = window._cluster ? nodes.filter(n=>n.type===window._cluster) : null;
   // size every circle -- people, events, and orgs alike -- by its actual connection
   // count in this rendered graph (min 3px so isolated/one-off nodes stay visible and
   // clickable, max 19px so hub nodes like major community leaders or huge conventions
@@ -653,31 +617,9 @@ function buildFullGraph(){
   for(let it=0;it<160;it++) tick();
 }
 const allbtn=document.getElementById('allbtn');
-const clusterbtn=document.getElementById('clusterbtn');
-clusterbtn.addEventListener('click',()=>{
-  window._cluster = window._cluster==='e' ? 'o' : window._cluster==='o' ? null : 'e';
-  clusterbtn.textContent = window._cluster==='e' ? '★ Group by: events'
-    : window._cluster==='o' ? '◆ Group by: orgs' : '⊚ Group by: none';
-  clusterbtn.classList.toggle('on', !!window._cluster);
-  window._anchorNodes = window._cluster ? nodes.filter(n=>n.type===window._cluster) : null;
-});
-const densbtn=document.getElementById('densbtn');
-densbtn.addEventListener('click',()=>{
-  window._mapAll=!window._mapAll;
-  densbtn.textContent = window._mapAll ? '◑ Everyone' : '◐ Core network';
-  if(window._fullView) buildFullGraph();
-});
-const resetbtn=document.getElementById('resetbtn');
-resetbtn.addEventListener('click',()=>{
-  if(!window._fullView) return;
-  for(const n of nodes){ n.pin=false; n.sel=false; }
-  setHighlight(null);
-  buildFullGraph();          // fresh springs, fresh camera
-});
 allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
-  document.getElementById('mapbtns').style.display = window._fullView ? 'flex' : 'none';
   document.getElementById('hint').textContent = window._fullView
     ? 'drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
     : 'drag to pan · scroll to zoom · click a node to navigate';
