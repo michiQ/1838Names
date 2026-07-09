@@ -45,6 +45,9 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 #resetbtn:hover{border-color:var(--gold);color:var(--gold)}
 #densbtn{position:absolute;top:8px;right:276px;background:var(--panel);border:1px solid var(--line);color:var(--dim);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer;display:none}
 #densbtn:hover{border-color:var(--gold);color:var(--gold)}
+#clusterbtn{position:absolute;top:8px;right:410px;background:var(--panel);border:1px solid var(--line);color:var(--dim);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer;display:none}
+#clusterbtn:hover{border-color:var(--gold);color:var(--gold)}
+#clusterbtn.on{background:#33290f;color:var(--gold);border-color:var(--gold)}
 #legend span{margin-right:14px}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
 #right{width:400px;min-width:280px;max-width:760px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
@@ -73,7 +76,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 </header>
 <div id="wrap">
   <div id="left">
-    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button></div>
+    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button></div>
     <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
     <div id="filters">
       <span class="chip on" data-f="all">All</span>
@@ -96,6 +99,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span><i class="dot" style="background:#b4552d"></i>event</span>
       <span><i class="dot" style="background:#d18aa8"></i>organization</span>
     </div>
+    <button id="clusterbtn" title="cluster people around their events or organizations">◇ Free layout</button>
     <button id="densbtn" title="toggle between the core network and every last member">◐ Core network</button>
     <button id="resetbtn" title="unpin everything and relax the layout">↺ Reset layout</button>
     <button id="allbtn">⦿ All connections</button>
@@ -213,6 +217,11 @@ function renderList(q){
       if(p.census?.length) ct.push(p.census.length+'⌂');
       return `<div class="prow" data-id="${p.id}" data-t="p"><span>${p.name}${badge}</span><span class="ct">${ct.join(' ')}</span></div>`;
     }).join('');
+  } else if(mode==='o'){
+    const rows = [...(DATA.orgs||[])].filter(o=>o.name.toLowerCase().includes(q))
+      .sort((a,b)=>b.members.length-a.members.length || a.name.localeCompare(b.name)).slice(0,400);
+    plist.innerHTML = rows.map(o=>
+      `<div class="prow" data-t="o" data-name="${o.name.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}"><span>${o.name}</span><span class="ct">${o.members.length}◆</span></div>`).join('');
   } else {
     const rows = sortedEvents.filter(e=>(e.name+' '+(e.loc||'')+' '+(e.desc||'')+' '+(e.date||'')).toLowerCase().includes(q)).slice(0,400);
     plist.innerHTML = rows.map(e=>
@@ -220,14 +229,17 @@ function renderList(q){
   }
 }
 plist.addEventListener('click',ev=>{const r=ev.target.closest('.prow'); if(!r)return;
-  r.dataset.t==='e' ? selectEvent(+r.dataset.id) : select(+r.dataset.id);});
+  if(r.dataset.t==='e') selectEvent(+r.dataset.id);
+  else if(r.dataset.t==='o') selectOrg(r.dataset.name);
+  else select(+r.dataset.id);});
 search.addEventListener('input',()=>renderList(search.value));
-const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e');
-function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e');
-  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : 'Search events… e.g. convention';
+const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e'), tabO=document.getElementById('tab-o');
+function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e'); tabO.classList.toggle('on',m==='o');
+  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : m==='o' ? 'Search organizations… e.g. Lodge' : 'Search events… e.g. convention';
   renderList(search.value); }
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
+tabO.addEventListener('click',()=>setMode('o'));
 const orgsel = document.getElementById('orgsel'), orgsearch = document.getElementById('orgsearch');
 const orgsAll = [...(DATA.orgs||[])].sort((a,b)=>a.name.localeCompare(b.name));
 function renderOrgOptions(q){
@@ -401,6 +413,49 @@ function buildEventGraph(eid){
   view={x:0,y:0,k:1};
   for(let it=0;it<300;it++) tick();
 }
+// clicking an organization (in the ORGS tab or on an org node) shows the org itself
+// as the centered node with all its members connected around it, plus the detail panel
+function selectOrg(name){
+  const oi=(DATA.orgs||[]).findIndex(o=>o.name===name); if(oi<0) return;
+  const o=DATA.orgs[oi];
+  const mem=o.members.filter(q=>P.has(q));
+  document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='o' && r.dataset.name===name));
+  let h=`<h2>${esc(o.name)}</h2><div class="dates">organization · ${mem.length} members on record</div>`;
+  h+=`<div style="margin:2px 0 6px;font-size:12.5px"><span class="pl" id="orgfilterbtn">filter the people list to this organization</span></div>`;
+  if(mem.length){
+    h+=`<h3>Members (${mem.length})</h3>`+mem.map(q=>{const op=P.get(q);
+      return `<div class="card"><span class="pl" data-p="${q}">${esc(op.name)}</span>${op.src==='winch'?' <span class="badge b-w">Winch</span>':''}</div>`;}).join('');
+  } else h+='<p class="empty">No members on record.</p>';
+  right.innerHTML=h; right.scrollTop=0;
+  right.querySelectorAll('.pl[data-p]').forEach(el=>el.addEventListener('click',()=>select(+el.dataset.p)));
+  const fb=document.getElementById('orgfilterbtn');
+  if(fb) fb.addEventListener('click',()=>{ orgsel.value=name; window._orgFilter=name;
+    if(mode!=='p') setMode('p'); else renderList(search.value); });
+  if(window._fullView){
+    for(const n of nodes) n.sel=(n.type==='o' && n.org===name);
+    const fn=nodes.find(n=>n.type==='o'&&n.org===name);
+    if(fn) setHighlight(fn);
+  } else { setHighlight(null); buildOrgGraph(oi); }
+}
+function buildOrgGraph(oi){
+  const o=DATA.orgs[oi]; nodes=[]; links=[];
+  const nmap=new Map();
+  function addNode(id,type,label,r){ if(nmap.has(type+id))return nmap.get(type+id);
+    const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,z:0,vx:0,vy:0,vz:0};
+    nmap.set(type+id,n); nodes.push(n); return n;}
+  const center=addNode('g'+oi,'o',o.name,15); center.x=0;center.y=0;center.fixed=true;center.org=o.name;
+  const mem=o.members.filter(q=>P.has(q));
+  for(const q of mem){ const op=P.get(q);
+    const n=addNode(q,'p',op.name,6); links.push({s:center,t:n,w:2}); }
+  // faint links between members who also co-occur elsewhere in the data
+  for(let i=0;i<mem.length;i++)for(let j=i+1;j<mem.length;j++){
+    const w=(NBR.get(mem[i])||new Map()).get(mem[j]); if(w>1){
+      const a=nmap.get('p'+mem[i]),b=nmap.get('p'+mem[j]); if(a&&b)links.push({s:a,t:b,w:1,faint:true});}}
+  sizeByDegree(nodes,links,5,20,2.6);
+  center.r=Math.max(center.r,14);
+  view={x:0,y:0,k: mem.length>60?0.55:1};   // big orgs start zoomed out enough to fit
+  for(let it=0;it<300;it++) tick();
+}
 // ---------- ego network graph ----------
 const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
 let nodes=[], links=[], view={x:0,y:0,k:1}, dragN=null, panning=false, rotating=false, px=0, py=0;
@@ -475,11 +530,32 @@ function repulse(a,b){
 }
 function tick(){
   const SP = window._fullView ? 2.4 : 1;   // spacing multiplier for the full map
+  // cluster mode ("group by" button): each person is pulled tight to its strongest
+  // event ('e') or organization ('o') anchor; person-person springs are loosened so
+  // the anchor groupings win; anchors repel each other so clusters stay separated
+  const cm = window._fullView ? (window._cluster||null) : null;
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
-    const target=(60+240/(l.w+1))*SP, f=(d-target)*0.004*(l.faint?0.4:1);
+    let target=(60+240/(l.w+1))*SP, k=0.004*(l.faint?0.4:1);
+    if(cm){
+      const sp=l.s.type==='p'?l.s:null, tp=l.t.type==='p'?l.t:null;
+      if((sp && sp['anch_'+cm]===l.t) || (tp && tp['anch_'+cm]===l.s)){ target=80; k=0.02; }
+      else if(sp && tp) k*=0.25;
+      else k*=0.5;
+    }
+    const f=(d-target)*k;
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
+  if(cm && window._anchorNodes){
+    const AN=window._anchorNodes;
+    for(let i=0;i<AN.length;i++)for(let j=i+1;j<AN.length;j++){
+      const a=AN[i],b=AN[j];
+      let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
+      if(d2<1)d2=1;
+      if(d2<360000){const d=Math.sqrt(d2),f=5000/d2,fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
+        if(!a.fixed&&!a.pin){a.vx-=fx;a.vy-=fy;a.vz-=fz;}
+        if(!b.fixed&&!b.pin){b.vx+=fx;b.vy+=fy;b.vz+=fz;}}}
+  }
   if(nodes.length<=160){
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++) repulse(nodes[i],nodes[j]);
   } else {
@@ -495,8 +571,9 @@ function tick(){
       // gentle centering so disconnected clumps stay on screen
       n.vx-=n.x*0.00018; n.vy-=n.y*0.00018; n.vz-=(n.z||0)*0.00018; }
   }
-  // gentle pull of each community toward its own centroid (full map only)
-  if(window._fullView && window._commGroups){
+  // gentle pull of each community toward its own centroid (full map only; off in
+  // cluster mode -- the anchor springs define the grouping there)
+  if(window._fullView && window._commGroups && !cm){
     for(const g of window._commGroups){
       let cx=0,cy=0,cz=0;
       for(const n of g){cx+=n.x;cy+=n.y;cz+=n.z||0;}
@@ -541,6 +618,17 @@ function buildFullGraph(){
     for(const q of o.members){
       const pn = core ? nmap.get('p'+q) : (nmap.get('p'+q)||addP(q));  // core: orgs link only to people already on the map
       if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
+  // strongest event/org neighbor of every person -- the "group by" cluster modes
+  // pull each person to this anchor
+  for(const l of links){
+    const pr = l.s.type==='p' ? l.s : (l.t.type==='p' ? l.t : null); if(!pr) continue;
+    const other = pr===l.s ? l.t : l.s;
+    if(other.type==='e' || other.type==='o'){
+      const key='anch_'+other.type, kw='anchw_'+other.type;
+      if((l.w||1) > (pr[kw]||0)){ pr[key]=other; pr[kw]=l.w||1; }
+    }
+  }
+  window._anchorNodes = window._cluster ? nodes.filter(n=>n.type===window._cluster) : null;
   // size every circle -- people, events, and orgs alike -- by its actual connection
   // count in this rendered graph (min 3px so isolated/one-off nodes stay visible and
   // clickable, max 19px so hub nodes like major community leaders or huge conventions
@@ -582,6 +670,14 @@ function buildFullGraph(){
   for(let it=0;it<160;it++) tick();
 }
 const allbtn=document.getElementById('allbtn');
+const clusterbtn=document.getElementById('clusterbtn');
+clusterbtn.addEventListener('click',()=>{
+  window._cluster = window._cluster==='e' ? 'o' : window._cluster==='o' ? null : 'e';
+  clusterbtn.textContent = window._cluster==='e' ? '★ Grouped by events'
+    : window._cluster==='o' ? '◆ Grouped by orgs' : '◇ Free layout';
+  clusterbtn.classList.toggle('on', !!window._cluster);
+  window._anchorNodes = window._cluster ? nodes.filter(n=>n.type===window._cluster) : null;
+});
 const densbtn=document.getElementById('densbtn');
 densbtn.addEventListener('click',()=>{
   window._mapAll=!window._mapAll;
@@ -600,6 +696,7 @@ allbtn.addEventListener('click',()=>{
   allbtn.classList.toggle('on',window._fullView);
   resetbtn.style.display = window._fullView ? 'block' : 'none';
   densbtn.style.display = window._fullView ? 'block' : 'none';
+  clusterbtn.style.display = window._fullView ? 'block' : 'none';
   document.getElementById('hint').textContent = window._fullView
     ? 'drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
     : 'drag to pan · scroll to zoom · click a node to navigate';
@@ -636,12 +733,41 @@ function draw(){
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
     else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
-    if((showAll || n.fixed || n.sel || n.deg>=14 || (hlN && isHl)) && (!is3d || n.ps>0.78 || (hlN && isHl))){
-      const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
-      ctx.font=((n.fixed||n.sel)?'bold 12px':'10.5px')+' Georgia';
-      ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':'#c9bda6';
-      ctx.textAlign='center'; ctx.fillText(label,n.px,n.py+n.r*n.ps+11);
-    }
+  }
+  // ---- label pass: two rules keep text readable. (1) budget: zoomed out, only the
+  // top-N most-connected nodes get labels; the budget grows as you zoom in. (2) overlap:
+  // labels are placed in priority order (selected > highlighted > highest degree) and
+  // any label that would collide with one already placed is skipped entirely.
+  const labelBoxes = [];
+  function boxFree(x0,y0,x1,y1){
+    for(const o of labelBoxes){ if(x0<o.x1 && x1>o.x0 && y0<o.y1 && y1>o.y0) return false; }
+    return true;
+  }
+  const candidates = order.filter(n=>{
+    const isHl = !hlN || n===hlN || (hl && hl.has(n));
+    return (showAll || n.fixed || n.sel || n.deg>=5 || (hlN && isHl)) && (!is3d || n.ps>0.78 || (hlN && isHl));
+  });
+  const score = m => (m.fixed||m.sel?1e6:0) + (hlN && m===hlN?9e5:0) + (hlN && hl && hl.has(m)?5e5:0) + (m.deg||0);
+  candidates.sort((a,b)=>score(b)-score(a));
+  const budget = (showAll || hlN) ? Infinity
+    : Math.round(24 + 160*Math.max(0, Math.min(1, (view.k-0.25)/1.0)));
+  let placed = 0;
+  for(const n of candidates){
+    const important = n.fixed || n.sel || (hlN && n===hlN);
+    if(!important && placed>=budget) break;
+    const depth = is3d ? Math.max(.25, Math.min(1, (n.ps-.55)*2.2)) : 1;
+    const isHl = !hlN || n===hlN || (hl && hl.has(n));
+    const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
+    ctx.font=((n.fixed||n.sel)?'bold 12px':'10.5px')+' Georgia';
+    const tx = n.px, ty = n.py+n.r*n.ps+11;
+    const w = ctx.measureText(label).width;
+    const x0=tx-w/2-2, x1=tx+w/2+2, y0=ty-10, y1=ty+3;
+    if(!important && !boxFree(x0,y0,x1,y1)) continue;
+    labelBoxes.push({x0,y0,x1,y1});
+    ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
+    ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':'#c9bda6';
+    ctx.textAlign='center'; ctx.fillText(label,tx,ty);
+    placed++;
   }
   ctx.globalAlpha = 1;
   ctx.restore();
@@ -679,8 +805,7 @@ window.addEventListener('mouseup',e=>{
     setHighlight(dragN);
     if(dragN.type==='p') select(dragN.id);
     else if(dragN.type==='e') selectEvent(dragN.id);
-    else if(dragN.type==='o' && dragN.org){ orgsel.value=dragN.org; window._orgFilter=dragN.org;
-      if(mode!=='p') setMode('p'); else renderList(search.value); } }
+    else if(dragN.type==='o' && dragN.org){ selectOrg(dragN.org); } }
   else if(!dragN && wasClick){ setHighlight(null); }   // click empty space clears highlight
   if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them
   if(dragN && !window._fullView) dragN.fixed = dragN===nodes[0];
