@@ -1,92 +1,153 @@
 [
   {
     "keep": "Bias, James J. G.",
-    "aliases": ["J. J. G. Bias", "James J. G. Bias", "BIAS, JAMES J.G.", "Bias, J.J.G.", "Bias, J. J. G."],
+    "aliases": [
+      "J. J. G. Bias",
+      "James J. G. Bias",
+      "BIAS, JAMES J.G.",
+      "Bias, J.J.G.",
+      "Bias, J. J. G."
+    ],
     "note": "Dr. James J. G. Bias — dentist/physician, AME leader, Vigilance Committee. Confirmed by Michiko 2026-07-04."
   },
   {
     "keep": "Douglass, Sarah M.",
-    "aliases": ["Douglass, Mrs. S.M.", "Mrs. S.M. Douglass", "S.M. Douglass"],
+    "aliases": [
+      "Douglass, Mrs. S.M.",
+      "Mrs. S.M. Douglass",
+      "S.M. Douglass"
+    ],
     "note": "Sarah Mapps Douglass — Philadelphia educator/abolitionist (Winch) = 'Mrs. S.M. Douglass' in the Edmonia Lewis dissertation. Confirmed by Michiko 2026-07-06."
   },
   {
     "keep": "Gibbs, Mifflin Wistar",
-    "aliases": ["Gibbs, M.W.", "M.W. Gibbs", "Mifflin Wistar Gibbs"],
+    "aliases": [
+      "Gibbs, M.W.",
+      "M.W. Gibbs",
+      "Mifflin Wistar Gibbs"
+    ],
     "note": "Mifflin Wistar Gibbs — Reconstruction-era Black lawyer/businessman/judge (Winch) = 'M.W. Gibbs' in the Edmonia Lewis dissertation. Confirmed by Michiko 2026-07-06."
   },
   {
     "keep": "Bowers, John C.",
-    "aliases": ["John C. Bowers", "John Bowers", "BOWERS, JOHN C"],
+    "aliases": [
+      "John C. Bowers",
+      "John Bowers",
+      "BOWERS, JOHN C"
+    ],
     "note": "John C. Bowers Jr. — sailmaker/tailor, St. Thomas organist, PA Anti-Slavery Society founding delegate, denied hotel service in Lancaster PA 1837 (Weekly Advocate, Feb 25 1837). Confirmed by Michiko 2026-07-06. NOTE: deliberately excludes 'Bowers, John' (no middle initial) -- that Winch record is his FATHER, John Bowers Sr., a clothier who died Oct 1844 (will names John C., Henrietta, and Thomas J. Bowers as executors/heirs) -- a different person, not merged."
   },
   {
     "keep": "Bustill, Joseph Cassey",
-    "aliases": ["Joseph C. Bustill"],
+    "aliases": [
+      "Joseph C. Bustill"
+    ],
     "note": "Confirmed by Michiko 2026-07-06."
   },
   {
     "keep": "Cornish, James",
-    "aliases": ["CORNISH, JAMES", "James Cornish"],
+    "aliases": [
+      "CORNISH, JAMES",
+      "James Cornish"
+    ],
     "note": "James Cornish the sailmaker, Pine below 10th / N. Hubbell St, St. Thomas church -- secretary of the June 1837 Bethel meeting protesting Black disenfranchisement (Col. Amer., June 10 1837). Confirmed by Michiko 2026-07-06. NOTE: excludes 'Cornish, James C.' / 'Cornish, James C' (21 Bonsall St, shoemaker) -- a different James Cornish; see separate group below."
   },
   {
     "keep": "Cornish, James C.",
-    "aliases": ["Cornish, James C"],
+    "aliases": [
+      "Cornish, James C"
+    ],
     "note": "A distinct James Cornish (the shoemaker, 21 Bonsall St, 1847 census) -- separated from the sailmaker James Cornish above after checking underlying census rows (different address/occupation). Not part of Michiko's 2026-07-06 confirmation list but merged as a clear, unambiguous duplicate found while verifying that batch."
   },
   {
     "keep": "Cornish, Samuel E.",
-    "aliases": ["Cornish, Samuel"],
+    "aliases": [
+      "Cornish, Samuel"
+    ],
     "note": "Samuel E. Cornish, the paper's founding editor. Confirmed by Michiko 2026-07-06."
   },
   {
     "keep": "Dorsey, Thomas",
-    "aliases": ["Thomas J. Dorsey", "DORSEY, THOMAS"],
+    "aliases": [
+      "Thomas J. Dorsey",
+      "DORSEY, THOMAS"
+    ],
     "note": "Thomas J. Dorsey the Philadelphia caterer -- escaped enslaved person from Maryland, aided by Robert Purvis, entertained Garrison and Douglass (Nat. Enq., Oct 29 1836). Confirmed by Michiko 2026-07-06. NOTE: a second, unrelated Winch record also named 'Dorsey, Thomas' (a boot/shoemaker at 36 North 6th, Register of Trades 1838) was renamed to 'Dorsey, Thomas (shoemaker)' to prevent it from being swept into this merge -- they are different people who shared an identical Winch entry name."
   },
   {
     "keep": "Flamer, William",
-    "aliases": ["Flamer, William H"],
+    "aliases": [
+      "Flamer, William H"
+    ],
     "note": "Confirmed by Michiko 2026-07-06."
   },
   {
     "keep": "Glasgow, Jesse",
-    "aliases": ["Glasgow, Jesse E"],
+    "aliases": [
+      "Glasgow, Jesse E"
+    ],
     "note": "Jesse E. Glasgow of Washington St -- PAS-educated, Agricultural & Mechanics Association shareholder, PA Equal Rights League advisory committee (1865). Confirmed by Michiko 2026-07-06. NOTE: deliberately excludes 'Glasgow, Jesse Jr.' -- a different, well-documented person (Banneker Institute member who emigrated to study in Scotland and died there of tuberculosis in 1860, per Winch's own note) who could not have served on an 1865 committee. Not merged."
   },
   {
     "keep": "Forten, William Deas",
-    "aliases": ["William D. Forten"],
+    "aliases": [
+      "William D. Forten"
+    ],
     "note": "Forten, William Deas (Winch) = William D. Forten (newspaper) -- son of James Forten Sr. Confirmed by Michiko 2026-07-09."
   },
   {
     "keep": "Gloucester, Stephen H.",
-    "aliases": ["S. H. Gloucester"],
+    "aliases": [
+      "S. H. Gloucester"
+    ],
     "note": "Gloucester, Stephen H. (Winch/census) = S. H. Gloucester (newspaper) -- Philadelphia minister (founding pastor, Second/Central Presbyterian Church), General Agent for the Colored American in PA/DE/MD/West Jersey; the newspaper appearance (thanking New York supporters for the church fundraising fair) matches the Winch bio's own account of that same 1837 New York fair almost verbatim. The identically-named census record ('GLOUCESTER, STEPHEN H') merged in automatically via exact normalized-name match. Confirmed by Michiko 2026-07-09."
   },
   {
     "keep": "Hinton, Frederick A.",
-    "aliases": ["F. A. Hinton"],
+    "aliases": [
+      "F. A. Hinton"
+    ],
     "note": "Hinton, Frederick A. (Winch) = F. A. Hinton (newspaper) -- Philadelphia hairdresser/perfumer, Vigilance Committee, AMRS Board of Managers, charter member of the Philadelphia Library Company for Colored Persons; the 5 newspaper appearances (Fifth Presbyterian Church resolutions, Library Company special meeting, Committee to sustain the Colored American, Great and Important Meeting vs. the Reform Convention) all match roles and events already documented in the Winch bio. Confirmed by Michiko 2026-07-09."
   },
   {
     "keep": "Derham, Clayton",
-    "aliases": ["DERHAM, CLATON", "Clayton Durham", "Durham, Clayton"],
+    "aliases": [
+      "DERHAM, CLATON",
+      "Clayton Durham",
+      "Durham, Clayton"
+    ],
     "note": "Derham, Clayton (Winch/1838 census) = Clayton Durham (Pencil Pusher Points, Jun 15 1912, listed among those 'mainly instrumental' in the AME Church's 1816 founding General Conference alongside Jacob Tapsico, James Champion, Thomas Webster). The Winch bio's 1838 census entry (62 Gaskill, laborer, attends Bethel) matches the linked census row (DERHAM, CLATON) address-for-address; a sibling Winch entry for 'Derham, Jeremiah' explicitly notes the surname is 'Sometimes Durham', supporting the OCR/spelling variant. Confirmed by Michiko 2026-07-09."
   },
   {
     "keep": "Keeling, Westward F.",
-    "aliases": ["W. F. Keeling", "West F. Keeling", "Westwood, Keeling"],
+    "aliases": [
+      "W. F. Keeling",
+      "West F. Keeling",
+      "Westwood, Keeling"
+    ],
     "note": "Keeling, Westward F. (Winch) = W. F. Keeling / West F. Keeling (Pencil Pusher Points, deacon/founder at Shiloh Baptist Church) = Westwood, Keeling (1847 census, name-order OCR swap). The Winch bio's own 1847 census note (Tenth and Cedar, confectionery, wife a cake baker) matches the linked 1847 census row (Cedar Street, confectionary/cake baker) exactly. Confirmed by Michiko 2026-07-09."
   },
   {
     "keep": "Bassett, Ebenezer D.",
-    "aliases": ["E. D. Bassett"],
+    "aliases": [
+      "E. D. Bassett"
+    ],
     "note": "Bassett, Ebenezer D. (Winch) = E. D. Bassett (newspaper, principal/teacher, Institute for Colored Youth commencement, May 1864) -- matches his known biography as ICY principal before becoming the first African American U.S. diplomat (Minister to Haiti). Long-carried high-confidence candidate (merge_candidates.md, 8+ prior runs). Confirmed by Michiko 2026-07-09."
   },
   {
     "keep": "Hicks, Isaac",
-    "aliases": ["HICKS, ISAAC F", "Hicks, Isaac F."],
+    "aliases": [
+      "HICKS, ISAAC F",
+      "Hicks, Isaac F."
+    ],
     "note": "Hicks, Isaac (Winch, delegate to Assoc. for Moral and Mental Improvement from 'First African [Baptist Church]') = HICKS, ISAAC F (1838 census, Pearl St bet. 13th & Broad, coachman, First Baptist) -- matching church affiliation. Distinct from 'Hicks, Robert' / 'Hicks, Robert M' (different person, skipped in a prior run -- not touched here). Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "keep": "Wears, Isaiah C.",
+    "aliases": [
+      "Wear, Isaiah C",
+      "Isaiah C. Wear"
+    ],
+    "note": "Wears, Isaiah C. (Winch) = Wear, Isaiah C (census) = Isaiah C. Wear (newspaper). Same name modulo trailing 's' and first/last order; Isaiah C. Wears is the well-documented Philadelphia activist. Winch+census pair confirmed by Michiko 2026-07-09; newspaper inversion included as the identical name."
   }
 ]
