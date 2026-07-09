@@ -48,6 +48,9 @@ Pencil Pusher) — work top to bottom across runs.
 - [ ] PF_1838-02-08
 - [ ] PF_1838-02-15
 
+## Freedoms Journal (1 issue, 1 page)
+- [ ] FJ_1827-04-06 (p2 only -- 300dpi tesseract timed out on the 2026-07-09 6th-batch run even after retry, dropped to 200dpi per the fallback ladder; p1/p3/p4 of this issue are already at 300dpi. FJ_1827-03-23_p2 hit the same timeout but succeeded on a same-resolution retry, so it did NOT need to be added here.)
+
 ## Pencil Pusher (86 issues, ~86 pages — mostly single-page clippings)
 - [ ] PP_000 .. PP_085 (all pending; see ocr_text/ for the full slug list, e.g. `ls ocr_text | grep '^PP_' | sed -E 's/_p[0-9]+\.txt$//' | sort -u`)
 

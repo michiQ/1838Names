@@ -83,7 +83,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Freeman, Charles** (winch, 1 Winch refs) ↔ **Freeman, Charles M** (census, 1 census records)
 - [HIGH] **Freeman, Charles** (winch, 1 Winch refs) ↔ **Freeman, Charles M** (census, 1 census records)
 - [HIGH] **Gardner, Margaretta** (winch, 1 appearances, 1 Winch refs) ↔ **GARDNER, MARGARET** (census, 1 appearances, 1 census records)
-- [HIGH] **J. Gardner** (newspaper, 1 appearances) ↔ **GARDNER, JOHN** (census, 2 census records)
+- [HIGH] **J. Gardner** (newspaper, 1 appearances) ↔ **GARDNER, JOHN** (census, 1 appearances, 2 census records)
 - [HIGH] **J. Gardner** (newspaper, 1 appearances) ↔ **Gardner, Jacob** (census, 1 census records)
 - [HIGH] **George, Robert** (winch, 1 Winch refs) ↔ **George, Robert W** (census, 1 census records)
 - [HIGH] **Gilbert, Charles** (winch, 1 Winch refs, 1 census records) ↔ **Gilbert, C.E.** (dissertation, 3 appearances)
