@@ -3,7 +3,7 @@
 import sqlite3, re, os, glob, json
 from difflib import SequenceMatcher
 
-DB = "/tmp/merge2/black_metropolis.db"
+DB = "/tmp/merge3/black_metropolis.db"
 OCR_DIR = "/sessions/charming-magical-davinci/mnt/Newspapers/1838 Names Database/ocr_text"
 
 PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)",

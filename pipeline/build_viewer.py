@@ -2,8 +2,8 @@
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
 import sqlite3, json, re
 
-DB = "/tmp/merge2/black_metropolis.db"
-OUT = "/tmp/merge2/1838_black_metropolis_viewer.html"
+DB = "/tmp/merge3/black_metropolis.db"
+OUT = "/tmp/merge3/1838_black_metropolis_viewer.html"
 TPL = "/sessions/charming-magical-davinci/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
 
 con = sqlite3.connect(DB)

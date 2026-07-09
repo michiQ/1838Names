@@ -68,5 +68,25 @@
     "keep": "Hinton, Frederick A.",
     "aliases": ["F. A. Hinton"],
     "note": "Hinton, Frederick A. (Winch) = F. A. Hinton (newspaper) -- Philadelphia hairdresser/perfumer, Vigilance Committee, AMRS Board of Managers, charter member of the Philadelphia Library Company for Colored Persons; the 5 newspaper appearances (Fifth Presbyterian Church resolutions, Library Company special meeting, Committee to sustain the Colored American, Great and Important Meeting vs. the Reform Convention) all match roles and events already documented in the Winch bio. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "keep": "Derham, Clayton",
+    "aliases": ["DERHAM, CLATON", "Clayton Durham", "Durham, Clayton"],
+    "note": "Derham, Clayton (Winch/1838 census) = Clayton Durham (Pencil Pusher Points, Jun 15 1912, listed among those 'mainly instrumental' in the AME Church's 1816 founding General Conference alongside Jacob Tapsico, James Champion, Thomas Webster). The Winch bio's 1838 census entry (62 Gaskill, laborer, attends Bethel) matches the linked census row (DERHAM, CLATON) address-for-address; a sibling Winch entry for 'Derham, Jeremiah' explicitly notes the surname is 'Sometimes Durham', supporting the OCR/spelling variant. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "keep": "Keeling, Westward F.",
+    "aliases": ["W. F. Keeling", "West F. Keeling", "Westwood, Keeling"],
+    "note": "Keeling, Westward F. (Winch) = W. F. Keeling / West F. Keeling (Pencil Pusher Points, deacon/founder at Shiloh Baptist Church) = Westwood, Keeling (1847 census, name-order OCR swap). The Winch bio's own 1847 census note (Tenth and Cedar, confectionery, wife a cake baker) matches the linked 1847 census row (Cedar Street, confectionary/cake baker) exactly. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "keep": "Bassett, Ebenezer D.",
+    "aliases": ["E. D. Bassett"],
+    "note": "Bassett, Ebenezer D. (Winch) = E. D. Bassett (newspaper, principal/teacher, Institute for Colored Youth commencement, May 1864) -- matches his known biography as ICY principal before becoming the first African American U.S. diplomat (Minister to Haiti). Long-carried high-confidence candidate (merge_candidates.md, 8+ prior runs). Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "keep": "Hicks, Isaac",
+    "aliases": ["HICKS, ISAAC F", "Hicks, Isaac F."],
+    "note": "Hicks, Isaac (Winch, delegate to Assoc. for Moral and Mental Improvement from 'First African [Baptist Church]') = HICKS, ISAAC F (1838 census, Pearl St bet. 13th & Broad, coachman, First Baptist) -- matching church affiliation. Distinct from 'Hicks, Robert' / 'Hicks, Robert M' (different person, skipped in a prior run -- not touched here). Confirmed by Michiko 2026-07-09."
   }
 ]
