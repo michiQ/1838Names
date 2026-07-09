@@ -79,7 +79,6 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Fells, J.M.** (winch, 1 Winch refs) ↔ **Fells, James M** (census, 1 census records)
 - [HIGH] **Fells, J.M.** (winch, 1 Winch refs) ↔ **Fells, James** (census, 1 census records)
 - [HIGH] **Fisher, Debora** (winch, 1 Winch refs) ↔ **FISHER, DEBORAH** (census, 2 census records)
-- [HIGH] **Forten, William Deas** (winch, 1 appearances, 1 Winch refs) ↔ **William D. Forten** (newspaper, 1 appearances)
 - [HIGH] **Fox, Daniel** (winch, 1 Winch refs, 1 census records) ↔ **FOX, DANIEL D.** (census, 1 census records)
 - [HIGH] **Francis, Nancy** (winch, 1 Winch refs) ↔ **FRANCIS, N** (census, 1 census records)
 - [HIGH] **Freeman, Charles** (winch, 1 Winch refs) ↔ **Freeman, Charles M** (census, 1 census records)
@@ -124,3 +123,4 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Hughes, Benjamin** (winch, 2 appearances, 2 Winch refs) ↔ **Benjamin F. Hughes** (newspaper, 3 appearances)
 - [HIGH] **Hughes, Hazell** (winch, 3 Winch refs) ↔ **HUGHES, HAZEL** (census, 1 census records)
 - [HIGH] **Jenkins, James** (winch, 1 appearances, 1 Winch refs, 1 census records) ↔ **James L. Jenkins** (newspaper, 1 appearances)
+- [HIGH] **Jenkins, Richard** (winch, 1 Winch refs) ↔ **Jenkins, Richard W** (census, 1 census records)
