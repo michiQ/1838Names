@@ -412,10 +412,44 @@ function selectOrg(name){
   if(fb) fb.addEventListener('click',()=>{ orgsel.value=name; window._orgFilter=name;
     if(mode!=='p') setMode('p'); else renderList(search.value); });
   if(window._fullView){
+    const fn=ensureOrgInFull(oi);
     for(const n of nodes) n.sel=(n.type==='o' && n.org===name);
-    const fn=nodes.find(n=>n.type==='o'&&n.org===name);
     if(fn) setHighlight(fn);
   } else { setHighlight(null); buildOrgGraph(oi); }
+}
+// The full map's "core" trim drops low-activity people, and orgs only link to people
+// already on the map -- so a selected org could sit with few or none of its member
+// links visible. This adds any missing member nodes + links around the org at selection
+// time, so clicking an org always shows ALL its connections.
+function ensureOrgInFull(oi){
+  const o=DATA.orgs[oi];
+  let on = nodes.find(n=>n.type==='o'&&n.org===o.name);
+  const pmap = new Map();
+  for(const n of nodes) if(n.type==='p') pmap.set(n.id,n);
+  if(!on){  // orgs with <3 members have no node in the full map at all -- create one
+    on = {id:'ox'+oi,type:'o',label:o.name,r:6,deg:0,org:o.name,x:0,y:0,z:0,vx:0,vy:0,vz:0};
+    let cx=0,cy=0,cz=0,c=0;   // seed at the centroid of members already on the map
+    for(const q of o.members){ const pn=pmap.get(q); if(pn){cx+=pn.x;cy+=pn.y;cz+=pn.z||0;c++;} }
+    if(c){ on.x=cx/c; on.y=cy/c; on.z=cz/c; }
+    nodes.push(on);
+  }
+  const linked = new Set();
+  for(const l of links){ if(l.s===on) linked.add(l.t); if(l.t===on) linked.add(l.s); }
+  let added=0;
+  for(const q of o.members){
+    if(!P.has(q)) continue;
+    let pn = pmap.get(q);
+    if(!pn){  // member was trimmed from the core map: add them, orbiting the org
+      const u=Math.random()*6.283, v=Math.random()*3.1416, rr=70+Math.random()*70;
+      pn = {id:q,type:'p',label:P.get(q).name,r:3,deg:0,
+        x:on.x+rr*Math.sin(v)*Math.cos(u), y:on.y+rr*Math.cos(v),
+        z:(on.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
+      nodes.push(pn); pmap.set(q,pn);
+    }
+    if(!linked.has(pn)){ links.push({s:on,t:pn,w:1}); pn.deg=(pn.deg||0)+1; on.deg=(on.deg||0)+1; added++; }
+  }
+  if(added){ on.r = 3 + Math.min(16, 1.8*Math.sqrt(on.deg||1)); window._lblSet=null; }
+  return on;
 }
 function buildOrgGraph(oi){
   const o=DATA.orgs[oi]; nodes=[]; links=[];
