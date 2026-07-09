@@ -3,8 +3,8 @@
 Run AFTER import_census + match_names + load_extractions, BEFORE build_viewer."""
 import sqlite3, json, re, unicodedata, os
 
-DB = "/tmp/bm/black_metropolis.db"
-MERGES = "/sessions/cool-busy-hopper/mnt/Newspapers/1838 Names Database/pipeline/merges.json"
+DB = "/tmp/run15/work/black_metropolis.db"
+MERGES = "/sessions/charming-magical-davinci/mnt/Newspapers/1838 Names Database/pipeline/merges.json"
 
 def norm(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii","ignore").decode()

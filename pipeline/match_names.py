@@ -3,8 +3,8 @@
 import sqlite3, re, os, glob, json
 from difflib import SequenceMatcher
 
-DB = "/tmp/bm/black_metropolis.db"
-OCR_DIR = "/sessions/cool-busy-hopper/mnt/Newspapers/1838 Names Database/ocr_text"
+DB = "/tmp/run15/work/black_metropolis.db"
+OCR_DIR = "/sessions/charming-magical-davinci/mnt/Newspapers/1838 Names Database/ocr_text"
 
 PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)",
          "EL": "Before Black Bohemia: Edmonia Lewis in the Post-Bellum, Pre-Harlem Period (dissertation, Melissa M. Benbow Flowers, Univ. of Delaware, 2024)"}
