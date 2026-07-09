@@ -405,6 +405,20 @@ function buildEventGraph(eid){
 const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
 let nodes=[], links=[], view={x:0,y:0,k:1}, dragN=null, panning=false, rotating=false, px=0, py=0;
 let rot={yaw:0,pitch:0};
+// every circle (person, event, or org) is sized by how many connections it actually
+// has in whatever graph is currently rendered -- counted straight off the `links` list
+// that was just built, so it stays accurate whether that node is a hub or a leaf, and
+// whether we're in the ego view or the full map. Sqrt scale so *area*, not radius,
+// tracks degree -- keeps heavily-connected hub nodes readable without overwhelming
+// the canvas or overlapping their neighbors too badly. rMin keeps 0-connection nodes
+// (e.g. an org whose members aren't all on screen in "core" mode) big enough to still
+// see and click.
+function sizeByDegree(nodes, links, rMin, rMax, mult){
+  const lc = new Map();
+  for(const l of links){ lc.set(l.s,(lc.get(l.s)||0)+1); lc.set(l.t,(lc.get(l.t)||0)+1); }
+  for(const n of nodes){ const c = lc.get(n)||0; n.deg = c; n.r = rMin + Math.min(rMax-rMin, mult*Math.sqrt(c)); }
+  return lc;
+}
 function setHighlight(n){
   window._hlN = n || null;
   if(!n){ window._hl = null; return; }
@@ -432,18 +446,22 @@ function buildGraph(pid){
     const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,z:0,vx:0,vy:0,vz:0};
     nmap.set(type+id,n); nodes.push(n); return n;}
   const center=addNode(pid,'p',p.name,16); center.x=0;center.y=0;center.fixed=true;
-  // neighbor people
+  // neighbor people (initial r is just a placeholder -- sizeByDegree() overwrites
+  // every node's radius below once the full links list for this view is known)
   const nb=[...(NBR.get(pid)||new Map()).entries()].sort((a,b)=>b[1]-a[1]).slice(0,40);
   for(const [q,w] of nb){ const op=P.get(q); if(!op)continue;
-    const n=addNode(q,'p',op.name,7+Math.min(6,w)); links.push({s:center,t:n,w}); }
+    const n=addNode(q,'p',op.name,6); links.push({s:center,t:n,w}); }
   // events of this person
   for(const {e} of (p.events||[]).map(x=>({e:E.get(x.e)})).filter(x=>x.e)){
-    const en=addNode(e.id,'e',e.name,11); links.push({s:center,t:en,w:4});
+    const en=addNode(e.id,'e',e.name,6); links.push({s:center,t:en,w:4});
     for(const [q] of e.att){ if(q===pid)continue; const k=nmap.get('p'+q); if(k) links.push({s:en,t:k,w:2}); } }
   // 2nd-degree light links among neighbors
   for(let i=0;i<nb.length;i++)for(let j=i+1;j<nb.length;j++){
     const w=(NBR.get(nb[i][0])||new Map()).get(nb[j][0]); if(w){
       links.push({s:nmap.get('p'+nb[i][0]),t:nmap.get('p'+nb[j][0]),w:Math.min(w,2),faint:true});}}
+  // size every circle by its actual connection count in this ego view (min 5px so
+  // single-link leaves stay clickable, max 20px so the center hub doesn't swallow it)
+  sizeByDegree(nodes, links, 5, 20, 2.6);
   view={x:0,y:0,k:1};
   for(let it=0;it<300;it++) tick();
 }
@@ -498,8 +516,9 @@ function buildFullGraph(){
     edgeCt.set(a,(edgeCt.get(a)||0)+1); edgeCt.set(b,(edgeCt.get(b)||0)+1); }
   function addP(id){ if(nmap.has('p'+id))return nmap.get('p'+id);
     const p=P.get(id); if(!p)return null;
-    const d=deg.get(id)||0;
-    const n={id,type:'p',label:p.name,r:4+Math.min(10,Math.sqrt(d)),deg:d,
+    // r/deg here are just placeholders -- sizeByDegree() overwrites both below
+    // once the full links list for this view is known
+    const n={id,type:'p',label:p.name,r:6,deg:deg.get(id)||0,
       x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('p'+id,n); nodes.push(n); return n;}
   for(const [a,b,w] of DATA.edges){
@@ -507,28 +526,26 @@ function buildFullGraph(){
     const na=addP(a), nb=addP(b);
     if(na&&nb) links.push({s:na,t:nb,w:Math.min(w,4),faint:w<2});}
   for(const e of E.values()){ if(!e.att.length)continue;
-    const en={id:e.id,type:'e',label:e.name,r:9,deg:e.att.length,
+    // initial r is just a placeholder -- sizeByDegree() overwrites every node's
+    // radius below once the full links list for this view is known
+    const en={id:e.id,type:'e',label:e.name,r:6,deg:e.att.length,
       x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('e'+e.id,en); nodes.push(en);
     for(const [q] of e.att){ const pn=nmap.get('p'+q)||addP(q); if(pn) links.push({s:en,t:pn,w:2}); } }
   // organization nodes
   (DATA.orgs||[]).forEach((o,oi)=>{
     if(o.members.length<3) return;
-    const on={id:'o'+oi,type:'o',label:o.name,r:6+Math.min(9,Math.sqrt(o.members.length)),deg:o.members.length,
+    const on={id:'o'+oi,type:'o',label:o.name,r:6,deg:o.members.length,
       org:o.name,x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nodes.push(on);
     for(const q of o.members){
       const pn = core ? nmap.get('p'+q) : (nmap.get('p'+q)||addP(q));  // core: orgs link only to people already on the map
       if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
-  // size people by their actual connection count; events and orgs stay uniform
-  const lc = new Map();
-  for(const l of links){ lc.set(l.s,(lc.get(l.s)||0)+1); lc.set(l.t,(lc.get(l.t)||0)+1); }
-  for(const n of nodes){
-    const c = lc.get(n)||0;
-    if(n.type==='p'){ n.deg = c; n.r = 3 + Math.min(16, 1.8*Math.sqrt(c)); }
-    else if(n.type==='e'){ n.r = 9; }
-    else { n.r = 8; }
-  }
+  // size every circle -- people, events, and orgs alike -- by its actual connection
+  // count in this rendered graph (min 3px so isolated/one-off nodes stay visible and
+  // clickable, max 19px so hub nodes like major community leaders or huge conventions
+  // don't dominate the map or overlap their neighbors too badly)
+  sizeByDegree(nodes, links, 3, 19, 1.8);
   // ---- community detection (label propagation) -> cluster colors ----
   const adj = new Map();
   for(const l of links){
