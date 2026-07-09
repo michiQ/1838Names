@@ -72,7 +72,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 </header>
 <div id="wrap">
   <div id="left">
-    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button></div>
+    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button></div>
     <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
     <div id="filters">
       <span class="chip on" data-f="all">All</span>
@@ -211,6 +211,11 @@ function renderList(q){
       if(p.census?.length) ct.push(p.census.length+'⌂');
       return `<div class="prow" data-id="${p.id}" data-t="p"><span>${p.name}${badge}</span><span class="ct">${ct.join(' ')}</span></div>`;
     }).join('');
+  } else if(mode==='o'){
+    const rows = [...(DATA.orgs||[])].filter(o=>o.name.toLowerCase().includes(q))
+      .sort((a,b)=>b.members.length-a.members.length || a.name.localeCompare(b.name)).slice(0,400);
+    plist.innerHTML = rows.map(o=>
+      `<div class="prow" data-t="o" data-name="${o.name.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}"><span>${o.name}</span><span class="ct">${o.members.length}◆</span></div>`).join('');
   } else {
     const rows = sortedEvents.filter(e=>(e.name+' '+(e.loc||'')+' '+(e.desc||'')+' '+(e.date||'')).toLowerCase().includes(q)).slice(0,400);
     plist.innerHTML = rows.map(e=>
@@ -218,14 +223,17 @@ function renderList(q){
   }
 }
 plist.addEventListener('click',ev=>{const r=ev.target.closest('.prow'); if(!r)return;
-  r.dataset.t==='e' ? selectEvent(+r.dataset.id) : select(+r.dataset.id);});
+  if(r.dataset.t==='e') selectEvent(+r.dataset.id);
+  else if(r.dataset.t==='o'){ orgsel.value = r.dataset.name; window._orgFilter = r.dataset.name; setMode('p'); }
+  else select(+r.dataset.id);});
 search.addEventListener('input',()=>renderList(search.value));
-const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e');
-function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e');
-  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : 'Search events… e.g. convention';
+const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e'), tabO=document.getElementById('tab-o');
+function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e'); tabO.classList.toggle('on',m==='o');
+  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : m==='o' ? 'Search organizations… e.g. Lodge' : 'Search events… e.g. convention';
   renderList(search.value); }
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
+tabO.addEventListener('click',()=>setMode('o'));
 const orgsel = document.getElementById('orgsel');
 [...(DATA.orgs||[])].sort((a,b)=>a.name.localeCompare(b.name)).forEach(o=>{
   const op=document.createElement('option'); op.value=o.name;
@@ -650,14 +658,35 @@ function draw(){
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
     else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
-    if((showAll || n.fixed || n.sel || n.deg>=14 || n.isPlanet || (hlN && isHl)) && (!is3d || n.ps>0.78 || n.isPlanet || (hlN && isHl))){
-      const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
-      const S = (n.fixed||n.sel) ? 15 : (n.isPlanet ? 14 : 12);
-      const fpx = Math.min(120, S/Math.max(view.k,0.02));
-      ctx.font=((n.fixed||n.sel||n.isPlanet)?'bold ':'')+fpx.toFixed(1)+'px Georgia';
-      ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':(n.isPlanet?'#e5d9c2':'#c9bda6');
-      ctx.textAlign='center'; ctx.fillText(label,n.px,n.py+n.r*n.ps+fpx*0.9);
-    }
+  }
+  // ---- label pass: draw highest-priority labels first, skip any that would overlap one already placed ----
+  const labelBoxes = [];
+  function boxFree(x0,y0,x1,y1){
+    for(const o of labelBoxes){ if(x0<o.x1 && x1>o.x0 && y0<o.y1 && y1>o.y0) return false; }
+    return true;
+  }
+  const candidates = order.filter(n=>{
+    const isHl = !hlN || n===hlN || (hl && hl.has(n));
+    return (showAll || n.fixed || n.sel || n.deg>=14 || n.isPlanet || (hlN && isHl)) && (!is3d || n.ps>0.78 || n.isPlanet || (hlN && isHl));
+  });
+  const score = m => (m.fixed||m.sel?1e6:0) + (hlN && m===hlN?9e5:0) + (hlN && hl && hl.has(m)?5e5:0) + (m.isPlanet?1e4:0) + (m.deg||0);
+  candidates.sort((a,b)=>score(b)-score(a));
+  for(const n of candidates){
+    const depth = is3d ? Math.max(.25, Math.min(1, (n.ps-.55)*2.2)) : 1;
+    const isHl = !hlN || n===hlN || (hl && hl.has(n));
+    const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
+    const S = (n.fixed||n.sel) ? 15 : (n.isPlanet ? 14 : 12);
+    const fpx = Math.min(120, S/Math.max(view.k,0.02));
+    ctx.font=((n.fixed||n.sel||n.isPlanet)?'bold ':'')+fpx.toFixed(1)+'px Georgia';
+    const tx = n.px, ty = n.py+n.r*n.ps+fpx*0.9;
+    const w = ctx.measureText(label).width, pad = fpx*0.18;
+    const x0=tx-w/2-pad, x1=tx+w/2+pad, y0=ty-fpx*0.85-pad, y1=ty+fpx*0.3+pad;
+    const important = n.fixed || n.sel || (hlN && n===hlN);
+    if(!important && !boxFree(x0,y0,x1,y1)) continue;
+    labelBoxes.push({x0,y0,x1,y1});
+    ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
+    ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':(n.isPlanet?'#e5d9c2':'#c9bda6');
+    ctx.textAlign='center'; ctx.fillText(label,tx,ty);
   }
   ctx.globalAlpha = 1;
   ctx.restore();
