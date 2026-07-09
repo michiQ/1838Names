@@ -29,9 +29,8 @@ header .sub{color:var(--dim);font-size:12.5px;font-style:italic}
 #filters{display:flex;flex-wrap:wrap;gap:5px;margin:0 12px 8px}
 #filters .chip{font-size:10.5px;padding:3px 9px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--dim);cursor:pointer;font-family:Georgia}
 #filters .chip.on{background:#33290f;color:var(--gold);border-color:var(--gold)}
-#orgsel,#churchsel,#papersel,#orgsearch{margin:0 12px 8px;padding:7px 9px;width:calc(100% - 24px);background:var(--bg);border:1px solid var(--line);color:var(--ink);font:12.5px Georgia;border-radius:4px;outline:none}
-#orgsel:focus,#churchsel:focus,#papersel:focus,#orgsearch:focus{border-color:var(--gold)}
-#orgsearch{margin-bottom:4px}
+#orgsel,#churchsel,#papersel{margin:0 12px 8px;padding:7px 9px;width:calc(100% - 24px);background:var(--bg);border:1px solid var(--line);color:var(--ink);font:12.5px Georgia;border-radius:4px;outline:none}
+#orgsel:focus,#churchsel:focus,#papersel:focus{border-color:var(--gold)}
 .orgchips{margin:6px 0 2px}
 .orgchips span{display:inline-block;font-size:11px;background:#2c261a;color:#c9ab6b;border-radius:9px;padding:2px 8px;margin:2px 3px 0 0;cursor:pointer}
 #center{flex:1;position:relative;min-width:0}
@@ -83,7 +82,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span class="chip" data-f="c1847">1847 census</span>
     </div>
     <select id="papersel"><option value="">All newspapers…</option></select>
-    <input id="orgsearch" placeholder="Filter organizations… e.g. Church" autocomplete="off">
     <select id="orgsel"><option value="">All organizations…</option></select>
     <select id="churchsel"><option value="">All churches (1838 census)…</option></select>
     <div id="plist"></div>
@@ -228,24 +226,10 @@ function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList
   renderList(search.value); }
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
-const orgsel = document.getElementById('orgsel'), orgsearch = document.getElementById('orgsearch');
-const orgsAll = [...(DATA.orgs||[])].sort((a,b)=>a.name.localeCompare(b.name));
-function renderOrgOptions(q){
-  q=(q||'').trim().toLowerCase();
-  const cur = orgsel.value;
-  const rows = orgsAll.filter(o=>!q||o.name.toLowerCase().includes(q));
-  orgsel.innerHTML = '<option value="">All organizations…</option>' + rows.map(o=>
-    `<option value="${esc(o.name)}">${esc(o.name)} (${o.members.length})</option>`).join('');
-  if(cur && rows.some(o=>o.name===cur)) orgsel.value = cur;
-  else if(cur){ // keep the active filter selectable/visible even if it doesn't match the current search text
-    const kept = orgsAll.find(o=>o.name===cur);
-    const op=document.createElement('option'); op.value=cur;
-    op.textContent = kept ? `${kept.name} (${kept.members.length})` : cur;
-    op.selected = true; orgsel.appendChild(op);
-  }
-}
-renderOrgOptions('');
-orgsearch.addEventListener('input',()=>renderOrgOptions(orgsearch.value));
+const orgsel = document.getElementById('orgsel');
+[...(DATA.orgs||[])].sort((a,b)=>a.name.localeCompare(b.name)).forEach(o=>{
+  const op=document.createElement('option'); op.value=o.name;
+  op.textContent=`${o.name} (${o.members.length})`; orgsel.appendChild(op);});
 orgsel.addEventListener('change',()=>{
   window._orgFilter = orgsel.value || null;
   if(mode!=='p') setMode('p'); else renderList(search.value);});
@@ -292,19 +276,10 @@ renderList('');
 const right = document.getElementById('right');
 const ISSUE_LABEL = s=>{ if(!s) return ''; const [c,d]=s.split('_'); return (PAPERS[c]||c)+' — '+d; };
 const URLS = DATA.issueUrls||{};
-const JPEG_ISSUES = new Set(DATA.jpegIssues||[]);
 function srcLinks(slug,pg){
   if(!slug) return '';
-  let h = '';
-  if(JPEG_ISSUES.has(slug)){
-    h += ` · <a href="pages/${slug}_p${pg}.jpg" target="_blank" title="open the scanned page">view page</a>`;
-    if(URLS[slug]) h += ` · <a href="${URLS[slug]}" target="_blank" title="full issue PDF on Google Drive">full issue</a>`;
-  } else if(URLS[slug]) {
-    // no local page scans for this source (e.g. a born-digital document) -- link straight into the
-    // PDF at the cited page via Google Drive's #page= fragment, plus a plain link to the whole document.
-    h += ` · <a href="${URLS[slug]}#page=${pg}" target="_blank" title="open this page in the source document">view page</a>`;
-    h += ` · <a href="${URLS[slug]}" target="_blank" title="full document on Google Drive">full document</a>`;
-  }
+  let h = ` · <a href="pages/${slug}_p${pg}.jpg" target="_blank" title="open the scanned page">view page</a>`;
+  if(URLS[slug]) h += ` · <a href="${URLS[slug]}" target="_blank" title="full issue PDF on Google Drive">full issue</a>`;
   return h;
 }
 function esc(t){return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
@@ -369,7 +344,7 @@ function selectEvent(eid){
   const e = E.get(eid); if(!e) return;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='e' && +r.dataset.id===eid));
   let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>`;
-  if(e.desc) h += `<div class="card"><q>${esc(e.desc)}</q>${e.issue?`<div class="src">${ISSUE_LABEL(e.issue)}, p.${e.pg}${srcLinks(e.issue,e.pg)}</div>`:''}</div>`;
+  if(e.desc) h += `<div class="card"><q>${esc(e.desc)}</q></div>`;
   if(e.att.length){
     h += `<h3>Who was there (${e.att.length})</h3>` + e.att.map(([q,role])=>{
       const op=P.get(q); if(!op) return '';
@@ -405,20 +380,6 @@ function buildEventGraph(eid){
 const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
 let nodes=[], links=[], view={x:0,y:0,k:1}, dragN=null, panning=false, rotating=false, px=0, py=0;
 let rot={yaw:0,pitch:0};
-// every circle (person, event, or org) is sized by how many connections it actually
-// has in whatever graph is currently rendered -- counted straight off the `links` list
-// that was just built, so it stays accurate whether that node is a hub or a leaf, and
-// whether we're in the ego view or the full map. Sqrt scale so *area*, not radius,
-// tracks degree -- keeps heavily-connected hub nodes readable without overwhelming
-// the canvas or overlapping their neighbors too badly. rMin keeps 0-connection nodes
-// (e.g. an org whose members aren't all on screen in "core" mode) big enough to still
-// see and click.
-function sizeByDegree(nodes, links, rMin, rMax, mult){
-  const lc = new Map();
-  for(const l of links){ lc.set(l.s,(lc.get(l.s)||0)+1); lc.set(l.t,(lc.get(l.t)||0)+1); }
-  for(const n of nodes){ const c = lc.get(n)||0; n.deg = c; n.r = rMin + Math.min(rMax-rMin, mult*Math.sqrt(c)); }
-  return lc;
-}
 function setHighlight(n){
   window._hlN = n || null;
   if(!n){ window._hl = null; return; }
@@ -446,22 +407,18 @@ function buildGraph(pid){
     const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,z:0,vx:0,vy:0,vz:0};
     nmap.set(type+id,n); nodes.push(n); return n;}
   const center=addNode(pid,'p',p.name,16); center.x=0;center.y=0;center.fixed=true;
-  // neighbor people (initial r is just a placeholder -- sizeByDegree() overwrites
-  // every node's radius below once the full links list for this view is known)
+  // neighbor people
   const nb=[...(NBR.get(pid)||new Map()).entries()].sort((a,b)=>b[1]-a[1]).slice(0,40);
   for(const [q,w] of nb){ const op=P.get(q); if(!op)continue;
-    const n=addNode(q,'p',op.name,6); links.push({s:center,t:n,w}); }
+    const n=addNode(q,'p',op.name,7+Math.min(6,w)); links.push({s:center,t:n,w}); }
   // events of this person
   for(const {e} of (p.events||[]).map(x=>({e:E.get(x.e)})).filter(x=>x.e)){
-    const en=addNode(e.id,'e',e.name,6); links.push({s:center,t:en,w:4});
+    const en=addNode(e.id,'e',e.name,11); links.push({s:center,t:en,w:4});
     for(const [q] of e.att){ if(q===pid)continue; const k=nmap.get('p'+q); if(k) links.push({s:en,t:k,w:2}); } }
   // 2nd-degree light links among neighbors
   for(let i=0;i<nb.length;i++)for(let j=i+1;j<nb.length;j++){
     const w=(NBR.get(nb[i][0])||new Map()).get(nb[j][0]); if(w){
       links.push({s:nmap.get('p'+nb[i][0]),t:nmap.get('p'+nb[j][0]),w:Math.min(w,2),faint:true});}}
-  // size every circle by its actual connection count in this ego view (min 5px so
-  // single-link leaves stay clickable, max 20px so the center hub doesn't swallow it)
-  sizeByDegree(nodes, links, 5, 20, 2.6);
   view={x:0,y:0,k:1};
   for(let it=0;it<300;it++) tick();
 }
@@ -475,11 +432,35 @@ function repulse(a,b){
 }
 function tick(){
   const SP = window._fullView ? 2.4 : 1;   // spacing multiplier for the full map
+  const solar = !!window._fullView;
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
-    const target=(60+240/(l.w+1))*SP, f=(d-target)*0.004*(l.faint?0.4:1);
+    let target=(60+240/(l.w+1))*SP, k=0.004*(l.faint?0.4:1), pw=1, mw=1;
+    if(solar){
+      if(l.s.isPlanet && l.t.isPlanet){ target=650; k=0.0015; }                       // planets keep distance
+      else if(l.s.isPlanet || l.t.isPlanet){
+        const moon = l.s.isPlanet ? l.t : l.s;
+        if(moon.primary === (l.s.isPlanet?l.s:l.t)){ target=moon.orbitR||90; k=0.03;  // tight orbit around primary
+          if(l.s.isPlanet){pw=0.05;} else {mw=0.05;} }                                 // planets barely feel their moons
+        else { target=420; k=0.0005; }                                                 // moon linked to a foreign planet: loose
+      } else { target=140; k=0.002; }                                                  // moon-moon
+    }
+    const f=(d-target)*k;
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
-    if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
+    const sw = l.s.isPlanet?pw:1, tw = l.t.isPlanet?pw:1;
+    if(!l.s.fixed){l.s.vx+=fx*sw;l.s.vy+=fy*sw;l.s.vz+=fz*sw;}
+    if(!l.t.fixed){l.t.vx-=fx*tw;l.t.vy-=fy*tw;l.t.vz-=fz*tw;} }
+  // planets strongly repel each other so systems stay separated
+  if(solar && window._planets){
+    const P = window._planets;
+    for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){
+      const a=P[i],b=P[j];
+      let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
+      if(d2<1)d2=1;
+      if(d2<640000){const d=Math.sqrt(d2),f=9000/d2,fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
+        if(!a.fixed&&!a.pin){a.vx-=fx;a.vy-=fy;a.vz-=fz;}
+        if(!b.fixed&&!b.pin){b.vx+=fx;b.vy+=fy;b.vz+=fz;}}}
+  }
   if(nodes.length<=160){
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++) repulse(nodes[i],nodes[j]);
   } else {
@@ -495,16 +476,6 @@ function tick(){
       // gentle centering so disconnected clumps stay on screen
       n.vx-=n.x*0.00018; n.vy-=n.y*0.00018; n.vz-=(n.z||0)*0.00018; }
   }
-  // gentle pull of each community toward its own centroid (full map only)
-  if(window._fullView && window._commGroups){
-    for(const g of window._commGroups){
-      let cx=0,cy=0,cz=0;
-      for(const n of g){cx+=n.x;cy+=n.y;cz+=n.z||0;}
-      cx/=g.length; cy/=g.length; cz/=g.length;
-      for(const n of g){ if(n.fixed||n.pin)continue;
-        n.vx+=(cx-n.x)*0.0012; n.vy+=(cy-n.y)*0.0012; n.vz+=(cz-(n.z||0))*0.0012; }
-    }
-  }
   for(const n of nodes){ if(n.fixed||n.pin)continue;
     n.vx*=.82;n.vy*=.82;n.vz*=.82; n.x+=n.vx;n.y+=n.vy;n.z=(n.z||0)+n.vz;}
 }
@@ -516,9 +487,8 @@ function buildFullGraph(){
     edgeCt.set(a,(edgeCt.get(a)||0)+1); edgeCt.set(b,(edgeCt.get(b)||0)+1); }
   function addP(id){ if(nmap.has('p'+id))return nmap.get('p'+id);
     const p=P.get(id); if(!p)return null;
-    // r/deg here are just placeholders -- sizeByDegree() overwrites both below
-    // once the full links list for this view is known
-    const n={id,type:'p',label:p.name,r:6,deg:deg.get(id)||0,
+    const d=deg.get(id)||0;
+    const n={id,type:'p',label:p.name,r:4+Math.min(10,Math.sqrt(d)),deg:d,
       x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('p'+id,n); nodes.push(n); return n;}
   for(const [a,b,w] of DATA.edges){
@@ -526,26 +496,28 @@ function buildFullGraph(){
     const na=addP(a), nb=addP(b);
     if(na&&nb) links.push({s:na,t:nb,w:Math.min(w,4),faint:w<2});}
   for(const e of E.values()){ if(!e.att.length)continue;
-    // initial r is just a placeholder -- sizeByDegree() overwrites every node's
-    // radius below once the full links list for this view is known
-    const en={id:e.id,type:'e',label:e.name,r:6,deg:e.att.length,
+    const en={id:e.id,type:'e',label:e.name,r:9,deg:e.att.length,
       x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('e'+e.id,en); nodes.push(en);
     for(const [q] of e.att){ const pn=nmap.get('p'+q)||addP(q); if(pn) links.push({s:en,t:pn,w:2}); } }
   // organization nodes
   (DATA.orgs||[]).forEach((o,oi)=>{
     if(o.members.length<3) return;
-    const on={id:'o'+oi,type:'o',label:o.name,r:6,deg:o.members.length,
+    const on={id:'o'+oi,type:'o',label:o.name,r:6+Math.min(9,Math.sqrt(o.members.length)),deg:o.members.length,
       org:o.name,x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nodes.push(on);
     for(const q of o.members){
       const pn = core ? nmap.get('p'+q) : (nmap.get('p'+q)||addP(q));  // core: orgs link only to people already on the map
       if(pn) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); }});
-  // size every circle -- people, events, and orgs alike -- by its actual connection
-  // count in this rendered graph (min 3px so isolated/one-off nodes stay visible and
-  // clickable, max 19px so hub nodes like major community leaders or huge conventions
-  // don't dominate the map or overlap their neighbors too badly)
-  sizeByDegree(nodes, links, 3, 19, 1.8);
+  // size people by their actual connection count; events and orgs stay uniform
+  const lc = new Map();
+  for(const l of links){ lc.set(l.s,(lc.get(l.s)||0)+1); lc.set(l.t,(lc.get(l.t)||0)+1); }
+  for(const n of nodes){
+    const c = lc.get(n)||0;
+    if(n.type==='p'){ n.deg = c; n.r = 3 + Math.min(16, 1.8*Math.sqrt(c)); }
+    else if(n.type==='e'){ n.r = 9; }
+    else { n.r = 8; }
+  }
   // ---- community detection (label propagation) -> cluster colors ----
   const adj = new Map();
   for(const l of links){
@@ -576,6 +548,42 @@ function buildFullGraph(){
   const groups = new Map();
   for(const n of nodes){ if(!groups.has(n.comm)) groups.set(n.comm,[]); groups.get(n.comm).push(n); }
   window._commGroups = [...groups.values()].filter(g=>g.length>=4);
+  // ---- planetary layout: hubs are planets, low-degree nodes orbit them as moons ----
+  for(const n of nodes){
+    const c = lc.get(n)||0;
+    n.isPlanet = n.type==='p' ? c>=9 : c>=5;
+    if(n.isPlanet && n.type==='p') n.r = Math.max(n.r, 11);
+  }
+  // each moon picks its strongest planet neighbor as primary
+  for(const n of nodes){
+    if(n.isPlanet){ n.primary=null; continue; }
+    let best=null, bw=-1;
+    for(const [m,w] of (adj.get(n)||[])) if(m.isPlanet && w>bw){best=m;bw=w;}
+    n.primary = best;
+    n.orbitR = best ? best.r*2.2 + 30 + Math.random()*70 : 0;
+  }
+  // second pass: orphan moons adopt their neighbor's primary
+  for(const n of nodes){
+    if(n.isPlanet || n.primary) continue;
+    for(const [m] of (adj.get(n)||[])) if(m.primary){ n.primary=m.primary; n.orbitR=m.primary.r*2.2+60+Math.random()*80; break; }
+  }
+  // seed positions: planets on a wide sphere (golden spiral), moons around their primary
+  const planets = nodes.filter(n=>n.isPlanet);
+  window._planets = planets;
+  const R = 320 + planets.length*22;
+  planets.forEach((p,i)=>{
+    const y = 1 - 2*(i+0.5)/planets.length, rr = Math.sqrt(Math.max(0,1-y*y)), th = i*2.399963;
+    p.x = R*rr*Math.cos(th); p.y = R*y*0.75; p.z = R*rr*Math.sin(th); p.vx=p.vy=p.vz=0;
+  });
+  for(const n of nodes){
+    if(n.isPlanet) continue;
+    if(n.primary){
+      const u=Math.random()*6.283, v=Math.random()*3.1416;
+      n.x = n.primary.x + n.orbitR*Math.sin(v)*Math.cos(u);
+      n.y = n.primary.y + n.orbitR*Math.cos(v);
+      n.z = n.primary.z + n.orbitR*Math.sin(v)*Math.sin(u);
+    }
+  }
   view={x:0,y:0,k:0.34};
   rot={yaw:0.5,pitch:0.28}; window._spin=true;
   setHighlight(null);
