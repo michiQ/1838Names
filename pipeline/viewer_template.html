@@ -570,7 +570,7 @@ function buildFullGraph(){
   // seed positions: planets on a wide sphere (golden spiral), moons around their primary
   const planets = nodes.filter(n=>n.isPlanet);
   window._planets = planets;
-  const R = 320 + planets.length*22;
+  const R = Math.min(2400, 320 + planets.length*22);
   planets.forEach((p,i)=>{
     const y = 1 - 2*(i+0.5)/planets.length, rr = Math.sqrt(Math.max(0,1-y*y)), th = i*2.399963;
     p.x = R*rr*Math.cos(th); p.y = R*y*0.75; p.z = R*rr*Math.sin(th); p.vx=p.vy=p.vz=0;
@@ -584,10 +584,13 @@ function buildFullGraph(){
       n.z = n.primary.z + n.orbitR*Math.sin(v)*Math.sin(u);
     }
   }
-  view={x:0,y:0,k:0.34};
   rot={yaw:0.5,pitch:0.28}; window._spin=true;
   setHighlight(null);
   for(let it=0;it<160;it++) tick();
+  let mr = 1;
+  for(const n of nodes){ const d=Math.hypot(n.x,n.y,n.z||0); if(d>mr) mr=d; }
+  const fit = Math.min(cv.clientWidth, cv.clientHeight) / (2.5*mr);
+  view = {x:0, y:0, k: Math.max(0.04, Math.min(0.8, fit))};
 }
 const allbtn=document.getElementById('allbtn');
 const densbtn=document.getElementById('densbtn');
@@ -623,12 +626,15 @@ function draw(){
   if(is3d && window._spin && !rotating && !dragN) rot.yaw += 0.0012;
   project();
   const hlN = window._hlN, hl = window._hl;
+  const zf = is3d ? Math.max(0.12, Math.min(1, (view.k/0.45)*(view.k/0.45))) : 1;
   for(const l of links){
     const depth = is3d ? Math.max(.15, Math.min(1, ((l.s.ps+l.t.ps)/2 - .55)*2.2)) : 1;
     const onHl = hlN && (l.s===hlN || l.t===hlN);
     const dimF = hlN && !onHl ? 0.18 : 1;
+    if(is3d && !onHl && l.faint && view.k < 0.3) continue;
+    if(is3d && !onHl && view.k < 0.14 && l.w < 2 && !(l.s.isPlanet&&l.t.isPlanet)) continue;
     ctx.strokeStyle = onHl ? `rgba(232,196,120,${Math.max(.55,.8*depth)})`
-      : l.faint ? `rgba(168,156,134,${.10*depth*dimF})` : `rgba(212,162,78,${.25*depth*dimF})`;
+      : l.faint ? `rgba(168,156,134,${.10*depth*dimF*zf})` : `rgba(212,162,78,${.25*depth*dimF*zf})`;
     ctx.lineWidth=((l.faint&&!onHl?0.6:Math.min(1+l.w*.3,3))+(onHl?0.7:0))*((l.s.ps+l.t.ps)/2||1);
     ctx.beginPath();ctx.moveTo(l.s.px,l.s.py);ctx.lineTo(l.t.px,l.t.py);ctx.stroke(); }
   const showAll = nodes.length<=160 || view.k>=1.5;
@@ -644,11 +650,13 @@ function draw(){
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
     else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
-    if((showAll || n.fixed || n.sel || n.deg>=14 || (hlN && isHl)) && (!is3d || n.ps>0.78 || (hlN && isHl))){
+    if((showAll || n.fixed || n.sel || n.deg>=14 || n.isPlanet || (hlN && isHl)) && (!is3d || n.ps>0.78 || n.isPlanet || (hlN && isHl))){
       const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
-      ctx.font=((n.fixed||n.sel)?'bold 12px':'10.5px')+' Georgia';
-      ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':'#c9bda6';
-      ctx.textAlign='center'; ctx.fillText(label,n.px,n.py+n.r*n.ps+11);
+      const S = (n.fixed||n.sel) ? 15 : (n.isPlanet ? 14 : 12);
+      const fpx = Math.min(120, S/Math.max(view.k,0.02));
+      ctx.font=((n.fixed||n.sel||n.isPlanet)?'bold ':'')+fpx.toFixed(1)+'px Georgia';
+      ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':(n.isPlanet?'#e5d9c2':'#c9bda6');
+      ctx.textAlign='center'; ctx.fillText(label,n.px,n.py+n.r*n.ps+fpx*0.9);
     }
   }
   ctx.globalAlpha = 1;
@@ -698,7 +706,7 @@ cv.addEventListener('dblclick',e=>{
   if(n && n.pin){ n.pin=false; }   // double-click releases a pinned node back to the springs
 });
 cv.addEventListener('wheel',e=>{e.preventDefault();
-  const f=e.deltaY<0?1.12:0.89; view.k=Math.max(.25,Math.min(4,view.k*f));},{passive:false});
+  const f=e.deltaY<0?1.12:0.89; view.k=Math.max(.04,Math.min(4,view.k*f));},{passive:false});
 
 // initial selection: most active person
 if(sorted.length) select(sorted[0].id);
