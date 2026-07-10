@@ -2,10 +2,10 @@
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
 import sqlite3, json, re, os
 
-DB = os.environ.get("BM_DB", "/tmp/fj1/black_metropolis.db")
-OUT = "/sessions/optimistic-focused-goldberg/mnt/outputs/1838_black_metropolis_viewer.html"
-TPL = "/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
-ORG_ALIASES = "/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
+DB = os.environ.get("BM_DB", "/tmp/bm17/black_metropolis.db")
+OUT = "/tmp/bm17/out/1838_black_metropolis_viewer.html"
+TPL = "/sessions/peaceful-determined-tesla/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
+ORG_ALIASES = "/sessions/peaceful-determined-tesla/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
 
 # organization name normalization: fold known spelling/punctuation variants of the same
 # org into one canonical display name before counting/deduping. Curated by Michiko; see
@@ -132,14 +132,14 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/sessions/peaceful-determined-tesla/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
 
 # which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
 # any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
 import glob as _glob, os as _os
-PAGES_DIR = "/sessions/optimistic-focused-goldberg/mnt/Newspapers/1838 Names Database/pages"
+PAGES_DIR = "/sessions/peaceful-determined-tesla/mnt/Newspapers/1838 Names Database/pages"
 jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
                       for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
 

@@ -49,12 +49,13 @@ Pencil Pusher) — work top to bottom across runs.
 - [ ] PF_1838-02-15
 
 ## Freedoms Journal (1 issue, 1 page)
-- [ ] FJ_1827-04-06 (p2 only -- 300dpi tesseract timed out on the 2026-07-09 6th-batch run even after retry, dropped to 200dpi per the fallback ladder; p1/p3/p4 of this issue are already at 300dpi. FJ_1827-03-23_p2 hit the same timeout but succeeded on a same-resolution retry, so it did NOT need to be added here.)
+- [x] FJ_1827-04-06 (p2 only -- DONE 2026-07-10 (17th scheduled run): re-OCR'd at full 300dpi by splitting the render (pdftoppm) and OCR (tesseract) into separate bash calls to dodge the 45s wall; 21,731 bytes, overwritten in place and picked up by that run's full rebuild. Previously: 300dpi timed out on the 2026-07-09 6th-batch run, was at 200dpi.)
 
 ## Pencil Pusher (86 issues, ~86 pages — mostly single-page clippings)
 - [ ] PP_000 .. PP_085 (all pending; see ocr_text/ for the full slug list, e.g. `ls ocr_text | grep '^PP_' | sed -E 's/_p[0-9]+\.txt$//' | sort -u`)
 
 ## Progress log
+- 2026-07-10 (17th scheduled run): Backfilled FJ_1827-04-06_p2 at 300dpi (the only FJ pending item — FJ section now clear). All 20 pages of this run's 5 new FJ issues hit native 300dpi (one page needed the split render/OCR two-call trick), so no new entries. Remaining: 32 CA/PF issues + 86 PP issues.
 - 2026-07-06: List seeded (116 issues / ~204 pages total pending). Backfilled CA_1837-01-07, 01-14, 01-21, 01-28 (16 pages) at 300dpi this session -- overwrote ocr_text/ in place, rebuilt (match_names -> load_extractions -> apply_merges -> find_merge_candidates -> build_viewer), pushed. ~188 pages remain (22 CA issues, 4 PF issues, 86 PP issues).
 - 2026-07-06 (7th scheduled run): Backfilled CA_1837-02-04 (4 pages) at 300dpi -- page 4 timed out at 300dpi even at 43s, dropped to 200dpi per the documented fallback and it completed in 32s. Overwrote ocr_text/CA_1837-02-04_p*.txt in place. ~184 pages remain (21 CA issues, 4 PF issues, 86 PP issues, plus new CA_1837-05-20/05-27/06-03/06-10/06-17 issues processed this run at native 300dpi so they never need backfill).
 - Note on OCR tool flakiness: the first `tesseract` call on a just-rendered 300dpi page consistently produces an empty file or errors ("Error during processing" / timeout) — an immediate retry on the same .pgm file succeeds reliably. Budget 2 tesseract attempts per page when estimating run time.
