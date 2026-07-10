@@ -3,7 +3,7 @@
 Schema + Winch reference parser."""
 import sqlite3, re, sys, unicodedata
 
-DB = "/tmp/r17/black_metropolis.db"
+DB = "/tmp/fj3/black_metropolis.db"
 WINCH = "/tmp/winch.txt"
 
 SCHEMA = """

@@ -4,7 +4,7 @@ Auto-generated each run. To confirm a merge, add a group to `merges.json`
 (format: {"keep": "Canonical Name", "aliases": ["Other spelling", ...]}) — the next run applies it.
 Records are never merged automatically; aliases preserve every original spelling.
 
-- [HIGH] **Adams, N** (census, 1 census records) ↔ **Nathaniel Adams** (newspaper, 1 appearances)
+- [HIGH] **Nathaniel Adams** (newspaper, 1 appearances) ↔ **Adams, N** (census, 1 census records)
 - [HIGH] **Armstrong, E.** (winch, 1 Winch refs) ↔ **Armstrong, Eliza** (census, 1 census records)
 - [HIGH] **Ayres, Robert** (winch, 1 Winch refs) ↔ **Ayres, Robert B** (census, 1 census records)
 - [HIGH] **Banks, Solomon** (winch, 1 appearances, 1 Winch refs, 1 census records) ↔ **Banks, Soloman J** (census, 1 appearances, 1 census records)
@@ -123,4 +123,4 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Martin, J. Sella** (dissertation, 4 appearances) ↔ **Martin, James** (census, 1 census records)
 - [HIGH] **Martin, J. Sella** (dissertation, 4 appearances) ↔ **Martin, Joseph** (census, 1 census records)
 - [HIGH] **Mathews, C.** (winch, 2 Winch refs) ↔ **MATHEWS, CHARLOTTE** (census, 1 census records)
-- [HIGH] **Mathews, Mary** (winch, 1 Winch refs, 1 census records) ↔ **Mathews, Mary A** (census, 1 census records)
+- [HIGH] **Mathews, Mary** (winch, 2 appearances, 1 Winch refs, 1 census records) ↔ **Mathews, Mary A** (census, 2 appearances, 1 census records)
