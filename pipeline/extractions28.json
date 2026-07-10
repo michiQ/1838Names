@@ -1,0 +1,173 @@
+{
+ "articles": [
+  {
+   "issue": "FJ_1827-06-22",
+   "page": 3,
+   "headline": "Kidnapping trial continues at Mayor's Office -- John Smith alias James Morris alias John Purnel examined; St. Clair boy's recovery from Tuscaloosa; Henry Carr still awaiting trial",
+   "author": null,
+   "type": "news",
+   "summary": "The Office of the Mayor was crowded to excess for the examination of 'a small light coloured negro man, named John Smith, alias James Morris, alias John Purnel, of Snowhill, Maryland, the latter being his true name,' charged as principal agent of the Johnsons in the atrocious kidnappings of 1825. Several witnesses, including coloured children who had been kidnapped by Johnson's gang and restored by Messrs. Hamilton and Henderson of Mississippi, testified to his identity and direct agency. A boy named St. Clair, whose return was recently effected after great trouble and expense from Tuscaloosa, Alabama, is singled out: Smith had lured him from Second or Front street with a quarter-dollar and peaches, seized him in a covered dearborn wagon at South and Second street, and put him aboard a sloop on the Delaware. Smith was committed to answer several distinct kidnapping charges; true bills had already been found against him under different names in the Mayor's Court and Quarter Sessions. High Constable Garrigues brought him from Boston in custody, having travelled over 2000 miles pursuing kidnapping offenders. The piece closes noting 'there is another black Man now in Arch-street Prison, charged as an accomplice, waiting his trial, before the Mayor's Court' -- Henry Carr, named in the June 8 issue.",
+   "notes": "Direct continuation of the Cannon-Johnson kidnapping ring coverage begun in FJ_1827-06-08 (Pettigon/Paragee death, Purnell's Boston arrest). Confirms Purnell's true identity/alias chain and adds the St. Clair recovery and the Hamilton/Henderson of Mississippi rescuers."
+  },
+  {
+   "issue": "FJ_1827-06-29",
+   "page": 2,
+   "headline": "Tardy the Pirate, continued -- a black cook of Capt. Latham's vessel wrongly hanged for Tardy's poisoning",
+   "author": null,
+   "type": "news",
+   "summary": "Continuing coverage of the pirate/serial-poisoner Tardy (arrested for the brig Crawford murders): recounts that around 1815, aboard a schooner commanded by Capt. Latham bound New-York to Charleston, Tardy poisoned the passengers and 'had the hardihood and address to have the deed charged to the [black] cook.' The cook, 'a man, and left a family,' was tried, condemned, and 'actually executed, persisting unto the last that he was an innocent man.' Those who knew him at the eastward believed in his innocence, but 'he was swung into eternity by the management of the guilty Tardy, who had the advantage of a white face to sacrifice the black cook.' The article urges those revising the criminal code to weigh how they extend pardons to such 'infernal beings.'",
+   "notes": "Companion piece to the 'Affecting Exit' obituary of William Crafts in FJ_1827-07-06, which references this same wrongful execution."
+  },
+  {
+   "issue": "FJ_1827-06-29",
+   "page": 3,
+   "headline": "The Fourth vs. the Fifth of July -- New York's Emancipation Day procession debate, and the April 23 committee's protest",
+   "author": "LIBERTINUS; A Coloured Baltimorean; A Coloured Virginian (correspondents); Freedom's Journal editors",
+   "type": "letters/editorial",
+   "summary": "Extended debate over whether New York's people of colour should hold a public procession to mark gradual abolition. LIBERTINUS argues against any street parade as ingratitude to the plain-living Quaker abolitionists who secured the law, and notes most societies of colour had already refused to join the proposed procession. A second correspondent argues the Fourth (not the Fifth) is the proper day and questions the value of any procession at all. The issue reprints, in full, the minutes of the 'respectable Meeting of the People of Colour, held in the Mutual Relief Hall, April 23d, 1827,' resolving that the community would abstain from all processions in the public streets on the Fourth and instead hold their observance on the Fifth: signed John Maranda (Chairman), Thomas L. Jennings (Sec'ry), and the Committee of Arrangements -- John Robertson, Henry Bowers, Va. Miller, Moses Blue, and Geo. Howard. A hostile 'Morning Chronicle' editorial mocking the planned festivities is reprinted and rebuked by the Journal's editors as vulgar and calculated to inflame the lower classes against the coloured community.",
+   "notes": "Fuller committee roster (Maranda, Jennings, Robertson, Bowers, Miller, Blue, Howard) than the partial list given in FJ_1827-05-04's coverage of the same April 23 meeting (which named Marander/Jinnings/Sipkins/Robertson/Miller/Scott/Blue as a committee of seven) -- likely the same core group with some name-variant spellings (Maranda/Marander; Jinnings/Jennings) to reconcile as a merge candidate."
+  },
+  {
+   "issue": "FJ_1827-07-06",
+   "page": 1,
+   "headline": "Affecting Exit -- obituary tribute to William Crafts, Charleston lawyer and 'the black man's friend'",
+   "author": null,
+   "type": "obituary/tribute",
+   "summary": "Tribute to the late William Crafts, Esq. of the Charleston bar, recalled as 'the black man's friend' and 'a consistent advocate of the injured African' who alone among Charleston lawyers 'dared to plead for that portion of the community who can scarcely be said to enjoy the advantages of either law or gospel.' The piece recounts his defense of an unnamed black cook, tried on a merchant ship for poisoning after a man died from tainted food (the cabin boy, also suspect, was acquitted; the cook was convicted largely because of his race and occupation). Crafts moved for a new trial on grounds of partial and insufficient evidence and petitioned a U.S. Senator on the condemned man's behalf, but the senator 'ridiculed the idea of interesting himself for the life of a negro.' The condemned man met his execution with composure and forgiveness, addressing the crowd and thanking Crafts personally: 'had you been my son, you could not have acted by me more kindly.' Crafts, though not always politically popular, was repeatedly elected to South Carolina's General Assembly and was known for advocacy of literary and scientific institutions; 'the poor of South Carolina are deeply indebted to him for the means of literary instruction.'",
+   "notes": "A rare sympathetic obituary of a white ally published in the Black press; the poisoning-trial narrative parallels (and may be the same underlying case as, or a companion case to) the Tardy/Capt.-Latham cook story in FJ_1827-06-29."
+  },
+  {
+   "issue": "FJ_1827-07-06",
+   "page": 3,
+   "headline": "New-York's Fourth of July Emancipation celebration -- Oration by Mr. Hamilton; portraits of Jay, Clarkson, Thompson; bust of Boyer",
+   "author": null,
+   "type": "news",
+   "summary": "The abolition of domestic slavery in New York State was celebrated by 'a large and respectable body of our brethren' in the city on July 4, with no public parade. The decorated hall displayed portraits of Jay, Clarkson and Thompson ('these philanthropists [who] particularly exerted themselves in behalf of our oppressed race') and a bust of President Boyer of Hayti, 'evidencing to the world, that all men are equal by nature.' Banners of the several societies bore the words unity, charity, and temperance. The Oration was delivered by Mr. [William] Hamilton -- 'a plain and sensible piece of composition' containing important lessons, though the editors differed with him on one or two positions. Among the spectators was 'the respected individual, through whose unremitted exertions, the Abolition Bill was laid before the legislature' (unnamed, text cut off).",
+   "notes": "Ties directly to the April 23, 1827 Mutual Relief Hall resolution (FJ_1827-06-29) that fixed the Fifth of July, not the Fourth, as the actual procession day -- this notice describes the quieter Fourth-of-July indoor observance."
+  },
+  {
+   "issue": "FJ_1827-07-06",
+   "page": 3,
+   "headline": "Thirty cases of kidnapping in Philadelphia in the last two or three years",
+   "author": null,
+   "type": "news brief",
+   "summary": "'It is stated that there have been at least thirty cases of kidnapping in Philadelphia, in the last two or three years. Of these, four children and one woman have been restored, and it is hoped, that fifteen or sixteen more may be recovered. The residue, it is feared, are doomed to slavery for life.'",
+   "notes": "A key summary statistic for the Cannon-Johnson-era Philadelphia kidnapping wave documented piecemeal across this run's and the prior batch's issues (Pettigon/Paragee, Purnell, Henry Carr, St. Clair, John Smith alias James Morris)."
+  },
+  {
+   "issue": "FJ_1827-07-06",
+   "page": 3,
+   "headline": "Sixty-five manumitted Virginia slaves brought to York, Pa. by 'Granger,' having refused colonization to Africa",
+   "author": null,
+   "type": "news",
+   "summary": "Sixty-five manumitted slaves from Hanover County, Virginia arrived in York, Pennsylvania, conducted by one of their late owners, 'the name of this modern Moses' being Granger. They had been released from slavery on condition of emigrating to Africa but refused to go; Granger instead brought them into Pennsylvania. They intended to settle at Columbia in Lancaster County, but 'we understand but few had occasion to go there, most of them found places in and about this borough' (York). The item notes Hanover County's Black population had grown from 8,948 (1819, vs. 6,217 white) to 9,037 (1826, vs. 6,130 white), and speculates Pennsylvania may become 'the Liberia' for Virginia's 'redundant coloured population.'",
+   "notes": "A named instance of manumitted Virginians refusing African colonization and resettling in Pennsylvania -- relevant migration background for the free Black population the 1838/1847 censuses later document."
+  },
+  {
+   "issue": "FJ_1827-07-13",
+   "page": 3,
+   "headline": "New-York's Fifth of July procession -- marshal Samuel Hardenburgk; oration by John Mitchel at Zion Church",
+   "author": null,
+   "type": "news",
+   "summary": "The public procession marking final abolition of slavery in New York State assembled the morning of July 5 near St. John's Park, joined by several Brooklyn societies and 'a number of newly liberated slaves,' with coloured bands from both cities. Under marshal Mr. Samuel Hardenburgk, the procession -- 'very large, numbering near two thousand' -- marched through the principal streets to Zion Church, where an oration was delivered by Mr. John Mitchel. The day passed 'without disturbance.'",
+   "notes": "Companion piece to the July 4 indoor celebration (Hamilton's oration, Boyer bust) reported in FJ_1827-07-06 -- confirms the community split its observance across both days per the April 23 Mutual Relief Hall resolution."
+  },
+  {
+   "issue": "FJ_1827-07-13",
+   "page": 2,
+   "headline": "Letter from an Albany correspondent to Rev. Samuel E. Cornish, urging County and State Societies of coloured people",
+   "author": "unnamed (Albany correspondent)",
+   "type": "letter",
+   "summary": "A letter dated Albany, July 9, 1827, published with the writer's permission but not his name ('a gentleman of high and deserved standing in Albany'), responding to Gov. Daniel D. Tompkins's 1817 letter to the New York legislature urging gradual abolition (reprinted in the same issue). The correspondent praises the Journal's stance -- that the coloured man 'ought not to undervalue himself... ought to acknowledge no superiority, but that of age, knowledge and virtue' -- and urges formation of Societies of Coloured People in every older county of the state, feeding into a general State Society, with premiums for industry and economy, to hasten the total end of slavery in the Union. He encloses five dollars for a subscription and the first fifteen numbers of the paper.",
+   "notes": "Reprints Gov. Tompkins's 1817 emancipation letter to the legislature in full alongside the correspondence."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1827-06-29",
+   "page": 3,
+   "name": "Meeting of the People of Colour, Mutual Relief Hall, New York",
+   "date": "1827-04-23",
+   "location": "Mutual Relief Hall, New York, N.Y.",
+   "description": "Resolved that the community would abstain from all public street processions on July 4 and instead hold its Emancipation Day observance, with procession, on July 5. Signed by the Committee of Arrangements.",
+   "attendees": [
+    ["John Maranda", "Chairman"],
+    ["Thomas L. Jennings", "Secretary"],
+    ["John Robertson", "Committee of Arrangements"],
+    ["Henry Bowers", "Committee of Arrangements"],
+    ["Va. Miller", "Committee of Arrangements"],
+    ["Moses Blue", "Committee of Arrangements"],
+    ["Geo. Howard", "Committee of Arrangements"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-06-29",
+   "page": 3,
+   "name": "Marriage of William Johnson and Sarah Green",
+   "date": "1827-06-20",
+   "location": "New York, N.Y.",
+   "description": "Married on the 20th inst. by Rev. S. E. Cornish: Mr. William Johnson to Miss Sarah Green, both of New York City.",
+   "attendees": [
+    ["Samuel E. Cornish", "Rev., officiated"],
+    ["William Johnson", "groom"],
+    ["Sarah Green", "bride"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-07-06",
+   "page": 3,
+   "name": "Marriages by Rev. Benjamin Paul -- Henderson/Treadwell and Green/Bartle",
+   "date": "1827-07",
+   "location": "New York, N.Y.",
+   "description": "By the Rev. B. Paul: Mr. James Henderson to Miss Catharine Treadwell, both of New York City; and by the same, Mr. John Green to Mrs. Margaret Bartle.",
+   "attendees": [
+    ["Benjamin Paul", "Rev., officiated"],
+    ["James Henderson", "groom"],
+    ["Catharine Treadwell", "bride"],
+    ["John Green", "groom"],
+    ["Margaret Bartle", "bride"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-07-13",
+   "page": 2,
+   "name": "Fredericksburg, Va. coloured citizens' commemoration of New York's abolition of slavery",
+   "date": "1827-07-04",
+   "location": "Wilkinsville, Va. (near Fredericksburg)",
+   "description": "A respectable number of the coloured inhabitants of Fredericksburg assembled at Wilkinsville to commemorate 'the birth-day of Liberty in the State of New-York.' The Declaration of Independence was read at 3 p.m., followed by dinner and toasts.",
+   "attendees": [
+    ["Isaac N. Cary", "read the Declaration of Independence; appointed Secretary"],
+    ["Edward D. Baptist", "President"],
+    ["Alexander Duncan", "Vice-President; gave a toast"],
+    ["Wm. Duncan", "gave a toast"],
+    ["James Wilkins", "gave a toast"],
+    ["Charles Davis", "gave a toast"],
+    ["John Liverpool", "gave a toast"],
+    ["Elijah Rollings", "gave a toast"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-07-13",
+   "page": 3,
+   "name": "New-Haven emancipation celebration -- African Church, Temple Street",
+   "date": "1827-07-05",
+   "location": "New Haven, Conn.",
+   "description": "New Haven's people of colour celebrated emancipation of their race from slavery in Connecticut with a procession and public exercises at the African church in Temple Street. Mr. N. S. Jocelyn, a white philanthropist, assisted; a short address was delivered by Mr. John Creed, a man of colour.",
+   "attendees": [
+    ["N. S. Jocelyn", "philanthropist, assisted"],
+    ["John Creed", "delivered address"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-07-13",
+   "page": 3,
+   "name": "Cooperstown, N.Y. emancipation celebration",
+   "date": "1827-07-04",
+   "location": "Cooperstown, N.Y. (Presbyterian Meeting-House)",
+   "description": "About sixty of the coloured people of Otsego County marched with music and banner to the Presbyterian Meeting-House, where an address was delivered by Hayden Waters, urging sobriety, honesty, industry, and education of children.",
+   "attendees": [
+    ["Hayden Waters", "delivered the address"]
+   ]
+  }
+ ]
+}
