@@ -344,7 +344,7 @@ function select(pid){
     return `<div class="card"><span class="hl">${c.y} census — ${esc(c.name)}</span><q>${esc(bits.join(' · '))}</q>${mh}<div class="src">${c.y===1838?'Pennsylvania Abolition Society census of 1838':'Society of Friends census of 1847 (SOFAAC)'} · household ID ${esc(c.cid||'?')} · <em>name-based link</em></div></div>`;
   }).join(''); }
   // 1820 city directory records
-  if(p.directory?.length){ h += `<h3>1820 city directory (${p.directory.length})</h3>` + p.directory.map(d=>{
+  if(p.directory?.length){ h += `<h3>1820 city directory (${p.directory.length}) · <a href="https://drive.google.com/drive/u/0/folders/1pmqswYfha_2kQCbi08igOg_JY0FT2e6G" target="_blank" title="1820 Philadelphia directory source on Google Drive">view directory</a></h3>` + p.directory.map(d=>{
     const bits=[];
     if(d.occ) bits.push(d.occ);
     if(d.addr) bits.push(d.addr);
