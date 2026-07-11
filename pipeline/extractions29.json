@@ -1,0 +1,139 @@
+{
+ "articles": [
+  {
+   "issue": "FJ_1827-07-20",
+   "page": 2,
+   "headline": "Extract from an Oration delivered in Albany before the Municipal Authorities, July 4, 1827, by Salem Dutcher, Jr., Esq.",
+   "author": "Salem Dutcher, Jr.",
+   "type": "oration",
+   "summary": "Extended extract of a July 4, 1827 Albany oration marking the final abolition of slavery in New York under the 1817 law signed during Gov. Daniel D. Tompkins's administration. Dutcher credits the 1817 law and the earlier 1799 gradual abolition act to 'the philanthropic efforts of the Manumission Society, in the city of New-York, of which Joseph Curtis, Thomas Eddy, Cadwallader D. Colden, and the late venerable Matthew Clarkson, Robert Bowne and John Murray, Jun. of that city, were the most conspicuous and useful members.' The oration catalogues the horrors of the slave trade, celebrates New York's public schools for Black children (six in the city, five taught by Black teachers, under Manumission Society patronage) and the existence of Freedom's Journal itself as evidence of Black intellectual advancement, and closes by quoting Curran's famous 'no matter in what language his doom may have been pronounced' passage on English soil making all men free.",
+   "notes": "Names six Manumission Society philanthropists (Curtis, Eddy, Colden, Clarkson, Bowne, Murray Jr.) as a group -- worth checking against Winch/census for any Philadelphia-relevant overlap, though these are New York figures."
+  },
+  {
+   "issue": "FJ_1827-07-20",
+   "page": 2,
+   "headline": "Baltimore Emancipation Day dinner -- Friendship Society toasts, July 4, 1827",
+   "author": null,
+   "type": "news",
+   "summary": "A dinner was given by the members of the Friendship Society in Baltimore in commemoration of the abolition of slavery in New York State, prepared at the house of Mr. James P. Walker. Mr. James Deaver presided as President. Ten toasts were drunk, including to 'our departed friend Elisha Tyson, the African's Philanthropist,' to John Jay as 'one of the surviving advocates of the abolition of Slavery in the State of New-York,' to the Freedom's Journal itself ('may its fame spread through this great Continent'), and closing with 'Emancipation without emigration, but equal rights on the spot; this is republicanism.' The presiding officer, Mr. Deaver, rose and offered his own sentiment concerning 'justice as well as law' being a guide to the Judge of Baltimore city court in the Woolfolk case (slave-trader Woolfolk fined only $1 for beating abolitionist Benjamin Lundy).",
+   "notes": "Names James P. Walker (host) and James Deaver (president) of Baltimore's Friendship Society, plus the toast to Elisha Tyson, the well-known Baltimore Quaker abolitionist ('the African's Philanthropist') who had died in 1824 -- likely already documented in secondary literature but worth a name-check."
+  },
+  {
+   "issue": "FJ_1827-08-03",
+   "page": 1,
+   "headline": "TO THE SENIOR EDITOR -- No. I: a traveller's letter from New Haven on discrimination aboard the steamboat Hudson",
+   "author": "unnamed correspondent (signed 'Yours, &c.')",
+   "type": "travel letter",
+   "summary": "First installment of a travel-correspondence series addressed to the senior editor (Samuel Cornish), describing a steamboat voyage from New York to New Haven aboard the Hudson. The writer describes being refused a berth in the cabin though berths stood empty, 'it being contrary to all the rules of humanity, and justice, and equality, that a person of colour, however respectable, should sleep in the cabin of the Hudson,' and having to rely on the kindness of fellow Black passengers for accommodation. He also describes overhearing white passengers discussing a slanderous pamphlet circulated to defame Black people, and his distress at hearing Black fellow-passengers confuse that libel with the Freedom's Journal itself, prompting reflection on the urgent importance of African education.",
+   "notes": "First of a multi-issue travel-letter series continuing into FJ_1827-08-10 (New Haven visit, meetings with 'Mr. S---', Rev. Dr. D. of Yale, and the pseudonymous critic 'Aristides')."
+  },
+  {
+   "issue": "FJ_1827-08-03",
+   "page": 3,
+   "headline": "HORRIBLE! MOST HORRIBLE! -- burning of a Black man near Tuscaloosa, Alabama",
+   "author": null,
+   "type": "news (atrocity report)",
+   "summary": "Reprinted from the Genius of Universal Emancipation: near the boundary of Perry and Autauga counties, Alabama, a Black man accused of an unspecified crime against a Mr. McNoily was seized by a mob of 70-80 people who gathered at a local Justice's house. The mob voted for immediate execution by burning; the man was tied to a tree, surrounded with pine knots, and burned to death 'even against the remonstrances of several gentlemen who were present.' An inquest was held and the Sheriff of Perry County pursued the perpetrators, but the outcome was unknown at press time. The article notes this was 'the second negro who has been thus put to death, without Judge or Jury in that county.'",
+   "notes": "Companion atrocity report to the Richmond/Henrico County lynching of Isaac Reed (same page) and the Baltimore strangulation of the enslaved boy Charles -- three documented extralegal killings of Black people in a single issue's Domestic News column."
+  },
+  {
+   "issue": "FJ_1827-08-03",
+   "page": 3,
+   "headline": "Coroner's inquest, Henrico County, Va.: free man of colour Isaac Reed found lashed and strangled; William Grace, Samuel H. Whipple, and David Henderson charged",
+   "author": null,
+   "type": "news (legal/inquest)",
+   "summary": "Reprinted from the Richmond Compiler of July 24: an inquisition held at the house of William Grace in Henrico County on July 18, 1827, before Coroner Jesse Reese, found that Isaac Reed, 'a free man of colour,' died from lash-marks and strangulation by a rope around his neck and throat. Witness testimony implicated William Grace, Samuel H. Whipple, and David Henderson of the county in committing the violence on July 16-17 at Grace's house. The jury found unanimously that Reed's death was caused by the hands of these three men. All three were committed to jail to await a called Court.",
+   "notes": "Names all three accused (Grace, Whipple, Henderson) and the victim Isaac Reed, plus Coroner Jesse Reese -- a documented case of white men prosecuted (at least to indictment) for killing a free Black Virginian."
+  },
+  {
+   "issue": "FJ_1827-08-03",
+   "page": 3,
+   "headline": "Enslaved boy Charles strangled in a Baltimore smoke-house by order of Capt. Carter",
+   "author": null,
+   "type": "news (inquest)",
+   "summary": "An inquest in Baltimore found that a boy named Charles, about 12-14 years old and the property of Captain Carter, died after being placed in a smoke-house by his master's order, tied loosely by the neck to a beam while standing on a chair 'for the purpose of alarming him' over some offense. The rope was too short to allow his feet to reach the floor once he fell or stepped off the chair, and he strangled. A servant of Capt. Carter's testified he had tied the boy as instructed and checked on him twice during the morning before he was found dead. The jury was reported to believe Capt. Carter intended no injury to the boy.",
+   "notes": "Third of three extralegal-death reports in this issue's Domestic News (alongside the Tuscaloosa burning and the Isaac Reed lashing/strangling in Henrico Co.) -- documents the routine brutality of enslaved punishment."
+  },
+  {
+   "issue": "FJ_1827-08-03",
+   "page": 3,
+   "headline": "Conspiracy against President Boyer of Hayti -- proclamation and Port-au-Prince correspondent's letter",
+   "author": "Jean Pierre Boyer (proclamation); unnamed Port-au-Prince correspondent (letter)",
+   "type": "news / proclamation",
+   "summary": "A letter from a Port-au-Prince correspondent, forwarded via the editor of the Genius of Universal Emancipation, reports the detection of a conspiracy against Haitian President Jean Pierre Boyer, led by a former officer named Belgarde (or Belyarde), who had risen to lieutenant of horse-guards under Boyer but fled after the plot's discovery. Boyer addressed his troops and officers publicly; four conspirators were shot by July 4, and Belgarde remained an outlaw. The issue reprints Boyer's own proclamation to the citizens and soldiers of Hayti, delivered at the National Palace July 4, 1827, praising the army's loyalty and vigilance against the conspirators.",
+   "notes": "Direct documentation of an internal Haitian political crisis under Boyer, relayed to Freedom's Journal readers via the Genius of Universal Emancipation -- part of the paper's ongoing interest in Haiti (cf. earlier Boyer bust display at the July 4 NY celebration, FJ_1827-07-06)."
+  },
+  {
+   "issue": "FJ_1827-08-10",
+   "page": 1,
+   "headline": "Extract from an Address delivered on the Celebration of the Abolition of Slavery in New York, July 5, 1827, by Rev. N. Paul, Pastor of the African Baptist Society, Albany",
+   "author": "Rev. Nathaniel Paul",
+   "type": "oration",
+   "summary": "Extract of Rev. Nathaniel Paul's July 5, 1827 Albany address celebrating New York's final abolition of slavery. Paul singles out for praise 'the names of Eddy and Murray, of Jay and Tompkins, who, together with their fellow-philanthropists embarked in the holy cause of emancipation.' He predicts universal emancipation is inevitable given Christian teaching, the abolition of slavery in the British West Indies, recent revolutions in South America, and the example of Haiti, declaring 'slavery will cease...a universal and not a partial emancipation must take place, nor is the period far distant.'",
+   "notes": "Nathaniel Paul, pastor of Albany's African Baptist Society and brother of Rev. Thomas Paul of Boston -- a recurring named figure in the paper's agent list and orations; worth checking against Winch reference."
+  },
+  {
+   "issue": "FJ_1827-08-10",
+   "page": 2,
+   "headline": "TO THE SENIOR EDITOR -- No. II (continued): New Haven visit, the African Improvement Society, Rev. Dr. D. of Yale, and 'Aristides'",
+   "author": "unnamed correspondent (continuing the No. I letter from FJ_1827-08-03)",
+   "type": "travel letter",
+   "summary": "Continuing the New Haven travel letter: the writer lodges with 'Mr. S---' and calls on the city's most respectable Black residents, estimating New Haven's Black population at nearly 800. He praises the newly formed African Improvement Society of New Haven for its educational aims and reports meeting 'Mr. J---' (a minister who preaches to the local Black congregation), together with a visiting 'Rev. Dr. D.' of Yale College described as a distinguished mathematician and a Vice-President of the American Colonization Society, whom the writer politely sparred with over colonization. He also discusses 'Aristides,' a locally respected, propertied Black man who had published three essays in the New Haven Chronicle against the African Improvement Society's views but who, notably, subscribes to the Freedom's Journal and is willing to hear the paper's counter-arguments.",
+   "notes": "Names 'Mr. S---' (host), 'Mr. J---' (minister), 'Rev. Dr. D.' (Yale, ACS Vice-President -- likely Rev. Dr. Nathaniel William Taylor or another Yale divinity figure, initials withheld by the paper), and the pseudonymous 'Aristides' -- all deliberately obscured names typical of the paper's discretion in small communities, so unlikely to be resolvable to specific person records without further research."
+  },
+  {
+   "issue": "FJ_1827-08-10",
+   "page": 2,
+   "headline": "Letter from J. P. Cope & Co., Philadelphia, subscribing for five complete sets of Freedom's Journal",
+   "author": "J. P. Cope (quoted)",
+   "type": "correspondence (subscription)",
+   "summary": "A brief item reprints a request from Philadelphia merchants J. P. Cope & Co. asking the editors to obtain five complete sets of all back numbers of Freedom's Journal plus five copies of each succeeding number, expressing support for the paper's undertaking.",
+   "notes": "J. P. Cope & Co. is a known Philadelphia Quaker merchant house (Thomas P. Cope's firm) -- a data point for the paper's Philadelphia business patronage, though likely the firm rather than an individual person record."
+  },
+  {
+   "issue": "FJ_1827-08-10",
+   "page": 4,
+   "headline": "Agent list update -- four new authorized agents added",
+   "author": null,
+   "type": "masthead/agent list",
+   "summary": "The standing list of authorised agents for Freedom's Journal gains four new names this issue: Mr. John Shields (New Haven, Conn.), Mr. W. D. Baptist (Fredericksburgh, Va.), Mr. R. P. G. Wright (Schenectady), and Dr. Isaac Glasgow (Norwich, Conn.).",
+   "notes": "Agent-network growth data point, consistent with prior batches' practice of tracking new agents as they appear (Austin Steward, Paul P. Williams, Leonard Scott, Mr. W. R. Gardiner of Port-au-Prince Hayti already noted in earlier issues this batch)."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1827-07-20",
+   "page": 2,
+   "name": "Albany July 4th oration before the Municipal Authorities",
+   "date": "1827-07-04",
+   "location": "Albany, N.Y.",
+   "description": "Salem Dutcher, Jr., Esq. delivered an oration before Albany's Municipal Authorities marking the final abolition of slavery in New York under the 1817 law.",
+   "attendees": [
+    ["Salem Dutcher, Jr.", "orator"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-07-20",
+   "page": 2,
+   "name": "Baltimore Friendship Society Emancipation Day dinner",
+   "date": "1827-07-04",
+   "location": "Baltimore, Md. (house of Mr. James P. Walker)",
+   "description": "The Friendship Society of Baltimore held a dinner at the house of Mr. James P. Walker commemorating New York's abolition of slavery, with ten formal toasts drunk under the presidency of Mr. James Deaver.",
+   "attendees": [
+    ["James P. Walker", "host"],
+    ["James Deaver", "presided as President"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-08-10",
+   "page": 1,
+   "name": "Albany July 5th abolition celebration address (African Baptist Society)",
+   "date": "1827-07-05",
+   "location": "Albany, N.Y.",
+   "description": "Rev. Nathaniel Paul, pastor of the African Baptist Society in Albany, delivered an address celebrating the final abolition of slavery in New York State.",
+   "attendees": [
+    ["Rev. Nathaniel Paul", "delivered the address"]
+   ]
+  }
+ ]
+}
