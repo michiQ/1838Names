@@ -2,10 +2,10 @@
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
 import sqlite3, json, re, os
 
-DB = os.environ.get("BM_DB", "/tmp/fj4/black_metropolis.db")
-OUT = "/tmp/fj4/out/1838_black_metropolis_viewer.html"
-TPL = "/sessions/practical-happy-tesla/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
-ORG_ALIASES = "/sessions/practical-happy-tesla/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
+DB = os.environ.get("BM_DB", "/tmp/d1820/black_metropolis.db")
+OUT = "/tmp/d1820/out/1838_black_metropolis_viewer.html"
+TPL = "/sessions/inspiring-keen-pasteur/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
+ORG_ALIASES = "/sessions/inspiring-keen-pasteur/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
 
 # organization name normalization: fold known spelling/punctuation variants of the same
 # org into one canonical display name before counting/deduping. Curated by Michiko; see
@@ -132,14 +132,14 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/practical-happy-tesla/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/sessions/inspiring-keen-pasteur/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
 
 # which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
 # any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
 import glob as _glob, os as _os
-PAGES_DIR = "/sessions/practical-happy-tesla/mnt/Newspapers/1838 Names Database/pages"
+PAGES_DIR = "/sessions/inspiring-keen-pasteur/mnt/Newspapers/1838 Names Database/pages"
 jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
                       for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
 
@@ -179,6 +179,21 @@ if has_table("census_links"):
             m = m47.get(rec["cid"] or "")
             if m: rec["match"] = {"cert": g(m,"match_certainty"), "addr38": g(m,"1838_address"), "id38": g(m,"1838_id")}
             p.setdefault("census", []).append(rec)
+# 1820 Philadelphia city directory (Black residents, cross-marked) -- source-record data only,
+# like census: enriches the person with occupation/address/etc, no graph edges synthesized.
+if has_table("directory_links"):
+    d1820 = {r["rowid_"]: r for r in con.execute("SELECT * FROM directory_1820")}
+    for pid, dirn, rid in con.execute("SELECT person_id, directory, row_id FROM directory_links"):
+        if pid not in people: continue
+        p = people[pid]
+        if dirn == "1820" and rid in d1820:
+            r = d1820[rid]
+            rec = {"y": 1820, "name": f'{g(r,"second_name") or ""} {g(r,"first_name") or ""}'.strip(),
+                   "occ": g(r,"occupation"), "addr": g(r,"address"), "pdfPage": g(r,"pdf_page"),
+                   "conf": g(r,"confidence"), "needsReview": g(r,"needs_review"),
+                   "ocr": g(r,"original_ocr_entry")}
+            p.setdefault("directory", []).append(rec)
+
 # orgs found in newspaper text near a person's name (from match_names pass)
 if has_table("newspaper_orgs"):
     for pid, org, isl, pg in con.execute("SELECT DISTINCT person_id, org, issue, page FROM newspaper_orgs"):
@@ -202,7 +217,7 @@ for o in orgs_out:
 print("orgs (>=2 members):", len(orgs_out), "| top:", [(o['name'], len(o['members'])) for o in orgs_out[:5]])
 
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 

@@ -25,7 +25,41 @@ Instructions for any Claude session continuing this project. Priority order: **P
 5. Message summary: issues processed, new people matched, notable finds, whether GitHub was updated.
 
 ## Census datasets (loaded)
-The DB contains `census_1838` (PAS census, 3,296 households), `census_1847` (SOFAAC, 4,284), `census_matches` (445 confirmed 1838↔1847 matches), and `census_links` (person↔household). ALL heads of household exist as `people` rows (source='census') unless they matched a Winch person unambiguously. Source files live in `../census/`. ORDER MATTERS each run: `import_census.py` (recreates census people) must run BEFORE `match_names.py` and `load_extractions.py`, else appearances reference deleted people ids. Full rebuild order: import_census.py → match_names.py → load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py.
+The DB contains `census_1838` (PAS census, 3,296 households), `census_1847` (SOFAAC, 4,284), `census_matches` (445 confirmed 1838↔1847 matches), and `census_links` (person↔household). ALL heads of household exist as `people` rows (source='census') unless they matched a Winch person unambiguously. Source files live in `../census/`. ORDER MATTERS each run: `import_census.py` (recreates census people) must run BEFORE `match_names.py` and `load_extractions.py`, else appearances reference deleted people ids. Full rebuild order: import_census.py → import_1820_directory.py → match_names.py → load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py. (See "1820 Philadelphia directory" section below for the new import_1820_directory.py step, added 2026-07-10.)
+
+## 1820 Philadelphia directory (loaded 2026-07-10)
+`pipeline/import_1820_directory.py` imports `pipeline/1820_directory_source.csv` (1,654 rows —
+Michiko's cross-marked "†" extraction of Black residents from the 1820 Philadelphia city
+directory; columns First Name/Second Name/Occupation/Address/PDF Page/Confidence/Needs
+Review/Original OCR Entry). CSV name order is directory-style surname-first: "First Name" holds
+the SURNAME, "Second Name" holds the GIVEN name (verified against the Original OCR Entry text,
+which is itself surname-then-given). Loads the raw rows into table `directory_1820` and links each
+row to a person via table `directory_links(person_id, directory='1820', row_id)` — same shape as
+`census_links`. Matching mirrors `import_census.py`: build an index of Winch people (source='winch')
+by normalized "given surname", using BOTH `canonical_name` and any confirmed `aliases` (so a name
+merged via merges.json in an earlier run, e.g. "John Bowers" as an alias of "Bowers, John C.", is
+matchable too); a directory row links to a Winch person only if the name match is unambiguous
+(exactly one candidate), otherwise it becomes a brand-new person record tagged source=
+'1820directory'. NEVER auto-merges — ambiguous or unmatched rows always get their own new person.
+One deliberate departure from `import_census.py`: it does NOT cache/dedupe same-name rows within
+the source into one person (census does, via its `cidx`). A check of this CSV found 120 rows
+(~60 name-pairs, e.g. two different "Adams, John" entries with different occupations/addresses)
+that share a name but are evidently different individuals — deduping by name would have silently
+merged them, so every unmatched row gets its own record instead.
+Run it alongside `import_census.py`, before `match_names.py` (it only touches `people` and its own
+`directory_1820`/`directory_links` tables, same as census, so ordering relative to appearances
+doesn't matter — but PIPELINE.md's rebuild order groups all source imports first for consistency).
+Full rebuild order is now: import_census.py → import_1820_directory.py → match_names.py →
+load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py.
+`build_viewer.py` attaches directory rows to each person (like census) as a `directory` list
+(occupation/address/PDF page/confidence/needs-review/OCR text) — no graph edges synthesized from
+it, same as census. `find_merge_candidates.py` and `apply_merges.py` were both updated to count/
+reassign `directory_links` alongside `census_links` etc. The viewer template gained a "1820
+directory" filter chip, a `b-d` source badge, and a detail-panel card section for directory
+records. Known data-quality artifact: one source row ("Blackston, Catharine") has an OCR
+column-shift where non-numeric text landed in the PDF Page/Confidence columns — loaded as TEXT so
+it doesn't crash the import; flagged in that row's own Needs Review text for Michiko to fix
+upstream in the CSV if desired.
 
 ## Viewer changes — MANDATORY smoke test
 Before pushing ANY change to viewer_template.html, run `node pipeline/smoke_test.js <built index.html>`. It executes both script blocks with a stubbed DOM and fails on runtime errors (a TDZ ordering bug shipped on 2026-07-06 and blanked the site; syntax checks alone do not catch this class of error).

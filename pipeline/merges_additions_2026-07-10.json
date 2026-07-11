@@ -1,0 +1,57 @@
+[
+  {
+    "keep": "Adams, Nathaniel",
+    "aliases": ["Nathaniel Adams", "Adams, N"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Bell, Peter",
+    "aliases": ["P. A. Bell"],
+    "note": "Confirmed by Michiko 2026-07-10. FLAG: census first name is 'Peter' vs. newspaper initials 'P. A.' -- worth a quick eyeball if this is meant to be Philip A. Bell (Colored American co-founder), who would not be 'Peter'."
+  },
+  {
+    "keep": "Berry, Severn",
+    "aliases": ["S. V. Berry"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Cornish, William",
+    "aliases": ["W. Cornish"],
+    "note": "Confirmed by Michiko 2026-07-10. Distinct from the already-merged 'Cornish, James' / 'Cornish, James C.' / 'Cornish, Samuel E.' groups."
+  },
+  {
+    "keep": "Crosby, Edward",
+    "aliases": ["E. Crosby"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Derry, Tenor",
+    "aliases": ["T. W. Derry"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Douglass, William Penn",
+    "aliases": ["William Douglass", "DOUGLASS, WILLIAM"],
+    "note": "Confirmed by Michiko 2026-07-10. Folds in both the newspaper appearance and the matching census record."
+  },
+  {
+    "keep": "Hodges, Wilson",
+    "aliases": ["W. Hodges"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Hughes, Benjamin",
+    "aliases": ["Benjamin F. Hughes"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Jenkins, James",
+    "aliases": ["James L. Jenkins"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  },
+  {
+    "keep": "Cannon, Rev. Noah C",
+    "aliases": ["N. C. W. Cannon"],
+    "note": "Confirmed by Michiko 2026-07-10."
+  }
+]

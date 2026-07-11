@@ -3,8 +3,8 @@
 Run AFTER import_census + match_names + load_extractions, BEFORE build_viewer."""
 import sqlite3, json, re, unicodedata, os
 
-DB = "/tmp/fj4/black_metropolis.db"
-MERGES = "/sessions/practical-happy-tesla/mnt/Newspapers/1838 Names Database/pipeline/merges.json"
+DB = "/tmp/d1820/black_metropolis.db"
+MERGES = "/sessions/inspiring-keen-pasteur/mnt/Newspapers/1838 Names Database/pipeline/merges.json"
 
 def norm(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii","ignore").decode()
@@ -35,7 +35,8 @@ for g in groups:
     entries = [target[3] or ""]
     for pid, cname, src, wentry, als in rest:
         for tbl, col in (("appearances","person_id"), ("winch_references","person_id"),
-                          ("census_links","person_id"), ("newspaper_orgs","person_id")):
+                          ("census_links","person_id"), ("newspaper_orgs","person_id"),
+                          ("directory_links","person_id")):
             try: con.execute(f"UPDATE {tbl} SET {col}=? WHERE {col}=?", (tid, pid))
             except sqlite3.OperationalError: pass
         if cname != g["keep"]: alias_set.add(cname)

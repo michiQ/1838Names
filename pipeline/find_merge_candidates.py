@@ -4,8 +4,8 @@ Never merges automatically — output is a review list for Michiko."""
 import sqlite3, re, json, unicodedata, os
 from difflib import SequenceMatcher
 
-DB = "/tmp/fj4/black_metropolis.db"
-PIPE = "/sessions/practical-happy-tesla/mnt/Newspapers/1838 Names Database/pipeline"
+DB = "/tmp/d1820/black_metropolis.db"
+PIPE = "/sessions/inspiring-keen-pasteur/mnt/Newspapers/1838 Names Database/pipeline"
 OUT = f"{PIPE}/merge_candidates.md"
 
 def norm(s):
@@ -46,15 +46,18 @@ if os.path.exists(mpath):
         already.add(norm(g["keep"]).strip())
         for a in g.get("aliases", []): already.add(norm(a).strip())
 
+has_dir = bool(con.execute("SELECT 1 FROM sqlite_master WHERE name='directory_links'").fetchone())
+
 people = []
 for pid, name, src in con.execute("SELECT id, canonical_name, source FROM people"):
     napp = con.execute("SELECT COUNT(*) FROM appearances WHERE person_id=?", (pid,)).fetchone()[0]
     nref = con.execute("SELECT COUNT(*) FROM winch_references WHERE person_id=?", (pid,)).fetchone()[0]
     ncen = con.execute("SELECT COUNT(*) FROM census_links WHERE person_id=?", (pid,)).fetchone()[0]
-    if napp + nref + ncen == 0: continue   # inert records add noise
+    ndir = con.execute("SELECT COUNT(*) FROM directory_links WHERE person_id=?", (pid,)).fetchone()[0] if has_dir else 0
+    if napp + nref + ncen + ndir == 0: continue   # inert records add noise
     sur, giv = parse(name)
     if len(sur) < 3: continue
-    people.append((pid, name, src, sur, giv, napp, nref, ncen))
+    people.append((pid, name, src, sur, giv, napp, nref, ncen, ndir))
 
 by_sur = {}
 for p in people:
@@ -92,6 +95,7 @@ for score, a, b in pairs[:120]:
         if p[5]: bits.append(f"{p[5]} appearances")
         if p[6]: bits.append(f"{p[6]} Winch refs")
         if p[7]: bits.append(f"{p[7]} census records")
+        if len(p) > 8 and p[8]: bits.append(f"{p[8]} 1820 directory records")
         return f"**{p[1]}** ({', '.join(bits)})"
     lines.append(f"- [{'HIGH' if score>=2 else 'maybe'}] {desc(a)} ↔ {desc(b)}")
 open(OUT, "w").write("\n".join(lines) + "\n")
