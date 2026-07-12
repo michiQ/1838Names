@@ -642,12 +642,15 @@ function repulse(a,b){
   const full = !!window._fullView;
   let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
   if(d2<1){dx=Math.random()-.5;dy=Math.random()-.5;d2=1;}
-  const cutoff = full ? 130000 : 22500, K = full ? 420 : 140;
+  // full-map repulsion is stronger/longer-range than it needs to be for ~10k nodes --
+  // now that the default view only draws a few hundred, push them apart harder so the
+  // center has real breathing room instead of everything settling into a tight clump.
+  const cutoff = full ? 300000 : 22500, K = full ? 700 : 140;
   if(d2<cutoff){const d=Math.sqrt(d2),f=K/d2;const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!a.fixed){a.vx-=fx;a.vy-=fy;a.vz-=fz;} if(!b.fixed){b.vx+=fx;b.vy+=fy;b.vz+=fz;}}
 }
 function tick(){
-  const SP = window._fullView ? 2.4 : 1;   // spacing multiplier for the full map
+  const SP = window._fullView ? 3.4 : 1;   // spacing multiplier for the full map
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
     const target=(60+240/(l.w+1))*SP, f=(d-target)*0.004*(l.faint?0.4:1);
@@ -656,8 +659,10 @@ function tick(){
   if(nodes.length<=160){
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++) repulse(nodes[i],nodes[j]);
   } else {
-    // grid-bucketed repulsion for the full map
-    const CELL=380, grid=new Map();
+    // grid-bucketed repulsion for the full map -- CELL sized to match the wider
+    // repulsion cutoff above so the 3x3-neighborhood check still catches every pair
+    // that's actually within range
+    const CELL=560, grid=new Map();
     for(const n of nodes){ const k=(Math.floor(n.x/CELL))+','+(Math.floor(n.y/CELL));
       (grid.get(k)||grid.set(k,[]).get(k)).push(n); }
     for(const n of nodes){
@@ -665,17 +670,19 @@ function tick(){
       for(let gx=cx-1;gx<=cx+1;gx++)for(let gy=cy-1;gy<=cy+1;gy++){
         const cell=grid.get(gx+','+gy); if(!cell)continue;
         for(const m of cell) if(m!==n && (m.x>n.x || (m.x===n.x&&m.y>n.y))) repulse(n,m); }
-      // gentle centering so disconnected clumps stay on screen
-      n.vx-=n.x*0.00018; n.vy-=n.y*0.00018; n.vz-=(n.z||0)*0.00018; }
+      // gentle centering so disconnected clumps stay on screen -- eased off from before
+      // so clusters can spread further out instead of being yanked back toward the middle
+      n.vx-=n.x*0.00012; n.vy-=n.y*0.00012; n.vz-=(n.z||0)*0.00012; }
   }
-  // gentle pull of each community toward its own centroid (full map only)
+  // gentle pull of each community toward its own centroid (full map only) -- also eased
+  // off so clusters stay loosely grouped without compacting toward the center
   if(window._fullView && window._commGroups){
     for(const g of window._commGroups){
       let cx=0,cy=0,cz=0;
       for(const n of g){cx+=n.x;cy+=n.y;cz+=n.z||0;}
       cx/=g.length; cy/=g.length; cz/=g.length;
       for(const n of g){ if(n.fixed||n.pin)continue;
-        n.vx+=(cx-n.x)*0.0012; n.vy+=(cy-n.y)*0.0012; n.vz+=(cz-(n.z||0))*0.0012; }
+        n.vx+=(cx-n.x)*0.0009; n.vy+=(cy-n.y)*0.0009; n.vz+=(cz-(n.z||0))*0.0009; }
     }
   }
   for(const n of nodes){ if(n.fixed||n.pin)continue;
@@ -757,7 +764,7 @@ function buildFullGraph(){
   const groups = new Map();
   for(const n of nodes){ if(!groups.has(n.comm)) groups.set(n.comm,[]); groups.get(n.comm).push(n); }
   window._commGroups = [...groups.values()].filter(g=>g.length>=4);
-  view={x:0,y:0,k:0.34};
+  view={x:0,y:0,k:0.26};   // start a bit more zoomed out to fit the now-looser layout
   rot={yaw:0.5,pitch:0.28}; window._spin=true;
   setHighlight(null);
   for(let it=0;it<160;it++) tick();
@@ -900,7 +907,8 @@ cv.addEventListener('dblclick',e=>{
   if(n && n.pin){ n.pin=false; }   // double-click releases a pinned node back to the springs
 });
 cv.addEventListener('wheel',e=>{e.preventDefault();
-  const f=e.deltaY<0?1.12:0.89; view.k=Math.max(.25,Math.min(4,view.k*f));},{passive:false});
+  const f=e.deltaY<0?1.12:0.89, minK=window._fullView?0.08:.25;   // full map allows zooming out much further
+  view.k=Math.max(minK,Math.min(4,view.k*f));},{passive:false});
 
 // initial selection: most active person
 if(sorted.length) select(sorted[0].id);
