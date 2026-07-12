@@ -1,0 +1,128 @@
+{
+ "_note": "Written 2026-07-12 (29th scheduled run). Covers FJ_1827-09-14, FJ_1827-09-21, FJ_1827-09-28, FJ_1827-10-05 -- all 4 OCR'd fresh at 300dpi this run, no fallback needed.",
+ "articles": [
+  {
+   "issue": "FJ_1827-09-14",
+   "page": 3,
+   "headline": "MARRIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Mr. Titus Dickson to Miss Amelia Lewis, married by the Rev. S. E. Cornish. Also two Hanover, Morris Co., N.J. marriages by the Rev. Aaron Condit: Mr. George Honeyman of New-York to Miss Charlotte Linn, and Mr. Jeptha Hedges to Miss [name cut off by page break].",
+   "notes": "Cornish officiating his own paper's marriage notice is a recurring pattern worth noting for cross-referencing his congregation."
+  },
+  {
+   "issue": "FJ_1827-09-14",
+   "page": 4,
+   "headline": "NOTICE -- African Mutual Instruction Society re-opens its school",
+   "author": "Aaron Woad; William P. Johnson; E. M. Africanus",
+   "type": "meeting/school notice",
+   "summary": "The African Mutual Instruction Society, for the instruction of coloured Adults of both sexes, announces its school will re-open Monday evening, October 1, 1827, at its former School-Room under the Mariner's Church, Roosevelt-street, New York, meeting Mondays/Wednesdays/Fridays at 6:30pm; tuition one dollar through April 1, 1828 (reading, writing, ciphering). Prospective members directed to the Secretary at No. 551 Pearl-street.",
+   "notes": "Signed by three named officers -- Aaron Woad, William P. Johnson, and 'E. M. Africanus' (the last plausibly a pseudonym given the surname). New York, not Philadelphia, but a clear officer roster of a Black mutual-improvement society."
+  },
+  {
+   "issue": "FJ_1827-09-14",
+   "page": 4,
+   "headline": "Business notice: John Roberts, oil dealer",
+   "author": null,
+   "type": "advertisement",
+   "summary": "John Roberts of 25 Currant-alley, third door above Locust street, Philadelphia, advertises seasonable oil for sale, delivered anywhere in the city, with a liberal deduction for churches and quantity buyers.",
+   "notes": "A named Philadelphia tradesman -- worth a match_names.py pass against Winch/census/1820-directory."
+  },
+  {
+   "issue": "FJ_1827-09-21",
+   "page": 3,
+   "headline": "MARRIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Four New York marriages: Mr. James C. Morelle to Miss Catharine Jackson of Albany (by Rev. Peter Williams); Mr. Richard Gilmore to Miss Hannah Brumfield, and Mr. David Merritt to Mrs. Margaret Collick (both by Rev. B. Paul); and Mr. James Coker of Baltimore to Miss Eliza M. Collins of New York (by Rev. C. Rush).",
+   "notes": "Four named officiating clergy (Peter Williams, B. Paul, C. Rush) and eight named parties in one column -- solid vital-records roster."
+  },
+  {
+   "issue": "FJ_1827-09-21",
+   "page": 3,
+   "headline": "DIED -- Thomas Eddy obituary",
+   "author": null,
+   "type": "obituary",
+   "summary": "Thomas Eddy, Esq., described as 'the christian, the patriot and the philanthropist,' died in New York City on September 16, 1827. The obituary states his name and 'the deeds of worth which filled up his life, will be remembered, and revered, by the coloured population of our country, and their descendants, to the latest generations.' Also notes the death of a Mr. John Cole, aged 28, in Charleston, S.C.",
+   "notes": "Thomas Eddy was a prominent New York Quaker philanthropist and penal/humanitarian reformer -- he is one of the New York Manumission Society architects (Eddy/Murray/Jay/Tompkins cluster) repeatedly named in the orations documented in run #19's extractions28.json (Salem Dutcher's and Rev. Nathaniel Paul's July 1827 Albany emancipation-day speeches). This obituary is a direct, dated tie-in confirming the paper's own high regard for him -- worth linking if Eddy has (or should get) a person record."
+  },
+  {
+   "issue": "FJ_1827-09-21",
+   "page": 3,
+   "headline": "NOTICE -- Concert of Sacred Music at St. Philip's Church",
+   "author": null,
+   "type": "advertisement (event notice)",
+   "summary": "A Concert of Sacred Music was announced for St. Philip's Church (Collect-street, New York), under the direction of Mr. Rappeson (organ), with F. Johnson leading the orchestra. Tickets 25 cents, available from John Marander (13 Warren-st.), William Watson (57 Chamber-st.), John Robertson (corner of Nassau and Liberty-st.), and Cromwell & Hannibal (Leonard-st.).",
+   "notes": "'John Marander' here likely the same person as the 'John Maranda'/'Marander' spelling variant flagged in run #19's progress.txt as chair of the April 23, 1827 Mutual Relief Hall Emancipation Day committee -- another data point for that still-unresolved merge candidate. F. Johnson (orchestra leader) may be the well-known Philadelphia bandleader Francis Johnson performing/leading in New York, or a different musician of the same surname -- worth checking, echoing the 1820-directory-import run's flagged caution about two distinct Francis Johnsons."
+  },
+  {
+   "issue": "FJ_1827-09-28",
+   "page": 2,
+   "headline": "American Colonization Society essay series, Nos. 1-3 (signed letters)",
+   "author": "John H. Kennedy",
+   "type": "correspondence (essay series)",
+   "summary": "John H. Kennedy of Philadelphia authored a signed multi-part essay series on the American Colonization Society, published as 'Original Communications.' A cover note (dated Philadelphia, Sept. 16, 1827) explains Kennedy chose to publish under his own name so arguments could be met calmly and so readers who know him would weigh them seriously. Individual installments are dated Philadelphia, Aug. 27, 1827 and Philadelphia, 17th Sept. 1827.",
+   "notes": "A named, Philadelphia-based, repeat signed contributor across at least 3 installments spanning FJ_1827-09-14 through FJ_1827-10-05 -- worth a match_names.py pass against Winch/census for John H. Kennedy."
+  },
+  {
+   "issue": "FJ_1827-09-28",
+   "page": 3,
+   "headline": "MARRIED/DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married: Mr. William Lewis to Miss Jane Johnson, 'in this city' [New York], by the Rev. Peter Williams. Died: Mrs. Betsey Thomas, 'in this city.'",
+   "notes": null
+  },
+  {
+   "issue": "FJ_1827-09-28",
+   "page": 3,
+   "headline": "Rush Education Society -- Second Quarterly Meeting notice",
+   "author": "Charles H. Leveck (Recording Secretary)",
+   "type": "meeting notice",
+   "summary": "Notice to members of the RUSH EDUCATION SOCIETY (Philadelphia) and 'friends of good order, religion and education' that the Society will hold its Second Quarterly Meeting in the hall occupied by the Second African Presbyterian Church. Board meets stated on Fridays monthly. Signed by Charles H. Leveck, Recording Secretary, Philadelphia, Sept. 16, 1827. A partial officer/board roster follows the notice but is heavily OCR-garbled; legible fragments include what appears to be 'John Bow[ers]' and 'Jeremiah Gloucester,' plus references to a 'Chairman' and 'Treasurer' role before the text breaks down.",
+   "notes": "HIGH VALUE, Philadelphia society notice naming the Second African Presbyterian Church as meeting site. The partially-legible 'John Bow[ers]' + 'Jeremiah Gloucester' pairing directly touches TWO of the standing merge-candidate clusters already flagged across many prior runs (the Bowers cluster, and the long-flagged garbled 'John P. Burr and Stephen H. Gloucester' artifact) -- the OCR garbling here means it can't be used to resolve either cluster, but is worth a manual re-read of the source PDF page (FJ_1827-09-28, p3) at higher zoom if precision matters to Michiko, since the underlying image likely has a real, cleaner officer list."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1827-09-14",
+   "page": 4,
+   "name": "African Mutual Instruction Society school re-opening",
+   "date": "1827-10-01",
+   "location": "New York (Mariner's Church, Roosevelt-street)",
+   "description": "The African Mutual Instruction Society announced the re-opening of its school for coloured adults of both sexes, meeting three evenings a week through April 1828.",
+   "attendees": [
+    ["Aaron Woad", "signer/officer"],
+    ["William P. Johnson", "signer/officer"],
+    ["E. M. Africanus", "signer/officer"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-09-21",
+   "page": 3,
+   "name": "Concert of Sacred Music, St. Philip's Church",
+   "date": "1827-09",
+   "location": "New York (St. Philip's Church, Collect-street)",
+   "description": "A benefit concert of sacred music was held at St. Philip's Church, directed by Mr. Rappeson with F. Johnson leading the orchestra; tickets sold by four named agents around the city.",
+   "attendees": [
+    ["Rappeson", "director/organist"],
+    ["F. Johnson", "orchestra leader"],
+    ["John Marander", "ticket agent"],
+    ["William Watson", "ticket agent"],
+    ["John Robertson", "ticket agent"],
+    ["Cromwell & Hannibal", "ticket agents"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-09-28",
+   "page": 3,
+   "name": "Rush Education Society Second Quarterly Meeting",
+   "date": "1827-09",
+   "location": "Philadelphia, Pa. (Second African Presbyterian Church)",
+   "description": "The Rush Education Society announced its Second Quarterly Meeting to be held in the hall of the Second African Presbyterian Church; notice dated Sept. 16, 1827 and signed by the Recording Secretary.",
+   "attendees": [
+    ["Charles H. Leveck", "Recording Secretary, issued the notice"]
+   ]
+  }
+ ]
+}

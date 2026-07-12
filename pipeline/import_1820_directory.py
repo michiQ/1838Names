@@ -20,8 +20,8 @@ lists it with the source imports up front for consistency)."""
 import sqlite3, re, unicodedata
 import pandas as pd
 
-DB = "/tmp/run28/black_metropolis.db"
-CSV = "/sessions/bold-hopeful-wright/mnt/Newspapers/1838 Names Database/pipeline/1820_directory_source.csv"
+DB = "/tmp/run29/black_metropolis.db"
+CSV = "/sessions/sleepy-loving-ride/mnt/Newspapers/1838 Names Database/pipeline/1820_directory_source.csv"
 
 def norm(s):
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
