@@ -479,7 +479,7 @@ function ensureOrgInFull(oi){
     }
     if(!linked.has(pn)){ links.push({s:on,t:pn,w:1}); pn.deg=(pn.deg||0)+1; added++; }
   }
-  if(added) window._lblSet=null;   // on.r is already fixed by groupR() -- total membership doesn't change
+  if(added){ window._lblSet=null; window._simTTL=90; }   // on.r is already fixed by groupR() -- total membership doesn't change; wake the sim briefly so new nodes settle in instead of popping in static
   return on;
 }
 // Same idea as ensureOrgInFull, for a clicked person: the default view only shows
@@ -523,7 +523,7 @@ function ensurePersonInFull(pid){
       nodes.push(on); omap.set(o.name,on); }
     if(!linked.has(on)){ links.push({s:pn,t:on,w:1}); linked.add(on); added++; }
   });
-  if(added){ pn.deg = linked.size; pn.r = FULL_R_MIN + Math.min(FULL_R_MAX-FULL_R_MIN, FULL_R_MULT*Math.sqrt(pn.deg)); window._lblSet=null; }
+  if(added){ pn.deg = linked.size; pn.r = FULL_R_MIN + Math.min(FULL_R_MAX-FULL_R_MIN, FULL_R_MULT*Math.sqrt(pn.deg)); window._lblSet=null; window._simTTL=90; }
   return pn;
 }
 // Same idea again, for a clicked event: pulls in every attendee on record, even ones
@@ -552,7 +552,7 @@ function ensureEventInFull(eid){
     }
     if(!linked.has(pn)){ links.push({s:en,t:pn,w:2}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
   }
-  if(added) window._lblSet=null;   // en.r is already fixed by groupR() -- total attendance doesn't change
+  if(added){ window._lblSet=null; window._simTTL=90; }   // en.r is already fixed by groupR() -- total attendance doesn't change
   return en;
 }
 function buildOrgGraph(oi){
@@ -765,9 +765,10 @@ function buildFullGraph(){
   for(const n of nodes){ if(!groups.has(n.comm)) groups.set(n.comm,[]); groups.get(n.comm).push(n); }
   window._commGroups = [...groups.values()].filter(g=>g.length>=4);
   view={x:0,y:0,k:0.26};   // start a bit more zoomed out to fit the now-looser layout
-  rot={yaw:0.5,pitch:0.28}; window._spin=true;
+  rot={yaw:0.5,pitch:0.28}; window._spin=false;   // static by default -- drag empty space to rotate manually
   setHighlight(null);
-  for(let it=0;it<160;it++) tick();
+  for(let it=0;it<260;it++) tick();   // settle fully before the very first frame renders
+  window._simTTL=0;   // frozen once settled -- draw() only re-ticks while dragging or just after new nodes are added
 }
 const allbtn=document.getElementById('allbtn');
 allbtn.addEventListener('click',()=>{
@@ -863,7 +864,18 @@ function draw(){
   }
   ctx.globalAlpha = 1;
   ctx.restore();
-  if(nodes.length){for(let i=0;i<2;i++)tick();}
+  // The full map settles fully before its first render (see buildFullGraph) and then
+  // FREEZES -- no perpetual jitter or auto-rotation -- so the layout reads as a calm,
+  // stable picture instead of something that never stops drifting. It only wakes back
+  // up briefly (window._simTTL frames) right after new nodes are pulled in by clicking
+  // a node (ensurePersonInFull etc.), or continuously while a node is being dragged so
+  // its springs can react live. Ego-view graphs (person/event/org drill-downs) are much
+  // smaller and keep the original always-on gentle simulation.
+  if(nodes.length){
+    if(!window._fullView){ for(let i=0;i<2;i++) tick(); }
+    else if(dragN){ for(let i=0;i<2;i++) tick(); }
+    else if((window._simTTL||0)>0){ for(let i=0;i<2;i++) tick(); window._simTTL--; }
+  }
   requestAnimationFrame(draw);
 }
 requestAnimationFrame(draw);
@@ -901,10 +913,11 @@ window.addEventListener('mouseup',e=>{
   else if(!dragN && wasClick){ setHighlight(null); }   // click empty space clears highlight
   if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them
   if(dragN && !window._fullView) dragN.fixed = dragN===nodes[0];
+  if(dragN && window._fullView) window._simTTL = Math.max(window._simTTL||0, 40);  // let its neighbors finish settling after release
   dragN=null;panning=false;rotating=false;cv.style.cursor='grab';});
 cv.addEventListener('dblclick',e=>{
   const n=pick(e.offsetX,e.offsetY);
-  if(n && n.pin){ n.pin=false; }   // double-click releases a pinned node back to the springs
+  if(n && n.pin){ n.pin=false; if(window._fullView) window._simTTL=Math.max(window._simTTL||0,40); }   // double-click releases a pinned node back to the springs
 });
 cv.addEventListener('wheel',e=>{e.preventDefault();
   const f=e.deltaY<0?1.12:0.89, minK=window._fullView?0.08:.25;   // full map allows zooming out much further
