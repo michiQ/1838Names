@@ -1,0 +1,112 @@
+{
+ "_note": "Written 2026-07-11 (22nd scheduled run) via Read/Write tools ONLY -- the run's mcp__workspace__bash workspace suffered a total infrastructure-level outage (24+ consecutive failures, 'no space left on device' writing /etc/srt-settings plus 'user already exists unexpectedly', same signature as the documented 20th-run outage) partway through OCR, after only 2 of the 4 targeted issues were fully OCR'd (FJ_1827-08-17, FJ_1827-08-24) and a 3rd was half-done (FJ_1827-08-31, pages 1-2 only). load_extractions.py could NOT be run this session (needs bash+sqlite) -- this file is unloaded/pending. NEXT RUN: run the full rebuild (import_census.py -> import_1820_directory.py -> match_names.py -> load_extractions.py -> apply_merges.py -> find_merge_candidates.py -> build_viewer.py) to pick this up, per usual, once bash is available.",
+ "articles": [
+  {
+   "issue": "FJ_1827-08-17",
+   "page": 3,
+   "headline": "Letter responding to the New-York Enquirer's attack on the city's coloured population",
+   "author": "Mordecai (pseudonym)",
+   "type": "correspondence (rebuttal essay)",
+   "summary": "A correspondent signing as 'Mordecai' rebuts an article in the New-York Enquirer of the 10th inst. ('The Negroes') that disparaged the moral character of New York's free Black community, defending the community's virtue and turning the charge of vice back on the Enquirer editor's own race, while also quoting from an antislavery poem ('Pity for Poor Africans') and closing with a genealogical essay tracing African ancestry to ancient Egypt.",
+   "notes": "The 'Mordecai' pseudonym is notable: the very next issue (FJ_1827-08-24) runs an UNSIGNED editorial by Cornish & Russwurm titled 'MAJOR NOAH'S NEGROES' that explicitly credits 'our correspondent Mordecai' with having 'ably occupied' this same ground already -- these two items are a matched pair documenting a real-time editorial exchange between the paper and Mordecai Manuel Noah's New-York Enquirer. Possibly a real name or a biblical/literary pseudonym (Mordecai of the Book of Esther); no clear match to a Winch/census person."
+  },
+  {
+   "issue": "FJ_1827-08-17",
+   "page": 3,
+   "headline": "OBSERVER, No. I -- debut of a new recurring social-commentary column",
+   "author": "Observer (pseudonym)",
+   "type": "column (debut installment)",
+   "summary": "A new pseudonymous columnist, 'Observer', introduces a planned recurring feature 'from which I may now and then take a view of matters, things and persons in general.' This first installment scolds young ladies for turning to stare at latecomers during church services, framed as advice addressed to a correspondent's letter about congregational conduct.",
+   "notes": "First of a series -- 'OBSERVER, No. II' runs in the very same issue (page 3, on New Haven travel) and 'OBSERVER, No. III' appears in FJ_1827-08-24 page 4 (a domestic-life sketch about a friend 'Tom's family'). Worth watching for further installments in subsequent issues."
+  },
+  {
+   "issue": "FJ_1827-08-17",
+   "page": 3,
+   "headline": "TO THE SENIOR EDITOR -- No. II: a New Haven travel letter (Yale College tour, discrimination in stage travel, low turnout at a Freedom's Journal subscription meeting)",
+   "author": null,
+   "type": "correspondence (travel letter, part of a series)",
+   "summary": "Second installment of a New Haven travel-letter series (first installment was in a prior issue, per the 21st run's log). The writer describes a meeting held in the African Meeting-House to solicit Freedom's Journal subscriptions -- poorly attended, with women forming 'a large majority' of those present; addresses were given by 'Messrs O--, A--, and B--'. The writer also toured Yale College (library, mineral cabinet, geological collection with cases inscribed 'Citizens of N.H.'), visited the New Haven burying ground, and recounts being refused ordinary courtesy ('Hartford Jan ccrds') by a Hartford innkeeper despite a letter of introduction to a respectable man of colour there -- framing Connecticut as unusually prejudiced against people of colour despite its reputation for liberality.",
+   "notes": "Coroner's-inquest item on the same page names a free coloured man, Peter Ridout, a hod-carrier of temperate habits, found dead in Pitt Street, New York -- verdict 'death from cause unknown to the jury' (Baltimore Patriot reprint). A possible person-of-record but likely unresolvable without further research."
+  },
+  {
+   "issue": "FJ_1827-08-17",
+   "page": 3,
+   "headline": "Domestic News: extralegal violence items (Tuscaloosa; Raleigh, N.C.; Whipple murder relics)",
+   "author": null,
+   "type": "news digest",
+   "summary": "Short items: a Mrs. Hester of Tuscaloosa, Ala. found dead and bruised under suspicious circumstances, her husband and one of his sisters taken into custody; near Raleigh, N.C., Mr. Stephen Low stabbed by an enslaved man while attempting to punish him in the field, and James Thorn of the same county apprehended for shooting a hired servant in a drunken frolic; relics of the Strang murder of Mr. Whipple (rifle and shattered window glass) presented to the Albany Museum.",
+   "notes": "Consistent with the paper's practice (noted in prior batches) of tracking violence against and among both enslaved and free Black people in its Domestic News column."
+  },
+  {
+   "issue": "FJ_1827-08-24",
+   "page": 3,
+   "headline": "MAJOR NOAH'S \"NEGROES\" -- editorial rebuttal of the New-York Enquirer",
+   "author": "Cornish & Russwurm (unsigned editorial)",
+   "type": "editorial",
+   "summary": "The editors directly rebuke Mordecai M. Noah, editor of the New-York Enquirer, for his 10th-instant article branding the city's free Black population 'a nuisance incomparably greater than a million of slaves.' They argue the vice Noah decries is not confined to people of colour, note that white 'blackguards and prostitutes' crowd the same streets he complains of, and challenge Noah -- himself a Jewish American only recently free of civil disabilities in some states -- to sympathize with the oppressed of every description rather than inflame prejudice. The piece continues on page 4, arguing that men of colour with wealth and education receive full civil respect in Europe, Asia, and South America, and closes reaffirming the American Convention's upcoming Philadelphia meeting as the proper venue for abolitionist coordination.",
+   "notes": "Explicitly references 'our correspondent Mordecai' (the FJ_1827-08-17 page-3 letter) as having already covered similar ground -- ties this editorial and that letter together as a single real-time editorial campaign against Noah. A landmark item for tracking the paper's direct sparring with a named, prominent mainstream editor."
+  },
+  {
+   "issue": "FJ_1827-08-24",
+   "page": 4,
+   "headline": "American Convention for Promoting the Abolition of Slavery -- Twentieth Biennial Stated Meeting notice",
+   "author": "Edwin P. Atlee (Secretary)",
+   "type": "meeting notice",
+   "summary": "Formal notice that the American Convention for Promoting the Abolition of Slavery will hold its Twentieth Biennial Stated Meeting in Philadelphia on Tuesday, October 2, 1827, at 10 o'clock A.M., inviting delegates from all Abolition and Manumission Societies not yet represented (each society limited to ten delegates per the Convention's constitution, quoted in the notice). Dated Philadelphia, July 31, 1827, and signed by Secretary Edwin P. Atlee.",
+   "notes": "Edwin P. Atlee was a real, prominent Philadelphia Quaker abolitionist (PAS clerk/officer) -- worth checking against Winch for a person record. This is exactly the kind of dated Philadelphia meeting notice with a named organizer that PIPELINE.md flags as gold."
+  },
+  {
+   "issue": "FJ_1827-08-24",
+   "page": 4,
+   "headline": "Philadelphia business notices: Charles Short's boarding house, Daniel Peterson's clothing store, and Samuel E. Cornish's land-for-sale notice",
+   "author": null,
+   "type": "advertisements",
+   "summary": "Three Philadelphia-relevant paid notices: Charles Short announces his 'Umegw [Union?] Mode' boarding and lodging house for 'People of Colour, Strangers and Citizens' at No. 182 South Sixth Street, below Pine, opened June 1, 1827; Daniel Peterson advertises a Cheap Clothing Store at No. 215/218 South Sixth Street, Philadelphia, buying and selling new and second-hand gentlemen's wearing apparel; and editor Samuel E. Cornish personally advertises 2,000 acres of land in New York State (on the Delaware River, with canal access to both New York and Philadelphia) for sale below market value to Black farmers/capitalists willing to found a coloured settlement, offering to personally invest $600-1,000 in the scheme.",
+   "notes": "Samuel E. Cornish is already the merged/confirmed editor person (merges.json). Charles Short and Daniel Peterson are new named Philadelphia tradesmen -- worth a match_names.py pass and a look at census/1820-directory for cross-references."
+  },
+  {
+   "issue": "FJ_1827-08-24",
+   "page": 4,
+   "headline": "School for Coloured Children under St. Philip's Church",
+   "author": null,
+   "type": "advertisement (school notice)",
+   "summary": "Notice that a school for coloured children of both sexes, held under St. Philip's Church, is ready to admit pupils, teaching reading, writing, arithmetic, English grammar, geography (with maps and globes), and history at $2-4 per quarter. References for the school are given as 'Rev. Messrs. P. Williams, S. E. Cornish, B. Paul, and W. Miller.'",
+   "notes": "St. Philip's Church (New York) references Rev. Peter Williams Jr., S. E. Cornish, likely Rev. Berian/Nathaniel Paul's family, and William Miller -- a useful roster of named New York Black clergy vouching for the school together."
+  },
+  {
+   "issue": "FJ_1827-08-24",
+   "page": 4,
+   "headline": "DIED notices",
+   "author": null,
+   "type": "obituary",
+   "summary": "Two death notices: Stephen J., youngest son of the Rev. S. Dutton, died in this city [New York] aged 7 months; and Mr. Newport Freeman, a native of Africa, died in New Haven, Conn.",
+   "notes": "Both brief vital-records items with named individuals; low context but consistent with the paper's standing DIED column."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1827-08-17",
+   "page": 3,
+   "name": "New Haven African Meeting-House gathering to solicit Freedom's Journal subscriptions",
+   "date": "1827-07",
+   "location": "New Haven, Conn. (African Meeting-House)",
+   "description": "A meeting was held in the African Meeting-House to promote subscriptions to Freedom's Journal; attendance was sparse and mostly female, with addresses delivered by 'Messrs O--, A--, and B--' recommending the paper.",
+   "attendees": [
+    ["Mr. O--", "speaker (initial only)"],
+    ["Mr. A--", "speaker (initial only)"],
+    ["Mr. B--", "speaker (initial only)"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-08-24",
+   "page": 4,
+   "name": "American Convention for Promoting the Abolition of Slavery -- Twentieth Biennial Stated Meeting",
+   "date": "1827-10-02",
+   "location": "Philadelphia, Pa.",
+   "description": "The American Convention for Promoting the Abolition of Slavery announced its Twentieth Biennial Stated Meeting to be held in Philadelphia, inviting delegates (up to ten per society) from all Abolition and Manumission Societies not yet represented.",
+   "attendees": [
+    ["Edwin P. Atlee", "Secretary, issued the notice"]
+   ]
+  }
+ ]
+}

@@ -68,7 +68,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 <body>
 <header>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">Winch Names Reference + historic Black newspapers — click a name to see every reference · build __BUILD__</span>
+  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory — click a name to see every reference · build __BUILD__</span>
 </header>
 <div id="wrap">
   <div id="left">
@@ -102,7 +102,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
   <div class="vsplit" id="rsplit" title="drag to resize"></div>
   <div id="right"><p class="empty">Select a person to see their newspaper appearances, writings, events, co-attendees, and Winch reference entry.</p></div>
 </div>
-<footer id="sitefooter"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> © 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a></footer>
+<footer id="sitefooter"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> © 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a><br>For 1838 Black Metropolis use only.</footer>
 <script>
 // new-version check: compare our build stamp against the server's every few minutes
 (function(){
@@ -344,14 +344,14 @@ function select(pid){
     return `<div class="card"><span class="hl">${c.y} census — ${esc(c.name)}</span><q>${esc(bits.join(' · '))}</q>${mh}<div class="src">${c.y===1838?'Pennsylvania Abolition Society census of 1838':'Society of Friends census of 1847 (SOFAAC)'} · household ID ${esc(c.cid||'?')} · <em>name-based link</em></div></div>`;
   }).join(''); }
   // 1820 city directory records
-  if(p.directory?.length){ h += `<h3>1820 city directory (${p.directory.length}) · <a href="https://drive.google.com/file/d/19a_BG9N5yWaskwywXPh-t_f_3qa3MiCU/view?usp=drive_link" target="_blank" title="1820 Philadelphia directory source on Google Drive">view directory</a></h3>` + p.directory.map(d=>{
+  if(p.directory?.length){ h += `<h3>1820 city directory (${p.directory.length})</h3>` + p.directory.map(d=>{
     const bits=[];
     if(d.occ) bits.push(d.occ);
     if(d.addr) bits.push(d.addr);
     if(d.pdfPage) bits.push('directory p.'+d.pdfPage);
     if(d.conf) bits.push('confidence: '+d.conf);
     const rev = d.needsReview ? `<div style="margin-top:4px;font-size:12px;color:var(--rust)">⚑ needs review: ${esc(d.needsReview)}</div>` : '';
-    return `<div class="card"><span class="hl">${esc(d.name||p.name)}</span><q>${esc(bits.join(' · '))}</q>${rev}<div class="src">1820 Philadelphia city directory (cross-marked Black residents)${d.ocr?` · OCR: "${esc(d.ocr)}"`:''} · <em>name-based link</em></div></div>`;
+    return `<div class="card"><span class="hl">${esc(d.name||p.name)}</span><q>${esc(bits.join(' · '))}</q>${rev}<div class="src">1820 Philadelphia city directory (cross-marked Black residents)${d.ocr?` · OCR: "${esc(d.ocr)}"`:''} · <em>name-based link</em> · <a href="https://drive.google.com/file/d/19a_BG9N5yWaskwywXPh-t_f_3qa3MiCU/view?usp=drive_link" target="_blank" title="1820 Philadelphia directory source on Google Drive">view directory</a></div></div>`;
   }).join(''); }
   // winch refs
   if(p.refs?.length){ h += `<h3>Winch reference entry (${p.refs.length})</h3>` + p.refs.map(r=>

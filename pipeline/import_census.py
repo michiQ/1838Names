@@ -3,10 +3,10 @@
 import sqlite3, re, unicodedata
 import pandas as pd
 
-DB = "/tmp/run21/black_metropolis.db"
-F1838 = "/sessions/wizardly-exciting-dijkstra/mnt/Newspapers/1838 Names Database/census/1838 Census Finding Aid.xlsx"
-FMATCH = "/sessions/wizardly-exciting-dijkstra/mnt/Newspapers/1838 Names Database/census/1838-1847-matches.xlsx"
-F1847 = "/sessions/wizardly-exciting-dijkstra/mnt/Newspapers/1838 Names Database/census/sofaac-normalized.csv"
+DB = "/tmp/run28/black_metropolis.db"
+F1838 = "/sessions/bold-hopeful-wright/mnt/Newspapers/1838 Names Database/census/1838 Census Finding Aid.xlsx"
+FMATCH = "/sessions/bold-hopeful-wright/mnt/Newspapers/1838 Names Database/census/1838-1847-matches.xlsx"
+F1847 = "/sessions/bold-hopeful-wright/mnt/Newspapers/1838 Names Database/census/sofaac-normalized.csv"
 
 def norm(s):
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii","ignore").decode()
