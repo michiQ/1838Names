@@ -209,6 +209,10 @@ function isPrimaryAffil(pid, type, key){
 // any other org/event they also belong to (stretches them toward it instead, which is
 // what makes multi-affiliated people visibly stick out as connectors between clusters).
 const PRIMARY_GAP_BASE = 26, SECONDARY_GAP_BASE = 140;
+// Target distance for person-to-person links -- see tick() for why this needs to be
+// short and firmly enforced (freshly-revealed people otherwise drift far from wherever
+// they were pulled in, having no other force anchoring them).
+const PP_GAP_BASE = 40;
 function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.articles?.length||0)*2;}
 const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
 
@@ -705,20 +709,27 @@ function tick(){
     const isPP = fv && l.s.type==='p' && l.t.type==='p';
     // person-to-org/event links: primary affiliation pulls tight (nestle in close),
     // any other affiliation pulls loose (stretches them out toward it instead) -- see
-    // PRIMARY_GAP_BASE/SECONDARY_GAP_BASE. Person-to-person links are hidden by default
-    // now, so they're kept loose too, so they don't fight the org/event-anchored layout
-    // above (they still exist so a selected person's real connections look sensible
-    // when drawn). Everything else (ego views, org/event-to-org/event, etc.) keeps the
+    // PRIMARY_GAP_BASE/SECONDARY_GAP_BASE. Person-to-person links are hidden by default,
+    // but they're what positions a person who gets pulled onto the map for the first time
+    // by a click (ensurePersonInFull etc. create them with NO org/event anchor of their
+    // own most of the time) -- PP_GAP_BASE keeps that short/tight, on purpose, so a
+    // newly-revealed person clusters in close to whoever revealed them instead of
+    // drifting away. Everything else (ego views, org/event-to-org/event, etc.) keeps the
     // original width-based formula.
     const target = isPO ? (l.primary ? PRIMARY_GAP_BASE : SECONDARY_GAP_BASE)*SP
-      : isPP ? (60+240/(l.w+1))*SP*1.6
+      : isPP ? PP_GAP_BASE*SP
       : (60+240/(l.w+1))*SP;
     // stiffness (not just target distance) has to differ too -- a short target alone
-    // gets overwhelmed by ambient repulsion from the hundreds of other nearby nodes, so
-    // a primary link needs a much stronger spring to actually pull all the way in close.
-    // Secondary affiliations and hidden person-to-person links stay weak so they nudge
-    // rather than compete with the primary pull.
-    const stiff = isPO ? (l.primary ? 0.02 : 0.0025) : isPP ? 0.0012 : 0.004;
+    // gets overwhelmed by ambient repulsion from the hundreds of other nearby nodes.
+    // Person-to-person links were originally left very weak (0.0012) on the theory that
+    // they shouldn't compete with org/event anchoring -- but that meant a freshly-
+    // revealed person (whose ONLY force is usually this one PP spring, since they often
+    // don't belong to any tracked org/event at all) got flung outward by repulsion with
+    // nothing strong enough to reel them back in, ending up scattered far across the map.
+    // Bumped to 0.015 -- strong enough to win against repulsion and keep them close,
+    // still below the primary org/event tier so it doesn't override that anchoring for
+    // people who DO have one.
+    const stiff = isPO ? (l.primary ? 0.02 : 0.0025) : isPP ? 0.015 : 0.004;
     const f=(d-target)*stiff*(l.faint?0.4:1);
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
