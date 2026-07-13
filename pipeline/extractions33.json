@@ -1,0 +1,111 @@
+{
+ "_note": "Written 2026-07-13 (31st scheduled run). Covers FJ_1827-11-09, FJ_1827-11-16, FJ_1827-11-23, FJ_1827-12-07 -- all 4 OCR'd fresh at 300dpi this run. Note: FJ_1827-11-30 could NOT be processed -- its PDF in the Drive folder is a 31-byte broken placeholder ('File mis...'), not a real PDF; flagged in progress.txt for Michiko to re-download. Dec 7 was substituted to keep 4 issues. Headline gold this batch: Rev. Charles Corr AME obituary (Philadelphia), Jeremiah Gloucester's Philadelphia school notice, the founding roster of the Jordan Missionary Society (NYC Nov 28 1827), and the 'Coloured Baltimorean' Methodism-and-slavery letter. The standing AUTHORISED AGENTS roster (incl. Francis Webb of Philadelphia, Stephen Smith of Columbia, David Walker of Boston) recurs on p4 of each issue and is left to match_names.py to pick up from the OCR.",
+ "articles": [
+  {
+   "issue": "FJ_1827-12-07",
+   "page": 3,
+   "headline": "OBITUARY -- Rev. CHARLES CORR, A.M.E. minister of Philadelphia",
+   "author": null,
+   "type": "obituary",
+   "summary": "A signed communicated obituary for the Rev. Charles Corr, who died of consumption on Sunday evening the 2d ult. at his residence in Philadelphia in the fifty-first year of his age, a Minister of the Gospel in the African Methodist Episcopal Connexion. Born at Port Antonio, Jamaica, March 1777; embraced religion in early life and attached himself to the Methodist Connexion in Kingston, Jamaica; began his ministerial career in 1793 at sixteen years of age; emigrated to the United States in 1795 and settled in Charleston, S.C. the same year, where he remained until 1821, when he removed to Philadelphia and spent the remainder of his days. He laboured as a preacher in the West Indies, Nova Scotia, and especially in New York and Philadelphia; several who were converted under him became preachers themselves. The obituary closes with verses and describes him as a kind father, affectionate husband, and able and acceptable preacher whom 'the African Methodist Episcopal Connexion has lost.'",
+   "notes": "MAJOR Philadelphia AME content -- a named, dated Philadelphia clergyman (Rev. Charles Corr, d. Dec 2 1827, resident of Philadelphia from 1821). Strong match candidate for Winch/census. His long career (Charleston 1795-1821, then Philadelphia) ties the Charleston and Philadelphia AME networks."
+  },
+  {
+   "issue": "FJ_1827-12-07",
+   "page": 4,
+   "headline": "SCHOOL NOTICE -- Jeremiah Gloucester, Philadelphia",
+   "author": "Jeremiah Gloucester",
+   "type": "advertisement (school notice)",
+   "summary": "Jeremiah Gloucester returns thanks to his friends for the liberal encouragement of patronizing his school and announces he still continues to teach in the same place, hoping by increased exertions to merit continued public encouragement. Branches taught: Reading, Writing, Cyphering, Geography, English Grammar, and Natural Philosophy; and to the females, Needle Work. Dated Philadelphia, Oct. 28.",
+   "notes": "MAJOR Philadelphia content. Jeremiah Gloucester was a son of the Rev. John Gloucester (founder of the First African Presbyterian Church, Philadelphia) and himself minister of the Second African Presbyterian Church; here operating a Philadelphia school. Strong match candidate for Winch/census/1820-directory. The 'Gloucester' surname has recurred as a garbled OCR artifact in earlier runs' Rush Education Society notices -- this clean instance helps anchor it."
+  },
+  {
+   "issue": "FJ_1827-11-23",
+   "page": 2,
+   "headline": "METHODISM AND SLAVERY -- letter signed 'A Coloured Baltimorean'",
+   "author": "A Coloured Baltimorean (pseudonym)",
+   "type": "correspondence (signed letter to the editor)",
+   "summary": "A long signed letter to the editor on the schism then dividing the Methodist Episcopal Church over lay/local-preacher representation, arguing that the reformers who demand the right of representation (suffrage) in the church's law-making conferences are hypocritical for prizing their own suffrage while doing nothing to end the church discipline that permits private members to hold slaves. The writer quotes a resolution of the Maryland (Methodist reform) convention held in Baltimore Nov 15-16, 1826, and a protest of a New-York convention of June 1, 1826, against involuntary slavery, and enters his own three-fold protest against ecclesiastical reform that does not raise coloured people to the dignity of men and Christians, against any minister who refuses to preach to a coloured congregation, and against every slave-holding professor of religion.",
+   "notes": "'A Coloured Baltimorean' was the well-known pen name of William Watkins, the Baltimore Black educator and abolitionist (great-uncle of Frances Ellen Watkins Harper). Significant early Black-press critique of Methodist reform and slavery. Names the Maryland (Baltimore, Nov 1826) and New-York (June 1826) Methodist reform conventions."
+  },
+  {
+   "issue": "FJ_1827-11-09",
+   "page": 3,
+   "headline": "TRAVEL LETTER -- the condition of coloured people in Boston and Salem",
+   "author": null,
+   "type": "correspondence (travel letter)",
+   "summary": "A signed travel letter to the editor describing the state of the coloured community of Boston and a visit to Salem, Mass. In Boston it reports an African Grand Lodge (the African Grand Lodge of Boston, said to be the first Masonic institution of its kind among coloured Americans, chartered from Great Britain, with a lodge-room in Cambridge Street); three religious societies (one Baptist, two Methodist); one or two Mutual Relief Societies for assisting the sick and needy; and a Debating Club of about eighteen or twenty members meeting weekly. It notes few of Boston's coloured people are mechanics, praises the departed 'Woodman' for his sabbath-school labours and the establishment of the African Primary Schools, and recalls Boston's antislavery tradition (the Smiths, Hancocks, Winthrops, and Philips). In Salem it reports about four hundred persons of colour, many owning house and lot, and the writer's 'friend R.' respected by all classes.",
+   "notes": "Valuable community-institution content for Boston/Salem: the African Grand Lodge (Prince Hall masonry), Mutual Relief Societies, a Debating Club, and the African Primary Schools. Not Philadelphia, but names Boston's Black civic infrastructure and a departed schoolteacher ('Woodman')."
+  },
+  {
+   "issue": "FJ_1827-11-16",
+   "page": 2,
+   "headline": "CITY OF WASHINGTON / the Gilbert Horton case; and COLONIZATION SOCIETY No. VII (J. H. Kennedy, conclusion)",
+   "author": "J. H. Kennedy (colonization essay); editorial",
+   "type": "editorial + correspondence",
+   "summary": "An editorial protesting a proclamation of the Mayor of Washington requiring every free black and mulatto person to register and prove title to freedom or be jailed and sold as an absconding slave, citing the recent case of Gilbert Horton -- a freeman and citizen of New York State seized and imprisoned in Washington as a runaway, saved from being sold for his jail fees only by the prompt intervention of the New York governor. On the same page, the concluding number (No. VII) of J. H. Kennedy's pro-colonization essay series, dated Philadelphia, Nov. 1827, summarizing his argument for the American Colonization Society, alongside continued anti-colonization argument signed 'Clarkson.'",
+   "notes": "The Gilbert Horton case was a celebrated free-Black kidnapping/false-imprisonment cause of 1826-27 that prompted New York's governor (DeWitt Clinton) to intervene. J. H. Kennedy of Philadelphia continues the ACS essay series documented in earlier runs; 'Clarkson' is the recurring anti-colonization respondent."
+  },
+  {
+   "issue": "FJ_1827-11-16",
+   "page": 3,
+   "headline": "MARRIED / DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married (New York): by the Rev. B. Paul, Mr. Abraham Blake to Miss Jane Osborne; by the Rev. S. E. Cornish (12th inst.), Mr. William Scisco to Miss Sarah Smith; by the Rev. Peter Williams, Mr. Charles Hamilton to Miss Harriet Farny -- all of this city. Died (New York): Mr. Horatio H.; and, after a long illness, Mr. John H. Smith, aged 44 years 6 months, a native of Jamaica.",
+   "notes": "Rev. B. Paul, Rev. S. E. Cornish, and Rev. Peter Williams officiating -- the consistent New York Black clergy. Seven named parties in the marriage column."
+  },
+  {
+   "issue": "FJ_1827-11-09",
+   "page": 3,
+   "headline": "MARRIED / DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married (New York): by the Rev. Thomas Miller (6th inst.), Mr. Samuel Robertson to Miss Sarah Turner; Mr. George Bailey to Miss Amelia Giles; Mr. Macy Simpson to Miss Hannah Rose; Mr. David Johnson to Miss Catharine Barnes. In St. Philip's Church (1st inst.) by the Rev. P. Williams, Mr. Jonas Jones to Miss Catharine Noe; on Sunday evening, Mr. Ransom F. Wake to Miss Mary Blake. In this city (1st inst.) by the Rev. Mr. Drayton, Mr. Andrew C. Oliver, of Philadelphia, to Miss Lydia Francis, of Long Island. Died (New York): Mr. Aaron Jacobs, sexton of Zion Church, aged 69; Mrs. Sarah Anderson.",
+   "notes": "Includes Ransom F. Wake (later a prominent New York Black educator/activist) and Andrew C. Oliver of Philadelphia. Aaron Jacobs identified as sexton of Zion Church. Rev. Thomas Miller, Rev. P. Williams, and Rev. Mr. Drayton officiating."
+  },
+  {
+   "issue": "FJ_1827-12-07",
+   "page": 3,
+   "headline": "NOTICE -- James Stephens of Baltimore (marital-dispute reply); and MARRIED/DIED",
+   "author": "James Stephens",
+   "type": "notice + vital records",
+   "summary": "A signed public notice from James Stephens of Baltimore replying to a communication of Oct. 12 in which a woman signing herself 'Jane Stephens' had denounced him for abandonment; he states he was married in 1813 by the Rev. Mr. Conner of Maryland to Miss Anne Johnson (who later remarried a Stephen Broadwater of Accomack County, Va., and died in 1820), and denies that Jane Stephens (alias Mushit) was ever his wife. Also on the page: Married in Charleston, S.C. (25th Oct.), Robert C. Deas to Miss Eliza Lyles. Died: at New Orleans, of fever, Rev. Asa C. Goldsbury, formerly of Providence; in New York, Miss Eliza Montonyer.",
+   "notes": "A signed Baltimore notice naming James Stephens, Anne Johnson, Stephen Broadwater, and Jane Mushit; plus Charleston and New York vital records. Rev. Asa C. Goldsbury (d. New Orleans, formerly Providence) among the deaths."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1827-12-07",
+   "page": 2,
+   "name": "Founding of the Jordan Missionary Society",
+   "date": "1827-11-28",
+   "location": "New York City",
+   "description": "At a meeting of coloured persons held in the City of New-York, Nov. 28, 1827, it was resolved to form a society, which adopted the title 'The Jordan Missionary Society, for the Extension of the Gospel among the Coloured Inhabitants of the City of New-York.' Officers and directors were chosen, and Mr. E. Nexsen was respectfully requested to act as Treasurer and receive gifts on the Society's behalf. Mr. Nexsen's letter of acceptance (addressed to Presidents Henry West and J. Jones) is printed on page 3 of the same issue.",
+   "attendees": [
+    ["Henry West", "President"],
+    ["Joseph Jones", "Vice-President"],
+    ["William Flow", "Director"],
+    ["Francis Franklin", "Director"],
+    ["Andrew Oatfield", "Director"],
+    ["Garrit Creole", "Director"],
+    ["William Johnson", "Director"],
+    ["Andrew Smedes", "Director"],
+    ["George W. Jennings", "Director"],
+    ["Henry Lee", "Secretary"],
+    ["E. Nexsen", "Treasurer (requested; accepted)"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-12-07",
+   "page": 4,
+   "name": "Re-opening of the school of the Society for the Instruction of Coloured Adults of Both Sexes",
+   "date": "1827-10-01",
+   "location": "New York",
+   "description": "The Society for the Instruction of Coloured Adults, of both Sexes, announced it re-opened its school on Monday evening, October 1st, at its former room. A related notice announces a school for coloured pupils opening Oct. 15 in the African School-Room in Mulberry-street, teaching English Grammar, Geography, &c. Milton P. Johnson is named in connection with the notice.",
+   "attendees": [
+    ["Milton P. Johnson", "connected with the society/school notice"]
+   ]
+  }
+ ]
+}
