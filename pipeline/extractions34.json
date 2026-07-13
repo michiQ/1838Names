@@ -1,0 +1,183 @@
+{
+ "_note": "Written 2026-07-13 (32nd scheduled run). Covers FJ_1827-12-14, FJ_1827-12-21, FJ_1828-01-11, FJ_1828-01-18 -- all 4 OCR'd fresh at 300dpi this run (16 pages). Note: FJ_1827-11-30 remains a 31-byte broken placeholder PDF (unchanged since run #31 flagged it); still needs re-download by Michiko. There is no FJ issue for Dec 28 1827 or Jan 4 1828 -- confirmed by the Dec 21 editorial 'OUR OWN CONCERNS' announcing a two-week suspension for new printing arrangements, so the paper skipped those two weeks (resumed Jan 11). Headline gold this batch: (1) OBITUARY of Rev. Jeremiah Gloucester, Pastor of the Second African Presbyterian Church of Philadelphia (d. Jan 1 1828) -- note this DIRECTLY follows last run's extraction of his Dec 7 school notice as a living figure; the school ad ran while he was terminally ill. (2) The Pennsylvania Abolition Society annual officer election (Philadelphia, Dec 27/31 1827) -- the very organization that conducted the 1838 PAS census; full roster incl. Pres. William Rawle, Secs. Edwin P. Atlee & Edward B. Garrigues, Treas. Henry Troth. (3) The Philadelphia High Constable Garrigues kidnapped-children reclamation report (stolen free Black children sold South via the Moyamensing Road). (4) A large New York African Free Schools census/school-visiting meeting (Dec 27 1827, Manumission Society schoolroom, Mulberry St) chaired by Peter Williams with a 17-district visitor roster and Samuel E. Cornish as general agent. The standing AUTHORISED AGENTS roster (Francis Webb of Philadelphia, Stephen Smith of Columbia, David Walker of Boston, Rev. Nathaniel Paul of Albany, Theodore S. Wright of Princeton, etc.) recurs on p4 of each issue and is left to match_names.py to pick up from OCR.",
+ "articles": [
+  {
+   "issue": "FJ_1828-01-11",
+   "page": 3,
+   "headline": "DIED -- Rev. JEREMIAH GLOUCESTER, Pastor of the Second African Presbyterian Church, Philadelphia",
+   "author": null,
+   "type": "obituary (death notice)",
+   "summary": "A death notice: 'In Philadelphia, on the 1st instant, after a lingering illness of many months, Rev. JEREMIAH GLOUCESTER, Pastor of the Second African Presbyterian Church, in the 28th year of his age.' (The stated age appears low for OCR/print; recorded as printed.) The same column notes 'Deaths in Philadelphia during the week ending Saturday, 5th inst. 77.'",
+   "notes": "MAJOR Philadelphia content and a direct follow-up to run #31's extraction, which captured Jeremiah Gloucester's Philadelphia school notice (dated Oct 1827, run in the Dec 7 and Dec 14 issues) as a LIVING figure -- the school advertisement ran while he was terminally ill and continued to appear after his Jan 1 1828 death. Jeremiah Gloucester was a son of the Rev. John Gloucester (founder of the First African Presbyterian Church, Philadelphia) and himself minister of the Second African Presbyterian Church. Strong match candidate for Winch/census/1820-directory. This obituary firmly anchors the recurring garbled 'Gloucester' OCR artifact from earlier Rush Education Society notices."
+  },
+  {
+   "issue": "FJ_1828-01-18",
+   "page": 3,
+   "headline": "Reclamation of kidnapped free coloured children -- report on High Constable Garrigues's southern search",
+   "author": "F. T. (signed initials, dated January 12, 1828)",
+   "type": "news report (kidnapping / free-Black reclamation)",
+   "summary": "A signed report announcing the return of High Constable Garrigues (Garragues) after an absence of more than three months on an excursion through Louisiana and Mississippi in pursuit of coloured children who had been stolen away and sold into slavery. He succeeded in bringing home only two boys: James Dailley (Bailey), a mulatto about 15, and Ephraim Lawrence, a black boy about 17. Bailey, given up unconditionally by his master, had earlier been sent to the Alms House and bound out about four years before to a man named Patrick Pickard, calling himself a tailor and then living on the Moyamensing Road, who carried this boy and several others down the Ohio and Mississippi and sold him in Louisiana; Bailey is in a miserable state of health from repeated cruelty and may not recover, and says his mother lives near Woodbury, New Jersey. Ephraim Lawrence was wanted to give evidence before the Mayor's Court against Henry Carr, who had kidnapped him and a boy named John, and who recently died in Arch-street Prison during Garrigues's absence. The writer stresses how the requirement of verbal oaths by white persons in open court makes reclamation of the absent boys exceedingly difficult.",
+   "notes": "MAJOR Philadelphia content -- the Moyamensing Road, Arch-street Prison, the Alms House 'binding out' system, and High Constable Garrigues locate this squarely in Philadelphia's celebrated 1825-27 campaign against the kidnapping rings that seized free Black children and sold them South (the cases pursued under Mayor Joseph Watson). Named victims/actors: James Dailley/Bailey, Ephraim Lawrence, the kidnapper Patrick Pickard, the deceased kidnapper Henry Carr, and a still-missing boy 'John.' Edward B. Garrigues (High Constable) also appears this same batch as a Secretary of the Pennsylvania Abolition Society (Jan 11 issue)."
+  },
+  {
+   "issue": "FJ_1827-12-21",
+   "page": 3,
+   "headline": "Letter of the American Convention for promoting the Abolition of Slavery (Philadelphia)",
+   "author": "Isaac Barton, Secretary to the Acting Committee",
+   "type": "correspondence (society letter)",
+   "summary": "A letter dated 'Philadelphia, Dec. 7, 1827' from Isaac Barton, Secretary to the Acting Committee of the American Convention for promoting the Abolition of Slavery, directing that the Convention (at its last session) had ordered two copies of Freedom's Journal subscribed for, and requesting one copy be sent to William Rawle, Esq., Third-street near Spruce, and one to Dr. Edwin P. Atlee, corner of Vine and Crown-streets, Philadelphia.",
+   "notes": "Philadelphia abolition-network content. Isaac Barton, William Rawle, and Dr. Edwin P. Atlee are all Philadelphia abolitionists who reappear (Rawle as President, Atlee as Secretary, Barton on the Board of Education) in the Pennsylvania Abolition Society officer roster printed in the Jan 11 1828 issue of this same batch -- confirming the tight PAS/American Convention leadership overlap that would later organize the 1838 census."
+  },
+  {
+   "issue": "FJ_1828-01-11",
+   "page": 3,
+   "headline": "CITY FREE SCHOOLS -- Rev. Samuel E. Cornish appointed General Visiting Agent",
+   "author": null,
+   "type": "editorial notice",
+   "summary": "An editorial note reporting with pleasure that the Trustees of the African schools under the care of the Manumission Society have appointed the Rev. Samuel E. Cornish General Visiting Agent; the Agent has already visited upwards of one hundred different families, with the result of an increased number of pupils in both schools. Urges every man of colour to lend a helping hand.",
+   "notes": "New York content documenting Samuel E. Cornish's role as paid visiting agent of the New York African Free Schools -- the operational follow-through of the Dec 27 1827 school-census meeting (see event below). Ties Cornish (Freedom's Journal co-founder) to the New York Manumission Society's school system."
+  },
+  {
+   "issue": "FJ_1828-01-11",
+   "page": 3,
+   "headline": "MARRIED / DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married (New York): on Thursday evening 27th ult. by the Rev. Mr. Parois, Mr. Benjamin Mermer, of Philadelphia, to Miss Anna Belleve, of St. Pierre, Martinique; in St. Philip's Church, Wednesday 2d inst., by the Rev. Peter Williams, Mr. Andrew Williams, of Salem, Mass., to Miss Jena Seasre of this city; on the 31st ult. by the Rev. S. E. Cornish, Mr. John W. Freeman to Miss Diana Thompson. Died: in Philadelphia, 1st inst., Rev. Jeremiah Gloucester (see separate obituary above); in New York, 29th ult., Miss Rachel Emmens, aged 64.",
+   "notes": "Benjamin Mermer 'of Philadelphia' likely reconciles the garbled 'B. Nexmyer / B. Wibamaxer' Refreshment-House proprietor (No. 422 Broadway) advertised on p3-p4 of the Dec 14 and Dec 21 issues -- a probable Philadelphia-connected New York businessman. Rev. Mr. Parois, Rev. Peter Williams, and Rev. S. E. Cornish officiating."
+  },
+  {
+   "issue": "FJ_1828-01-18",
+   "page": 3,
+   "headline": "MARRIED / DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married: in St. Philip's Church, 15th inst., by the Rev. P. Williams, Mr. John H. Lamotte(s), of Charleston, S.C., to Miss Isabella, adopted daughter of Richmond and Sophia J. Kinlock, of the same place; in this city by the Rev. Benjamin Paul, Mr. George Stuart to Miss Elizabeth Miller; by the same, Mr. John Lawar to Miss Eliza Freeman; by the same, Mr. Simon Green, of Providence, R.I., to Miss Len Warington, of this city. Died (accident): Abraham Thompson, a coloured man, killed by the caving-in of a well he was sinking in Cheltenham, Penn.; also noted, Dr. Nancrede, the vaccine physician of Philadelphia, vaccinated 1724 persons during the last year.",
+   "notes": "Rev. Benjamin Paul officiated at three of the four New York marriages. Abraham Thompson (coloured man, d. Cheltenham/Chittenham, Montgomery Co., Pa.) is a Philadelphia-area death. John H. Lamotte of Charleston recurs as a name across the batch (also read in the garbled NY school-district roster)."
+  },
+  {
+   "issue": "FJ_1827-12-14",
+   "page": 3,
+   "headline": "MARRIED notices (Philadelphia & New York)",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married: in Philadelphia, 3d inst., by the Rev. Mr. M'Calla, Mr. Jacob A. Stang, of Baltimore, to Miss Esther Black, of Philadelphia; in New York, 10th inst., by the Rev. Mr. Cornish, Mr. John Lee to Miss Isabella Marquiss, both of this city; by the Rev. B. Paul, Mr. Tobias Green to Miss Phillis Hevens, and Mr. Samuel P. Robinson to Miss Laura Freeman.",
+   "notes": "Miss Esther Black 'of Philadelphia' is a Philadelphia vital record; Rev. Mr. Cornish (S. E. Cornish) and Rev. B. Paul officiating in New York."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1828-01-11",
+   "page": 2,
+   "name": "Pennsylvania Abolition Society -- Annual Election of Officers",
+   "date": "1827-12-27",
+   "location": "Philadelphia",
+   "description": "At the Annual Election of the Pennsylvania [Abolition] Society, held 12 mo. 27, 1827, the following officers were elected for the ensuing year (printed 'By order of the Society, Edwin P. Atlee, Secretary, Philadelphia, 12 mo. 31, 1827'): President William Rawle, Esq.; Secretaries Edwin P. Atlee, M.D. and Edward B. Garrigues; Treasurer Henry Troth, Esq.; a slate of Vice-Presidents, Counsellors, corresponding members for the several Pennsylvania counties, a Board of Education, and an Electing Committee. This is the Philadelphia abolition society whose successor committees organized the 1838 census of Philadelphia's Black population.",
+   "attendees": [
+    ["William Rawle", "President"],
+    ["Edwin P. Atlee", "Secretary"],
+    ["Edward B. Garrigues", "Secretary"],
+    ["Henry Troth", "Treasurer"],
+    ["John Sergeant", "Counsellor"],
+    ["D. Brown", "Counsellor"],
+    ["J. B. Lowber", "Counsellor"],
+    ["Joseph Norris, Jr.", "Counsellor"],
+    ["William Rawle, Jr.", "Counsellor"],
+    ["Thomas Earle", "Counsellor"],
+    ["Mathias Morris", "Corresponding member, Bucks County"],
+    ["Joseph W. Rowland", "Corresponding member, Montgomery County"],
+    ["Samuel Edwards", "Corresponding member, Delaware County"],
+    ["James M. Porter", "Corresponding member, Northampton County"],
+    ["John Gardner", "Corresponding member, York County"],
+    ["Isaac Barton", "Board of Education"],
+    ["George Peterson", "Board of Education"],
+    ["Thomas Ridgway", "Board of Education"],
+    ["D. Weatherly", "Board of Education"],
+    ["Joseph Evans", "Board of Education"],
+    ["M. Attmore", "Board of Education"],
+    ["Thomas Parker, Jr.", "Board of Education"],
+    ["Peter Wright", "Board of Education"],
+    ["C. S. Cope", "Board of Education"],
+    ["Joseph Parker", "Board of Education"],
+    ["John Bouvier", "Board of Education"],
+    ["Joseph Todhunter", "Electing Committee"],
+    ["William Jones", "Electing Committee"],
+    ["Joseph M. Truman", "Electing Committee"],
+    ["D. C. Wood", "Electing Committee"],
+    ["Jesse Stanley", "Electing Committee"],
+    ["James Mott", "Electing Committee"],
+    ["P. Stackhouse", "Electing Committee"],
+    ["Robert Murray", "Electing Committee"],
+    ["Robert Evans", "Electing Committee"],
+    ["Edwin Walter", "Electing Committee"],
+    ["W. S. Halliwell", "Electing Committee"]
+   ]
+  },
+  {
+   "issue": "FJ_1828-01-11",
+   "page": 2,
+   "name": "New York African Free Schools -- school-census meeting (Manumission Society)",
+   "date": "1827-12-27",
+   "location": "New York City",
+   "description": "At a joint meeting of several respectable men of colour with members of the Manumission Society and Trustees of the African Schools, held Dec. 27, 1827 at the Society's School Room in Mulberry-street, Mr. Peter Williams was called to the chair and Mr. Thomas L. Jinnings (Jennings) appointed secretary. Informed that school attendance bore a great disproportion to the number who might benefit, the meeting resolved to take a census of the coloured families of the city (noting condition, occupation, and number of children under 5), to divide the city into seventeen districts, and to appoint two suitable persons for each district -- together with Mr. Samuel E. Cornish, appointed general agent by the Board of Trustees -- to visit every coloured family and report. A partial roster of district visitors was printed (OCR of several names is garbled; the confidently legible ones are listed as attendees).",
+   "attendees": [
+    ["Peter Williams", "Chairman; visitor, 13th District"],
+    ["Thomas L. Jinnings", "Secretary; visitor, 14th District"],
+    ["Samuel E. Cornish", "General agent (appointed by Board of Trustees)"],
+    ["John Bastien", "Visitor, 1st District"],
+    ["John Maranda", "Visitor, 1st District"],
+    ["Henry Scott", "Visitor, 2nd District"],
+    ["William Boyer", "Visitor, 2nd District"],
+    ["Benjamin Smith", "Visitor, 3rd District"],
+    ["Benjamin Paul", "Visitor, 3rd District"],
+    ["William Anderson", "Visitor, 4th District"],
+    ["Henry Drayton", "Visitor, 4th District"],
+    ["Jacob Wells", "Visitor, 5th District"],
+    ["William Hamilton", "Visitor, 5th District"],
+    ["Thomas Baggott", "Visitor, 6th District"],
+    ["Thomas Price", "Visitor, 7th District"],
+    ["Moses Blue", "Visitor, 7th District"],
+    ["Aaron Morris", "Visitor, 8th District"],
+    ["William Miller", "Visitor, 10th District"],
+    ["William Quin", "Visitor, 11th District"],
+    ["Alexander Winslow", "Visitor, 11th District"],
+    ["Andrew Roach", "Visitor, 12th District"],
+    ["Aaron Woods", "Visitor, 12th District"],
+    ["Francis Cook", "Visitor, 13th District"],
+    ["Thomas Zabriska", "Visitor, 15th District"],
+    ["Abraham Gordon", "Visitor, 15th District"],
+    ["Thomas Sipkins", "Visitor, 16th District"],
+    ["John B. Russwurm", "Visitor, 17th District"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-12-21",
+   "page": 3,
+   "name": "New York City African Free Schools -- committee meeting on attendance",
+   "date": "1827-12-18",
+   "location": "New York City",
+   "description": "On Tuesday evening a meeting was held by a committee from the Manumission Society of this city, in their school-room in Mulberry-street; about twelve of 'our brethren,' particularly invited, attended. The object was to consider the state of the African Free Schools and adopt measures for more regular attendance of the pupils. The committee -- Messrs. Thomas Legget, jun., Peter S. Titus, and Richard Field -- entered into details concerning School No. 2, remarking that for the last fifteen years the school had never been so poorly attended; Mr. Andrews, the teacher, described his discouragements after devoting most of his life to the instruction of the youth. A plan was proposed to district the city and appoint a committee (or special agent) to visit every coloured family and urge attendance. The meeting adjourned to the following evening (leading into the Dec 27 census meeting above).",
+   "attendees": [
+    ["Thomas Legget, Jr.", "Manumission Society committee"],
+    ["Peter S. Titus", "Manumission Society committee"],
+    ["Richard Field", "Manumission Society committee"],
+    ["Mr. Andrews", "Teacher, African Free School No. 2"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-12-21",
+   "page": 3,
+   "name": "African Infant Schools -- organizing meetings (New York)",
+   "date": "1827-12-19",
+   "location": "New York City",
+   "description": "The subject of establishing African Infant Schools having occupied a few benevolent persons, two meetings were lately held in the city to consider it. At the last meeting it was deemed expedient to appoint Messrs. Curtis, Humbert, Seaton, Andrews, and Torrey as a committee to lay the plan before the most influential men for their approbation and support, noting that the period from two to five years is the most important of a child's life and that places of instruction should be opened to children of colour. The meeting adjourned for further consideration.",
+   "attendees": [
+    ["Mr. Curtis", "African Infant Schools committee"],
+    ["Mr. Humbert", "African Infant Schools committee"],
+    ["Mr. Seaton", "African Infant Schools committee"],
+    ["Mr. Andrews", "African Infant Schools committee"],
+    ["Mr. Torrey", "African Infant Schools committee"]
+   ]
+  }
+ ]
+}
