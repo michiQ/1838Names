@@ -173,6 +173,42 @@ const PERSON_R = 8;
 // 0-10 Small, 11-20 Medium, 21+ Large.
 const GROUP_R_SMALL = 8, GROUP_R_MEDIUM = 12, GROUP_R_LARGE = 17;
 const groupR = total => total<=10 ? GROUP_R_SMALL : total<=20 ? GROUP_R_MEDIUM : GROUP_R_LARGE;
+// A person's "primary" affiliation is whichever single org or event they belong to with
+// the largest real total membership/attendance (comparing across both together) -- e.g.
+// someone in a 3-person committee AND the 131-member Philadelphia African Lodge has the
+// Lodge as primary. tick() below pulls a person tight against their primary affiliation
+// and only loosely toward any others, so people in just one or two groups nestle in close
+// (reading as part of that cluster) while people who bridge several groups get stretched
+// between them and visually stick out as connectors -- exactly reflecting how central
+// they are to the network. Computed once and cached since the underlying data is static.
+const primaryAffilCache = new Map();
+function personPrimaryAffil(pid){
+  if(primaryAffilCache.has(pid)) return primaryAffilCache.get(pid);
+  const p = P.get(pid);
+  let best = null, bestN = -1;
+  if(p){
+    for(const {e:eid} of (p.events||[])){
+      const e = E.get(eid); if(!e) continue;
+      if(e.att.length>bestN){ bestN=e.att.length; best={type:'e', id:eid}; }
+    }
+    (DATA.orgs||[]).forEach(o=>{
+      if(!o.members.includes(pid)) return;
+      if(o.members.length>bestN){ bestN=o.members.length; best={type:'o', name:o.name}; }
+    });
+  }
+  primaryAffilCache.set(pid, best);
+  return best;
+}
+function isPrimaryAffil(pid, type, key){
+  const b = personPrimaryAffil(pid);
+  if(!b || b.type!==type) return false;
+  return type==='e' ? b.id===key : b.name===key;
+}
+// tick()'s spring target distance for a person-org/person-event link: tight for a
+// person's primary affiliation (nestles them right against that cluster), loose for
+// any other org/event they also belong to (stretches them toward it instead, which is
+// what makes multi-affiliated people visibly stick out as connectors between clusters).
+const PRIMARY_GAP_BASE = 26, SECONDARY_GAP_BASE = 140;
 function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.articles?.length||0)*2;}
 const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
 
@@ -486,7 +522,7 @@ function ensureOrgInFull(oi){
         z:(on.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
       nodes.push(pn); pmap.set(q,pn);
     }
-    if(!linked.has(pn)){ links.push({s:on,t:pn,w:1}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
+    if(!linked.has(pn)){ links.push({s:on,t:pn,w:1,primary:isPrimaryAffil(q,'o',o.name)}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
   }
   if(added){ window._lblSet=null; window._simTTL=90; }   // on.r is already fixed by groupR() -- total membership doesn't change; wake the sim briefly so new nodes settle in instead of popping in static
   return on;
@@ -526,14 +562,14 @@ function ensurePersonInFull(pid){
     let en = emap.get(eid);
     if(!en){ const pos=orbit(90); en={id:eid,type:'e',label:e.name,r:groupR(e.att.length),total:e.att.length,deg:0,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
       nodes.push(en); emap.set(eid,en); }
-    if(!linked.has(en)){ links.push({s:pn,t:en,w:2}); linked.add(en); added++; }
+    if(!linked.has(en)){ links.push({s:pn,t:en,w:2,primary:isPrimaryAffil(pid,'e',eid)}); linked.add(en); added++; }
   }
   (DATA.orgs||[]).forEach((o,oi)=>{
     if(!o.members.includes(pid)) return;
     let on = omap.get(o.name);
     if(!on){ const pos=orbit(90); on={id:'o'+oi,type:'o',label:o.name,r:groupR(o.members.length),total:o.members.length,deg:0,org:o.name,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
       nodes.push(on); omap.set(o.name,on); }
-    if(!linked.has(on)){ links.push({s:pn,t:on,w:1}); linked.add(on); added++; }
+    if(!linked.has(on)){ links.push({s:pn,t:on,w:1,primary:isPrimaryAffil(pid,'o',o.name)}); linked.add(on); added++; }
   });
   if(added){ pn.deg = linked.size; window._lblSet=null; window._simTTL=90; }   // pn.r stays PERSON_R -- people are uniform size now
   return pn;
@@ -561,7 +597,7 @@ function ensureEventInFull(eid){
         z:(en.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
       nodes.push(pn); pmap.set(q,pn);
     }
-    if(!linked.has(pn)){ links.push({s:en,t:pn,w:2}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
+    if(!linked.has(pn)){ links.push({s:en,t:pn,w:2,primary:isPrimaryAffil(q,'e',eid)}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
   }
   if(added){ window._lblSet=null; window._simTTL=90; }   // en.r is already fixed by groupR() -- total attendance doesn't change
   return en;
@@ -662,9 +698,28 @@ function repulse(a,b){
 }
 function tick(){
   const SP = window._fullView ? 3.4 : 1;   // spacing multiplier for the full map
+  const fv = !!window._fullView;
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
-    const target=(60+240/(l.w+1))*SP, f=(d-target)*0.004*(l.faint?0.4:1);
+    const isPO = fv && ((l.s.type==='p'&&(l.t.type==='o'||l.t.type==='e')) || (l.t.type==='p'&&(l.s.type==='o'||l.s.type==='e')));
+    const isPP = fv && l.s.type==='p' && l.t.type==='p';
+    // person-to-org/event links: primary affiliation pulls tight (nestle in close),
+    // any other affiliation pulls loose (stretches them out toward it instead) -- see
+    // PRIMARY_GAP_BASE/SECONDARY_GAP_BASE. Person-to-person links are hidden by default
+    // now, so they're kept loose too, so they don't fight the org/event-anchored layout
+    // above (they still exist so a selected person's real connections look sensible
+    // when drawn). Everything else (ego views, org/event-to-org/event, etc.) keeps the
+    // original width-based formula.
+    const target = isPO ? (l.primary ? PRIMARY_GAP_BASE : SECONDARY_GAP_BASE)*SP
+      : isPP ? (60+240/(l.w+1))*SP*1.6
+      : (60+240/(l.w+1))*SP;
+    // stiffness (not just target distance) has to differ too -- a short target alone
+    // gets overwhelmed by ambient repulsion from the hundreds of other nearby nodes, so
+    // a primary link needs a much stronger spring to actually pull all the way in close.
+    // Secondary affiliations and hidden person-to-person links stay weak so they nudge
+    // rather than compete with the primary pull.
+    const stiff = isPO ? (l.primary ? 0.02 : 0.0025) : isPP ? 0.0012 : 0.004;
+    const f=(d-target)*stiff*(l.faint?0.4:1);
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
     if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
   if(nodes.length<=160){
@@ -730,7 +785,7 @@ function buildFullGraph(){
     const en={id:e.id,type:'e',label:e.name,r:groupR(e.att.length),total:e.att.length,deg:e.att.length,
       x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nmap.set('e'+e.id,en); nodes.push(en);
-    for(const pn of evLinks) links.push({s:en,t:pn,w:2}); }
+    for(const pn of evLinks) links.push({s:en,t:pn,w:2,primary:isPrimaryAffil(pn.id,'e',e.id)}); }
   // organization nodes
   (DATA.orgs||[]).forEach((o,oi)=>{
     if(o.members.length<3) return;
@@ -742,7 +797,7 @@ function buildFullGraph(){
     const on={id:'o'+oi,type:'o',label:o.name,r:groupR(o.members.length),total:o.members.length,deg:o.members.length,
       org:o.name,x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nodes.push(on);
-    for(const pn of memLinks) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); });
+    for(const pn of memLinks) links.push({s:on,t:pn,w:1,faint:o.members.length>40,primary:isPrimaryAffil(pn.id,'o',o.name)}); });
   // sizeByDegree still populates n.deg (used for label-priority ranking below), but
   // every radius gets overridden right after: people are all one uniform size now, and
   // orgs/events get one of three fixed sizes based on their real total people count
