@@ -1,0 +1,175 @@
+{
+ "_note": "Written 2026-07-13 (30th scheduled run). Covers FJ_1827-10-12, FJ_1827-10-19, FJ_1827-10-26, FJ_1827-11-02 -- all 4 OCR'd fresh at 300dpi this run, no fallback needed. Headline gold this batch: Bishop Richard Allen's signed anti-colonization letter (FJ_1827-11-02 p2), the William Hamilton July-4 1827 oration extract naming the NY Manumission Society founders (FJ_1827-10-12 p2), John H. Kennedy's Philadelphia ACS essay series continuing, and a cluster of named Philadelphia tradesmen (Frederick A. Hinton, Appo & Sammons, Daniel Peterson, Charles Short, John Roberts).",
+ "articles": [
+  {
+   "issue": "FJ_1827-11-02",
+   "page": 2,
+   "headline": "LETTER FROM BISHOP ALLEN",
+   "author": "Richard Allen",
+   "type": "correspondence (signed letter to the editor)",
+   "summary": "A signed letter to the editor of Freedom's Journal from Richard Allen, Bishop of the African Methodist Episcopal Church, stating his settled and 'insurmountable' objections to the American Colonization Society's scheme of colonizing Africans in Liberia. Allen argues Black Americans are an unlettered people brought up in ignorance by design of slaveholders and thus unfit to be sent to convert or civilize heathens abroad; that colonization serves the interest of slaveholders by removing free people of colour whose liberty makes enslaved people 'uneasy'; and that America -- watered 'with our tears and our blood' -- is now the true 'mother country' of Black Americans, who are 'well satisfied to stay where wisdom abounds, and the gospel is free.' He invokes William Penn and contrasts the well-educated colonizers of America with the enforced ignorance imposed on enslaved Africans.",
+   "notes": "MAJOR Philadelphia content. Richard Allen, founder and first bishop of the AME Church (Mother Bethel, Philadelphia), is a central 1838 Black Metropolis figure. This is his own signed public statement against the ACS -- one of the foundational Black anti-colonization documents. High priority for a match_names.py pass against Winch/census (Allen died in 1831; likely already a Winch person). The editor's introductory note frames it as written 'at our request' to rebut reports that Allen had converted to the colonization scheme."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: FREDERICK A. HINTON, Gentleman's Dressing-Room",
+   "author": null,
+   "type": "advertisement",
+   "summary": "Frederick A. Hinton announces he has opened a Gentleman's Dressing-Room at No. 51 South Fourth Street, between Chestnut and Walnut, Philadelphia, and solicits public patronage. Dated Philadelphia, Oct. 1827.",
+   "notes": "Frederick A. Hinton was a prominent Philadelphia Black abolitionist, barber/perfumer, and community organizer (later active in the American Anti-Slavery Society and Vigilance Committee). A named Philadelphia figure at a datable address -- strong match candidate for Winch/census/1820-directory."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "headline": "Business notice: APPO & SAMMONS, Tailors",
+   "author": null,
+   "type": "advertisement",
+   "summary": "A card from 'Appo & Sammons, Tailors,' Philadelphia, thanking friends and the public for past favours and announcing they have removed to No. 64 Walnut Street, three doors above Third Street, where they will execute all orders connected with their business.",
+   "notes": "Two named Philadelphia Black tradesmen. 'Appo' is likely of the Appo family (the Philadelphia musician/barber family incl. William Appo). Worth a match_names.py pass; 'Appo' and 'Sammons' should each be checked against Winch/census/1820-directory."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: DANIEL PETERSON, Cheap Clothing Store",
+   "author": null,
+   "type": "advertisement",
+   "summary": "Daniel Peterson thanks his friends and the public and advertises his Cheap Clothing Store at No. 218 South Sixth Street, Philadelphia, keeping a large assortment of gentlemen's ready-made wearing apparel (new and second-hand) and buying second-hand clothing; tailoring carried on in its various branches. Dated Philadelphia, Oct. 6.",
+   "notes": "Named Philadelphia tradesman at a datable address; match candidate. Recurs across several 1827 issues."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: CHARLES SHORT, boarding house",
+   "author": null,
+   "type": "advertisement",
+   "summary": "Charles Short advertises a boarding and lodging house at No. 182 South Sixth Street (below Pine), Philadelphia, for the accommodation of people of colour, strangers and citizens, by the day, week, or month.",
+   "notes": "Named Philadelphia boarding-house keeper. Charles Short's boarding house recurs in 1827 FJ issues (also flagged in run #22's extractions30.json). Match candidate for Winch/census/1820-directory."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: JOHN ROBERTS, sperm oil dealer",
+   "author": null,
+   "type": "advertisement",
+   "summary": "John Roberts returns thanks to his patrons and informs the public he keeps a supply of seasonable sperm oil (best summer and winter-strained) at 95 Currant-alley, third door above Locust street, Philadelphia, with a liberal deduction to churches and quantity buyers.",
+   "notes": "Same Philadelphia oil dealer noted in run #29's extractions31.json (there given as '25 Currant-alley' -- OCR variance on the street number; likely the same person/business). Match candidate."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "headline": "OBSERVER No. VI -- review of a Concert of Sacred Music at St. Philip's Church",
+   "author": "Observer (pseudonym)",
+   "type": "correspondence (concert review)",
+   "summary": "A letter-form review, signed 'Observer,' of a Concert of Sacred Music held Friday evening at St. Philip's Church, New York. The performers were the pupils of Mr. Robinson (music teacher, who also presided at the organ), with the orchestra under the direction of Mr. F. Johnson, 'whose talents are too well known both here and elsewhere.' The reviewer praises the choruses, the duet 'O lovely Peace,' the young man who sang the solo 'My Song shall be,' and especially the young lady who sang 'Jubal's Lyre,' framing the concert as evidence 'that our people were up and doing.'",
+   "notes": "F. Johnson (orchestra director) is very likely Francis 'Frank' Johnson, the celebrated Philadelphia Black bandleader/composer, performing in New York -- ties into the same still-open 'two Francis Johnsons' caution flagged in the 1820-directory import and run #29. Mr. Robinson (also spelled 'Rappeson'/'Ranson' in OCR) is the St. Philip's music teacher who runs the church's music school (see event below)."
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 2,
+   "headline": "EXTRACT from an oration delivered in the African Zion Church, July 4 1827, by William Hamilton",
+   "author": "William Hamilton",
+   "type": "oration (reprinted extract)",
+   "summary": "An extract from William Hamilton's oration delivered in the African Zion Church, New York, on July 4, 1827, commemorating the abolition of slavery in New York State. Hamilton hails his 'brethren and fellow-citizens' as redeemed from bondage and traces the history of the New-York Manumission Society, naming its founders and officers: John Jay (first President), John Murray (first Treasurer), Samuel Franklin (first Vice-President), John Keese (first Secretary), Alexander Hamilton, and Robert Bowne, followed by a long roster including Alexander McDougal, Col. Robert Floyd (Troup?), John Laurence, Peter Yates, Melancton Smith, William Goforth, Ebenezer S. Burling, Lawrence Embree, Zebulon Bartow, Elijah Cock, William Shotwell, Joseph Lawrence, James Cogswell, Matthew Vicker, William Backhouse, William Cartman, Thomas Burling, Thomas Bowne, and Leonard M. Cutting. The society held its first meeting January 25, 1785.",
+   "notes": "William Hamilton was a leading New York Black orator and founder of Black mutual-improvement institutions. The roster is of the (mostly white) NY Manumission Society founders -- historically important but largely NY, not Philadelphia. Hamilton himself and the July-4-1827 NY emancipation context tie into the emancipation-day cluster (Nathaniel Paul, Salem Dutcher) already in the DB."
+  },
+  {
+   "issue": "FJ_1827-10-19",
+   "page": 2,
+   "headline": "American Colonization Society essay No. V (concluded) -- Domestic Slavery",
+   "author": "John H. Kennedy",
+   "type": "correspondence (essay series)",
+   "summary": "The concluding installment of John H. Kennedy's signed essay No. V on the American Colonization Society, dated Philadelphia, Sept. 18, 1827, arguing (from the writer's residence among Maryland slaveholders) that the ACS is 'by far the most potent instrument for the promotion of emancipation.' Published alongside an opposing essay signed 'Clarkson' (No. III), which denounces colonization as a Southern measure injurious to the free coloured population.",
+   "notes": "Continues the Kennedy Philadelphia essay run (see extractions31.json). 'Clarkson' is an anti-colonization pseudonymous correspondent running a parallel counter-series."
+  },
+  {
+   "issue": "FJ_1827-10-19",
+   "page": 3,
+   "headline": "Editorial: 'What does your Sugar cost?' (free-produce)",
+   "author": null,
+   "type": "editorial",
+   "summary": "An unsigned Cornish & Russwurm editorial urging readers to reckon the human cost of slave-grown sugar, calculating that every 25 people who use slave sugar require the labour of one enslaved person, so that the coloured population of New York alone consumes the labour of 'at least fifty' enslaved people, and the whole free population of the United States 'the labours of two thousand.' Calls on Black Americans to boycott slave produce and use free-labour goods.",
+   "notes": "An early, dated free-produce argument in the paper's own editorial voice -- pairs with the Nov. 2 announcement that 'measures are about to be taken to bring into more general use the consumption of the products of free labour.'"
+  },
+  {
+   "issue": "FJ_1827-10-19",
+   "page": 3,
+   "headline": "MARRIED / Philadelphia mortality notice",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married in New York, by the Rev. Mr. Cox, Mr. John Thomas of the island of Antigua to Mrs. Martha Young of Charleston. Also reported: of 77 deaths in Philadelphia in the week ending Saturday Oct. 13, 21 were persons of colour.",
+   "notes": "Recurring Philadelphia weekly mortality figures broken out by colour appear in several 1827 issues -- useful demographic series, not individuals."
+  },
+  {
+   "issue": "FJ_1827-10-26",
+   "page": 2,
+   "headline": "American Colonization Society essay No. VI -- John Hanson's report from Liberia",
+   "author": "John H. Kennedy",
+   "type": "correspondence (essay series)",
+   "summary": "Kennedy's essay No. VI recounts 'an exceedingly interesting interview with Mr. John Hanson, a coloured man just returned from Liberia.' Hanson, delegated by the coloured people of Baltimore to visit the colony, spent three months there and reported favourably on the health, trade, and prospects of Monrovia (lots selling at $500; the colony's coast extending 150 miles). Kennedy uses Hanson's report and a subsequent chain of manumissions near Baltimore to argue the colony's persuasive influence on emancipation.",
+   "notes": "John Hanson is a named Black Baltimore delegate to Liberia -- worth a match_names.py pass, though Baltimore rather than Philadelphia. Kennedy essay dated series continues."
+  },
+  {
+   "issue": "FJ_1827-10-26",
+   "page": 3,
+   "headline": "SLAVERY -- John Williams rendered to New Orleans claimant; MARRIED/DIED",
+   "author": null,
+   "type": "vital records / news",
+   "summary": "News item: John Williams, formerly of Baltimore, a man of colour, was on Saturday morning delivered to the man from New Orleans who claimed him as a runaway slave, after a third police justice cast the deciding vote in favour of the claim; Williams was then arrested on a writ for debt and committed to the City Prison. Married (New York), by the Rev. B. Paul: Mr. Stephen V. Rogers to Miss Jane C. Farmer. Died: on the 14th inst., Rachel, wife of Mr. Robert [surname cut], aged 54. Also: of 83 deaths in Philadelphia in the week ending Oct. 20, 19 were persons of colour.",
+   "notes": "The John Williams fugitive-rendition case was trailed across the Oct. 12 and Oct. 26 issues (a rare sustained legal story). Rev. B. Paul (Benjamin Paul) officiates another New York marriage."
+  },
+  {
+   "issue": "FJ_1827-11-02",
+   "page": 2,
+   "headline": "American Colonization Society essay No. VI (concluded)",
+   "author": "John H. Kennedy",
+   "type": "correspondence (essay series)",
+   "summary": "The concluding installment of Kennedy's ACS essay No. VI, dated Philadelphia, Oct. 3, 1827, arguing that the General Government could readily fund large-scale colonization (claiming less than one-tenth of the federal surplus revenue would suffice) and dismissing the objection that the scheme is impracticable.",
+   "notes": "Closes out the Kennedy No. VI run; same Philadelphia signed author."
+  },
+  {
+   "issue": "FJ_1827-11-02",
+   "page": 3,
+   "headline": "Travel letter No. VII to Rev. Samuel E. Cornish (Boston / Phillis Wheatley)",
+   "author": null,
+   "type": "correspondence (travel letter)",
+   "summary": "The seventh in a signed series of travel letters addressed to Rev. Samuel E. Cornish, describing the writer's journey from Worcester to Boston with a bankrupt travelling companion ('Mercator'). It praises Boston as 'the Edinburgh of America,' its public schools (aided by the donation of Abiel Smith, Esq., supporting schools for children of colour), and the administration of Mayor Josiah Quincy; and laments that Phillis Wheatley, 'that sweet poetess of nature,' lies buried in the Northern Burying-Ground without a stone to mark the spot, calling for a subscription across the Union to honour her memory.",
+   "notes": "Notable early Black-press call to memorialize Phillis Wheatley. Names Abiel Smith (benefactor of Boston's Black schools -- the Abiel Smith School) and Mayor Josiah Quincy. About 2,000 persons of colour said to reside in Boston."
+  },
+  {
+   "issue": "FJ_1827-11-02",
+   "page": 3,
+   "headline": "MARRIED / DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married: in Albany, by the Rev. Dr. Chester, Mr. Henry Jackson to Miss Mary Brown (both of Albany); in New York, by the Rev. B. Paul, Mr. Reuben Madison to Miss Elsey Frances, and Mr. Edward Williams to Miss Sarah Sands; by the Rev. Peter Williams (24th ult.), Mr. Charles Smith to Miss Mary Elizabeth Hields (both of New York); in Charleston, S.C., by the Rev. Dr. Gadsden, Mr. J. G. Lewis to Miss Isabella Canty. Died: in Charleston, Mr. John Mitchell; in New York, Mr. Thomas Thompson (aged 49) and Mrs. Abby Collins (aged 30).",
+   "notes": "Rev. B. Paul and Rev. Peter Williams again officiating -- consistent New York Black clergy. Eleven named parties across the marriage/death column."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "name": "Concert of Sacred Music at St. Philip's Church (reviewed)",
+   "date": "1827-10",
+   "location": "New York (St. Philip's Church)",
+   "description": "A concert of sacred music given by the pupils of Mr. Robinson at St. Philip's Church, New York, with the orchestra directed by Mr. F. Johnson (likely Francis 'Frank' Johnson) and Mr. Robinson at the organ. Reviewed at length in the 'Observer No. VI' letter; performances included the duet 'O lovely Peace,' solos 'My Song shall be' and 'Jubal's Lyre.'",
+   "attendees": [
+    ["F. Johnson", "orchestra director"],
+    ["Robinson", "music teacher / organist"],
+    ["Observer", "reviewer (pseudonym)"]
+   ]
+  },
+  {
+   "issue": "FJ_1827-10-19",
+   "page": 3,
+   "name": "St. Philip's Church Music School (open evenings)",
+   "date": "1827-10-16",
+   "location": "New York (School-Room under St. Philip's Church)",
+   "description": "The St. Philip's Church music school, under the direction of Mr. Robinson, announced it is open every Tuesday and Friday evening at 7 o'clock in the school-room under St. Philip's Church; those wishing to join requested to do so without delay. Notice dated Oct. 16, 1827; recurs in the Oct. 26 issue.",
+   "attendees": [
+    ["Robinson", "director"]
+   ]
+  }
+ ]
+}

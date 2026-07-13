@@ -2,8 +2,8 @@
 """Load hand-extracted articles/events/attendees into the DB, linking to Winch people."""
 import sqlite3, json, glob, re, unicodedata
 
-DB = "/tmp/run29/black_metropolis.db"
-EXT = "/sessions/sleepy-loving-ride/mnt/Newspapers/1838 Names Database/pipeline/extractions*.json"
+DB = "/tmp/run30/black_metropolis.db"
+EXT = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/extractions*.json"
 
 def norm(name):
     n = unicodedata.normalize("NFKD", name).encode("ascii","ignore").decode()
