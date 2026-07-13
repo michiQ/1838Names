@@ -213,6 +213,11 @@ const PRIMARY_GAP_BASE = 26, SECONDARY_GAP_BASE = 140;
 // short and firmly enforced (freshly-revealed people otherwise drift far from wherever
 // they were pulled in, having no other force anchoring them).
 const PP_GAP_BASE = 40;
+// Long-range "leash" radius/strength -- see tick() for why weakly-connected sub-
+// clusters need this to keep from drifting away into isolated islands. Calibrated
+// against the real dataset: the well-connected main mass sits within ~900 world units
+// of its own centroid (p99), so 1100 gives it room without ever engaging normally.
+const LEASH_RADIUS = 1100, LEASH_K = 0.01;
 function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.articles?.length||0)*2;}
 const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
 
@@ -760,6 +765,25 @@ function tick(){
       cx/=g.length; cy/=g.length; cz/=g.length;
       for(const n of g){ if(n.fixed||n.pin)continue;
         n.vx+=(cx-n.x)*0.0009; n.vy+=(cy-n.y)*0.0009; n.vz+=(cz-(n.z||0))*0.0009; }
+    }
+  }
+  // Long-range "leash" (full map only): some orgs/events end up as their members' ONLY
+  // substantial connection -- no other overlap with the rest of the network -- so
+  // nothing but the very weak centering force above ever pulls that whole little
+  // cluster back once repulsion has pushed it outward during the settle (or a click
+  // reveals a batch of new, weakly-anchored members near an org/event that itself sits
+  // far out). It just parks itself as an island, however far that push happened to
+  // carry it. This adds a firmer, longer-range pull that only engages past LEASH_RADIUS
+  // from the map's overall centroid -- anything closer (i.e. the well-connected main
+  // mass) is completely unaffected, so normal spacing there is untouched.
+  if(fv){
+    let mcx=0,mcy=0,mcz=0;
+    for(const n of nodes){ mcx+=n.x; mcy+=n.y; mcz+=n.z||0; }
+    mcx/=nodes.length; mcy/=nodes.length; mcz/=nodes.length;
+    for(const n of nodes){ if(n.fixed||n.pin)continue;
+      const dx=n.x-mcx, dy=n.y-mcy, dz=(n.z||0)-mcz, d=Math.hypot(dx,dy,dz)||1;
+      if(d>LEASH_RADIUS){ const f=(d-LEASH_RADIUS)*LEASH_K;
+        n.vx-=dx/d*f; n.vy-=dy/d*f; n.vz-=dz/d*f; }
     }
   }
   for(const n of nodes){ if(n.fixed||n.pin)continue;
