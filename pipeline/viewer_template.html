@@ -92,7 +92,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
     <div id="legend">
       <span><i class="dot" style="background:#d4a24e"></i>person (selected)</span>
       <span><i class="dot" style="background:#4e8f83"></i>connected person</span>
-      <span><i class="dot" style="background:#7d9fc4"></i>group of people (click to open)</span>
       <span><i class="dot" style="background:#b4552d"></i>event</span>
       <span><i class="dot" style="background:#d18aa8"></i>organization</span>
     </div>
@@ -163,21 +162,17 @@ for (const [a,b,w] of DATA.edges){
 // node that IS shown still reveals every one of its real connections regardless of
 // this threshold -- see ensurePersonInFull/ensureEventInFull/ensureOrgInFull below.
 const FULL_MIN_CONN = 10;
-const FULL_R_MIN = 3, FULL_R_MAX = 19, FULL_R_MULT = 1.8;   // person node sizing (sqrt-degree)
-// Orgs and events get one of two fixed sizes based on how many people are actually
-// attached to them in the data (their real total, not just how many are on screen).
-const GROUP_SIZE_THRESHOLD = 15, GROUP_R_NORMAL = 8, GROUP_R_LARGE = 15;
-const groupR = total => total>=GROUP_SIZE_THRESHOLD ? GROUP_R_LARGE : GROUP_R_NORMAL;
-// Even with the FULL_MIN_CONN trim, ~500 individually-drawn people with thousands of
-// edges is still an unreadable hairball -- spacing/zoom alone can't fix that, it's an
-// information-density problem, not a layout problem. So the detected communities
-// (see buildFullGraph's label-propagation pass) are now COLLAPSED into single sized
-// bubbles by default -- one dot per tight-knit circle instead of one dot per person.
-// Clicking a bubble explodes it back into its real members and their real connections
-// (see explodeCluster()). Small communities aren't worth bubbling.
-const CLUSTER_MIN_SIZE = 6, MAX_CLUSTER_SIZE = 45;
-const CLUSTER_R_MIN = 11, CLUSTER_R_MAX = 34, CLUSTER_R_MULT = 3.4;
-const clusterR = n => CLUSTER_R_MIN + Math.min(CLUSTER_R_MAX-CLUSTER_R_MIN, CLUSTER_R_MULT*Math.sqrt(n));
+// People are drawn at one uniform size (same as an org/event's Small tier below) --
+// person-to-person line clutter is what made the map unreadable, not dot size, so
+// dot size no longer tries to encode importance; the person-to-person LINES do the
+// decluttering instead (see draw()/tick() -- they're hidden by default and only
+// appear for whichever person is currently selected/highlighted).
+const PERSON_R = 8;
+// Orgs and events get one of three fixed sizes based on how many people are actually
+// attached to them in the data (their real total, not just how many are on screen):
+// 0-10 Small, 11-20 Medium, 21+ Large.
+const GROUP_R_SMALL = 8, GROUP_R_MEDIUM = 12, GROUP_R_LARGE = 17;
+const groupR = total => total<=10 ? GROUP_R_SMALL : total<=20 ? GROUP_R_MEDIUM : GROUP_R_LARGE;
 function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.articles?.length||0)*2;}
 const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
 
@@ -459,40 +454,22 @@ function selectOrg(name){
     if(fn) setHighlight(fn);
   } else { setHighlight(null); buildOrgGraph(oi); }
 }
-// Cluster-aware lookup: resolves a raw person id to WHATEVER node currently visually
-// represents them on the full map -- their own individual 'p' node if they've been
-// individually shown/expanded, or the community bubble ('c' node) still holding them if
-// not. Every ensure*InFull() below uses this instead of a plain id->node map so linking
-// to a still-collapsed person never creates a duplicate node or silently skips them --
-// it just draws a link to their bubble. Only clicking that specific bubble (or clicking/
-// selecting one of its members directly) explodes it into real individual nodes.
-function resolvePersonNode(pid){ return (window._personNode && window._personNode.get(pid)) || null; }
-function registerPersonNode(pid, node){ if(!window._personNode) window._personNode = new Map(); window._personNode.set(pid, node); }
-// Explodes a community bubble back into its real member nodes, restoring every real
-// connection each member has (to each other, to already-visible nodes, and -- as plain
-// links, not a cascade of further explosions -- to people still hidden in OTHER bubbles).
-function explodeCluster(cn){
-  if(!cn || cn.type!=='c') return null;
-  const ids = cn.memberIds.slice();
-  nodes = nodes.filter(n=>n!==cn);
-  links = links.filter(l=>l.s!==cn && l.t!==cn);
-  if(window._personNode) for(const id of ids) window._personNode.delete(id);
-  let firstNode=null;
-  for(const pid of ids){ const n = ensurePersonInFull(pid, cn); if(!firstNode) firstNode=n; }
-  window._lblSet=null; window._simTTL=Math.max(window._simTTL||0, 140);
-  return firstNode;
-}
+// Simple id->node lookup among whatever's currently on the full map -- rebuilt fresh
+// each call since nodes[] changes constantly (click-expansions, drags). Only 'p'-type
+// nodes are ever looked up this way now (no more cluster bubbles to resolve through).
+function personMap(){ const m=new Map(); for(const n of nodes) if(n.type==='p') m.set(n.id,n); return m; }
 // The full map's "core" trim drops low-activity people, and orgs only link to people
 // already on the map -- so a selected org could sit with few or none of its member
-// links visible. This adds any missing member nodes/bubble-links around the org at
-// selection time, so clicking an org always shows ALL its connections.
+// links visible. This adds any missing member nodes/links around the org at selection
+// time, so clicking an org always shows ALL its connections.
 function ensureOrgInFull(oi){
   const o=DATA.orgs[oi];
   let on = nodes.find(n=>n.type==='o'&&n.org===o.name);
+  const pmap = personMap();
   if(!on){  // orgs with <3 members, or with no qualifying members by default, have no node yet -- create one
     on = {id:'ox'+oi,type:'o',label:o.name,r:groupR(o.members.length),total:o.members.length,deg:0,org:o.name,x:0,y:0,z:0,vx:0,vy:0,vz:0};
     let cx=0,cy=0,cz=0,c=0;   // seed at the centroid of members already on the map
-    for(const q of o.members){ const pn=resolvePersonNode(q); if(pn){cx+=pn.x;cy+=pn.y;cz+=pn.z||0;c++;} }
+    for(const q of o.members){ const pn=pmap.get(q); if(pn){cx+=pn.x;cy+=pn.y;cz+=pn.z||0;c++;} }
     if(c){ on.x=cx/c; on.y=cy/c; on.z=cz/c; }
     nodes.push(on);
   }
@@ -501,15 +478,14 @@ function ensureOrgInFull(oi){
   let added=0;
   for(const q of o.members){
     if(!P.has(q)) continue;
-    let pn = resolvePersonNode(q);
+    let pn = pmap.get(q);
     if(!pn){  // member was trimmed from the default view: add them, orbiting the org
       const u=Math.random()*6.283, v=Math.random()*3.1416, rr=70+Math.random()*70;
-      pn = {id:q,type:'p',label:P.get(q).name,r:3,deg:0,
+      pn = {id:q,type:'p',label:P.get(q).name,r:PERSON_R,deg:0,
         x:on.x+rr*Math.sin(v)*Math.cos(u), y:on.y+rr*Math.cos(v),
         z:(on.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
-      nodes.push(pn); registerPersonNode(q,pn);
+      nodes.push(pn); pmap.set(q,pn);
     }
-    if(pn===on) continue;
     if(!linked.has(pn)){ links.push({s:on,t:pn,w:1}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
   }
   if(added){ window._lblSet=null; window._simTTL=90; }   // on.r is already fixed by groupR() -- total membership doesn't change; wake the sim briefly so new nodes settle in instead of popping in static
@@ -517,26 +493,21 @@ function ensureOrgInFull(oi){
 }
 // Same idea as ensureOrgInFull, for a clicked person: the default view only shows
 // people with FULL_MIN_CONN+ connections, so even a person who IS shown is very likely
-// missing links to some of their real neighbors (any neighbor below the cutoff, or still
-// collapsed inside a community bubble). This pulls in every neighbor from the full NBR
-// adjacency (not the trimmed graph), every event they attended, and every org they
-// belong to, so clicking a person always shows ALL their connections regardless of the
-// default density filter. If pid is currently hidden inside a community bubble, that
-// whole bubble is exploded first (see explodeCluster) and the resulting real node
-// returned -- clicking/selecting a specific person always shows THAT person for real.
-// `seed` (optional) is a {x,y,z} to place a brand-new node near, used when exploding a
-// bubble so members appear where the bubble was instead of popping in at the origin.
-function ensurePersonInFull(pid, seed){
+// missing links to some of their real neighbors (any neighbor below the cutoff). This
+// pulls in every neighbor from the full NBR adjacency (not the trimmed graph), every
+// event they attended, and every org they belong to, so clicking a person always shows
+// ALL their connections regardless of the default density filter. Person-to-person
+// links are drawn only for the currently-selected person (see draw()) -- this still
+// builds them all here so the underlying data/physics are always complete; it's just
+// the rendering that stays quiet until you click someone.
+function ensurePersonInFull(pid){
   const p = P.get(pid); if(!p) return null;
-  let pn = resolvePersonNode(pid);
-  if(pn && pn.type==='c'){ explodeCluster(pn); return resolvePersonNode(pid); }
-  const emap=new Map(), omap=new Map();
+  let pn = nodes.find(n=>n.type==='p'&&n.id===pid);
+  const pmap=personMap(), emap=new Map(), omap=new Map();
   for(const n of nodes){ if(n.type==='e') emap.set(n.id,n); else if(n.type==='o') omap.set(n.org,n); }
   if(!pn){  // this person was trimmed from the default view -- create their node now
-    const jitter=()=>(Math.random()-0.5)*40;
-    pn = {id:pid,type:'p',label:p.name,r:3,deg:0,
-      x:seed?seed.x+jitter():0, y:seed?seed.y+jitter():0, z:seed?(seed.z||0)+jitter():0, vx:0,vy:0,vz:0};
-    nodes.push(pn); registerPersonNode(pid,pn);
+    pn = {id:pid,type:'p',label:p.name,r:PERSON_R,deg:0,x:0,y:0,z:0,vx:0,vy:0,vz:0};
+    nodes.push(pn); pmap.set(pid,pn);
   }
   const linked = new Set();
   for(const l of links){ if(l.s===pn) linked.add(l.t); if(l.t===pn) linked.add(l.s); }
@@ -545,10 +516,9 @@ function ensurePersonInFull(pid, seed){
   let added=0;
   for(const [q,w] of (NBR.get(pid)||new Map())){
     const op=P.get(q); if(!op) continue;
-    let qn = resolvePersonNode(q);
-    if(!qn){ const pos=orbit(70); qn={id:q,type:'p',label:op.name,r:3,deg:0,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
-      nodes.push(qn); registerPersonNode(q,qn); }
-    if(qn===pn) continue;
+    let qn = pmap.get(q);
+    if(!qn){ const pos=orbit(70); qn={id:q,type:'p',label:op.name,r:PERSON_R,deg:0,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
+      nodes.push(qn); pmap.set(q,qn); }
     if(!linked.has(qn)){ links.push({s:pn,t:qn,w:Math.min(w,4),faint:w<2}); linked.add(qn); qn.deg=(qn.deg||0)+1; added++; }
   }
   for(const {e:eid} of (p.events||[])){
@@ -565,7 +535,7 @@ function ensurePersonInFull(pid, seed){
       nodes.push(on); omap.set(o.name,on); }
     if(!linked.has(on)){ links.push({s:pn,t:on,w:1}); linked.add(on); added++; }
   });
-  if(added){ pn.deg = linked.size; pn.r = FULL_R_MIN + Math.min(FULL_R_MAX-FULL_R_MIN, FULL_R_MULT*Math.sqrt(pn.deg)); window._lblSet=null; window._simTTL=90; }
+  if(added){ pn.deg = linked.size; window._lblSet=null; window._simTTL=90; }   // pn.r stays PERSON_R -- people are uniform size now
   return pn;
 }
 // Same idea again, for a clicked event: pulls in every attendee on record, even ones
@@ -573,6 +543,7 @@ function ensurePersonInFull(pid, seed){
 function ensureEventInFull(eid){
   const e = E.get(eid); if(!e) return null;
   let en = nodes.find(n=>n.type==='e'&&n.id===eid);
+  const pmap = personMap();
   if(!en){
     en = {id:eid,type:'e',label:e.name,r:groupR(e.att.length),total:e.att.length,deg:0,x:0,y:0,z:0,vx:0,vy:0,vz:0};
     nodes.push(en);
@@ -582,15 +553,14 @@ function ensureEventInFull(eid){
   let added=0;
   for(const [q] of e.att){
     if(!P.has(q)) continue;
-    let pn = resolvePersonNode(q);
+    let pn = pmap.get(q);
     if(!pn){
       const u=Math.random()*6.283, v=Math.random()*3.1416, rr=70+Math.random()*70;
-      pn = {id:q,type:'p',label:P.get(q).name,r:3,deg:0,
+      pn = {id:q,type:'p',label:P.get(q).name,r:PERSON_R,deg:0,
         x:en.x+rr*Math.sin(v)*Math.cos(u), y:en.y+rr*Math.cos(v),
         z:(en.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
-      nodes.push(pn); registerPersonNode(q,pn);
+      nodes.push(pn); pmap.set(q,pn);
     }
-    if(pn===en) continue;
     if(!linked.has(pn)){ links.push({s:en,t:pn,w:2}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
   }
   if(added){ window._lblSet=null; window._simTTL=90; }   // en.r is already fixed by groupR() -- total attendance doesn't change
@@ -773,13 +743,12 @@ function buildFullGraph(){
       org:o.name,x:(Math.random()-.5)*2800,y:(Math.random()-.5)*2000,z:(Math.random()-.5)*1700,vx:0,vy:0,vz:0};
     nodes.push(on);
     for(const pn of memLinks) links.push({s:on,t:pn,w:1,faint:o.members.length>40}); });
-  // size every circle by its actual connection count in this rendered graph -- for
-  // people this is a sqrt-degree scale (hub figures read as bigger without swallowing
-  // the map); orgs and events then get overridden just below to one of two fixed sizes,
-  // Normal or Large, based on their real total people count (not on-screen degree) --
-  // see groupR()/GROUP_SIZE_THRESHOLD.
-  sizeByDegree(nodes, links, FULL_R_MIN, FULL_R_MAX, FULL_R_MULT);
-  for(const n of nodes){ if(n.type==='o'||n.type==='e') n.r = groupR(n.total); }
+  // sizeByDegree still populates n.deg (used for label-priority ranking below), but
+  // every radius gets overridden right after: people are all one uniform size now, and
+  // orgs/events get one of three fixed sizes based on their real total people count
+  // (not on-screen degree) -- see PERSON_R / groupR().
+  sizeByDegree(nodes, links, PERSON_R, PERSON_R, 0);
+  for(const n of nodes){ if(n.type==='o'||n.type==='e') n.r = groupR(n.total); else if(n.type==='p') n.r = PERSON_R; }
   // ---- community detection (label propagation) -> spatial clustering only ----
   // (colors now always follow the legend -- see draw() -- this just keeps related
   // people visually grouped in space instead of scattered uniformly)
@@ -817,93 +786,6 @@ function buildFullGraph(){
   const groups = new Map();
   for(const n of nodes){ if(!groups.has(n.comm)) groups.set(n.comm,[]); groups.get(n.comm).push(n); }
   window._commGroups = [...groups.values()].filter(g=>g.length>=4);
-  // ---- collapse sizeable person-communities into single click-to-expand bubbles ----
-  // This is the real fix for center-of-map density: a few hundred individually-drawn
-  // people with thousands of edges reads as a hairball no matter the spacing. Grouping
-  // by the community detection above (tight-knit circles: church boards, family/business
-  // clusters, society networks) and collapsing each into one bubble turns that into a
-  // few dozen legible shapes. Org/event nodes are untouched -- they already have their
-  // own two-tier sizing and stay individually visible.
-  window._personNode = new Map();
-  for(const n of nodes){ if(n.type==='p') registerPersonNode(n.id, n); }
-  const commPeople = new Map();
-  for(const n of nodes){ if(n.type!=='p') continue;
-    if(!commPeople.has(n.comm)) commPeople.set(n.comm, []); commPeople.get(n.comm).push(n); }
-  // Even balanced propagation can leave one community too big to be a useful single
-  // bubble (a "42 more" bubble is readable; a "412 more" bubble just relocates the
-  // hairball one click deep). Any community over MAX_CLUSTER_SIZE gets recursively
-  // re-split, running the same balanced propagation from fresh per-node starting labels
-  // restricted to just that subgraph -- giving real internal sub-structure a chance to
-  // separate out instead of staying stuck in one blob.
-  function balancedSplit(members, depth){
-    if(members.length<=MAX_CLUSTER_SIZE || depth>=4) return [members];
-    const idx=new Map(); members.forEach((m,i)=>idx.set(m,i));
-    const lbl=members.map((_,i)=>i), size=new Array(members.length).fill(1);
-    for(let it=0; it<12; it++){
-      let changed=0;
-      for(let i=0;i<members.length;i++){
-        const nb=adj.get(members[i]); if(!nb) continue;
-        const tally=new Map();
-        for(const [q,w] of nb){ if(!idx.has(q)) continue; const li=lbl[idx.get(q)]; tally.set(li,(tally.get(li)||0)+w); }
-        if(!tally.size) continue;
-        let best=lbl[i], bw=(tally.get(lbl[i])||0)/Math.sqrt(size[lbl[i]]||1);
-        for(const [c,w] of tally){ const score=w/Math.sqrt(size[c]||1); if(score>bw || (score===bw && c<best)){best=c;bw=score;} }
-        if(best!==lbl[i]){ size[lbl[i]]--; size[best]=(size[best]||0)+1; lbl[i]=best; changed++; }
-      }
-      if(!changed) break;
-    }
-    const sub=new Map();
-    members.forEach((m,i)=>{ if(!sub.has(lbl[i])) sub.set(lbl[i],[]); sub.get(lbl[i]).push(m); });
-    let out=[];
-    for(const g of sub.values()){
-      if(g.length===members.length) out.push(g);   // didn't actually split further -- stop recursing
-      else out.push(...balancedSplit(g, depth+1));
-    }
-    return out;
-  }
-  const toCluster = new Set(), clusterOf = new Map();
-  let cbi=0;
-  for(const [commId, rawMembers] of commPeople){
-    if(rawMembers.length < CLUSTER_MIN_SIZE) continue;
-    const groups = rawMembers.length > MAX_CLUSTER_SIZE ? balancedSplit(rawMembers,0) : [rawMembers];
-    for(const members of groups){
-      if(members.length < CLUSTER_MIN_SIZE) continue;   // a sub-split leftover too small to bubble -- stays individual
-      members.sort((a,b)=>b.deg-a.deg);
-      const anchor = members[0];
-      let cx=0,cy=0,cz=0; for(const m of members){cx+=m.x;cy+=m.y;cz+=m.z||0;}
-      cx/=members.length; cy/=members.length; cz/=members.length;
-      const cn = {id:'c'+(cbi++), type:'c', comm:'c'+cbi,
-        label:`${anchor.label} + ${members.length-1} more`, memberIds:members.map(m=>m.id),
-        total:members.length, deg:0, r:clusterR(members.length),
-        x:cx,y:cy,z:cz, vx:0,vy:0,vz:0};
-      nodes.push(cn);
-      for(const m of members){ toCluster.add(m); clusterOf.set(m,cn); }
-    }
-  }
-  if(toCluster.size){
-    nodes = nodes.filter(n=>!toCluster.has(n));
-    for(const id of [...window._personNode.keys()]){ if(clusterOf.has(window._personNode.get(id))) window._personNode.set(id, clusterOf.get(window._personNode.get(id))); }
-    const ord = new Map(); nodes.forEach((n,i)=>ord.set(n,i));
-    const merged = new Map(); const newLinks = [];
-    for(const l of links){
-      let s = clusterOf.get(l.s) || l.s, t = clusterOf.get(l.t) || l.t;
-      if(s===t) continue;   // now-internal edge -- exactly the clutter this collapses away
-      let a=s,b=t; if((ord.get(a)??0) > (ord.get(b)??0)){ const tmp=a;a=b;b=tmp; }
-      let m=merged.get(a); if(!m){ m=new Map(); merged.set(a,m); }
-      let ex=m.get(b);
-      if(!ex){ ex={s:a,t:b,w:l.w,faint:l.faint}; m.set(b,ex); newLinks.push(ex); }
-      else { ex.w=Math.max(ex.w,l.w); ex.faint = ex.faint && l.faint; }
-    }
-    links = newLinks;
-    for(const n of nodes){ if(n.type==='c') n.deg=0; }
-    for(const l of links){ if(l.s.type==='c') l.s.deg++; if(l.t.type==='c') l.t.deg++; }
-    // re-derive spatial pull groups against the now-collapsed node set (bubbles replace
-    // their members as single-point "groups" -- the >=4 filter naturally drops those)
-    const newGroups = new Map();
-    for(const n of nodes){ if(n.comm===undefined) continue;
-      if(!newGroups.has(n.comm)) newGroups.set(n.comm,[]); newGroups.get(n.comm).push(n); }
-    window._commGroups = [...newGroups.values()].filter(g=>g.length>=4);
-  }
   view={x:0,y:0,k:0.26};   // start a bit more zoomed out to fit the now-looser layout
   rot={yaw:0.5,pitch:0.28}; window._spin=false;   // static by default -- drag empty space to rotate manually
   setHighlight(null);
@@ -915,7 +797,7 @@ allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
   document.getElementById('hint').textContent = window._fullView
-    ? 'click a dashed circle to open a group · drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
+    ? 'click a person to see their connections · drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
     : 'drag to pan · scroll to zoom · click a node to navigate';
   if(window._fullView) buildFullGraph();
   else if(window._sel) buildGraph(window._sel);
@@ -930,6 +812,12 @@ function draw(){
   project();
   const hlN = window._hlN, hl = window._hl;
   for(const l of links){
+    // person-to-person lines are the bulk of the line clutter on the full map -- they
+    // only render for whichever person is currently selected/highlighted (their real
+    // connections to other people), never all-at-once by default. Person-to-org and
+    // person-to-event lines (and org/event/ego-view lines generally) always render --
+    // they're what tells you who belongs where, and there just aren't as many of them.
+    if(is3d && l.s.type==='p' && l.t.type==='p' && !(hlN && (l.s===hlN || l.t===hlN))) continue;
     const depth = is3d ? Math.max(.15, Math.min(1, ((l.s.ps+l.t.ps)/2 - .55)*2.2)) : 1;
     const onHl = hlN && (l.s===hlN || l.t===hlN);
     const dimF = hlN && !onHl ? 0.18 : 1;
@@ -945,11 +833,10 @@ function draw(){
     ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
     ctx.beginPath();ctx.arc(n.px,n.py,Math.max(1.5,n.r*n.ps),0,7);
     ctx.fillStyle = (n.fixed||n.sel) ? '#d4a24e'
-      : n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : n.type==='c' ? '#7d9fc4' : '#4e8f83';
+      : n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : '#4e8f83';
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
     else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
-    else if(n.type==='c'){ctx.setLineDash([3,3]);ctx.strokeStyle='rgba(239,231,216,.55)';ctx.lineWidth=1.1;ctx.stroke();ctx.setLineDash([]);}
   }
   // ---- label pass ----
   // Which labels show is recomputed only a few times a second (and when the view,
@@ -971,7 +858,7 @@ function draw(){
     };
     const candidates = order.filter(n=>{
       const isHl = !hlN || n===hlN || (hl && hl.has(n));
-      return (showAll || n.fixed || n.sel || n.deg>=5 || n.type==='c' || (hlN && isHl)) && (!is3d || n.ps>0.78 || (hlN && isHl));
+      return (showAll || n.fixed || n.sel || n.deg>=5 || (hlN && isHl)) && (!is3d || n.ps>0.78 || (hlN && isHl));
     });
     const score = m => (m.fixed||m.sel?1e6:0) + (hlN && m===hlN?9e5:0) + (hlN && hl && hl.has(m)?5e5:0)
       + (prev.has(m)?40:0) + (m.deg||0);
@@ -1047,12 +934,10 @@ window.addEventListener('mousemove',e=>{
 window.addEventListener('mouseup',e=>{
   const wasClick = Math.abs(e.offsetX-px)<4 && Math.abs(e.offsetY-py)<4;
   if(dragN && wasClick){
-    if(dragN.type==='c'){ const anchor=explodeCluster(dragN); setHighlight(anchor||null); }
-    else {
-      setHighlight(dragN);
-      if(dragN.type==='p') select(dragN.id);
-      else if(dragN.type==='e') selectEvent(dragN.id);
-      else if(dragN.type==='o' && dragN.org){ selectOrg(dragN.org); } } }
+    setHighlight(dragN);
+    if(dragN.type==='p') select(dragN.id);
+    else if(dragN.type==='e') selectEvent(dragN.id);
+    else if(dragN.type==='o' && dragN.org){ selectOrg(dragN.org); } }
   else if(!dragN && wasClick){ setHighlight(null); }   // click empty space clears highlight
   if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them
   if(dragN && !window._fullView) dragN.fixed = dragN===nodes[0];
