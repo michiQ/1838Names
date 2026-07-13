@@ -218,6 +218,16 @@ const PP_GAP_BASE = 40;
 // against the real dataset: the well-connected main mass sits within ~900 world units
 // of its own centroid (p99), so 1100 gives it room without ever engaging normally.
 const LEASH_RADIUS = 1100, LEASH_K = 0.01;
+// Direct per-frame pull of each org/event toward the live centroid of its own
+// currently-linked members -- see tick() for why the leash above isn't enough on
+// its own (an org can be individually within LEASH_RADIUS of the map centroid while
+// still sitting far from its own members, if it has no primary-affiliated members to
+// anchor it strongly and only weak/diffuse secondary springs). 0.03 is calibrated
+// against the dataset's worst zero-primary-member orgs (settle ~270-320px from their
+// own members' centroid, down from 800px+ before this force existed); pushing higher
+// gains little further ground and risks the well-connected main mass itself exceeding
+// LEASH_RADIUS.
+const GROUP_ANCHOR_K = 0.03;
 function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.articles?.length||0)*2;}
 const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
 
@@ -784,6 +794,29 @@ function tick(){
       const dx=n.x-mcx, dy=n.y-mcy, dz=(n.z||0)-mcz, d=Math.hypot(dx,dy,dz)||1;
       if(d>LEASH_RADIUS){ const f=(d-LEASH_RADIUS)*LEASH_K;
         n.vx-=dx/d*f; n.vy-=dy/d*f; n.vz-=dz/d*f; }
+    }
+  }
+  // An org/event with NO primary members at all (everyone who belongs to it has a
+  // bigger primary tie elsewhere) only gets weak, individually-scattered secondary
+  // springs pulling it in many different directions -- those are too diffuse/slow to
+  // reliably converge on where its own members actually are within the settle window,
+  // so the org can end up sitting near the map's overall centroid (passing the leash
+  // above) while still being visually far from the specific people linked to it, since
+  // they're on a different side of the main mass. This adds a direct, per-frame pull
+  // for every org/event node toward the LIVE centroid of its own currently-linked
+  // members -- self-correcting regardless of how the individual weak springs net out.
+  if(fv){
+    const groupLinks = new Map();
+    for(const l of links){
+      if(l.s.type==='o'||l.s.type==='e'){ if(!groupLinks.has(l.s)) groupLinks.set(l.s,[]); groupLinks.get(l.s).push(l.t); }
+      if(l.t.type==='o'||l.t.type==='e'){ if(!groupLinks.has(l.t)) groupLinks.set(l.t,[]); groupLinks.get(l.t).push(l.s); }
+    }
+    for(const [gn, members] of groupLinks){
+      if((gn.fixed||gn.pin) || !members.length) continue;
+      let mcx=0,mcy=0,mcz=0;
+      for(const m of members){ mcx+=m.x; mcy+=m.y; mcz+=m.z||0; }
+      mcx/=members.length; mcy/=members.length; mcz/=members.length;
+      gn.vx += (mcx-gn.x)*GROUP_ANCHOR_K; gn.vy += (mcy-gn.y)*GROUP_ANCHOR_K; gn.vz += (mcz-(gn.z||0))*GROUP_ANCHOR_K;
     }
   }
   for(const n of nodes){ if(n.fixed||n.pin)continue;
