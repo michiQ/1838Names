@@ -42,6 +42,16 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 #allbtn:hover{border-color:var(--gold)}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
 #legend span{margin-right:14px}
+/* mini ego panel -- opens on click in the "all connections" full map so you can see a
+   node's complete real connections without disturbing the stable main layout */
+#miniPanel{position:absolute;top:48px;right:14px;width:300px;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.55);z-index:6;display:none;overflow:hidden}
+#miniPanel.on{display:block}
+#miniHead{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid var(--line);background:#2a2419}
+#miniHead span{font-size:12.5px;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#miniClose{background:none;border:0;color:var(--dim);font-size:15px;line-height:1;cursor:pointer;padding:2px 5px;flex:0 0 auto}
+#miniClose:hover{color:var(--ink)}
+#miniCv{display:block;width:100%;height:230px;cursor:pointer;background:var(--bg)}
+#miniHint{padding:5px 10px;font-size:10.5px;color:var(--dim);font-style:italic;border-top:1px solid var(--line)}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
 #right{width:400px;min-width:280px;max-width:760px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
 .vsplit{width:6px;cursor:col-resize;background:transparent;flex:0 0 6px;position:relative;z-index:5}
@@ -96,6 +106,11 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <span><i class="dot" style="background:#d18aa8"></i>organization</span>
     </div>
     <button id="allbtn">⦿ All connections</button>
+    <div id="miniPanel">
+      <div id="miniHead"><span id="miniTitle"></span><button id="miniClose" title="close">✕</button></div>
+      <canvas id="miniCv"></canvas>
+      <div id="miniHint">click a name to open it here</div>
+    </div>
     <canvas id="cv"></canvas>
     <div id="hint">drag to pan · scroll to zoom · click a node to navigate</div>
   </div>
@@ -437,9 +452,15 @@ function select(pid){
     orgsel.value = el.dataset.o; window._orgFilter = el.dataset.o;
     if(mode!=='p') setMode('p'); else renderList(search.value);}));
   if(window._fullView){
-    const fn = ensurePersonInFull(pid);
+    // the main map stays completely stable on click now -- no new nodes/links are ever
+    // added to it here (that used to wake the whole simulation and make every node on
+    // the map drift, not just the clicked one). If this person happens to already be
+    // visible, just highlight them and their existing on-map links; either way, open
+    // the mini panel with their COMPLETE real ego-network (see openMiniPanel below).
+    const existing = nodes.find(n=>n.type==='p'&&n.id===pid);
     for(const n of nodes) n.sel = (n.type==='p' && n.id===pid);
-    if(fn) setHighlight(fn);
+    setHighlight(existing || null);
+    openMiniPanel('p', pid, p.name);
   } else { setHighlight(null); buildGraph(pid); }
 }
 
@@ -457,9 +478,10 @@ function selectEvent(eid){
   right.innerHTML = h; right.scrollTop = 0;
   right.querySelectorAll('.pl').forEach(el=>el.addEventListener('click',()=>select(+el.dataset.p)));
   if(window._fullView){
-    const fn = ensureEventInFull(eid);
+    const existing = nodes.find(n=>n.type==='e'&&n.id===eid);
     for(const n of nodes) n.sel = (n.type==='e' && n.id===eid);
-    if(fn) setHighlight(fn);
+    setHighlight(existing || null);
+    openMiniPanel('e', eid, e.name);
   } else { setHighlight(null); buildEventGraph(eid); }
 }
 function buildEventGraph(eid){
@@ -504,122 +526,11 @@ function selectOrg(name){
   if(fb) fb.addEventListener('click',()=>{ orgsel.value=name; window._orgFilter=name;
     if(mode!=='p') setMode('p'); else renderList(search.value); });
   if(window._fullView){
-    const fn=ensureOrgInFull(oi);
+    const existing = nodes.find(n=>n.type==='o'&&n.org===name);
     for(const n of nodes) n.sel=(n.type==='o' && n.org===name);
-    if(fn) setHighlight(fn);
+    setHighlight(existing || null);
+    openMiniPanel('o', oi, o.name);
   } else { setHighlight(null); buildOrgGraph(oi); }
-}
-// Simple id->node lookup among whatever's currently on the full map -- rebuilt fresh
-// each call since nodes[] changes constantly (click-expansions, drags). Only 'p'-type
-// nodes are ever looked up this way now (no more cluster bubbles to resolve through).
-function personMap(){ const m=new Map(); for(const n of nodes) if(n.type==='p') m.set(n.id,n); return m; }
-// The full map's "core" trim drops low-activity people, and orgs only link to people
-// already on the map -- so a selected org could sit with few or none of its member
-// links visible. This adds any missing member nodes/links around the org at selection
-// time, so clicking an org always shows ALL its connections.
-function ensureOrgInFull(oi){
-  const o=DATA.orgs[oi];
-  let on = nodes.find(n=>n.type==='o'&&n.org===o.name);
-  const pmap = personMap();
-  if(!on){  // orgs with <3 members, or with no qualifying members by default, have no node yet -- create one
-    on = {id:'ox'+oi,type:'o',label:o.name,r:groupR(o.members.length),total:o.members.length,deg:0,org:o.name,x:0,y:0,z:0,vx:0,vy:0,vz:0};
-    let cx=0,cy=0,cz=0,c=0;   // seed at the centroid of members already on the map
-    for(const q of o.members){ const pn=pmap.get(q); if(pn){cx+=pn.x;cy+=pn.y;cz+=pn.z||0;c++;} }
-    if(c){ on.x=cx/c; on.y=cy/c; on.z=cz/c; }
-    nodes.push(on);
-  }
-  const linked = new Set();
-  for(const l of links){ if(l.s===on) linked.add(l.t); if(l.t===on) linked.add(l.s); }
-  let added=0;
-  for(const q of o.members){
-    if(!P.has(q)) continue;
-    let pn = pmap.get(q);
-    if(!pn){  // member was trimmed from the default view: add them, orbiting the org
-      const u=Math.random()*6.283, v=Math.random()*3.1416, rr=70+Math.random()*70;
-      pn = {id:q,type:'p',label:P.get(q).name,r:PERSON_R,deg:0,
-        x:on.x+rr*Math.sin(v)*Math.cos(u), y:on.y+rr*Math.cos(v),
-        z:(on.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
-      nodes.push(pn); pmap.set(q,pn);
-    }
-    if(!linked.has(pn)){ links.push({s:on,t:pn,w:1,primary:isPrimaryAffil(q,'o',o.name)}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
-  }
-  if(added){ window._lblSet=null; window._simTTL=90; }   // on.r is already fixed by groupR() -- total membership doesn't change; wake the sim briefly so new nodes settle in instead of popping in static
-  return on;
-}
-// Same idea as ensureOrgInFull, for a clicked person: the default view only shows
-// people with FULL_MIN_CONN+ connections, so even a person who IS shown is very likely
-// missing links to some of their real neighbors (any neighbor below the cutoff). This
-// pulls in every neighbor from the full NBR adjacency (not the trimmed graph), every
-// event they attended, and every org they belong to, so clicking a person always shows
-// ALL their connections regardless of the default density filter. Person-to-person
-// links are drawn only for the currently-selected person (see draw()) -- this still
-// builds them all here so the underlying data/physics are always complete; it's just
-// the rendering that stays quiet until you click someone.
-function ensurePersonInFull(pid){
-  const p = P.get(pid); if(!p) return null;
-  let pn = nodes.find(n=>n.type==='p'&&n.id===pid);
-  const pmap=personMap(), emap=new Map(), omap=new Map();
-  for(const n of nodes){ if(n.type==='e') emap.set(n.id,n); else if(n.type==='o') omap.set(n.org,n); }
-  if(!pn){  // this person was trimmed from the default view -- create their node now
-    pn = {id:pid,type:'p',label:p.name,r:PERSON_R,deg:0,x:0,y:0,z:0,vx:0,vy:0,vz:0};
-    nodes.push(pn); pmap.set(pid,pn);
-  }
-  const linked = new Set();
-  for(const l of links){ if(l.s===pn) linked.add(l.t); if(l.t===pn) linked.add(l.s); }
-  const orbit=(rr)=>{ const u=Math.random()*6.283, v=Math.random()*3.1416, r=rr+Math.random()*70;
-    return {x:pn.x+r*Math.sin(v)*Math.cos(u), y:pn.y+r*Math.cos(v), z:(pn.z||0)+r*Math.sin(v)*Math.sin(u)}; };
-  let added=0;
-  for(const [q,w] of (NBR.get(pid)||new Map())){
-    const op=P.get(q); if(!op) continue;
-    let qn = pmap.get(q);
-    if(!qn){ const pos=orbit(70); qn={id:q,type:'p',label:op.name,r:PERSON_R,deg:0,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
-      nodes.push(qn); pmap.set(q,qn); }
-    if(!linked.has(qn)){ links.push({s:pn,t:qn,w:Math.min(w,4),faint:w<2}); linked.add(qn); qn.deg=(qn.deg||0)+1; added++; }
-  }
-  for(const {e:eid} of (p.events||[])){
-    const e = E.get(eid); if(!e) continue;
-    let en = emap.get(eid);
-    if(!en){ const pos=orbit(90); en={id:eid,type:'e',label:e.name,r:groupR(e.att.length),total:e.att.length,deg:0,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
-      nodes.push(en); emap.set(eid,en); }
-    if(!linked.has(en)){ links.push({s:pn,t:en,w:2,primary:isPrimaryAffil(pid,'e',eid)}); linked.add(en); added++; }
-  }
-  (DATA.orgs||[]).forEach((o,oi)=>{
-    if(!o.members.includes(pid)) return;
-    let on = omap.get(o.name);
-    if(!on){ const pos=orbit(90); on={id:'o'+oi,type:'o',label:o.name,r:groupR(o.members.length),total:o.members.length,deg:0,org:o.name,x:pos.x,y:pos.y,z:pos.z,vx:0,vy:0,vz:0};
-      nodes.push(on); omap.set(o.name,on); }
-    if(!linked.has(on)){ links.push({s:pn,t:on,w:1,primary:isPrimaryAffil(pid,'o',o.name)}); linked.add(on); added++; }
-  });
-  if(added){ pn.deg = linked.size; window._lblSet=null; window._simTTL=90; }   // pn.r stays PERSON_R -- people are uniform size now
-  return pn;
-}
-// Same idea again, for a clicked event: pulls in every attendee on record, even ones
-// individually below the default person-connection cutoff.
-function ensureEventInFull(eid){
-  const e = E.get(eid); if(!e) return null;
-  let en = nodes.find(n=>n.type==='e'&&n.id===eid);
-  const pmap = personMap();
-  if(!en){
-    en = {id:eid,type:'e',label:e.name,r:groupR(e.att.length),total:e.att.length,deg:0,x:0,y:0,z:0,vx:0,vy:0,vz:0};
-    nodes.push(en);
-  }
-  const linked = new Set();
-  for(const l of links){ if(l.s===en) linked.add(l.t); if(l.t===en) linked.add(l.s); }
-  let added=0;
-  for(const [q] of e.att){
-    if(!P.has(q)) continue;
-    let pn = pmap.get(q);
-    if(!pn){
-      const u=Math.random()*6.283, v=Math.random()*3.1416, rr=70+Math.random()*70;
-      pn = {id:q,type:'p',label:P.get(q).name,r:PERSON_R,deg:0,
-        x:en.x+rr*Math.sin(v)*Math.cos(u), y:en.y+rr*Math.cos(v),
-        z:(en.z||0)+rr*Math.sin(v)*Math.sin(u), vx:0,vy:0,vz:0};
-      nodes.push(pn); pmap.set(q,pn);
-    }
-    if(!linked.has(pn)){ links.push({s:en,t:pn,w:2,primary:isPrimaryAffil(q,'e',eid)}); linked.add(pn); pn.deg=(pn.deg||0)+1; added++; }
-  }
-  if(added){ window._lblSet=null; window._simTTL=90; }   // en.r is already fixed by groupR() -- total attendance doesn't change
-  return en;
 }
 function buildOrgGraph(oi){
   const o=DATA.orgs[oi]; nodes=[]; links=[];
@@ -676,7 +587,7 @@ function project(){
   }
 }
 function resize(){cv.width=cv.clientWidth*devicePixelRatio;cv.height=cv.clientHeight*devicePixelRatio;}
-window.addEventListener('resize',()=>{resize();});
+window.addEventListener('resize',()=>{resize(); if(document.getElementById('miniPanel').classList.contains('on')){ resizeMini(); fitMiniView(); drawMini(); }});
 resize();
 function buildGraph(pid){
   const p=P.get(pid); nodes=[]; links=[];
@@ -704,6 +615,97 @@ function buildGraph(pid){
   view={x:0,y:0,k:1};
   for(let it=0;it<300;it++) tick();
 }
+// ---------- mini ego panel ----------
+// In the "all connections" full map, clicking a node used to pull its full real
+// connections directly into the shared nodes/links array (ensurePersonInFull etc.) --
+// but that woke the whole simulation and every already-settled node on the map would
+// drift, not just the area around the click, since forces like the group-anchor and
+// leash recompute over the WHOLE node set every frame. Now the main map is never
+// touched by a click. Instead this small floating panel (top-right of the canvas)
+// shows the clicked node's complete real ego-network -- reusing the exact same
+// buildGraph/buildEventGraph/buildOrgGraph logic the standalone ego view already uses
+// (same physics, same settle loop), just run into a throwaway snapshot instead of the
+// live main map, then drawn on its own small canvas. The main map's nodes/links/view
+// are saved and restored untouched around the snapshot build.
+const miniCv = document.getElementById('miniCv'), miniCtx = miniCv.getContext('2d');
+let miniNodes=[], miniLinks=[], miniView={x:0,y:0,k:1};
+function resizeMini(){ miniCv.width=miniCv.clientWidth*devicePixelRatio; miniCv.height=miniCv.clientHeight*devicePixelRatio; }
+function snapshotEgo(builderFn){
+  const savedNodes=nodes, savedLinks=links, savedView=view, savedFV=window._fullView;
+  nodes=[]; links=[]; window._fullView=false;   // ego-view tuning (2D, no leash/group-anchor)
+  builderFn();
+  const snap = {nodes, links};
+  nodes=savedNodes; links=savedLinks; view=savedView; window._fullView=savedFV;   // main map exactly as it was
+  return snap;
+}
+// scale/center the snapshot to fit the small panel -- the builder functions tune their
+// own view.k for the full-size main canvas, which is the wrong scale for a 300x230 box
+function fitMiniView(){
+  if(!miniNodes.length){ miniView={x:0,y:0,k:1}; return; }
+  let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity;
+  for(const n of miniNodes){ minX=Math.min(minX,n.x-n.r); maxX=Math.max(maxX,n.x+n.r);
+    minY=Math.min(minY,n.y-n.r); maxY=Math.max(maxY,n.y+n.r); }
+  const w=Math.max(1,maxX-minX), h=Math.max(1,maxY-minY);
+  const cw=miniCv.clientWidth||300, ch=miniCv.clientHeight||230;
+  const k=Math.max(0.15,Math.min(3,Math.min((cw-40)/w,(ch-50)/h)));
+  miniView={x:-(minX+maxX)/2*k, y:-(minY+maxY)/2*k, k};
+}
+function drawMini(){
+  miniCtx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  miniCtx.clearRect(0,0,miniCv.clientWidth,miniCv.clientHeight);
+  if(!miniNodes.length) return;
+  miniCtx.save();
+  miniCtx.translate(miniCv.clientWidth/2+miniView.x, miniCv.clientHeight/2+miniView.y);
+  miniCtx.scale(miniView.k, miniView.k);
+  for(const l of miniLinks){
+    miniCtx.strokeStyle = l.faint ? 'rgba(168,156,134,.3)' : 'rgba(212,162,78,.55)';
+    miniCtx.lineWidth = l.faint ? 0.6 : Math.min(1+l.w*.3,3);
+    miniCtx.beginPath(); miniCtx.moveTo(l.s.x,l.s.y); miniCtx.lineTo(l.t.x,l.t.y); miniCtx.stroke();
+  }
+  for(const n of miniNodes){
+    miniCtx.beginPath(); miniCtx.arc(n.x,n.y,Math.max(1.5,n.r),0,7);
+    miniCtx.fillStyle = n.fixed ? '#d4a24e' : n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : '#4e8f83';
+    miniCtx.fill();
+    if(n.fixed){ miniCtx.strokeStyle='#efe7d8'; miniCtx.lineWidth=1.2; miniCtx.stroke(); }
+  }
+  miniCtx.textAlign='center';
+  for(const n of miniNodes){
+    if(!n.fixed && miniNodes.length>25 && n.r<6) continue;   // keep dense ego-networks readable
+    const label = n.label.length>20 ? n.label.slice(0,19)+'…' : n.label;
+    miniCtx.font = n.fixed ? 'bold 10.5px Georgia' : '9px Georgia';
+    miniCtx.fillStyle = n.fixed ? '#efe7d8' : '#c9bda6';
+    miniCtx.fillText(label, n.x, n.y+n.r+9);
+  }
+  miniCtx.restore();
+}
+function openMiniPanel(kind, id, title){
+  let snap;
+  if(kind==='p') snap = snapshotEgo(()=>buildGraph(id));
+  else if(kind==='e') snap = snapshotEgo(()=>buildEventGraph(id));
+  else if(kind==='o') snap = snapshotEgo(()=>buildOrgGraph(id));
+  else return;
+  miniNodes = snap.nodes; miniLinks = snap.links;
+  document.getElementById('miniTitle').textContent = title;
+  document.getElementById('miniPanel').classList.add('on');
+  resizeMini();
+  fitMiniView();
+  drawMini();
+}
+function closeMiniPanel(){
+  document.getElementById('miniPanel').classList.remove('on');
+  miniNodes=[]; miniLinks=[];
+}
+function pickMini(mx,my){
+  const x=(mx-miniCv.clientWidth/2-miniView.x)/miniView.k, y=(my-miniCv.clientHeight/2-miniView.y)/miniView.k;
+  return miniNodes.find(n=>Math.hypot(n.x-x,n.y-y)<Math.max(3,n.r)+6);
+}
+document.getElementById('miniClose').addEventListener('click', closeMiniPanel);
+miniCv.addEventListener('click', e=>{
+  const n = pickMini(e.offsetX, e.offsetY); if(!n) return;
+  if(n.type==='p') select(n.id);
+  else if(n.type==='e') selectEvent(n.id);
+  else if(n.type==='o' && n.org) selectOrg(n.org);
+});
 function repulse(a,b){
   const full = !!window._fullView;
   let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
@@ -920,10 +922,10 @@ allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
   document.getElementById('hint').textContent = window._fullView
-    ? 'click a person to see their connections · drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
+    ? 'click a node to open its full connections in the panel · drag space to rotate · drag a node out — it sticks · double-click to release · scroll to zoom'
     : 'drag to pan · scroll to zoom · click a node to navigate';
   if(window._fullView) buildFullGraph();
-  else if(window._sel) buildGraph(window._sel);
+  else { closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
 });
 function draw(){
   ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
