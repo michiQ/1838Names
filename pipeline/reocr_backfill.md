@@ -15,9 +15,9 @@ Pencil Pusher) — work top to bottom across runs.
 - [x] CA_1837-02-04
 - [x] CA_1837-02-11 (2-page issue; both pages redone at 300dpi 2026-07-10, 18th scheduled run)
 - [x] CA_1837-02-18 (all 4 pages redone at 300dpi 2026-07-10, 18th scheduled run)
-- [ ] CA_1837-02-22
-- [ ] CA_1837-02-25
-- [ ] CA_1837-03-04
+- [x] CA_1837-02-22 (1-page issue; redone at 300dpi 2026-07-15, 34th scheduled run)
+- [x] CA_1837-02-25 (4 pages redone at 300dpi 2026-07-15, 34th scheduled run)
+- [x] CA_1837-03-04 (5 pages redone at 300dpi 2026-07-15, 34th scheduled run)
 - [ ] CA_1837-03-11
 - [ ] CA_1837-03-18
 - [ ] CA_1837-03-25
@@ -48,13 +48,19 @@ Pencil Pusher) — work top to bottom across runs.
 - [ ] PF_1838-02-08
 - [ ] PF_1838-02-15
 
-## Freedoms Journal (1 issue, 1 page)
+## Freedoms Journal (1 issue at 300dpi backfilled; 4 new issues added at 150dpi)
 - [x] FJ_1827-04-06 (p2 only -- DONE 2026-07-10 (17th scheduled run): re-OCR'd at full 300dpi by splitting the render (pdftoppm) and OCR (tesseract) into separate bash calls to dodge the 45s wall; 21,731 bytes, overwritten in place and picked up by that run's full rebuild. Previously: 300dpi timed out on the 2026-07-09 6th-batch run, was at 200dpi.)
+- [ ] FJ_1828-01-25 (all 4 pages at 150dpi -- run #33, 2026-07-14; sandbox load 4-5+, both 300dpi and 200dpi tesseract calls hit the 45s wall even after retries, fell to 150dpi per the fallback ladder)
+- [ ] FJ_1828-02-01 (all 4 pages at 150dpi, same load-driven fallback)
+- [ ] FJ_1828-02-08 (all 4 pages at 150dpi, same load-driven fallback)
+- [ ] FJ_1828-02-15 (all 4 pages at 150dpi, same load-driven fallback)
 
 ## Pencil Pusher (86 issues, ~86 pages — mostly single-page clippings)
 - [ ] PP_000 .. PP_085 (all pending; see ocr_text/ for the full slug list, e.g. `ls ocr_text | grep '^PP_' | sed -E 's/_p[0-9]+\.txt$//' | sort -u`)
 
 ## Progress log
+- 2026-07-15 (34th scheduled run): Sandbox load was very low (~0.03), so 300dpi held cleanly. Backfilled CA_1837-02-22 (1pg), CA_1837-02-25 (4pg), CA_1837-03-04 (5pg) at full 300dpi, overwritten in place. Did NOT re-touch the FJ 150dpi backfill entries from run #33 (still pending). Remaining: 29 CA/PF issues + 4 FJ (150dpi) issues + 86 PP issues pending a 300dpi pass. Note: CA pages are dense scans — ~40s/page tesseract at 300dpi, so one page per bash call for CA; FJ pages OCR faster (~15s each), 2 per call is safe.
+- 2026-07-14 (33rd scheduled run): processed 4 new Freedoms Journal issues (FJ_1828-01-25/02-01/02-08/02-15, 16 pages) but sandbox was under heavy load (load avg 4-5+); 300dpi and 200dpi tesseract both blew the 45s wall repeatedly, so all 16 pages landed at 150dpi and were added to the FJ backfill section above rather than skipped. Did not touch the pre-existing backfill queue. Now 32 CA/PF issues + 4 FJ issues + 86 PP issues pending a clean 300dpi pass.
 - 2026-07-10 (18th scheduled run): Backfilled CA_1837-02-11 (2 pages — it is a 2-page issue, matching its 2 existing ocr_text files) and CA_1837-02-18 (4 pages) at full 300dpi, all first-attempt, overwritten in place and picked up by this run's full rebuild. Remaining: 30 CA/PF issues + 86 PP issues.
 - 2026-07-10 (17th scheduled run): Backfilled FJ_1827-04-06_p2 at 300dpi (the only FJ pending item — FJ section now clear). All 20 pages of this run's 5 new FJ issues hit native 300dpi (one page needed the split render/OCR two-call trick), so no new entries. Remaining: 32 CA/PF issues + 86 PP issues.
 - 2026-07-06: List seeded (116 issues / ~204 pages total pending). Backfilled CA_1837-01-07, 01-14, 01-21, 01-28 (16 pages) at 300dpi this session -- overwrote ocr_text/ in place, rebuilt (match_names -> load_extractions -> apply_merges -> find_merge_candidates -> build_viewer), pushed. ~188 pages remain (22 CA issues, 4 PF issues, 86 PP issues).

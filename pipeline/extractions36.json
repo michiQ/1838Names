@@ -1,0 +1,88 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-03-14",
+      "page": 3,
+      "headline": "Engraving of the late Rev. Jeremiah Gloucester, Pastor of the Second African Presbyterian Church, Philadelphia",
+      "author": "Stephen H. Gloucester",
+      "type": "subscription notice",
+      "summary": "Notice, signed by Stephen H. Gloucester, that a portrait of his late brother, the Rev. Jeremiah Gloucester of Philadelphia -- pastor of the Second African Presbyterian Church in that city -- had been taken shortly before his death by Mr. Lawrence, a celebrated portrait painter. Friends of the family had suggested that an engraving be made from the portrait (similar in size to the one published of their father, the deceased Rev. John Gloucester, founder of the First African Presbyterian Church), the proceeds to assist Jeremiah's widow and children. The price would be one dollar on delivery; Mr. Hubbard, the agent procuring subscribers, was then in New York. A valuable Philadelphia clergy item documenting three generations of the Gloucester family."
+    },
+    {
+      "issue": "FJ_1828-03-21",
+      "page": 3,
+      "headline": "American Convention committee on Free or Slave Labour",
+      "author": null,
+      "type": "committee notice",
+      "summary": "Notice of a committee appointed under a resolution of the American Convention for the Abolition of Slavery to inquire what experiments had been and were being made in the Americas on the cultivation of cotton, rice, sugar, tobacco, etc. by free labor versus slave labor, and to report on the relative advantages of free vs. slave labour at the Convention's next session at Baltimore. Committee members with places of residence: Benjamin Lundy (Baltimore), Thomas Shipley (Philadelphia), Joseph Parker (Philadelphia), William Kelsey (Baltimore), and D. Scholfield (Salem, Columbiana county, Ohio). Reprinted from the Genius of Universal Emancipation."
+    },
+    {
+      "issue": "FJ_1828-02-29",
+      "page": 3,
+      "headline": "Relief act for George Banks, a wrongfully convicted man of colour (Pennsylvania)",
+      "author": null,
+      "type": "legislative/legal notice",
+      "summary": "Text of Bill No. 32 before the Pennsylvania House of Representatives (Dec. 8, 1827): an Act for the relief of George Banks, a coloured man of Fayette county who had been convicted of burglary in the Court of General Quarter Sessions for Fayette county on Jan. 10, 1813, and sentenced to three years in the State Penitentiary at Philadelphia. After Banks had served twenty-two months and four days, it was discovered he was innocent. The bill authorized the State Treasurer to pay Banks $200 as remuneration. An accompanying editorial (from the Philadelphia Gazette) protested that $200 was scant compensation and urged courts and juries to be cautious."
+    },
+    {
+      "issue": "FJ_1828-03-14",
+      "page": 3,
+      "headline": "New organ for St. Thomas's African Episcopal Church, Philadelphia; new church at Salem, Mass.",
+      "author": null,
+      "type": "church notice",
+      "summary": "Two brief items from the Summary column: (1) the congregation of the Protestant Episcopal Church of St. Thomas, Philadelphia (coloured) had lately purchased a neat and elegant organ for the use of the church; and (2) coloured brethren in Salem, Massachusetts were proceeding, in a praiseworthy spirit, with the erection of a house of worship, as reported by 'our friend Mr. Remond' (the Salem hairdresser John Remond, father of Charles Lenox Remond)."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-03-21",
+      "page": 3,
+      "name": "Anniversary of the Brooklyn African Woolman Benevolent Society",
+      "date": "1828-03-17",
+      "location": "Brooklyn, New York",
+      "description": "On Monday, March 17, 1828 the Brooklyn African Woolman Benevolent Society celebrated its anniversary. Members assembled about 10 o'clock at the new hall lately erected by the Society and at 2 o'clock walked in procession to the Wesleyan church in High-street, where a suitable address was delivered by Mr. Francis Thompson.",
+      "attendees": [["Francis Thompson", "orator"]]
+    },
+    {
+      "issue": "FJ_1828-03-21",
+      "page": 3,
+      "name": "Anniversary of the New York African Mutual Relief Society (Zion Church)",
+      "date": "1828-03-24",
+      "location": "Zion Church, New York",
+      "description": "Notice that on Monday, March 24, 1828 the New York African Mutual Relief Society would celebrate its anniversary in Zion Church.",
+      "attendees": []
+    },
+    {
+      "issue": "FJ_1828-02-29",
+      "page": 3,
+      "name": "Marriage of Edward Jackson and Ann Ball",
+      "date": "1828-02",
+      "location": "New York",
+      "description": "Marriage notice: in New York City, by the Rev. Mr. Paul (Rev. Thomas Paul), Mr. Edward Jackson to Miss Ann Ball.",
+      "attendees": [["Edward Jackson", "groom"], ["Ann Ball", "bride"], ["Thomas Paul", "officiant"]]
+    },
+    {
+      "issue": "FJ_1828-04-04",
+      "page": 3,
+      "name": "Marriage of Isaac Ray and Eleanor Williams",
+      "date": "1828-03",
+      "location": "Newark, New Jersey",
+      "description": "Marriage notice: at Newark, N.J. on the evening of the 29th, Mr. Isaac Ray to Miss Eleanor Williams.",
+      "attendees": [["Isaac Ray", "groom"], ["Eleanor Williams", "bride"]]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1828-03-14",
+      "page": 3,
+      "note": "Gloucester family, named in the engraving-subscription notice (Second African Presbyterian Church, Philadelphia)",
+      "names": [["Jeremiah Gloucester", "subject (deceased pastor)"], ["Stephen H. Gloucester", "brother/organizer"], ["John Gloucester", "father (deceased founder, First African Presbyterian Church)"]]
+    },
+    {
+      "issue": "FJ_1828-03-21",
+      "page": 3,
+      "note": "Members of the American Convention committee on Free or Slave Labour",
+      "names": [["Benjamin Lundy", "committee member"], ["Thomas Shipley", "committee member"], ["Joseph Parker", "committee member"], ["William Kelsey", "committee member"], ["D. Scholfield", "committee member"]]
+    }
+  ]
+}
