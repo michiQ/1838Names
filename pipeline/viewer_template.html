@@ -43,15 +43,20 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
 #legend span{margin-right:14px}
 /* mini ego panel -- opens on click in the "all connections" full map so you can see a
-   node's complete real connections without disturbing the stable main layout */
-#miniPanel{position:absolute;top:48px;right:14px;width:300px;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.55);z-index:6;display:none;overflow:hidden}
-#miniPanel.on{display:block}
-#miniHead{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid var(--line);background:#2a2419}
+   node's complete real connections without disturbing the stable main layout. Flex
+   column layout so the canvas grows/shrinks to fill whatever size the panel is
+   resized to (see #miniResize) -- header and hint strip stay a fixed height. */
+#miniPanel{position:absolute;top:48px;right:14px;width:300px;height:280px;min-width:220px;min-height:180px;max-width:80vw;max-height:80vh;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.55);z-index:6;display:none;flex-direction:column;overflow:hidden}
+#miniPanel.on{display:flex}
+#miniHead{flex:0 0 auto;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid var(--line);background:#2a2419}
 #miniHead span{font-size:12.5px;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #miniClose{background:none;border:0;color:var(--dim);font-size:15px;line-height:1;cursor:pointer;padding:2px 5px;flex:0 0 auto}
 #miniClose:hover{color:var(--ink)}
-#miniCv{display:block;width:100%;height:230px;cursor:pointer;background:var(--bg)}
-#miniHint{padding:5px 10px;font-size:10.5px;color:var(--dim);font-style:italic;border-top:1px solid var(--line)}
+#miniCv{flex:1 1 auto;display:block;width:100%;height:auto;min-height:0;cursor:pointer;background:var(--bg)}
+#miniHint{flex:0 0 auto;padding:5px 10px;font-size:10.5px;color:var(--dim);font-style:italic;border-top:1px solid var(--line)}
+#miniResize{position:absolute;right:0;bottom:0;width:16px;height:16px;cursor:nwse-resize;z-index:2}
+#miniResize::after{content:'';position:absolute;right:3px;bottom:3px;width:0;height:0;border-style:solid;border-width:0 0 8px 8px;border-color:transparent transparent var(--dim) transparent;opacity:.6}
+#miniResize:hover::after{border-color:transparent transparent var(--gold) transparent;opacity:1}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:-1px}
 #right{width:400px;min-width:280px;max-width:760px;border-left:1px solid var(--line);overflow-y:auto;background:var(--panel);padding:18px 20px}
 .vsplit{width:6px;cursor:col-resize;background:transparent;flex:0 0 6px;position:relative;z-index:5}
@@ -110,6 +115,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab}
       <div id="miniHead"><span id="miniTitle"></span><button id="miniClose" title="close">✕</button></div>
       <canvas id="miniCv"></canvas>
       <div id="miniHint">click a name to open it here</div>
+      <div id="miniResize" title="drag to resize"></div>
     </div>
     <canvas id="cv"></canvas>
     <div id="hint">drag to pan · scroll to zoom · click a node to navigate</div>
@@ -174,8 +180,8 @@ for (const [a,b,w] of DATA.edges){
 // ---------- "all connections" full-map tuning ----------
 // Default view only draws people with this many or more total connections, to keep
 // the center of the map from becoming an unreadable, dense hairball. Clicking any
-// node that IS shown still reveals every one of its real connections regardless of
-// this threshold -- see ensurePersonInFull/ensureEventInFull/ensureOrgInFull below.
+// node still reveals every one of its real connections regardless of this threshold --
+// see openMiniPanel() below (the mini ego-panel), not the main map itself.
 const FULL_MIN_CONN = 10;
 // People are drawn at one uniform size (same as an org/event's Small tier below) --
 // person-to-person line clutter is what made the map unreadable, not dot size, so
@@ -229,10 +235,13 @@ const PRIMARY_GAP_BASE = 26, SECONDARY_GAP_BASE = 140;
 // they were pulled in, having no other force anchoring them).
 const PP_GAP_BASE = 40;
 // Long-range "leash" radius/strength -- see tick() for why weakly-connected sub-
-// clusters need this to keep from drifting away into isolated islands. Calibrated
-// against the real dataset: the well-connected main mass sits within ~900 world units
-// of its own centroid (p99), so 1100 gives it room without ever engaging normally.
-const LEASH_RADIUS = 1100, LEASH_K = 0.01;
+// clusters need this to keep from drifting away into isolated islands. The dataset
+// keeps growing with every newspaper batch, which gradually widens the well-connected
+// main mass's own natural spread -- 1100 was calibrated against an earlier, smaller
+// dataset (~900 units, p99) and has since been outgrown once already (hit 1124 once the
+// core reached 609 people). Bumped to 1400 for real headroom against continued growth,
+// rather than re-tuning this every time another batch lands.
+const LEASH_RADIUS = 1400, LEASH_K = 0.01;
 // Direct per-frame pull of each org/event toward the live centroid of its own
 // currently-linked members -- see tick() for why the leash above isn't enough on
 // its own (an org can be individually within LEASH_RADIUS of the map centroid while
@@ -706,6 +715,34 @@ miniCv.addEventListener('click', e=>{
   else if(n.type==='e') selectEvent(n.id);
   else if(n.type==='o' && n.org) selectOrg(n.org);
 });
+// resizable mini panel -- drag the bottom-right corner grip to expand/contract it,
+// remembered across visits the same way the main #right detail panel's width is
+(function(){
+  const panel = document.getElementById('miniPanel'), grip = document.getElementById('miniResize');
+  try{
+    const w = localStorage.getItem('bm_miniw'), h = localStorage.getItem('bm_minih');
+    if(w) panel.style.width = w + 'px';
+    if(h) panel.style.height = h + 'px';
+  }catch(e){}
+  let resizing = false, startW=0, startH=0, startX=0, startY=0;
+  grip.addEventListener('mousedown', e=>{
+    resizing = true; startW = panel.clientWidth; startH = panel.clientHeight;
+    startX = e.clientX; startY = e.clientY; e.preventDefault(); e.stopPropagation();
+  });
+  window.addEventListener('mousemove', e=>{
+    if(!resizing) return;
+    const w = Math.max(220, Math.min(window.innerWidth*0.8, startW + (e.clientX-startX)));
+    const h = Math.max(180, Math.min(window.innerHeight*0.8, startH + (e.clientY-startY)));
+    panel.style.width = w + 'px'; panel.style.height = h + 'px';
+    if(panel.classList.contains('on')){ resizeMini(); fitMiniView(); drawMini(); }
+  });
+  window.addEventListener('mouseup', ()=>{
+    if(!resizing) return;
+    resizing = false;
+    try{ localStorage.setItem('bm_miniw', parseInt(panel.style.width)||300);
+      localStorage.setItem('bm_minih', parseInt(panel.style.height)||280); }catch(e){}
+  });
+})();
 function repulse(a,b){
   const full = !!window._fullView;
   let dx=b.x-a.x,dy=b.y-a.y,dz=(b.z||0)-(a.z||0),d2=dx*dx+dy*dy+dz*dz;
@@ -726,13 +763,11 @@ function tick(){
     const isPP = fv && l.s.type==='p' && l.t.type==='p';
     // person-to-org/event links: primary affiliation pulls tight (nestle in close),
     // any other affiliation pulls loose (stretches them out toward it instead) -- see
-    // PRIMARY_GAP_BASE/SECONDARY_GAP_BASE. Person-to-person links are hidden by default,
-    // but they're what positions a person who gets pulled onto the map for the first time
-    // by a click (ensurePersonInFull etc. create them with NO org/event anchor of their
-    // own most of the time) -- PP_GAP_BASE keeps that short/tight, on purpose, so a
-    // newly-revealed person clusters in close to whoever revealed them instead of
-    // drifting away. Everything else (ego views, org/event-to-org/event, etc.) keeps the
-    // original width-based formula.
+    // PRIMARY_GAP_BASE/SECONDARY_GAP_BASE. Person-to-person links are hidden by default
+    // (revealed only for whoever's currently selected) but still keep a short/tight
+    // PP_GAP_BASE target so the core people who DO share direct connections read as a
+    // clean cluster rather than a loose scatter. Everything else (ego views, org/event-
+    // to-org/event, etc.) keeps the original width-based formula.
     const target = isPO ? (l.primary ? PRIMARY_GAP_BASE : SECONDARY_GAP_BASE)*SP
       : isPP ? PP_GAP_BASE*SP
       : (60+240/(l.w+1))*SP;
@@ -840,8 +875,8 @@ function buildFullGraph(){
   for(const [a,b,w] of DATA.edges){
     // default view: only people with FULL_MIN_CONN+ total connections get drawn at all,
     // to keep the center of the map from becoming an unreadable hairball. Clicking any
-    // node that IS shown still pulls in every one of its real connections regardless
-    // of this cutoff -- see ensurePersonInFull().
+    // node still pulls in every one of its real connections regardless of this cutoff --
+    // see openMiniPanel() (the mini ego-panel), not the main map itself.
     if(core && ((edgeCt.get(a)||0)<FULL_MIN_CONN || (edgeCt.get(b)||0)<FULL_MIN_CONN)) continue;
     const na=addP(a), nb=addP(b);
     if(na&&nb) links.push({s:na,t:nb,w:Math.min(w,4),faint:w<2});}
@@ -1018,11 +1053,12 @@ function draw(){
   ctx.globalAlpha = 1;
   ctx.restore();
   // The full map settles fully before its first render (see buildFullGraph) and then
-  // FREEZES -- no perpetual jitter or auto-rotation -- so the layout reads as a calm,
-  // stable picture instead of something that never stops drifting. It only wakes back
-  // up briefly (window._simTTL frames) right after new nodes are pulled in by clicking
-  // a node (ensurePersonInFull etc.), or continuously while a node is being dragged so
-  // its springs can react live. Ego-view graphs (person/event/org drill-downs) are much
+  // FREEZES -- no perpetual jitter or auto-rotation, and clicking a node no longer wakes
+  // it either (see openMiniPanel/mouseup) -- so the layout reads as a calm, stable
+  // picture instead of something that never stops drifting. It only wakes back up
+  // briefly (window._simTTL frames) after an actual drag-release, so a dragged node's
+  // springs can settle into their new position, or continuously while a node is
+  // currently being dragged. Ego-view graphs (person/event/org drill-downs) are much
   // smaller and keep the original always-on gentle simulation.
   if(nodes.length){
     if(!window._fullView){ for(let i=0;i<2;i++) tick(); }
@@ -1037,9 +1073,10 @@ function pick(mx,my){
   const cands = nodes.filter(n=>Math.hypot(n.px-x,n.py-y)<Math.max(3,n.r*(n.ps||1))+6);
   return window._fullView ? cands.sort((a,b)=>a.pz-b.pz)[0] : cands[0];
 }
+let dragStart = null;
 cv.addEventListener('mousedown',e=>{const n=pick(e.offsetX,e.offsetY);
   if(n && !window._fullView){dragN=n;n.fixed=true;}
-  else if(n){dragN=n; window._spin=false;}      // 3D: elastic drag
+  else if(n){dragN=n; window._spin=false; dragStart={x:n.x,y:n.y,z:n.z||0};}      // 3D: elastic drag
   else if(window._fullView){rotating=true; window._spin=false;}
   else {panning=true;}
   px=e.offsetX;py=e.offsetY; cv.style.cursor='grabbing';});
@@ -1058,6 +1095,15 @@ window.addEventListener('mousemove',e=>{
   else if(panning){view.x+=e.movementX;view.y+=e.movementY;}});
 window.addEventListener('mouseup',e=>{
   const wasClick = Math.abs(e.offsetX-px)<4 && Math.abs(e.offsetY-py)<4;
+  // a plain click on a node in full view still sets dragN (the elastic-drag branch
+  // above doesn't know yet whether this will turn out to be a click or a real drag),
+  // and the mousemove handler may have already nudged its x/y/z by a pixel or two from
+  // ordinary mouse/trackpad jitter even though the total movement stayed under the
+  // wasClick threshold. Snap it back to exactly where it started so a genuine click
+  // never moves the node at all -- only an intentional drag (wasClick===false) should.
+  if(dragN && wasClick && dragStart){
+    dragN.x=dragStart.x; dragN.y=dragStart.y; dragN.z=dragStart.z; dragN.vx=dragN.vy=dragN.vz=0;
+  }
   if(dragN && wasClick){
     setHighlight(dragN);
     if(dragN.type==='p') select(dragN.id);
@@ -1066,8 +1112,15 @@ window.addEventListener('mouseup',e=>{
   else if(!dragN && wasClick){ setHighlight(null); }   // click empty space clears highlight
   if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them
   if(dragN && !window._fullView) dragN.fixed = dragN===nodes[0];
-  if(dragN && window._fullView) window._simTTL = Math.max(window._simTTL||0, 40);  // let its neighbors finish settling after release
-  dragN=null;panning=false;rotating=false;cv.style.cursor='grab';});
+  // only wake the sim after an ACTUAL drag-release (wasClick===false) -- this used to
+  // fire on every plain click too (dragN gets set on mousedown for any node click, click
+  // or drag alike), waking window._simTTL for 40 frames and letting the group-anchor/
+  // leash/spring forces nudge the WHOLE settled map every time you clicked a node. That
+  // was the real remaining cause of "the balls move when I click them" -- the earlier
+  // fix to select()/selectEvent()/selectOrg() stopped THEM from waking the sim, but this
+  // separate mouseup handler was still doing it unconditionally on its own.
+  if(dragN && !wasClick && window._fullView) window._simTTL = Math.max(window._simTTL||0, 40);
+  dragN=null;dragStart=null;panning=false;rotating=false;cv.style.cursor='grab';});
 cv.addEventListener('dblclick',e=>{
   const n=pick(e.offsetX,e.offsetY);
   if(n && n.pin){ n.pin=false; if(window._fullView) window._simTTL=Math.max(window._simTTL||0,40); }   // double-click releases a pinned node back to the springs
