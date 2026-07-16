@@ -28,15 +28,15 @@ Pencil Pusher) — work top to bottom across runs.
 - [x] CA_1837-04-29 (300dpi; same as 04-15 — repo already 300dpi, Drive synced 2026-07-16 run #36)
 - [x] CA_1837-05-06 (300dpi; same as 04-15 — repo already 300dpi, Drive synced 2026-07-16 run #36)
 - [x] CA_1837-05-13 (300dpi; same as 04-15 — repo already 300dpi, Drive synced 2026-07-16 run #36)
-- [ ] CA_1838-01-13
-- [ ] CA_1838-01-20
-- [ ] CA_1838-01-27
-- [ ] CA_1838-02-03
-- [ ] CA_1838-03-15
-- [ ] CA_1838-04-12
-- [ ] CA_1837-08-19 (only p1 is at 300dpi; p2 at 200dpi, p3/p4 at 100dpi -- sandbox was under heavy CPU load during the 2026-07-07 10th scheduled run and 300dpi tesseract calls kept timing out even after retries)
-- [ ] CA_1837-08-26 (all 4 pages at 100dpi, same load-driven fallback as above)
-- [ ] CA_1837-09-02 (all 4 pages at 100dpi, same load-driven fallback as above)
+- [x] CA_1838-01-13 (4 pages redone at 300dpi 2026-07-16, 37th scheduled run)
+- [x] CA_1838-01-20 (4 pages redone at 300dpi 2026-07-16, 37th scheduled run)
+- [x] CA_1838-01-27 (4 pages redone at 300dpi 2026-07-16, 37th scheduled run)
+- [x] CA_1838-02-03 (4 pages redone at 300dpi 2026-07-16, 37th scheduled run)
+- [x] CA_1838-03-15 (4 pages redone at 300dpi 2026-07-16, 37th scheduled run)
+- [x] CA_1838-04-12 (4 pages redone at 300dpi 2026-07-16, 37th scheduled run)
+- [x] CA_1837-08-19 (all 4 pages redone at full 300dpi 2026-07-16, 37th scheduled run — sandbox load ~0.02, held cleanly)
+- [x] CA_1837-08-26 (300dpi; re-OCR'd 2026-07-16 run #37 — output byte-identical to repo, which already held a 300dpi version; Drive copy synced)
+- [x] CA_1837-09-02 (300dpi; same as 08-26 — repo already 300dpi, Drive synced 2026-07-16 run #37)
 - [ ] CA_1837-10-21 (all 4 pages at 200dpi -- sandbox under load during the 2026-07-08 12th scheduled run, 300dpi tesseract calls timed out even after a retry)
 - [ ] CA_1837-10-28 (all 4 pages at 200dpi, same load-driven fallback as above)
 - [ ] CA_1837-11-04 (all 4 pages at 200dpi, same load-driven fallback as above)
@@ -59,6 +59,7 @@ Pencil Pusher) — work top to bottom across runs.
 - [ ] PP_000 .. PP_085 (all pending; see ocr_text/ for the full slug list, e.g. `ls ocr_text | grep '^PP_' | sed -E 's/_p[0-9]+\.txt$//' | sort -u`)
 
 ## Progress log
+- 2026-07-16 (37th scheduled run): Sandbox idle (load 0.02), 300dpi held cleanly all run. Backfilled 9 Colored American issues to full 300dpi (36 pages): the Jan–Apr 1838 CA block Michiko is actively reviewing (CA_1838-01-13/01-20/01-27/02-03/03-15/04-12) plus CA_1837-08-19 (genuine sub-300dpi→300dpi upgrade); CA_1837-08-26 and 09-02 re-OCR'd but came back byte-identical to the repo's already-300dpi copies (tracker was stale — same situation as the April–May 1837 block in run #36), Drive now synced. Also processed 2 NEW Freedom's Journal issues (FJ_1828-05-16, FJ_1828-05-23). IMPORTANT FINDING for Michiko: both May PDFs are single 8-page issues, NOT two bundled 4-page weeklies — masthead-verified (05-16: p1 AND p5 both read "Vol. 2 No. 8 / Whole No. 60 / May 16"; 05-23: p1 AND p5 both "No. 9 / Whole No. 61 / May 23"), and p5-8 content is distinct from p1-4. So all 8 pages were kept per issue. This differs from the run #35/#36 "take only pages 1-4" convention, which means the earlier FJ issues (all stored at 4 pages in ocr_text) may be UNDER-processed and missing their pages 5-8 — worth revisiting. Reliable OCR pattern this run: pdftoppm renders all pages in ~1s; each tesseract call must be its own bash call (2 in one call blows the 45s wall); using `tesseract pgm outfile` (file output) instead of stdout redirect eliminated the empty-first-attempt flake entirely. Remaining backfill: ~17 CA/PF issues (the 08-19-neighbor sub-300dpi CA set minus 08-19/08-26/09-02 now done: 10-21/10-28/11-04/11-11 + 4 PF) + 4 FJ (150dpi, run #33) + 86 PP.
 - 2026-07-16 (36th scheduled run): Sandbox idle at start (load 0.00), so 300dpi held. Backfilled the CA_1837 April–May block: CA_1837-04-08 (genuine 150→300dpi upgrade, 4 pages) plus 04-15/04-22/04-29/05-06/05-13 (re-OCR'd at 300dpi — output came back byte-identical to the GitHub repo, which already held 300dpi versions of these five from a prior push even though this tracker still listed them pending and the Drive ocr_text copies were stale; Drive is now synced to match). Net: the entire CA April–May 1837 run is confirmed 300dpi across Drive + repo. Also processed 3 NEW Freedom's Journal issues at native 300dpi (FJ_1828-04-25/05-02/05-09 — 8-page bundles, took pages 1-4 = the dated issue only, per convention). Discovered 2 FJ source PDFs are 31-byte "File missing: docs/suspend.htm" Drive tombstones (FJ_1827-11-30, FJ_1828-02-22) — genuinely missing from Drive, cannot be processed until re-uploaded. Remaining backfill: 19 CA/PF issues (04-08's neighbors done; the 08-19→11-11 sub-300dpi CA set + Jan-Apr 1838 CA + 4 PF) + 4 FJ (150dpi, run #33) + 86 PP.
 - 2026-07-15 (35th scheduled run): Sandbox load low at start (~0.14), briefly spiked to ~3.5 mid-run (one CA page timed out at 300dpi and was recovered via the split render/OCR two-call trick). Backfilled CA_1837-03-11, 03-18, 03-25, 04-01 (16 pages) at full 300dpi, overwritten in place. Also processed 2 NEW Freedom's Journal issues at native 300dpi (FJ_1828-04-11, FJ_1828-04-18 — pages 1-4 only; these source PDFs bundle two weekly issues at 8 pages each, so only the dated issue's 4 pages were taken to avoid cross-contamination — no backfill entry needed). Did NOT re-touch the FJ 150dpi backfill entries from run #33 (still pending). Remaining: 25 CA/PF issues + 4 FJ (150dpi) issues + 86 PP issues pending a 300dpi pass.
 - 2026-07-15 (34th scheduled run): Sandbox load was very low (~0.03), so 300dpi held cleanly. Backfilled CA_1837-02-22 (1pg), CA_1837-02-25 (4pg), CA_1837-03-04 (5pg) at full 300dpi, overwritten in place. Did NOT re-touch the FJ 150dpi backfill entries from run #33 (still pending). Remaining: 29 CA/PF issues + 4 FJ (150dpi) issues + 86 PP issues pending a 300dpi pass. Note: CA pages are dense scans — ~40s/page tesseract at 300dpi, so one page per bash call for CA; FJ pages OCR faster (~15s each), 2 per call is safe.
