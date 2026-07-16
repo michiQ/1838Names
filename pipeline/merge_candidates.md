@@ -51,7 +51,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Collins, George W.** (winch, 1 Winch refs) ↔ **Collins, George** (census, 1 census records)
 - [HIGH] **Cooper, William** (winch, 1 appearances, 1 Winch refs, 1 census records) ↔ **Cooper, William G** (census, 1 appearances, 1 census records)
 - [HIGH] **Cork, Henrietta** (winch, 1 Winch refs) ↔ **Cork, Hennrietta** (census, 1 census records)
-- [HIGH] **Cornish, William** (winch, 11 appearances, 1 Winch refs) ↔ **W. Cornish** (newspaper, 1 appearances)
+- [HIGH] **Cornish, William** (winch, 10 appearances, 1 Winch refs) ↔ **W. Cornish** (newspaper, 1 appearances)
 - [HIGH] **Corr, E.** (winch, 1 Winch refs) ↔ **CORR, EMELINE** (census, 1 census records)
 - [HIGH] **Cranchel, Bartholomew** (winch, 1 Winch refs) ↔ **Cranchel, B.** (1820directory, 1 1820 directory records)
 - [HIGH] **John Wesley Cromwell** (newspaper, 1 appearances) ↔ **Cromwell, John** (1820directory, 4 appearances, 1 1820 directory records)

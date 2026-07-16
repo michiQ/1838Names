@@ -1,0 +1,48 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-04-25",
+      "page": 1,
+      "headline": "On the Demoralizing Influence of Slavery (Continued)",
+      "author": null,
+      "type": "reprint essay",
+      "summary": "Continuation of a reprinted essay from the Anti-Slavery Monthly Reporter arguing that the brutal depravity of character bred by slavery ought to be ascribed to the system itself rather than urged as an apology for masters' cruelty, and forming an argument for the total and speedy abolition of slavery. Reprinted matter with no Philadelphia names; included for completeness."
+    },
+    {
+      "issue": "FJ_1828-05-02",
+      "page": 1,
+      "headline": "Address of the British Anti-Slavery Society to the friends of the cause",
+      "author": null,
+      "type": "reprint address",
+      "summary": "Reprinted address urging the friends of abolition to keep the public feeling on slavery in full vigour through local public meetings and the diffusion of information, in view of the mass of anti-slavery petitions laid before Parliament over the preceding three years. Frames West Indian emancipation as involving the fate of multitudes now living and millions yet unborn. Reprinted British matter with no local names."
+    },
+    {
+      "issue": "FJ_1828-05-02",
+      "page": 3,
+      "headline": "Fatal Affair at Philadelphia (death of William Wray)",
+      "author": null,
+      "type": "reprint news item",
+      "summary": "News item reprinted from a Philadelphia Gazette: a distressing event near the corner of Chestnut and Schuylkill Front streets, Philadelphia, in which William Wray, a laborer employed by the City Commissioner and a native of Ireland long a drayman in the city, was killed. Wray had used violent language and assaulted Mr. Tucker (of Tucker & Aulme, porcelain manufacturers) after being asked to stop removing bricks from city-leased property; in the struggle both fell from a six-foot bank and Wray struck his head on bricks and died. A coroner's jury of thirteen witnesses found the death accidental and that Tucker acted wholly in self-defence. A Philadelphia item (the Tucker & Aulme / William Ellis Tucker porcelain works)."
+    },
+    {
+      "issue": "FJ_1828-05-09",
+      "page": 1,
+      "headline": "Circular from the Corresponding Committee of the Manumission Society of New-York",
+      "author": null,
+      "type": "circular / address",
+      "summary": "Concluding portion of a circular 'Communicated for the Genius of Universal Emancipation' from the Corresponding Committee of the Manumission Society of New-York, urging citizens in the cities and important towns of the free states to join in a simultaneous movement memorializing Congress on the abolition of slavery in the District of Columbia. It asks readers to get up public meetings, obtain as powerful a list of signatures as possible, and transmit memorials to Washington without delay, in support of a gentleman soon to bring the subject before Congress; a postscript notes the Society will also petition the New-York Legislature. Signed by Joseph Curtis, William L. Stone, Thomas Hale, Ira Culby, William Seaman, and Major Day as the Corresponding Committee."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-05-09",
+      "page": 1,
+      "name": "Manumission Society of New-York circular urging memorials to Congress against slavery in the District of Columbia",
+      "date": "1828-05",
+      "location": "New York",
+      "description": "The Corresponding Committee of the Manumission Society of New-York issued a circular calling on the friends of abolition in the free states to organize public meetings and memorialize Congress for the abolition of slavery in the District of Columbia, coordinating a simultaneous petitioning campaign. Signed by the Corresponding Committee: Joseph Curtis, William L. Stone, Thomas Hale, Ira Culby, William Seaman, and Major Day.",
+      "attendees": [["Joseph Curtis", "signer"], ["William L. Stone", "signer"], ["Thomas Hale", "signer"], ["Ira Culby", "signer"], ["William Seaman", "signer"], ["Major Day", "signer"]]
+    }
+  ],
+  "agents": []
+}
