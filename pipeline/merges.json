@@ -6,9 +6,11 @@
       "James J. G. Bias",
       "BIAS, JAMES J.G.",
       "Bias, J.J.G.",
-      "Bias, J. J. G."
+      "Bias, J. J. G.",
+      "J. G. Bias",
+      "Jas. C. Bias"
     ],
-    "note": "Dr. James J. G. Bias — dentist/physician, AME leader, Vigilance Committee. Confirmed by Michiko 2026-07-04."
+    "note": "Dr. James J. G. Bias — dentist/physician, AME leader, Vigilance Committee. Confirmed by Michiko 2026-07-04. [Run #36, 2026-07-16: Michiko directed that ANY 'J Bias' variant be merged in — added newspaper spellings 'J. G. Bias' and 'Jas. C. Bias' (the 'C' is an OCR misread of his ornate initials; 'Jas.'=James). Deliberately EXCLUDES 'Bias, Eliza A.' (his wife/a woman) and 'Bias, Aexander'/Alexander Bias (census) — different people, not J-Bias variants.]"
   },
   {
     "keep": "Douglass, Sarah M.",
@@ -182,5 +184,34 @@
       "Cannon, N. C. W."
     ],
     "note": "Rev. Noah C. W. Cannon -- AME minister. 'N. C. W. Cannon' (newspaper) = Winch 'Cannon, Rev. Noah C'. Michiko approved 2026-07-15."
+  },
+  {
+    "keep": "Beck, Ignatius",
+    "aliases": [
+      "Beck, Ignatiius"
+    ],
+    "note": "Beck, Ignatius (Winch, 5 refs + census + 1820 directory) = 'Beck, Ignatiius' (census OCR doubling of the 'i'). Michiko approved 2026-07-16."
+  },
+  {
+    "keep": "Cohen, Emanuel",
+    "aliases": [
+      "Cohen, Manuel"
+    ],
+    "note": "Cohen, Emanuel (Winch) = 'Cohen, Manuel' (1820 directory) -- Emanuel/Manuel, same man. Michiko approved 2026-07-16."
+  },
+  {
+    "keep": "Benson, John",
+    "aliases": [
+      "Benson, John Hl"
+    ],
+    "note": "Benson, John (Winch, 3 refs + 3 census) = 'Benson, John Hl' (census; 'Hl' is an OCR misread of a middle initial 'H'). Michiko approved 2026-07-16."
+  },
+  {
+    "keep": "Samuel V. Berry",
+    "aliases": [
+      "S. V. Berry",
+      "Berry, Severn"
+    ],
+    "note": "Samuel V. Berry (newspaper) = 'S. V. Berry' (newspaper, initials) = 'Berry, Severn' (1820 directory). Michiko approved 2026-07-16 to merge all three as one person (S.V. = Samuel V.; 'Severn' is a directory transcription variant). Canonical set to the fullest spelling 'Samuel V. Berry'."
   }
 ]
