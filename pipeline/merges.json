@@ -33,9 +33,11 @@
     "aliases": [
       "John C. Bowers",
       "John Bowers",
-      "BOWERS, JOHN C"
+      "BOWERS, JOHN C",
+      "J. C. Bowers",
+      "John Bowers Jr."
     ],
-    "note": "John C. Bowers Jr. — sailmaker/tailor, St. Thomas organist, PA Anti-Slavery Society founding delegate, denied hotel service in Lancaster PA 1837 (Weekly Advocate, Feb 25 1837). Confirmed by Michiko 2026-07-06. NOTE: deliberately excludes 'Bowers, John' (no middle initial) -- that Winch record is his FATHER, John Bowers Sr., a clothier who died Oct 1844 (will names John C., Henrietta, and Thomas J. Bowers as executors/heirs) -- a different person, not merged."
+    "note": "John C. Bowers Jr. — sailmaker/tailor, St. Thomas organist, PA Anti-Slavery Society founding delegate, denied hotel service in Lancaster PA 1837 (Weekly Advocate, Feb 25 1837). Confirmed by Michiko 2026-07-06. NOTE: deliberately excludes 'Bowers, John' (no middle initial) -- that Winch record is his FATHER, John Bowers Sr., a clothier who died Oct 1844 (will names John C., Henrietta, and Thomas J. Bowers as executors/heirs) -- a different person, not merged. [Run #35, Michiko-approved 2026-07-15: added newspaper spellings 'J. C. Bowers' and 'John Bowers Jr.' (both clearly the son). Still deliberately EXCLUDES the initial-less 'Bowers, John' winch record AND the 1820-directory 'Bowers, John' head-of-household record -- both are the FATHER, John Bowers Sr., per the note above.]"
   },
   {
     "keep": "Bustill, Joseph Cassey",
@@ -149,5 +151,36 @@
       "Isaiah C. Wear"
     ],
     "note": "Wears, Isaiah C. (Winch) = Wear, Isaiah C (census) = Isaiah C. Wear (newspaper). Same name modulo trailing 's' and first/last order; Isaiah C. Wears is the well-documented Philadelphia activist. Winch+census pair confirmed by Michiko 2026-07-09; newspaper inversion included as the identical name."
+  },
+  {
+    "keep": "Bell, Philip A.",
+    "aliases": [
+      "P. A. Bell"
+    ],
+    "note": "Philip A. Bell -- proprietor/general agent of the Weekly Advocate/Colored American. Michiko approved 2026-07-15. NB: the auto-candidate paired 'P. A. Bell' with the census 'Bell, Peter' -- that is an initials-only FALSE POSITIVE (Philip A. != Peter); merged into the existing 'Bell, Philip A.' newspaper record instead, NOT into Peter Bell."
+  },
+  {
+    "keep": "Boston, N. G.",
+    "aliases": [
+      "BOSTON, NICHOLAS",
+      "Boston, Nicholas"
+    ],
+    "note": "N. G. Boston (Winch) = Nicholas Boston (1838 census). Michiko approved 2026-07-15."
+  },
+  {
+    "keep": "Bishop, S.",
+    "aliases": [
+      "BISHOP, STEPHEN",
+      "Bishop, Stephen"
+    ],
+    "note": "Bishop, S. (Winch) = Stephen Bishop (1838 census). Michiko approved 2026-07-15. (Initials-only match, low corroborating detail -- flagged.)"
+  },
+  {
+    "keep": "Cannon, Rev. Noah C",
+    "aliases": [
+      "N. C. W. Cannon",
+      "Cannon, N. C. W."
+    ],
+    "note": "Rev. Noah C. W. Cannon -- AME minister. 'N. C. W. Cannon' (newspaper) = Winch 'Cannon, Rev. Noah C'. Michiko approved 2026-07-15."
   }
 ]
