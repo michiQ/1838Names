@@ -1,0 +1,82 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-04-11",
+      "page": 1,
+      "headline": "On the Demoralizing Influence of Slavery",
+      "author": null,
+      "type": "reprint essay",
+      "summary": "Essay reprinted from the Anti-Slavery Monthly Reporter describing the demoralizing effects of slavery at the Cape of Good Hope (Cape Town, South Africa): the high prices paid for near-white slave children, the case of a father obliged to pay 9,000 rix-dollars to redeem his children (with 6,000 refused for their mother, believed to be the seller's own half-sister), and the way slaveholders came to reckon human beings purely in terms of colonial-currency value. Illustrative anecdotes attributed to H. W. Money, Esq. of the East India Company Civil Service. A reprint with no Philadelphia names, included for completeness."
+    },
+    {
+      "issue": "FJ_1828-04-11",
+      "page": 2,
+      "headline": "Charles Seville",
+      "author": null,
+      "type": "original serialized sketch",
+      "summary": "Original contribution 'For Freedom's Journal': the opening installment of a biographical/didactic sketch of a New England farmer's son given the pseudonym 'Charles Seville' (the author explicitly conceals the subject's real name). It recounts his early love of study, self-education from town-library books and neighbors skilled in law, surveying, botany, and finance, and his restless ambition ('aut Caesar, aut nihil'), framed as a lesson on midnight toil and the perils of a young man leaving the countryside for a great city. Pseudonymous literary content; no identifiable local persons."
+    },
+    {
+      "issue": "FJ_1828-04-11",
+      "page": 3,
+      "headline": "Redemption of Slaves (abridged letter to the Manchester Gazette)",
+      "author": "Phileleutherus (pseudonym)",
+      "type": "reprint letter",
+      "summary": "Abridgement of a letter to the editor of the Manchester Gazette, signed 'Phileleutherus,' proposing a subscription society to purchase and free slaves in the British West Indian colonies. It argues that since gold enslaved the captive, gold can free him; that 10,000 subscribers giving twopence a week could redeem more than 400 slaves a year; and answers the objection that such a society would let planters inflate slave prices. Reprinted matter with no local names, included for completeness."
+    },
+    {
+      "issue": "FJ_1828-04-18",
+      "page": 2,
+      "headline": "Correction on the St. Thomas's Church organ and its organist (Philadelphia)",
+      "author": "'Respect' (pseudonym)",
+      "type": "letter to the editor",
+      "summary": "Letter to editor John B. Russwurm, signed 'Respect' and datelined Philadelphia, April 12, 1828, correcting a statement in the U.S. Gazette of April 3 that 'the Vestry' of St. Thomas's (African) Episcopal Church, Philadelphia, had purchased an organ played by 'a Coloured woman, a member of the Congregation.' The writer clarifies that the organ was in fact bought by a committee appointed by the Congregation (separate from the Vestry), whose liberal contributions and enterprising manner raised the funds and installed it with its fixtures; and rebukes the Gazette author for the disrespectful, prejudiced manner of noting the organist's color, asking whether he would have written 'a white woman' had it been any other Episcopal church in the city. A Philadelphia item on St. Thomas's African Episcopal Church, follow-up to the organ notice carried March 14, 1828."
+    },
+    {
+      "issue": "FJ_1828-04-18",
+      "page": 2,
+      "headline": "On the Varieties of the Human Race, No. I",
+      "author": null,
+      "type": "reprint essay",
+      "summary": "First number of a serialized essay arguing against the use of the physical varieties of the human race as an argument for the illiberal (pro-slavery) view, citing the appearance of wild men and women in various parts of Europe. Reprinted scientific/ethnological matter with no local names."
+    },
+    {
+      "issue": "FJ_1828-04-18",
+      "page": 3,
+      "headline": "The Last Will and Testament; The House of Weeping (from the German of Richter)",
+      "author": "Jean Paul Richter (trans.)",
+      "type": "reprint fiction",
+      "summary": "Concluding installment of a translated comic tale from the German of Jean Paul Richter, in which seven heirs of the wealthy Van der Kabel of Haslau must compete to be the first to weep genuine tears over his coffin to inherit his house, the winner being the morning-lecturer Flacks. Literary reprint with only fictional characters."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-04-11",
+      "page": 3,
+      "name": "Death of William Purvis, Jun. (Philadelphia)",
+      "date": "1828-04",
+      "location": "Philadelphia",
+      "description": "Death notice: at Philadelphia, on Saturday the 5th inst., Mr. William Purvis, Jun., in the 22d year of his age. Described as a young man of the most amiable disposition, sound understanding, and excellent principles, whose correct deportment won the esteem of all his acquaintance. (A member of the Purvis family of Philadelphia/South Carolina.)",
+      "attendees": [["William Purvis", "deceased"]]
+    },
+    {
+      "issue": "FJ_1828-04-11",
+      "page": 3,
+      "name": "Death of Viney Cormery, St. Thomas's Episcopal Church (Philadelphia)",
+      "date": "1828-04",
+      "location": "Philadelphia",
+      "description": "Death notice: Miss Viney Cormery, a member of St. Thomas's (African) Episcopal Church, died in Philadelphia on Saturday last. (Name as OCR'd; spelling uncertain.)",
+      "attendees": [["Viney Cormery", "deceased"]]
+    },
+    {
+      "issue": "FJ_1828-04-11",
+      "page": 3,
+      "name": "Death of John M. Smith (New York)",
+      "date": "1828-04",
+      "location": "New York",
+      "description": "Death notice: in this city (New York), Mr. John M. Smith, aged 32.",
+      "attendees": [["John M. Smith", "deceased"]]
+    }
+  ],
+  "agents": []
+}
