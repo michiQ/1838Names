@@ -33,7 +33,12 @@
       "date": "1828-04-24",
       "location": "Philadelphia",
       "description": "Notice published by the Protecting Society of the city and county of Philadelphia for the prevention of kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society, formed in 1827, informing the coloured community of its work against the kidnapping of free persons of colour and inviting applications for assistance to its Secretary. Signed by John Allen, Secretary, Philadelphia, April 24, 1828.",
-      "attendees": [["John Allen", "secretary"]]
+      "attendees": [
+        [
+          "John Allen",
+          "secretary"
+        ]
+      ]
     },
     {
       "issue": "FJ_1828-05-23",
@@ -42,7 +47,24 @@
       "date": "1828-05",
       "location": "Philadelphia; Delaware-Maryland line",
       "description": "Report of Philadelphia High Constable Garrigues' return from his second journey to Mississippi and Louisiana in pursuit of free Black Philadelphia children kidnapped in the summer of 1825. He recovered and returned two victims, Clem Coxe and E. Laurence, who were examined at the Philadelphia Police Office. Their testimony established that they had been stolen by Joseph Johnson or his agents and carried to Johnson's house on the Delaware-Maryland line — part of the Cannon-Johnson kidnapping ring that trafficked free Black Philadelphians into Southern slavery.",
-      "attendees": [["Garrigues", "high constable"], ["Clem Coxe", "kidnapping victim returned"], ["E. Laurence", "kidnapping victim returned"], ["Joseph Johnson", "kidnapper"]]
+      "attendees": [
+        [
+          "Garrigues",
+          "high constable"
+        ],
+        [
+          "Clem Coxe",
+          "kidnapping victim returned"
+        ],
+        [
+          "E. Laurence",
+          "kidnapping victim returned"
+        ],
+        [
+          "Joseph Johnson [kidnapper]",
+          "kidnapper"
+        ]
+      ]
     }
   ],
   "agents": [
@@ -51,38 +73,134 @@
       "page": 8,
       "note": "Freedom's Journal authorised agents roster (masthead list)",
       "names": [
-        ["Samuel E. Cornish", "general agent"],
-        ["C. Stockbridge", "agent"],
-        ["Isaac Talbot", "agent"],
-        ["David Walker", "agent"],
-        ["Thomas Paul", "agent"],
-        ["John Remond", "agent"],
-        ["John Shields", "agent"],
-        ["Isaac Glasko", "agent"],
-        ["George C. Willis", "agent"],
-        ["Francis Webb", "agent"],
-        ["Stephen Smith", "agent"],
-        ["John B. Vashon", "agent"],
-        ["Hezekiah Grice", "agent"],
-        ["J. W. Prout", "agent"],
-        ["Thomas Braddock", "agent"],
-        ["Nathaniel Paul", "agent"],
-        ["R. P. G. Wright", "agent"],
-        ["Austin Steward", "agent"],
-        ["William P. Williams", "agent"],
-        ["George De Grasse", "agent"],
-        ["Frederick Holland", "agent"],
-        ["Theodore S. Wright", "agent"],
-        ["James C. Cowes", "agent"],
-        ["B. F. Hughes", "agent"],
-        ["Leonard Scott", "agent"],
-        ["W. D. Baptist", "agent"],
-        ["Joseph Shepherd", "agent"],
-        ["Seth Henshaw", "agent"],
-        ["John C. Stanley", "agent"],
-        ["Lewis Sheridan", "agent"],
-        ["Samuel Thomas", "agent"],
-        ["W. R. Gardiner", "agent"]
+        [
+          "Samuel E. Cornish",
+          "general agent"
+        ],
+        [
+          "C. Stockbridge",
+          "agent"
+        ],
+        [
+          "Isaac Talbot",
+          "agent"
+        ],
+        [
+          "David Walker",
+          "agent"
+        ],
+        [
+          "Thomas Paul",
+          "agent"
+        ],
+        [
+          "John Remond",
+          "agent"
+        ],
+        [
+          "John Shields",
+          "agent"
+        ],
+        [
+          "Isaac Glasko",
+          "agent"
+        ],
+        [
+          "George C. Willis",
+          "agent"
+        ],
+        [
+          "Francis Webb",
+          "agent"
+        ],
+        [
+          "Stephen Smith",
+          "agent"
+        ],
+        [
+          "John B. Vashon",
+          "agent"
+        ],
+        [
+          "Hezekiah Grice",
+          "agent"
+        ],
+        [
+          "J. W. Prout",
+          "agent"
+        ],
+        [
+          "Thomas Braddock",
+          "agent"
+        ],
+        [
+          "Nathaniel Paul",
+          "agent"
+        ],
+        [
+          "R. P. G. Wright",
+          "agent"
+        ],
+        [
+          "Austin Steward",
+          "agent"
+        ],
+        [
+          "William P. Williams",
+          "agent"
+        ],
+        [
+          "George De Grasse",
+          "agent"
+        ],
+        [
+          "Frederick Holland",
+          "agent"
+        ],
+        [
+          "Theodore S. Wright",
+          "agent"
+        ],
+        [
+          "James C. Cowes",
+          "agent"
+        ],
+        [
+          "B. F. Hughes",
+          "agent"
+        ],
+        [
+          "Leonard Scott",
+          "agent"
+        ],
+        [
+          "W. D. Baptist",
+          "agent"
+        ],
+        [
+          "Joseph Shepherd",
+          "agent"
+        ],
+        [
+          "Seth Henshaw",
+          "agent"
+        ],
+        [
+          "John C. Stanley",
+          "agent"
+        ],
+        [
+          "Lewis Sheridan",
+          "agent"
+        ],
+        [
+          "Samuel Thomas",
+          "agent"
+        ],
+        [
+          "W. R. Gardiner",
+          "agent"
+        ]
       ]
     }
   ]

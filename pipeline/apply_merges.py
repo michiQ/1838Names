@@ -20,9 +20,22 @@ if not os.path.exists(MERGES):
 groups = json.load(open(MERGES))
 total_merged = 0
 for g in groups:
-    names = {norm(g["keep"])} | {norm(a) for a in g.get("aliases", [])}
+    # aliases may be plain strings (match by normalized canonical_name) or source/id-qualified
+    # objects {"name":..., "source":...} / {"id":...} to disambiguate same-name records
+    # (e.g. the 1820-directory "Bowers, John" vs the separate Winch "Bowers, John" father).
+    _al = g.get("aliases", [])
+    plain_names = {norm(g["keep"])} | {norm(a) for a in _al if isinstance(a, str)}
+    qualified = [(norm(a["name"]) if a.get("name") else None, a.get("source"), a.get("id"))
+                 for a in _al if isinstance(a, dict)]
+    def _match(r):
+        pid, cn, src = r[0], r[1], r[2]
+        if norm(cn) in plain_names: return True
+        for qn, qsrc, qid in qualified:
+            if qid is not None and pid == qid: return True
+            if qn is not None and norm(cn) == qn and (qsrc is None or src == qsrc): return True
+        return False
     rows = [r for r in con.execute("SELECT id, canonical_name, source, winch_entry, aliases FROM people")
-            if norm(r[1]) in names]
+            if _match(r)]
     if len(rows) < 2 and not any(norm(r[1]) == norm(g["keep"]) for r in rows):
         # nothing to merge but maybe rename a single alias row
         pass

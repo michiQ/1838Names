@@ -44,7 +44,9 @@ mpath = f"{PIPE}/merges.json"
 if os.path.exists(mpath):
     for g in json.load(open(mpath)):
         already.add(norm(g["keep"]).strip())
-        for a in g.get("aliases", []): already.add(norm(a).strip())
+        for a in g.get("aliases", []):
+            an = a.get("name") if isinstance(a, dict) else a
+            if an: already.add(norm(an).strip())
 
 has_dir = bool(con.execute("SELECT 1 FROM sqlite_master WHERE name='directory_links'").fetchone())
 

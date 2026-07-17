@@ -68,6 +68,18 @@ def main():
     con.execute("CREATE TABLE IF NOT EXISTS newspaper_orgs(person_id INT, org TEXT, issue TEXT, page INT)")
     con.execute("DELETE FROM newspaper_orgs")
     people = con.execute("SELECT id, canonical_name FROM people").fetchall()
+    # Curated suppression of known false OCR name-collisions (Michiko 2026-07-17):
+    # the kidnapper "Joseph Johnson" (Cannon-Johnson ring) shares a name with Winch's
+    # "Johnson, Joseph"; do NOT auto-attribute the kidnapping-issue mentions to the
+    # innocent Winch person. Format: {(canonical_name, issue_slug), ...}.
+    SUPPRESS_NAME_SLUG = {("Johnson, Joseph", "FJ_1828-05-23")}
+    _name2pids = {}
+    for _pid, _nm in people:
+        _name2pids.setdefault(_nm, set()).add(_pid)
+    suppress = set()
+    for _nm, _slug in SUPPRESS_NAME_SLUG:
+        for _pid in _name2pids.get(_nm, ()):
+            suppress.add((_pid, _slug))
     # parse "Surname, First Middle" -> (surname, [given tokens])
     idx = {}  # surname_lower -> list of (pid, surname, givens)
     for pid, name in people:
@@ -99,6 +111,7 @@ def main():
             key = tok.lower()[:4]
             for pid, sur, givens in idx.get(key, []):
                 if not close(tok, sur): continue
+                if (pid, slug) in suppress: continue
                 matched = False; strength = 0
                 for back in (1, 2, 3):
                     if i - back < 0: break
