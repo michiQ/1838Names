@@ -1,0 +1,136 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-06-27",
+      "page": 6,
+      "headline": "The Ann Eliza Jane counterfeit-coin affair (Jeremiah Hamilton)",
+      "author": null,
+      "type": "news item",
+      "summary": "A summary item on the controversy over the seizure of the brig Ann Eliza Jane at Port-au-Prince for carrying a quantity of counterfeit coin. The affair was first mentioned in the Commercial Advertiser without naming the parties, and was followed by a publication signed by Jeremiah Hamilton, a coloured man living in New York, said to be connected with the vessel. Documents a prominent New York Black businessman of the period."
+    },
+    {
+      "issue": "FJ_1828-06-27",
+      "page": 6,
+      "headline": "Notice: George Hicks meets his accusers before a committee (alleged betrayal of a fugitive)",
+      "author": null,
+      "type": "notice",
+      "summary": "A notice concerning a report circulated in New York that George Hicks, of the City of Washington, was accused under strong suspicion of betraying a man who had absconded from the South. Hicks met his accusers on Monday evening, June 16, to make his defence in the presence of a committee appointed for the purpose. A document of the free Black community policing its own against those suspected of aiding slave-catchers."
+    },
+    {
+      "issue": "FJ_1828-06-27",
+      "page": 8,
+      "headline": "Notice of the Protecting Society of Philadelphia for the Prevention of Kidnapping and Man-stealing (recurrence)",
+      "author": "John Allen",
+      "type": "society notice",
+      "summary": "Recurrence of the standing notice of the Protecting Society of the city and county of Philadelphia for the preventing of kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society, formed in 1827 to combat the kidnapping of free persons of colour; persons seeking recovery of kidnapped friends are directed to apply to the Secretary. Signed John Allen, Secretary, Philadelphia."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-06-27",
+      "page": 6,
+      "name": "Public meeting of the People of Colour, Second Coloured Presbyterian Church, St. Mary's Street, Philadelphia",
+      "date": "1828-06-30",
+      "location": "Second Coloured Presbyterian Church, St. Mary's Street below Lombard, between Sixth and Seventh Streets, Philadelphia",
+      "description": "Notice of a public meeting on a subject of great interest to the People of Colour, to be held Monday evening the 30th inst. in the Second Coloured Presbyterian Church in St. Mary's Street, below Lombard, between Sixth and Seventh Streets, Philadelphia. Dated Philadelphia, June 25, 1828 (mis-set '1829' in the OCR). A Philadelphia community-organizing meeting notice.",
+      "attendees": []
+    },
+    {
+      "issue": "FJ_1828-06-27",
+      "page": 8,
+      "name": "Protecting Society of the City and County of Philadelphia for the Prevention of Kidnapping and Man-stealing, notice (recurrence)",
+      "date": "1828-04-24",
+      "location": "Philadelphia",
+      "description": "Recurrence of the standing notice of the Protecting Society of the city and county of Philadelphia for the preventing of kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society, inviting the coloured community to apply to the Secretary for assistance in recovering kidnapped friends. Signed John Allen, Secretary, Philadelphia.",
+      "attendees": [
+        ["John Allen", "secretary"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1828-06-27",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (masthead list)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["C. Stockbridge", "agent"],
+        ["Isaac Talbot", "agent"],
+        ["David Walker", "agent"],
+        ["Rev. Thomas Paul", "agent"],
+        ["John Remond", "agent"],
+        ["John Shields", "agent"],
+        ["Isaac Glasko", "agent"],
+        ["George C. Willis", "agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["J. W. Prout", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["R. P. G. Wright", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["George De Grasse", "agent"],
+        ["Frederick Holland", "agent"],
+        ["Joseph Pell", "agent"],
+        ["William Rich", "agent"],
+        ["Theodore S. Wright", "agent"],
+        ["James C. Cowes", "agent"],
+        ["B. F. Hughes", "agent"],
+        ["Leonard Scott", "agent"],
+        ["W. D. Baptist", "agent"],
+        ["Joseph Shepherd", "agent"],
+        ["Seth Henshaw", "agent"],
+        ["John C. Stanley", "agent"],
+        ["Lewis Sheridan", "agent"],
+        ["Rev. Samuel George", "agent"],
+        ["Samuel Thomas", "agent"],
+        ["W. R. Gardiner", "agent"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-07-04",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (masthead list)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["C. Stockbridge", "agent"],
+        ["Isaac Talbot", "agent"],
+        ["David Walker", "agent"],
+        ["Rev. Thomas Paul", "agent"],
+        ["John Remond", "agent"],
+        ["John Shields", "agent"],
+        ["Isaac Glasko", "agent"],
+        ["George C. Willis", "agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["J. W. Prout", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["R. P. G. Wright", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["George De Grasse", "agent"],
+        ["Frederick Holland", "agent"],
+        ["Joseph Pell", "agent"],
+        ["William Rich", "agent"],
+        ["Theodore S. Wright", "agent"],
+        ["James C. Cowes", "agent"],
+        ["B. F. Hughes", "agent"],
+        ["Leonard Scott", "agent"],
+        ["W. D. Baptist", "agent"],
+        ["Joseph Shepherd", "agent"],
+        ["Seth Henshaw", "agent"],
+        ["John C. Stanley", "agent"],
+        ["Lewis Sheridan", "agent"],
+        ["Rev. Samuel George", "agent"],
+        ["Samuel Thomas", "agent"],
+        ["W. R. Gardiner", "agent"]
+      ]
+    }
+  ]
+}
