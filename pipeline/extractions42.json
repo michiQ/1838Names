@@ -47,10 +47,11 @@
       "name": "Organization of the First Coloured Wesleyan Methodist Episcopal Church of the City of Troy",
       "date": "1828-07-07",
       "location": "Troy, New York",
-      "description": "At a meeting of several respectable men of colour at Troy, New York, July 7, 1828, called to organize a society to worship the Supreme Being, resolutions were adopted establishing the 'First Coloured Wesleyan Methodist Episcopal Church' of the city of Troy, a branch of the First Coloured Wesleyan Methodist Episcopal Church of the city of New-York, adopting the Methodist Episcopal discipline of 1828. Leary Johnson was set apart for the holy order of Deacons. Thomas Archibald served as Secretary. (The Chairman and President names are heavily OCR-garbled and omitted.) The proceedings were ordered published in the Troy papers and in Freedom's Journal.",
+      "description": "At a meeting of several respectable men of colour at Troy, New York, July 7, 1828, called to organize a society to worship the Supreme Being, resolutions were adopted establishing the 'First Coloured Wesleyan Methodist Episcopal Church' of the city of Troy, a branch of the First Coloured Wesleyan Methodist Episcopal Church of the city of New-York, adopting the Methodist Episcopal discipline. William Lauder was elected Chairman (and signed as President); Thomas Archibald served as Secretary; Henry Johnson was set apart for the holy order of Deacons. The proceedings were ordered published in the Troy papers and in Freedom's Journal, and were reprinted in the Aug. 22, 1828 issue (which gives the clearer readings of the names).",
       "attendees": [
+        ["William Lauder", "chairman/president"],
         ["Thomas Archibald", "secretary"],
-        ["Leary Johnson", "deacon"]
+        ["Henry Johnson", "deacon"]
       ]
     },
     {

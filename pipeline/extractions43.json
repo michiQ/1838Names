@@ -1,0 +1,58 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-09-05",
+      "page": 2,
+      "headline": "Tribute of Respect: Boston's coloured inhabitants give a public dinner to Prince Abduhl Rahhaman",
+      "author": null,
+      "type": "event report",
+      "summary": "Report (from the Boston Centinel) of a public dinner given by the coloured inhabitants of Boston to Prince Abduhl Rahhaman (Abd al-Rahman Ibrahima, the 'Prince Among Slaves,' freed in 1828 and then touring the North to raise funds to free his family), on the Wednesday previous. A procession formed at the African School House and marched with a Chief Marshal, Young Men, Music, the President of the Day with two Vice-Presidents, the Prince with two Vice-Presidents, the Clergy, and Elder Citizens. Regular and volunteer toasts followed; a song for the occasion was written and sung by Chief Marshal George B. Holmes. Toasts and volunteers came from President of the Day C. A. de Randamie, Vice-President Brown, Domingo Williams (Chairman of the Committee of Arrangements), and Thomas Dalton (President of the Massachusetts General Colored Association, who sent a toast though prevented from attending). A major document of organized Black Boston and of the Ibrahima freedom campaign."
+    },
+    {
+      "issue": "FJ_1828-08-29",
+      "page": 7,
+      "headline": "Notice of the Protecting Society of the City and County of Philadelphia for the Prevention of Kidnapping (recurrence)",
+      "author": "John Allen",
+      "type": "society notice",
+      "summary": "Continued recurrence of the standing notice of the Protecting Society of the city and county of Philadelphia for preventing kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society, formed 1827; persons seeking recovery of kidnapped friends apply to the Secretary. Signed John Allen, Secretary, Philadelphia, April 24, 1828. The notice runs in every issue of this batch (Aug. 15, 22, 29 and Sept. 5, 1828)."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-09-05",
+      "page": 2,
+      "name": "Public Dinner (Tribute of Respect) for Prince Abduhl Rahhaman (Ibrahima), Boston",
+      "date": "1828-08-27",
+      "location": "Boston, Massachusetts (procession formed at the African School House)",
+      "description": "The coloured inhabitants of Boston gave a public dinner in honour of Prince Abduhl Rahhaman (Abd al-Rahman Ibrahima), then visiting the city on his campaign to raise money to redeem his enslaved family. A procession formed at the African School House; the order included a Chief Marshal, the President of the Day with two Vice-Presidents, the Prince with two Vice-Presidents, the Clergy, and Elder Citizens. Named participants: George B. Holmes (Chief Marshal, who wrote and sang a song for the occasion); C. A. de Randamie (President of the Day, gave a welcoming toast to the Prince); Domingo Williams (Chairman of the Committee of Arrangements, gave a toast); and Thomas Dalton (President of the Massachusetts General Colored Association, sent a toast on 'Liberty and Equality' though a prior engagement prevented his attendance). Date approximate ('Wednesday last' per the Boston Centinel).",
+      "attendees": [
+        ["Prince Abduhl Rahhaman", "guest of honour"],
+        ["George B. Holmes", "chief marshal"],
+        ["C. A. de Randamie", "president of the day"],
+        ["Domingo Williams", "chairman of committee of arrangements"],
+        ["Thomas Dalton", "president, Massachusetts General Colored Association"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1828-09-12",
+      "page": 10,
+      "note": "Freedom's Journal authorised agents roster (standing masthead list, back page)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["W. D. Baptist", "agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["Tudor E. Grant", "agent"],
+        ["John Remond", "agent"],
+        ["Thomas Braddock", "agent"]
+      ]
+    }
+  ]
+}
