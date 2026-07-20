@@ -1,0 +1,85 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-10-10",
+      "page": 2,
+      "headline": "Education in Philadelphia: the coloured-youth academy in Morris' Alley reopens under S. H. Gloucester and Edward J. Jones",
+      "author": null,
+      "type": "news item",
+      "summary": "Freedom's Journal reports with pleasure that the Academy in Morris' Alley, Philadelphia, for the education of coloured youths, formerly under the care of the Rev. J. Gloucester (Jeremiah Gloucester), is now reopened under the superintendence of Mr. S. H. Gloucester (Stephen H. Gloucester) and Edward J. Jones, A.B., lately of New York. The editor rejoices that Philadelphia's coloured community now has so good an opportunity for the education of their youth, and encourages support for the young men who have lately opened a school in Philadelphia teaching the higher branches of education. A key document of Black Philadelphia's educational institutions and of the Gloucester family's role in them."
+    },
+    {
+      "issue": "FJ_1828-10-03",
+      "page": 2,
+      "headline": "Report of a Sabbath school, church, and society formed among the coloured people of Rochester",
+      "author": null,
+      "type": "report",
+      "summary": "The editor prints and praises a report and address from Rochester, New York, recounting how a Sabbath school begun nearly two years earlier by a few benevolent individuals for the instruction of both adults and children of 'our neglected race' had generated a spirit of enquiry and led to the formation of a church and society. Congratulates the Rochester brethren on the business-like manner in which their committee discharged their duty. Also on the page: a benevolent appeal to help purchase the freedom of an enslaved man (a North Carolina correspondent's case), and a meeting notice of the Female Dorcas Society (see events). No individual coloured names are given in the Rochester report."
+    },
+    {
+      "issue": "FJ_1828-10-17",
+      "page": 7,
+      "headline": "Notice: New-York African Mutual Instruction Society reopens its evening school",
+      "author": null,
+      "type": "society notice",
+      "summary": "The New-York African Mutual Instruction Society announces the reopening of its evening school on Wednesday, October 1, at No. 96 Centre-street, at the foot of Canal-street, in the basement room of the Organ Factory. A general invitation is given to all adult persons of colour of both sexes; the school teaches Reading, Writing, and Arithmetic for a small fee. Documents adult-education efforts in Black New York."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-10-10",
+      "page": 2,
+      "name": "Reopening of the Academy in Morris' Alley for coloured youth, Philadelphia (under S. H. Gloucester and Edward J. Jones)",
+      "date": "1828-10-10",
+      "location": "Morris' Alley, Philadelphia",
+      "description": "The Academy in Morris' Alley, Philadelphia, for the education of coloured youths — formerly under the care of the Rev. Jeremiah Gloucester — reopened under the joint superintendence of Stephen H. Gloucester and Edward J. Jones, A.B. (recently of New York; one of the earliest Black college graduates in the United States). Reported in Freedom's Journal, Oct. 10, 1828.",
+      "attendees": [
+        ["Jeremiah Gloucester", "former head of the academy"],
+        ["Stephen H. Gloucester", "superintendent"],
+        ["Edward J. Jones", "superintendent"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-10-17",
+      "page": 7,
+      "name": "Public meeting of coloured citizens of the 9th Ward (New York) to aid a house of worship in New Brunswick",
+      "date": "1828-10-01",
+      "location": "530 Broome Street, New York (9th Ward)",
+      "description": "At a public meeting of the coloured citizens of the 9th Ward held at 530 Broome Street, New York, N. Van Liew was called to the Chair and J. W. Prince appointed Secretary. The meeting resolved that they intended to go to New Brunswick, New Jersey, to assist their brethren in erecting a House of Worship. Signed N. Van Liew, Chairman; J. W. Prince, Secretary.",
+      "attendees": [
+        ["N. Van Liew", "chairman"],
+        ["J. W. Prince", "secretary"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-10-03",
+      "page": 2,
+      "name": "Female Dorcas Society meeting notice (New York)",
+      "date": "1828-10-06",
+      "location": "School Room in Mulberry Street, New York",
+      "description": "Notice that the meeting of the Female Dorcas Society — a coloured women's benevolent society in New York — postponed the previous Wednesday on account of bad weather, would take place Monday evening the 6th inst. at the School Room in Mulberry Street. A regular attendance is requested. No individual members are named in the notice.",
+      "attendees": []
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1828-10-17",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (standing masthead list, back page)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["Tudor E. Grant", "agent"],
+        ["John Remond", "agent"],
+        ["W. D. Baptist", "agent"],
+        ["Thomas Braddock", "agent"]
+      ]
+    }
+  ]
+}
