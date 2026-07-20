@@ -1,0 +1,91 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-12-26",
+      "page": 3,
+      "headline": "Address before the Coloured Reading Society of Philadelphia, with its constitution",
+      "author": null,
+      "type": "address",
+      "summary": "Extract of an address delivered before the Coloured Reading Society of Philadelphia, celebrating the establishment of a literary institution for the moral and intellectual improvement of the coloured community, followed (on page 4) by the society's constitution. The society is to be known as 'The Coloured Reading Society for mental improvement'; the rules govern admission (with regard to moral qualifications), an entrance fee and monthly dues, expenditure of funds on books, a librarian to circulate books among members with fines for overdue returns, and weekly meetings to return and receive books and discuss what members have read. A foundational document of Black Philadelphia's literary-society movement. No individual members are named in the extract."
+    },
+    {
+      "issue": "FJ_1828-12-19",
+      "page": 3,
+      "headline": "Benefit sermon and collection for Prince Abduhl Rahhaman at the Rev. Benjamin Paul's church, New York",
+      "author": null,
+      "type": "news item",
+      "summary": "Report that on Sunday evening last a sermon was preached in the Rev. Mr. Paul's (Benjamin Paul's) church in New York and a collection of twenty-five dollars taken for the benefit of Prince Abduhl Rahhaman (Abd al-Rahman Ibrahima). The Prince intended to leave the city that day for Philadelphia, on his way to Norfolk to embark for Liberia. A continuation of the Ibrahima freedom-and-emigration story documented in the Boston 'Tribute of Respect' earlier in the year."
+    },
+    {
+      "issue": "FJ_1828-12-26",
+      "page": 7,
+      "headline": "Death of Miss Anne Appo, Philadelphia",
+      "author": null,
+      "type": "death notice",
+      "summary": "Death notice: in Philadelphia, deeply lamented by a large circle of friends and acquaintances, Miss Anne Appo. The Appo family was a notable free Black family of Philadelphia."
+    },
+    {
+      "issue": "FJ_1829-01-09",
+      "page": 3,
+      "headline": "Our Dorcas Society: winter labours to clothe poor coloured children for school",
+      "author": null,
+      "type": "report",
+      "summary": "An appreciative notice of the New York (coloured) Dorcas Society, whose members have begun their season's labours clothing the poor children of coloured families so they can attend winter school, and an appeal to female readers to form similar societies. Commends the members for the business-like manner in which they conduct the work. No individual members are named."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-12-26",
+      "page": 3,
+      "name": "Founding of the Coloured Reading Society of Philadelphia (for mental improvement)",
+      "date": "1828-12-26",
+      "location": "Philadelphia",
+      "description": "The Coloured Reading Society of Philadelphia — a literary institution for the moral and intellectual improvement of the coloured community — was established with a founding address and a constitution (printed in Freedom's Journal, Dec. 26, 1828). The society maintained a circulating library and held weekly meetings to exchange books and discuss readings. No individual members are named in the extract.",
+      "attendees": []
+    },
+    {
+      "issue": "FJ_1828-12-19",
+      "page": 3,
+      "name": "Benefit sermon and collection for Prince Abduhl Rahhaman, Rev. Benjamin Paul's church, New York",
+      "date": "1828-12-14",
+      "location": "Rev. Benjamin Paul's church, New York",
+      "description": "A sermon was preached and a collection of twenty-five dollars taken at the Rev. Benjamin Paul's church in New York for the benefit of Prince Abduhl Rahhaman (Abd al-Rahman Ibrahima), shortly before his departure via Philadelphia and Norfolk to embark for Liberia.",
+      "attendees": [
+        ["Benjamin Paul", "officiating minister / host church"],
+        ["Prince Abduhl Rahhaman", "beneficiary"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-12-26",
+      "page": 7,
+      "name": "Death of Miss Anne Appo, Philadelphia",
+      "date": "1828-12-26",
+      "location": "Philadelphia",
+      "description": "Death, in Philadelphia, of Miss Anne Appo, deeply lamented by a large circle of friends and acquaintances; recorded in Freedom's Journal's death notices.",
+      "attendees": [
+        ["Anne Appo", "deceased"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1829-01-09",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (standing masthead list, back page)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["Tudor E. Grant", "agent"],
+        ["John Remond", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Peter Howard", "agent"]
+      ]
+    }
+  ]
+}
