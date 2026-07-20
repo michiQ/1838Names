@@ -1,0 +1,71 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1829-02-07",
+      "page": 3,
+      "headline": "Marriages by the Rev. Peter Williams and the Rev. Benjamin Paul, New York",
+      "author": null,
+      "type": "marriage notices",
+      "summary": "Marriage notices in New York: by the Rev. Peter Williams, Mr. Alexander Sutcliff to Mrs. Tally Hunt; and by the Rev. Benjamin Paul, Mr. John Jackson to Miss Diana Henderson. Records of the free Black community of New York, with two of its prominent ministers officiating."
+    },
+    {
+      "issue": "FJ_1829-02-07",
+      "page": 6,
+      "headline": "Deaths noted in Freedom's Journal, New York (Feb. 1829)",
+      "author": null,
+      "type": "death notices",
+      "summary": "New York death notices: Mr. Abraham Cumming, aged 42; Mrs. Emily Johnson, aged 66; and Miss Fanny (surname OCR-garbled). Recorded in Freedom's Journal's death column."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1829-02-07",
+      "page": 3,
+      "name": "Marriages solemnized by the Rev. Peter Williams and the Rev. Benjamin Paul, New York (Feb. 1829)",
+      "date": "1829-02-07",
+      "location": "New York",
+      "description": "Two marriages of the free coloured community of New York: by the Rev. Peter Williams, Alexander Sutcliff to Tally Hunt; and by the Rev. Benjamin Paul, John Jackson to Diana Henderson.",
+      "attendees": [
+        ["Peter Williams", "officiating minister"],
+        ["Alexander Sutcliff", "groom"],
+        ["Tally Hunt", "bride"],
+        ["Benjamin Paul", "officiating minister"],
+        ["John Jackson", "groom"],
+        ["Diana Henderson", "bride"]
+      ]
+    },
+    {
+      "issue": "FJ_1829-02-07",
+      "page": 6,
+      "name": "Deaths noted in Freedom's Journal, New York (Feb. 1829)",
+      "date": "1829-02-07",
+      "location": "New York",
+      "description": "Death notices recorded in Freedom's Journal: Abraham Cumming (aged 42) and Emily Johnson (aged 66). (A third, Miss Fanny, has an OCR-garbled surname and is omitted.)",
+      "attendees": [
+        ["Abraham Cumming", "deceased"],
+        ["Emily Johnson", "deceased"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1829-02-21",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (standing masthead list, back page)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["Tudor E. Grant", "agent"],
+        ["John Remond", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Peter Howard", "agent"]
+      ]
+    }
+  ]
+}
