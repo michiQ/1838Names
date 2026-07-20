@@ -1,0 +1,107 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-11-07",
+      "page": 1,
+      "headline": "Address before the African Grand Lodge of Boston by John T. Hilton (St. John the Baptist festival)",
+      "author": "John T. Hilton",
+      "type": "address",
+      "summary": "Extracts from an address delivered before the African Grand Lodge of Boston, Massachusetts, No. 459, on June 24, 1828, by John T. Hilton, at the annual festival of St. John the Baptist. Hilton (a leading Boston Black Mason and later abolitionist) welcomes visiting brethren of the Harmony Lodge, recounts the founding of Prince Hall / African Lodge Freemasonry and the rejection and eventual granting of its charter through English brethren, invokes Washington as a practical Mason and rebukes slaveholding, and exhorts the brotherhood to fidelity, unity, and virtue. A significant document of early Black Masonry (Prince Hall tradition) reprinted in Freedom's Journal."
+    },
+    {
+      "issue": "FJ_1828-11-14",
+      "page": 7,
+      "headline": "Marriages solemnized by the Rev. Benjamin Paul, New York",
+      "author": null,
+      "type": "marriage notices",
+      "summary": "Marriage notices: in New York on the 7th inst., by the Rev. Benjamin Paul, Mr. Thomas Brown to Miss Rebecca Watson; Mr. Jacob Harmon to Miss Eliza Hull; and Mr. Ezekiel Sachel to Miss Ann Hendrick. Records of the free Black community of New York, with a prominent Black minister officiating."
+    },
+    {
+      "issue": "FJ_1828-10-31",
+      "page": 8,
+      "headline": "Deaths: Jenkins (New-York African Society for Mutual Relief), Scipio White, and others",
+      "author": null,
+      "type": "death notices",
+      "summary": "Death notices in New York: Mr. Jenkins (first name OCR-garbled), aged 30, a native of Philadelphia and for many years a resident of New York and a useful member of the New-York African Society for Mutual Relief, after a lingering illness borne with Christian fortitude; Mr. Scipio White, a native of Attica, aged 83; Clarissa Jane Salisbury, aged 3; and Elmira Prance (name uncertain). Documents members of New York's Black mutual-aid institutions."
+    },
+    {
+      "issue": "FJ_1828-11-14",
+      "page": 7,
+      "headline": "Philadelphia academy for free coloured pupils (successor to James P. Johnson)",
+      "author": null,
+      "type": "school notice",
+      "summary": "Advertisement for a Philadelphia school/academy for free coloured pupils, offering instruction from reading and spelling up through English grammar, geography, natural philosophy, and the Latin and Greek languages, with a graduated quarterly fee schedule. The proprietor is styled 'Successor to James P. Johnson.' Satisfactory information as to the character of the academy and the competency of the teachers may be had of a named clergyman, Thomas Bradford, Esq., and Dr. William Rush (white referees). Dated Philadelphia, Oct. 6. Documents higher-level classical education for Black Philadelphians."
+    },
+    {
+      "issue": "FJ_1828-12-05",
+      "page": 3,
+      "headline": "Notice of the Protecting Society of Philadelphia for the Prevention of Kidnapping (recurrence)",
+      "author": "John Allen",
+      "type": "society notice",
+      "summary": "Continued recurrence of the standing notice of the Protecting Society of the city and county of Philadelphia for preventing kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society. Signed John Allen, Secretary, Philadelphia."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-11-07",
+      "page": 1,
+      "name": "African Grand Lodge of Boston, St. John the Baptist annual festival and address",
+      "date": "1828-06-24",
+      "location": "Boston, Massachusetts",
+      "description": "The African Grand Lodge of Boston (No. 459; Prince Hall tradition) held its annual festival of St. John the Baptist on June 24, 1828, at which John T. Hilton delivered an address (extracted in Freedom's Journal, Nov. 7, 1828). Visiting brethren of the Harmony Lodge attended.",
+      "attendees": [
+        ["John T. Hilton", "orator"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-11-14",
+      "page": 7,
+      "name": "Marriages solemnized by the Rev. Benjamin Paul, New York (Nov. 1828)",
+      "date": "1828-11-07",
+      "location": "New York",
+      "description": "Three marriages of the free coloured community of New York, solemnized on November 7, 1828 by the Rev. Benjamin Paul: Thomas Brown to Rebecca Watson; Jacob Harmon to Eliza Hull; and Ezekiel Sachel to Ann Hendrick.",
+      "attendees": [
+        ["Benjamin Paul", "officiating minister"],
+        ["Thomas Brown", "groom"],
+        ["Rebecca Watson", "bride"],
+        ["Jacob Harmon", "groom"],
+        ["Eliza Hull", "bride"],
+        ["Ezekiel Sachel", "groom"],
+        ["Ann Hendrick", "bride"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-11-14",
+      "page": 7,
+      "name": "New York coloured proprietors' notices in Freedom's Journal (autumn 1828)",
+      "date": "1828-11-14",
+      "location": "New York",
+      "description": "Advertisements placed in Freedom's Journal by coloured proprietors of New York: Scipio C. Augustus, keeping an evening school for instruction in reading, writing, arithmetic, English grammar, and geography in the Manumission Society's School Room in Mulberry Street near Grand; and Peter Lewis, who opened a hair-cutting and shaving 'Dressing Room' for the particular accommodation of persons of colour.",
+      "attendees": [
+        ["Scipio C. Augustus", "evening school teacher"],
+        ["Peter Lewis", "barber/hairdresser"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1828-12-05",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (standing masthead list, back page)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["Tudor E. Grant", "agent"],
+        ["John Remond", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Peter Howard", "agent"]
+      ]
+    }
+  ]
+}
