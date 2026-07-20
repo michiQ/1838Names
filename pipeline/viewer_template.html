@@ -42,11 +42,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #allbtn{position:absolute;top:8px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer}
 #allbtn:hover{border-color:var(--gold)}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
-#timeslider{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);width:min(460px,74%);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:7px 15px 9px;box-shadow:0 2px 12px rgba(0,0,0,.35);z-index:6}
-#timeslider.hide{display:none}
-#timeslider input[type=range]{width:100%;accent-color:var(--gold);cursor:pointer;margin:2px 0}
-#timelabel{color:var(--gold);font:12.5px Georgia;text-align:center}
-#timelabel .sub2{color:var(--dim);font-size:10.5px;font-style:italic}
 #legend span{margin-right:14px}
 /* mini ego panel -- opens on click in the "all connections" full map so you can see a
    node's complete real connections without disturbing the stable main layout. Flex
@@ -170,10 +165,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
       <div id="miniResize" title="drag to resize"></div>
     </div>
     <canvas id="cv"></canvas>
-    <div id="timeslider" class="hide">
-      <input type="range" id="timerange" min="0" max="100" value="100" step="1">
-      <div id="timelabel"></div>
-    </div>
     <div id="hint">drag to pan · scroll to zoom · click/tap a node to navigate</div>
     <button id="detailFab" class="hide">Details</button>
   </div>
@@ -900,11 +891,9 @@ function tick(){
       for(let gx=cx-1;gx<=cx+1;gx++)for(let gy=cy-1;gy<=cy+1;gy++){
         const cell=grid.get(gx+','+gy); if(!cell)continue;
         for(const m of cell) if(m!==n && (m.x>n.x || (m.x===n.x&&m.y>n.y))) repulse(n,m); }
-      // gentle centering so disconnected clumps stay on screen. Stronger when the time
-      // slider has filtered the map down to a small set (few nodes -> keep them tightly
-      // grouped near the middle); lighter on the full unfiltered map so it can breathe.
-      const grav = nodes.length<400 ? 0.0016 : 0.00012;
-      n.vx-=n.x*grav; n.vy-=n.y*grav; n.vz-=(n.z||0)*grav; }
+      // gentle centering so disconnected clumps stay on screen -- eased off from before
+      // so clusters can spread further out instead of being yanked back toward the middle
+      n.vx-=n.x*0.00012; n.vy-=n.y*0.00012; n.vz-=(n.z||0)*0.00012; }
   }
   // gentle pull of each community toward its own centroid (full map only) -- also eased
   // off so clusters stay loosely grouped without compacting toward the center
@@ -965,16 +954,11 @@ function tick(){
 function buildFullGraph(){
   nodes=[]; links=[];
   const core = !window._mapAll;   // default: only well-connected people (see FULL_MIN_CONN)
-  // time slider: only show nodes whose earliest documentary date is <= the threshold.
-  // undated nodes (no p.first / no event date) are always shown.
-  const T = window._timeMax || '9999-99-99';
-  const okDate = d => !d || d <= T;
   const nmap=new Map(), deg=new Map(), edgeCt=new Map();
   for(const [a,b,w] of DATA.edges){ deg.set(a,(deg.get(a)||0)+w); deg.set(b,(deg.get(b)||0)+w);
     edgeCt.set(a,(edgeCt.get(a)||0)+1); edgeCt.set(b,(edgeCt.get(b)||0)+1); }
   function addP(id){ if(nmap.has('p'+id))return nmap.get('p'+id);
     const p=P.get(id); if(!p)return null;
-    if(!okDate(p.first)) return null;   // time slider: not yet visible at this date
     // r/deg here are just placeholders -- sizeByDegree() overwrites both below
     // once the full links list for this view is known
     const n={id,type:'p',label:p.name,r:6,deg:deg.get(id)||0,
@@ -989,7 +973,6 @@ function buildFullGraph(){
     const na=addP(a), nb=addP(b);
     if(na&&nb) links.push({s:na,t:nb,w:Math.min(w,4),faint:w<2});}
   for(const e of E.values()){ if(!e.att.length)continue;
-    if(!okDate(e.date)) continue;   // time slider: event hasn't happened yet at this date
     // org/event nodes only link to people already on the map by default (core mode) --
     // and if the default filter left them with zero qualifying attendees, skip the
     // node entirely rather than draw an isolated circle that just adds to the clutter.
@@ -1060,57 +1043,16 @@ function buildFullGraph(){
   setHighlight(null);
   for(let it=0;it<260;it++) tick();   // settle fully before the very first frame renders
   window._simTTL=0;   // frozen once settled -- draw() only re-ticks while dragging or just after new nodes are added
-  fitFullView();      // frame/centre whatever is on screen (esp. when the time slider filtered it down)
-}
-// centre + zoom the camera so the current node cloud fills the canvas -- keeps a small,
-// time-filtered subset from ending up off-screen (looking blank).
-function fitFullView(){
-  if(!nodes.length){ view={x:0,y:0,k:0.26}; return; }
-  // robust: centre on the MEDIAN position and size to the ~85th-percentile radius, so a
-  // handful of disconnected stragglers can't blow the zoom out and strand the main mass.
-  const xs=nodes.map(n=>n.x).sort((a,b)=>a-b), ys=nodes.map(n=>n.y).sort((a,b)=>a-b);
-  const med=a=>a[Math.floor(a.length/2)];
-  const cx=med(xs), cy=med(ys);
-  const dists=nodes.map(n=>Math.hypot(n.x-cx,n.y-cy)).sort((a,b)=>a-b);
-  const R=Math.max(120, dists[Math.floor(dists.length*0.85)]||dists[dists.length-1]);
-  const cw=cv.clientWidth||900, ch=cv.clientHeight||700;
-  const k=Math.max(0.06, Math.min(1.6, 0.40*Math.min(cw,ch)/R));
-  view={x:-cx*k, y:-cy*k, k};
 }
 const allbtn=document.getElementById('allbtn');
-// ---------- time slider (full "all connections" map only) ----------
-// Each person carries p.first = earliest documentary date. Dragging the slider reveals
-// people/events/orgs whose earliest date is on or before the chosen date, so the network
-// visibly grows over time. Opening the full map starts fully revealed.
-const timeslider=document.getElementById('timeslider'), timerange=document.getElementById('timerange'), timelabel=document.getElementById('timelabel');
-const _fdates=DATA.people.map(p=>p.first).filter(Boolean).sort();
-const _tmaxIso=_fdates.length?_fdates[_fdates.length-1]:'1914-12-31';
-// the slider's LEFT end skips the handful of pre-1820 outlier dates (from a few event
-// references) so you don't drag through ~30 near-empty years; everyone earlier than the
-// start is still revealed at the leftmost position (their date is <= the threshold).
-const _tstartIso=_fdates.length?_fdates[Math.min(_fdates.length-1, 15)]:'1820-01-01';
-const _DAY=86400000;
-const _iso2num=d=>Math.round(Date.parse(d+'T00:00:00Z')/_DAY);
-const _num2iso=n=>new Date(n*_DAY).toISOString().slice(0,10);
-const _MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const _fmt=iso=>{const a=iso.split('-');return _MON[(+a[1])-1]+' '+(+a[2])+', '+a[0];};
-timerange.min=_iso2num(_tstartIso); timerange.max=_iso2num(_tmaxIso); timerange.step=7; timerange.value=timerange.max;
-window._timeMax=_tmaxIso;
-function updateTimeLabel(){ const all=window._timeMax>=_tmaxIso;
-  timelabel.innerHTML='Revealed through <b>'+_fmt(window._timeMax)+'</b>'+(all?' <span class="sub2">· entire span</span>':' <span class="sub2">· drag right to add more</span>'); }
-let _timeDeb=null;
-timerange.addEventListener('input',()=>{
-  window._timeMax=_num2iso(+timerange.value); updateTimeLabel();
-  clearTimeout(_timeDeb); _timeDeb=setTimeout(()=>{ if(window._fullView) buildFullGraph(); },110);
-});
 allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
   document.getElementById('hint').textContent = window._fullView
     ? 'tap a node to open its full connections in the panel · drag/rotate empty space · drag a node out — it sticks · double-tap to release · pinch or scroll to zoom'
     : 'drag to pan · pinch or scroll to zoom · tap a node to navigate';
-  if(window._fullView){ window._timeMax=_tmaxIso; timerange.value=timerange.max; updateTimeLabel(); timeslider.classList.remove('hide'); buildFullGraph(); }
-  else { timeslider.classList.add('hide'); window._timeMax=_tmaxIso; closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
+  if(window._fullView) buildFullGraph();
+  else { closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
 });
 function draw(){
   ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);

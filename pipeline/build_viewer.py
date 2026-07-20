@@ -4,8 +4,8 @@ import sqlite3, json, re, os
 
 DB = os.environ.get("BM_DB", "/tmp/run30/black_metropolis.db")
 OUT = "/tmp/run30/out/1838_black_metropolis_viewer.html"
-TPL = "/sessions/pensive-gallant-mendel/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
-ORG_ALIASES = "/sessions/pensive-gallant-mendel/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
+TPL = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
+ORG_ALIASES = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
 
 # organization name normalization: fold known spelling/punctuation variants of the same
 # org into one canonical display name before counting/deduping. Curated by Michiko; see
@@ -132,14 +132,14 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/pensive-gallant-mendel/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
 
 # which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
 # any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
 import glob as _glob, os as _os
-PAGES_DIR = "/sessions/pensive-gallant-mendel/mnt/Newspapers/1838 Names Database/pages"
+PAGES_DIR = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pages"
 jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
                       for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
 
@@ -215,41 +215,6 @@ for o in orgs_out:
         if pid in people:
             people[pid].setdefault("orgs", []).append(o["name"])
 print("orgs (>=2 members):", len(orgs_out), "| top:", [(o['name'], len(o['members'])) for o in orgs_out[:5]])
-
-# earliest documentary date per person -> p["first"] ("YYYY-MM-DD"), powers the time
-# slider on the full "all connections" map. Min over: newspaper mentions/articles (issue
-# date), event dates, census year (1838/1847), and the 1820 directory. Winch-reference-only
-# people with no dated document get no "first" (they are shown regardless on the slider).
-_slug2date = {v["slug"]: v["date"] for v in issues.values() if v.get("date")}
-_DATE_RE = re.compile(r"^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?")
-def _normd(d):
-    if not d: return None
-    m = _DATE_RE.match(str(d).strip())   # require a leading 4-digit year; rejects "c. 1866", "May 1828", etc.
-    if not m: return None
-    y, mo, da = m.group(1), m.group(2) or "01", m.group(3) or "01"
-    if not ("1700" <= y <= "1930"): return None   # sanity window for this corpus
-    return f"{y}-{mo}-{da}"
-for pid, p in people.items():
-    cands = []
-    for m in p.get("mentions", []):
-        dd = _normd(_slug2date.get(m.get("i")))
-        if dd: cands.append(dd)
-    for a in p.get("articles", []):
-        art = articles.get(a.get("a"))
-        if art and art.get("issue"):
-            dd = _normd(_slug2date.get(art["issue"]))
-            if dd: cands.append(dd)
-    for ev in p.get("events", []):
-        e = events.get(ev.get("e"))
-        if e:
-            dd = _normd(e.get("date"))
-            if dd: cands.append(dd)
-    for c in p.get("census", []):
-        if c.get("y"): cands.append(f'{c["y"]}-01-01')
-    for d in p.get("directory", []):
-        if d.get("y"): cands.append(f'{d["y"]}-01-01')
-    if cands:
-        p["first"] = min(cands)
 
 # prune people with no content at all (after census attach)
 keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory")}
