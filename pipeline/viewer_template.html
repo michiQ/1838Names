@@ -391,8 +391,13 @@ const orgsAll = [...(DATA.orgs||[])].sort((a,b)=>a.name.localeCompare(b.name));
 orgsel.innerHTML = '<option value="">All organizations…</option>' + orgsAll.map(o=>
   `<option value="${esc(o.name)}">${esc(o.name)} (${o.members.length})</option>`).join('');
 orgsel.addEventListener('change',()=>{
-  window._orgFilter = orgsel.value || null;
-  if(mode!=='p') setMode('p'); else renderList(search.value);});
+  const name = orgsel.value || null;
+  window._orgFilter = name;
+  // filter the people list to the org's members...
+  if(mode!=='p') setMode('p'); else renderList(search.value);
+  // ...and focus the graph/detail panel on that organization (or restore on clear)
+  if(name) selectOrg(name);
+  else if(sorted.length) select(sorted[0].id);});
 const papersel = document.getElementById('papersel');
 { const pc = {};
   for(const p of P.values()){
