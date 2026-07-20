@@ -900,9 +900,11 @@ function tick(){
       for(let gx=cx-1;gx<=cx+1;gx++)for(let gy=cy-1;gy<=cy+1;gy++){
         const cell=grid.get(gx+','+gy); if(!cell)continue;
         for(const m of cell) if(m!==n && (m.x>n.x || (m.x===n.x&&m.y>n.y))) repulse(n,m); }
-      // gentle centering so disconnected clumps stay on screen -- eased off from before
-      // so clusters can spread further out instead of being yanked back toward the middle
-      n.vx-=n.x*0.00012; n.vy-=n.y*0.00012; n.vz-=(n.z||0)*0.00012; }
+      // gentle centering so disconnected clumps stay on screen. Stronger when the time
+      // slider has filtered the map down to a small set (few nodes -> keep them tightly
+      // grouped near the middle); lighter on the full unfiltered map so it can breathe.
+      const grav = nodes.length<400 ? 0.0016 : 0.00012;
+      n.vx-=n.x*grav; n.vy-=n.y*grav; n.vz-=(n.z||0)*grav; }
   }
   // gentle pull of each community toward its own centroid (full map only) -- also eased
   // off so clusters stay loosely grouped without compacting toward the center
@@ -1064,10 +1066,15 @@ function buildFullGraph(){
 // time-filtered subset from ending up off-screen (looking blank).
 function fitFullView(){
   if(!nodes.length){ view={x:0,y:0,k:0.26}; return; }
-  let cx=0,cy=0; for(const n of nodes){ cx+=n.x; cy+=n.y; } cx/=nodes.length; cy/=nodes.length;
-  let R=1; for(const n of nodes){ R=Math.max(R, Math.hypot(n.x-cx, n.y-cy)); }
+  // robust: centre on the MEDIAN position and size to the ~85th-percentile radius, so a
+  // handful of disconnected stragglers can't blow the zoom out and strand the main mass.
+  const xs=nodes.map(n=>n.x).sort((a,b)=>a-b), ys=nodes.map(n=>n.y).sort((a,b)=>a-b);
+  const med=a=>a[Math.floor(a.length/2)];
+  const cx=med(xs), cy=med(ys);
+  const dists=nodes.map(n=>Math.hypot(n.x-cx,n.y-cy)).sort((a,b)=>a-b);
+  const R=Math.max(120, dists[Math.floor(dists.length*0.85)]||dists[dists.length-1]);
   const cw=cv.clientWidth||900, ch=cv.clientHeight||700;
-  const k=Math.max(0.05, Math.min(1.4, 0.42*Math.min(cw,ch)/R));
+  const k=Math.max(0.06, Math.min(1.6, 0.40*Math.min(cw,ch)/R));
   view={x:-cx*k, y:-cy*k, k};
 }
 const allbtn=document.getElementById('allbtn');
