@@ -1,0 +1,108 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1828-07-25",
+      "page": 4,
+      "headline": "Philadelphia Report (concluded): committee of coloured citizens answers a hostile critic",
+      "author": "Committee of Coloured Citizens of Philadelphia (Francis C. Webb, Chairman; Charles H. Leveck, Secretary)",
+      "type": "report",
+      "summary": "Concluding installment of an original communication to Freedom's Journal, the 'Philadelphia Report,' in which a committee of coloured citizens of Philadelphia rebuts a writer who had disparaged the city's coloured population as idle, insolent, and crowding the streets and Mayor's Court room. The committee defends the community's industry, church-going, and respectability, and vows that the critic's 'degrading communications' will be forgotten. Signed by a Philadelphia committee: F. C. Webb (Chairman), Wm. Whipper, N. Clark, James Cornish, and C. H. Leveck (Secretary). A significant document of organized Philadelphia Black self-defense in the press."
+    },
+    {
+      "issue": "FJ_1828-07-11",
+      "page": 2,
+      "headline": "Correspondent praises the coloured population of Philadelphia",
+      "author": null,
+      "type": "correspondence",
+      "summary": "A correspondent urges that anyone wishing to understand the improvement of the coloured people must visit Philadelphia, crediting the city's coloured population as proprietors of no fewer than six brick churches and as more advanced and better ordered than elsewhere. References the Manumission Society of Philadelphia and the Infant School Society (both white-led benevolent bodies) working among coloured children. Context on Philadelphia's standing as a center of free Black institutional life. No individual Black names given."
+    },
+    {
+      "issue": "FJ_1828-08-08",
+      "page": 7,
+      "headline": "Notice of the Protecting Society of the City and County of Philadelphia for the Prevention of Kidnapping (recurrence)",
+      "author": "John Allen",
+      "type": "society notice",
+      "summary": "Recurrence of the standing notice of the Protecting Society of the city and county of Philadelphia for preventing kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society, formed in 1827 to combat the kidnapping of free persons of colour carried on in the city by 'a set of unprincipled men' for years past. Persons seeking recovery of kidnapped friends are directed to apply, personally or by post-paid letter, to the Secretary. Signed John Allen, Secretary; dated Philadelphia, April 24, 1828. The notice also appears in the July 25 and August 1 issues of this batch."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1828-07-25",
+      "page": 4,
+      "name": "Committee of Coloured Citizens of Philadelphia (Philadelphia Report committee)",
+      "date": "1828-07-25",
+      "location": "Philadelphia",
+      "description": "The committee of coloured citizens of Philadelphia that authored the 'Philadelphia Report' published in Freedom's Journal, defending the city's coloured population against a hostile critic. Committee members named at the close of the report: F. C. Webb (Chairman), William Whipper, N. Clark, James Cornish, and C. H. Leveck (Secretary).",
+      "attendees": [
+        ["Francis C. Webb", "chairman"],
+        ["William Whipper", "committee"],
+        ["N. Clark", "committee"],
+        ["James Cornish", "committee"],
+        ["Charles H. Leveck", "secretary"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-07-25",
+      "page": 3,
+      "name": "Organization of the First Coloured Wesleyan Methodist Episcopal Church of the City of Troy",
+      "date": "1828-07-07",
+      "location": "Troy, New York",
+      "description": "At a meeting of several respectable men of colour at Troy, New York, July 7, 1828, called to organize a society to worship the Supreme Being, resolutions were adopted establishing the 'First Coloured Wesleyan Methodist Episcopal Church' of the city of Troy, a branch of the First Coloured Wesleyan Methodist Episcopal Church of the city of New-York, adopting the Methodist Episcopal discipline of 1828. Leary Johnson was set apart for the holy order of Deacons. Thomas Archibald served as Secretary. (The Chairman and President names are heavily OCR-garbled and omitted.) The proceedings were ordered published in the Troy papers and in Freedom's Journal.",
+      "attendees": [
+        ["Thomas Archibald", "secretary"],
+        ["Leary Johnson", "deacon"]
+      ]
+    },
+    {
+      "issue": "FJ_1828-08-01",
+      "page": 11,
+      "name": "African Union Camp Meeting at Flushing",
+      "date": "1828-08-14",
+      "location": "Flushing, New York",
+      "description": "Notice that an African Union Camp Meeting would be held at Flushing on the 14th of August, 1828, with a general invitation extended to all sects and parties. The notice also recurs in the August 8 issue.",
+      "attendees": []
+    },
+    {
+      "issue": "FJ_1828-08-08",
+      "page": 7,
+      "name": "Protecting Society of the City and County of Philadelphia for the Prevention of Kidnapping and Man-stealing, notice (recurrence)",
+      "date": "1828-04-24",
+      "location": "Philadelphia",
+      "description": "Recurrence of the standing notice of the Protecting Society of the city and county of Philadelphia for preventing kidnapping and man-stealing, auxiliary to the Philadelphia Abolition Society, inviting the coloured community to apply to the Secretary for assistance in recovering kidnapped friends. Signed John Allen, Secretary, Philadelphia. Also appears in the July 25 and August 1 issues of this batch.",
+      "attendees": [
+        ["John Allen", "secretary"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1828-08-01",
+      "page": 12,
+      "note": "Freedom's Journal authorised agents roster (standing masthead list)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["C. Stockbridge", "agent"],
+        ["Isaac Talbot", "agent"],
+        ["David Walker", "agent"],
+        ["Rev. Thomas Paul", "agent"],
+        ["John Remond", "agent"],
+        ["John Shields", "agent"],
+        ["Isaac Glasko", "agent"],
+        ["George C. Willis", "agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["J. W. Prout", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["R. P. G. Wright", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["George De Grasse", "agent"],
+        ["Frederick Holland", "agent"],
+        ["Tudor E. Grant", "agent"]
+      ]
+    }
+  ]
+}
