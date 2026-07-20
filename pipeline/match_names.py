@@ -4,12 +4,13 @@ import sqlite3, re, os, glob, json
 from difflib import SequenceMatcher
 
 DB = "/tmp/run30/black_metropolis.db"
-OCR_DIR = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/ocr_text"
+OCR_DIR = "/sessions/pensive-gallant-mendel/mnt/Newspapers/1838 Names Database/ocr_text"
 
 PAPER = {"CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)",
          "EL": "Before Black Bohemia: Edmonia Lewis in the Post-Bellum, Pre-Harlem Period (dissertation, Melissa M. Benbow Flowers, Univ. of Delaware, 2024)"}
 
 DATE_OVERRIDE = {
+  "PP_086": "1912-07-06", "PP_087": "1912-02-24", "PP_088": "1914-08-08", "PP_089": "1912-03-30", "PP_090": "1914-08-22", "PP_091": "1913-01-04", "PP_092": "1914-03-14", "PP_093": "1913-11-15", "PP_094": "1914-06-06", "PP_095": "1912-09-14", "PP_096": "1913-02-08", "PP_097": "1912-06-01", "PP_098": "1914-05-16", "PP_099": "1912-10-19", "PP_100": "1914-02-28",
  "PP_000": "1914-10-24", "PP_001": "1912-11-16", "PP_002": "1913-02-15", "PP_003": "1912-01-27",
  "PP_004": "1913-04-19", "PP_005": "1914-06-20", "PP_006": "1914-05-02", "PP_007": "1912-11-23",
  "PP_008": "1914-05-09", "PP_009": "1912-10-19", "PP_010": "1914-04-04", "PP_011": "1912-08-24",
