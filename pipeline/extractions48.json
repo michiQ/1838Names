@@ -1,0 +1,87 @@
+{
+  "articles": [
+    {
+      "issue": "FJ_1829-03-28",
+      "page": 8,
+      "headline": "Valedictory: the final number of Freedom's Journal; Cornish to resume publication",
+      "author": "John B. Russwurm",
+      "type": "editorial / valedictory",
+      "summary": "The closing address of Freedom's Journal in its final number (March 28, 1829). The editor, John B. Russwurm — about to leave for Liberia — dissolves his connexion with the paper and offers a last few words to the patrons who supported the effort to dispel the ignorance surrounding the community, reflecting bleakly on the prejudice and denial of citizenship rights facing coloured Americans. A notice states that the paper is authorized by Mr. (Samuel E.) Cornish, who succeeds in the publication of the Journal, that the next number will appear during the last week in May, and urges agents to enlarge the subscription list. (The paper resumed under Cornish as 'The Rights of All.') A landmark document ending the first African American newspaper's original run."
+    },
+    {
+      "issue": "FJ_1829-03-28",
+      "page": 4,
+      "headline": "Case of Mr. George Hamlet: a free Black New Yorker imprisoned at Norfolk for want of freedom papers",
+      "author": null,
+      "type": "news item",
+      "summary": "Report that Mr. George Hamlet of New York, a British subject and a man of colour, while travelling in pursuit of his lawful business, was arrested and cast into a loathsome prison at Norfolk, Virginia, because he did not have the documents required to prove that he was a freeman. A pointed illustration of the certificate/registration laws used against free Black travelers in the slave states."
+    },
+    {
+      "issue": "FJ_1829-03-21",
+      "page": 6,
+      "headline": "Marriage at Philadelphia by the Rev. Charles Pierce",
+      "author": null,
+      "type": "marriage notice",
+      "summary": "Marriage notice: in Philadelphia, on the 16th inst., by the Rev. Charles Pierce, Mr. John Harris of Baltimore to Miss Rosella Baker of Philadelphia. A record of the free Black community of Philadelphia."
+    }
+  ],
+  "events": [
+    {
+      "issue": "FJ_1829-03-28",
+      "page": 8,
+      "name": "Final number of Freedom's Journal — Russwurm's valedictory and transfer to Samuel E. Cornish",
+      "date": "1829-03-28",
+      "location": "New York",
+      "description": "The last issue of Freedom's Journal (the first African American newspaper) appeared March 28, 1829. Editor John B. Russwurm, departing for Liberia, published a valedictory dissolving his connexion with the paper, and a notice authorized by Samuel E. Cornish announced that Cornish would resume the publication, with the next number to appear in the last week of May. The paper continued under Cornish as 'The Rights of All.'",
+      "attendees": [
+        ["John B. Russwurm", "retiring editor"],
+        ["Samuel E. Cornish", "succeeding editor"]
+      ]
+    },
+    {
+      "issue": "FJ_1829-03-28",
+      "page": 4,
+      "name": "Imprisonment of George Hamlet at Norfolk for want of freedom papers",
+      "date": "1829-03-28",
+      "location": "Norfolk, Virginia",
+      "description": "George Hamlet, a free man of colour of New York and a British subject, was arrested while travelling on lawful business and imprisoned at Norfolk, Virginia, for lacking documents to prove he was free, as reported in Freedom's Journal's final issue.",
+      "attendees": [
+        ["George Hamlet", "subject (free man imprisoned)"]
+      ]
+    },
+    {
+      "issue": "FJ_1829-03-21",
+      "page": 6,
+      "name": "Marriage of John Harris and Rosella Baker, Philadelphia (Rev. Charles Pierce officiating)",
+      "date": "1829-03-16",
+      "location": "Philadelphia",
+      "description": "In Philadelphia, on March 16, 1829, by the Rev. Charles Pierce, John Harris of Baltimore married Rosella Baker of Philadelphia.",
+      "attendees": [
+        ["Charles Pierce", "officiating minister"],
+        ["John Harris", "groom"],
+        ["Rosella Baker", "bride"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "FJ_1829-03-28",
+      "page": 8,
+      "note": "Freedom's Journal authorised agents roster (final issue back page)",
+      "names": [
+        ["Rev. S. E. Cornish", "general agent"],
+        ["Francis Webb", "agent"],
+        ["Stephen Smith", "agent"],
+        ["J. B. Vashon", "agent"],
+        ["Hezekiah Grice", "agent"],
+        ["Rev. Nathaniel Paul", "agent"],
+        ["Austin Steward", "agent"],
+        ["Rev. W. P. Williams", "agent"],
+        ["Tudor E. Grant", "agent"],
+        ["John Remond", "agent"],
+        ["Thomas Braddock", "agent"],
+        ["Peter Howard", "agent"]
+      ]
+    }
+  ]
+}
