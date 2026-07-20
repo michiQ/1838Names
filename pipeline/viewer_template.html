@@ -1058,6 +1058,17 @@ function buildFullGraph(){
   setHighlight(null);
   for(let it=0;it<260;it++) tick();   // settle fully before the very first frame renders
   window._simTTL=0;   // frozen once settled -- draw() only re-ticks while dragging or just after new nodes are added
+  fitFullView();      // frame/centre whatever is on screen (esp. when the time slider filtered it down)
+}
+// centre + zoom the camera so the current node cloud fills the canvas -- keeps a small,
+// time-filtered subset from ending up off-screen (looking blank).
+function fitFullView(){
+  if(!nodes.length){ view={x:0,y:0,k:0.26}; return; }
+  let cx=0,cy=0; for(const n of nodes){ cx+=n.x; cy+=n.y; } cx/=nodes.length; cy/=nodes.length;
+  let R=1; for(const n of nodes){ R=Math.max(R, Math.hypot(n.x-cx, n.y-cy)); }
+  const cw=cv.clientWidth||900, ch=cv.clientHeight||700;
+  const k=Math.max(0.05, Math.min(1.4, 0.42*Math.min(cw,ch)/R));
+  view={x:-cx*k, y:-cy*k, k};
 }
 const allbtn=document.getElementById('allbtn');
 // ---------- time slider (full "all connections" map only) ----------
@@ -1066,13 +1077,17 @@ const allbtn=document.getElementById('allbtn');
 // visibly grows over time. Opening the full map starts fully revealed.
 const timeslider=document.getElementById('timeslider'), timerange=document.getElementById('timerange'), timelabel=document.getElementById('timelabel');
 const _fdates=DATA.people.map(p=>p.first).filter(Boolean).sort();
-const _tminIso=_fdates.length?_fdates[0]:'1820-01-01', _tmaxIso=_fdates.length?_fdates[_fdates.length-1]:'1914-12-31';
+const _tmaxIso=_fdates.length?_fdates[_fdates.length-1]:'1914-12-31';
+// the slider's LEFT end skips the handful of pre-1820 outlier dates (from a few event
+// references) so you don't drag through ~30 near-empty years; everyone earlier than the
+// start is still revealed at the leftmost position (their date is <= the threshold).
+const _tstartIso=_fdates.length?_fdates[Math.min(_fdates.length-1, 15)]:'1820-01-01';
 const _DAY=86400000;
 const _iso2num=d=>Math.round(Date.parse(d+'T00:00:00Z')/_DAY);
 const _num2iso=n=>new Date(n*_DAY).toISOString().slice(0,10);
 const _MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const _fmt=iso=>{const a=iso.split('-');return _MON[(+a[1])-1]+' '+(+a[2])+', '+a[0];};
-timerange.min=_iso2num(_tminIso); timerange.max=_iso2num(_tmaxIso); timerange.step=7; timerange.value=timerange.max;
+timerange.min=_iso2num(_tstartIso); timerange.max=_iso2num(_tmaxIso); timerange.step=7; timerange.value=timerange.max;
 window._timeMax=_tmaxIso;
 function updateTimeLabel(){ const all=window._timeMax>=_tmaxIso;
   timelabel.innerHTML='Revealed through <b>'+_fmt(window._timeMax)+'</b>'+(all?' <span class="sub2">· entire span</span>':' <span class="sub2">· drag right to add more</span>'); }
