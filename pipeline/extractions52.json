@@ -1,0 +1,48 @@
+{
+  "articles": [
+    {
+      "issue": "PF_1844-12-05",
+      "page": 1,
+      "headline": "Extracts from the American Slave Code",
+      "author": null,
+      "type": "feature / documentary compilation",
+      "summary": "A major front-page feature abridging the statutes of the slave states and of the United States to give 'a faint view of the cruel oppression to which the slaves are subject.' The compiler notes the provisions were drawn from the slave codes found in the Philadelphia Law Library, and lays out, state by state (Virginia, Kentucky, Mississippi, Georgia, the Carolinas, Louisiana, etc.), the penalties for slaves and free colored persons: bans on assembling for mental instruction, on teaching reading or writing, on keeping boats or goods, and the presumption in several states that 'every coloured person is presumed to be a slave, unless he can prove himself free.' A widely reprinted abolitionist reference document. No Black Philadelphia individuals named."
+    },
+    {
+      "issue": "PF_1844-09-10",
+      "page": 1,
+      "headline": "Speeches at the Norristown Meeting (non-resistance vs. political action)",
+      "author": null,
+      "type": "meeting report / debate",
+      "summary": "A serialized report (running across several numbers of the Freeman, Sept.-Dec. 1844) of the speeches at a large anti-slavery meeting held at Norristown, Montgomery County, in August 1844, staging the Garrisonian debate between political action and non-resistance/no-government abolitionism. Thomas Earle argued the abolitionist's duty to remain connected with government and vote 'under a bad government, to make it better,' while the non-resistant speakers (the Freeman being edited by C. C. Burleigh) held that voting under and swearing to support a pro-slavery Constitution implicates the voter in slavery. The reported exchanges repeatedly reference Robert Purvis. Largely a white-led Garrisonian occasion; recorded here for context and for Purvis's participation."
+    }
+  ],
+  "events": [
+    {
+      "issue": "PF_1844-12-05",
+      "page": 3,
+      "name": "Torrey Meeting — meeting of colored people at Little Wesley Church, Philadelphia, for Charles T. Torrey",
+      "date": "1844-11",
+      "location": "Little Wesley Church, Hirst Street, Philadelphia",
+      "description": "The Freeman reports the proceedings of 'a large and animated meeting composed mainly of colored people, held on behalf of Mr. Torrey at Little Wesley Church, Hirst st.' Several spirited resolutions were passed and addresses were delivered by Robert Purvis, George H. Earle, William Whipper, and Dr. (James J. G.) Bias, and others; a collection of $8.36 was taken up for the benefit of Charles T. Torrey, the abolitionist then imprisoned in Maryland for aiding fugitives. A related fund/donation column in the same number acknowledges contributions from Black Philadelphia congregations and institutions — the Colored Baptist Church, Rev. C. W. Gardner's Church, Mt. Pisgah Church, the Wesley Church, and the Demosthenian Institute — alongside individual Quaker donors (Dr. Caspar Wistar, Esther Moore, Hiram Corson). A strong document of organized Black Philadelphia leadership and church life in the mid-1840s.",
+      "attendees": [
+        ["Robert Purvis", "speaker / addressed the meeting"],
+        ["William Whipper", "speaker / addressed the meeting"],
+        ["James J. G. Bias", "speaker / addressed the meeting"],
+        ["George H. Earle", "speaker / addressed the meeting"]
+      ]
+    },
+    {
+      "issue": "PF_1844-11-07",
+      "page": 3,
+      "name": "Anti-Slavery Fair sewing circle meets weekly in Sarah M. Douglass's School Room, Philadelphia",
+      "date": "1844-11",
+      "location": "Sarah M. Douglass's School Room, Philadelphia",
+      "description": "A notice that the sewing circle for the Anti-Slavery Fair had commenced its weekly meetings, held on Thursday afternoons 'in S. M. Douglass' School Room' (also given as 'Sarah Douglass' school room' at 3 o'clock P.M., Thursday, November 14th). Sarah Mapps Douglass, the prominent free-Black Philadelphia educator, made her schoolroom the regular venue for the fair-preparation meetings of the (Philadelphia Female) Anti-Slavery Society. A record of Black Philadelphia institutional space anchoring organized abolitionist women's work.",
+      "attendees": [
+        ["Sarah M. Douglass", "host (meetings held in her school room)"]
+      ]
+    }
+  ],
+  "agents": []
+}

@@ -90,7 +90,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Harman, John** (census, 2 census records) ↔ **Harman, John S** (1820directory, 1 1820 directory records)
 - [HIGH] **Hart, John L** (census, 1 census records) ↔ **Hart, John** (1820directory, 1 1820 directory records)
 - [HIGH] **Henderson, Edward** (winch, 1 Winch refs, 2 census records) ↔ **HENDERSON, E J** (census, 1 census records)
-- [HIGH] **Henry, George** (winch, 1 appearances, 1 Winch refs) ↔ **HENRY, GEORGE W** (census, 1 appearances, 2 census records)
+- [HIGH] **Henry, George** (winch, 3 appearances, 1 Winch refs) ↔ **HENRY, GEORGE W** (census, 3 appearances, 2 census records)
 - [HIGH] **Henry, J.** (winch, 7 appearances, 1 Winch refs) ↔ **HENRY, JOSEPH** (census, 2 appearances, 2 census records)
 - [HIGH] **Henry, J.** (winch, 7 appearances, 1 Winch refs) ↔ **Henry, John** (census, 4 appearances, 2 census records)
 - [HIGH] **Henry, J.** (winch, 7 appearances, 1 Winch refs) ↔ **Henry, John** (1820directory, 4 appearances, 1 1820 directory records)
