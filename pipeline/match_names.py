@@ -74,7 +74,11 @@ def main():
     # the kidnapper "Joseph Johnson" (Cannon-Johnson ring) shares a name with Winch's
     # "Johnson, Joseph"; do NOT auto-attribute the kidnapping-issue mentions to the
     # innocent Winch person. Format: {(canonical_name, issue_slug), ...}.
-    SUPPRESS_NAME_SLUG = {("Johnson, Joseph", "FJ_1828-05-23")}
+    SUPPRESS_NAME_SLUG = {("Johnson, Joseph", "FJ_1828-05-23"),
+                          # "Dr. Bias" biographical passage is Dr. J.J.G. Bias (id already gets the
+                          # "J. J. G. Bias" mention); the stray match to his wife Eliza came from the
+                          # "E" in "A. M. E. Connection" matching her initial. Michiko 2026-07-21.
+                          ("Bias, Eliza A.", "PP_015")}
     _name2pids = {}
     for _pid, _nm in people:
         _name2pids.setdefault(_nm, set()).add(_pid)
