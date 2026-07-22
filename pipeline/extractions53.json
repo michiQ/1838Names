@@ -1,0 +1,58 @@
+{
+  "articles": [
+    {
+      "issue": "PF_1838-03-15",
+      "page": 1,
+      "headline": "First number of The Pennsylvania Freeman (John G. Whittier, editor)",
+      "author": null,
+      "type": "masthead / editorial (context)",
+      "summary": "This issue (No. I, Vol. IV, Whole No. 79, Third Month 15, 1838) is the first published under the title 'The Pennsylvania Freeman,' continuing the whole-number series of the Philadelphia National Enquirer. The masthead names John G. Whittier as editor and the Eastern District Executive Committee of the Anti-Slavery Society of Pennsylvania as publisher, at No. 223 Arch Street, Philadelphia, issued every Fifth-day. The lead 'The Freeman' column and other front-page matter are largely white-abolitionist society news (a Westmoreland County A.S. Society report from Greensburg; the Clerical Convention at Worcester, Mass.; the newly formed Connecticut Anti-Slavery Society at Hartford). Recorded for the paper's historical significance to the 1838 Philadelphia record; no Black Philadelphia roster on this front page."
+    },
+    {
+      "issue": "PF_1838-03-15",
+      "page": 1,
+      "headline": "Rev. Dr. Ely's Slave Ambrose",
+      "author": null,
+      "type": "expose / reprint",
+      "summary": "A pointed item, reprinted from the New York Observer and other religious journals, exposing that the Rev. Dr. Ezra Stiles Ely — a prominent Philadelphia Presbyterian clergyman — had removed some two years earlier to Missouri and there purchased a slave named Ambrose, whom he was now sending down the Mississippi, away from his family, and who had been assigned as property 'for the payment of his master's debts.' The Freeman holds it up as 'a precious specimen of pious fraud' by a Northern minister. Ambrose is the enslaved man at the center; Ely is the (white) Philadelphia clergyman named."
+    },
+    {
+      "issue": "PF_1838-03-22",
+      "page": 1,
+      "headline": "Address to the Colored Citizens of Pennsylvania (reprinted from the Colored American)",
+      "author": null,
+      "type": "address / reprint",
+      "summary": "An extract taken from the New York Colored American addressed to the colored citizens of Pennsylvania in the wake of the state Reform Convention's move to strip them of the franchise. The Freeman prefaces it with warm remarks on 'our brother Cornish' (Samuel E. Cornish) and on the paper's kindred spirits in Philadelphia — 'the Doctor' and other friends — expressing sympathy and pledging solidarity as Pennsylvania's Black community organized against disfranchisement. Context for the March 1838 disfranchisement crisis; no new Black Philadelphia roster in the extract itself."
+    }
+  ],
+  "events": [
+    {
+      "issue": "PF_1838-03-22",
+      "page": 1,
+      "name": "Meeting of the colored citizens of Pennsylvania to adopt the Appeal of Forty Thousand (against disfranchisement)",
+      "date": "1838-03-14",
+      "location": "Presbyterian church, Seventh Street below Shippen, Philadelphia",
+      "description": "The Freeman prints the full proceedings of 'a very numerous and respectable meeting of the colored citizens of Pennsylvania,' held in the Presbyterian church, Seventh Street below Shippen, on the evening of the 14th inst. (March 14, 1838). The meeting was organized by calling John P. Burr to the chair, with Thomas Butler and Stephen H. Gloucester as Vice Presidents and James Cornish and James Forten, Jr. as Secretaries. After prayer by the Rev. Charles W. Gardner, the chairman stated the object: to receive the report of the committee appointed at a prior public meeting held in St. Paul's (Lutheran) Church, Quince Street, and the 'Appeal of the 40,000 disfranchised citizens' which that committee had been instructed to frame and lay before the people of the commonwealth, remonstrating against the Reform Convention's act of stripping colored Pennsylvanians of the vote. Robert Purvis, foreman of the committee, presented and read the Appeal (the celebrated 'Appeal of Forty Thousand Citizens, Threatened with Disfranchisement, to the People of Pennsylvania'); it was accepted, and remarks were made by James Forten, Sr., Robert Purvis, John C. Bowers, Frederick A. Hinton, and the Rev. Charles W. Gardner, after which it was adopted 'with a spontaneous and unanimous spirit, equalled only by the memorable meeting of 1817.' The committee that had prepared the report and appeal at the St. Paul's Lutheran Church meeting comprised Robert Purvis, James Cornish, John C. Bowers, Robert B. Forten, James J. G. Bias, James Needham, and John P. Burr. On motion of S. H. Gloucester, the same committee, with the addition of Frederick A. Hinton, J. C. White, and James Bird, was charged with superintending the publishing and circulating of the Appeal and collecting funds. A further committee of five — James Forten, Sr., S. H. Gloucester, Robert Douglass, Charles W. Gardner, and Bishop Morris Brown — was appointed to draw up a remonstrance against the American Colonization Society for presentation to the churches, presbyteries, conferences, and conventions. A landmark document of organized Black Philadelphia in the pivotal 1838 disfranchisement crisis.",
+      "attendees": [
+        ["John P. Burr", "chairman / president of the meeting"],
+        ["Thomas Butler", "vice president"],
+        ["Stephen H. Gloucester", "vice president; moved the publication committee; remonstrance committee"],
+        ["James Cornish", "secretary; committee to prepare report and appeal"],
+        ["James Forten, Jr.", "secretary"],
+        ["Charles W. Gardner", "opened with prayer; remarks; remonstrance committee"],
+        ["Robert Purvis", "foreman of the committee; presented and read the Appeal of Forty Thousand"],
+        ["James Forten Sr.", "remarks; remonstrance committee"],
+        ["John C. Bowers", "remarks; resolution; committee to prepare report and appeal"],
+        ["Frederick A. Hinton", "remarks; presented a document; publication committee"],
+        ["Robert B. Forten", "committee to prepare report and appeal"],
+        ["James J. G. Bias", "committee to prepare report and appeal"],
+        ["James Needham", "committee to prepare report and appeal"],
+        ["J. C. White", "publication and circulation committee"],
+        ["James Bird", "publication and circulation committee"],
+        ["Robert Douglass", "remonstrance committee (against the Colonization Society)"],
+        ["Morris Brown", "remonstrance committee (Bishop Brown)"]
+      ]
+    }
+  ],
+  "agents": []
+}
