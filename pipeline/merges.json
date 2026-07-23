@@ -274,5 +274,50 @@
    }
   ],
   "note": "Michiko approved 2026-07-19 (run #43). Newspaper 'Morris Brown' (id14279) is the man reported ordained joint AME Superintendent/Bishop in May 1828 (FJ_1828-06-06) = Bishop Morris Brown Sr. (1770-1849). id-qualified to Sr. so it does NOT merge the separate Winch 'Brown, Morris Jr.' (id399, his son) or census 'BROWN, MORRIS'."
+ },
+ {
+  "keep": "Jacob C. White Sr.",
+  "aliases": [
+   {
+    "id": 302562,
+    "name": "James C. White"
+   },
+   {
+    "id": 59208,
+    "name": "J. C. White"
+   },
+   {
+    "id": 298019,
+    "name": "WHITE, JACOB C"
+   }
+  ],
+  "note": "Michiko approved 2026-07-23 (run #59). Humane Mechanic Society committeeman 'James C. White' (id302562, PF_1838-07-26) and newspaper 'J. C. White' (id59208) are Jacob C. White Sr.; census 'WHITE, JACOB C' (id298019) folded for his household link. Does NOT touch his son 'Jacob C. White Jr.' (id3037) or the separate Winch 'White, James M.' (id2776)."
+ },
+ {
+  "keep": "Depee, Nathaniel W.",
+  "aliases": [
+   {
+    "id": 302563,
+    "name": "Nathaniel W. Depee"
+   },
+   {
+    "id": 296209,
+    "name": "DEPEE, NATHANIAL W"
+   },
+   {
+    "id": 300357,
+    "name": "Depee, Nathaniel W"
+   }
+  ],
+  "note": "Michiko approved 2026-07-23 (run #59). Winch 'Depee, Nathaniel W.' (id835, target) = newspaper 'Nathaniel W. Depee' (id302563) = census 'DEPEE, NATHANIAL W' (id296209) and 'Depee, Nathaniel W' (id300357), the Vigilant Committee/UGRR agent. Excludes 'Depee, John B.' (id834) and 'Depee, None' (id298256)."
+ },
+ {
+  "keep": "McCrummell, James M.",
+  "aliases": [
+   {
+    "name": "James McCrummell"
+   }
+  ],
+  "note": "Michiko approved 2026-07-23 (run #59). Newspaper spelling 'James McCrummell' (PF_1838-07-26 Humane Mechanic Society) = Winch 'McCrummell, James M.' (id1770). No separate newspaper record remained after the run #59 rebuild (already unified); kept as a forward-guard/documentation entry."
  }
 ]
