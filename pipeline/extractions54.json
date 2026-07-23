@@ -1,0 +1,52 @@
+{
+ "articles": [
+  {
+   "issue": "PF_1838-05-24",
+   "page": 1,
+   "headline": "Important and Interesting Correspondence: Letters Read at the Opening of Pennsylvania Hall (\"which now lies in ruins\")",
+   "author": null,
+   "type": "correspondence / reprint (context)",
+   "summary": "The Freeman's front page prints a series of letters that had been read at the dedication/opening of Pennsylvania Hall on Sixth Street above Arch, prefacing them with the note that they concern 'that Hall which now lies in ruins — destroyed by violence in the midst of our once free city' (the pro-slavery mob burned the newly built Hall on the night of May 17, 1838, only days after its May 14 dedication). Correspondents who had been invited to the opening and whose replies are printed include Thomas Morris, United States Senator from Ohio (singled out as of 'especial interest'); Walter Forward (Washington, Jan. 30, 1838); William A. Adair (North East, Pa., Feb. 5, 1838); William Jay (Washington, Jan. 2, 1838); William Slade, Representative in Congress (writing from Alton, March 2, 1838, declining on account of his Congressional duties); and Frederick W. Graves (Bedford, West Chester County). The invitations had gone out over the names of the Pennsylvania Hall Association committee — Samuel Webb, J. M. Truman, William McKee, Peter Wright, and G. M. Scott. Notably, the paper's own masthead this week still gives its place of publication as 'Pennsylvania Hall, Sixth Street, above Arch,' though the building had just been destroyed. Recorded for its centrality to the 1838 Philadelphia record; the named correspondents are white abolitionists and public men, with no Black Philadelphia roster on this page."
+  },
+  {
+   "issue": "PF_1838-06-14",
+   "page": 1,
+   "headline": "Judge Bouvier's Charge to the Grand Jury on the Riots",
+   "author": null,
+   "type": "legal / reprint (context)",
+   "summary": "The Freeman transfers to its columns extended remarks from Judge Bouvier's (John Bouvier, of Philadelphia) charge to the grand jury respecting 'the recent exhibitions of Vandalism in this city' — i.e., the mob riots surrounding the burning of Pennsylvania Hall. The charge reviews the standing law against riots and rioters (citing the act of 1705, which made it a punishable offense for three or more persons to meet together with clubs or staves and disturb the peace or destroy property), and instructs the jury on the jurisdiction and duty of the court to punish those who incited or took part in the disturbance. Praised by the editor as the words of 'a magistrate, a moralist, and a philanthropist.'"
+  },
+  {
+   "issue": "PF_1838-06-14",
+   "page": 1,
+   "headline": "Pennsylvania Hall Association Acknowledges a $100 Gift Toward Publicizing the Mob's Destruction of the Hall",
+   "author": null,
+   "type": "notice",
+   "summary": "The treasurer of the Pennsylvania Hall Association publicly acknowledges receipt of a letter enclosing one hundred dollars, given anonymously by 'A Friend of Liberty and Humanity' (letter post-marked 'Philadelphia, June 6th') to aid in disseminating among the citizens of Pennsylvania correct information respecting the anti-slavery cause and 'particularly what relates to the late disgraceful attack upon the rights of free discussion by the mob that burned Pennsylvania Hall.' The money is to be appropriated as directed."
+  }
+ ],
+ "events": [
+  {
+   "issue": "PF_1838-06-14",
+   "page": 1,
+   "name": "Clarkson Anti-Slavery Association annual meeting (Sadsbury)",
+   "date": "1838-05-04",
+   "location": "Sadsbury School house, Chester County, Pennsylvania",
+   "description": "At a special meeting of the Clarkson Anti-Slavery Association convened at the Sadsbury School house on the 4th of the Fifth month (May 4), 1838, the association resolved that the business of the annual meeting be postponed on account of the several Anti-Slavery meetings to be held in Philadelphia during the week of the regular stated time, and proceeded to elect officers for the ensuing year. Officers elected: Thomas Hambleton, President; Mahlon Preston, Vice President; Lindley Coates, Recording Secretary; Moses Whitson, Corresponding Secretary; James Williams, Treasurer; and an Acting Committee of William Jackson, Eli Hambleton, Isaac Moore, Alice Eliza Hambleton, Phebe Hadley, and Ann Preston. A resolution offered after free and open discussion — 'That the Abolitionists are the exciting cause of the disturbance in civil and religious societies' — was rejected unanimously; a further resolution instructed the Secretary to forward proceedings to the Pennsylvania Freeman for publication. Signed Eli Hambleton, Secretary. (A predominantly white Quaker abolitionist society of Chester County; recorded as part of the surrounding 1838 anti-slavery network.)",
+   "attendees": [
+    ["Thomas Hambleton", "president"],
+    ["Mahlon Preston", "vice president"],
+    ["Lindley Coates", "recording secretary"],
+    ["Moses Whitson", "corresponding secretary"],
+    ["James Williams", "treasurer"],
+    ["William Jackson", "acting committee"],
+    ["Eli Hambleton", "acting committee; secretary (signed the proceedings)"],
+    ["Isaac Moore", "acting committee"],
+    ["Alice Eliza Hambleton", "acting committee"],
+    ["Phebe Hadley", "acting committee"],
+    ["Ann Preston", "acting committee"]
+   ]
+  }
+ ],
+ "agents": []
+}
