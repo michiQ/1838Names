@@ -1,0 +1,208 @@
+{
+ "_note": "Written 2026-07-14 (33rd scheduled run). Covers FJ_1828-01-25, FJ_1828-02-01, FJ_1828-02-08, FJ_1828-02-15 -- 4 consecutive Freedom's Journal issues (16 pages). NOTE ON OCR RESOLUTION: the sandbox was under heavy load this run (load average 4-5+ on a 4-core box); 300dpi AND 200dpi tesseract calls repeatedly hit the 45s tool wall even after retries, so all 16 pages were OCR'd at 150dpi per the documented fallback ladder (300->200->150->100). These 16 pages are added to reocr_backfill.md for a future 300dpi pass. Headline gold this batch: (1) The FOUNDING and first officer election of the AFRICAN DORCAS ASSOCIATION -- a New York Black women's benevolent society that clothed children in the African Free Schools. The Jan 23 1828 organizing meeting (printed Feb 1) was chaired by Rev. Peter Williams with John B. Russwurm as secretary and a ministers' advising committee; the Feb 15 issue printed the elected women officers (Pres. Margaret A. Francis, Sec. Margaretta P. Quinn, etc.) and a 21-woman Board of Managers -- a rare, dense roster of named free Black women. (2) A long multi-issue report of the AMERICAN CONVENTION FOR PROMOTING THE ABOLITION OF SLAVERY (Philadelphia, Oct 1827) with its full officer/member roster (Pres. William Rawle, VP Daniel Raymond, chairman Thomas Shipley) -- the same Philadelphia abolition network (Rawle, Atlee, Barton, D.P. Brown, Earle) documented in run #32's PAS extraction. (3) A Philadelphia INFANT SCHOOL subscription list naming prominent Philadelphia women (Mrs. Robert Vaux, Mrs. Thomas Latimer, Mrs. Samuel Moore, etc.). (4) The DEATH of James Dailey, the kidnapped mulatto boy brought home to Philadelphia by High Constable Garrigues (run #32's Garrigues report) -- died in the Philadelphia Almshouse of abuse, 8 days after his return. (5) An 'AFRICAN EDUCATION' letter from correspondent 'F.A.' of Boston proposing a National Society for African Education (common schools, academies, a teachers' school, and a college) -- an early blueprint that anticipates the Black national convention movement's education program. The standing AUTHORISED AGENTS roster (Francis Webb of Philadelphia, Stephen Smith of Columbia, David Walker of Boston, etc.) recurs on p4 of each issue and is left to match_names.py to pick up from OCR.",
+ "articles": [
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 3,
+   "headline": "LIBERIAN CIRCULAR -- Freedom's Journal answers the American Colonization Society's Liberia address",
+   "author": null,
+   "type": "editorial",
+   "summary": "Freedom's Journal's anti-colonization editorial responding to a long address, printed in the December African Repository, from 'the happy citizens of Liberia' to the free people of colour in the United States. The editors are glad to hear of their brethren's welfare but pointedly distrust the glowing monthly reports emanating from the American Colonization Society's own men; they insist they will never consent to emigrate to Africa, would not accept the Society's aid even if they did, and that their views extend to the ultimate emancipation of the enslaved, not removal. Heavy sarcasm at the notion that half-educated colonists are held up 'as learned Doctors of Law and Physic.'",
+   "notes": "A representative statement of the free Black anti-colonization position from Cornish & Russwurm's paper, directly rebutting ACS propaganda. Continues the paper's running argument with the Colonization Society documented in earlier batches."
+  },
+  {
+   "issue": "FJ_1828-02-01",
+   "page": 2,
+   "headline": "American Convention for promoting the Abolition of Slavery -- proceedings (Philadelphia, Oct. 1827)",
+   "author": "Thomas Shipley, Chairman (of the committee of arrangement)",
+   "type": "society proceedings",
+   "summary": "An extended verbatim report of the sessions of the American Convention for promoting the Abolition of Slavery, held in Philadelphia in October 1827 (William Rawle, Esq., President; Daniel Raymond, Vice-President in the chair for part; Thomas Shipley, chairman of the committee of arrangement). Resolutions addressed the encouragement of free (non-slave) produce; drafting memorials to Congress praying the abolition of slavery in the District of Columbia; addresses to the legislatures of the non-slaveholding states; anti-slavery associations in the slaveholding states; a committee (Benjamin Lundy, Thomas Earle, Joseph Parker, William Kelsey, David Scholfield) to investigate free vs. slave labour in the cultivation of cotton, rice, sugar, and tobacco; and authorizing subscription to George M. Stroud's forthcoming 'Sketch of the Laws Relating to Slavery.' A large roll of members present is printed across successive sessions.",
+   "notes": "MAJOR Philadelphia abolition-network content. Rawle, Atlee (AtLee), Isaac Barton, D. P. Brown, Thomas Earle, James Mott, Robert Bond, Lea Pusey, Mahlon Day and the rest are the same Philadelphia PAS/American Convention leadership documented in run #32's Pennsylvania Abolition Society roster (extractions34.json). George M. Stroud (author of the 'Sketch of the Laws') is a notable addition. Report continues in the Feb 8 and Feb 15 issues."
+  },
+  {
+   "issue": "FJ_1828-02-01",
+   "page": 3,
+   "headline": "Slavery in the District of Columbia -- Freedom's Journal endorses the Georgetown petition",
+   "author": null,
+   "type": "editorial",
+   "summary": "Editorial inviting readers' attention to the memorial of the citizens of Washington and Alexandria counties (District of Columbia) against the domestic slave trade carried on within their borders, reprinted from the Georgetown Columbian. The petition prays Congress to free all children of slaves born in the district after 4 July 1828 at age 25, to repeal the laws authorizing the sale of supposed runaways for prison fees, and to bar the introduction of slaves for sale or hire. The editors call the arguments unanswerable and single out the disgrace of slavery under the immediate eye of Congress and foreign ministers.",
+   "notes": "Ties to the DC free-persons-of-colour bill (Rep. Varnum) reported in the Feb 8 issue and to the broader anti-DC-slave-trade petition campaign the American Convention was also pressing."
+  },
+  {
+   "issue": "FJ_1828-02-08",
+   "page": 3,
+   "headline": "Letter in defence of Freedom's Journal and the education of the coloured race (signed B.Y., Carlisle, Pa.)",
+   "author": "B. Y. (Carlisle, Pa., Feb. 1, 1828)",
+   "type": "correspondence (letter to the editor)",
+   "summary": "A subscriber's letter from Carlisle, Pennsylvania defending the paper against a hostile piece in another journal that opposed encouraging a coloured literary paper. The writer argues that the people of colour ask only the liberty to express their thoughts and use their God-given talents, that ignorance is the parent of vice, and that a public paper conducted by one of their own race is the best proof of Black capacity and the surest instrument of reform. Expresses pleasure at being able to sit down and read 'our own paper.'",
+   "notes": "A Pennsylvania (Carlisle) reader voice affirming the paper's mission. Signed only with initials 'B.Y.'"
+  },
+  {
+   "issue": "FJ_1828-02-08",
+   "page": 3,
+   "headline": "Free persons of colour in the District of Columbia -- bill reported by Mr. Varnum",
+   "author": null,
+   "type": "news report (legislative)",
+   "summary": "Report that Mr. Varnum, from the Committee on the District of Columbia, reported a bill (twice read and committed) concerning free persons of colour in the District of Columbia: whenever any person apprehended or committed as a runaway is shown on examination to be entitled to freedom, the jail fees and legal charges shall be chargeable to the United States; and so much of the 21st section of the 1715 Maryland act 'relating to servants and slaves,' still in force in Washington county, as authorizes the commitment and sale of free persons of colour for prison fees on suspicion of being runaways, is repealed.",
+   "notes": "The legislative complement to the Georgetown petition editorial (Feb 1) -- Congress moving to repeal the sale-for-fees provision that had ensnared free Black people like the kidnapped Philadelphia boys in run #32/this batch."
+  },
+  {
+   "issue": "FJ_1828-02-15",
+   "page": 2,
+   "headline": "HORRORS OF SLAVERY -- DIED, James Dailey, the kidnapped mulatto boy (Philadelphia Almshouse)",
+   "author": null,
+   "type": "news report (kidnapping / death notice)",
+   "summary": "Reprints from a Philadelphia paper the death notice of James Dailey, the mulatto kidnapped boy recently brought home from Louisiana by High Constable Garrigues; he was far gone when sent to the Almshouse and lived but eight days after his return. The House Surgeon's certificate declares he died of debility resulting from improper food, neglect during illness, and severe treatment, his body bearing the scars of repeated whippings and blows and emaciated. Freedom's Journal adds an extended lament, noting hundreds of other free-born people still held as slaves in the South-Western states -- including several from near Wilmington, Delaware, and one kidnapped in New York and sold in Norfolk -- and offering to direct anyone willing to work for their redemption.",
+   "notes": "MAJOR Philadelphia content and the direct sequel to run #32's Jan 18 Garrigues reclamation report (extractions34.json), which recorded James Dailley/Bailey brought home 'in a miserable state of health from repeated cruelty and may not recover.' This death notice confirms he died within days at the Philadelphia Almshouse. Names High Constable Garrigues again."
+  },
+  {
+   "issue": "FJ_1828-02-15",
+   "page": 3,
+   "headline": "AFRICAN EDUCATION -- letter proposing a National Society for African Education (F.A. of Boston)",
+   "author": "F. A. (Boston, Mass., Feb. 1, 1828)",
+   "type": "correspondence (letter to the editor)",
+   "summary": "A correspondent 'F.A.' of Boston presses the editors on the want of action for African education, arguing it demands the first appropriation of talent and money whatever one thinks of colonization. He poses a set of questions to the Northern and Middle states' coloured population -- whether they can accomplish anything alone, whether they will unite their funds and influence with the white population, and whether they are prepared to encourage a National Society for African Education whose object would be common schools, academies, a school for teachers, and a college for liberal instruction. Freedom's Journal answers approvingly, urging that money now wasted on colonization be redirected to education as 'the whole secret of amelioration.'",
+   "notes": "An early, concrete blueprint for a national Black educational infrastructure (culminating idea: a college) that anticipates the education agenda of the Colored Conventions movement a few years later. The editors' endorsement ties Cornish's paper firmly to the primacy-of-education argument against colonization."
+  },
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 2,
+   "headline": "DEDICATION of a coloured Methodist church (Rev. Thomas Paul and others)",
+   "author": null,
+   "type": "religious notice",
+   "summary": "A dedication notice (reprinted from the Boston Saturday Evening Gazette): a new coloured Methodist Episcopal church under the pastoral care of Rev. James Lee was solemnly dedicated. At the services the Rev. Mr. Jenks, D.D. preached (Matthew 18:20), the Rev. Thomas Paul made the concluding prayer, in the afternoon the Rev. Louis Dwight preached (Psalm 50:14) and Mr. Paul again prayed, and in the evening the Rev. Mr. Lamb preached (Daniel 2:44); Rev. Thomas Paul was to have preached one of the sermons but was prevented by an inflammation of the lungs. Closes with the grateful thanks of the coloured congregation.",
+   "notes": "Rev. Thomas Paul was the leading Black Baptist minister of Boston (African Baptist Church, Belknap Street); Rev. James Lee is named as pastor of the newly dedicated coloured Methodist church. Boston Black church content; the inflammation of the lungs foreshadows Thomas Paul's own decline."
+  },
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 3,
+   "headline": "MARRIED / DIED notices",
+   "author": null,
+   "type": "vital records",
+   "summary": "Married: in New York, Saturday evening last, by the Rev. Mr. Cone (?), Mr. Robert G. Batson, of the island of Barbadoes, to Miss Phebe Mills of this city; in Philadelphia, 9th ult., by the Rev. Dr. Ely, Mr. William Smith to Amelia Lewis, both of that city. Died: in this city (New York), on Monday last after a long and lingering illness, Mary-Ann R., only daughter of Mr. Thomas Downing, aged 6 years.",
+   "notes": "William Smith and Amelia Lewis 'both of that city' is a Philadelphia coloured marriage (Rev. Dr. Ely officiating). Mr. Thomas Downing of New York is the celebrated Black oyster-house proprietor of Broad Street; the notice records the death of his young daughter."
+  },
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 3,
+   "headline": "Boot & Shoe / Blacking store of W. P. Johnson, 551 Pearl-street, New York",
+   "author": null,
+   "type": "advertisement",
+   "summary": "Standing advertisement: W. P. Johnson, No. 551 Pearl-street near Broadway, keeps constantly on hand an assortment of boots and shoes, and a superior quality of liquid blacking free from the use of vitriol of his own manufacture, sold cheap for cash; boots and shoes made to order and repaired on reasonable terms.",
+   "notes": "William P. Johnson, a New York Black boot-and-shoe dealer and blacking manufacturer, and a Freedom's Journal agent -- a named free Black tradesman."
+  }
+ ],
+ "events": [
+  {
+   "issue": "FJ_1828-02-01",
+   "page": 3,
+   "name": "African Dorcas Association -- organizing meeting (New York)",
+   "date": "1828-01-23",
+   "location": "New York City",
+   "description": "At a large meeting of Females of Colour, ministers of the different coloured churches of the city, and members of the Manumission Society, convened at the Society's School Room in Mulberry-street on Wednesday evening 23 January 1828 to consider forming a 'Fragment Society,' the Rev. Peter Williams was called to the chair and John B. Russwurm appointed secretary. A constitution (prepared by Mr. Andrews) was read naming the new body 'The African Dorcas Association,' whose object was to procure donations of clothing, hats, and shoes for children attending the Manumission Society's African Free Schools. The meeting was addressed by Messrs. Andrews, Hatch, Hale, and Todd; a committee (Cornish, Quin, Jordan, Russwurm) was appointed to take down the names of those wishing to join; and a ministers' advising committee was named. The affairs of the association were, until the March meeting, to be managed by the ministers present.",
+   "attendees": [
+    ["Peter Williams", "Chairman"],
+    ["John B. Russwurm", "Secretary; committee to enroll members"],
+    ["Mr. Andrews", "Drafted the constitution; addressed the meeting"],
+    ["Mr. Hatch", "Addressed the meeting"],
+    ["Mr. Hale", "Addressed the meeting"],
+    ["Mr. Todd", "Addressed the meeting"],
+    ["Samuel E. Cornish", "Committee to enroll members"],
+    ["William Quin", "Committee to enroll members"],
+    ["Mr. Jordan", "Committee to enroll members"],
+    ["William Miller", "Advising committee (minister)"],
+    ["Christopher Rush", "Advising committee (minister)"],
+    ["Samuel Todd", "Advising committee (minister)"],
+    ["William Quinn", "Advising committee (minister)"],
+    ["Benjamin Paul", "Advising committee (minister)"]
+   ]
+  },
+  {
+   "issue": "FJ_1828-02-15",
+   "page": 3,
+   "name": "African Dorcas Association -- election of officers",
+   "date": "1828-02-13",
+   "location": "New York City",
+   "description": "At a late meeting of the African Dorcas Association held at No. 96 Chrystie-street, the following ladies were chosen officers of the Society: President Mrs. Margaret A. Francis; Secretary Mrs. Margaretta P. (R.) Quinn; Assistant Secretary Mrs. Henrietta D. Regulus; Treasurer Mrs. Sarah Bane. A Board of Managers of twenty-one women was elected. The place of meeting and deposit for clothing is the African School Room in Mulberry-street; the Society meets every Wednesday afternoon at 2 o'clock.",
+   "attendees": [
+    ["Margaret A. Francis", "President; Board of Managers"],
+    ["Margaretta P. Quinn", "Secretary; Board of Managers"],
+    ["Henrietta D. Regulus", "Assistant Secretary; Board of Managers"],
+    ["Sarah Bane", "Treasurer; Board of Managers"],
+    ["Elizabeth Lawrence", "Board of Managers"],
+    ["Nancy Scott", "Board of Managers"],
+    ["Mary Seaman", "Board of Managers"],
+    ["Maria Johnson", "Board of Managers"],
+    ["Harriet Stokely", "Board of Managers"],
+    ["Rebecca Matthews", "Board of Managers"],
+    ["Violet Jackson", "Board of Managers"],
+    ["Susan McLane", "Board of Managers"],
+    ["Esther Lambert", "Board of Managers"],
+    ["Harriet Woodruff", "Board of Managers"],
+    ["Maria Morris", "Board of Managers"],
+    ["Amelia Smith", "Board of Managers"],
+    ["Maria Degrasse", "Board of Managers"],
+    ["Esther Lane", "Board of Managers"],
+    ["Caroline Dennis", "Board of Managers"],
+    ["Mary Williams", "Board of Managers"],
+    ["Diana Reynolds", "Board of Managers"]
+   ]
+  },
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 3,
+   "name": "Meeting to form a Fragment Society among the Females of Colour (New York)",
+   "date": "1828-01-23",
+   "location": "New York City",
+   "description": "A meeting was held on Wednesday evening at the Manumission School Room in Mulberry-street to take into consideration the important subject of forming a 'Fragment Society' among the Females of Colour of the city. The notice records a respectable number present and the order and unanimity that prevailed, with many tendering their names for membership; all interested were invited to attend the following Wednesday evening at 7 o'clock at the same place. Signed W. P. Johnson.",
+   "notes": "This is the first public notice (in the Jan 25 issue) of the meeting that became the African Dorcas Association -- the fuller Feb 1 report (see the organizing-meeting event) records the same 23 January 1828 gathering under Rev. Peter Williams. Kept as a separate record because the Jan 25 notice is signed by W. P. Johnson and gives the earliest announcement.",
+   "attendees": [
+    ["W. P. Johnson", "Signed the notice"]
+   ]
+  },
+  {
+   "issue": "FJ_1828-02-01",
+   "page": 3,
+   "name": "New-York Manumission Society -- annual election of officers",
+   "date": "1828-01-15",
+   "location": "New York City",
+   "description": "At the annual meeting of the New-York Manumission Society the following officers were elected: President Cadwallader D. Colden; 1st Vice-President George Newbold; 2d Vice-President Peter A. Jay; Treasurer Robert C. Cornell; Secretary Thomas Hale; Register Matthew Hale. Standing committees were named, including a Committee of African Free Schools, a Committee of Correspondence (Barney Corse, chairman), a Board of Trustees (Michael M. Titus, chairman), and a Committee of Ways and Means (Joseph Curtiss / Coslies, chairman).",
+   "attendees": [
+    ["Cadwallader D. Colden", "President"],
+    ["George Newbold", "1st Vice-President"],
+    ["Peter A. Jay", "2d Vice-President"],
+    ["Robert C. Cornell", "Treasurer"],
+    ["Thomas Hale", "Secretary"],
+    ["Matthew Hale", "Register"],
+    ["Barney Corse", "Chairman, Committee of Correspondence"],
+    ["Michael M. Titus", "Chairman, Board of Trustees"],
+    ["Peter Augustus Jay", "Committee member"],
+    ["Charles Walker", "Committee member"],
+    ["Joseph Curtiss", "Chairman, committee"],
+    ["Benjamin Clark", "Committee member"],
+    ["Joseph Blunt", "Committee member"],
+    ["Richard Mott, Jun.", "Committee member"],
+    ["Richard Field", "Committee member"],
+    ["William L. Underhill", "Committee member"]
+   ]
+  },
+  {
+   "issue": "FJ_1828-02-01",
+   "page": 3,
+   "name": "Philadelphia Infant School -- subscription appeal (ladies receiving subscriptions)",
+   "date": "1828-02-01",
+   "location": "Philadelphia",
+   "description": "Notice that the Infant School lately established in the city (Philadelphia), having proved a very useful institution and given great satisfaction to parents and citizens, the managers desire to extend its benefits to a less-favoured portion of the community; not wishing to draw on their present funds, they solicit subscriptions from benevolent fellow citizens. Subscriptions would be received by a list of named ladies at Philadelphia addresses (from Poulson's Philadelphia Daily Advertiser).",
+   "notes": "A Philadelphia infant-school subscription list. Mrs. Robert Vaux (346 Arch St) is the wife of Roberts Vaux, the prominent Philadelphia Quaker reformer and education advocate; the other named subscribers (Mrs. Thomas Latimer, Mrs. Samuel Moore, Mrs. Pearsall, Miss Engles, Miss Cittera, Miss Davidson) are Philadelphia women. These are white benefactors rather than the Black subjects of the census, but the roster is Philadelphia philanthropic-network content adjacent to the free-school work.",
+   "attendees": [
+    ["Mrs. Thomas Latimer", "Subscriptions received, 220 Arch-street"],
+    ["Mrs. Robert Vaux", "Subscriptions received, 346 Arch-street"],
+    ["Mrs. Samuel Moore", "Subscriptions received, 183 Pine-street"],
+    ["Mrs. Pearsall", "Subscriptions received, 218 Arch-street"],
+    ["Miss Engles", "Subscriptions received, 222 Pine-street"],
+    ["Miss Cittera", "Subscriptions received, 140 Walnut-street"],
+    ["Miss Davidson", "Subscriptions received, 268 Walnut-street"]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+  "articles": [
+    {
+      "issue": "PF_1838-10-04",
+      "page": 2,
+      "headline": "Amendments to the Constitution",
+      "author": null,
+      "type": "editorial",
+      "summary": "A 'For the Pennsylvania Freeman' communication urging abolitionists to weigh their vote on the proposed state constitutional amendments to be decided at the approaching October 1838 election. It explains that the Supreme Court had construed the old constitution to exclude 'the colored man from his right to vote,' and analyzes whether adopting or rejecting the amendments (which insert 'white' into the elector clause) better serves the disfranchised. The writer reluctantly concludes he will vote for the amendments as the lesser evil."
+    },
+    {
+      "issue": "PF_1838-10-04",
+      "page": 3,
+      "headline": "Manly and Patriotic Letters (Sheriff candidates' replies)",
+      "author": null,
+      "type": "news report",
+      "summary": "The Freeman prints replies from the Whig and Democratic candidates for High Sheriff of the City and County of Philadelphia, answering queries from committees of the Philadelphia County Anti-Slavery Society on whether they would protect citizens' right to assemble and discuss immediate emancipation. The Whig letter (Philadelphia, Sept. 24, 1838) is signed Daniel Fitler (OCR uncertain); the queries were addressed by committeemen including Eli Dillin, Thomas Earle, William M'Kee, and Joseph S. Pickering. Both candidates affirm the sheriff's duty to suppress mob violence, in reference to the 1838 Pennsylvania Hall riot."
+    },
+    {
+      "issue": "PF_1838-10-04",
+      "page": 3,
+      "headline": "Address to Members of the Society of Friends / Pennsylvania Hall",
+      "author": null,
+      "type": "editorial",
+      "summary": "An editorial appeal to Philadelphia Friends to vote at the coming election against city officials who neglected to protect Pennsylvania Hall, quoting Judge Conrad's and Judge Fox's grand-jury charges that the destruction 'could in the first instance have been resisted by a small organized force.' It recalls that the mob assailed the Society of Friends' testimony against slavery and burned the Hall and the Shelter for Colored Orphans, while the Mayor declared 'Public opinion makes mobs.'"
+    },
+    {
+      "issue": "PF_1838-10-04",
+      "page": 1,
+      "headline": "Colonization--No. 9",
+      "author": null,
+      "type": "letter",
+      "summary": "A numbered anti-colonization series 'For the Pennsylvania Freeman' contrasting the American Colonization Society with the benevolence of Samuel J. Mills. It recounts Paul Cuffee's 1815 transport of nine colored families to Sierra Leone, Ann Mifflin's 1811 petition to Congress, and quotes the Rev. Mr. Gloucester of Philadelphia writing to Mills about educating 'our promising sons.'"
+    },
+    {
+      "issue": "PF_1838-11-15",
+      "page": 2,
+      "headline": "Report of the Executive Committee, Eastern District (on disfranchisement)",
+      "author": null,
+      "type": "proceedings",
+      "summary": "The semi-annual report of the Eastern District Executive Committee of the Pennsylvania State Anti-Slavery Society condemns the 'important change in the Constitution of the state, by which a large number of its citizens have been disfranchised, for no other fault than a complexion unlike that of a majority of the people' -- the insertion of the word 'white' into the elector clause. It calls the act no 'amendment' but a violation of democratic principle and pledges renewed effort to restore the colored man's suffrage."
+    },
+    {
+      "issue": "PF_1838-11-29",
+      "page": 1,
+      "headline": "The National Reformer",
+      "author": null,
+      "type": "news report",
+      "summary": "Notice of the new monthly paper The National Reformer, a sixteen-page royal octavo issued under the Managers of the (American) Moral Reform Society, 'edited, and its communications written, by members of that proscribed class' insulted by the American Colonization Society. The Freeman praises its 'principal conductor, our esteemed friend, William Whipper, of Columbia' (OCR uncertain), quoting an extract from its article on West India Emancipation."
+    },
+    {
+      "issue": "PF_1838-12-20",
+      "page": 3,
+      "headline": "The Colored Citizens of Boston, Elliott Cresson and R. R. Gurley",
+      "author": null,
+      "type": "proceedings",
+      "summary": "Reprinting from the Liberator the proceedings of a meeting of the colored citizens of Boston, called to consider the attempt of R. R. Gurley and Elliott Cresson to revive colonization in New England. Mr. Hilton offered the adopted resolutions, whose preamble protests the 'unrighteous and insulting attempt to banish them from the soil of their native Massachusetts' and denounces colonizationists as courting slaveholders while persecuting free colored citizens."
+    },
+    {
+      "issue": "PF_1838-11-01",
+      "page": 3,
+      "headline": "The $250 freehold suffrage qualification (analysis of the new constitution)",
+      "author": null,
+      "type": "editorial",
+      "summary": "An analysis of the discriminatory suffrage provision limiting the colored man's vote to possession of a $250 freehold, which 'no amount of personal property, however great, can be offered as a substitute.' It argues the requirement 'in relation to the colored citizen [is] an exclusive distinction, and an odious one,' at war with the democratic and representative spirit of the constitution."
+    }
+  ],
+  "events": [
+    {
+      "issue": "PF_1838-11-15",
+      "page": 1,
+      "name": "Pennsylvania State Anti-Slavery Society, Eastern District, semi-annual meeting",
+      "date": "1838-10-30",
+      "location": "Opened at Pennsylvania Hall, Philadelphia (May 16-17); continued at Coatesville, Chester County, Oct. 30-31 and Nov. 1, 1838",
+      "description": "Proceedings of the Eastern District semi-annual meeting of the Pennsylvania State Anti-Slavery Society. Business committee named and resolutions adopted pledging not to vote for any candidate opposed to immediate abolition; the Executive Committee's report addressed the disfranchisement of colored citizens by the new constitution. Delegates from auxiliary societies received.",
+      "attendees": [
+        ["Abraham L. Pennock", "vice president"],
+        ["Lindley Coates", "vice president"],
+        ["Lewis C. Gunn", "recording secretary"],
+        ["William A. Garrigues", "assistant recording secretary"],
+        ["James Rhoads", "assistant recording secretary"],
+        ["John G. Whittier", "member/editor"],
+        ["Benjamin Lundy", "business committee"],
+        ["James McCrummell", "business committee"],
+        ["Hugh Gilmore", "business committee"],
+        ["Frederick A. Hinton", "business committee"],
+        ["Joseph S. Pickering", "business committee"],
+        ["Samuel D. Hastings", "business committee"],
+        ["James Fulton Jr.", "business committee"],
+        ["Alexander Graydon", "business committee"],
+        ["Alvan Stewart", "speaker (of Utica, N.Y.)"],
+        ["William H. Burleigh", "member"],
+        ["E. S. Davis", "member"],
+        ["William Harned", "member"]
+      ]
+    },
+    {
+      "issue": "PF_1838-10-11",
+      "page": 3,
+      "name": "American Free Produce Association / Convention",
+      "date": "1838-09-06",
+      "location": "Philadelphia",
+      "description": "By adjournment on Ninth month 6, 1838, the American Free Produce Convention adopted a preamble and constitution and elected officers for the ensuing year, forming the American Free Produce Association to promote total abstinence from the products of slave labor. Report extracted from the minutes.",
+      "attendees": [
+        ["William Bassett", "vice president"],
+        ["Abraham L. Pennock", "vice president"],
+        ["William H. Johnson", "vice president"],
+        ["Lewis Tappan", "vice president"],
+        ["Daniel L. Miller", "recording secretary"],
+        ["Lucretia Mott", "treasurer"],
+        ["Charles C. Burleigh", "executive committee"],
+        ["W. C. Betts", "secretary (of minutes)"],
+        ["Alice Eliza Hambleton", "secretary (of minutes)"]
+      ]
+    },
+    {
+      "issue": "PF_1838-12-20",
+      "page": 4,
+      "name": "Female Vigilant Association of Philadelphia -- Christmas Fair",
+      "date": "1838-12-24",
+      "location": "Special meeting at Mechanics' Hall, Elizabeth street, Sept. 28, 1838; Fair opened Dec. 24 in the School Room, Locust street above 8th, opposite Musical Fund Hall, Philadelphia",
+      "description": "At a special meeting Sept. 28, 1838 the Female Vigilant Association of Philadelphia resolved to hold a Fair about Christmas to raise funds for the poor and distressed. Donations were collected at the Sewing Room and at the homes of named managers; the Fair opened Dec. 24 near Musical Fund Hall.",
+      "attendees": [
+        ["Sarah McCrummell", "fair collector (266 N. 3d st.)"],
+        ["Mary C. Meads", "fair collector (473 Market st.)"],
+        ["Eliza Bias", "fair collector (Acorn Alley)"],
+        ["Miss Forten", "fair collector (115 Lombard st.)"]
+      ]
+    },
+    {
+      "issue": "PF_1838-10-25",
+      "page": 3,
+      "name": "Philadelphia Female Anti-Slavery Society meeting (addressed by H. B. Stanton)",
+      "date": "1838-10-19",
+      "location": "Phoenix Hall, Zane street above Seventh, Philadelphia",
+      "description": "Notices announce a special meeting of the Philadelphia Female Anti-Slavery Society (secretary M. Douglass), and that Henry B. Stanton was expected to address the Society at Phoenix Hall. Related notices name delegates gathering at Daniel Neall's, 325 Arch street, to travel to the Coatesville state meeting, with Henry B. Stanton and Joshua Leavitt (N.Y.), William M. Chace (R.I.), and Samuel Aaron (N.J.) expected.",
+      "attendees": [
+        ["M. Douglass", "secretary"],
+        ["Henry B. Stanton", "speaker"],
+        ["Daniel Neall", "host of delegates (325 Arch st.)"]
+      ]
+    },
+    {
+      "issue": "PF_1838-10-18",
+      "page": 3,
+      "name": "Pennsylvania Society for Promoting the Abolition of Slavery -- special meeting",
+      "date": "1838-10-18",
+      "location": "Clarkson Hall, Philadelphia",
+      "description": "Notice of a special meeting of the Pennsylvania Society for promoting the abolition of slavery at Clarkson Hall on Fifth day evening, the 18th inst., called for business of importance. Same page carries a Junior Anti-Slavery Society notice (No. 45 Cherry street, J. D. Griscom, secretary).",
+      "attendees": [
+        ["Caleb Clothier", "secretary"],
+        ["J. D. Griscom", "secretary (Junior Anti-Slavery Society)"]
+      ]
+    }
+  ],
+  "agents": []
+}
