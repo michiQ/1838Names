@@ -1,0 +1,186 @@
+{
+  "articles": [
+    {
+      "issue": "PF_1838-08-09",
+      "page": 3,
+      "headline": "The \"First of August\" — Celebrated in this City by the Union Anti-Slavery Society",
+      "author": null,
+      "type": "news report",
+      "summary": "The Freeman reports that the First of August (the anniversary of British West India Emancipation) 'was celebrated in this city by the Union Anti-Slavery Society: an association recently formed by members of several religious Societies of this city, the constitution of which will appear in our next paper.' James R. Wilson, D.D., of Coldenham, N.Y., addressed the meeting, which was held at Carpenter's Hall, corner of 13th and Race streets; a copy of his address was requested for publication. The 'Friends Association of Cherry street meeting' also held a meeting, with remarks by Dr. Isaac Parrish and Daniel Neall, jr. The same column carries John Quincy Adams's letter (Quincy, July 28, 1838) declining Edmund Quincy's invitation to the Massachusetts Anti-Slavery Society's First-of-August celebration, and notes First-day anti-slavery meetings at Abington (Philadelphia county) addressed by Lewis C. Gunn, at Upper Providence (Montgomery county) addressed by Daniel Neall, jr. and L. C. Matlack, and at Crosswicks, N.J., where some thirty persons gave in their names toward forming a society; Abington's friends resolved to establish an Anti-Slavery Library."
+    },
+    {
+      "issue": "PF_1838-08-09",
+      "page": 3,
+      "headline": "Notices: Colerain, Chester County and Kennett Anti-Slavery Societies — the Amended Constitution and the Colored Franchise",
+      "author": null,
+      "type": "notices",
+      "summary": "Among the notices: a special meeting of the Colerain Anti-Slavery Society (Colerain meeting-house, Lancaster county, 25th of Eighth month, 2 o'clock P.M.) to discuss the resolution 'That the late amended Constitution of this state, which deprives the colored population of the elective franchise, cannot, consistently with the principles of abolitionists, receive their support' — W. L. Rakestraw, Rec. Sec'y. Chandler Darlington, Cor. Sec'y of the Chester County Anti-Slavery Society, requests reports from each auxiliary; a stated meeting of the Kennett Anti-Slavery Society is called for the 11th of Eighth month. Evidence of the anti-slavery societies' agitation against the disenfranchising Pennsylvania constitution of 1838."
+    },
+    {
+      "issue": "PF_1838-08-23",
+      "page": 2,
+      "headline": "An Address from the Council of the Philadelphia Association for the Mental and Moral Improvement of the People of Color",
+      "author": "Council of the Philadelphia Association for the Mental and Moral Improvement of the People of Color",
+      "type": "communicated address",
+      "summary": "'For the Pennsylvania Freeman': an Address from the Council of the Philadelphia Association for the Mental and Moral Improvement of the People of Color. It appeals 'to the friends of humanity' amid the active benevolence springing up 'for the down[trodden] people of color,' hails the 'glorious triumph in the British do[minions]' of universal and impartial liberty as a source of consolation and hope, and reports that the Council of the Association, with delegates from the moral [reform] institutions of the city and county of Philadelphia, commenced its annual session in June, 1838. Anxious to give every facility to the elevation of the people, they procured an act of incorporation; the objects incorporated in the Constitution are 'the [moral and] mental improvement of the people of [color].' The Council, as a deliberative body, laments the degraded condition and its causes, urges the learned and pious of the race to promote elevation, and notes that by the twelfth article of the Constitution every person who connects himself with the Council of the Philadelphia Association becomes an Agent in behalf of its objects. A rare printed address from an incorporated Black Philadelphia improvement association."
+    },
+    {
+      "issue": "PF_1838-09-13",
+      "page": 2,
+      "headline": "Prospectus of the National Reformer — organ of the American Moral Reform Society",
+      "author": "Board of Managers of the American Moral Reform Society (Wm. Whipper, editor)",
+      "type": "prospectus",
+      "summary": "Prospectus for the National Reformer, 'to be published in Philadelphia by the Board of Managers of the American Moral Reform Society. Wm. Whipper, editor.' The object in establishing the National Reformer is 'to disseminate the principles and measures of the American Moral Reform Society,' which for want of an organ devoted to its cause had lacked a means of reaching the people. William Whipper's editorship of the AMRS monthly (which began publication in Philadelphia in September 1838) is here announced in the Freeman."
+    },
+    {
+      "issue": "PF_1838-09-06",
+      "page": 1,
+      "headline": "Union Anti-Slavery Society of Philadelphia — First Quarterly Meeting, Treasurer's and Board of Managers' Reports",
+      "author": null,
+      "type": "communicated / society proceedings",
+      "summary": "Communicated report of the first quarterly meeting of the Union Anti-Slavery Society of Philadelphia, held Thursday evening, August 23 [1838], in the Associate Reformed Presbyterian Church. The meeting was constituted with prayer by the President, Rev. James M. Wilson. In the absence of the Recording Secretary, George H. Stuart was appointed secretary for the evening. The Treasurer, Wm. McKee, presented his report (elected July 30; received $51.89, paid $49.92 for publications and expenses). The Board of Managers' first quarterly report was read by Samuel D. Hastings, Corresponding Secretary: the Society's great object is 'to operate upon the different churches — to purify them from the pollutions of Slavery'; on the First of August a commemorative meeting was held; the Board purchased 500 copies of the Narrative of James Williams, 500 of the Birney–Elmore correspondence, 185 of Thome & Kimball's Journal, 200 of 'The Bible against Slavery,' and published 2000 copies of Rev. Dr. Schmucker's letter to the Colonization Society with Gerrit Smith's letter."
+    }
+  ],
+  "events": [
+    {
+      "issue": "PF_1838-08-09",
+      "page": 3,
+      "name": "First of August celebration by the Union Anti-Slavery Society (Carpenter's Hall)",
+      "date": "1838-08-01",
+      "location": "Carpenter's Hall, corner of 13th and Race streets, Philadelphia",
+      "description": "The First of August — the anniversary of British West India Emancipation — was celebrated in Philadelphia by the newly formed Union Anti-Slavery Society, an association recently formed by members of several religious societies of the city. James R. Wilson, D.D., of Coldenham, N.Y., addressed the meeting, held at Carpenter's Hall, corner of 13th and Race streets; a copy of his address was requested for publication. The Friends Association of Cherry street meeting also held a First-of-August meeting, with remarks by Dr. Isaac Parrish and Daniel Neall, jr.",
+      "attendees": [
+        ["James R. Wilson", "D.D., of Coldenham N.Y.; delivered the address"],
+        ["Isaac Parrish", "Dr.; remarks at the Cherry street Friends meeting"],
+        ["Daniel Neall, jr.", "remarks at the Cherry street Friends meeting"]
+      ]
+    },
+    {
+      "issue": "PF_1838-08-16",
+      "page": 3,
+      "name": "American Moral Reform Society — annual Convention opens (James Forten presiding)",
+      "date": "1838-08-14",
+      "location": "Philadelphia",
+      "description": "'The Moral Reform Convention met on the 14th [of August, 1838] at 10 o'clock, and was opened with prayer by Rev. Charles W. Gardner. The worthy and venerable President, Mr. James Forten, opened the deliberations with a feeling and appropriate address.' The Freeman's brief notice (signed 'G.') records the opening of the American Moral Reform Society's annual convention in Philadelphia, with the venerable James Forten in the chair and Rev. Charles W. Gardner offering the opening prayer. (The AMRS's organ, the National Reformer, edited by William Whipper, was announced in the Freeman of September 13.)",
+      "attendees": [
+        ["James Forten", "President; opened the deliberations with an address"],
+        ["Charles W. Gardner", "Rev.; opened the convention with prayer"]
+      ]
+    },
+    {
+      "issue": "PF_1838-08-23",
+      "page": 2,
+      "name": "Anti-Slavery Society of the City and County of Philadelphia — adjourned quarterly meeting with delegate roster",
+      "date": "1838-08-14",
+      "location": "Sandiford Hall, Haines Street, Philadelphia",
+      "description": "The Freeman prints the proceedings of the county Anti-Slavery Society's meeting (the stated meeting called for August 14 at Sandiford Hall, with its adjournments), including the full delegate roster. Philadelphia Female Society: Eliz. Konigmacher, Sarah Park, Susan Haydock, Sarah Lewis, Mary Townsend, Elizabeth Carman, Lydia White, Sarah H. Jackson, Hannah Wharton, Sarah Dorsey, Elizabeth Garrigues, Mary Needles, Jane Bousted, Sidney A. Lewis. Spring Garden Society: Warner Justice, Joseph M. Truman, Samuel Ross, E. Strattan, Ebr. S. Davis, Samuel D. Hastings, E. Griffin, John Longstreth, Francis Mitchell, Townsend Hilliard. Northern Liberties' Society: J. L. Peirce, Wm. Hawkins, Anna R. Pickering, Lucas Gillingham, Hannah P. Ellis, Ann J. Smith, Ralph Smith, Rebecca Hawkins, Henry T. Child, Susan Pryor, Wm. Shipley, Ann Marshall. Philadelphia City Society: John Dickinson, Caleb Clothier, Samuel Webb, Lewis C. Gunn, Joseph Healy, Samuel Barry, Charles C. Burleigh. Frankford Society: John G. Lewis. The Board of Managers' abstract reports the Board's first meeting at Sandiford Hall, July 9, 1838 (Abr'm L. Pennock elected president, J. L. Peirce secretary), the adjourned Board meeting of the 21st at No. 144 Green Street (where J. B. Smith's certificate as a delegate from the Bustleton society was presented), and apportionments totaling $1000 (Philadelphia A-S Society $360, Female $300, Spring Garden $185, N. Liberties $75, Frankford $60, Bustleton $20). On motions of Caleb Clothier, John Dickinson and Wm. Hawkins, the Society adjourned to meet in two weeks at Sandiford Hall; Charles C. Burleigh, Lewis C. Gunn and Samuel Webb were appointed to prepare an address on punctual attendance. A Committee on Political Action was appointed per the Frankford Convention resolution: Samuel Webb and John Dickinson (Phila. City), Warner Justice and Joseph M. Truman (Spring Garden), Ralph Smith and Joseph S. Pickering (Northern Liberties), J. B. Smith and R. Hagerman (Bustleton), Dr. S. W. Pickering and John G. Lewis (Frankford), William Fussell and Hugh Gilmore (Penn Township), Henry Peterson and J. L. Hallowell (Junior Society). J. L. Peirce, Sec. pro tem.",
+      "attendees": [
+        ["Eliz. Konigmacher", "delegate, Philadelphia Female Society"],
+        ["Sarah Park", "delegate, Philadelphia Female Society"],
+        ["Susan Haydock", "delegate, Philadelphia Female Society"],
+        ["Sarah Lewis", "delegate, Philadelphia Female Society"],
+        ["Mary Townsend", "delegate, Philadelphia Female Society"],
+        ["Elizabeth Carman", "delegate, Philadelphia Female Society"],
+        ["Lydia White", "delegate, Philadelphia Female Society"],
+        ["Sarah H. Jackson", "delegate, Philadelphia Female Society"],
+        ["Hannah Wharton", "delegate, Philadelphia Female Society"],
+        ["Sarah Dorsey", "delegate, Philadelphia Female Society"],
+        ["Elizabeth Garrigues", "delegate, Philadelphia Female Society"],
+        ["Mary Needles", "delegate, Philadelphia Female Society"],
+        ["Jane Bousted", "delegate, Philadelphia Female Society"],
+        ["Sidney A. Lewis", "delegate, Philadelphia Female Society"],
+        ["Warner Justice", "delegate, Spring Garden Society; Committee on Political Action"],
+        ["Joseph M. Truman", "delegate, Spring Garden Society; Committee on Political Action"],
+        ["Samuel Ross", "delegate, Spring Garden Society"],
+        ["E. Strattan", "delegate, Spring Garden Society"],
+        ["Ebr. S. Davis", "delegate, Spring Garden Society"],
+        ["Samuel D. Hastings", "delegate, Spring Garden Society; officer present"],
+        ["E. Griffin", "delegate, Spring Garden Society"],
+        ["John Longstreth", "delegate, Spring Garden Society"],
+        ["Francis Mitchell", "delegate, Spring Garden Society; officer present"],
+        ["Townsend Hilliard", "delegate, Spring Garden Society"],
+        ["J. L. Peirce", "delegate, Northern Liberties' Society; secretary pro tem; secretary, Board of Managers"],
+        ["Wm. Hawkins", "delegate, Northern Liberties' Society; moved the attendance committee"],
+        ["Anna R. Pickering", "delegate, Northern Liberties' Society"],
+        ["Lucas Gillingham", "delegate, Northern Liberties' Society"],
+        ["Hannah P. Ellis", "delegate, Northern Liberties' Society"],
+        ["Ann J. Smith", "delegate, Northern Liberties' Society"],
+        ["Ralph Smith", "delegate, Northern Liberties' Society; Committee on Political Action"],
+        ["Rebecca Hawkins", "delegate, Northern Liberties' Society"],
+        ["Henry T. Child", "delegate, Northern Liberties' Society"],
+        ["Susan Pryor", "delegate, Northern Liberties' Society"],
+        ["Wm. Shipley", "delegate, Northern Liberties' Society"],
+        ["Ann Marshall", "delegate, Northern Liberties' Society"],
+        ["John Dickinson", "delegate, Philadelphia City Society; Committee on Political Action"],
+        ["Caleb Clothier", "delegate, Philadelphia City Society; Board delegate"],
+        ["Samuel Webb", "delegate, Philadelphia City Society; attendance-address committee; Committee on Political Action"],
+        ["Lewis C. Gunn", "delegate, Philadelphia City Society; attendance-address committee"],
+        ["Joseph Healy", "delegate, Philadelphia City Society"],
+        ["Samuel Barry", "delegate, Philadelphia City Society"],
+        ["Charles C. Burleigh", "delegate, Philadelphia City Society; attendance-address committee"],
+        ["John G. Lewis", "delegate, Frankford Society; Committee on Political Action"],
+        ["Abr'm L. Pennock", "president, Board of Managers"],
+        ["S. W. Pickering", "officer present; Committee on Political Action (Frankford)"],
+        ["Robert E. Peterson", "officer present"],
+        ["Wm. Dorsey", "officer present"],
+        ["G. H. Stewart", "Board delegate, Spring Garden"],
+        ["J. B. Smith", "delegate from the Bustleton society; Committee on Political Action"],
+        ["R. Hagerman", "Committee on Political Action (Bustleton)"],
+        ["Joseph S. Pickering", "Committee on Political Action (Northern Liberties)"],
+        ["William Fussell", "Committee on Political Action (Penn Township)"],
+        ["Hugh Gilmore", "Committee on Political Action (Penn Township)"],
+        ["Henry Peterson", "Committee on Political Action (Junior Society)"],
+        ["J. L. Hallowell", "Committee on Political Action (Junior Society)"],
+        ["James Wood", "treasurer, State Anti-Slavery Society (Eastern District), paid $100"]
+      ]
+    },
+    {
+      "issue": "PF_1838-09-06",
+      "page": 1,
+      "name": "Union Anti-Slavery Society of Philadelphia — first quarterly meeting",
+      "date": "1838-08-23",
+      "location": "Associate Reformed Presbyterian Church, Philadelphia",
+      "description": "First quarterly meeting of the Union Anti-Slavery Society of Philadelphia, Thursday evening, August 23, 1838. Constituted with prayer by the President, Rev. James M. Wilson. George H. Stuart appointed secretary for the evening in the absence of the Recording Secretary. Treasurer Wm. McKee presented his report (dated Philadelphia, Aug. 23, 1838: elected July 30; $51.89 received, $49.92 paid, balance $1.97). Samuel D. Hastings, Corresponding Secretary, read the Board of Managers' first quarterly report: the Society aims to purify the churches from the pollutions of slavery; a First-of-August commemorative meeting was held; extensive anti-slavery publications purchased and circulated. The Society resolved that the Treasurer procure a 'Union Anti-Slavery Subscription Book.'",
+      "attendees": [
+        ["James M. Wilson", "Rev.; President, constituted the meeting with prayer"],
+        ["George H. Stuart", "secretary for the evening"],
+        ["Wm. McKee", "Treasurer; presented Treasurer's report"],
+        ["Samuel D. Hastings", "Corresponding Secretary; read the Board of Managers' report"]
+      ]
+    },
+    {
+      "issue": "PF_1838-09-27",
+      "page": 3,
+      "name": "Northern Liberties Anti-Slavery Society — debate: can abolitionists vote for the amended Pennsylvania Constitution?",
+      "date": "1838-09-27",
+      "location": "Room under the Workingmen's Library, No. 159 St. John Street, Northern Liberties, Philadelphia",
+      "description": "An adjourned discussional meeting of the Northern Liberties Anti-Slavery Society, held at the room under the Workingmen's Library, No. 159 St. John Street (east side), a few doors below Green, this evening, the 27th inst., at 7 o'clock, on the question: 'Can Abolitionists, consistently, vote for the Constitution of Pennsylvania, as amended by the \"Reform Convention\"?' — the new constitution that stripped Pennsylvania's Black citizens of the franchise. The public respectfully invited to attend and participate in the debate.",
+      "attendees": []
+    },
+    {
+      "issue": "PF_1838-09-27",
+      "page": 3,
+      "name": "Association of Friends for Advocating the Cause of the Slave and Improving the Condition of the Free People of Color — stated meeting notice",
+      "date": "1838-10-05",
+      "location": "Usual place, Philadelphia",
+      "description": "Notice of a stated meeting of the Association of Friends for advocating the cause of the Slave, and improving the condition of the Free People of Color, to be held at the usual place on Fourth day evening, 5th of Tenth month next, at half past 7 o'clock. The same notices column announces a stated meeting of the Board of Managers of the Anti-Slavery Society of the city and county of Philadelphia at the residence of Caleb Clothier, No. 45 Cherry street below Fifth, Saturday, October 6, at 10 A.M.; the Pennsylvania A. S. Society (Eastern District) meeting at Coatesville, Chester county, 30th of Tenth month at 10 A.M.; and the first annual meeting of the Western Division of the Pennsylvania Anti-Slavery Society at Pittsburgh, October 31 (Henry Hannen and W. H. Burleigh, corresponding secretaries). Adjacent advertisements include Lydia White's free-labor goods store (219 N. Second street, opposite Wood) and C. & E. Adams, Temperance Grocers, N.E. corner 5th and Race, offering 1900 lbs of African rice 'the produce of free labor.'",
+      "attendees": [
+        ["Caleb Clothier", "Board of Managers to meet at his residence, 45 Cherry street"],
+        ["Henry Hannen", "Cor. Sec'y, Western Division Pa. A-S Society"],
+        ["W. H. Burleigh", "Cor. Sec'y, Western Division Pa. A-S Society"],
+        ["Lydia White", "free-labor goods store, 219 N. Second street"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "PF_1838-08-02",
+      "page": 1,
+      "note": "J. G. Bias of No. 2 Acorn Alley is announced as Philadelphia agent for the Mirror of Liberty, the new quarterly published in New York by David Ruggles — the Black Philadelphia physician-dentist James J. G. Bias acting as distributor for the first Black-edited magazine in the United States.",
+      "names": [
+        ["J. G. Bias", "Philadelphia agent for the Mirror of Liberty (No. 2 Acorn Alley)"],
+        ["David Ruggles", "publisher, Mirror of Liberty (New York)"]
+      ]
+    }
+  ]
+}
