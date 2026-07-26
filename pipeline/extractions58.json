@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "issue": "PF_1838-07-05",
+      "page": 2,
+      "name": "Female Vigilant Association of Philadelphia — officers & Vigilant Committee roster",
+      "date": "1838-07-05",
+      "location": "Philadelphia (Northern Liberties)",
+      "description": "Printed constitution, officers, and 'Vigilant Committee' of the Female Vigilant Association of Philadelphia, a Black women's mutual-aid and Underground-Railroad committee, in the Pennsylvania Freeman, Seventh Month 4 (July 5), 1838, p.2. Names read directly from the page image (the OCR of this column is illegible). Cross-referenced with 'Northern Liberties Tour Sources' (1838 Black Metropolis, 2025): Rebecca Lambsong (Treasurer by 1840, 16 Culvert St) and Amy Hester 'Hetty' Reckless (self-emancipated from NJ; matron of the Moral Reform Retreat).",
+      "attendees": [
+        ["Elizabeth White", "president"],
+        ["Sarah McCrummell", "treasurer"],
+        ["Ruth Harding", "secretary"],
+        ["Elizabeth Henly", "assistant secretary"],
+        ["Mary Bustill", "vigilant committee"],
+        ["Rebecca Lambsong", "vigilant committee"],
+        ["Mary Meads", "vigilant committee"],
+        ["Hetty Reckless", "vigilant committee"],
+        ["Mary Newton", "vigilant committee"],
+        ["Mary Proctor", "vigilant committee"],
+        ["Eliza Colley", "vigilant committee"],
+        ["Miss Drake", "vigilant committee"],
+        ["Mrs. Dunston", "vigilant committee"],
+        ["Rachel Cooness", "vigilant committee"],
+        ["Mrs. Butler", "vigilant committee"],
+        ["Sarah Ash", "vigilant committee"]
+      ]
+    }
+  ]
+}

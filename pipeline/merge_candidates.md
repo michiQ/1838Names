@@ -61,7 +61,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Dorsey, William H.** (winch, 3 appearances, 2 Winch refs) ↔ **DORSEY, WILLIAM** (census, 3 appearances, 3 census records)
 - [HIGH] **Douglass, William Penn** (winch, 9 appearances, 5 Winch refs) ↔ **William Douglass** (newspaper, 4 appearances)
 - [HIGH] **Douglass, William Penn** (winch, 9 appearances, 5 Winch refs) ↔ **DOUGLASS, WILLIAM** (census, 9 appearances, 4 census records)
-- [HIGH] **DOUGLASS, MARY JANE** (census, 6 appearances, 1 census records) ↔ **M. Douglass** (newspaper, 1 appearances)
+- [HIGH] **M. Douglass** (newspaper, 1 appearances) ↔ **DOUGLASS, MARY JANE** (census, 6 appearances, 1 census records)
 - [HIGH] **Driver, Rev. Adam S.** (winch, 3 Winch refs) ↔ **DRIVER, ADAM** (census, 6 appearances, 2 census records)
 - [HIGH] **Dunbar, Abigail** (winch, 8 appearances, 1 Winch refs) ↔ **A. Dunbar** (newspaper, 1 appearances)
 - [HIGH] **Dunbar, Ann** (winch, 8 appearances, 1 Winch refs) ↔ **A. Dunbar** (newspaper, 1 appearances)
