@@ -1,0 +1,302 @@
+{
+ "profiles": [
+  {
+   "find": {
+    "census": 1838,
+    "last": "MURRAY",
+    "first": "JOHN",
+    "addr": "GEORGE"
+   },
+   "story": "Head of a family of four at 59 George Street; a waiter, his wife a washer. Three of the four were not native to Pennsylvania, suggesting the family self-emancipated. His son John Henry Murray served in the 24th U.S. Colored Troops (Co. K) and was a chaplain of the Prince Hall Masons; in 2024 Murray's descendant Dr. Kelli Rachine Barnes identified him as her direct ancestor.",
+   "page": 10
+  },
+  {
+   "find": {
+    "name": "Lambsong"
+   },
+   "story": "A confectioner and homeowner at Culvert above Apple; his wife a washer. Listed in the 1838 Register of Trades, with two in the household belonging to beneficial societies; the family attended Washington Hall Church. Husband of Rebecca Lambsong. His given name was never recorded — the 'Culvert' in the digitized census is a modern transcriber mistaking the street for a first name.",
+   "page": 12
+  },
+  {
+   "find": {
+    "newspaper": "Rebecca Lambsong"
+   },
+   "story": "Wife of Lambsong the confectioner and, by her 1847 will, sister of Hannah Hicks. A member and then Treasurer of the Female Vigilant Committee (living at 16 Culvert Street in 1840) and an active worker on the Underground Railroad. Her will left everything to Hannah Hicks, with Isaac Riggs and James Julius as executors.",
+   "page": 13
+  },
+  {
+   "find": {
+    "census": 1838,
+    "last": "HICKS",
+    "first": "ROBERT"
+   },
+   "story": "A carpenter who freed himself, living on Apple above Culvert. In 1822 he bought his home for $1 from Robert Green — likely the Bethel Church trustee — as satisfaction of a debt. His property was valued at $2,400, far above his neighbors', suggesting he owned several of the alley houses; he attended St. George's.",
+   "page": 14
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Hicks",
+    "first": "Hannah"
+   },
+   "story": "A widow over fifty and a homeowner at 126 Apple Street, working as a washer and living with a young girl, probably a grandchild. Sister of Rebecca Lambsong. Her block may have been an Underground Railroad shelter — the neighboring William Carey household is recorded as newly manumitted by George Dorman of Delaware.",
+   "page": 16
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "McCormmic",
+    "first": "Maria"
+   },
+   "story": "Homeowner at 124 Apple Street, heading a household of four women; her occupation washing and ironing. Isaac Riggs lived free of rent in her house.",
+   "page": 19
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Riggs",
+    "first": "Isaac"
+   },
+   "story": "A brickmaker at 124 Apple Street, living free of rent in his mother Maria McCommic's house; he and his wife belonged to beneficial societies. Isaac Walton Riggs was an executor of Rebecca Lambsong's will; he died 22 July 1852, aged 29, and the family likely attended Zoar.",
+   "page": 19
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Griffith",
+    "first": "James",
+    "addr": "Apple"
+   },
+   "story": "A brickmaker and homeowner at 113 Apple Street, living with his wife and son.",
+   "page": 24
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Saunders",
+    "first": "Solomon"
+   },
+   "story": "Living at 115 Apple Street in a household of six; his occupation 'jobbing,' his wife a washer.",
+   "page": 25
+  },
+  {
+   "find": {
+    "name": "Still, William"
+   },
+   "story": "The great Underground Railroad chronicler first lived in Northern Liberties when he came to Philadelphia in 1844, in an old frame shanty on Fifth Street above Poplar — 'quite adjacent to commons, corn-fields, potato-patches, and brick-yards.'",
+   "page": 27
+  },
+  {
+   "find": {
+    "name": "Leary, David"
+   },
+   "story": "A tanner at Rawle and Orchard, born enslaved and manumitted by Mary George of Delaware. His was a household of eleven, three of them children attending the Northern Liberties public school.",
+   "page": 30
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Cornish",
+    "first": "Scipio"
+   },
+   "story": "A drayman on North Rawle Street who owned three horses and three carts; his wife a washer. A household of six, with two children at the Northern Liberties public school and members in beneficial societies.",
+   "page": 30
+  },
+  {
+   "find": {
+    "name": "Julius, James George Sr."
+   },
+   "story": "Born in 1799, a coachman living by the early 1860s at 827 North Lawrence; recorded on Orchard Street in the 1847 census as 'George Julius.' An executor of Rebecca Lambsong's will. His son James Julius Jr. was a barber who served in the 25th U.S. Colored Infantry.",
+   "page": 34
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Julius, James Jr.",
+     "source": "newspaper"
+    }
+   },
+   "story": "Son of James George Julius Sr.; a barber at 827 North Lawrence who enlisted in the 25th U.S. Colored Infantry in January 1864, aged 19, born in Philadelphia.",
+   "page": 34
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Davis",
+    "first": "Isaac",
+    "addr": "Apple"
+   },
+   "story": "A public porter at 28 Apple Street, his wife a dressmaker; by 1852 living at 825 Lawrence. He was most likely the ground steward of the Union Church burial ground (named at Francis Fauset's 1846 interment), and moved in the circle of the diarist Emilie Davis.",
+   "page": 38
+  },
+  {
+   "find": {
+    "name": "Fausett, Rev. Redmond"
+   },
+   "story": "Born on Coates Street, son of Francis Fauset; an A.M.E. educator who 'nursed African Methodism' from childhood and became a Sabbath-school scholar, teacher, and superintendent. He bought 825 Lawrence from Moses Young in 1862, and was the father of the Harlem Renaissance author Jessie Redmon Fauset.",
+   "page": 39
+  },
+  {
+   "find": {
+    "census": 1838,
+    "last": "TILGHMAN",
+    "first": "PERRY"
+   },
+   "story": "Mother Zoar's first African American pastor, serving from 1835 — when he was only about twenty — until 1844. In 1838 he lived at 159 Brown Street, working as a porter; a member of the Benezet Joint Stock Association, he later moved to Currant Alley and died in 1855.",
+   "page": 45
+  },
+  {
+   "find": {
+    "name": "Jacob White, Jr."
+   },
+   "story": "The first Black school principal in Philadelphia, who led the Robert Vaux primary school out of the basement of Zoar church in the early 1860s; it became the Roberts Vaux public school. A graduate of the Institute for Colored Youth, he was born and raised in Northern Liberties.",
+   "page": 53
+  },
+  {
+   "find": {
+    "name": "McCormick, Ann"
+   },
+   "story": "A teacher who ran a school at Brown Street above Fourth in 1854, most likely at Zoar.",
+   "page": 53
+  },
+  {
+   "find": {
+    "create": {
+     "name": "McCormick, Rebecca",
+     "source": "nolibs"
+    }
+   },
+   "story": "Owner of 954 North Lawrence, where she lived until 1863; likely a daughter or granddaughter of Ann McCormick. Her will named David Bustill Bowser and Charles Bustill as appraisers and Jacob C. White as executor.",
+   "page": 25
+  },
+  {
+   "find": {
+    "census": 1838,
+    "last": "HENSON",
+    "first": "THOS"
+   },
+   "story": "A Coates Street resident and part of the Union A.M.E. community.",
+   "page": 57
+  },
+  {
+   "find": {
+    "census": 1838,
+    "last": "JORDAN",
+    "first": "ALEXANDER"
+   },
+   "story": "A laborer at 170 Coates (now 406 Fairmount), his wife a whitewasher; a household of five with a child in school, two in Sunday school, and two in beneficial societies.",
+   "page": 63
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Faus",
+    "first": "Fran"
+   },
+   "story": "A plumber at 163 Coates with a family of eleven; he died in 1846 and is buried at Union. Father of Redmon Fauset; by the 1847 census the family had moved to Paschall's Alley.",
+   "page": 65
+  },
+  {
+   "find": {
+    "newspaper": "Mary Lewton"
+   },
+   "story": "One of the founders of Union A.M.E. Church (1809) and the Underground Railroad station leader at Paschall's Alley — 'mother to the fleeing bondmen.' Oral history and the Pencil Pusher column credit her Paschall's Alley home with sheltering some two thousand freedom-seekers between 1830 and 1859.",
+   "page": 68
+  },
+  {
+   "find": {
+    "census": 1838,
+    "last": "LEWTON",
+    "first": "JOHN"
+   },
+   "story": "Mary Lewton's husband; a carter, and earlier a chimney sweep, at Paschall's Alley who built a modest fortune, valued at $1,200 in 1838. His home is said to have sheltered more fugitives than any other in Philadelphia — the last, Dangerfield, in 1859. He died in 1855, aged 79.",
+   "page": 70
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Turner",
+    "first": "Curtus"
+   },
+   "story": "Living at 32 Paschall's Alley; born enslaved and manumitted by Richard Cannon at age 28.",
+   "page": 72
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Young",
+    "first": "Richard",
+    "addr": "Paschall"
+   },
+   "story": "At 28 Paschall's Alley; born enslaved and manumitted by Robert Young at age 20.",
+   "page": 72
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Shelly",
+    "first": "Henry",
+    "addr": "Paschall"
+   },
+   "story": "A whitewasher at 32 Paschall's Alley; born enslaved and manumitted by Andrew Owen of Delaware at age 25.",
+   "page": 72
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Parker",
+    "first": "John",
+    "addr": "Paschall"
+   },
+   "story": "A tanner at 15 Paschall's Alley; born enslaved and manumitted by William Dunning of Delaware at age 24.",
+   "page": 72
+  },
+  {
+   "find": {
+    "census": 1838,
+    "last": "YOUNG",
+    "first": "MOSES"
+   },
+   "story": "A carter at Paschall's Alley, valued at $550; he and another paid $400 for their freedom ('2 by selves'), and he may have come from Haiti. He sold 825 Lawrence to Redmon Fauset in 1862; his young daughter Rebecca died of diphtheria in 1861.",
+   "page": 73
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Johnson",
+    "first": "John",
+    "addr": "Paschall"
+   },
+   "story": "A coffee roaster at 13 Paschall's Alley in a household of seven; the census-taker noted that the house held 33 persons in 13 rooms.",
+   "page": 75
+  },
+  {
+   "find": {
+    "census": 1847,
+    "last": "Fauset",
+    "first": "Susan"
+   },
+   "story": "Redmon Fauset's mother; a hairdresser at 15 Paschall's Alley who lived at 825 Lawrence until about 1882.",
+   "page": 72
+  },
+  {
+   "find": {
+    "name": "Reckless, Amy Hester"
+   },
+   "story": "Born enslaved in New Jersey, Amy Hester 'Hetty' Reckless freed herself by taking a coach to Philadelphia with her baby. She served on the Female Vigilant Committee and was matron of the Moral Reform Retreat, a shelter run by and for Black women; the Pencil Pusher column names her alongside Mary Lewton among the neighborhood's Underground Railroad women.",
+   "page": 69
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Burr, Hetty",
+     "source": "winch"
+    }
+   },
+   "story": "Born 1795, wife of Jean Pierre 'J.P.' Burr, an illegitimate son of Aaron Burr. A member of the Philadelphia Female Anti-Slavery Society, a delegate to the 1838 Women's Anti-Slavery Convention and a member of its business committee, and a member of the Gilbert Lyceum (1841).",
+   "cite": {
+    "text": "Julie Winch Names Reference; entry recovered from the record of Burr, David T."
+   }
+  }
+ ]
+}

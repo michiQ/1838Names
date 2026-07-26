@@ -338,6 +338,7 @@ function renderList(q){
       if(p._blob===undefined){
         const parts=[p.name,p.aka||''];
         for(const r of (p.refs||[])) parts.push(r.n||'',r.c||'');
+        for(const n of (p.nolibs||[])) parts.push(n.s||'');
         for(const m of (p.mentions||[])) parts.push(m.ctx||'');
         for(const c of (p.census||[])) parts.push(c.church||'',c.addr||'',c.occM||'',c.occF||'');
         for(const d of (p.directory||[])) parts.push(d.occ||'',d.addr||'');
@@ -533,10 +534,13 @@ function select(pid){
     const rev = d.needsReview ? `<div style="margin-top:4px;font-size:12px;color:var(--rust)">⚑ needs review: ${esc(d.needsReview)}</div>` : '';
     return `<div class="card"><span class="hl">${esc(d.name||p.name)}</span><q>${esc(bits.join(' · '))}</q>${rev}<div class="src">1820 Philadelphia city directory (cross-marked Black residents)${d.ocr?` · OCR: "${esc(d.ocr)}"`:''} · <em>name-based link</em> · <a href="https://drive.google.com/file/d/19a_BG9N5yWaskwywXPh-t_f_3qa3MiCU/view?usp=drive_link" target="_blank" title="1820 Philadelphia directory source on Google Drive">view directory</a></div></div>`;
   }).join(''); }
+  // Northern Liberties tour profiles (curated bio + page-anchored PDF citation)
+  if(p.nolibs?.length){ h += `<h3>Northern Liberties tour</h3>` + p.nolibs.map(n=>
+    `<div class="card">${esc(n.s||'')}<div class="src">${n.u?`<a href="${esc(n.u)}" target="_blank" rel="noopener" title="Open the tour source PDF at this page">${esc(n.c)}</a>`:esc(n.c)}</div></div>`).join(''); }
   // winch refs
   if(p.refs?.length){ h += `<h3>Winch reference entry (${p.refs.length})</h3>` + p.refs.map(r=>
     `<div class="card">${esc(r.n||'')}${r.c?`<div class="src">(${esc(r.c)})</div>`:''}</div>`).join(''); }
-  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length&&!p.directory?.length) h += '<p class="empty">No records.</p>';
+  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length&&!p.directory?.length&&!p.nolibs?.length) h += '<p class="empty">No records.</p>';
   right.innerHTML = h;
   right.scrollTop = 0;
   if(isMobile() && !window._suppressAutoOpen) openRightDrawer();

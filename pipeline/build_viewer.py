@@ -216,8 +216,14 @@ for o in orgs_out:
             people[pid].setdefault("orgs", []).append(o["name"])
 print("orgs (>=2 members):", len(orgs_out), "| top:", [(o['name'], len(o['members'])) for o in orgs_out[:5]])
 
+# Northern Liberties tour profiles (curated biographies + page-anchored PDF citations)
+if has_table("nolibs_profiles"):
+    for pid, story, cite, url in con.execute("SELECT person_id, story, cite, url FROM nolibs_profiles"):
+        if pid in people:
+            people[pid].setdefault("nolibs", []).append({"s": story, "c": cite, "u": url})
+
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 

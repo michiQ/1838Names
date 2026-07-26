@@ -25,7 +25,7 @@ Instructions for any Claude session continuing this project. Priority order: **P
 5. Message summary: issues processed, new people matched, notable finds, whether GitHub was updated.
 
 ## Census datasets (loaded)
-The DB contains `census_1838` (PAS census, 3,296 households), `census_1847` (SOFAAC, 4,284), `census_matches` (445 confirmed 1838↔1847 matches), and `census_links` (person↔household). ALL heads of household exist as `people` rows (source='census') unless they matched a Winch person unambiguously. Source files live in `../census/`. ORDER MATTERS each run: `import_census.py` (recreates census people) must run BEFORE `match_names.py` and `load_extractions.py`, else appearances reference deleted people ids. Full rebuild order: import_census.py → import_1820_directory.py → match_names.py → load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py. (See "1820 Philadelphia directory" section below for the new import_1820_directory.py step, added 2026-07-10.)
+The DB contains `census_1838` (PAS census, 3,296 households), `census_1847` (SOFAAC, 4,284), `census_matches` (445 confirmed 1838↔1847 matches), and `census_links` (person↔household). ALL heads of household exist as `people` rows (source='census') unless they matched a Winch person unambiguously. Source files live in `../census/`. ORDER MATTERS each run: `import_census.py` (recreates census people) must run BEFORE `match_names.py` and `load_extractions.py`, else appearances reference deleted people ids. Full rebuild order: import_census.py → import_1820_directory.py → match_names.py → load_extractions.py → apply_merges.py → load_nolibs.py → find_merge_candidates.py → build_viewer.py. (See "1820 Philadelphia directory" section below for the new import_1820_directory.py step, added 2026-07-10.)
 
 ## 1820 Philadelphia directory (loaded 2026-07-10)
 `pipeline/import_1820_directory.py` imports `pipeline/1820_directory_source.csv` (1,654 rows —
@@ -50,7 +50,7 @@ Run it alongside `import_census.py`, before `match_names.py` (it only touches `p
 `directory_1820`/`directory_links` tables, same as census, so ordering relative to appearances
 doesn't matter — but PIPELINE.md's rebuild order groups all source imports first for consistency).
 Full rebuild order is now: import_census.py → import_1820_directory.py → match_names.py →
-load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py.
+load_extractions.py → apply_merges.py → load_nolibs.py → find_merge_candidates.py → build_viewer.py.
 `build_viewer.py` attaches directory rows to each person (like census) as a `directory` list
 (occupation/address/PDF page/confidence/needs-review/OCR text) — no graph edges synthesized from
 it, same as census. `find_merge_candidates.py` and `apply_merges.py` were both updated to count/
@@ -77,6 +77,22 @@ Before pushing ANY change to viewer_template.html, run `node pipeline/smoke_test
 All pages OCR'd before 2026-07-06 were done at 150dpi. Michiko asked to re-OCR all of them at the new 300dpi default. This is a large job (~204 pages across CA/PF/PP as of 2026-07-06) that will span many runs. **Until `pipeline/reocr_backfill.md` shows everything done, spend part of every run's budget on backfill before (or interleaved with) new-issue processing** — Michiko's priority is fixing the existing Colored American data first since that's what she's actively reviewing.
 1. Read `pipeline/reocr_backfill.md` for the current pending list.
 2. For each pending slug: hydrate its PDF (Grep %PDF trick), re-run OCR at 300dpi per the per-issue steps above, overwriting the existing `ocr_text/<slug>_pN.txt` files in place.
-3. After re-OCRing a batch, re-run the full rebuild (import_census.py → match_names.py → load_extractions.py → apply_merges.py → find_merge_candidates.py → build_viewer.py) — match_names.py rebuilds ALL appearances from ocr_text/ every time, so this picks up the cleaner text automatically. No changes needed to extractions*.json (those are hand-curated summaries, independent of raw OCR quality).
+3. After re-OCRing a batch, re-run the full rebuild (import_census.py → match_names.py → load_extractions.py → apply_merges.py → load_nolibs.py → find_merge_candidates.py → build_viewer.py) — match_names.py rebuilds ALL appearances from ocr_text/ every time, so this picks up the cleaner text automatically. No changes needed to extractions*.json (those are hand-curated summaries, independent of raw OCR quality).
 4. Mark completed slugs done in `pipeline/reocr_backfill.md` and update the count in progress.txt.
 5. Once the backfill list is fully done, remove this section and go back to strictly new-issue processing order.
+
+## Northern Liberties tour profiles (added 2026-07-26)
+`pipeline/load_nolibs.py` loads `pipeline/nolibs_profiles.json` — curated biographies for the
+people in the "Northern Liberties Tour Sources" PDF (a 1838 Black Metropolis document) — onto the
+matching people, plus a page-anchored citation linking to `Northern_Liberties_Tour_Sources.pdf`
+(kept in the repo root / Drive folder, served alongside index.html). Runs AFTER apply_merges (so
+renames/unifications are final) and BEFORE find_merge_candidates/build_viewer. Idempotent:
+rebuilds the `nolibs_profiles` table from scratch each run, re-resolving every person by
+census-row / canonical-name each time (census people are recreated with new ids every rebuild, so
+the profiles MUST be re-resolved — that's why this step exists rather than hand-editing rows). It
+also creates the two people the tour documents who are absent from the source data (Rebecca
+McCormick, James Julius Jr.) and trims Hetty Burr's sketch out of the 'Burr, David T.' record.
+build_viewer.py attaches these as a person's `nolibs` list; viewer_template.html renders a
+"Northern Liberties tour" detail card with the clickable page link.
+Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
+load_extractions.py -> apply_merges.py -> load_nolibs.py -> find_merge_candidates.py -> build_viewer.py.
