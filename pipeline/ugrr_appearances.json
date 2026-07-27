@@ -2127,10 +2127,8 @@
   },
   {
    "find": {
-    "create": {
-     "name": "Myers, Mrs.",
-     "source": "ugrr"
-    }
+    "name": "MYERS, RACHEL",
+    "source": "census"
    },
    "chapter": "Woman Escaping in a Box",
    "page": 608

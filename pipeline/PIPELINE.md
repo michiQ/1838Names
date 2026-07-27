@@ -125,8 +125,9 @@ freedom-seekers only in body prose, not the TOC, so those are not yet captured (
 The full book OCR text is now committed at `pipeline/ugrr_build/undergroundrailr00lcstil_hocr_searchtext.txt`
 (2.66MB, the Internet Archive hOCR search text) — grep it to find those body-prose names for the
 future pass, and to check any given name/page before hand-adding an entry. (2026-07-27: added
-Mrs. Myers — "Woman Escaping in a Box", p.608, stored "Myers, Mrs." per the title-only house style —
-and John Myers — body sub-heading under "Arrival from Harford County", p.434 — this way, as curated
-mid-narrative links exactly like Sarah Ash.)
+Mrs. Myers — "Woman Escaping in a Box", p.608, linked to the census person MYERS, RACHEL per
+Michiko's identification (not a standalone person) — and John Myers — body sub-heading under
+"Arrival from Harford County", p.434, a new ugrr person — this way, as curated mid-narrative links
+exactly like Sarah Ash.)
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
 load_extractions.py -> apply_merges.py -> load_nolibs.py -> load_ugrr.py -> find_merge_candidates.py -> build_viewer.py.

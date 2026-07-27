@@ -53,6 +53,14 @@ def clean_org(s):
 def norm_tok(t):
     return re.sub(r"[^A-Za-z]", "", t)
 
+# A 2-letter honorific ("Mr", "Dr", "Ms", "St", "Mt") must never be read as a first-name
+# INITIAL. Without this, "Mr. Peter" was misread as initial "M." + surname "Peter" and
+# wrongly attributed to "Peter, Mary Jane" (and "Dr./St. <Surname>" similarly). This guards
+# only the initial rule; a genuine given-name match via close() still fires, so people whose
+# curated name embeds a title (e.g. "Cannon, Rev. Noah C", "Douglass, Mrs. S.M.") are still
+# matched by "Rev. Cannon" / "Mrs. Douglass". (Michiko 2026-07-27)
+INITIAL_STOP = {"mr", "ms", "dr", "st", "mt", "jr", "sr"}
+
 def close(a, b):
     a, b = a.lower(), b.lower()
     if a == b: return True
@@ -125,7 +133,8 @@ def main():
                     if givens and ptok[0].isupper():
                         g0 = givens[0]
                         if close(ptok, g0): matched = True; strength = 2; break
-                        if len(ptok) <= 2 and g0 and ptok[0].lower() == g0[0].lower():
+                        if len(ptok) <= 2 and norm_tok(ptok).lower() not in INITIAL_STOP \
+                                and g0 and ptok[0].lower() == g0[0].lower():
                             matched = True; strength = 1; break
                 if not matched: continue
                 span_matches.setdefault(pos // 60, []).append((pid, strength, pos))
