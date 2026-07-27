@@ -2124,6 +2124,26 @@
    },
    "chapter": "Woman Escaping in a Box",
    "page": 608
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Myers, Mrs.",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Woman Escaping in a Box",
+   "page": 608
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Myers, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Harford County",
+   "page": 434
   }
  ]
 }
