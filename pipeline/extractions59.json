@@ -1,0 +1,120 @@
+{
+  "_note": "Batch: Pennsylvania Freeman, dds-41242, first 4 issues (Vol. VI, Whole No. 134-137): PF_1839-04-04, 04-11, 04-18, 04-25. Curated Philadelphia-relevant items; OCR-uncertain names flagged in roles. Body-text Winch-name appearances are handled automatically by match_names.py.",
+  "articles": [
+    {
+      "issue": "PF_1839-04-04",
+      "page": 1,
+      "headline": "Union Anti-Slavery Society -- third quarterly meeting (Report of the Board of Managers)",
+      "author": null,
+      "type": "proceedings",
+      "summary": "Report of the third quarterly meeting of the Union Anti-Slavery Society of Philadelphia, adjourned from Feb. 28 and held at Clarkson Hall on a Thursday evening (14th inst.). The President, Rev. J. M. Willson, took the chair; Corresponding Secretary Samuel D. Hastings read the Report of the Board of Managers, which laments that the professing church has become the 'strong hold' of slavery and pledges to go forward regardless of favor or frown. After debate the report was adopted and ordered sent to every minister of the Gospel in the community, and an amendment to the 4th article of the constitution was laid over."
+    },
+    {
+      "issue": "PF_1839-04-11",
+      "page": 3,
+      "headline": "Colored citizens renew their protest against colonization",
+      "author": null,
+      "type": "news report",
+      "summary": "Reprinting the caustic Colonization Convention notice from the Christian Witness of Pittsburgh, the Freeman observes that 'the colored people of Boston, New York, Philadelphia, and Pittsburgh have within a few weeks renewedly protested in the most solemn manner against the colonization scheme, and declared their unalterable determination to be neither wheedled nor driven from the land of their nativity.'"
+    },
+    {
+      "issue": "PF_1839-04-25",
+      "page": 2,
+      "headline": "Philadelphia City Anti-Slavery Society -- annual election of officers by ward",
+      "author": null,
+      "type": "proceedings",
+      "summary": "Proceedings of the Philadelphia City Anti-Slavery Society's annual meeting, at which officers were chosen for the ensuing year and Superintendents assigned by ward -- a snapshot of the society's ward organization across the old city (Upper and Lower Delaware, High Street, and Chesnut Wards)."
+    }
+  ],
+  "events": [
+    {
+      "issue": "PF_1839-04-04",
+      "page": 1,
+      "name": "Union Anti-Slavery Society of Philadelphia, third quarterly meeting",
+      "date": "1839-03-14",
+      "location": "Clarkson Hall, Cherry Street above Sixth, Philadelphia",
+      "description": "Third quarterly meeting of the Union Anti-Slavery Society of Philadelphia, adjourned from Feb. 28, 1839. Rev. J. M. Willson presided; the Report of the Board of Managers was read by the Corresponding Secretary and, after debate, adopted and ordered sent to every minister in the community.",
+      "attendees": [
+        ["J. M. Willson", "president (Rev.)"],
+        ["Samuel D. Hastings", "corresponding secretary"],
+        ["William S. Pierce", "recording secretary"],
+        ["Benjamin Wilson", "corresponding secretary (Union A.S. Association)"]
+      ]
+    },
+    {
+      "issue": "PF_1839-04-11",
+      "page": 3,
+      "name": "Pennsylvania Anti-Slavery Society delegation to the American Anti-Slavery Society annual meeting",
+      "date": "1839-05-07",
+      "location": "American A.S. Society annual meeting, New York (delegation published in the Pennsylvania Freeman)",
+      "description": "The Pennsylvania Anti-Slavery Society's list of delegates, by county, to represent the state at the American Anti-Slavery Society annual meeting in New York on May 7, 1839. Philadelphia County heads the list, followed by Chester, Lancaster, Delaware, Montgomery, Dauphin, Susquehanna, and Bradford counties. (OCR of the interleaved column list is imperfect; well-read names captured here.)",
+      "attendees": [
+        ["Lucius C. Matlack", "delegate (Philadelphia County)"],
+        ["Thomas Earle", "delegate (Philadelphia County)"],
+        ["William H. Johnson", "delegate (Philadelphia County)"],
+        ["Richard Janney", "delegate (Philadelphia County)"],
+        ["Elijah F. Pennypacker", "delegate (Chester County)"],
+        ["James Fulton Jr.", "delegate (Chester County)"],
+        ["Leonard Fletcher", "delegate (Chester County)"],
+        ["David Potts", "delegate (Chester County)"],
+        ["William Jackson", "delegate (Chester County)"],
+        ["Jacob Pierce", "delegate (Chester County)"],
+        ["Lindley Coates", "delegate (Lancaster County)"],
+        ["Thomas Whitson", "delegate (Lancaster County)"],
+        ["Joseph Gibbons Jr.", "delegate (Lancaster County)"],
+        ["Joseph Rhodes", "delegate (Delaware County)"],
+        ["George Sellers", "delegate (Delaware County)"],
+        ["John Sellers Jr.", "delegate (Delaware County)"],
+        ["Lewis C. Gunn", "delegate (Delaware County)"],
+        ["Joseph Liddon Pennock", "delegate (Delaware County)"],
+        ["Nathan Stem", "delegate (Montgomery County)"],
+        ["John P. Rutter", "delegate (Montgomery County)"],
+        ["Abel Fitzwater", "delegate (Montgomery County)"],
+        ["Alexander Graydon", "delegate (Dauphin County)"],
+        ["William Jessup", "delegate (Susquehanna County)"],
+        ["A. L. Post", "delegate (Susquehanna County)"],
+        ["George Gamble", "delegate (Bradford County)"],
+        ["G. F. Horton", "delegate (Bradford County)"],
+        ["James Wood", "treasurer, Pennsylvania Anti-Slavery Society"]
+      ]
+    },
+    {
+      "issue": "PF_1839-04-25",
+      "page": 2,
+      "name": "Philadelphia City Anti-Slavery Society, annual election of officers",
+      "date": "1839-04",
+      "location": "Philadelphia",
+      "description": "Officers chosen at the Philadelphia City Anti-Slavery Society's annual meeting, with Superintendents assigned by ward.",
+      "attendees": [
+        ["John Simmons", "president"],
+        ["Samuel Webb", "vice president"],
+        ["Moses Soule", "vice president (OCR uncertain)"],
+        ["Haworth Wetherald", "secretary"],
+        ["Daniel Neall Jr.", "treasurer"],
+        ["Caleb Clothier", "ward superintendent (Upper Delaware Ward)"],
+        ["William C. Betts", "ward superintendent (Lower Delaware Ward)"],
+        ["Joseph Healy", "ward superintendent (High Street Ward)"],
+        ["Charles Wise", "ward superintendent (Chesnut Ward)"]
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "issue": "PF_1839-04-11",
+      "page": 3,
+      "note": "Standing weekly notices of Philadelphia anti-slavery society meetings (secretaries signing the notices)",
+      "names": [
+        ["Jacob M. Ellis", "secretary, Northern Liberties Anti-Slavery Society"],
+        ["H. Weishampel", "secretary, Philadelphia City Anti-Slavery Society"]
+      ]
+    },
+    {
+      "issue": "PF_1839-04-04",
+      "page": 3,
+      "note": "Standing meeting notice of the Philadelphia Female Anti-Slavery Society",
+      "names": [
+        ["Anne M. Hopper", "secretary, Philadelphia Female Anti-Slavery Society"]
+      ]
+    }
+  ]
+}
