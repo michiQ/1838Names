@@ -96,3 +96,31 @@ build_viewer.py attaches these as a person's `nolibs` list; viewer_template.html
 "Northern Liberties tour" detail card with the clickable page link.
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
 load_extractions.py -> apply_merges.py -> load_nolibs.py -> find_merge_candidates.py -> build_viewer.py.
+
+## William Still's Underground Railroad appearances (added 2026-07-27)
+`pipeline/load_ugrr.py` loads `pipeline/ugrr_appearances.json` — appearances of people in
+William Still's *The Underground Rail Road* (Philadelphia, 1872; Internet Archive item
+`undergroundrailr00lcstil`, OCR source in Drive `Newspapers/Underground Railroad/`). Each entry
+ties a person to the CHAPTER they appear in and a page-anchored Internet Archive link. Runs
+AFTER load_nolibs and BEFORE find_merge_candidates/build_viewer. Idempotent: rebuilds the
+`ugrr_appearances` table each run and re-resolves people by canonical name + source; book-only
+people are created source='ugrr' (aliases stored when known).
+
+Build method (working scripts in `pipeline/ugrr_build/`): the table of contents was parsed into
+210 chapters with body-anchored page numbers (running-header page map cross-checked vs the TOC);
+the named freedom-seekers + helpers in each chapter title/subtitle were extracted; each was
+matched to an existing curated person or created new. Matching rules, tuned for precision: only
+role='helper' abolitionists LINK to existing DB people (freedom-seekers are always created new,
+since a post-1850 escapee rarely IS a same-named 1838 free Philadelphian — find_merge_candidates
+surfaces any true overlap); initial-only given names link only on rare/unique surnames; bare-
+surname DB rows never link. Sarah Ash ("Woman Escaping in a Box") is a curated mid-narrative link.
+
+The Internet Archive link uses the CHAPTER page + 2 (two front-matter leaves in the scan, so
+printed p.608 is leaf 610) and ?q=<surname> to highlight the name, e.g.
+https://archive.org/details/undergroundrailr00lcstil/page/610/mode/1up?q=ash . build_viewer.py
+attaches these as a person's `ugrr` list; viewer_template.html renders an "Underground Railroad
+(William Still)" detail card, a "UGRR" badge (b-u), and an "Underground Railroad" filter chip.
+KNOWN GAP: the mid-book "ARRIVAL FROM <place>, <year>" chapters (pp. ~136-600) name their
+freedom-seekers only in body prose, not the TOC, so those are not yet captured (future body pass).
+Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
+load_extractions.py -> apply_merges.py -> load_nolibs.py -> load_ugrr.py -> find_merge_candidates.py -> build_viewer.py.

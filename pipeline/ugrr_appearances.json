@@ -1,0 +1,2129 @@
+{
+ "appearances": [
+  {
+   "find": {
+    "create": {
+     "name": "Conklin, Seth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Seth Conklin",
+   "page": 23
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Garrett, Thomas",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Underground Rail Road Letters",
+   "page": 39
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Garrett, Thomas",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Thomas Garrett",
+   "page": 633
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Gay, Sydney Howard",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Underground Rail Road Letters",
+   "page": 39
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hill, John Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Underground Rail Road Letters",
+   "page": 39
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hill, John Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Five Years and One Month Secreted",
+   "page": 190
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Ford, Sheridan",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Underground Rail Road Letters",
+   "page": 39
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Ford, Sheridan",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Sheridan Ford",
+   "page": 67
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Thompson, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Underground Rail Road Letters",
+   "page": 39
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Penn, William",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Underground Rail Road Letters",
+   "page": 39
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Jones, William Box Peel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "William Box Peel Jones",
+   "page": 46
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Harris, Wesley",
+     "source": "ugrr",
+     "aliases": "Robert Jackson"
+    }
+   },
+   "chapter": "Wesley Harris",
+   "page": 48
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Matterson, Craven",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Wesley Harris",
+   "page": 48
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Davis, Clarissa",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Clarissa Davis",
+   "page": 60
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Blow, Anthony",
+     "source": "ugrr",
+     "aliases": "Henry Levison"
+    }
+   },
+   "chapter": "Anthony Blow",
+   "page": 61
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Johnson, Perry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Perry Johnson of Elkton Maryland",
+   "page": 64
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Forman, Isaac",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac Forman William Davis and Willis Redick",
+   "page": 64
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Davis, William",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac Forman William Davis and Willis Redick",
+   "page": 64
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Redick, Willis",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac Forman William Davis and Willis Redick",
+   "page": 64
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Camp, Joseph Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Joseph Henry Camp",
+   "page": 66
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Kneeland, Joseph",
+     "source": "ugrr",
+     "aliases": "Joseph Hudson"
+    }
+   },
+   "chapter": "Joseph Kneeland",
+   "page": 68
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Morgan, Edward",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Edward Morgan Henry Johnson James and Stephen Butler",
+   "page": 70
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Johnson, Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Edward Morgan Henry Johnson James and Stephen Butler",
+   "page": 70
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Butler, James",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Edward Morgan Henry Johnson James and Stephen Butler",
+   "page": 70
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Butler, Stephen",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Edward Morgan Henry Johnson James and Stephen Butler",
+   "page": 70
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Predo, Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Henry Predo",
+   "page": 72
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hughes, Daniel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Henry Predo",
+   "page": 72
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Elliott, Thomas",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Henry Predo",
+   "page": 72
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Epps, Mary",
+     "source": "ugrr",
+     "aliases": "Emma Brown"
+    }
+   },
+   "chapter": "Mary Epps alias Emma Brown Joseph and Rober",
+   "page": 73
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Robinson, Joseph",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Mary Epps alias Emma Brown Joseph and Rober",
+   "page": 73
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Robinson, Robert",
+     "source": "ugrr",
+     "aliases": "Bob"
+    }
+   },
+   "chapter": "Mary Epps alias Emma Brown Joseph and Rober",
+   "page": 73
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Solomon, George",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "George Solomon Daniel Neall Benjamin R. Fletcher and",
+   "page": 81
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Neall, Daniel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "George Solomon Daniel Neall Benjamin R. Fletcher and",
+   "page": 81
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Fletcher, Benjamin R",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "George Solomon Daniel Neall Benjamin R. Fletcher and",
+   "page": 81
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Dorsey, Maria",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "George Solomon Daniel Neall Benjamin R. Fletcher and",
+   "page": 81
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Henry Box",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "George Solomon Daniel Neall Benjamin R. Fletcher and",
+   "page": 81
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Johnson, Jane",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Trial of the Emancipators of Col. J. H. Wheeler's Slaves Jane Johnson",
+   "page": 97
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Loney, Cordelia",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "A Slave Girl's Narrative",
+   "page": 112
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Turner, Jackson",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival of Jackson Isaac and Edmondson Turner from Petersburg",
+   "page": 117
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Turner, Isaac",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival of Jackson Isaac and Edmondson Turner from Petersburg",
+   "page": 117
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Turner, Edmondson",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival of Jackson Isaac and Edmondson Turner from Petersburg",
+   "page": 117
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Robert",
+     "source": "ugrr",
+     "aliases": "Thomas Jones"
+    }
+   },
+   "chapter": "Robert Brown",
+   "page": 121
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Loney, Anthony",
+     "source": "ugrr",
+     "aliases": "William Armstead"
+    }
+   },
+   "chapter": "Anthony Loney",
+   "page": 122
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Scott, Cornelius",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Anthony Loney",
+   "page": 122
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Williams, Samuel",
+     "source": "ugrr",
+     "aliases": "John Williams"
+    }
+   },
+   "chapter": "Samuel Williams",
+   "page": 126
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Grigby, Barnaby",
+     "source": "ugrr",
+     "aliases": "John Boyer"
+    }
+   },
+   "chapter": "Samuel Williams",
+   "page": 126
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Grigby, Mary Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Samuel Williams",
+   "page": 126
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Wanzer, Frank",
+     "source": "ugrr",
+     "aliases": "Robert Scott"
+    }
+   },
+   "chapter": "Samuel Williams",
+   "page": 126
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Foster, Emily",
+     "source": "ugrr",
+     "aliases": "Ann Wood"
+    }
+   },
+   "chapter": "Samuel Williams",
+   "page": 126
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Jordan, William",
+     "source": "ugrr",
+     "aliases": "William Price"
+    }
+   },
+   "chapter": "William Jordan",
+   "page": 129
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Grant, Joseph",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Joseph Grant and John Speaks",
+   "page": 132
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Speaks, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Joseph Grant and John Speaks",
+   "page": 132
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Taylor, William N",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "William N. Taylor",
+   "page": 134
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Louisa",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Louisa Brown Jacob Waters and Alfred Goulden",
+   "page": 135
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Waters, Jacob",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Louisa Brown Jacob Waters and Alfred Goulden",
+   "page": 135
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Goulden, Alfred",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Louisa Brown Jacob Waters and Alfred Goulden",
+   "page": 135
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Pipkins, Jefferson",
+     "source": "ugrr",
+     "aliases": "David Jones"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Pipkins, Louisa",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brit, Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Harriet",
+     "source": "ugrr",
+     "aliases": "Jane Wooton"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Murry, Gracy",
+     "source": "ugrr",
+     "aliases": "Sophia Sims"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Williams, Edward",
+     "source": "ugrr",
+     "aliases": "Henry Johnson"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Lee, Charles",
+     "source": "ugrr",
+     "aliases": "Thomas Bushier"
+    }
+   },
+   "chapter": "Arrival from Baltimore",
+   "page": 136
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Anderson, Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Congo, Charles",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Congo, Margaret",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Chaskey",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Washington, William Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Frisley, James Alfred",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Salter, Charles Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Taylor, Stephen",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Charles",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hollis, Charles H",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Dorsey, Luther",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Several Arrivals",
+   "page": 137
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Smith, Jeremiah W",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Richmond",
+   "page": 141
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Smith, Julia",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Richmond",
+   "page": 141
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Massey, James",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Trusty, Perry Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Rhoads, George",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Rhoads, James",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Washington, George",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Rhoads, Sarah Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Stevenson, Mary Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Eight Arrivals",
+   "page": 143
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Thompson, Charles",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Charles Thompson",
+   "page": 146
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Galloway, Abram",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Blood Flowed Freely",
+   "page": 150
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Eden, Richard",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Blood Flowed Freely",
+   "page": 150
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Pettif, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "John Pettifoot",
+   "page": 152
+  },
+  {
+   "find": {
+    "create": {
+     "name": "White, Emanuel T",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Emanuel T. White",
+   "page": 154
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Johnson, Samuel W",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Samqel W. Johnson",
+   "page": 158
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Amos, Stephen",
+     "source": "ugrr",
+     "aliases": "Henry Johnson"
+    }
+   },
+   "chapter": "Family from Baltimore",
+   "page": 160
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Amos, Harriet",
+     "source": "ugrr",
+     "aliases": "Mary Jane Johnson"
+    }
+   },
+   "chapter": "Family from Baltimore",
+   "page": 160
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Amos, Ann Rebecca",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Family from Baltimore",
+   "page": 160
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Amos, William H",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Family from Baltimore",
+   "page": 160
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Amos, Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Family from Baltimore",
+   "page": 160
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Amos, Mary Elieu",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Family from Baltimore",
+   "page": 160
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hilton, Elijah",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Elijah Hilton",
+   "page": 162
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brown, Solomon",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Solomon Brown",
+   "page": 163
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hogg, William",
+     "source": "ugrr",
+     "aliases": "John Smith"
+    }
+   },
+   "chapter": "William Hogg",
+   "page": 164
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Johnson, Ann",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Two Female Passengers from Maryland",
+   "page": 164
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Woolfley, Lavina",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Two Female Passengers from Maryland",
+   "page": 164
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Mahoney, Matilda",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrivals from Different Places",
+   "page": 172
+  },
+  {
+   "find": {
+    "name": "J. W. C. Pennington",
+    "source": "newspaper"
+   },
+   "chapter": "Arrivals from Different Places",
+   "page": 172
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Weems, Ann Maria",
+     "source": "ugrr",
+     "aliases": "Joe Wright"
+    }
+   },
+   "chapter": "Fleeing Girl of Fifteen in Male Attire",
+   "page": 177
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hill, Hezekiah",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Five Years and One Month Secreted",
+   "page": 190
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hill, James",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Five Years and One Month Secreted",
+   "page": 190
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Barlow, Archer",
+     "source": "ugrr",
+     "aliases": "Emet Robins"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Bush, Samuel",
+     "source": "ugrr",
+     "aliases": "William Oblebee"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Spencer, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Spencer, William",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Albert, James",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Fisher, Robert",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Harris, Nathan",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Waples, Haniel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Tonnell, Rosanna",
+     "source": "ugrr",
+     "aliases": "Maria Hyde"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Ennis, Mary",
+     "source": "ugrr",
+     "aliases": "Licia Hemmit"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Caroline, Louisa",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Virginia Maryland and Delaware",
+   "page": 203
+  },
+  {
+   "find": {
+    "create": {
+     "name": "White, William B",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Richmond and Norfork Va",
+   "page": 211
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brooks, Susan",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Richmond and Norfork Va",
+   "page": 211
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Atkinson, William Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "From Richmond and Norfork Va",
+   "page": 211
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Gilbert, Charles",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Charles Gilbert",
+   "page": 235
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Bowlegs, Jim",
+     "source": "ugrr",
+     "aliases": "Bill Paul"
+    }
+   },
+   "chapter": "Liberty or Death",
+   "page": 240
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Green, Samuel",
+     "source": "ugrr",
+     "aliases": "Wesley Kinnard"
+    }
+   },
+   "chapter": "Samuel Green",
+   "page": 246
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Nixon, Sam",
+     "source": "ugrr",
+     "aliases": "Dr. Thomas Bayne; Thomas Bayne"
+    }
+   },
+   "chapter": "Sam Nixon alias Dr. Thomas Bayne",
+   "page": 254
+  },
+  {
+   "find": {
+    "create": {
+     "name": "McCoy, Robert",
+     "source": "ugrr",
+     "aliases": "William Donar"
+    }
+   },
+   "chapter": "Slave-trader Hall Is Foiled",
+   "page": 274
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Sanders, Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Slave-trader Hall Is Foiled",
+   "page": 274
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Green, Lear",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "The Protection of Slave Property in Virginia.",
+   "page": 281
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Williams, Isaac",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac Williams Henry Banks and Kit Nickless",
+   "page": 284
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Banks, Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac Williams Henry Banks and Kit Nickless",
+   "page": 284
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Nickless, Kit",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac Williams Henry Banks and Kit Nickless",
+   "page": 284
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Mitchell, Cyrus",
+     "source": "ugrr",
+     "aliases": "John Steel"
+    }
+   },
+   "chapter": "Arrival of Five from the Eastern Shore of Maryland",
+   "page": 286
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Handy, Joshua",
+     "source": "ugrr",
+     "aliases": "Hambleton Hamby"
+    }
+   },
+   "chapter": "Arrival of Five from the Eastern Shore of Maryland",
+   "page": 286
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Button, Charles",
+     "source": "ugrr",
+     "aliases": "William Robinson"
+    }
+   },
+   "chapter": "Arrival of Five from the Eastern Shore of Maryland",
+   "page": 286
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hudson, Ephraim",
+     "source": "ugrr",
+     "aliases": "John Spry"
+    }
+   },
+   "chapter": "Arrival of Five from the Eastern Shore of Maryland",
+   "page": 286
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Molock, Francis",
+     "source": "ugrr",
+     "aliases": "Thomas Jackson"
+    }
+   },
+   "chapter": "Arrival of Five from the Eastern Shore of Maryland",
+   "page": 286
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hilliard, Francis",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Sundry Arrivals About August",
+   "page": 287
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Madden, Thomas",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Deep Furrows on the Back",
+   "page": 294
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Mathews, Peter",
+     "source": "ugrr",
+     "aliases": "Samuel Sparrows"
+    }
+   },
+   "chapter": "Peter Mathews",
+   "page": 295
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Atkinson, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Escaped from a Worthless Sot",
+   "page": 299
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Butcher, William",
+     "source": "ugrr",
+     "aliases": "William T. Mitchell"
+    }
+   },
+   "chapter": "William Butcher",
+   "page": 300
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Shephard, Harriet",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Escaping with Master's Carriages and Horses",
+   "page": 302
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Somlor, Washington",
+     "source": "ugrr",
+     "aliases": "James Moore"
+    }
+   },
+   "chapter": "Eight and a Half Months Secreted",
+   "page": 304
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Fowler, Arthur",
+     "source": "ugrr",
+     "aliases": "Benjamin Johnson"
+    }
+   },
+   "chapter": "Arthur Fowler",
+   "page": 305
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Roberts, Emory",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Sundry Arrivals",
+   "page": 305
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Mercer, Verenea",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Sundry Arrivals About January",
+   "page": 309
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Griffin, James",
+     "source": "ugrr",
+     "aliases": "Thomas Brown"
+    }
+   },
+   "chapter": "Slave-holder in Maryland with Three Colored Wives",
+   "page": 320
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Taylor, Owen",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Slave-holder in Maryland with Three Colored Wives",
+   "page": 320
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Taylor, Otho",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Slave-holder in Maryland with Three Colored Wives",
+   "page": 320
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Cornish, Joseph",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Sundry Arrivals Latter Part of December",
+   "page": 334
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Gooseberry, Thomas J",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Sundry Arrivals Latter Part of December",
+   "page": 334
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Craft, William",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "The Slave Hunting Tragedy in Lancaster County in September",
+   "page": 343
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Craft, Ellen",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "The Slave Hunting Tragedy in Lancaster County in September",
+   "page": 343
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Cobb, Lewis",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "The Slave Hunting Tragedy in Lancaster County in September",
+   "page": 343
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Brister, Nancy",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "The Slave Hunting Tragedy in Lancaster County in September",
+   "page": 343
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Latham, Major",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Wilson, William",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Goram, Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Madison, Wiley",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Shepherd, Andrew",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Clinton, Thomas",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Pry, Sauney",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Ducket, Benjamin",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from North Carolina",
+   "page": 352
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hall, Charles",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrivals in April",
+   "page": 383
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Moody, William Henry",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from Maryland",
+   "page": 387
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Bivans, Belinda",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Passengers from Maryland",
+   "page": 387
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Carroll, George",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Washington D. C",
+   "page": 391
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Branson, Randolph",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Washington D. C",
+   "page": 391
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Clagart, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Washington D. C",
+   "page": 391
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Royan, William",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Washington D. C",
+   "page": 391
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Todd, Israel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Unionville",
+   "page": 392
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Aldridge, Bazil",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Unionville",
+   "page": 392
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Lee, Ordee",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Maryland",
+   "page": 393
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Booce, Richard J",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Maryland",
+   "page": 393
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Long, Silas",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Cambridge",
+   "page": 394
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Light, Solomon",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Cambridge",
+   "page": 394
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Davis, Jane",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Arrival from Cambridge",
+   "page": 394
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Ross, Benjamin",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Benjamin Ross and his Wife Harriet",
+   "page": 395
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Ross, Harriet",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Benjamin Ross and his Wife Harriet",
+   "page": 395
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hollon, Alfred",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Alfred Hollon George and Charles N. Rodgers",
+   "page": 424
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Rodgers, George",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Alfred Hollon George and Charles N. Rodgers",
+   "page": 424
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Rodgers, Charles N",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Alfred Hollon George and Charles N. Rodgers",
+   "page": 424
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Cooper, Mary",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Mary Cooper and Moses Armstead",
+   "page": 430
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Armstead, Moses",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Mary Cooper and Moses Armstead",
+   "page": 430
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Moore, Hannah",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Aunt Hannah Moore",
+   "page": 547
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Parker, Rachel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Kidnapping of Rachel and Elizabeth Parker Murder of Joseph C. Miller",
+   "page": 551
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Parker, Elizabeth",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Kidnapping of Rachel and Elizabeth Parker Murder of Joseph C. Miller",
+   "page": 551
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Miller, Joseph C",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Kidnapping of Rachel and Elizabeth Parker Murder of Joseph C. Miller",
+   "page": 551
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Williams, Euphemia",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "The Case of Euphemia Williams 5gc",
+   "page": 584
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Goodwin, Abigail",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Abigail Goodwin",
+   "page": 617
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Gibbons, Daniel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Daniel Gibbons",
+   "page": 649
+  },
+  {
+   "find": {
+    "name": "Lucretia Mott",
+    "source": "newspaper"
+   },
+   "chapter": "Daniel Gibbons",
+   "page": 649
+  },
+  {
+   "find": {
+    "create": {
+     "name": "McKim, James Miller",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "James Miller McKim & William H. Furness",
+   "page": 654
+  },
+  {
+   "find": {
+    "name": "W. H. Furness",
+    "source": "newspaper"
+   },
+   "chapter": "James Miller McKim & William H. Furness",
+   "page": 654
+  },
+  {
+   "find": {
+    "name": "Garrison, William Lloyd",
+    "source": "newspaper"
+   },
+   "chapter": "William Lloyd Garrison",
+   "page": 675
+  },
+  {
+   "find": {
+    "name": "Lewis Tappan",
+    "source": "newspaper"
+   },
+   "chapter": "William Lloyd Garrison",
+   "page": 675
+  },
+  {
+   "find": {
+    "name": "Elijah F. Pennypacker",
+    "source": "newspaper"
+   },
+   "chapter": "Elijah F. Pennypacker",
+   "page": 688
+  },
+  {
+   "find": {
+    "name": "Wright, William",
+    "source": "winch"
+   },
+   "chapter": "William Wright",
+   "page": 692
+  },
+  {
+   "find": {
+    "name": "Bartholomew Fussell",
+    "source": "newspaper"
+   },
+   "chapter": "Dr. Bartholomew Fussell",
+   "page": 695
+  },
+  {
+   "find": {
+    "name": "Thomas Shipley",
+    "source": "newspaper"
+   },
+   "chapter": "Thomas Shipley",
+   "page": 698
+  },
+  {
+   "find": {
+    "name": "Purvis, Robert",
+    "source": "winch"
+   },
+   "chapter": "Robert Purvis",
+   "page": 711
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hunn, John",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "John Hunn",
+   "page": 712
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Rhoads, Samuel",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Samuel Rhoads",
+   "page": 719
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Corson, George",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "George Corson",
+   "page": 721
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Cleveland, Charles D",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Charles D. Cleveland",
+   "page": 723
+  },
+  {
+   "find": {
+    "name": "Whipper, William",
+    "source": "winch"
+   },
+   "chapter": "William Whipper",
+   "page": 735
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Hopper, Isaac T",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Isaac T. Hopper",
+   "page": 740
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Burris, Samuel D",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Samuel D. Burris",
+   "page": 746
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Lewis, Mariann",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Mariann Grace Anna and Elizabeth R. Lewis",
+   "page": 748
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Lewis, Grace Anna",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Mariann Grace Anna and Elizabeth R. Lewis",
+   "page": 748
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Lewis, Elizabeth R",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Mariann Grace Anna and Elizabeth R. Lewis",
+   "page": 748
+  },
+  {
+   "find": {
+    "create": {
+     "name": "Harper, Frances Ellen Watkins",
+     "source": "ugrr"
+    }
+   },
+   "chapter": "Frances Ellen Watkins Harper",
+   "page": 755
+  },
+  {
+   "find": {
+    "name": "Ash, Sarah",
+    "source": "winch"
+   },
+   "chapter": "Woman Escaping in a Box",
+   "page": 608
+  }
+ ]
+}

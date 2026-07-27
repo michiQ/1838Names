@@ -222,8 +222,14 @@ if has_table("nolibs_profiles"):
         if pid in people:
             people[pid].setdefault("nolibs", []).append({"s": story, "c": cite, "u": url})
 
+# William Still's Underground Railroad appearances (chapter + page-anchored Internet Archive link)
+if has_table("ugrr_appearances"):
+    for pid, chapter, page, url in con.execute("SELECT person_id, chapter, page, url FROM ugrr_appearances"):
+        if pid in people:
+            people[pid].setdefault("ugrr", []).append({"ch": chapter, "pg": page, "u": url})
+
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 
