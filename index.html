@@ -128,7 +128,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers — click a name to see every reference · build 2026-07-28 21:44</span>
+  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers — click a name to see every reference · build 2026-07-28 22:14</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -1194,8 +1194,11 @@ function draw(){
   // currently being dragged. Ego-view graphs (person/event/org drill-downs) are much
   // smaller and keep the original always-on gentle simulation.
   if(nodes.length){
-    if(!window._fullView){ for(let i=0;i<2;i++) tick(); }
-    else if(dragN){ for(let i=0;i<2;i++) tick(); }
+    // Single-person / event / org views used to tick the physics every frame forever, so
+    // their bubbles gently drifted after you clicked a name. They already settle fully on
+    // build (300 synchronous ticks), so we now let them hold still like the big map --
+    // motion only while a bubble is actively being dragged. (Michiko 2026-07-28)
+    if(dragN){ for(let i=0;i<2;i++) tick(); }
     else if((window._bigSettle||0)>0){ const s=Math.min(6,window._bigSettle); for(let i=0;i<s;i++) tick(); window._bigSettle-=s;
       if(window._bigSettle<=0 && !window._fullLayoutCache){   // first full settle done -> cache positions for instant reopen
         const c=new Map(); for(const n of nodes) c.set(n.type+'|'+n.id,{x:n.x,y:n.y,z:n.z,c:n.comm}); window._fullLayoutCache=c;
