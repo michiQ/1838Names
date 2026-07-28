@@ -1090,7 +1090,7 @@ allbtn.addEventListener('click',()=>{
   window._fullView=!window._fullView;
   allbtn.classList.toggle('on',window._fullView);
   document.getElementById('hint').textContent = window._fullView
-    ? 'tap a node to open its full connections in the panel · drag/rotate empty space · drag a node out — it sticks · double-tap to release · pinch or scroll to zoom'
+    ? 'tap a node for its connections · drag empty space to rotate / tilt / turn the map · drag a bubble to move it (it stays put) · pinch or scroll to zoom'
     : 'drag to pan · pinch or scroll to zoom · tap a node to navigate';
   if(window._fullView) buildFullGraph();
   else { window._bigSettle=0; closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
@@ -1198,7 +1198,7 @@ function draw(){
     // their bubbles gently drifted after you clicked a name. They already settle fully on
     // build (300 synchronous ticks), so we now let them hold still like the big map --
     // motion only while a bubble is actively being dragged. (Michiko 2026-07-28)
-    if(dragN){ for(let i=0;i<2;i++) tick(); }
+    if(dragN && !window._fullView){ for(let i=0;i<2;i++) tick(); }
     else if((window._bigSettle||0)>0){ const s=Math.min(6,window._bigSettle); for(let i=0;i<s;i++) tick(); window._bigSettle-=s;
       if(window._bigSettle<=0 && !window._fullLayoutCache){   // first full settle done -> cache positions for instant reopen
         const c=new Map(); for(const n of nodes) c.set(n.type+'|'+n.id,{x:n.x,y:n.y,z:n.z,c:n.comm}); window._fullLayoutCache=c;
@@ -1265,19 +1265,15 @@ function pointerUp(x,y){
   else if(!dragN && wasClick){ setHighlight(null); }   // click/tap empty space clears highlight
   if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them
   if(dragN && !window._fullView) dragN.fixed = dragN===nodes[0];
-  // only wake the sim after an ACTUAL drag-release (wasClick===false) -- this used to
-  // fire on every plain click too (dragN gets set on pointerDown for any node click,
-  // click or drag alike), waking window._simTTL for 40 frames and letting the
-  // group-anchor/leash/spring forces nudge the WHOLE settled map every time you
-  // clicked a node. That was the real remaining cause of "the balls move when I click
-  // them" -- the earlier fix to select()/selectEvent()/selectOrg() stopped THEM from
-  // waking the sim, but this release handler was still doing it unconditionally.
-  if(dragN && !wasClick && window._fullView) window._simTTL = Math.max(window._simTTL||0, 40);
+  // The big map NEVER self-propels: a dragged bubble is pinned where you drop it (above)
+  // and we do NOT wake the physics on release, so touching or moving a bubble never makes
+  // the rest of the balls drift. Rotating/tilting/turning and zooming the whole map still
+  // work -- those are view transforms, not physics. (Michiko 2026-07-28)
   dragN=null;dragStart=null;panning=false;rotating=false;cv.style.cursor='grab';
 }
 function releasePinAt(x,y){
   const n=pick(x,y);
-  if(n && n.pin){ n.pin=false; if(window._fullView) window._simTTL=Math.max(window._simTTL||0,40); }   // releases a pinned node back to the springs
+  if(n && n.pin){ n.pin=false; }   // double-tap just un-pins; the map never self-propels back
 }
 function zoomBy(f){
   const minK=window._fullView?0.08:.25;   // full map allows zooming out much further
