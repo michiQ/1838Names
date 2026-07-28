@@ -246,6 +246,12 @@ import datetime
 tpl = open(TPL, encoding="utf-8").read()
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 html = tpl.replace("/*__DATA__*/null", js)
+# Optional baked "All connections" layout (see viewer_template.html / precompute_fullmap.js):
+# inject it if present so the first open of the map is instant; otherwise leave null and the
+# viewer settles the layout live in-browser (its previous behavior).
+_fm_path = os.path.join(os.path.dirname(os.path.abspath(TPL)), "fullmap_layout.json")
+_fm = open(_fm_path, encoding="utf-8").read().strip() if os.path.exists(_fm_path) else "null"
+html = html.replace("/*__FULLMAP__*/null", _fm or "null")
 html = html.replace("__BUILD__", datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
 open(OUT, "w", encoding="utf-8").write(html)
 print("people:", len(people), "events:", len(events), "articles:", len(articles),

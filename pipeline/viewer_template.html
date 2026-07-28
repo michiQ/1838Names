@@ -220,6 +220,12 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 </script>
 <script>
 const DATA = /*__DATA__*/null;
+// Baked "All connections" layout: precomputed node positions/communities so the very
+// first open is instant instead of running the physics settle in the browser. Optional
+// -- if absent (or the node set has since changed) the map falls back to a live layout.
+// Refreshed by pipeline/precompute_fullmap.js; injected by build_viewer.py. (2026-07-28)
+const BAKED_FULLMAP = /*__FULLMAP__*/null;
+window._fullLayoutCache = BAKED_FULLMAP ? new Map(BAKED_FULLMAP) : null;
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
 const A = new Map(DATA.articles.map(a=>[a.id,a]));
@@ -1013,6 +1019,22 @@ function buildFullGraph(){
   // (not on-screen degree) -- see PERSON_R / groupR().
   sizeByDegree(nodes, links, PERSON_R, PERSON_R, 0);
   for(const n of nodes){ if(n.type==='o'||n.type==='e') n.r = groupR(n.total); else if(n.type==='p') n.r = PERSON_R; }
+  // Instant reopen: once this exact node set has settled a first time this session, its
+  // positions/communities are cached, so reopening "All connections" restores them and
+  // skips the whole (expensive) community-detection + physics-settle pass. Falls back to
+  // a full live layout if the cache is absent or the node set changed. (Michiko 2026-07-28)
+  if(window._fullLayoutCache){
+    const cache=window._fullLayoutCache;
+    if(nodes.every(n=>cache.has(n.type+'|'+n.id))){
+      for(const n of nodes){ const s=cache.get(n.type+'|'+n.id); n.x=s.x; n.y=s.y; n.z=s.z; n.comm=s.c; n.vx=n.vy=n.vz=0; }
+      const groups=new Map();
+      for(const n of nodes){ if(!groups.has(n.comm)) groups.set(n.comm,[]); groups.get(n.comm).push(n); }
+      window._commGroups=[...groups.values()].filter(g=>g.length>=4);
+      view={x:0,y:0,k:0.26}; rot={yaw:0.5,pitch:0.28}; window._spin=false;
+      setHighlight(null); window._bigSettle=0; window._simTTL=0;
+      return;
+    }
+  }
   // ---- community detection (label propagation) -> spatial clustering only ----
   // (colors now always follow the legend -- see draw() -- this just keeps related
   // people visually grouped in space instead of scattered uniformly)
@@ -1053,8 +1075,15 @@ function buildFullGraph(){
   view={x:0,y:0,k:0.26};   // start a bit more zoomed out to fit the now-looser layout
   rot={yaw:0.5,pitch:0.28}; window._spin=false;   // static by default -- drag empty space to rotate manually
   setHighlight(null);
-  for(let it=0;it<260;it++) tick();   // settle fully before the very first frame renders
-  window._simTTL=0;   // frozen once settled -- draw() only re-ticks while dragging or just after new nodes are added
+  // Non-blocking settle (previously 260 synchronous ticks, which briefly froze the page
+  // every time "All connections" opened -- the slow-to-load Michiko noticed). Do a short
+  // synchronous warmup so the opening frame reads as a forming network rather than random
+  // scatter, then let draw() finish the settle a few ticks per frame. Same total
+  // iterations => identical final layout, just animated in with no main-thread freeze.
+  // (Michiko 2026-07-28)
+  for(let it=0;it<25;it++) tick();
+  window._bigSettle = 235;   // remaining settle ticks, drained by draw() at ~6/frame
+  window._simTTL=0;
 }
 const allbtn=document.getElementById('allbtn');
 allbtn.addEventListener('click',()=>{
@@ -1064,7 +1093,7 @@ allbtn.addEventListener('click',()=>{
     ? 'tap a node to open its full connections in the panel · drag/rotate empty space · drag a node out — it sticks · double-tap to release · pinch or scroll to zoom'
     : 'drag to pan · pinch or scroll to zoom · tap a node to navigate';
   if(window._fullView) buildFullGraph();
-  else { closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
+  else { window._bigSettle=0; closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
 });
 function draw(){
   ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
@@ -1167,6 +1196,11 @@ function draw(){
   if(nodes.length){
     if(!window._fullView){ for(let i=0;i<2;i++) tick(); }
     else if(dragN){ for(let i=0;i<2;i++) tick(); }
+    else if((window._bigSettle||0)>0){ const s=Math.min(6,window._bigSettle); for(let i=0;i<s;i++) tick(); window._bigSettle-=s;
+      if(window._bigSettle<=0 && !window._fullLayoutCache){   // first full settle done -> cache positions for instant reopen
+        const c=new Map(); for(const n of nodes) c.set(n.type+'|'+n.id,{x:n.x,y:n.y,z:n.z,c:n.comm}); window._fullLayoutCache=c;
+      }
+    }
     else if((window._simTTL||0)>0){ for(let i=0;i<2;i++) tick(); window._simTTL--; }
   }
   requestAnimationFrame(draw);

@@ -64,6 +64,25 @@ upstream in the CSV if desired.
 ## Viewer changes — MANDATORY smoke test
 Before pushing ANY change to viewer_template.html, run `node pipeline/smoke_test.js <built index.html>`. It executes both script blocks with a stubbed DOM and fails on runtime errors (a TDZ ordering bug shipped on 2026-07-06 and blanked the site; syntax checks alone do not catch this class of error).
 
+## "All connections" map layout — baked precompute (added 2026-07-28)
+The full-network map used to run community detection + a 260-tick force settle over ~1131
+nodes synchronously every time it opened, which froze the tab (~0.5-5s on real devices).
+Three viewer-only changes fixed this (no data/DB change; every other view untouched):
+- **Baked layout (instant first open):** `pipeline/precompute_fullmap.js` (headless Chromium)
+  opens the built viewer, lets the map settle, and dumps the settled positions/communities to
+  `pipeline/fullmap_layout.json` (~56KB). `build_viewer.py` injects that file into the
+  `/*__FULLMAP__*/null` placeholder as `BAKED_FULLMAP`; the viewer restores it on first open and
+  skips the settle (measured 2308ms -> 27ms). It is an OPTIONAL, MANUAL step (needs Playwright) —
+  NOT part of the core rebuild. Refresh after a data change with `node pipeline/precompute_fullmap.js`
+  then rebuild. If the file is missing or the node set changed, the viewer detects the mismatch
+  (`nodes.every(... cache.has ...)` in buildFullGraph) and settles live — so a stale/absent file is safe.
+- **Non-blocking settle (fallback):** when it does settle live, it now runs a few ticks per frame
+  via `window._bigSettle` in draw() instead of one blocking loop, so the tab never freezes.
+- **In-session cache:** after any live settle, positions are cached in `window._fullLayoutCache`
+  so reopening the map is instant even without the baked file.
+build_viewer.py stays runnable with NO Playwright (it just reads the JSON if present); only the
+optional refresh script needs it.
+
 ## Person merges
 `pipeline/merges.json` is the curated list of duplicate-person merges (e.g. "J. J. G. Bias" = "Bias, James J. G."). `apply_merges.py` applies it (idempotent): reassigns appearances/references/census links to the kept person, records the other spellings in `people.aliases`, dedupes appearances. It MUST run after the other imports (they recreate alias people) and before build_viewer. When Michiko identifies new duplicates, append a group to merges.json — never edit the DB by hand.
 
