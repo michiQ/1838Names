@@ -1,0 +1,67 @@
+{
+ "_note": "Batch: Pennsylvania Freeman, dds-41242, second batch = the 5 May 1839 issues (Vol. V, Whole No. 138-142): PF_1839-05-02, 05-09, 05-16, 05-23, 05-30. Edited by John G. Whittier. Curated Philadelphia-relevant structured items; the flagship is the Sixth Annual Meeting of the PA State A-S Society (Eastern District) at Norristown, reported in the 05-30 issue. OCR-uncertain names flagged in roles. Body-text Winch-name appearances across all 20 pages are handled automatically by match_names.py.",
+ "articles": [
+  {
+   "issue": "PF_1839-05-30",
+   "page": 1,
+   "headline": "Letters to Slaveholders -- No. II",
+   "author": "ELL",
+   "type": "essay",
+   "summary": "Second in an original signed series (For the Pennsylvania Freeman) examining the basis on which the claim to the persons of slaves is founded. The writer, signing 'ELL', argues that the slaveholder's title traces back to the African slave trade -- pronounced piracy and punishable by death under the acts of Congress from 1807 to 1820 -- and that a title founded on an act of piracy is worthless; that a person born into slavery in America is still unjustly deprived of an inalienable right; and that until the negro's right to his own mental and physical powers has passed from him by his own act, that right cannot vest in another."
+  },
+  {
+   "issue": "PF_1839-05-30",
+   "page": 2,
+   "headline": "Slavery in the Church -- New School General Assembly",
+   "author": null,
+   "type": "news report",
+   "summary": "Report of the debate on slavery at the New School Presbyterian General Assembly. Memorials from several presbyteries asking action were referred to a committee; the report affirming the 1818 act (declaring slavery inconsistent with the law of God) was opposed by Southern delegates (Dr. Hill of the District of Columbia, formerly of Winchester, Va.; John J. Royall of Winchester). Dr. Cox of New York moved to strike the reference to the 1818 act; Alvan Stewart and John Rankin of Ohio spoke forcefully for the abolition side; F. W. Graves of Alton and George Beecher of Rochester figured in the amendments. The Assembly finally referred the subject of slavery to the synods, presbyteries and six hundred churches to 'remove the evil' -- which the Freeman judged a step in advance of previous action."
+  }
+ ],
+ "events": [
+  {
+   "issue": "PF_1839-05-30",
+   "page": 1,
+   "name": "Pennsylvania State Anti-Slavery Society (Eastern District) -- Sixth Annual Meeting",
+   "date": "1839-05-20",
+   "location": "Baptist meeting house, borough of Norristown, Pennsylvania",
+   "description": "Sixth annual meeting of the Pennsylvania State Anti-Slavery Society for the Eastern District, held at Norristown on May 20, 21 and 22, 1839. Vice-President Nathan Stem took the chair; Daniel Neall Jr. and James Fulton Jr. served as assistant secretaries. The Executive Committee reported on the past six months (recovery of damages for the burning of Pennsylvania Hall; agents C. C. Burleigh, Wm. M. Chase and James Fulton Jr.; German-language work by editor C. F. Stollmeyer; the Montrose convention of ~400; auxiliary and Philadelphia society activity, including schools and house-to-house work among the colored population), and Treasurer James Wood presented his account. The society adopted a new constitution reorganizing itself as the 'Anti-Slavery Society of Eastern Pennsylvania' and elected new officers. Guest speakers from New York -- Gerrit Smith, Henry B. Stanton and James C. Fuller -- addressed the meeting. A long roll of delegates by county and local society was adopted (matched automatically from the body text).",
+   "attendees": [
+    ["Nathan Stem", "presided as vice-president; elected President"],
+    ["Daniel Neall Jr.", "assistant secretary"],
+    ["James Fulton Jr.", "assistant secretary; local agent, Chester County"],
+    ["J. L. Hallowell", "committee to prepare roll of delegates"],
+    ["James A. Wright", "committee to prepare roll of delegates"],
+    ["Joseph Gibbons", "committee to prepare roll of delegates"],
+    ["C. C. Burleigh", "business committee; traveling agent; elected Corresponding Secretary"],
+    ["Lindley Coates", "business committee; elected Vice-President (Lancaster Co.)"],
+    ["John G. Whittier", "business committee; editor, Pennsylvania Freeman"],
+    ["Phebe Hussey", "business committee"],
+    ["Martha Smith", "business committee"],
+    ["Lucretia Mott", "business committee"],
+    ["Thomas Hambleton", "business committee"],
+    ["Thomas Whitson", "committee on finance"],
+    ["Sarah Williams", "committee on finance"],
+    ["William Jackson", "committee on finance"],
+    ["George Dillwyn Jones", "committee on finance"],
+    ["Elijah F. Pennypacker", "committee on finance"],
+    ["Sarah Lewis", "committee on finance"],
+    ["Mary Needles", "committee on finance"],
+    ["Wm. M. Chase", "traveling agent; financial agent"],
+    ["C. F. Stollmeyer", "German-language editor and agent"],
+    ["James Wood", "Treasurer"],
+    ["Wm. Jessup", "elected Vice-President (Montrose, Susquehanna Co.)"],
+    ["A. L. Pennock", "elected Vice-President (Delaware Co.)"],
+    ["Leonard Fletcher", "elected Vice-President (Chester Co.)"],
+    ["Haworth Wetherald", "elected Recording Secretary"],
+    ["Isaac Parrish", "elected Executive Committee"],
+    ["Henry Grew", "elected Executive Committee; free-produce committee"],
+    ["Charles Wise", "free-produce committee"],
+    ["Gerrit Smith", "guest speaker (New York)"],
+    ["Henry B. Stanton", "guest speaker (New York)"],
+    ["James C. Fuller", "guest speaker (New York)"]
+   ]
+  }
+ ],
+ "agents": []
+}
