@@ -1,0 +1,62 @@
+{
+ "_note": "Batch: Pennsylvania Freeman, dds-41242, third/final batch = the 4 June 1839 issues (Vol. V, Whole No. 143-146): PF_1839-06-06, 06-13, 06-20, 06-27. This COMPLETES the dds-41242 bundle (28 PDF pages; June 27 p4 is the final single page). Edited by John G. Whittier. June is dominated by reprinted out-of-state convention reports; the flagship structured item is the Sixth New England Anti-Slavery Convention (Boston), which included the Pennsylvania agents C. C. Burleigh and Wm. M. Chase. OCR-uncertain names flagged in roles. Body-text Winch-name appearances across all 16 pages are handled automatically by match_names.py.",
+ "articles": [
+  {
+   "issue": "PF_1839-06-20",
+   "page": 1,
+   "headline": "Letter from Mr. Birney -- the Ohio Anti-Slavery Society",
+   "author": "James G. Birney",
+   "type": "letter",
+   "summary": "Letter from James G. Birney (addressed to Brother Leavitt) reporting the meeting of the Ohio Anti-Slavery Society, held in the Rev. Wm. Butcher's meeting house, with the Hon. Leicester King presiding as President. Birney describes the western anti-slavery movement's growth and the character of the deliberations, and touches on the Indiana state society."
+  },
+  {
+   "issue": "PF_1839-06-06",
+   "page": 3,
+   "headline": "New England Anti-Slavery Convention -- Sixth Annual Meeting (proceedings)",
+   "author": null,
+   "type": "proceedings",
+   "summary": "Report of the proceedings of the Sixth New England Anti-Slavery Convention, assembled at the Chardon Street Chapel, Boston, on May 28, 1839, pursuant to a call signed by the officers of the several New England state A. S. societies. Called to order by Wendell Phillips; Nathaniel B. Borden of Fall River elected President and Wm. Bassett of Lynn Secretary pro tem; permanent officers and committees then elected. A resolution restricting membership to gentlemen (offered as a substitute by Amos A. Phelps) was rejected and Wendell Phillips's open-membership resolution adopted after debate."
+  }
+ ],
+ "events": [
+  {
+   "issue": "PF_1839-06-06",
+   "page": 3,
+   "name": "Sixth New England Anti-Slavery Convention",
+   "date": "1839-05-28",
+   "location": "Chardon Street Chapel, Boston, Massachusetts",
+   "description": "Sixth annual New England Anti-Slavery Convention, Chardon Street Chapel, Boston, opening May 28, 1839. Nathaniel B. Borden of Fall River was elected President, with vice-presidents from each New England state and a business committee of leading abolitionists including William Lloyd Garrison, Wendell Phillips and Maria W. Chapman. The Pennsylvania agents C. C. Burleigh (business committee) and Wm. M. Chase (secretary) took part. Reported in the Pennsylvania Freeman of June 6, 1839.",
+   "attendees": [
+    ["Nathaniel B. Borden", "President (of Fall River, Mass.)"],
+    ["Wendell Phillips", "chairman of committee of arrangements; called convention to order; business committee"],
+    ["Wm. Bassett", "Secretary pro tem (of Lynn); Secretary"],
+    ["Seth Sprague", "Vice-President (Massachusetts)"],
+    ["Samuel Fessenden", "Vice-President (Maine)"],
+    ["John A. Richardson", "Vice-President (New Hampshire)"],
+    ["Wm. Coe", "Vice-President (Connecticut)"],
+    ["Martin Cheney", "Vice-President (Rhode Island)"],
+    ["Wm. M. Chase", "Secretary; Pennsylvania agent"],
+    ["Wm. R. Chapman", "Secretary"],
+    ["Henry G. Chapman", "committee on finance and the roll"],
+    ["John A. Collins", "committee on finance and the roll"],
+    ["John Jones", "committee on finance and the roll"],
+    ["N. P. Rogers", "business committee"],
+    ["William Lloyd Garrison", "business committee"],
+    ["Maria W. Chapman", "business committee"],
+    ["Amos A. Phelps", "business committee"],
+    ["Lydia Maria Child", "business committee"],
+    ["Isaac Winslow", "business committee"],
+    ["George Trask", "business committee"],
+    ["Charles C. Burleigh", "business committee; Pennsylvania agent"],
+    ["George Bradburn", "business committee"],
+    ["Thomas Davis", "business committee"],
+    ["George W. Benson", "nominating committee; business committee"],
+    ["Samuel J. May", "nominating committee"],
+    ["Amos Farnsworth", "nominating committee"],
+    ["Oliver Johnson", "moved resolutions through the business committee"],
+    ["Arnold Buffum", "participated in debate"]
+   ]
+  }
+ ],
+ "agents": []
+}
