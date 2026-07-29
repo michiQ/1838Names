@@ -7,6 +7,12 @@
 <style>
 :root{--bg:#16130e;--panel:#221d15;--ink:#efe7d8;--dim:#a89c86;--gold:#d4a24e;--rust:#b4552d;--teal:#4e8f83;--line:#3a3226}
 *{box-sizing:border-box;margin:0}
+#ocrNotice{display:flex;align-items:center;gap:10px;justify-content:center;background:#2a2214;border-bottom:1px solid var(--gold);color:var(--ink);font:12.5px/1.55 Georgia;padding:9px 42px 9px 18px;position:relative;text-align:center}
+#ocrNotice span{max-width:1080px}
+#ocrNotice b{color:var(--gold);font-weight:bold}
+#ocrNoticeClose{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--dim);font-size:16px;line-height:1;cursor:pointer;padding:4px 9px}
+#ocrNoticeClose:hover{color:var(--ink)}
+#ocrNotice.hide{display:none}
 html{overscroll-behavior:none}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 Georgia,'Times New Roman',serif;height:100vh;display:flex;flex-direction:column;overflow:hidden;overscroll-behavior:none;-webkit-tap-highlight-color:transparent}
 header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
@@ -125,10 +131,14 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 </style>
 </head>
 <body>
+<div id="ocrNotice" role="note">
+  <span><b>A note on the sources:</b> these records were read from scanned 19th-century newspapers and documents using automated text recognition (OCR). Because the originals are old and imperfect, the text and the name matches can contain errors &mdash; a name may be misread, or a clipping may be linked to the wrong person. Please treat each entry as a starting point to check against the original scan, not a definitive record.</span>
+  <button id="ocrNoticeClose" aria-label="Dismiss this notice" title="Dismiss">&#10005;</button>
+</div>
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers — click a name to see every reference · build 2026-07-29 00:08</span>
+  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers — click a name to see every reference · build 2026-07-29 00:38</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -1347,6 +1357,13 @@ window._suppressAutoOpen = true;
 if(sorted.length) select(sorted[0].id);
 window._suppressAutoOpen = false;
 syncFab();
+// OCR source notice: dismissible, remembered across visits (localStorage) so it doesn't nag.
+(function(){
+  var n=document.getElementById('ocrNotice'), b=document.getElementById('ocrNoticeClose');
+  if(!n||!b) return;
+  try{ if(localStorage.getItem('bm_ocrNoticeDismissed')) n.classList.add('hide'); }catch(e){}
+  b.addEventListener('click', function(){ n.classList.add('hide'); try{ localStorage.setItem('bm_ocrNoticeDismissed','1'); }catch(e){} });
+})();
 </script>
 </body>
 </html>
