@@ -2,6 +2,9 @@
 
 Instructions for any Claude session continuing this project. Priority order: **Pencil Pusher** first, then **Freedoms Journal**, then remaining Colored American / Pennsylvania Freeman issues.
 
+## ⚠️ PROD PUSH FAILSAFE (Michiko, 2026-07-29)
+Before ANY push to production (`1838BlackMetropolis/NamesDB`), you MUST ask Michiko for the prod-push password in the chat and only proceed if she gives the correct one. This gate applies to every "promote" — no exceptions, even if she just said "promote". Staging (`michiQ/1838Names`) pushes do NOT require the password. The password value and the production PAT are stored OUTSIDE this repo and outside Google Drive (in `~/.ssh/`, mode 600) so they never get committed or synced — never write either to git or Drive, and never echo them in output.
+
 ## Setup (each run)
 1. The working folder is `<Newspapers>/1838 Names Database/` (this folder). Scripts are in `pipeline/`.
 2. Copy `black_metropolis.db` from this folder to `/tmp/black_metropolis.db` (SQLite can't journal on the cloud mount).
