@@ -29,6 +29,13 @@ const SETTLE_TIMEOUT_MS = 120000;
   page.on('pageerror', e => errors.push(e.message));
   await page.goto('file://' + INDEX, { waitUntil: 'load' });
   await page.waitForTimeout(500);
+  // CRITICAL: the loaded index.html may already carry a BAKED_FULLMAP from a previous
+  // run, which pre-populates window._fullLayoutCache. If we leave it in place, buildFullGraph's
+  // covered-check either restores the OLD layout (masking a changed node set) or falls through
+  // to a live settle whose result is never re-cached (draw() only re-caches when the cache is
+  // null) -- so the dump would echo the stale cache unchanged. Null it out first to force a
+  // genuine fresh settle over the CURRENT data. (Michiko 2026-07-29)
+  await page.evaluate(() => { window._fullLayoutCache = null; });
   // open the full map (runs buildFullGraph -> non-blocking settle)
   await page.evaluate(() => document.getElementById('allbtn').click());
   const t0 = Date.now();
