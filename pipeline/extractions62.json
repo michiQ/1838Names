@@ -1,0 +1,93 @@
+{
+ "_note": "Batch: Pennsylvania Freeman, dds-41245, FIRST batch = the 5 issues of July 1839 (Vol. V, Whole No. 147-151): PF_1839-07-04, 07-11, 07-18, 07-25, 08-01. Edited by John G. Whittier. Curated Philadelphia-relevant structured items; the flagship is the Philadelphia City Anti-Slavery Society's appointment of delegates to the National Anti-Slavery Convention at Albany (reported in the 07-18 issue), plus the Union Anti-Slavery Society's first annual meeting at Clarkson Hall. OCR-uncertain names flagged in roles. Body-text Winch-name appearances across all 20 pages are handled automatically by match_names.py. Continues the PF run after dds-41242 (Apr-Jun 1839); dds-41245 begins at Whole No. 147 (Jul 4 1839).",
+ "articles": [
+  {
+   "issue": "PF_1839-07-04",
+   "page": 1,
+   "headline": "Letter from C. C. Burleigh",
+   "author": "C. C. Burleigh",
+   "type": "letter",
+   "summary": "Letter from Charles C. Burleigh (dated Plainfield, Conn., June 20, 1839, addressed to editor J. G. Whittier) giving his view of the difficulties in the Massachusetts anti-slavery ranks and describing a series of county meetings he attended in Essex County, Massachusetts. He recounts a large gathering at Topsfield -- 'the largest gathering I was told that has ever been witnessed at a meeting of the county Society' -- attended by the 'fishermen of Marblehead' and the 'hardy sons of Gloucester'; with the President absent, Vice-President E. Hale of Haverhill took the chair and Corresponding Secretary C. T. Torrey read a report. Burleigh reflects on the 'new organization' controversy then dividing the movement."
+  },
+  {
+   "issue": "PF_1839-07-18",
+   "page": 3,
+   "headline": "Preamble to the Act of the Legislature of Pennsylvania for the Gradual Abolition of Slavery (1780)",
+   "author": "E. N.",
+   "type": "essay",
+   "summary": "Signed essay (For the Pennsylvania Freeman, dated Phila. Seventh month 10, 1839) transcribing and celebrating the preamble to Pennsylvania's Act for the Gradual Abolition of Slavery, passed March 1, 1780 -- the first such abolition law in the nation. The writer, 'E. N.', praises the 'noble sentiments' of the framers and points to the 1789 incorporation of the Pennsylvania Society for Promoting the Abolition of Slavery as confirmation of the state's early anti-slavery spirit."
+  }
+ ],
+ "events": [
+  {
+   "issue": "PF_1839-07-18",
+   "page": 3,
+   "name": "Philadelphia City Anti-Slavery Society -- delegates to the National Anti-Slavery Convention (Albany)",
+   "date": "1839-06-13",
+   "location": "Philadelphia, Pennsylvania",
+   "description": "Proceedings of the Philadelphia City Anti-Slavery Society, published in the Pennsylvania Freeman of July 18, 1839. At its stated meeting of June 13, 1839 the Society appointed a delegation to the National Anti-Slavery Convention called for Albany, N.Y., on the 31st inst. (with power to fill vacancies and add to their number); at its stated meeting of July 11, 1839 it chose delegates to the next meeting of the County Anti-Slavery Society and resolved (on a motion involving W. A. Garrigues and James A. Wright) to distribute copies of Weld's 'American Slavery As It Is' to the city's editors and public officers. Haworth Wetherald served as Secretary. The two delegate slates are combined here.",
+   "attendees": [
+    ["Samuel Webb", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Henry Grew", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Joseph Healy", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["John G. Whittier", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Daniel Neall Jr.", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["James Wood", "delegate to the National A-S Convention (Albany), apptd. June 13; also delegate to the County A-S Society"],
+    ["Peter Wright", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Charles C. Jackson", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["William Harned", "delegate to the National A-S Convention (Albany), appld. June 13"],
+    ["James A. Wright", "delegate to the National A-S Convention (Albany), apptd. June 13; also delegate to the County A-S Society"],
+    ["W. A. Garrigues", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Powell Stackhouse", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["W. Marot", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Charles Wise", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["A. W. Thayer", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["Caleb Clothier", "delegate to the National A-S Convention (Albany), apptd. June 13"],
+    ["William Shipley", "delegate to the County A-S Society, apptd. July 11"],
+    ["Edwin H. Coates", "delegate to the County A-S Society, apptd. July 11"],
+    ["John Simmons", "delegate to the County A-S Society, apptd. July 11"],
+    ["John Dickinson", "delegate to the County A-S Society, apptd. July 11"],
+    ["C. F. Stollmeyer", "delegate to the County A-S Society, apptd. July 11"],
+    ["Haworth Wetherald", "Secretary; delegate to the County A-S Society, apptd. July 11"]
+   ]
+  },
+  {
+   "issue": "PF_1839-07-18",
+   "page": 1,
+   "name": "Union Anti-Slavery Society -- First Annual Meeting",
+   "date": "1839-06-20",
+   "location": "Clarkson Hall, Philadelphia, Pennsylvania",
+   "description": "Adjourned first annual meeting of the Union Anti-Slavery Society, held at Clarkson Hall, Philadelphia, on Thursday evening, June 20, 1839, reported in the Pennsylvania Freeman of July 18. In the absence of the President, Vice-President Rev. Henry Grew took the chair and opened with prayer; the Corresponding Secretary being absent, the first annual report (signed by Corresponding Secretary Samuel D. Hastings) was read, recounting the Society's three quarterly meetings during its first year. On motion of Mr. Bradley the Society resolved to raise one thousand dollars toward the American Anti-Slavery Society's national fund.",
+   "attendees": [
+    ["Henry Grew", "Vice-President; took the chair"],
+    ["Samuel D. Hastings", "Corresponding Secretary (signed the annual report)"]
+   ]
+  },
+  {
+   "issue": "PF_1839-07-11",
+   "page": 3,
+   "name": "Snow Hill and Mount Zion Anti-Slavery Society -- meeting",
+   "date": "1839-07-07",
+   "location": "Snow Hill and Mount Zion",
+   "description": "Meeting of the Snow Hill and Mount Zion Anti-Slavery Society, held July 7, 1839, reported in the Pennsylvania Freeman of July 11. Having listened to an address by Edwin H. Coates of Philadelphia, the association resolved unanimously to establish a library of anti-slavery publications and asked Coates to assist in selecting the works; many new members were added. Augustus Thomas served as Secretary.",
+   "attendees": [
+    ["Edwin H. Coates", "delivered the address (of Philadelphia)"],
+    ["Augustus Thomas", "Secretary"]
+   ]
+  },
+  {
+   "issue": "PF_1839-07-11",
+   "page": 3,
+   "name": "Junior Anti-Slavery Society -- meeting at Clarkson Hall",
+   "date": "1839-07-08",
+   "location": "Clarkson Hall, Philadelphia, Pennsylvania",
+   "description": "Meeting of the Junior Anti-Slavery Society at Clarkson Hall, Philadelphia, on the evening of July 8, 1839, reported in the Pennsylvania Freeman of July 11. Joshua V. Himes of Boston gave a brief narrative of his recent visit; the Society acted on the American Anti-Slavery Society's offer of publications and appointed a committee to procure copies. Joshua L. Hallowell and D. L. Mitzen signed for the committee.",
+   "attendees": [
+    ["Joshua V. Himes", "gave a narrative of his recent visit (of Boston)"],
+    ["Joshua L. Hallowell", "committee"],
+    ["D. L. Mitzen", "committee"]
+   ]
+  }
+ ],
+ "agents": []
+}
