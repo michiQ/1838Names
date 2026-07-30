@@ -24,9 +24,17 @@ for g in groups:
     # objects {"name":..., "source":...} / {"id":...} to disambiguate same-name records
     # (e.g. the 1820-directory "Bowers, John" vs the separate Winch "Bowers, John" father).
     _al = g.get("aliases", [])
-    plain_names = {norm(g["keep"])} | {norm(a) for a in _al if isinstance(a, str)}
+    keep_raw = g["keep"]
+    keep_name = keep_raw["name"] if isinstance(keep_raw, dict) else keep_raw
+    plain_names = {norm(a) for a in _al if isinstance(a, str)}
     qualified = [(norm(a["name"]) if a.get("name") else None, a.get("source"), a.get("id"))
                  for a in _al if isinstance(a, dict)]
+    if isinstance(keep_raw, dict):
+        # qualified keep: match ONLY the specified record (name+source or id), not greedily by name
+        qualified.append((norm(keep_raw["name"]) if keep_raw.get("name") else None,
+                          keep_raw.get("source"), keep_raw.get("id")))
+    else:
+        plain_names.add(norm(keep_name))
     def _match(r):
         pid, cn, src = r[0], r[1], r[2]
         if norm(cn) in plain_names: return True
@@ -36,7 +44,7 @@ for g in groups:
         return False
     rows = [r for r in con.execute("SELECT id, canonical_name, source, winch_entry, aliases FROM people")
             if _match(r)]
-    if len(rows) < 2 and not any(norm(r[1]) == norm(g["keep"]) for r in rows):
+    if len(rows) < 2 and not any(norm(r[1]) == norm(keep_name) for r in rows):
         # nothing to merge but maybe rename a single alias row
         pass
     if not rows: continue
@@ -53,16 +61,16 @@ for g in groups:
                           ("ugrr_appearances","person_id"), ("nolibs_profiles","person_id")):
             try: con.execute(f"UPDATE {tbl} SET {col}=? WHERE {col}=?", (tid, pid))
             except sqlite3.OperationalError: pass
-        if cname != g["keep"]: alias_set.add(cname)
+        if cname != keep_name: alias_set.add(cname)
         if als: alias_set.update(a for a in als.split(" | ") if a)
         if wentry: entries.append(wentry)
         con.execute("DELETE FROM people WHERE id=?", (pid,))
         total_merged += 1
-    if target[1] != g["keep"]:
+    if target[1] != keep_name:
         alias_set.add(target[1])
-    alias_set.discard(g["keep"])
+    alias_set.discard(keep_name)
     con.execute("UPDATE people SET canonical_name=?, norm_name=?, aliases=?, winch_entry=? WHERE id=?",
-                (g["keep"], norm(g["keep"]), " | ".join(sorted(alias_set)) or None,
+                (keep_name, norm(keep_name), " | ".join(sorted(alias_set)) or None,
                  "\n".join(e for e in entries if e) or None, tid))
     # dedupe identical appearances created by multiple alias matches on the same span
     con.execute("""DELETE FROM appearances WHERE rowid NOT IN (
@@ -70,5 +78,6 @@ for g in groups:
 con.commit()
 print(f"merged {total_merged} duplicate records across {len(groups)} groups")
 for g in groups:
-    r = con.execute("SELECT id, canonical_name, aliases FROM people WHERE canonical_name=?", (g["keep"],)).fetchone()
+    kn = g["keep"]["name"] if isinstance(g["keep"], dict) else g["keep"]
+    r = con.execute("SELECT id, canonical_name, aliases FROM people WHERE canonical_name=?", (kn,)).fetchone()
     if r: print(" ", r[1], "| aka:", r[2])
