@@ -152,4 +152,27 @@ Michiko's identification (not a standalone person) — and John Myers — body s
 "Arrival from Harford County", p.434, a new ugrr person — this way, as curated mid-narrative links
 exactly like Sarah Ash.)
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
-load_extractions.py -> apply_merges.py -> load_nolibs.py -> load_ugrr.py -> find_merge_candidates.py -> build_viewer.py.
+load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> apply_merges.py ->
+load_nolibs.py -> load_ugrr.py -> load_blogs.py -> find_merge_candidates.py -> build_viewer.py.
+(A working driver for the last several steps lives at /tmp/rebuild.sh in-session; loaders read env
+BM_DB and, per-loader, COPPIN_SRC/STORYMAPS_SRC/UGRR_SRC/BLOGS_SRC.)
+
+## 1838 Black Metropolis blog archive (added 2026-07-30)
+`pipeline/load_blogs.py` loads `pipeline/blogs.json` (74 posts, each {slug,title,blog_url,pdf,people[]}).
+Each post is its own source ("newspaper"): a row in `blogs` (slug,title,url,pdf) and, per person named,
+a `blog_appearances` row (person_id, slug, snippet). Names were extracted per-post (every person named,
+excluding modern authors/cited scholars). load_blogs resolves each name to an EXISTING person where the
+full name is a confident unique match (exact identity-token set, Jr/Sr kept; else unique surname+first-given);
+ambiguous or unmatched names are created as source='blog' people so no connection is dropped, and are
+surfaced in `pipeline/blog_matches.md` for Michiko to merge/prune via merges.json (same review flow as ICY/
+StoryMaps -- nothing is force-merged). The person card shows each post's title + snippet + View Blog (live
+URL) and View PDF (hosted `blogs/<pdf>`); the 74 PDFs are committed under `blogs/`. Runs AFTER the other
+loaders (links to final canonical nodes), BEFORE find_merge_candidates/build_viewer. Idempotent.
+To refresh a post's people, re-extract into blogs.json and rerun; blog people with no other data stay out
+of the "All connections" map (they have no person-person edges) but remain searchable/filterable ("Blog Archive").
+
+## Samuel Nichols split (added 2026-07-30)
+`pipeline/split_nichols.py` moves the 7 mis-parsed Samuel Nichols winch notes off the Winch "Newton, Mary"
+record onto a dedicated "Nichols, Samuel" winch person, so only the Female Vigilant Committee note follows
+the merge of "Newton, Mary" -> "Mary Lewton" (merges.json). Idempotent; runs BEFORE apply_merges; no-op once
+"Newton, Mary" has been merged away.

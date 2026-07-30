@@ -86,7 +86,12 @@ def main():
                           # "Dr. Bias" biographical passage is Dr. J.J.G. Bias (id already gets the
                           # "J. J. G. Bias" mention); the stray match to his wife Eliza came from the
                           # "E" in "A. M. E. Connection" matching her initial. Michiko 2026-07-21.
-                          ("Bias, Eliza A.", "PP_015")}
+                          ("Bias, Eliza A.", "PP_015"),
+                          # "Newton, John Y." (Winch, Haytien Emigration Society 1825) is a DIFFERENT
+                          # John Newton from the two OCR-garbage newspaper mentions that matched him;
+                          # both contexts are gibberish, not about him. Michiko 2026-07-30.
+                          ("Newton, John Y.", "FJ_1828-09-12"),
+                          ("Newton, John Y.", "PF_1838-07-26")}
     _name2pids = {}
     for _pid, _nm in people:
         _name2pids.setdefault(_nm, set()).add(_pid)

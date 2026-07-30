@@ -710,5 +710,18 @@
    }
   ],
   "note": "Michiko approved 2026-07-30 (StoryMap review): StoryMap 'Charles Black' (1842 War of 1812 veteran, the Sr.) -> Winch 'Black, Charles' Register of Trades 1838 record (id230, 'Carpenter. Christian above 8th'). id-qualified keep so it targets ONLY id230 and leaves the other Winch 'Black, Charles' (id231, Donaldson's school) and census 'BLACK, CHARLES' (id351942) untouched. StoryMap 'Charles Black Jr.' kept separate."
+ },
+ {
+  "keep": {
+   "id": 14221,
+   "name": "Mary Lewton"
+  },
+  "aliases": [
+   {
+    "id": 2014,
+    "name": "Newton, Mary"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30. 'Newton, Mary' (Winch, id2014) is Mary Lewton -- the Female Vigilant Committee member (Pa. Freeman, July 5 1838) is the same woman as the Northern Liberties 'Mary Lewton' (newspaper id14221; Union AME founder, Paschall's Alley UGRR 'mother to the fleeing bondmen'). Merged under Mary Lewton. NOTE: split_nichols.py runs first and moves the 7 mis-parsed Samuel Nichols notes off id2014 onto a dedicated 'Nichols, Samuel' Winch record, so ONLY Mary's Female Vigilant note follows this merge. Her husband John Lewton (census 'LEWTON, JOHN', id353182) and the unrelated 'Newton, John Y.' (Winch, id2013, Haytien Emigration Society) stay separate."
  }
 ]

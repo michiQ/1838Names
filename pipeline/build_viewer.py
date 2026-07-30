@@ -246,8 +246,20 @@ if has_table("storymap_people"):
             people[pid].setdefault("storymap", []).append(
                 {"k": key, "t": title, "d": sdate, "u": url, "role": role, "s": snippet})
 
+# 1838 Black Metropolis blog archive -- each post is its own source; every person named in a
+# post gets a snippet + links (View Blog -> live URL, View PDF -> hosted blogs/<pdf>). Blog meta
+# (title/url/pdf) is stored once per slug; each person just carries {slug, snippet}.
+blogs_meta = {}
+if has_table("blogs"):
+    for slug, title, url, pdf in con.execute("SELECT slug, title, url, pdf FROM blogs"):
+        blogs_meta[slug] = {"t": title, "u": url, "pdf": pdf}
+if has_table("blog_appearances"):
+    for pid, slug, snippet in con.execute("SELECT person_id, slug, snippet FROM blog_appearances"):
+        if pid in people:
+            people[pid].setdefault("blog", []).append({"slug": slug, "s": snippet})
+
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap") or p.get("blog")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 
@@ -258,7 +270,8 @@ data = {"people": list(people.values()),
         "issueUrls": urls,
         "jpegIssues": jpeg_slugs,
         "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people],
-                  "src": {str(p): s for p, s in o["src"].items() if p in people}} for o in orgs_out]}
+                  "src": {str(p): s for p, s in o["src"].items() if p in people}} for o in orgs_out],
+        "blogs": blogs_meta}
 
 import datetime
 tpl = open(TPL, encoding="utf-8").read()

@@ -1,0 +1,346 @@
+# Blog archive -- name matches to confirm
+
+74 posts loaded. Of 515 unique names: 180 linked to existing people, 287 created as new blog people, 48 held as ambiguous (NOT linked -- confirm below).
+
+## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
+Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
+
+- **Ann Eliza Carey** (blog)  ↔  Carey, Ann Eliza#530, CAREY, ANN ELIZA#352154
+- **Benjamin Jackson** (blog)  ↔  Jackson, Benjamin#1459, Jackson, Benjamin F#356728
+- **Charles Black** (blog)  ↔  Black, Charles#230, Black, Charles#231, BLACK, CHARLES#351942
+- **Charles Bustill** (blog)  ↔  Bustill, Charles H.#477, Bustill, Charles C#354521
+- **Charles Gardner** (blog)  ↔  Gardner, Charles W.#1107, Charles Gardner#359716
+- **Christopher James Perry, Sr.** (blog)  ↔  CHRISTOPHER, JOHN#352211, Christopher, William#354792, Christopher, Levinia#356486, Christopher, Bayhs#357579
+- **Daniel Alexander Payne** (blog)  ↔  Payne, Daniel A.#2086, Daniel Payne#359717
+- **Daniel Fox** (blog)  ↔  Fox, Daniel#1049, FOX, DANIEL D.#352553, Daniel Fox#359771
+- **Elizabeth Brown** (blog)  ↔  Brown, Elizabeth#366, Brown, Elizabeth#359047
+- **Ellen Craft** (blog)  ↔  Craft, Ellen#31200, Craft, Ellen#351701, Ellen Craft#358733
+- **George Washington** (blog)  ↔  Washington, George#351632, WASHINGTON, GEORGE#354152
+- **George Williams** (blog)  ↔  George Williams#70420, Williams, George#357110, Williams, George#358678
+- **Henry Simpson** (blog)  ↔  SIMPSON, HENRY#353818, Simpson, Henry#358452
+- **Jacob C. White** (blog)  ↔  White, Jacob#2772, White, Jacob#2773, Jacob C. White Sr.#59208, Jacob C. White#358795
+- **Jacob C. White Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
+- **Jacob C. White, Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
+- **Jacob Griffith** (blog)  ↔  Griffith, Jacob#356653, Jacob Griffith#359742
+- **James Brister** (blog)  ↔  Brister, James#354473, Brister, James#359042
+- **James Fields Needham** (blog)  ↔  Needham, James#1996, Needham, James F.#359342
+- **James Forten Jr.** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
+- **James Forten, Jr** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
+- **James Forten, Jr.** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
+- **James Gordon** (blog)  ↔  Gordon, James R.#1182, Gordon, James R#354661
+- **James Needham** (blog)  ↔  Needham, James#1996, Needham, James F.#359342
+- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588
+- **Jehu Jones** (blog)  ↔  Jones, Rev. Jehu#1600, JONES, JEHU#353059
+- **John Bowers** (blog)  ↔  Bowers, John#304, Bowers, John C.#305
+- **John Francis Cook Jr.** (blog)  ↔  Bowers, John C.#305, John Sellers Jr.#358765, John Atkinson Jr.#359641
+- **Jonathan Clarkson Gibbs** (blog)  ↔  Gibbs, Jonathan C.#1135, Gibbs, Rev. Jonathan C.#1136, Jonathan Gibbs#359769
+- **Joseph G. Anderson** (blog)  ↔  Anderson, Joseph#67, Joseph G. Anderson#14303
+- **Joseph Smith** (blog)  ↔  Smith, Joseph#354428, Smith, Joseph#358476
+- **Morris Brown** (blog)  ↔  Brown, Morris Sr.#398, BROWN, MORRIS#352069, Morris Brown#359790
+- **Richard Allen** (blog)  ↔  Allen, Richard#31, Richard Allen#14194, ALLEN, RICHARD#351780, Allen, Richard#357327
+- **Robert Douglass** (blog)  ↔  Robert Douglass#14271, Douglass, Robert#357712
+- **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
+- **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
+- **Samuel Williams** (blog)  ↔  Williams, Samuel#351596, WILLIAMS, SAMUEL#354264
+- **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
+- **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
+- **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312
+- **Thomas Butler** (blog)  ↔  Butler, Thomas#497, Thomas Butler#59213, BUTLER, THOMAS#352124
+- **William A. Brown** (blog)  ↔  Brown, William#421, Brown, William#422, Brown, William C.#423, Brown, William#355146, Brown, William J#355415, Brown, William#357492
+- **William Bell** (blog)  ↔  Bell, William#354955, Bell, William#359015, William Bell#359735
+- **William Craft** (blog)  ↔  Craft, William#31199, Craft, William#351700, William Craft#358732
+- **William Dorsey** (blog)  ↔  Dorsey, William#891, Dorsey, William H.#892, DORSEY, WILLIAM#352432, William Dorsey#359637
+- **William Henry Dorsey** (blog)  ↔  Dorsey, William#891, Dorsey, William H.#892, DORSEY, WILLIAM#352432, William Dorsey#359637
+- **William Parker** (blog)  ↔  William Parker#169762, Parker, William#356888, Parker, William#358281
+- **William Still** (blog)  ↔  Still, William#2497, Still, William W.#359472
+
+## Newly created as blog-only people (review: merge variants / delete non-subjects)
+e.g. honorific/nickname variants of existing people, or national/modern figures to prune.
+
+- A. Bonnaffon
+- Aaron Burr
+- Aaron J. R. Connor
+- Abitololo Lambsong
+- Abner Rolly
+- Abraham Mason
+- Albert Turner
+- Alfred Wilnon
+- Amanda Gorman
+- Amos Webber
+- Amy Matilda
+- Andrew
+- Angela Morris
+- Ann
+- Ann Appo (organist)
+- Ann Clinton
+- Anna
+- Annie Wood
+- Anthony Benezet
+- Araminta
+- Arcadio Rodaniche
+- Benjamin Bacon
+- Benjamin Rush
+- Bernard Hopkins
+- Bethany Blanton
+- Bishop Allen
+- Bishop Payne
+- Black
+- Bud Jack
+- Carolyn Le Count
+- Carolyn LeCount
+- Catharine Johnson
+- Charity Bowery
+- Charity Still
+- Charles Abele
+- Charles Beck
+- Charles Chaveau Cook
+- Charles L. Blockson
+- Charles Pemberton
+- Cinque
+- Clement Biddle
+- Cordelia Jennings
+- Cornelia Wells
+- David Spraw
+- Delores Walters
+- Denmark Vesey
+- Depee
+- Dinah Nevil
+- Dorsey
+- Dr. John Rock
+- Dr. Joseph Brister
+- Edmund Kean
+- Edward Gorsuch
+- Edward Roland
+- Edwin Abdy
+- Eliza
+- Eliza Ann LeCount
+- Elizabeth Hemmons
+- Elizabeth Matthews
+- Elizabeth Rebecca Durham
+- Ellen
+- Emelie Davis
+- Emilie Davis
+- Emilie Frances Davis
+- Emma
+- Enid Appo Cook
+- Esther Price
+- F.A. Duterte
+- Fenton Harper
+- Foksua
+- Frances Draper
+- Frances Gordon
+- Francis
+- Francis Burke Brandt
+- Francis Duterte
+- Francis Ellen Watkins Harper
+- Francis Fauset
+- Francis Peets Jr.
+- Franklin Guinn
+- Franklin Vansant
+- Garnet Appo
+- General Grant
+- George Emlen
+- George Hammond
+- George Wilkes
+- Gertrude
+- Gilbert Ball
+- Hannah Archer Till
+- Hannah Bowen
+- Hannah Dellum
+- Harriet
+- Harriet Bayley
+- Harriet Jacobs
+- Harriet Smith
+- Harriet Tubman
+- Harriet Whipper
+- Hawkins Family
+- Helen Appo
+- Henrietta Duterte
+- Henrietta Howard
+- Henriette Duterte
+- Henry
+- Henry Volkmar Gummer
+- Hercules
+- Hiram Hobbs
+- Isaiah
+- Ismael Jimenez
+- J. Simons
+- J.C. Wilkins
+- J.M. McKim
+- J.P. Burr
+- J.W. Johnson
+- Jacob C. White Senior
+- Jacqui Frazier Lyde
+- James Fetterman
+- James Griffeth
+- James Hewlett
+- James Le Count
+- James Mooney
+- James Parish
+- James Pemberton
+- Jane Brooker
+- Jane Durham
+- Jane Eleanor Datcher
+- Jane Vasham
+- Jean Jacques Dessalines
+- Jean Pierre Burr
+- Jerena Lee
+- Jessie Redmon Fauset
+- Jill Scott
+- Joanna
+- Joe Frazier
+- John Edward
+- John Forsyth
+- John Graves
+- John Griffith
+- John Head
+- John Pemberton
+- John Reynell
+- John Robins
+- John S. Logan
+- John Sartain
+- John W. Geary
+- John Wanamaker
+- John Wister
+- Jon Farnham
+- Jonathan Clarkson Gibbs Sr.
+- Joseph Brister
+- Joseph Coor
+- Joseph Dutrieuille
+- Joseph Haydn
+- Joseph Pemberton
+- Joseph Sebastian
+- Joseph Yeates
+- Joshua Emlen
+- Joshua Hammond
+- Judge Gibson
+- Julia
+- Junius Brutus Appo
+- Kenyatta Johnson
+- Kline
+- Langston Hughes
+- Leavan Ballard
+- Leigh Whipper
+- Leon Gardiner
+- Leonard Bias
+- Leslie Bramlett
+- Letitia Still
+- Lieutenant Haggarty
+- Livinia Mintus
+- Lord Baltimore
+- Lord Palmerston
+- Lorene Cary
+- Louis Woodson
+- Louisa Wilkes
+- Lucy
+- Madison Washington
+- Maria
+- Maria Hutton
+- Maria McCormic
+- Marian Anderson
+- Marquis de Lafayette
+- Martha
+- Martin Delaney
+- Mary
+- Mary Ann Bolden
+- Mary Ann Shad Cary
+- Mary Ann Shadd Cary
+- Mary Miles
+- Medora
+- Meek Mill
+- Melvin Garrison
+- Michelle Flamer
+- Morgan
+- Morgan Lloyd
+- Moses Horner
+- Moses King
+- Mr. Jocelyn
+- Mr. Nagle
+- Mrs. Ash
+- Mrs. Derry
+- N.W. DePee
+- Napoleon
+- Nat Turner
+- Nathanial Bishop
+- Nelson Ford
+- Nikole Hannah-Jones
+- Noah Buley
+- Officer McNulty
+- Olevia Rebecca Parker
+- Oney Judge
+- Parry Randolph
+- Parson Jacob Keeling
+- Passamore Williamson
+- Passmore Williamson
+- Peter Derickson
+- Peter Mott
+- Peter Robins
+- Peter Still
+- Phebe Lewis
+- Phillis Engnem
+- Polidore
+- Pollidore
+- Priscilla
+- Quamany Clarkson
+- Queen Elizabeth
+- Queen Victoria
+- Rachel
+- Rebecca
+- Rebecca McCormic
+- Rebecca Perot
+- Redmon Fauset
+- Redmond Prendible
+- Representative Earle
+- Rev. Phillip Mayer
+- Rich Porter
+- Richard Dancan
+- Richard Gauff
+- Richard Peter
+- Robert Campbell
+- Robert McKnight
+- Robert Purvis Dorsey
+- Robert Smalls
+- Rosa Parks
+- Rose
+- Sally Hemmings
+- Sam Pleasants
+- Samuel
+- Samuel Sharp
+- Sarah
+- Sarah Ellen Chase
+- Sergeant Duffy
+- Shadrack Bassett
+- Sheppard Patterson
+- Sojourner Truth
+- St. John Appo
+- Steven James
+- T. C. Stephens
+- Terence O'Neill
+- Thomas
+- Thomas Hamill
+- Thomas Jefferson
+- Thomas Jefferson Becket
+- Thomas Paschall
+- Thomas Rogers
+- Toussaint L'Ouverture
+- Ulysses B. Vidal
+- W.E.B DuBois
+- W.E.B Dubois
+- W.E.B. DuBois
+- Wanda Sykes
+- Whitney Grinnage-Cassidy
+- William Appo Jr.
+- William Bingham
+- William C. Goodridge
+- William Clifton
+- William Dicks
+- William Fogg
+- William Goddard
+- William Quastine
+- William R. Bayley
+- William Ridgely
+- William Savery
+- William St. Clair
+- William Stokley
+- Zema Boyer
+- Zora Neale Hurston
