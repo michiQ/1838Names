@@ -147,6 +147,9 @@ for b in data:
         con.execute("INSERT INTO blog_appearances(person_id, slug, snippet) VALUES(?,?,?)",
                     (pid, b["slug"], p.get("snippet", "")))
         n_app += 1
+# drop orphaned blog people from earlier runs -- names since removed from blogs.json (e.g. the
+# one-word mentions Michiko pruned) leave a source='blog' row with no remaining blog_appearance.
+con.execute("DELETE FROM people WHERE source='blog' AND id NOT IN (SELECT person_id FROM blog_appearances)")
 con.commit()
 
 # ---- review file ---------------------------------------------------------------

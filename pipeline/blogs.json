@@ -125,10 +125,6 @@
     "snippet": "Enslaved person who most likely used Black Philadelphia connections to self-liberate from George Washington."
    },
    {
-    "name": "Hercules",
-    "snippet": "Enslaved person who most likely used Black Philadelphia connections to self-liberate from George Washington."
-   },
-   {
     "name": "Marian Anderson",
     "snippet": "Singer at the Lincoln Memorial after being refused Constitution Hall, invoked as a parallel to Johnson."
    },
@@ -175,10 +171,6 @@
    {
     "name": "Joseph Haydn",
     "snippet": "European composer whose large vocal work was featured on a St. Thomas concert program alongside Johnson's music."
-   },
-   {
-    "name": "Napoleon",
-    "snippet": "Referenced in the Haitian revolution as the power formerly enslaved Black people defeated."
    }
   ]
  },
@@ -352,10 +344,6 @@
     "snippet": "Widower with three children whom Harper married in 1860; died in 1864 deeply in debt."
    },
    {
-    "name": "Mary",
-    "snippet": "Harper's only child, born on the farm in Ohio."
-   },
-   {
     "name": "William Still",
     "snippet": "Underground Railroad figure with whose family Harper stayed after returning to Philadelphia."
    },
@@ -370,10 +358,6 @@
    {
     "name": "Fanny Jackson Coppin",
     "snippet": "Born enslaved 1837 in DC; Oberlin graduate who led the Institute for Colored Youth girls' school from 1865."
-   },
-   {
-    "name": "Lucy",
-    "snippet": "Coppin's mother, who remained enslaved because Coppin's grandfather refused to purchase her after she had Fanny."
    },
    {
     "name": "Cordelia Jennings",
@@ -496,7 +480,7 @@
     "snippet": "Formerly enslaved entrepreneur and Shiloh Baptist church builder who published a blistering classified ad protesting transit discrimination in 1840."
    },
    {
-    "name": "Araminta",
+    "name": "Araminta Keeling",
     "snippet": "Keeling's 14-year-old daughter, forced to ride on top of a stagecoach in the cold from West Philadelphia to Lombard Street."
    },
    {
@@ -636,10 +620,6 @@
   "pdf": "bringing-the-1838-black-metropolis-to-life-for-teachers.pdf",
   "people": [
    {
-    "name": "Morgan",
-    "snippet": "\"Morgan and I fought back tears of joy at our teacher focus group held at the Historical Society of Pennsylvania\""
-   },
-   {
     "name": "Whitney Grinnage-Cassidy",
     "snippet": "wrote the poem 'Ancestral Painkiller' after one of the tours, re-shared with permission"
    },
@@ -766,10 +746,6 @@
    {
     "name": "Isaac Chase",
     "snippet": "Thirty-year-old musician shot in the back and killed with an axe while his daughter Julia watched."
-   },
-   {
-    "name": "Julia",
-    "snippet": "Daughter of Isaac Chase who watched her father be killed."
    },
    {
     "name": "Sarah Ellen Chase",
@@ -1447,24 +1423,12 @@
     "snippet": "Black women from Shiloh led organizing supporting her influential 1855 visit to Philadelphia."
    },
    {
-    "name": "Anna",
-    "snippet": "Franklin's wife whom he married after returning from the war; died in a tragic accident in November 1883."
-   },
-   {
-    "name": "Gertrude",
-    "snippet": "Franklin's daughter who died of pleurisy at age two, prepared for burial by Henriette Duterte."
-   },
-   {
     "name": "John Edward",
     "snippet": "Franklin's son who died of cholera at thirteen months."
    },
    {
     "name": "Henriette Duterte",
     "snippet": "America's first female undertaker, who prepared daughter Gertrude for burial."
-   },
-   {
-    "name": "Anna",
-    "snippet": "Franklin's daughter, twelve years old by 1880."
    },
    {
     "name": "John Wanamaker",
@@ -1489,14 +1453,6 @@
    {
     "name": "Dinah Nevil",
     "snippet": "A Lenni Lenape woman whose case inspired the Pennsylvania Abolition Society's formation."
-   },
-   {
-    "name": "Polidore",
-    "snippet": "Polidore's relentless fight to free his wife Rose demonstrates deeply human motivations behind Black-led abolitionist efforts."
-   },
-   {
-    "name": "Rose",
-    "snippet": "Wife of Polidore, whom he fought relentlessly to free."
    },
    {
     "name": "Amy Reckless",
@@ -1613,10 +1569,6 @@
    {
     "name": "Lydia Maria Child",
     "snippet": "interviewed Charity Bowery in 1839 about the post-uprising environment"
-   },
-   {
-    "name": "Dorsey",
-    "snippet": "kept a file on Rev. Bassett in the Dorsey Collection at Penn State, where his portrait emerged"
    },
    {
     "name": "Michelle Flamer",
@@ -1855,10 +1807,6 @@
     "snippet": "Rebecca Cox Jackson's brother, a leader at Mother Bethel AME."
    },
    {
-    "name": "Samuel",
-    "snippet": "Rebecca Cox Jackson's husband, with whom she lived on Sassafras Alley in 1830."
-   },
-   {
     "name": "Bishop Allen",
     "snippet": "Rebecca grew up hearing him preach regularly at Mother Bethel AME."
    },
@@ -1925,10 +1873,6 @@
    {
     "name": "Melvin Garrison",
     "snippet": "The subject of this memorial; helped develop Philadelphia's Black history curriculum and the Audacious Freedom exhibit, and mentored the authors."
-   },
-   {
-    "name": "Morgan",
-    "snippet": "Co-founder who led the walking tours with the author; met the author as a fellow AAMP worker."
    },
    {
     "name": "Ismael Jimenez",
@@ -2091,22 +2035,6 @@
     "snippet": "Hagar Ballard's sister who lived with her and inherited her wealth 'absolutely forever'; attended Mother Bethel."
    },
    {
-    "name": "Ann",
-    "snippet": "One of the women living in Hagar Ballard's house; attended Mother Bethel AME."
-   },
-   {
-    "name": "Ellen",
-    "snippet": "One of the women living in Hagar Ballard's house; attended Mother Bethel AME."
-   },
-   {
-    "name": "Priscilla",
-    "snippet": "One of the women living in Hagar Ballard's house; attended St. Thomas."
-   },
-   {
-    "name": "Joanna",
-    "snippet": "One of the women in Hagar Ballard's house who unusually listed no church."
-   },
-   {
     "name": "Leavan Ballard",
     "snippet": "Hagar's husband, found in St. Thomas pew records (listed as Laban Ballard in the 1820 census)."
    },
@@ -2173,18 +2101,6 @@
    {
     "name": "Gilbert Ball",
     "snippet": "A prominent Black Republican leader who had a public fist fight with James F. Needham in 1884 over masonry at a political club."
-   },
-   {
-    "name": "Medora",
-    "snippet": "James Fields Needham's wife, with whom he lived near Ninth and Lombard by 1910."
-   },
-   {
-    "name": "Mary",
-    "snippet": "A daughter of James Fields Needham and Medora."
-   },
-   {
-    "name": "Martha",
-    "snippet": "A daughter of James Fields Needham and Medora."
    }
   ]
  },
@@ -2287,10 +2203,6 @@
   "pdf": "picture.pdf",
   "people": [
    {
-    "name": "Cinque",
-    "snippet": "led a successful rebellion on the slave ship The Amistad in 1839; his portrait hung at 918 Lombard Street"
-   },
-   {
     "name": "Madison Washington",
     "snippet": "freedom seeker inspired by Cinque's portrait who led the Creole slave ship uprising freeing about 200"
    },
@@ -2335,14 +2247,6 @@
   "pdf": "pollidore-and-rose.pdf",
   "people": [
    {
-    "name": "Pollidore",
-    "snippet": "Enslaved man (also Polydore/Poladore) who waged a two-year campaign, working overtime and raising funds, to free his wife Rose."
-   },
-   {
-    "name": "Rose",
-    "snippet": "Enslaved woman married to Pollidore in 1767; freed by manumission in 1771 just before their daughter's birth."
-   },
-   {
     "name": "Abraham Mason",
     "snippet": "The man who enslaved both Rose and Pollidore and tried to send Rose south to be sold."
    },
@@ -2357,10 +2261,6 @@
    {
     "name": "Rich Porter",
     "snippet": "Took Rose's indenture for six years in 1770, keeping her in Philadelphia."
-   },
-   {
-    "name": "Sarah",
-    "snippet": "Daughter of Pollidore and Rose, born Sept 1771 and baptized March 1772."
    },
    {
     "name": "John Pemberton",
@@ -2413,10 +2313,6 @@
    {
     "name": "John Reynell",
     "snippet": "One of the Quaker subscribers who lent toward Rose's freedom."
-   },
-   {
-    "name": "Henry",
-    "snippet": "One of the subscribers listed as lending toward Rose's freedom."
    },
    {
     "name": "George Emlen",
@@ -2491,10 +2387,6 @@
   "pdf": "the-black-metropolis-has-always-celebrated-emancipation.pdf",
   "people": [
    {
-    "name": "Napoleon",
-    "snippet": "The awareness that a Black nation had defeated Napoleon, the English and the Spanish coursed through the Black Metropolis."
-   },
-   {
     "name": "Jean Jacques Dessalines",
     "snippet": "Haitian leader depicted defeating Napoleon's army at the Battle of Vertiers."
    }
@@ -2515,16 +2407,8 @@
     "snippet": "born 1823, became first Black elected judge in the U.S. in Little Rock, Arkansas"
    },
    {
-    "name": "Isaiah",
-    "snippet": "Gibbs brother born circa 1825"
-   },
-   {
     "name": "Jonathan Clarkson Gibbs Sr.",
     "snippet": "the boys' father, a Methodist minister who died suddenly in April 1831"
-   },
-   {
-    "name": "Maria",
-    "snippet": "the Gibbs brothers' mother, a washer"
    },
    {
     "name": "Richard Allen",
@@ -2559,10 +2443,6 @@
     "snippet": "asked Mifflin to go to the 'Western Reserve' in New York to drum up support for abolition"
    },
    {
-    "name": "Maria",
-    "snippet": "Mifflin's wife, an Oberlin graduate whom he married in 1859 in Victoria"
-   },
-   {
     "name": "Anna Amelia Harris",
     "snippet": "Jonathan's wife; their marriage fell apart, leading to divorce and a custody battle"
    },
@@ -2581,18 +2461,6 @@
    {
     "name": "James J.G. Bias",
     "snippet": "Dr. James J.G. Bias (DJJG), referenced in Emilie Davis's diary alongside his late wife Eliza"
-   },
-   {
-    "name": "Eliza",
-    "snippet": "Dr. James J.G. Bias's wife, who had passed away by the time of Emilie Davis's May 1863 entry"
-   },
-   {
-    "name": "Harriet",
-    "snippet": "Mifflin's daughter, an Oberlin music graduate who opened the Washington Conservatory of Music in DC"
-   },
-   {
-    "name": "Thomas",
-    "snippet": "Jonathan's son, a Florida legislator who introduced 1885 legislation that became Florida A&M"
    }
   ]
  },
@@ -2637,10 +2505,6 @@
    {
     "name": "Joseph Cassey",
     "snippet": "Wealthy Black businessman and abolitionist who owned 63 Union Street where the Jones family lived."
-   },
-   {
-    "name": "Depee",
-    "snippet": "A person listed with no first name living in rear 63 Union; possibly connected to Nathaniel Depee."
    },
    {
     "name": "Nathaniel Depee",
@@ -2943,14 +2807,6 @@
    {
     "name": "Euphemia Williams",
     "snippet": "The Philadelphia Institute was also where the Euphemia Williams celebration was held."
-   },
-   {
-    "name": "Rachel",
-    "snippet": "Aaron Roberts' wife, listed in the 1850 US Census."
-   },
-   {
-    "name": "Rebecca",
-    "snippet": "Aaron Roberts' 20 year old daughter, listed in the 1850 US Census."
    }
   ]
  },
@@ -3113,36 +2969,12 @@
     "snippet": "An episcopal minister who enslaved Westward Keeling in Virginia."
    },
    {
-    "name": "Rachel",
-    "snippet": "Westward Keeling's wife, who opened a confectionary shop at 4th and Chestnut with him and raised their children."
-   },
-   {
-    "name": "Araminta",
+    "name": "Araminta Keeling",
     "snippet": "Westward and Rachel's daughter, born 1826; at 14 was forced to ride on top of a stage coach because she was Black; died 1862."
-   },
-   {
-    "name": "Emma",
-    "snippet": "Westward and Rachel's daughter, born 1836."
    },
    {
     "name": "Jeremiah Asher",
     "snippet": "Impactful pastor whom Westward Keeling helped convince to preach at Shiloh."
-   },
-   {
-    "name": "Mary",
-    "snippet": "Keeling child who died in 1853 at age 12."
-   },
-   {
-    "name": "Andrew",
-    "snippet": "Keeling child who died in 1853 at age 10."
-   },
-   {
-    "name": "Rebecca",
-    "snippet": "One of the Keeling children listed by 1847."
-   },
-   {
-    "name": "Foksua",
-    "snippet": "One of the Keeling children listed by 1847."
    }
   ]
  },
@@ -3163,10 +2995,6 @@
    {
     "name": "Harriet Tubman",
     "snippet": "Named among the three well-known Black figures of the antebellum period."
-   },
-   {
-    "name": "Morgan",
-    "snippet": "Posted about Robert Purvis, prompting the author's reflection on the scale of the Vigilant Committee's work."
    },
    {
     "name": "Robert Purvis",
@@ -3269,10 +3097,6 @@
     "snippet": "Whipper's nephew who became an important Reconstruction leader in Beaufort, South Carolina"
    },
    {
-    "name": "Francis",
-    "snippet": "Whipper's niece who refused to give up her seat on South Carolina public transit in 1867"
-   },
-   {
     "name": "Leigh Whipper",
     "snippet": "Francis's son and Whipper's grand nephew, a Hollywood actor and Negro Actors Guild founder"
    },
@@ -3329,10 +3153,6 @@
     "snippet": "Maryland enslaver who came to Christiana with a warrant to recapture four escaped Black men."
    },
    {
-    "name": "Kline",
-    "snippet": "Slave catcher accompanying Gorsuch, whose court testimony described Williams unnerving the party."
-   },
-   {
     "name": "William Dorsey",
     "snippet": "Son of Thomas Dorsey and American Negro Historical Society founder who compiled the Dorsey Collection."
    },
@@ -3371,10 +3191,6 @@
    {
     "name": "Redmond Prendible",
     "snippet": "White man shot ten to twelve times in the 1849 battle in front of Williams's tavern."
-   },
-   {
-    "name": "Black",
-    "snippet": "A man 'named Black' shot in the head among the ten white men injured at Williams's tavern in 1849."
    },
    {
     "name": "Richard Dancan",

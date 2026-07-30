@@ -153,9 +153,15 @@ Michiko's identification (not a standalone person) — and John Myers — body s
 exactly like Sarah Ash.)
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
 load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> apply_merges.py ->
-load_nolibs.py -> load_ugrr.py -> load_blogs.py -> find_merge_candidates.py -> build_viewer.py.
-(A working driver for the last several steps lives at /tmp/rebuild.sh in-session; loaders read env
-BM_DB and, per-loader, COPPIN_SRC/STORYMAPS_SRC/UGRR_SRC/BLOGS_SRC.)
+load_nolibs.py -> load_ugrr.py -> load_blogs.py -> apply_merges.py (2nd pass) -> find_merge_candidates.py -> build_viewer.py.
+apply_merges runs TWICE: pass 1 folds the winch/census/newspaper/coppin/storymap groups so load_nolibs/
+load_ugrr resolve against canonical names; pass 2 (after load_blogs) folds the blog-source groups, since
+blog people don't exist until load_blogs runs. apply_merges is idempotent so pass 2 re-checks pass-1 groups
+as no-ops. IMPORTANT: merges that fold a record into a MERGED-AWAY id break on rebuild (the id is gone and
+the loader recreates the record with a new id) -- key such groups on a stable id (winch/census never
+reassigned) or on {name, source} which matches the recreated record. A working driver for the last several
+steps lives at /tmp/rebuild.sh in-session; loaders read env BM_DB and, per-loader,
+COPPIN_SRC/STORYMAPS_SRC/UGRR_SRC/BLOGS_SRC.
 
 ## 1838 Black Metropolis blog archive (added 2026-07-30)
 `pipeline/load_blogs.py` loads `pipeline/blogs.json` (74 posts, each {slug,title,blog_url,pdf,people[]}).

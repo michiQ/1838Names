@@ -63,7 +63,8 @@ for g in groups:
         for tbl, col in (("appearances","person_id"), ("winch_references","person_id"),
                           ("census_links","person_id"), ("newspaper_orgs","person_id"),
                           ("directory_links","person_id"), ("coppin_students","person_id"),
-                          ("ugrr_appearances","person_id"), ("nolibs_profiles","person_id"), ("storymap_people","person_id")):
+                          ("ugrr_appearances","person_id"), ("nolibs_profiles","person_id"), ("storymap_people","person_id"),
+                          ("blog_appearances","person_id")):
             try: con.execute(f"UPDATE {tbl} SET {col}=? WHERE {col}=?", (tid, pid))
             except sqlite3.OperationalError: pass
         if cname != keep_name: alias_set.add(cname)

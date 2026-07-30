@@ -713,15 +713,191 @@
  },
  {
   "keep": {
-   "id": 14221,
+   "id": 2014,
    "name": "Mary Lewton"
   },
   "aliases": [
    {
-    "id": 2014,
-    "name": "Newton, Mary"
+    "name": "Newton, Mary",
+    "source": "winch"
+   },
+   {
+    "name": "Mary Lewton",
+    "source": "newspaper"
+   },
+   {
+    "name": "Mary Lewton",
+    "source": "blog"
    }
   ],
-  "note": "Michiko approved 2026-07-30. 'Newton, Mary' (Winch, id2014) is Mary Lewton -- the Female Vigilant Committee member (Pa. Freeman, July 5 1838) is the same woman as the Northern Liberties 'Mary Lewton' (newspaper id14221; Union AME founder, Paschall's Alley UGRR 'mother to the fleeing bondmen'). Merged under Mary Lewton. NOTE: split_nichols.py runs first and moves the 7 mis-parsed Samuel Nichols notes off id2014 onto a dedicated 'Nichols, Samuel' Winch record, so ONLY Mary's Female Vigilant note follows this merge. Her husband John Lewton (census 'LEWTON, JOHN', id353182) and the unrelated 'Newton, John Y.' (Winch, id2013, Haytien Emigration Society) stay separate."
+  "note": "Michiko approved 2026-07-30. 'Newton, Mary' (Winch id2014) is Mary Lewton, the Northern Liberties UGRR 'mother to the fleeing bondmen' / Union AME founder. Keyed on the STABLE Winch id2014 (the surviving merge target); folds any recreated newspaper/blog 'Mary Lewton' duplicate by name+source each rebuild. split_nichols.py runs first so only her Female Vigilant Committee note follows. John Lewton (census 'LEWTON, JOHN') and the unrelated 'Newton, John Y.' (Winch, Haytien Emigration Society) stay separate."
+ },
+ {
+  "keep": {
+   "id": 1996,
+   "name": "Needham, James"
+  },
+  "aliases": [
+   {
+    "name": "James Needham",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'James Needham' (no F.) is James Needham Sr. = Winch 'Needham, James' (id1996)."
+ },
+ {
+  "keep": {
+   "id": 359342,
+   "name": "Needham, James F."
+  },
+  "aliases": [
+   {
+    "name": "James Fields Needham",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'James Fields Needham' is James Needham Jr. = the ICY roster 'Needham, James F.' (coppin, id359342, the son)."
+ },
+ {
+  "keep": {
+   "id": 550,
+   "name": "Cassey, Amy Matilda"
+  },
+  "aliases": [
+   {
+    "name": "Amy Matilda",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'Amy Matilda' is Amy Matilda Cassey = Winch 'Cassey, Amy Matilda' (id550)."
+ },
+ {
+  "keep": {
+   "id": 2297,
+   "name": "Rolley, Abner"
+  },
+  "aliases": [
+   {
+    "name": "Abner Rolly",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'Abner Rolly' -> Winch 'Rolley, Abner' (id2297). (No standalone census 'Abner Rolley' found; the Winch record carries his data.)"
+ },
+ {
+  "keep": {
+   "id": 14199,
+   "name": "Caroline R. LeCount"
+  },
+  "aliases": [
+   {
+    "name": "Carolyn Le Count",
+    "source": "blog"
+   },
+   {
+    "name": "Carolyn LeCount",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). The two blog Carolyn LeCount spellings (LeCount / Le Count) unified into the newspaper 'Caroline R. LeCount' (id14199), Catto's fiancee/the transit activist. Blog 'Eliza Ann LeCount' left separate."
+ },
+ {
+  "keep": {
+   "name": "Joseph Brister",
+   "source": "blog"
+  },
+  "aliases": [
+   {
+    "name": "Dr. Joseph Brister",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Merge the two blog Joseph Brister spellings. NOTE: no census 'Joseph Brister' found; Winch 'Brister, J.' (id344) is a possible but UNCONFIRMED match -- left for Michiko."
+ },
+ {
+  "keep": {
+   "name": "Henrietta Duterte",
+   "source": "blog"
+  },
+  "aliases": [
+   {
+    "name": "Henriette Duterte",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Merge the two blog Henrietta/Henriette Duterte spellings."
+ },
+ {
+  "keep": {
+   "id": 59208,
+   "name": "Jacob C. White Sr."
+  },
+  "aliases": [
+   {
+    "name": "Jacob C. White Senior",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'Jacob C. White Senior' -> newspaper 'Jacob C. White Sr.' (id59208)."
+ },
+ {
+  "keep": {
+   "id": 353358,
+   "name": "MINTUS, LEVINA"
+  },
+  "aliases": [
+   {
+    "name": "Livinia Mintus",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'Livinia Mintus' -> 1838 census 'MINTUS, LEVINA' (id353358)."
+ },
+ {
+  "keep": {
+   "name": "Mary Ann Shadd Cary",
+   "source": "blog"
+  },
+  "aliases": [
+   {
+    "name": "Mary Ann Shad Cary",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Merge the two blog Mary Ann Shad(d) Cary spellings."
+ },
+ {
+  "keep": {
+   "id": 97,
+   "name": "Ash, Sarah"
+  },
+  "aliases": [
+   {
+    "name": "Mrs. Ash",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'Mrs. Ash' is Sarah Ash = Winch 'Ash, Sarah' (id97)."
+ },
+ {
+  "keep": {
+   "id": 31244,
+   "name": "Du Bois, W.E.B."
+  },
+  "aliases": [
+   {
+    "name": "W.E.B DuBois",
+    "source": "blog"
+   },
+   {
+    "name": "W.E.B Dubois",
+    "source": "blog"
+   },
+   {
+    "name": "W.E.B. DuBois",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review). All blog W.E.B. Du Bois spellings -> dissertation 'Du Bois, W.E.B.' (id31244)."
  }
 ]
