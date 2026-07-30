@@ -375,5 +375,19 @@
    }
   ],
   "note": "Michiko approved 2026-07-29. Fold the ICY roster 'Dorsey, William' (coppin) into the Winch 'Dorsey, William' -- William Dorsey (1837-1923), the Black Philadelphia historian/collector, ICY-era. SOURCE-QUALIFIED keep so it targets ONLY the Winch record and does NOT sweep in the separate 1838-census 'DORSEY, WILLIAM' (a different, older head-of-household)."
+ },
+ {
+  "keep": "Needham, James",
+  "aliases": [
+   {
+    "name": "James F. Needham",
+    "source": "newspaper"
+   },
+   {
+    "name": "James Needham",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko approved 2026-07-29 ('newspaper sources are all James Needham Sr'). The newspaper 'James F. Needham' and 'James Needham' records are James Needham Sr. (the 1840s father) = Winch 'Needham, James'. Source-qualified aliases so it does NOT touch the ICY roster 'Needham, James F.' (coppin), who is the SON (James F. Needham Jr, ICY graduate) -- kept as a separate ICY person."
  }
 ]
