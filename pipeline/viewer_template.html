@@ -31,6 +31,7 @@ header .sub{color:var(--dim);font-size:12.5px;font-style:italic}
 .badge{display:inline-block;font-size:10px;border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:1px}
 .b-w{background:#463818;color:var(--gold)} .b-n{background:#1d3a35;color:#7fc2b4} .b-c{background:#3a2430;color:#d18aa8}
 .b-d{background:#2a3a1d;color:#a8c27f} .b-u{background:#3a2a18;color:#e0a765}
+.b-i{background:#24303f;color:#8ab6d1}
 #filters{display:flex;flex-wrap:wrap;gap:5px;margin:0 12px 8px}
 #filters .chip{font-size:10.5px;padding:3px 9px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--dim);cursor:pointer;font-family:Georgia}
 #filters .chip.on{background:#33290f;color:var(--gold);border-color:var(--gold)}
@@ -134,7 +135,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers + William Still's Underground Railroad — click a name to see every reference · build __BUILD__</span>
+  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers + William Still's Underground Railroad + Institute for Colored Youth students (Fanny Jackson Coppin) — click a name to see every reference · build __BUILD__</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -150,6 +151,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
       <span class="chip" data-f="c1847">1847 census</span>
       <span class="chip" data-f="dir1820">1820 directory</span>
       <span class="chip" data-f="ugrr">Underground Railroad</span>
+      <span class="chip" data-f="coppin">Institute for Colored Youth</span>
     </div>
     <select id="papersel"><option value="">All newspapers…</option></select>
     <select id="orgsel"><option value="">All organizations…</option></select>
@@ -181,7 +183,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
     <div id="right"><p class="empty">Select a person to see their newspaper appearances, writings, events, co-attendees, and Winch reference entry.</p></div>
   </div>
 </div>
-<footer id="sitefooter"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> © 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a><div class="credits"><a href="https://drive.google.com/drive/u/0/search?q=julie" target="_blank" rel="noopener">Julie Winch notes</a> appear courtesy and copyright Dr. Julie Winch, Edmonia Lewis data appears courtesy and copyright Dr. Melissa Benbow-Flowers, Freedom&rsquo;s Journal / Colored American / Pennsylvania Freeman courtesy the Center for Research Libraries (<a href="https://www.crl.edu/" target="_blank" rel="noopener">crl.edu</a>), the Philadelphia Tribune courtesy The Philadelphia Tribune (<a href="https://www.phillytrib.com/" target="_blank" rel="noopener">phillytrib.com</a>), the <a href="https://www.1838blackmetropolis.com/1838-pas-census" target="_blank" rel="noopener">1838 Pennsylvania Abolition Society Census</a> courtesy the Historical Society of Pennsylvania (<a href="https://hsp.org/" target="_blank" rel="noopener">hsp.org</a>), the 1847 Pennsylvania Abolition Society Census courtesy the Swarthmore College Friends Historical Library (<a href="https://ds-pages.swarthmore.edu/paac/data/" target="_blank" rel="noopener">ds-pages.swarthmore.edu/paac/data</a>), and the 1820 Philadelphia City Directory courtesy the Greater Philadelphia GeoHistory Network (<a href="https://www.philageohistory.org/rdic-images/index2.cfm" target="_blank" rel="noopener">philageohistory.org</a>).</div></footer>
+<footer id="sitefooter"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> © 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a><div class="credits"><a href="https://drive.google.com/drive/u/0/search?q=julie" target="_blank" rel="noopener">Julie Winch notes</a> appear courtesy and copyright Dr. Julie Winch, Edmonia Lewis data appears courtesy and copyright Dr. Melissa Benbow-Flowers, Freedom&rsquo;s Journal / Colored American / Pennsylvania Freeman courtesy the Center for Research Libraries (<a href="https://www.crl.edu/" target="_blank" rel="noopener">crl.edu</a>), the Philadelphia Tribune courtesy The Philadelphia Tribune (<a href="https://www.phillytrib.com/" target="_blank" rel="noopener">phillytrib.com</a>), the <a href="https://www.1838blackmetropolis.com/1838-pas-census" target="_blank" rel="noopener">1838 Pennsylvania Abolition Society Census</a> courtesy the Historical Society of Pennsylvania (<a href="https://hsp.org/" target="_blank" rel="noopener">hsp.org</a>), the 1847 Pennsylvania Abolition Society Census courtesy the Swarthmore College Friends Historical Library (<a href="https://ds-pages.swarthmore.edu/paac/data/" target="_blank" rel="noopener">ds-pages.swarthmore.edu/paac/data</a>), and the 1820 Philadelphia City Directory courtesy the Greater Philadelphia GeoHistory Network (<a href="https://www.philageohistory.org/rdic-images/index2.cfm" target="_blank" rel="noopener">philageohistory.org</a>), the <a href="https://archive.org/details/undergroundrailr00lcstil" target="_blank" rel="noopener">Underground Railroad</a> appears courtesy Internet Archive, and Fanny Jackson Coppin&rsquo;s <em>Reminiscences of School Life, and Hints on Teaching</em> (Institute for Colored Youth students) courtesy <a href="https://docsouth.unc.edu/church/jcoppin/coppin.html" target="_blank" rel="noopener">Documenting the American South</a> (UNC-Chapel Hill).</div></footer>
 <script>
 // new-version check: compare our build stamp against the server's every few minutes
 (function(){
@@ -347,6 +349,7 @@ function renderList(q){
       if(f==='c1847') return (p.census||[]).some(c=>c.y===1847);
       if(f==='dir1820') return (p.directory||[]).length>0;
       if(f==='ugrr') return (p.ugrr||[]).length>0;
+      if(f==='coppin') return (p.coppin||[]).length>0;
       return true;};
     const blob = p=>{
       if(p._blob===undefined){
@@ -354,6 +357,7 @@ function renderList(q){
         for(const r of (p.refs||[])) parts.push(r.n||'',r.c||'');
         for(const n of (p.nolibs||[])) parts.push(n.s||'');
         for(const u of (p.ugrr||[])) parts.push(u.ch||'','underground railroad');
+        if((p.coppin||[]).length) parts.push('institute for colored youth i.c.y. fanny jackson coppin');
         for(const m of (p.mentions||[])) parts.push(m.ctx||'');
         for(const c of (p.census||[])) parts.push(c.church||'',c.addr||'',c.occM||'',c.occF||'');
         for(const d of (p.directory||[])) parts.push(d.occ||'',d.addr||'');
@@ -370,7 +374,8 @@ function renderList(q){
       const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>'
         : p.src==='census' ? '<span class="badge b-c">census</span>'
         : p.src==='1820directory' ? '<span class="badge b-d">1820 directory</span>'
-        : p.src==='ugrr' ? '<span class="badge b-u">UGRR</span>' : '<span class="badge b-n">paper</span>';
+        : p.src==='ugrr' ? '<span class="badge b-u">UGRR</span>'
+        : p.src==='coppin' ? '<span class="badge b-i">I.C.Y.</span>' : '<span class="badge b-n">paper</span>';
       const ct = [];
       if(p.mentions?.length) ct.push(p.mentions.length+'✎');
       if(p.events?.length) ct.push(p.events.length+'★');
@@ -506,7 +511,7 @@ function select(pid){
   const p = P.get(pid); if(!p) return;
   window._sel = pid;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', +r.dataset.id===pid));
-  let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':p.src==='census'?' · from census records':p.src==='1820directory'?' · from the 1820 city directory':p.src==='ugrr'?" · from William Still's Underground Railroad":' · found in newspapers'}</div>`;
+  let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':p.src==='census'?' · from census records':p.src==='1820directory'?' · from the 1820 city directory':p.src==='ugrr'?" · from William Still's Underground Railroad":p.src==='coppin'?' · Institute for Colored Youth (per F. J. Coppin)':' · found in newspapers'}</div>`;
   if(p.aka) h += `<div class="dates" style="margin-top:-8px">also recorded as: ${esc(p.aka)}</div>`;
   if(p.orgs?.length) h += `<div class="orgchips">${p.orgs.map(o=>`<span data-o="${esc(o)}">${esc(o)}</span>`).join('')}</div>`;
   // articles authored
@@ -557,10 +562,13 @@ function select(pid){
   // William Still's Underground Railroad appearances (chapter + Internet Archive page link)
   if(p.ugrr?.length){ h += `<h3>Underground Railroad (William Still)</h3>` + p.ugrr.map(u=>
     `<div class="card">Appears in <em>${esc(u.ch)}</em> in William Still's <em>Underground Railroad</em>${u.pg?` (p. ${esc(''+u.pg)})`:''}<div class="src">${u.u?`<a href="${esc(u.u)}" target="_blank" rel="noopener" title="Open William Still's Underground Railroad at this page on the Internet Archive, with the name highlighted">Read this chapter on the Internet Archive</a>`:'William Still, The Underground Rail Road (Philadelphia, 1872)'}</div></div>`).join(''); }
+  // Institute for Colored Youth (named by Fanny Jackson Coppin, Reminiscences of School Life, 1913)
+  if(p.coppin?.length){ h += `<h3>Institute for Colored Youth</h3>` + p.coppin.map(cp=>
+    `<div class="card">Named among the graduates and undergraduates of the Institute for Colored Youth${cp.n?` \u2014 ${esc(cp.n)}`:''}.<div class="src"><a href="https://docsouth.unc.edu/church/jcoppin/coppin.html" target="_blank" rel="noopener" title="Fanny Jackson Coppin, Reminiscences of School Life, and Hints on Teaching (1913), via Documenting the American South">Fanny Jackson Coppin, <em>Reminiscences of School Life, and Hints on Teaching</em> (1913)</a></div></div>`).join(''); }
   // winch refs
   if(p.refs?.length){ h += `<h3>Winch reference entry (${p.refs.length})</h3>` + p.refs.map(r=>
     `<div class="card">${esc(r.n||'')}${r.c?`<div class="src">(${esc(r.c)})</div>`:''}</div>`).join(''); }
-  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length&&!p.directory?.length&&!p.nolibs?.length&&!p.ugrr?.length) h += '<p class="empty">No records.</p>';
+  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length&&!p.directory?.length&&!p.nolibs?.length&&!p.ugrr?.length&&!p.coppin?.length) h += '<p class="empty">No records.</p>';
   right.innerHTML = h;
   right.scrollTop = 0;
   if(isMobile() && !window._suppressAutoOpen) openRightDrawer();

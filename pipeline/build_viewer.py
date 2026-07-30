@@ -199,6 +199,15 @@ if has_table("newspaper_orgs"):
     for pid, org, isl, pg in con.execute("SELECT DISTINCT person_id, org, issue, page FROM newspaper_orgs"):
         if pid in people: add_org(pid, org, {"i": isl, "p": pg})
 
+# Institute for Colored Youth students & graduates named by Fanny Jackson Coppin
+# (Reminiscences of School Life, 1913). Each becomes a member of one ICY org node,
+# and gets a "coppin" record so they're kept and shown even with no other appearance.
+if has_table("coppin_students"):
+    for pid, note in con.execute("SELECT person_id, note FROM coppin_students"):
+        if pid in people:
+            people[pid].setdefault("coppin", []).append({"n": note or ""})
+            add_org(pid, "Institute for Colored Youth", {"coppin": 1})
+
 # orgs from event attendance (event names are org-flavored)
 for e in events.values():
     for pid, _ in e["att"]:
@@ -229,7 +238,7 @@ if has_table("ugrr_appearances"):
             people[pid].setdefault("ugrr", []).append({"ch": chapter, "pg": page, "u": url})
 
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 

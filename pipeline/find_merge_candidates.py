@@ -49,6 +49,7 @@ if os.path.exists(mpath):
             if an: already.add(norm(an).strip())
 
 has_dir = bool(con.execute("SELECT 1 FROM sqlite_master WHERE name='directory_links'").fetchone())
+has_cop = bool(con.execute("SELECT 1 FROM sqlite_master WHERE name='coppin_students'").fetchone())
 
 people = []
 for pid, name, src in con.execute("SELECT id, canonical_name, source FROM people"):
@@ -56,7 +57,8 @@ for pid, name, src in con.execute("SELECT id, canonical_name, source FROM people
     nref = con.execute("SELECT COUNT(*) FROM winch_references WHERE person_id=?", (pid,)).fetchone()[0]
     ncen = con.execute("SELECT COUNT(*) FROM census_links WHERE person_id=?", (pid,)).fetchone()[0]
     ndir = con.execute("SELECT COUNT(*) FROM directory_links WHERE person_id=?", (pid,)).fetchone()[0] if has_dir else 0
-    if napp + nref + ncen + ndir == 0: continue   # inert records add noise
+    ncop = con.execute("SELECT COUNT(*) FROM coppin_students WHERE person_id=?", (pid,)).fetchone()[0] if has_cop else 0
+    if napp + nref + ncen + ndir + ncop == 0: continue   # inert records add noise
     sur, giv = parse(name)
     if len(sur) < 3: continue
     people.append((pid, name, src, sur, giv, napp, nref, ncen, ndir))
