@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 187 linked to existing people, 245 created as new blog people, 47 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 190 linked to existing people, 242 created as new blog people, 47 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -95,7 +95,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Denmark Vesey
 - Dinah Nevil
 - Dr. John Rock
-- Dr. Joseph Brister
 - Edmund Kean
 - Edward Gorsuch
 - Edward Roland
@@ -151,7 +150,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - James Fetterman
 - James Griffeth
 - James Hewlett
-- James Le Count
 - James Mooney
 - James Parish
 - James Pemberton
@@ -180,7 +178,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - John Wister
 - Jon Farnham
 - Jonathan Clarkson Gibbs Sr.
-- Joseph Brister
 - Joseph Coor
 - Joseph Dutrieuille
 - Joseph Haydn

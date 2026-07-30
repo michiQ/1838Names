@@ -22,7 +22,7 @@ existing record; source-qualify the storymap alias), e.g.:
 - **Isaac Chase** (storymap)  ↔  Isaac Chase (newspaper)
 - **Isaac Reed** (storymap)  ↔  Reed, Isaac (census)
 - **Isaiah C. Wears** (storymap)  ↔  Wears, Isaiah C. (winch)
-- **Jacob C. White Jr.** (storymap)  ↔  Jacob C. White Jr. (newspaper), Jacob C. White Jr. (blog), Jacob C. White, Jr. (blog), White, Jacob C., Jr. (coppin)
+- **Jacob C. White Jr.** (storymap)  ↔  Jacob C. White Jr. (newspaper), White, Jacob C., Jr. (coppin)
 - **Jacob C. White Sr.** (storymap)  ↔  Jacob C. White Sr. (newspaper)
 - **Jacob Griffith** (storymap)  ↔  Griffith, Jacob (census), Jacob Griffith (blog)
 - **James J. G. Bias** (storymap)  ↔  Bias, James J. G. (newspaper)

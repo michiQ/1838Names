@@ -803,16 +803,20 @@
  },
  {
   "keep": {
-   "name": "Joseph Brister",
-   "source": "blog"
+   "id": 344,
+   "name": "Brister, J."
   },
   "aliases": [
+   {
+    "name": "Joseph Brister",
+    "source": "blog"
+   },
    {
     "name": "Dr. Joseph Brister",
     "source": "blog"
    }
   ],
-  "note": "Michiko approved 2026-07-30 (blog review). Merge the two blog Joseph Brister spellings. NOTE: no census 'Joseph Brister' found; Winch 'Brister, J.' (id344) is a possible but UNCONFIRMED match -- left for Michiko."
+  "note": "Michiko approved 2026-07-30 (blog review): the Winch 'Brister, J.' (id344) IS Dr. Joseph Brister -- fold both blog spellings ('Joseph Brister', 'Dr. Joseph Brister') in."
  },
  {
   "keep": {
@@ -899,5 +903,19 @@
    }
   ],
   "note": "Michiko approved 2026-07-30 (blog review). All blog W.E.B. Du Bois spellings -> dissertation 'Du Bois, W.E.B.' (id31244)."
+ },
+ {
+  "keep": "Lecount, James",
+  "aliases": [
+   {
+    "name": "James LeCount, Jr.",
+    "source": "newspaper"
+   },
+   {
+    "name": "James Le Count",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (blog review): merge ALL the James LeCounts for her to review -- the two Winch 'Lecount, James' (id1691, id1692) + the 1820-directory 'Lecount, James' (all match the plain-name keep) + the newspaper 'James LeCount, Jr.' + the blog 'James Le Count'. She will split any that turn out to be distinct people."
  }
 ]
