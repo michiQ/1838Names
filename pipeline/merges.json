@@ -389,5 +389,326 @@
    }
   ],
   "note": "Michiko approved 2026-07-29 ('newspaper sources are all James Needham Sr'). The newspaper 'James F. Needham' and 'James Needham' records are James Needham Sr. (the 1840s father) = Winch 'Needham, James'. Source-qualified aliases so it does NOT touch the ICY roster 'Needham, James F.' (coppin), who is the SON (James F. Needham Jr, ICY graduate) -- kept as a separate ICY person."
+ },
+ {
+  "keep": "Jackson, Benjamin",
+  "aliases": [
+   {
+    "name": "Benjamin Jackson",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Wears, Isaiah C.",
+  "aliases": [
+   {
+    "name": "Isaiah C. Wears",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Nicholson, John",
+  "aliases": [
+   {
+    "name": "John Nicholson",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Tudas, Jonathan",
+  "aliases": [
+   {
+    "name": "Jonathan Tudas",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Purvis, Robert",
+  "aliases": [
+   {
+    "name": "Robert Purvis",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Smith, Stephen",
+  "aliases": [
+   {
+    "name": "Stephen Smith",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Douglass, Robert Jr.",
+  "aliases": [
+   {
+    "name": "Robert Douglass Jr.",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Douglass, Frederick",
+  "aliases": [
+   {
+    "name": "Frederick Douglass",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Langston, John Mercer",
+  "aliases": [
+   {
+    "name": "John Mercer Langston",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "James, Stephen",
+  "aliases": [
+   {
+    "name": "Stephen James",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Williamson, Daniel",
+  "aliases": [
+   {
+    "name": "Daniel Williamson",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "Thompson, Elias",
+  "aliases": [
+   {
+    "name": "Elias Thompson",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "Horsey, George",
+  "aliases": [
+   {
+    "name": "George Horsey",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "Lewis, Henry",
+  "aliases": [
+   {
+    "name": "Henry Lewis",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "Reed, Isaac",
+  "aliases": [
+   {
+    "name": "Isaac Reed",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "White, Miles",
+  "aliases": [
+   {
+    "name": "Miles White",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "Sammons, William",
+  "aliases": [
+   {
+    "name": "William Sammons",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (census record renamed to title case)."
+ },
+ {
+  "keep": "Edward Hall",
+  "aliases": [
+   {
+    "name": "Edward Hall",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Henry C. Wright",
+  "aliases": [
+   {
+    "name": "Henry C. Wright",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Henry Highland Garnet",
+  "aliases": [
+   {
+    "name": "Henry Highland Garnet",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Isaac Chase",
+  "aliases": [
+   {
+    "name": "Isaac Chase",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Thomas Shipley",
+  "aliases": [
+   {
+    "name": "Thomas Shipley",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person."
+ },
+ {
+  "keep": "Bias, James J. G.",
+  "aliases": [
+   {
+    "name": "James J. G. Bias",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. Dr. J.J.G. Bias, 1842 temperance leader."
+ },
+ {
+  "keep": "Jacob C. White Sr.",
+  "aliases": [
+   {
+    "name": "Jacob C. White Sr.",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. (1842 Wesley Sabbath School letter)."
+ },
+ {
+  "keep": "Jacob C. White Jr.",
+  "aliases": [
+   {
+    "name": "White, Jacob C., Jr.",
+    "source": "coppin"
+   },
+   {
+    "name": "Jacob C. White Jr.",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. Unites the newspaper, ICY (Coppin) and 1871 StoryMap records of Jacob C. White Jr., PERL leader."
+ },
+ {
+  "keep": "Catto, Octavius V.",
+  "aliases": [
+   {
+    "name": "Octavius V. Catto",
+    "source": "storymap"
+   },
+   {
+    "name": "Octavius V. Catto",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. Fold the 1871 StoryMap and the newspaper 'Octavius V. Catto' into the Winch/ICY Catto record."
+ },
+ {
+  "keep": "Still, William",
+  "aliases": [
+   {
+    "name": "William Still",
+    "source": "storymap"
+   },
+   {
+    "name": "William Still",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. Fold the 1871 StoryMap and newspaper 'William Still' into the Winch William Still."
+ },
+ {
+  "keep": {
+   "id": 351588,
+   "name": "Johnson, Jane"
+  },
+  "aliases": [
+   {
+    "name": "Jane Johnson",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. 1849 Mother Bethel defender -> the UGRR 'Johnson, Jane' (id351588). Does NOT touch the separate Winch 'Johnson, Jane'."
+ },
+ {
+  "keep": {
+   "id": 351596,
+   "name": "Williams, Samuel"
+  },
+  "aliases": [
+   {
+    "name": "Samuel Williams",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. 'Uncle Sammy' Williams (1849 Boyer House) -> the UGRR 'Williams, Samuel' (id351596). Does NOT touch the census 'Williams, Samuel'."
+ },
+ {
+  "keep": {
+   "id": 230,
+   "name": "Black, Charles"
+  },
+  "aliases": [
+   {
+    "name": "Charles Black",
+    "source": "storymap"
+   }
+  ],
+  "note": "Michiko approved 2026-07-30 (StoryMap review): StoryMap 'Charles Black' (1842 War of 1812 veteran, the Sr.) -> Winch 'Black, Charles' Register of Trades 1838 record (id230, 'Carpenter. Christian above 8th'). id-qualified keep so it targets ONLY id230 and leaves the other Winch 'Black, Charles' (id231, Donaldson's school) and census 'BLACK, CHARLES' (id351942) untouched. StoryMap 'Charles Black Jr.' kept separate."
  }
 ]

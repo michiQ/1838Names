@@ -43,7 +43,8 @@ already = set()
 mpath = f"{PIPE}/merges.json"
 if os.path.exists(mpath):
     for g in json.load(open(mpath)):
-        already.add(norm(g["keep"]).strip())
+        _k=g["keep"]; _kn=_k["name"] if isinstance(_k,dict) else _k
+        if _kn: already.add(norm(_kn).strip())
         for a in g.get("aliases", []):
             an = a.get("name") if isinstance(a, dict) else a
             if an: already.add(norm(an).strip())

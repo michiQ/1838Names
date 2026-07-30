@@ -27,11 +27,16 @@ for g in groups:
     keep_raw = g["keep"]
     keep_name = keep_raw["name"] if isinstance(keep_raw, dict) else keep_raw
     plain_names = {norm(a) for a in _al if isinstance(a, str)}
-    qualified = [(norm(a["name"]) if a.get("name") else None, a.get("source"), a.get("id"))
+    # id-qualified entries match ONLY by id (name is a label, NOT a match criterion) so an
+    # id-target like {"id":230,"name":"Black, Charles"} does not greedily sweep in OTHER records
+    # that share that name (the census "BLACK, CHARLES", the other Winch "Black, Charles" id231).
+    qualified = [(None if a.get("id") is not None else (norm(a["name"]) if a.get("name") else None),
+                  a.get("source"), a.get("id"))
                  for a in _al if isinstance(a, dict)]
     if isinstance(keep_raw, dict):
-        # qualified keep: match ONLY the specified record (name+source or id), not greedily by name
-        qualified.append((norm(keep_raw["name"]) if keep_raw.get("name") else None,
+        # qualified keep: match ONLY the specified record (id -> by id alone; else name+source)
+        qualified.append((None if keep_raw.get("id") is not None
+                          else (norm(keep_raw["name"]) if keep_raw.get("name") else None),
                           keep_raw.get("source"), keep_raw.get("id")))
     else:
         plain_names.add(norm(keep_name))
