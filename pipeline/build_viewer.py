@@ -237,8 +237,17 @@ if has_table("ugrr_appearances"):
         if pid in people:
             people[pid].setdefault("ugrr", []).append({"ch": chapter, "pg": page, "u": url})
 
+# 1838 Black Metropolis StoryMaps (mob attacks) -- per-person snippet + link to the year's StoryMap.
+# The attack itself is an event node (see the events table); this just adds each person's snippet.
+if has_table("storymap_people"):
+    for pid, key, title, sdate, url, role, snippet in con.execute(
+            "SELECT person_id, story_key, title, story_date, url, role, snippet FROM storymap_people"):
+        if pid in people:
+            people[pid].setdefault("storymap", []).append(
+                {"k": key, "t": title, "d": sdate, "u": url, "role": role, "s": snippet})
+
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 

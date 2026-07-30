@@ -18,7 +18,7 @@ def main():
     con.execute("DELETE FROM appearances WHERE role != 'mentioned' AND role != 'mentioned?'")
     # index winch people by normalized "first last"
     pidx = {}
-    for pid, name in con.execute("SELECT id, canonical_name FROM people WHERE source IS NOT 'coppin'"):  # don't match curated event rosters to later-generation ICY/Coppin students
+    for pid, name in con.execute("SELECT id, canonical_name FROM people WHERE source NOT IN ('coppin','storymap')"):  # don't match curated event rosters to later-generation ICY/Coppin students
         if "," in name:
             sur, given = [x.strip() for x in name.split(",", 1)]
             given = re.sub(r"\(.*?\)", "", given).strip()

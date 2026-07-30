@@ -77,7 +77,7 @@ def main():
     con.execute("DELETE FROM issues")
     con.execute("CREATE TABLE IF NOT EXISTS newspaper_orgs(person_id INT, org TEXT, issue TEXT, page INT)")
     con.execute("DELETE FROM newspaper_orgs")
-    people = con.execute("SELECT id, canonical_name FROM people WHERE source IS NOT 'coppin'").fetchall()  # ICY/Coppin students are a later generation -- do NOT name-match them to 1830s-40s papers (false cross-generation matches); their links come only from the ICY org + confirmed merges
+    people = con.execute("SELECT id, canonical_name FROM people WHERE source NOT IN ('coppin','storymap')").fetchall()  # ICY/Coppin students are a later generation -- do NOT name-match them to 1830s-40s papers (false cross-generation matches); their links come only from the ICY org + confirmed merges
     # Curated suppression of known false OCR name-collisions (Michiko 2026-07-17):
     # the kidnapper "Joseph Johnson" (Cannon-Johnson ring) shares a name with Winch's
     # "Johnson, Joseph"; do NOT auto-attribute the kidnapping-issue mentions to the
