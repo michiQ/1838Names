@@ -182,3 +182,45 @@ of the "All connections" map (they have no person-person edges) but remain searc
 record onto a dedicated "Nichols, Samuel" winch person, so only the Female Vigilant Committee note follows
 the merge of "Newton, Mary" -> "Mary Lewton" (merges.json). Idempotent; runs BEFORE apply_merges; no-op once
 "Newton, Mary" has been merged away.
+
+## The North Star -- OCR recipe (added 2026-08-05, differs from every other paper)
+`Newspapers/North Star/` holds 135 issues, 1847-12-03 to 1851-04-17 (Digital Howard @ Howard
+University, Black Press Archives). Each PDF is **5 pages: 1 Howard cover sheet + 4 newspaper
+pages**, so newspaper page N = PDF page N+1. Slug `NS_<yyyy-mm-dd>`; "The North Star" is
+newspapers.id=6 and "NS" is in match_names.py's PAPER map.
+These are 7-column broadsheets (~16.5x20in). **Do NOT use the whole-page `--psm 3` recipe here** --
+it interleaves the columns and destroys reading order (the agent roster comes out as unusable
+fragments). Instead, per page:
+1. `pdftoppm -f <pp> -l <pp> -r 300 -gray` to PGM.
+2. Find the text block with an adaptive per-column ink profile: median-background threshold
+   (`body < median - 35`), zero out any column that is >50% solid black (the scan border), mask
+   the outer 3% / 1.5% of the width (scan-edge artefacts), smooth over 31px, then take the widest
+   run above 0.08 after bridging gaps under 250px.
+3. Divide that block into 7 **equal** columns and crop each with +/-40px padding, so neighbouring
+   crops overlap slightly. Do NOT snap the dividers to local ink minima -- column 1 is small type,
+   reads as low ink, and snapping clips ~4 characters off every line.
+4. `tesseract <crop> - --psm 4` per strip; concatenate with `[column N]` separators into
+   `ocr_text/NS_<date>_p<N>.txt`. ~21s/column, ~2.5min/page.
+Page JPEGs as usual: `pdftoppm -jpeg -jpegopt quality=68 -r 110`.
+**Even with this, the small-type agent list and the foot of each column degrade badly in these
+scans. Read the page image directly to verify any roster before recording it** -- every roster in
+extractions64.json was checked that way, and the OCR alone would have garbled all of them.
+EXTRACTION RULE for this paper (Michiko, 2026-08-05), deliberately broader than the
+Philadelphia-only rule used for Colored American: capture ALL events and the people at them, and
+any organization with a named membership, ANYWHERE -- New York, Boston, Rochester included --
+and skip the paper's heavy editorial/opinion matter unless a named body or gathering is involved.
+Known cost: the non-Philadelphia names collide with the Philadelphia census in
+find_merge_candidates (e.g. the white New Jersey jurors in the Mount Holly case match same-named
+census people). Those are false candidates; expect them on every issue and do not merge them.
+
+## Cloud-session workflow notes (added 2026-08-05)
+- Background jobs do NOT survive a `device_bash` call on the desktop bridge (each call is a fresh
+  `bash -c`; nohup/setsid children are reaped), so the 45s cap there is hard. Run long OCR in the
+  cloud sandbox (600s bash timeout) and move outputs to Drive with SendUserFile -> device_commit_files.
+- The DB rebuild itself is fast enough for the bridge (match_names ~10s, everything else <5s).
+- **Check the staging repo against Drive before rebuilding.** On 2026-08-05 Drive was 13 issues and
+  three whole source layers behind `michiQ/1838Names`; rebuilding from Drive would have dropped them
+  and reverted viewer_template.html on push. Clone the repo and rebuild against that instead.
+- The cloud sandbox's git proxy only issues credentials for repositories in the session's authorized
+  source set. If `michiQ/1838Names` is not registered, `git clone` works but `git push` returns 403
+  ("not in this session's authorized repository set"). Nothing to do with the PAT.

@@ -1,0 +1,495 @@
+{
+ "_note": "Batch: The North Star (Rochester, N.Y.; Frederick Douglass & M. R. Delany, editors; William C. Nell, publisher; John Dick, printer) -- FIRST ISSUE, Vol. I No. 1, Friday December 3, 1847. Slug NS_1847-12-03, 4 pages, source scan Digital Howard @ Howard University, Black Press Archives. This is the pilot issue for a new paper in the database (135 issues, 1847-12 to 1851-04, sit in Drive 'Newspapers/North Star'). Per Michiko (2026-08-05) the extraction rule for this paper is BROADER than the Philadelphia-only rule used for Colored American: capture ALL events and the people at them, and any organization with a named membership, anywhere -- including New York, Boston and Rochester -- while skipping the paper's heavy editorial/opinion matter unless a named body or gathering is involved. NOTE: this issue contains almost no Philadelphia content; the only Philadelphia names are the paper's two Philadelphia agents (J. M. M'Kim, G. W. Goines) and David Paul Brown, who argued the Mount Holly fugitive-slave case. OCR method for this paper differs from the rest of the pipeline: pages are 7-column broadsheets, so each page was cropped into 7 column strips and OCR'd with tesseract --psm 4 at 300dpi (whole-page --psm 3 interleaves the columns and destroys reading order). All rosters below were additionally verified by reading the page image directly, not from OCR alone. Body-text Winch-name appearances across all 4 pages are handled automatically by match_names.py.",
+ "articles": [
+  {
+   "issue": "NS_1847-12-03",
+   "page": 1,
+   "headline": "The Colored Convention",
+   "author": "William C. Nell",
+   "type": "proceedings",
+   "summary": "William C. Nell's report, as delegate, of the National Convention of Colored Americans and their Friends held at the Liberty Street church, Troy, New York, beginning Wednesday October 6, 1847. Sixty-six delegates enrolled. Nell reports the officers, the Committee on Education's proposal (by Alexander Crummell) for a college for colored young men and the sharp debate it produced, the resolution of thanks to Gerrit Smith for his donation of lands to the colored men of New York, a commercial proposal from a company in Jamaica, Henry H. Garnett's Address to the Slaves, Frederick Douglass's report on the best means of abolishing slavery and caste, and the decision to hold the next National Convention at Newark, New Jersey. Printed in the first issue of the North Star; the editors note the crowded state of their columns prevented publishing the fuller reports."
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 2,
+   "headline": "Our Paper and Its Prospects",
+   "author": "Frederick Douglass",
+   "type": "editorial",
+   "summary": "Douglass's opening editorial for the North Star, announcing that he and M. R. Delany assume the editorial department of a paper 'devoted to the cause of Liberty, Humanity and Progress' and stating his long-held wish to see, in this 'slave-holding, slave-trading, and negro-hating land,' a printing-press and paper permanently established under the complete control and direction of the immediate victims of slavery. He promises to have a mind of the paper's own on questions that have divided the friends of freedom, to discriminate between men and measures, and to make the paper's written views accord with its spoken ones."
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 1,
+   "headline": "Blue and Black Laws",
+   "author": null,
+   "type": "article",
+   "summary": "Reprinted from the Liberator. A caustic attack on Connecticut for rejecting colored suffrage at the recent canvass, contrasting the state's reputation for piety with its treatment of its Black residents: of some fifty thousand voters only about twenty-five thousand took the pains to vote, and of those only a fraction were willing to concede the question of color. The piece argues Connecticut taxes a people it will not enfranchise, exactly as the British Parliament taxed the Colonies, and concludes that 'the spirit of Arnold predominates over that of Putnam' in her composition. Related material in the convention report records Amos G. Beman speaking on the same colored-suffrage question in his native state."
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 4,
+   "headline": "The Interesting Slave Case of Mount Holly -- First Trial of the Kind in this Country",
+   "author": null,
+   "type": "article",
+   "summary": "Account, 'as narrated by a friend,' of the fugitive slave trial at Mount Holly, Burlington County, New Jersey -- described as the first jury trial of the kind ever held in this country. John Roth, a slaveholder of Cecil County, Maryland, claimed Perry Henson, Noah Henson and Rachel Pine, three respectable colored citizens who had lived for several years near Mount Holly, as fugitive slaves. The three were lured from their homes on a pretended claim for taxes, seized on a warrant and taken before Judge Hayward. R. D. Spencer of Mount Holly, assisted by David Paul Brown of Philadelphia, appeared for the defendants; Stratton appeared for the claimant. The jury returned a verdict for the claimant in about twenty minutes; when the officers moved the prisoners one resisted, the court was cleared of colored persons, and the military was called out although the large number of colored people present had behaved, the report stresses, with the utmost propriety. Brown argued the importance of holding claimants strictly to the law and not infringing on the rights of persons 'charged with no crime, save that of color.'"
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 2,
+   "headline": "Death of David Scoville -- proceedings of the Trustees of the Rochester Savings Bank",
+   "author": null,
+   "type": "proceedings",
+   "summary": "Proceedings of a special meeting of the Trustees of the Rochester Savings Bank, held at their banking house on Saturday morning November 27, 1847, on the sudden death of David Scoville, Esq., Secretary of the institution since its organization in 1831. William Pitkin, President of the Board, took the chair and addressed the meeting; George H. Mumford was appointed Secretary; Isaac Hills offered the resolutions, which were adopted unanimously, resolving condolence to the widow, attendance at the funeral in a body wearing crape, and transmission of the proceedings to the family and the city newspapers. The North Star's editors add their own condolence, noting that Scoville 'was a known friend to the colored people.'"
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 2,
+   "headline": "Death of Rev. Charles Van Loon",
+   "author": null,
+   "type": "obituary",
+   "summary": "Notice and editorial appreciation of the Rev. Charles Van Loon of Poughkeepsie, dead at 28. A reprinted notice describes him as pastor of a Presbyterian church; the North Star's editors correct this to a Baptist church, recording their personal acquaintance with him on their recent Western tour. He is described as eloquent and devoted, lately returned from Ohio and the West where he had worked for the Temperance cause and for the down-trodden, and as one of the few who dared separate from the Triennial Convention and join the cause of Free Missions rather than fellowship with men-stealers. He was buried on Wednesday from his home in Albany."
+  }
+ ],
+ "events": [
+  {
+   "issue": "NS_1847-12-03",
+   "page": 1,
+   "name": "National Convention of Colored Americans and their Friends (Colored National Convention, Troy)",
+   "date": "1847-10-06",
+   "location": "Liberty Street church, Troy, New York",
+   "description": "The Colored National Convention, assembled Wednesday October 6, 1847 at ten o'clock A.M. at the Liberty Street church in Troy, New York, and continuing in session until Saturday. Sixty-six delegates were enrolled: New York forty-four, Massachusetts fifteen, Connecticut two, and Pennsylvania, New Jersey, New Hampshire, Vermont, Kentucky and Michigan one each. The Committee on Education, reporting through Alexander Crummell, urged the establishment of a college for colored young men; James McCune Smith supported it and the plan carried by yeas 26, nays 17, with a committee of 25 appointed to solicit funds. Frederick Douglass, Thomas Van Rensallaer, Amos G. Beman, Charles Seth and H. H. Garnett were arrayed against the colored college. A resolution of thanks was voted to Gerrit Smith (not present) for his donation of lands to the colored men of New York, with speeches favoring colored people leaving the cities for farming land. A Committee on Commerce presented a proposal from a company in Jamaica for trading operations with colored brethren in the United States. Evening sessions were held at Morris Hall; Henry H. Garnett's Address to the Slaves 'produced much sensation.' Frederick Douglass introduced a report on the best means of abolishing slavery and caste, upholding moral suasion against physical force as an offset to Garnett's address. A recommendation for State Conventions to discuss local grievances was unanimously adopted, and Newark, New Jersey was chosen for the next National Convention. Reported by William C. Nell in the first issue of the North Star, December 3, 1847.",
+   "attendees": [
+    [
+     "Nathan Johnson",
+     "President (of New Bedford, Massachusetts)"
+    ],
+    [
+     "James McCune Smith",
+     "Vice-President (of New York); supported the colored college report"
+    ],
+    [
+     "Peyton Harris",
+     "Vice-President (of New York)"
+    ],
+    [
+     "J. W. C. Pennington",
+     "Vice-President (Rev., of Connecticut)"
+    ],
+    [
+     "William H. Topp",
+     "Secretary (of New York)"
+    ],
+    [
+     "Charles B. Ray",
+     "Secretary (of New York); Business Committee"
+    ],
+    [
+     "William C. Nell",
+     "Secretary (of Massachusetts); delegate and reporter of the proceedings"
+    ],
+    [
+     "Henry H. Garnett",
+     "Business Committee; delivered the Address to the Slaves at the evening session; opposed the colored college"
+    ],
+    [
+     "Leonard Collins",
+     "Business Committee (of Massachusetts)"
+    ],
+    [
+     "Willis Hodges",
+     "Business Committee (of New York)"
+    ],
+    [
+     "Lewis Hayden",
+     "Business Committee (of Michigan)"
+    ],
+    [
+     "Alexander Crummell",
+     "reported for the Committee on Education, proposing a college for colored young men; also delivered a speech on the colored suffrage canvass"
+    ],
+    [
+     "Frederick Douglass",
+     "delegate; opposed the colored college; introduced the report on the best means of abolishing slavery and caste; exhorted colored people to come out from pro-slavery churches"
+    ],
+    [
+     "Thomas Van Rensallaer",
+     "opposed the establishment of a colored college"
+    ],
+    [
+     "Amos G. Beman",
+     "opposed the colored college; spoke on the colored suffrage question in his native Connecticut"
+    ],
+    [
+     "Charles Seth",
+     "opposed the establishment of a colored college (name as printed; OCR/typesetting uncertain)"
+    ],
+    [
+     "Benjamin Weeden",
+     "delegate from a large constituency at Northampton, two-thirds of whose signers on his credentials were white citizens"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 4,
+   "name": "Fugitive slave trial of Perry Henson, Noah Henson and Rachel Pine (the Mount Holly slave case)",
+   "date": null,
+   "location": "Mount Holly, Burlington County, New Jersey",
+   "description": "Fugitive slave trial at Mount Holly, New Jersey, reported in the first issue of the North Star as the first jury trial of the kind ever held in this country. John Roth of Cecil County, Maryland claimed Perry Henson, Noah Henson and Rachel Pine -- three respectable colored citizens long resident near Mount Holly, two of them married and one with a family of children -- as fugitive slaves. They were lured from their homes on a pretended claim for taxes, seized on a warrant on arriving at Mount Holly in the evening, and taken before Judge Hayward. Friends assembled early the next morning and retained R. D. Spencer of Mount Holly as counsel; the hearing was postponed to Saturday morning, when Stratton appeared for the claimant and Spencer, assisted by David Paul Brown of Philadelphia, for the defendants. Sheriff Charles Collins of Burlington County returned only twelve jurors, so the panel was exhausted once the defence challenged three. The claimant produced witnesses from Maryland; the jury returned a verdict for the claimant in about twenty minutes. As the officers removed the prisoners one resisted, the court was cleared of colored persons, an officer drew his pistols, and slave-dealers present flourished dirks; the military was called out. Exact date not stated in the report (the arrest is 'Thursday last', the trial 'Saturday morning', decided 'last evening'), so late November 1847.",
+   "attendees": [
+    [
+     "Perry Henson",
+     "claimed as a fugitive slave; defendant"
+    ],
+    [
+     "Noah Henson",
+     "claimed as a fugitive slave; defendant"
+    ],
+    [
+     "Rachel Pine",
+     "claimed as a fugitive slave; defendant"
+    ],
+    [
+     "John Roth",
+     "claimant; slaveholder of Cecil County, Maryland"
+    ],
+    [
+     "David Paul Brown",
+     "counsel for the defendants (of Philadelphia)"
+    ],
+    [
+     "R. D. Spencer",
+     "counsel for the defendants (of Mount Holly)"
+    ],
+    [
+     "Charles Collins",
+     "Sheriff of Burlington County; returned the jury"
+    ],
+    [
+     "Charles Stratten",
+     "juror"
+    ],
+    [
+     "Benjamin Wilkins",
+     "juror"
+    ],
+    [
+     "Wm. C. Shinn",
+     "juror"
+    ],
+    [
+     "John Fairholm",
+     "juror"
+    ],
+    [
+     "Phinehas Kirkbright",
+     "juror"
+    ],
+    [
+     "Samuel Reed",
+     "juror"
+    ],
+    [
+     "James A. Powell",
+     "juror"
+    ],
+    [
+     "John C. Millvine",
+     "juror"
+    ],
+    [
+     "Wm. Pugh",
+     "juror"
+    ],
+    [
+     "T. Collins",
+     "juror"
+    ],
+    [
+     "Joseph W. Cole",
+     "juror"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 4,
+   "name": "The Rochester Anti-Slavery Fair and Annual Meeting of the Western New York Anti-Slavery Society",
+   "date": "1847-12-17",
+   "location": "Rochester, New York",
+   "description": "Notice and appeal: 'The Anti-Slavery women of Western New York purpose holding a Fair in the city of Rochester on the 17th and 18th of December next, to aid the great work of emancipation.' The signers ask aid of all mothers who can feel for the mothers of their own land daily experiencing the torture of having their children torn from them, and solicit mechanics, merchants and farmers for donations, together with supplies for the refreshment table from the ladies of neighbouring towns. Proceeds were to sustain lecturers and circulate publications. The Annual Meeting of the Society (the Western New York Anti-Slavery Society, separately urged on readers in the paper's editorial columns) was to be held immediately after the Fair. The notice is signed by twenty-three women of the Rochester anti-slavery circle.",
+   "attendees": [
+    [
+     "Sarah D. Fish",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Mary H. Hallowell",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Rhoda De Garmo",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Mary Baldwin",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Mary B. Fish",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Catherine G. Braithwait",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Mary Ann McClintock",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Sarah E. Thayer",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Abigail Bush",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Lemira M. Kedzie",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Sarah L. Hallowell",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Amy Post",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Charlotte Wilber",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Susan R. Doty",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Phebe Hathaway",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Catharine Stebbins",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Margaret Clark",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Phebe Tredwell",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Margaret Larson",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Elvira Marsh",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Mrs. Platt",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Sarah Jacobs",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ],
+    [
+     "Sarah A. Burtis",
+     "signer, Rochester Anti-Slavery Fair committee"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 2,
+   "name": "Meeting of the Trustees of the Rochester Savings Bank on the death of David Scoville",
+   "date": "1847-11-27",
+   "location": "Banking house of the Rochester Savings Bank, Rochester, New York",
+   "description": "Special meeting of the Board of Trustees of the Rochester Savings Bank, held at their banking house on Saturday morning November 27, 1847, occasioned by the sudden death of David Scoville, Esq., the bank's Secretary since its organization in 1831, who died in the bank's own room the previous afternoon after an illness of about three hours. William Pitkin, President of the Board, took the chair and delivered the address; George H. Mumford was appointed Secretary; Isaac Hills offered the resolutions, adopted unanimously, expressing sympathy with the widow, resolving to attend the funeral in a body wearing crape on the left arm, and directing that the address and resolutions be entered on the minutes, signed by the President and Secretary pro tem, transmitted to the family and given to the city newspapers. The North Star's editors joined the condolence, recording that Scoville 'was a known friend to the colored people.'",
+   "attendees": [
+    [
+     "William Pitkin",
+     "President of the Board of Trustees; took the chair and delivered the address"
+    ],
+    [
+     "George H. Mumford",
+     "Secretary pro tem of the meeting"
+    ],
+    [
+     "Isaac Hills",
+     "offered the resolutions"
+    ],
+    [
+     "David Scoville",
+     "Secretary of the Rochester Savings Bank from its organization in 1831; deceased, subject of the meeting"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 4,
+   "name": "Fourteenth National Anti-Slavery Bazaar, Boston",
+   "date": "1847-12-22",
+   "location": "Boston, Massachusetts",
+   "description": "Advertisement, under 'Boston Advertisements,' for the Fourteenth National Anti-Slavery Bazaar, to be held in Boston during Christmas and New Year's Week, 1847-8. The undersigned Committee appeal to 'all that is good and true in this nation for which they labor' to aid the undertaking, stating their object as the abolition of slavery through the renovation of public opinion and appealing to compassion for a suffering people, to the instinct of self-preservation against the encroachments of tyranny, to the sense of justice, and to shame at the discrepancy between American principle and American practice. The committee's signatures at the foot of the column are illegible in this scan (the page fades badly at the bottom), so no signer roster is recorded here.",
+   "attendees": []
+  },
+  {
+   "issue": "NS_1847-12-03",
+   "page": 4,
+   "name": "Marriage of Horace T. Sheldon and Laura A. Vosburg",
+   "date": "1847-11-14",
+   "location": "Pittsford, New York",
+   "description": "Marriage notice: at Pittsford, 14th November [1847], by Rev. M. Ferguson, Horace T. Sheldon to Miss Laura A. Vosburg.",
+   "attendees": [
+    [
+     "Horace T. Sheldon",
+     "groom"
+    ],
+    [
+     "Laura A. Vosburg",
+     "bride"
+    ],
+    [
+     "M. Ferguson",
+     "Rev.; officiated"
+    ]
+   ]
+  }
+ ],
+ "agents": [
+  {
+   "issue": "NS_1847-12-03",
+   "page": 1,
+   "names": [
+    [
+     "R. F. Walcutt",
+     "North Star agent, 21 Cornhill, Boston, Massachusetts"
+    ],
+    [
+     "Nathan Johnson",
+     "North Star agent, New Bedford, Massachusetts"
+    ],
+    [
+     "Horatio W. Foster",
+     "North Star agent, Lowell, Massachusetts"
+    ],
+    [
+     "James N. Buffum",
+     "North Star agent, Lynn, Massachusetts"
+    ],
+    [
+     "George Evans",
+     "North Star agent, Worcester, Massachusetts"
+    ],
+    [
+     "Bourne Spooner",
+     "North Star agent, Plymouth, Massachusetts"
+    ],
+    [
+     "Charles H. Seth",
+     "North Star agent, Springfield, Massachusetts (name as printed; OCR/typesetting uncertain)"
+    ],
+    [
+     "David Ruggles",
+     "North Star agent, Northampton, Massachusetts"
+    ],
+    [
+     "Oliver Dennett",
+     "North Star agent, Portland, Maine"
+    ],
+    [
+     "Rowland T. Robinson",
+     "North Star agent, North Ferrisburg, Vermont"
+    ],
+    [
+     "Jonathan Leonard",
+     "North Star agent, Meriden, Connecticut"
+    ],
+    [
+     "Weare Tappan",
+     "North Star agent, Bradford, New Hampshire"
+    ],
+    [
+     "Sydney H. Gay",
+     "North Star agent, 142 Nassau Street, New York"
+    ],
+    [
+     "James McCune Smith",
+     "North Star agent, 93 West Broadway, New York"
+    ],
+    [
+     "Joseph Post",
+     "North Star agent, Westbury, Queens County, New York"
+    ],
+    [
+     "Mary Harper",
+     "North Star agent, Albany, New York"
+    ],
+    [
+     "J. M. M'Kim",
+     "North Star agent, 31 North Fifth Street, Philadelphia, Pennsylvania"
+    ],
+    [
+     "G. W. Goines",
+     "North Star agent, 8 Exchange Place, Philadelphia, Pennsylvania"
+    ],
+    [
+     "H. Vashon",
+     "North Star agent, Pittsburg, Pennsylvania (printed 'H. Vashon'; the family's known Pittsburgh agent was J. B. Vashon)"
+    ],
+    [
+     "B. Bown",
+     "North Star agent, Pittsburg, Pennsylvania"
+    ],
+    [
+     "William Whipper",
+     "North Star agent, Columbia, Pennsylvania"
+    ],
+    [
+     "Isaac Roberts",
+     "North Star agent, Norristown, Montgomery County, Pennsylvania"
+    ],
+    [
+     "Jacob L. Paxon",
+     "North Star agent, Norristown, Montgomery County, Pennsylvania"
+    ],
+    [
+     "Christian Donaldson",
+     "North Star agent, Cincinnati, Ohio"
+    ],
+    [
+     "G. W. Carter",
+     "North Star agent, Cincinnati, Ohio"
+    ],
+    [
+     "Valentine Nicholson",
+     "North Star agent, Harveysburgh, Warren County, Ohio"
+    ],
+    [
+     "Samuel Brooke",
+     "North Star agent, Salem, Ohio"
+    ],
+    [
+     "Robert Banks",
+     "North Star agent, Detroit, Michigan"
+    ]
+   ],
+   "note": "The North Star's 'List of Agents' as printed in its first issue, December 3, 1847 -- twenty-eight agents across Massachusetts, Maine, Vermont, Connecticut, New Hampshire, New York, Pennsylvania, Ohio and Michigan. The two Philadelphia agents are J. M. M'Kim (James Miller McKim) and G. W. Goines. Read from the page image; the OCR of this small-type column is unreliable."
+  }
+ ]
+}
