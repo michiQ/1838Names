@@ -137,7 +137,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers + William Still's Underground Railroad + Institute for Colored Youth students (Fanny Jackson Coppin) + 1838 Black Metropolis mob-attack StoryMaps + the 1838 Black Metropolis blog archive — click a name to see every reference · build __BUILD__</span>
+  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman, The North Star) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers + William Still's Underground Railroad + Institute for Colored Youth students (Fanny Jackson Coppin) + 1838 Black Metropolis mob-attack StoryMaps + the 1838 Black Metropolis blog archive — click a name to see every reference · build __BUILD__</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -236,7 +236,7 @@ window._fullLayoutCache = BAKED_FULLMAP ? new Map(BAKED_FULLMAP) : null;
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
 const A = new Map(DATA.articles.map(a=>[a.id,a]));
-const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)'};
+const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)', NS:'The North Star'};
 const NBR = new Map(); // pid -> Map(pid -> weight)
 for (const [a,b,w] of DATA.edges){
   if(!NBR.has(a)) NBR.set(a,new Map()); if(!NBR.has(b)) NBR.set(b,new Map());
