@@ -154,7 +154,7 @@ Michiko's identification (not a standalone person) — and John Myers — body s
 exactly like Sarah Ash.)
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
 load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> apply_merges.py ->
-load_nolibs.py -> load_ugrr.py -> load_blogs.py -> apply_merges.py (2nd pass) -> find_merge_candidates.py -> build_viewer.py.
+load_nolibs.py -> load_ugrr.py -> load_blogs.py -> load_mobstats.py -> apply_merges.py (2nd pass) -> find_merge_candidates.py -> build_viewer.py.
 apply_merges runs TWICE: pass 1 folds the winch/census/newspaper/coppin/storymap groups so load_nolibs/
 load_ugrr resolve against canonical names; pass 2 (after load_blogs) folds the blog-source groups, since
 blog people don't exist until load_blogs runs. apply_merges is idempotent so pass 2 re-checks pass-1 groups
@@ -163,6 +163,24 @@ the loader recreates the record with a new id) -- key such groups on a stable id
 reassigned) or on {name, source} which matches the recreated record. A working driver for the last several
 steps lives at /tmp/rebuild.sh in-session; loaders read env BM_DB and, per-loader,
 COPPIN_SRC/STORYMAPS_SRC/UGRR_SRC/BLOGS_SRC.
+
+## 1838 Mob Attack Statistics (added 2026-08-14)
+`pipeline/load_mobstats.py` loads `pipeline/mobstats.json` -- Michiko's live "Self-Defense"
+Google Sheet (1838 Research folder; the Self-Defense & Resistance evidence table for the
+1834/1835/1842/1849 mob attacks + surrounding St. Mary's incidents), curated to 62 rows.
+Main source page: https://www.1838blackmetropolis.com/attackstats (footer credit links there).
+Each row loads into `mobstats`; every individually-named defender/complainant gets a
+`mobstats_people` link. Matching mirrors load_blogs.py (exact identity-token set incl.
+aliases, else unique surname+first-given, with Wm/Jas/Thos-style abbreviations expanded and
+Jr/Sr never taken as a surname); confident unique matches attach to the existing person,
+unmatched names become source='mobstats' people, ambiguous collisions are HELD (mobstats
+person created, candidates written to `pipeline/mobstats_matches.md` for merges.json review --
+nothing force-merged). Rows with unnamed/collective defenders load as data only. Runs AFTER
+load_blogs and BEFORE apply_merges pass 2. Idempotent. The viewer renders a "Mob Attack
+Statistics" card per entry (attack/location/type headline, description, outcome, per-entry
+source hyperlinks + the main-source link), a `b-m` "Attack Stats" badge, and a "Mob Attack
+Stats" filter chip. To refresh after Michiko edits the sheet: re-pull the sheet, regenerate
+mobstats.json, rerun the chain from load_mobstats.
 
 ## 1838 Black Metropolis blog archive (added 2026-07-30)
 `pipeline/load_blogs.py` loads `pipeline/blogs.json` (74 posts, each {slug,title,blog_url,pdf,people[]}).

@@ -4,8 +4,8 @@ Never merges automatically — output is a review list for Michiko."""
 import sqlite3, re, json, unicodedata, os
 from difflib import SequenceMatcher
 
-DB = "/tmp/run30/black_metropolis.db"
-PIPE = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline"
+DB = "/tmp/black_metropolis.db"
+PIPE = "/tmp/repo/pipeline"
 OUT = f"{PIPE}/merge_candidates.md"
 
 def norm(s):

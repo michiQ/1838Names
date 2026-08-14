@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 190 linked to existing people, 242 created as new blog people, 47 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 189 linked to existing people, 242 created as new blog people, 48 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -40,12 +40,13 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Douglass** (blog)  ↔  Robert Douglass#14271, Douglass, Robert#357712
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
+- **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
 - **Samuel Williams** (blog)  ↔  Williams, Samuel#351596, WILLIAMS, SAMUEL#354264
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312
 - **Thomas Butler** (blog)  ↔  Butler, Thomas#497, Thomas Butler#59213, BUTLER, THOMAS#352124
-- **William A. Brown** (blog)  ↔  Brown, William#421, Brown, William#422, Brown, William C.#423, Brown, William#355146, Brown, William J#355415, Brown, William#357492
+- **William A. Brown** (blog)  ↔  Brown, William#421, Brown, William#422, Brown, William C.#423, Brown, William#355146, Brown, William J#355415, Brown, William#357492, William W. Brown#360410
 - **William Bell** (blog)  ↔  Bell, William#354955, Bell, William#359015, William Bell#359735
 - **William Craft** (blog)  ↔  Craft, William#31199, Craft, William#351700, William Craft#358732
 - **William Dorsey** (blog)  ↔  Dorsey, William#891, Dorsey, William H.#892, DORSEY, WILLIAM#352432, William Dorsey#359637

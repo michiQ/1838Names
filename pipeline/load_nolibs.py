@@ -7,8 +7,8 @@ people the tour documents who are absent from the source data (Rebecca McCormick
 Julius Jr.) and splits Hetty Burr out of the 'Burr, David T.' Winch record."""
 import sqlite3, json, re, unicodedata, os
 
-DB = "/tmp/run30/black_metropolis.db"
-SRC = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/nolibs_profiles.json"
+DB = "/tmp/black_metropolis.db"
+SRC = "/tmp/repo/pipeline/nolibs_profiles.json"
 PDF_URL = "Northern_Liberties_Tour_Sources.pdf"   # served alongside index.html (repo root / Drive folder)
 
 def norm(s):

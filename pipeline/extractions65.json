@@ -1,0 +1,1537 @@
+{
+ "_note": "Batch: The North Star (Rochester, N.Y.; Frederick Douglass & M. R. Delany, editors; William C. Nell, publisher; John Dick, printer) -- FOUR ISSUES: Vol. I Nos. 2-5, January 7, 14, 21 and 28, 1848. Slugs NS_1848-01-07, NS_1848-01-14, NS_1848-01-21, NS_1848-01-28; 4 pages each; source scans Digital Howard @ Howard University, Black Press Archives. Extraction rule per Michiko (2026-08-05, same as extractions64): capture ALL events and the people at them, and any organization with a named membership, anywhere -- New York, Boston, Rochester, Philadelphia included; skip editorial/opinion matter, reprinted literature and general antislavery argument unless a named body or gathering is involved. OCR: 7-column broadsheets OCR'd column by column; all rosters below were additionally verified by reading the page images directly (150dpi renders, column crops), not from OCR alone. The standing List of Agents on page 1 is identical across all four issues and is recorded once under NS_1848-01-07; it adds two agents to the December 3 list (Elias Doty, Macedon; Amarancy Paine, Providence). Pages with no qualifying content: 01-07 p3-p4 (Thompson speech continuation, ads), 01-14 p3 (essays/selections), 01-21 p4 (British & Foreign A.S. Society report extracts, no roster), 01-28 p3 (religious reprint, ads, National Era prospectus).",
+ "articles": [
+  {
+   "issue": "NS_1848-01-07",
+   "page": 1,
+   "headline": "Speech of Geo. Thompson, Esq., M.P., on Free Trade with India",
+   "author": null,
+   "type": "article",
+   "summary": "From the London Mercury. 'The meeting being organized, Francis Carnac Brown, Esq., addressed the assembly: Ladies and gentlemen -- I thank you for the honor you have conferred upon me, in electing me to preside over this very large meeting...' Brown explains his eight years' acquaintance with George Thompson since returning from India, and introduces Thompson's long speech urging free-grown East India cotton as the peaceful and infallible remedy against American slavery. The speech fills much of pages 1 and 4."
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "headline": "The National Bazaar",
+   "author": null,
+   "type": "editorial",
+   "summary": "'It was our happiness last week to attend the exhibition of anti-slavery industry, elegance, and beauty, held in Boston... our expectations were very high; but, on entering, they were more than gratified.' An editorial visit to the fourteenth National Anti-Slavery Bazaar in Boston, describing the evergreen-decked hall, the evening addresses by well-known anti-slavery speakers, and defending the women conducting the fair against the charge of playing into the hands of aristocracy. The writer says it was his lot to make the last anti-slavery speech in Faneuil Hall on the last night of the old year."
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "headline": "Movements",
+   "author": null,
+   "type": "editorial",
+   "summary": "'Since the appearance of the first number we have been actively [holding] public meetings in various parts... and the State of Massachusetts...' Notes a meeting in Mendon on the 4th with friend Remond, held in the school house after other doors were closed, two meetings the next day, and meetings by C. L. Remond elsewhere; reports that co-laborer M. R. Delany, with his family in Pittsburgh, will probably remain absent for the present winter and hold meetings in Cincinnati and the State of Ohio."
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "headline": "Correspondence",
+   "author": null,
+   "type": "letters",
+   "summary": "'We give our readers the following letters, at the hazard of incurring the charge of egotism...' Letters welcoming the North Star: Gerrit Smith (Peterboro', Dec. 8, 1847), enclosing deeds of forty acres each (a quarter of the same lot) to Frederick Douglass and William C. Nell under his land-gift to the colored inhabitants of New York -- he has also given lots to Mr. C. L. Remond and Mr. W. W. Brown, and divided one lot amongst escaped slaves, viz: Henry Bibb, and others, Lewis, Milton, and Cyrus; Samuel J. May (Syracuse, Dec. 9); a Quaker friend signing Isaac C. Kenyon; Abner H. Francis (Buffalo, Dec. 17); James Sperry (Henrietta, Dec. 11); J. W. C. Pennington (Hartford, Ct., Dec. 27); an unsigned Friend's letter from Seekonk, Mass., 12th Mo. 17th, 1847; and an extract signed Abby L. Brigden, from the correspondence of a devoted laborer in Ohio."
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "headline": "Notices; Notices of New Publications",
+   "author": null,
+   "type": "notices",
+   "summary": "Publisher's and lecture notices: Charles Lenox Remond and Frederick Douglass will hold a meeting in Victor on Monday evening, 10th Jan.; J. C. Hathaway is now making a tour in Massachusetts and will receive subscribers for the North Star -- he will visit Boston, New Bedford, Providence and Fall River, and return in time to attend the fair at West Winfield; Henry Watson is now travelling in the State of Rhode Island, and is authorised to receive subscribers -- Mr. Watson has experienced the wrongs of slavery in his own person; Frederick Douglass will deliver an Anti-Slavery Lecture next Sunday afternoon at two o'clock in the Wesleyan Methodist Church, Main Street. New publications noticed: A Letter to the Citizens of the United States, by Rev. Theodore Parker; Narrative of the Life of Frederick Douglass (eleventh thousand); A Lecture delivered before the Female Anti-Slavery Society of Salem, at Lyceum Hall, Nov. 14, 1847, by William W. Brown, a fugitive slave; Narrative of William W. Brown, now passing through a second edition."
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 1,
+   "headline": "Mr. Hale in the Senate",
+   "author": null,
+   "type": "proceedings",
+   "summary": "From the Emancipator. 'We are able to give the following interesting particulars in regard to the presentation (on the 22d) of the memorial of the yearly meeting of anti-slavery friends in Indiana. Here follows the petition...' The account gives the memorial in full, Mr. Hale's remarks on presenting it, the objections of Mr. Johnson of Maryland, Mr. Calhoun and Mr. Butler, and the yea-and-nay vote (33 to 9) by which the motion to receive the petition was laid upon the table. Mr. Hale also presented a petition of David T. Burr and citizens of Pennsylvania for such an alteration of the constitution and laws as should abolish slavery throughout the Union."
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 4,
+   "headline": "Report of the Committee on a National Press",
+   "author": null,
+   "type": "proceedings",
+   "summary": "From the proceedings of the National Convention of Colored People (Troy, October 1847). 'The Committee on a National press and printing establishment for the people of color, made the following report on the importance and practicability of such an undertaking: It being admitted that the colored people of the United States are pledged, before the world and in the face of heaven, to struggle manfully for advancement in civil and social life, it is clear that our own efforts must mainly, if not entirely, produce such advancement...' The report urges 'a printing press, a copious supply of type, a full and complete establishment, wholly controlled by colored men,' and sets out the ten-point plan adopted by the Committee of seven, naming the Executive Committee of eleven (see event). Signed J. McCune Smith, G. B. Wilson, Wm. H. Topp."
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 4,
+   "headline": "Report of the Committee on Abolition",
+   "author": null,
+   "type": "proceedings",
+   "summary": "From the Troy convention proceedings. 'The committee appointed to draft a report respecting the best means of abolishing slavery and destroying caste in the United States, beg leave most respectfully to report... they have arrived at the conclusion that the best means of abolishing slavery is the proclamation of truth, and that the best means of destroying caste is the mental, moral and industrial improvement of our people.' The report disapproves of any appeal to bloodshed, and closes with resolutions to 'AGITATE!! AGITATE!!!' till our rights are restored. Signed Frederick Douglass, Alexander Crummell, John Lyle, Thos. Van Rensselaer."
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 1,
+   "headline": "The Colored Convention -- Report of the Committee on Education",
+   "author": null,
+   "type": "proceedings",
+   "summary": "'The committee appointed to make a report on the state and wants of educational privileges of the colored people, and the educational advantages of colored persons in the United States, beg to report, that they have endeavored to consider the subject presented to them... with that care and thoughtfulness demanded by so important a subject.' The report urges mental culture as a primeval duty, proposes that the Convention place before the colored people of the United States the founding of a college as its leading object, and recommends a committee of twenty-five with full powers to devise a plan and obtain subscriptions. Signed Alex. Crummell, Jas. M'Cune Smith, P. G. Smith; the committee of twenty-five appointed by the Convention is printed in full (see event)."
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 2,
+   "headline": "Valedictory of the Mystery -- union with the North Star",
+   "author": null,
+   "type": "article",
+   "summary": "The publishers of the Mystery (Pittsburgh) announce their retirement: 'The Mystery is still afloat, with the solemn promise of the Publishers, to keep her tiding the broad waters of destiny, doing battle in the great struggle for liberty and right, elevation and equality, God and humanity, as in days bygone.' The Publishing Committee, 'faithful to their trust, and prompt to a man,' are commended; the editor leaves the Mystery for a union with 'the far famed and world renowned Frederick Douglass, as a co-laborer in the cause of our oppressed brethren, by the publication of a large and capacious paper, the North Star, in Rochester, N.Y.' -- M. R. Delany's valedictory on merging his Pittsburgh paper into the North Star."
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 2,
+   "headline": "George B. Vashon refused admission to the Pittsburgh bar",
+   "author": null,
+   "type": "article",
+   "summary": "From the Pittsburgh Telegraph. An account of the refusal of the Committee of the Pittsburgh bar to examine Mr. Vashon for admission 'because his complexion was a shade darker than their own.' On application to the Court for a rule on the Committee directing them to examine him, the Judge refused the rule. 'There was no pretence that the applicant is not of excellent moral character, of gentlemanly deportment and well qualified for admission... A drop of African blood flowed in his veins, and he was refused admission to the Bar. He now leaves his native city, to take up his abode among strangers, expatriated by the cruel prejudices of his fellow citizens.' (See NS_1848-01-28 p2 for his admission in New York and intended removal to Hayti.)"
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 2,
+   "headline": "Notice -- Remond and Douglass at Penn Yan",
+   "author": null,
+   "type": "notices",
+   "summary": "'Charles Lenox Remond and Frederick Douglass will hold several meetings during Saturday and Sunday, 22d and 23d Jan., in Penn Yan.'"
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 1,
+   "headline": "The Fourteenth National Anti-Slavery Bazaar",
+   "author": null,
+   "type": "article",
+   "summary": "Report of the fourteenth National Anti-Slavery Bazaar at Faneuil Hall, Boston, signed Maria Weston Chapman. 'Thanks to your constancy, the receipts of the Bazaar were FOUR THOUSAND THREE HUNDRED DOLLARS...' The report describes the transformation of Faneuil Hall into a 'cathedral' of evergreens, the towns represented, the tables from the congregations of Rev. James Freeman Clarke and Rev. Theodore Parker, the fifty friends who united to purchase the Cork table-cover which fell to the lot of John T. Hilton, and the donations of British and Irish friends; it closes with an appeal for the coming year. (See event for the persons named.)"
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "headline": "Editorial Correspondence -- M. R. Delany from Pittsburgh",
+   "author": "M. R. Delany",
+   "type": "letters",
+   "summary": "'Dear Douglass: -- I am still in Pittsburgh, getting ready, as fast as possible, to start out on my Western tour for the North Star...' Delany reports that the proprietors of the Mystery, his old paper, are making industrious efforts to sustain it; that the 'Pittsburgh Saturday Visiter,' a new antislavery paper recently commenced by 'the distinguished and eccentric Mrs. Swisshelm,' is engaging attention; and that on 'next Tuesday, the 18th,' a Levee is to be held in Philo Hall for the benefit of the Mystery -- 'This is the divine work of the Ladies. God bless them!' He also remarks on the fearful steamboat explosions. Signed M. R. D."
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "headline": "Colored lawyers -- George B. Vashon, Robert Morris and Macon B. Allen",
+   "author": null,
+   "type": "article",
+   "summary": "Notice, with New York intelligence from the Tribune/Telegraph, that 'Geo. B. Vashon' was admitted 'as Attorney and Counsellor of the Supreme Court' of New York on examination showing perfect knowledge of the rudiments and familiar acquaintance with Blackstone and Kent; he intends to practice in Hayti, where a letter of recommendation will let him plead without being sneered at. The editors correct the claim that this is the first admission of a colored lawyer: in Massachusetts two colored lawyers have long been in practice -- Robert Morris, who acquired his excellence of character and business habits in the office of Loring, Esq., Master in Chancery, and Macon B. Allen, who passed the ordeal of a rigid examination at the Cumberland bar (Maine) and holds the office of Justice of the Peace under the appointment of the Governor. 'To Massachusetts, then, belongs the honor of first extending its hand of encouragement to those colored young men aspiring to legal lore.'"
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "headline": "Letter of David Ruggles on the National Press",
+   "author": "David Ruggles",
+   "type": "letters",
+   "summary": "Communication dated Northampton, Jan. 1, 1848, addressed 'Friends Douglass & Delany.' Ruggles hails the North Star as 'a beacon light of liberty' and argues that while our brethren of the South are slaves to slaveholders, 'we, of the North, are slaves to' public sentiment; he urges the necessity of the 'National Press' called for by the Troy Convention, until which there is sincere devotedness on the part of the whole people to sustain the most able, free and independent press ever established and conducted by colored men in this country. Signed 'Yours for Human Freedom, DAVID RUGGLES.'"
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "headline": "Notices",
+   "author": null,
+   "type": "notices",
+   "summary": "Local notices: 'We were compelled for the want of room to omit some of the sayings at the Printers' Festival; but as there were many good sentiments proposed, we insert the following: By P. Fogg -- The war spirit -- tamed by the press.' Grateful acknowledgment of valuable documents from the Hon. J. G. [Palfrey?] of the House of Representatives (surname imperfect in the copy). 'Benjamin R. Foster is our authorized Agent for Rochester and its vicinity.' The Liberty Minstrel by Geo. W. Clark for sale at the office."
+  }
+ ],
+ "events": [
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "name": "Fourth Annual Meeting of the Western New York Anti-Slavery Society",
+   "date": "1847-12-12",
+   "location": "Minerva Hall, Rochester, New York",
+   "description": "Pursuant to notice, the Society convened at Minerva Hall, Rochester, on 'Monday, December 12th' as printed (December 12, 1847 fell on a Sunday; the Monday was the 13th). Joseph C. Hathaway in the chair, Wm. C. Nell appointed Secretary pro tem. Committees were chosen on Business (Frederick Douglass, Sarah D. Fish, Nelson Bostwick, Mary Hallowell, R. G. Murray, Phebe Hathaway, Charles L. Remond), Finance (Wm. R. Hallowell, Lewis Burtis, Henry Bush, Giles B. Stebbins) and Nomination (Benjamin Fish, Sarah Burtis, Eliza Parker, G. B. Stebbins, Isaac Post), the latter reporting a list of officers unanimously adopted: President Joseph C. Hathaway of Farmington; Vice-Presidents Henry Bush (Rochester), Wm. G. Parker (West Walworth), A. L. P--t (Victor; surname smudged, Post or Peat), Elias L. Platt (Bath), Thos. McClintock (Waterloo), Nathan Marvel (Port Byron); Corresponding Secretary Giles B. Stebbins; Recording Secretary William C. Nell; Treasurer Henry Bush; and an Executive Committee of thirty-eight (all listed below). Resolutions thanked the agents of the American Anti-Slavery Society, commended the National Anti-Slavery Standard, welcomed 'our distinguished friends and well-tried fellow laborers, Frederick Douglass, M. R. Delany and Wm. C. Nell, editors and publishers of the North Star,' hailed the appearance of the North Star, hailed free-grown British India cotton and George Thompson's recent effort before his constituency, denounced the New York demonstration of sympathy with Pope Pius IX while war is carried on in Mexico, and mourned the deaths of Rev. Charles Van Loon and of James C. Fuller, friends of the slave.",
+   "attendees": [
+    [
+     "Joseph C. Hathaway",
+     "President, of Farmington; in the chair"
+    ],
+    [
+     "William C. Nell",
+     "Secretary pro tem; elected Recording Secretary, Rochester; Executive Committee"
+    ],
+    [
+     "Frederick Douglass",
+     "Business Committee; Executive Committee"
+    ],
+    [
+     "Sarah D. Fish",
+     "Business Committee; Executive Committee"
+    ],
+    [
+     "Nelson Bostwick",
+     "Business Committee; Executive Committee"
+    ],
+    [
+     "Mary Hallowell",
+     "Business Committee; Executive Committee"
+    ],
+    [
+     "R. G. Murray",
+     "Business Committee; Executive Committee"
+    ],
+    [
+     "Phebe Hathaway",
+     "Business Committee"
+    ],
+    [
+     "Charles L. Remond",
+     "Business Committee; Executive Committee"
+    ],
+    [
+     "Wm. R. Hallowell",
+     "Finance Committee; Executive Committee"
+    ],
+    [
+     "Lewis Burtis",
+     "Finance Committee; Executive Committee"
+    ],
+    [
+     "Henry Bush",
+     "Finance Committee; Vice-President and Treasurer, Rochester"
+    ],
+    [
+     "Giles B. Stebbins",
+     "Finance Committee; Nomination Committee; elected Corresponding Secretary, Rochester"
+    ],
+    [
+     "Benjamin Fish",
+     "Nomination Committee; Executive Committee"
+    ],
+    [
+     "Sarah A. Burtis",
+     "Nomination Committee (as Sarah Burtis); Executive Committee"
+    ],
+    [
+     "Eliza Parker",
+     "Nomination Committee"
+    ],
+    [
+     "Isaac Post",
+     "Nomination Committee; Executive Committee"
+    ],
+    [
+     "Wm. G. Parker",
+     "Vice-President, West Walworth"
+    ],
+    [
+     "A. L. P--t",
+     "Vice-President, Victor (surname unclear in print; Post or Peat)"
+    ],
+    [
+     "Elias L. Platt",
+     "Vice-President, Bath"
+    ],
+    [
+     "Thos. McClintock",
+     "Vice-President, Waterloo"
+    ],
+    [
+     "Nathan Marvel",
+     "Vice-President, Port Byron"
+    ],
+    [
+     "Daniel Anthony",
+     "Executive Committee"
+    ],
+    [
+     "Abigail Bush",
+     "Executive Committee"
+    ],
+    [
+     "Mary B. Fish",
+     "Executive Committee"
+    ],
+    [
+     "Catharine A. Stebbins",
+     "Executive Committee"
+    ],
+    [
+     "John Dick",
+     "Executive Committee (also printer of the North Star)"
+    ],
+    [
+     "Sarah L. Hallowell",
+     "Executive Committee"
+    ],
+    [
+     "Susan A. Doty",
+     "Executive Committee"
+    ],
+    [
+     "Caroline Halstead",
+     "Executive Committee"
+    ],
+    [
+     "John Kedzie",
+     "Executive Committee"
+    ],
+    [
+     "Jason Jeffrey",
+     "Executive Committee"
+    ],
+    [
+     "Lemira M. Kedzie",
+     "Executive Committee"
+    ],
+    [
+     "Ralph Francis",
+     "Executive Committee"
+    ],
+    [
+     "Richard Sully",
+     "Executive Committee"
+    ],
+    [
+     "Griffith M. Cooper",
+     "Executive Committee"
+    ],
+    [
+     "J. P. Morris",
+     "Executive Committee"
+    ],
+    [
+     "Henrietta Platt",
+     "Executive Committee"
+    ],
+    [
+     "Elias DeGarmo",
+     "Executive Committee"
+    ],
+    [
+     "Maria Wilbur",
+     "Executive Committee"
+    ],
+    [
+     "Asa Anthony",
+     "Executive Committee"
+    ],
+    [
+     "Amy Post",
+     "Executive Committee"
+    ],
+    [
+     "Elias Doty",
+     "Executive Committee (also North Star agent at Macedon)"
+    ],
+    [
+     "Hicks Halstead",
+     "Executive Committee"
+    ],
+    [
+     "Pliny Sexton",
+     "Executive Committee"
+    ],
+    [
+     "Rhoda DeGarmo",
+     "Executive Committee"
+    ],
+    [
+     "Mary A. McClintock",
+     "Executive Committee"
+    ],
+    [
+     "Edmund P. Willis",
+     "Executive Committee"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "name": "Great Anti-Slavery Meeting at Minerva Hall",
+   "date": "1847-12-19",
+   "location": "Minerva Hall, Rochester, New York",
+   "description": "Pursuant to a call extensively circulated through the city, a large audience convened in Minerva Hall on Sunday morning, [December] 19th, 'for the purpose of considering the sin of American Slavery, and our duties, as Christians, towards its utter annihilation.' Joseph C. Hathaway was called to the chair, and Giles B. Stebbins and Wm. C. Nell appointed Secretaries. Prayer was offered by Rev. Mr. Howard. Frederick Douglass offered resolutions declaring that in the simple act of slaveholding are comprehended the crimes of theft, robbery and murder; during discussion through the day and evening Douglass detailed the church's influence against the liberation of the slave, remarking that preaching for the slave was a paramount duty, inasmuch as 'a man is of more value than a sheep.' Giles B. Stebbins censured the clergy for coldness and indifference; C. L. Remond briefly commented on the resolutions; J. C. Hathaway presented a graphic picture of the injuries heaped upon the free colored people of this land and the slaves on the southern plantations. After remarks in further support by M. D. Codding, L. Burtis, and others, the resolutions were unanimously adopted, the meeting united in an anti-slavery hymn, three cheers for liberty were given, and the meeting adjourned. Signed J. C. Hathaway, Pres't, Wm. C. Nell, Sec'y.",
+   "attendees": [
+    [
+     "Joseph C. Hathaway",
+     "called to the chair; President; spoke on the injuries heaped upon the free colored people and the slaves"
+    ],
+    [
+     "Giles B. Stebbins",
+     "Secretary; censured the clergy for coldness and indifference on slavery"
+    ],
+    [
+     "William C. Nell",
+     "Secretary"
+    ],
+    [
+     "Rev. Mr. Howard",
+     "offered prayer"
+    ],
+    [
+     "Frederick Douglass",
+     "offered the resolutions; spoke through the day and evening on the American church and slavery"
+    ],
+    [
+     "Charles L. Remond",
+     "commented briefly upon the resolutions"
+    ],
+    [
+     "M. D. Codding",
+     "spoke in further support of the resolutions"
+    ],
+    [
+     "L. Burtis",
+     "spoke in further support of the resolutions"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "name": "Anti-Slavery Fair at Minerva Hall (Western New York fair)",
+   "date": null,
+   "location": "Minerva Hall, Rochester, New York",
+   "description": "Report (signed 'W. C. N.', William C. Nell) of the anti-slavery fair held at Minerva Hall, Rochester, in December 1847, whose 'last day and evening, the 18th, was an auspicious one.' The spacious hall was well filled, the ladies all vieing with each other in ways and means to induce visitors to buy; two bands at intervals discoursed 'Liberty Notes.' William C. Bloss, Esq., and Frederick Douglass occupied the rostrum to the hearty acceptance of all. The report praises the labors and sacrifices of the anti-slavery women and closes with the language of Frederika Bremer. The Rochester Ladies' Anti-Slavery Society committee's acknowledgment of contributions to this fair appears in the January 14 issue.",
+   "attendees": [
+    [
+     "William C. Bloss",
+     "occupied the rostrum on the closing evening, December 18"
+    ],
+    [
+     "Frederick Douglass",
+     "occupied the rostrum on the closing evening, December 18"
+    ],
+    [
+     "William C. Nell",
+     "reporter of the fair (signed W. C. N.)"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "name": "Rochester Ladies' Anti-Slavery Society annual meeting (announced)",
+   "date": "1848-01-13",
+   "location": "House of Mr. J. Kedzie, No. 35 North Fitzhugh Street, Rochester, New York",
+   "description": "Notice: 'The Rochester Ladies Anti-Slavery Society will hold its Annual Meeting on Thursday, 13th January, at two o'clock afternoon, at the house of Mr. J. Kedzie, No. 35, North Fitzhugh Street. Members and friends of this Society are earnestly requested to attend.'",
+   "attendees": [
+    [
+     "J. Kedzie",
+     "annual meeting to be held at his house, 35 North Fitzhugh Street"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 2,
+   "name": "Lecture by William W. Brown before the Female Anti-Slavery Society of Salem",
+   "date": "1847-11-14",
+   "location": "Lyceum Hall, Salem, Massachusetts",
+   "description": "Noticed among new publications: 'A Lecture delivered before the Female Anti-Slavery Society of Salem, at Lyceum Hall, Nov. 14, 1847. By William W. Brown, a fugitive slave.' The editors add: 'We have received a copy of this able lecture, recently delivered by our friend and brother, William W. Brown. Mr. Brown is well known in Western New York as an efficient laborer in the anti-slavery field. He declared his independence of slavery but a few years since.'",
+   "attendees": [
+    [
+     "William W. Brown",
+     "delivered the lecture before the Female Anti-Slavery Society of Salem; a fugitive slave"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-07",
+   "page": 1,
+   "name": "Public meeting on free trade with India, addressed by George Thompson, M.P.",
+   "date": null,
+   "location": "London, England (Tower Hamlets)",
+   "description": "From the London Mercury: a very large public meeting on free trade with India, at which Francis Carnac Brown, Esq., was elected to preside; he described his eight years' cooperation with George Thompson on questions relating to India since Thompson's return from the United States. George Thompson, M.P. for the Tower Hamlets, delivered the speech of the evening, arguing that the free cultivation of cotton in British India is a simple, peaceful and infallible remedy against American slavery. The Western New York Anti-Slavery Society's resolutions in this same issue extend acknowledgments to Thompson 'for his recent eloquent and able effort before his constituency.'",
+   "attendees": [
+    [
+     "Francis Carnac Brown",
+     "elected to preside over the meeting"
+    ],
+    [
+     "George Thompson",
+     "M.P. for the Tower Hamlets; delivered the speech on free trade with India"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 1,
+   "name": "Memorial of the Yearly Meeting of Anti-Slavery Friends in Indiana, presented in the United States Senate",
+   "date": "1847-12-22",
+   "location": "United States Senate, Washington; the yearly meeting held at Newport, Wayne County, Indiana",
+   "description": "Mr. Hale presented (December 22) the memorial of the yearly meeting of anti-slavery Friends in Indiana -- described in debate as 'the yearly meeting of Friends at Newport, Wayne county, Indiana' -- praying Congress to use all the means in its power to put an immediate termination to the war with Mexico, and to exercise the powers of the government to put an immediate termination to slavery with all its horrid consequences, so far as those powers extend. The memorial was 'Signed on behalf of the meeting, Walter Edgerton, Rebecca Edgerton, Clerks.' Mr. Hale urged that the petition be received; Mr. Johnson of Maryland, Mr. Calhoun and Mr. Butler objected; the motion to receive was laid on the table, yeas 33 (Messrs. Allen, Ashley, Atchison, Atherton, Badger, Bell, Berrien, Bradbury, Breese, Bright, Butler, Calhoun, Cass, Davis of Mississippi, Dickinson, Dix, Downs, Fairfield, Felch, Foote, Hunter, Johnson of Maryland, Johnson of Louisiana, Mangum, Mason, Niles, Rusk, Sevier, Spruance, Sturgeon, Turney, Westcott, Yulee), nays 9 (Messrs. Baldwin, Clarke, Corwin, Greene, Hale, Miller, Phelps, Underwood, Upham).",
+   "attendees": [
+    [
+     "Walter Edgerton",
+     "Clerk, signed the memorial on behalf of the yearly meeting of anti-slavery Friends in Indiana"
+    ],
+    [
+     "Rebecca Edgerton",
+     "Clerk, signed the memorial on behalf of the yearly meeting of anti-slavery Friends in Indiana"
+    ],
+    [
+     "John P. Hale",
+     "Senator; presented the memorial and urged its reception (printed as Mr. Hale)"
+    ],
+    [
+     "Mr. Johnson of Maryland",
+     "Senator; moved to lay the question of reception on the table"
+    ],
+    [
+     "Mr. Calhoun",
+     "Senator; opposed reception of the petition"
+    ],
+    [
+     "Mr. Butler",
+     "Senator; objected that the petition said nothing about slavery in the District of Columbia"
+    ],
+    [
+     "David T. Burr",
+     "his petition, with citizens of Pennsylvania, for constitutional abolition of slavery was also presented by Mr. Hale"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 2,
+   "name": "Anti-slavery lecture by Frederick Douglass at the Wesleyan Methodist meeting house ('The Meeting on Main Street')",
+   "date": null,
+   "location": "Wesleyan Methodist meeting house, Main Street, Rochester, New York",
+   "description": "'In the meeting house of the Wesleyan Methodists, on Main street... a small band of men and women meet to hear the Gospel of Freedom and Love for all.' An anti-slavery lecture was given by Frederick Douglass last Sunday afternoon [January 9], notwithstanding the severity of the storm. After prayer by Mr. Benson, the clergyman of the society, and the singing of an anti-slavery hymn, Mr. Douglass spoke for an hour or more to a respectable audience on the nature of real Christianity, and toward the conclusion, with tears from many eyes, gave a simple narrative of some of his own experience of cruel prejudice and ill treatment as a colored man. His sentiments were warmly responded to by the minister and a number of the members of the society. Signed 'S.'",
+   "attendees": [
+    [
+     "Frederick Douglass",
+     "delivered the anti-slavery lecture"
+    ],
+    [
+     "Mr. Benson",
+     "clergyman of the Wesleyan Methodist society; offered prayer and responded warmly"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 2,
+   "name": "Rochester Ladies' Anti-Slavery Society -- committee acknowledgment for the recent fair",
+   "date": null,
+   "location": "Rochester, New York",
+   "description": "'The committee of the Ladies' Anti-Slavery Society gratefully acknowledge the receipt of valuable and saleable articles from friends in the country for the recent fair.' Contributions came from the anti-slavery women of Ledyard; from Walworth and Farmington (sewing circles); from Waterloo (books, perfumery); from Williamson, 'the result of the labors of a little company of workers in our good cause,' forwarded with an excuse for personal non-attendance owing to the fatal illness of one of their number, whose decease in the flower of her days will be lamented by all (see the death notice of Eliza A. Cooper of Williamson, NS_1848-01-21 p3); from a friend in Mt. Morris; from Bath, by donation of goods and personal presence; from Port Byron, a box of useful and fancy goods during the fair; and an offering from a friend in Wisconsin, formerly a co-laborer here at home. Signed 'In behalf of the committee, C. A. F. S.' (initials as printed).",
+   "attendees": [
+    [
+     "C. A. F. S.",
+     "signed the acknowledgment in behalf of the committee of the Ladies' Anti-Slavery Society (initials as printed)"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 2,
+   "name": "Western New York Anti-Slavery Society Executive Committee meeting (called)",
+   "date": "1848-01-18",
+   "location": "House of Isaac Post, 36 Sophia Street, Rochester, New York",
+   "description": "Notice: 'The Executive Committee are requested to meet at the house of Isaac Post, 36, Sophia Street, Rochester, on Tuesday evening, January 18th, at 7 o'clock. A full attendance is specially important. Per order, W. C. Nell, Sec.'",
+   "attendees": [
+    [
+     "Isaac Post",
+     "Executive Committee to meet at his house, 36 Sophia Street"
+    ],
+    [
+     "William C. Nell",
+     "Secretary; issued the call"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 2,
+   "name": "Franklin's Birth-Day -- Rochester printers' celebration (announced)",
+   "date": "1848-01-17",
+   "location": "Irving House, Rochester, New York",
+   "description": "'The Printers of Rochester will commemorate the one hundred and forty-second anniversary of the birth-day of Franklin, on Monday evening, the 17th inst. They respectfully tender an invitation to their fellow craftsmen in the surrounding towns to unite with them on the occasion; also, to the retired printers of the city. The celebration will be held at the Irving House, kept by Col. T. W. Haskell, a veteran printer.' Friends intending to attend are to notify the Chairman of the Committee of Arrangements by Friday. Signed James Vick, Jr., Ch'n Com. Arrangements. (The full report of the festival appears in NS_1848-01-21 p3.)",
+   "attendees": [
+    [
+     "James Vick, Jr.",
+     "Chairman, Committee of Arrangements"
+    ],
+    [
+     "Col. T. W. Haskell",
+     "keeper of the Irving House, a veteran printer"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 4,
+   "name": "Executive Committee on the National Press for the Free Colored People of the United States",
+   "date": null,
+   "location": "New York City (meetings to take place in the city of New York); appointed by the National Convention at Troy, October 1847",
+   "description": "Under the plan adopted by the Committee of seven appointed by the Troy National Convention with full power, 'there shall be an Executive of eleven persons, to be denominated, The Executive Committee on the National Press for the Free Colored People of the United States, viz: Massachusetts -- Leonard Collins, James Mars; Connecticut -- Amos G. Beman, James W. C. Pennington; Kentucky -- Andrew Jackson; New York -- J. McCune Smith, Chas. B. Ray, Alex. Crummell; New Jersey -- E. [P.?] Rogers (initial before Rogers partly cut in the copy); Pennsylvania -- Andrew Purnell, George B. Vachon [as printed; i.e. Vashon]; of which Committee James McCune Smith, of New York, shall be Chairman, and Amos G. Beman, of Connecticut, Secretary.' Members residing in New York City form a Finance Committee depositing funds in the New York Seaman's Bank for Savings; the Committee holds stated meetings once in six months and publishes its accounts; 'the Rev. J. W. C. Pennington, of Connecticut, shall be the Foreign Agent of the National Press'; home agents receive twenty per cent and the foreign agent thirty per cent on collections. The report is signed J. McCune Smith, G. B. Wilson, Wm. H. Topp.",
+   "attendees": [
+    [
+     "James McCune Smith",
+     "Executive Committee member for New York; Chairman of the Committee; signer of the report"
+    ],
+    [
+     "Amos G. Beman",
+     "Executive Committee member for Connecticut; Secretary of the Committee"
+    ],
+    [
+     "Leonard Collins",
+     "Executive Committee member for Massachusetts"
+    ],
+    [
+     "James Mars",
+     "Executive Committee member for Massachusetts"
+    ],
+    [
+     "James W. C. Pennington",
+     "Executive Committee member for Connecticut; appointed Foreign Agent of the National Press"
+    ],
+    [
+     "Andrew Jackson",
+     "Executive Committee member for Kentucky"
+    ],
+    [
+     "Chas. B. Ray",
+     "Executive Committee member for New York"
+    ],
+    [
+     "Alex. Crummell",
+     "Executive Committee member for New York"
+    ],
+    [
+     "E. Rogers",
+     "Executive Committee member for New Jersey (printed 'E. [?]. Rogers'; first initials partly cut -- probably E. P. Rogers)"
+    ],
+    [
+     "Andrew Purnell",
+     "Executive Committee member for Pennsylvania"
+    ],
+    [
+     "George B. Vachon",
+     "Executive Committee member for Pennsylvania (as printed; i.e. George B. Vashon)"
+    ],
+    [
+     "G. B. Wilson",
+     "signer of the report on the National Press"
+    ],
+    [
+     "Wm. H. Topp",
+     "signer of the report on the National Press"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-14",
+   "page": 4,
+   "name": "Committee on the best means of abolishing slavery and destroying caste (Troy convention)",
+   "date": null,
+   "location": "National Convention of Colored People, Troy, New York (report printed in this issue)",
+   "description": "The committee appointed by the Troy National Convention 'to draft a report respecting the best means of abolishing slavery and destroying caste in the United States' reported that the best means of abolishing slavery is the proclamation of truth, and the best means of destroying caste the mental, moral and industrial improvement of the people; it disapproved of any counsel of insurrection and bloodshed as 'the perfection of folly,' recommended a committee of one to draft a fuller report for the next National Convention, and closed with resolutions pledging to 'AGITATE!! AGITATE!!!' till rights are restored. Signed Frederick Douglass, Alexander Crummell, John Lyle, Thos. Van Rensselaer.",
+   "attendees": [
+    [
+     "Frederick Douglass",
+     "committee member and signer of the report on abolition"
+    ],
+    [
+     "Alexander Crummell",
+     "committee member and signer of the report on abolition"
+    ],
+    [
+     "John Lyle",
+     "committee member and signer of the report on abolition"
+    ],
+    [
+     "Thos. Van Rensselaer",
+     "committee member and signer of the report on abolition (printed Thos. Van Rensselaer)"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 1,
+   "name": "Committee of twenty-five on the establishment of a college for colored young men (Colored National Convention)",
+   "date": null,
+   "location": "Appointed by the National Convention of Colored People, Troy, New York; members in Troy, Albany, New York, Philadelphia, Hartford and New Haven",
+   "description": "The Report of the Committee on Education (signed Alex. Crummell, Jas. M'Cune Smith, P. G. Smith) resolved 'That this Convention places before the colored people of the United States, the founding of a college, as its leading and most important object,' and that a committee of twenty-five be appointed with full powers to devise a plan, obtain subscriptions and designate proper and capable persons to conduct such an institution, sans caste but not exclusive, reporting to the convention at its next annual session. 'The following committee was appointed by the Convention, in accordance with the recommendation of the report: Troy -- Wm. Rich. Albany -- Wm. H. Topp, Stephen Myers, Moses Jackson. New York -- Wm. A. Tyson, Charles L. Reason, James M'Cune Smith, George T. Downing, John J. Zuille, Albro Lyons, Samuel E. Cornish, Charles B. Ray, Alexander Crummell, Patrick H. Reason, U. B. Vidal, Christopher Rush, Edward V. Clark. Philadelphia -- Joseph Cassey, Wm. Douglass, James J. G. Bias, Stephen Smith, Frederick A. Hinton. Hartford -- J. W. C. Pennington. New Haven -- Joseph Brown, Amos G. Beman.' (Joseph Cassey died within weeks; see his death notice, NS_1848-01-21 p3.)",
+   "attendees": [
+    [
+     "Alex. Crummell",
+     "signer of the Report of the Committee on Education; committee of twenty-five, New York"
+    ],
+    [
+     "Jas. M'Cune Smith",
+     "signer of the Report of the Committee on Education; committee of twenty-five, New York"
+    ],
+    [
+     "P. G. Smith",
+     "signer of the Report of the Committee on Education"
+    ],
+    [
+     "Wm. Rich",
+     "committee of twenty-five, Troy"
+    ],
+    [
+     "Wm. H. Topp",
+     "committee of twenty-five, Albany"
+    ],
+    [
+     "Stephen Myers",
+     "committee of twenty-five, Albany"
+    ],
+    [
+     "Moses Jackson",
+     "committee of twenty-five, Albany"
+    ],
+    [
+     "Wm. A. Tyson",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Charles L. Reason",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "George T. Downing",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "John J. Zuille",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Albro Lyons",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Samuel E. Cornish",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Charles B. Ray",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Patrick H. Reason",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "U. B. Vidal",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Christopher Rush",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Edward V. Clark",
+     "committee of twenty-five, New York"
+    ],
+    [
+     "Joseph Cassey",
+     "committee of twenty-five, Philadelphia"
+    ],
+    [
+     "Wm. Douglass",
+     "committee of twenty-five, Philadelphia"
+    ],
+    [
+     "James J. G. Bias",
+     "committee of twenty-five, Philadelphia"
+    ],
+    [
+     "Stephen Smith",
+     "committee of twenty-five, Philadelphia"
+    ],
+    [
+     "Frederick A. Hinton",
+     "committee of twenty-five, Philadelphia"
+    ],
+    [
+     "J. W. C. Pennington",
+     "committee of twenty-five, Hartford"
+    ],
+    [
+     "Joseph Brown",
+     "committee of twenty-five, New Haven"
+    ],
+    [
+     "Amos G. Beman",
+     "committee of twenty-five, New Haven"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 3,
+   "name": "Third Annual Festival of the Printers of Rochester (Franklin's birthday)",
+   "date": "1848-01-17",
+   "location": "Irving House, Rochester, New York",
+   "description": "'Third Annual Festival of the Printers of Rochester, held at the Irving House, January 17, 1848,' commemorating the birth of Franklin. The tables were loaded in the style peculiar to that house of Haskell; thanks are given to the Committee of Arrangements, Jas. Vick jr., Chairman, Geo. W. Wiss [surname as printed; unclear] and H. K. Wilson; the room was decorated with flags, pictures, evergreens and a transparency of Franklin prepared and presented by D. P. Newell. P. Canfield was called upon to preside, and E. Shepard, A. Strong, and J. M. Patterson acted as Vice Presidents; during the whole Festival the Band of Adams discoursed music. Twelve regular toasts (Franklin, Our Country, The Union, State of New York, the President, the Governor, The Press, Printers -- 'Mechanics of the mind,' the Heroes of '76, Franklin and Morse, Our Common Schools, the Deceased Brothers of the Craft) were followed by an ode by R. L. B. Clarke and a long list of volunteer toasts. Frederick Douglass gave: 'Gentlemen of the Rochester Press -- Promoters of knowledge, lovers of Liberty, foes of ignorance, dispensers of prejudice [sic] -- may you continue to give the world noble examples by a free and intelligent union of black and white.' W. S. Falls toasted the memory of W. A. Wells, a printer of the old school. Some toast-givers' names in the sixth column are too worn to read confidently (among them apparent 'H. P. Hagit,' 'C. A. Wald--,' 'M. Bel--t,' and a 'By Ch--n B--k'); one further toast by P. Fogg, omitted for want of room, was printed in NS_1848-01-28 p2.",
+   "attendees": [
+    [
+     "P. Canfield",
+     "called upon to preside; gave the first volunteer toast, 'The day we celebrate'"
+    ],
+    [
+     "E. Shepard",
+     "first Vice President; toast on 'The Ten Hour System' and Franklin's Golden Dust of Time"
+    ],
+    [
+     "A. Strong",
+     "Vice President; toast, 'The Printing Office -- the poor boy's college'"
+    ],
+    [
+     "J. M. Patterson",
+     "Vice President"
+    ],
+    [
+     "Jas. Vick, jr.",
+     "Chairman of the Committee of Arrangements"
+    ],
+    [
+     "Geo. W. Wiss",
+     "Committee of Arrangements (surname as printed; print unclear)"
+    ],
+    [
+     "H. K. Wilson",
+     "Committee of Arrangements"
+    ],
+    [
+     "D. P. Newell",
+     "prepared and presented the transparency of Franklin"
+    ],
+    [
+     "Col. T. W. Haskell",
+     "host, keeper of the Irving House; gave a toast, 'Printers of Rochester'"
+    ],
+    [
+     "A. Mann",
+     "toast, 'The Printers who were with us last Year'"
+    ],
+    [
+     "Dr. Van Ingen",
+     "toast, 'Thinkers -- the [minds] which magnetize the Press'"
+    ],
+    [
+     "E. Jones",
+     "toast, 'A Bachelor Printer'"
+    ],
+    [
+     "Robert Patterson",
+     "toast, 'The editorial fraternity of this city'"
+    ],
+    [
+     "P. Allen",
+     "toast, 'Faust, Franklin and Morse' (first initial unclear in print)"
+    ],
+    [
+     "Frederick Douglass",
+     "toast, 'Gentlemen of the Rochester Press'"
+    ],
+    [
+     "Wm. Herron",
+     "toast, 'The Age we live in'"
+    ],
+    [
+     "O. Bennet",
+     "toast, 'Franklin -- the great head of the typographical fraternity'"
+    ],
+    [
+     "R. L. B. Clarke",
+     "toast, 'A True Woman'; contributed an ode to Franklin"
+    ],
+    [
+     "H. L. Winants",
+     "toast, 'Mine Host of the Irving'"
+    ],
+    [
+     "H. Cook",
+     "toast, 'Clergymen Printers'"
+    ],
+    [
+     "William Purcell",
+     "toast, 'The Ladies'"
+    ],
+    [
+     "George W. B--ss",
+     "toast, 'The Festival' (surname worn; possibly Bliss)"
+    ],
+    [
+     "L. A. Chichester",
+     "toast, 'The Papers'"
+    ],
+    [
+     "Myron Matthews",
+     "'Devil in the American Office'; toast on the electric spark and the lightning telegraph"
+    ],
+    [
+     "J. J. Owen",
+     "toast, 'The Press -- the only sun whose light can dispel the darkness of error'"
+    ],
+    [
+     "C. T. Wilson",
+     "toast, 'The Press -- the Luminary of the World'"
+    ],
+    [
+     "Cooper",
+     "toast, 'The Journeyman Printers of Rochester' (first name not printed)"
+    ],
+    [
+     "J. W. Bealshaw",
+     "toast, 'Fisherman Printers' (surname unclear in print)"
+    ],
+    [
+     "W. S. Falls",
+     "toast to the memory of W. A. Wells, a Printer of the Old School"
+    ],
+    [
+     "R. A. Law",
+     "toast, 'Franklin and Morse -- the [one] tamed the Thunderbolt'"
+    ],
+    [
+     "P. Fogg",
+     "additional toast printed the following week (NS_1848-01-28 p2): 'The war spirit -- tamed by the press'"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 2,
+   "name": "Anti-Slavery Fair at West Winfield (announced)",
+   "date": "1848-01-26",
+   "location": "West Winfield, New York",
+   "description": "'Anti-Slavery Fair at West Winfield, on January 26th and 27th, 1848. -- The friends of the slave are invited to make preparations for our next Fair, to be held at the time above mentioned. There is no time to be lost. The slave is still toiling, toiling, toiling, -- hopeless, helpless, desolate. -- Woman, -- aye, a million of women are even now given up to the tender mercies of the palefaced oppressor...' Charles Lenox Remond, E. D. Hudson, Lewis Hayden, J. C. Hathaway, and other speakers will be present. Signed by sixteen women: Dolly Thomas, Miranda A. E. Green, Sarah Guild, Phebe Backus, Hannah Bucklin, Laura Eldred, Emeline Murdock, Julia Ann Exton, Henrietta Bisby, Laura Turner, Eveline Rider, Sophloro Thomas (as printed; possibly Sophrona), Alpha Thomas, Laura Colburn, Susan Brown, Amanda Harding. An editorial note adds that the editors expect to be present at this fair on the 26th and 27th.",
+   "attendees": [
+    [
+     "Dolly Thomas",
+     "signer of the call for the West Winfield Anti-Slavery Fair"
+    ],
+    [
+     "Miranda A. E. Green",
+     "signer of the call"
+    ],
+    [
+     "Sarah Guild",
+     "signer of the call"
+    ],
+    [
+     "Phebe Backus",
+     "signer of the call"
+    ],
+    [
+     "Hannah Bucklin",
+     "signer of the call"
+    ],
+    [
+     "Laura Eldred",
+     "signer of the call"
+    ],
+    [
+     "Emeline Murdock",
+     "signer of the call"
+    ],
+    [
+     "Julia Ann Exton",
+     "signer of the call"
+    ],
+    [
+     "Henrietta Bisby",
+     "signer of the call"
+    ],
+    [
+     "Laura Turner",
+     "signer of the call"
+    ],
+    [
+     "Eveline Rider",
+     "signer of the call"
+    ],
+    [
+     "Sophloro Thomas",
+     "signer of the call (first name as printed; possibly Sophrona)"
+    ],
+    [
+     "Alpha Thomas",
+     "signer of the call"
+    ],
+    [
+     "Laura Colburn",
+     "signer of the call"
+    ],
+    [
+     "Susan Brown",
+     "signer of the call"
+    ],
+    [
+     "Amanda Harding",
+     "signer of the call"
+    ],
+    [
+     "Charles Lenox Remond",
+     "expected speaker"
+    ],
+    [
+     "E. D. Hudson",
+     "expected speaker"
+    ],
+    [
+     "Lewis Hayden",
+     "expected speaker"
+    ],
+    [
+     "J. C. Hathaway",
+     "expected speaker; also to attend per his Massachusetts tour notice"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 2,
+   "name": "Twelfth Annual Anti-Slavery Fair of the women of Pawtucket, Rhode Island (announced)",
+   "date": "1848-02-09",
+   "location": "Hall of the Pawtucket Hotel, Pawtucket, Rhode Island",
+   "description": "'Pawtucket Fair. -- The Anti-Slavery women of Pawtucket, Rhode Island, will hold their Twelfth Annual Fair, at the Hall of the Pawtucket Hotel, on the 9th and 10th of February, commencing at 10 o'clock, A.M.' A larger attendance than ever is hoped for from the tried and true; tables will be covered in tempting abundance with the usual supply of articles for use or ornament, together with refreshments. 'The call is universal. Come, then, for the slaves' sake!' Signed by fifteen women: Rebecca Mitchell, Elizabeth Shove, Mary Peck, Maria Dexter, Lydia Winn, I. J. Adams, Mary A. Kenyon, Ester Reed, Susan M. Shove, Abby Burgess, Avis Sisson, Amy Dexter, Alura Crowningshield, Susan Sisson, Ruth Sisson. (The notice was reprinted, with the same signers, in NS_1848-01-28 p2.)",
+   "attendees": [
+    [
+     "Rebecca Mitchell",
+     "signer of the call for the Pawtucket Anti-Slavery Fair"
+    ],
+    [
+     "Elizabeth Shove",
+     "signer of the call"
+    ],
+    [
+     "Mary Peck",
+     "signer of the call"
+    ],
+    [
+     "Maria Dexter",
+     "signer of the call"
+    ],
+    [
+     "Lydia Winn",
+     "signer of the call"
+    ],
+    [
+     "I. J. Adams",
+     "signer of the call (initials as printed)"
+    ],
+    [
+     "Mary A. Kenyon",
+     "signer of the call"
+    ],
+    [
+     "Ester Reed",
+     "signer of the call (as printed)"
+    ],
+    [
+     "Susan M. Shove",
+     "signer of the call"
+    ],
+    [
+     "Abby Burgess",
+     "signer of the call"
+    ],
+    [
+     "Avis Sisson",
+     "signer of the call"
+    ],
+    [
+     "Amy Dexter",
+     "signer of the call"
+    ],
+    [
+     "Alura Crowningshield",
+     "signer of the call"
+    ],
+    [
+     "Susan Sisson",
+     "signer of the call"
+    ],
+    [
+     "Ruth Sisson",
+     "signer of the call"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 3,
+   "name": "Death of Eliza A. Cooper of Williamson",
+   "date": "1847-12-21",
+   "location": "Williamson, Wayne County, New York",
+   "description": "Death notice: 'In Williamson, Wayne county, New York, on the morning of the 21st of December, of typhus fever, Eliza A., youngest daughter of Griffith M. and Eliza M. Cooper, aged 20 years 6 months and 8 days.' She is evidently the member of the Williamson sewing company whose fatal illness was reported in the Rochester Ladies' Anti-Slavery Society fair acknowledgment (NS_1848-01-14 p2); her father Griffith M. Cooper sat on the Western New York Anti-Slavery Society executive committee.",
+   "attendees": [
+    [
+     "Eliza A. Cooper",
+     "died December 21, 1847, of typhus fever, aged 20 years 6 months 8 days"
+    ],
+    [
+     "Griffith M. Cooper",
+     "father of the deceased"
+    ],
+    [
+     "Eliza M. Cooper",
+     "mother of the deceased"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-21",
+   "page": 3,
+   "name": "Death of Joseph Cassey of Philadelphia",
+   "date": null,
+   "location": "Philadelphia, Pennsylvania",
+   "description": "Death notice, from the Pennsylvania Freeman: 'On Monday night at 12 o'clock, of apoplexy, Joseph Cassey, of this city, in the 59th year of his age. Mr. Cassey was a most respectable citizen, and in his worldly circumstances one of the most prosperous and wealthy of the oppressed class in Philadelphia. He was the first agent of the Liberator in this city, and in the earlier stages of the cause, was among Mr. Garrison's most zealous co-laborers and effective friends. He has left an amiable and interesting family, consisting of a wife and six children, to mourn his loss.' Cassey had just been named to the Philadelphia section of the colored college committee of twenty-five printed on page 1 of this same issue.",
+   "attendees": [
+    [
+     "Joseph Cassey",
+     "died of apoplexy in his 59th year; first Philadelphia agent of the Liberator; among Garrison's most zealous co-laborers"
+    ],
+    [
+     "Wm. Lloyd Garrison",
+     "named in the notice as one whose earliest co-laborers included Cassey (printed as Mr. Garrison)"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 1,
+   "name": "Fourteenth National Anti-Slavery Bazaar, Boston",
+   "date": null,
+   "location": "Faneuil Hall, Boston, Massachusetts",
+   "description": "Full report of the fourteenth National Anti-Slavery Bazaar, held in Faneuil Hall and closing at the new year; receipts four thousand three hundred dollars. The foremost of the thirty towns cooperating were Cambridge, Worcester, Lynn, Plymouth, Dedham, New Bedford, Concord, Weymouth, Hingham and Brookfield, with effectual aid also from the State and city of New York and contributions from the friends in Western New York. Visitors could look on 'Garrison, and Phillips, and Francis Jackson, Edmund Quincy, and Henry C. [Wright], and Samuel May, and Pillsbury, Foster, and Stone, and Doug[lass], Buffum, and Parker, and Cha[pman]' (line ends worn). A few weeks before the opening, the Boston Female Anti-Slavery Society held its annual meeting and commended the Bazaar to friendly congregations; members of the congregations of Rev. James Freeman Clarke and Rev. Theodore Parker each furnished a table, both ministers cheering the effort. Fifty friends united to raise fifty dollars for the Cork table-cover, which fell to the lot of John T. Hilton, 'a man of color, a devoted abolitionist, and a member of the executive board of the Massachusetts Anti-Slavery Society from the earliest days of the cause,' who had promptly aided Wm. Lloyd Garrison at the commencement of the Liberator. Dr. Nichol and Rev. Mr. Hincks, editor of the London Inquirer, were welcomed; vocal and instrumental music was furnished by members of Mr. Channing's congregation through the exertions of Mr. Withington, and Mr. Chickering sent an admirable piano forte from his celebrated manufactory. Among donors acknowledged: the Webbs, the Haughtons and the Allens of Dublin; the Jenningses, the Mannixes, the Varinas, the Roches, the Beamishes and the Whites of Cork; Esther Bright of Rochdale, sister of John Bright; Mrs. Moore, Mrs. Cobden and Miss Woolley of Manchester; the Nicholsons and the Peiles; Mr. Lupton of Leeds; the Browns and the Trends [as printed] of Bridgewater; and helpers Messrs. Smith and Weston, Jenkins, Wellington of Lexington, Brigham of Abington, and friends of Providence, Bridgewater and West Roxbury. Signed Maria Weston Chapman. The reference in the report to the anti-slavery women of thirty towns and the Liberty Bell accompanies an appeal for the Liberator and the National Anti-Slavery Standard.",
+   "attendees": [
+    [
+     "Maria Weston Chapman",
+     "signed the report of the Bazaar"
+    ],
+    [
+     "John T. Hilton",
+     "received the Cork table-cover raised for by fifty friends; member of the executive board of the Massachusetts Anti-Slavery Society from the earliest days of the cause"
+    ],
+    [
+     "Wm. Lloyd Garrison",
+     "present among the anti-slavery leaders; his first lecture to the people of color in Boston recalled in the report"
+    ],
+    [
+     "Phillips",
+     "named among the anti-slavery leaders to be seen at the Bazaar (Wendell Phillips)"
+    ],
+    [
+     "Francis Jackson",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Edmund Quincy",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Henry C. Wright",
+     "named among the anti-slavery leaders at the Bazaar (surname partly worn in the copy)"
+    ],
+    [
+     "Samuel May",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Pillsbury",
+     "named among the anti-slavery leaders at the Bazaar (Parker Pillsbury)"
+    ],
+    [
+     "Foster",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Stone",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Douglass",
+     "named among the anti-slavery leaders at the Bazaar (line worn; Frederick Douglass)"
+    ],
+    [
+     "Buffum",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Parker",
+     "named among the anti-slavery leaders at the Bazaar"
+    ],
+    [
+     "Rev. James Freeman Clarke",
+     "his congregation furnished a table; cheered and encouraged the effort"
+    ],
+    [
+     "Rev. Theodore Parker",
+     "his congregation furnished a table; cheered and encouraged the effort"
+    ],
+    [
+     "Dr. Nichol",
+     "welcomed as a gifted and excellent friend from abroad"
+    ],
+    [
+     "Rev. Mr. Hincks",
+     "editor of the London Inquirer, welcomed with special gratitude"
+    ],
+    [
+     "Mr. Withington",
+     "arranged the vocal and instrumental music by members of Mr. Channing's congregation"
+    ],
+    [
+     "Mr. Chickering",
+     "sent an admirable piano forte from his celebrated manufactory"
+    ],
+    [
+     "Esther Bright",
+     "of Rochdale, forwarded valuable donations; sister of John Bright"
+    ],
+    [
+     "Mrs. Moore",
+     "of Manchester, energetic sympathizer for the Bazaar"
+    ],
+    [
+     "Mrs. Cobden",
+     "of Manchester, energetic sympathizer for the Bazaar"
+    ],
+    [
+     "Miss Woolley",
+     "of Manchester, energetic sympathizer for the Bazaar"
+    ],
+    [
+     "Mr. Lupton",
+     "of Leeds, forwarded the box from Leeds"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "name": "Western New York Anti-Slavery Society Executive Committee -- meeting of January 19 and appointments",
+   "date": "1848-01-19",
+   "location": "Rochester, New York",
+   "description": "'Western New York Anti-Slavery Society. -- At a meeting of the Executive Committee, Jan. 19th, 1848, Joseph C. Hathaway [and Charles] Lenox Remond were appointed [agents/lecturers] for one year. [The Com]mittee will meet on Tuesday evening, Feb. 1st., at the house of John [Kedzie, No.] 35, North Fitzhugh st., Rochester. [A ful]l attendance is requested. W. C. Nell, Rec. Sec.' (Bracketed words are cut at the column edge but the sense is unambiguous.)",
+   "attendees": [
+    [
+     "Joseph C. Hathaway",
+     "appointed by the Executive Committee for one year"
+    ],
+    [
+     "Charles Lenox Remond",
+     "appointed by the Executive Committee for one year"
+    ],
+    [
+     "John Kedzie",
+     "next committee meeting, February 1, at his house, 35 North Fitzhugh Street"
+    ],
+    [
+     "William C. Nell",
+     "Recording Secretary; signed the notice"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "name": "Ladies' Levee in Philo Hall for the benefit of the Mystery (announced)",
+   "date": null,
+   "location": "Philo Hall, Pittsburgh, Pennsylvania",
+   "description": "From M. R. Delany's editorial correspondence: 'There is, on next Tuesday, the 18th, a Levee to be held in Philo Hall, in this [city], for the benefit of the Mystery. This is the divine work of the Ladies. God bless them!' No individual ladies are named.",
+   "attendees": [
+    [
+     "M. R. Delany",
+     "reported the levee in his editorial correspondence from Pittsburgh"
+    ]
+   ]
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 4,
+   "name": "American Baptist Free Mission Society -- special meeting of the Board of Trustees and officer roster",
+   "date": "1847-12-15",
+   "location": "Utica, New York",
+   "description": "Address 'To the Baptists of the United States, and the Friends of a Pure Gospel everywhere,' stating that at a special meeting of the Board of Trustees of the American Baptist Free Mission Society, held in Utica, N.Y., Dec. 15, 1847, the undersigned was invited to prepare a full statement of the origin, history, designs, and principles of the society -- an anti-slavery missionary body which admits no slaveholders and refuses fellowship with the compromising American Baptist Missionary Union. The officers and trustees are printed in full: President, Elder A. Post, Montrose, Pa.; Vice-Presidents, Dr. J. Trevor, Wm. A. Tweed Dale, Elder S. White, New York; Deacon Wm. Goding, Massachusetts; Elder M. D. Miller, Vermont; Elder A. T. Foss, New Hampshire; J. W. Sawyer, H. Hawes, Maine; George Lyon, Connecticut; Elder Wm. H. Brisbane, New Jersey; Samuel Aaron, Pennsylvania; Elder W. Walker, Illinois; Elder E. Matthews, Wisconsin. Trustees: Elders W. Tillinghast, S. S. Hayward, E. R. Warren, Brethren George Curtis, J. H. Sterry, L. Lawrence, Z. Brockett, J. Prescott, J. T. Quaiffe, J. B. Price, Isaac S. Ford. Auditors: A. J. Stone, Francis Childs. Corresponding Secretary: Elder C. P. Grosvenor, Utica, N.Y. Recording Secretary: George F. Post, New Berlin, N.Y. Treasurer: John N. Barbour, Boston, Mass. Assistant Treasurer: George Curtiss, Utica, N.Y. The society's one foreign mission is in the republic of Hayti: two missionary families at Port-au-Prince consisting of Elders Wm. M. Jones and -- L. Judd (first initial obscured; probably W. L. Judd) and their wives, together with Misses P. T. Young and E. Lake (surname partly obscured); in the home field it aids missions among the fugitives in Canada and employs agents and colporteurs in the West. The statement is signed E. R. Warren, Gen. Ag't Am. Free Mis. Soc'y, Albany, Dec., 1847.",
+   "attendees": [
+    [
+     "Elder A. Post",
+     "President, Montrose, Pa."
+    ],
+    [
+     "Dr. J. Trevor",
+     "Vice-President, New York"
+    ],
+    [
+     "Wm. A. Tweed Dale",
+     "Vice-President, New York"
+    ],
+    [
+     "Elder S. White",
+     "Vice-President, New York"
+    ],
+    [
+     "Deacon Wm. Goding",
+     "Vice-President, Massachusetts"
+    ],
+    [
+     "Elder M. D. Miller",
+     "Vice-President, Vermont"
+    ],
+    [
+     "Elder A. T. Foss",
+     "Vice-President, New Hampshire"
+    ],
+    [
+     "J. W. Sawyer",
+     "Vice-President, Maine"
+    ],
+    [
+     "H. Hawes",
+     "Vice-President, Maine"
+    ],
+    [
+     "George Lyon",
+     "Vice-President, Connecticut"
+    ],
+    [
+     "Elder Wm. H. Brisbane",
+     "Vice-President, New Jersey"
+    ],
+    [
+     "Samuel Aaron",
+     "Vice-President, Pennsylvania"
+    ],
+    [
+     "Elder W. Walker",
+     "Vice-President, Illinois"
+    ],
+    [
+     "Elder E. Matthews",
+     "Vice-President, Wisconsin"
+    ],
+    [
+     "Elder W. Tillinghast",
+     "Trustee"
+    ],
+    [
+     "Elder S. S. Hayward",
+     "Trustee"
+    ],
+    [
+     "Elder E. R. Warren",
+     "Trustee; General Agent of the Society; author of the statement, Albany, Dec. 1847"
+    ],
+    [
+     "George Curtis",
+     "Trustee"
+    ],
+    [
+     "J. H. Sterry",
+     "Trustee"
+    ],
+    [
+     "L. Lawrence",
+     "Trustee"
+    ],
+    [
+     "Z. Brockett",
+     "Trustee"
+    ],
+    [
+     "J. Prescott",
+     "Trustee"
+    ],
+    [
+     "J. T. Quaiffe",
+     "Trustee (as printed)"
+    ],
+    [
+     "J. B. Price",
+     "Trustee"
+    ],
+    [
+     "Isaac S. Ford",
+     "Trustee"
+    ],
+    [
+     "A. J. Stone",
+     "Auditor"
+    ],
+    [
+     "Francis Childs",
+     "Auditor"
+    ],
+    [
+     "Elder C. P. Grosvenor",
+     "Corresponding Secretary, Utica, N.Y."
+    ],
+    [
+     "George F. Post",
+     "Recording Secretary, New Berlin, N.Y."
+    ],
+    [
+     "John N. Barbour",
+     "Treasurer, Boston, Mass."
+    ],
+    [
+     "George Curtiss",
+     "Assistant Treasurer, Utica, N.Y."
+    ],
+    [
+     "Elder Wm. M. Jones",
+     "missionary at Port-au-Prince, Hayti"
+    ],
+    [
+     "Elder L. Judd",
+     "missionary at Port-au-Prince, Hayti (first initial obscured; probably W. L. Judd)"
+    ],
+    [
+     "Miss P. T. Young",
+     "missionary at Port-au-Prince, Hayti"
+    ],
+    [
+     "Miss E. Lake",
+     "missionary at Port-au-Prince, Hayti (surname partly obscured)"
+    ]
+   ]
+  }
+ ],
+ "agents": [
+  {
+   "issue": "NS_1848-01-07",
+   "page": 1,
+   "names": [
+    [
+     "R. F. Walcutt",
+     "North Star agent, 21 Cornhill, Boston, Massachusetts"
+    ],
+    [
+     "Nathan Johnson",
+     "North Star agent, New Bedford, Massachusetts"
+    ],
+    [
+     "Horatio W. Foster",
+     "North Star agent, Lowell, Massachusetts"
+    ],
+    [
+     "James N. Buffum",
+     "North Star agent, Lynn, Massachusetts"
+    ],
+    [
+     "George Evans",
+     "North Star agent, Worcester, Massachusetts"
+    ],
+    [
+     "Bourne Spooner",
+     "North Star agent, Plymouth, Massachusetts"
+    ],
+    [
+     "Charles H. Seth",
+     "North Star agent, Springfield, Massachusetts (name as printed; OCR/typesetting uncertain)"
+    ],
+    [
+     "David Ruggles",
+     "North Star agent, Northampton, Massachusetts"
+    ],
+    [
+     "Oliver Dennett",
+     "North Star agent, Portland, Maine"
+    ],
+    [
+     "Rowland T. Robinson",
+     "North Star agent, North Ferrisburg, Vermont"
+    ],
+    [
+     "Jonathan Leonard",
+     "North Star agent, Meriden, Connecticut"
+    ],
+    [
+     "Weare Tappan",
+     "North Star agent, Bradford, New Hampshire"
+    ],
+    [
+     "Sydney H. Gay",
+     "North Star agent, 142 Nassau Street, New York"
+    ],
+    [
+     "James McCune Smith",
+     "North Star agent, 93 West Broadway, New York"
+    ],
+    [
+     "Joseph Post",
+     "North Star agent, Westbury, Queen County, New York"
+    ],
+    [
+     "Mary Harper",
+     "North Star agent, Albany, New York"
+    ],
+    [
+     "Elias Doty",
+     "North Star agent, Macedon, New York (new to the list since December 3)"
+    ],
+    [
+     "Amarancy Paine",
+     "North Star agent, Providence, Rhode Island (new to the list since December 3)"
+    ],
+    [
+     "J. M. M'Kim",
+     "North Star agent, 31 North Fifth Street, Philadelphia, Pennsylvania"
+    ],
+    [
+     "G. W. Goines",
+     "North Star agent, 8 Exchange Place, Philadelphia, Pennsylvania"
+    ],
+    [
+     "H. Vashon",
+     "North Star agent, Pittsburg, Pennsylvania (printed 'H. Vashon'; the family's known Pittsburgh agent was J. B. Vashon)"
+    ],
+    [
+     "B. Bown",
+     "North Star agent, Pittsburg, Pennsylvania"
+    ],
+    [
+     "William Whipper",
+     "North Star agent, Columbia, Pennsylvania"
+    ],
+    [
+     "Isaac Roberts",
+     "North Star agent, Norristown, Montgomery County, Pennsylvania"
+    ],
+    [
+     "Jacob L. Paxon",
+     "North Star agent, Norristown, Montgomery County, Pennsylvania"
+    ],
+    [
+     "Christian Donaldson",
+     "North Star agent, Cincinnati, Ohio"
+    ],
+    [
+     "G. W. Carter",
+     "North Star agent, Cincinnati, Ohio"
+    ],
+    [
+     "Valentine Nicholson",
+     "North Star agent, Harveysburgh, Warren County, Ohio"
+    ],
+    [
+     "Samuel Brooke",
+     "North Star agent, Salem, Ohio"
+    ],
+    [
+     "Robert Banks",
+     "North Star agent, Detroit, Michigan"
+    ]
+   ],
+   "note": "The North Star's standing 'List of Agents' as printed on page 1 of the January 7, 1848 issue and repeated unchanged on page 1 of the January 14, 21 and 28 issues. Verified against the page image. Identical to the December 3, 1847 list except for two additions: Elias Doty of Macedon, New York, and Amarancy Paine of Providence, Rhode Island. Notices in these issues also name traveling canvassers: J. C. Hathaway (touring Massachusetts), Henry Watson (Rhode Island), and Charles Lenox Remond and Frederick Douglass lecturing in Victor, Penn Yan and elsewhere."
+  },
+  {
+   "issue": "NS_1848-01-28",
+   "page": 2,
+   "names": [
+    [
+     "Benjamin R. Foster",
+     "authorized North Star agent for Rochester and its vicinity"
+    ]
+   ],
+   "note": "Single-line notice: 'Benjamin R. Foster is our authorized Agent for Rochester and its vicinity.' First name partly cut at the column edge but legible."
+  }
+ ]
+}

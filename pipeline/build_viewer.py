@@ -2,10 +2,10 @@
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
 import sqlite3, json, re, os
 
-DB = os.environ.get("BM_DB", "/tmp/run30/black_metropolis.db")
-OUT = "/tmp/run30/out/1838_black_metropolis_viewer.html"
-TPL = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/viewer_template.html"
-ORG_ALIASES = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/org_aliases.json"
+DB = os.environ.get("BM_DB", "/tmp/black_metropolis.db")
+OUT = "/tmp/repo/index.html"
+TPL = "/tmp/repo/pipeline/viewer_template.html"
+ORG_ALIASES = "/tmp/repo/pipeline/org_aliases.json"
 
 # organization name normalization: fold known spelling/punctuation variants of the same
 # org into one canonical display name before counting/deduping. Curated by Michiko; see
@@ -132,14 +132,14 @@ for (isl, pg), ids in cooc.items():
             edges[k] = edges.get(k, 0) + 1
 
 try:
-    urls = json.load(open("/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pipeline/issue_urls.json"))
+    urls = json.load(open("/tmp/repo/pipeline/issue_urls.json"))
 except FileNotFoundError:
     urls = {}
 
 # which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
 # any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
 import glob as _glob, os as _os
-PAGES_DIR = "/sessions/dazzling-dreamy-hopper/mnt/Newspapers/1838 Names Database/pages"
+PAGES_DIR = "/tmp/repo/pages"
 jpeg_slugs = sorted({_os.path.basename(p).rsplit("_p", 1)[0]
                       for p in _glob.glob(f"{PAGES_DIR}/*_p*.jpg")})
 
@@ -258,8 +258,24 @@ if has_table("blog_appearances"):
         if pid in people:
             people[pid].setdefault("blog", []).append({"slug": slug, "s": snippet})
 
+
+# 1838 Mob Attack Statistics (Self-Defense & Resistance sheet) -- per-person entries with
+# per-entry source links; the main-source footer credit links to /attackstats.
+mobstats_meta = {}
+if has_table("mobstats"):
+    import json as _json
+    for mid, attack, loc, typ, cat, desc, means, outcome, defenders, srcs in con.execute(
+            "SELECT id,attack,location,type,category,description,means,outcome,defenders,sources FROM mobstats"):
+        mobstats_meta[mid] = {"a": attack, "l": loc, "ty": typ, "cat": cat, "d": desc,
+                              "m": means, "o": outcome, "df": defenders,
+                              "src": _json.loads(srcs or "[]")}
+if has_table("mobstats_people"):
+    for pid, mid in con.execute("SELECT person_id, entry_id FROM mobstats_people"):
+        if pid in people:
+            people[pid].setdefault("mobstats", []).append(mid)
+
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap") or p.get("blog")}
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap") or p.get("blog") or p.get("mobstats")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 
@@ -271,7 +287,8 @@ data = {"people": list(people.values()),
         "jpegIssues": jpeg_slugs,
         "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people],
                   "src": {str(p): s for p, s in o["src"].items() if p in people}} for o in orgs_out],
-        "blogs": blogs_meta}
+        "blogs": blogs_meta,
+        "mobstats": mobstats_meta}
 
 import datetime
 tpl = open(TPL, encoding="utf-8").read()
