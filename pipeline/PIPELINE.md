@@ -153,7 +153,7 @@ Michiko's identification (not a standalone person) — and John Myers — body s
 "Arrival from Harford County", p.434, a new ugrr person — this way, as curated mid-narrative links
 exactly like Sarah Ash.)
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
-load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> apply_merges.py ->
+load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> split_swilliams.py -> apply_merges.py ->
 load_nolibs.py -> load_ugrr.py -> load_blogs.py -> load_mobstats.py -> apply_merges.py (2nd pass) -> find_merge_candidates.py -> build_viewer.py.
 apply_merges runs TWICE: pass 1 folds the winch/census/newspaper/coppin/storymap groups so load_nolibs/
 load_ugrr resolve against canonical names; pass 2 (after load_blogs) folds the blog-source groups, since
@@ -201,6 +201,16 @@ of the "All connections" map (they have no person-person edges) but remain searc
 record onto a dedicated "Nichols, Samuel" winch person, so only the Female Vigilant Committee note follows
 the merge of "Newton, Mary" -> "Mary Lewton" (merges.json). Idempotent; runs BEFORE apply_merges; no-op once
 "Newton, Mary" has been merged away.
+
+## Samuel Williams split (added 2026-08-14)
+`pipeline/split_swilliams.py` -- the census import had grouped five same-named households under
+one Samuel Williams. Michiko's ruling: every record is its own individual EXCEPT the 1847
+porter-house keeper at 235 S. 7th & 29 Washington (row 724), who IS the Boyer House Tavern owner
+(Mob Attack Statistics m07/m61) and Still's UGRR Samuel Williams (p.126) -- all on the kept merged
+record (merges.json keep id 351596). Splits off 1838/3167 (Pine ab Quince), 1847/2482 (Guilelmina),
+1847/3967 (Queen St), 1847/3968 (Cedar St) as individual census people. Idempotent; runs with
+split_nichols BEFORE apply_merges. Expect these to reappear in find_merge_candidates as same-name
+candidates forever -- deliberate, do not re-merge.
 
 ## The North Star -- OCR recipe (added 2026-08-05, differs from every other paper)
 `Newspapers/North Star/` holds 135 issues, 1847-12-03 to 1851-04-17 (Digital Howard @ Howard
