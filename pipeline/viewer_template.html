@@ -324,7 +324,7 @@ function activity(p){return (p.mentions?.length||0)+(p.events?.length||0)*2+(p.a
 // hubs -- drawn side by side in ego views and spring-bound together on the full map --
 // instead of centering the event and letting the org drift to the periphery.
 const ORG_EVENT_PAIR = (()=>{   // oi -> eid, and eid -> oi
-  const o2e=new Map(), e2o=new Map();
+  const o2e=new Map(), e2o=new Map(), same=new Set();
   (DATA.orgs||[]).forEach((o,oi)=>{
     const mem=new Set(o.members);
     let best=null, bestShared=0;
@@ -335,9 +335,15 @@ const ORG_EVENT_PAIR = (()=>{   // oi -> eid, and eid -> oi
     }
     if(best && bestShared>=5 && (bestShared>=0.5*Math.min(o.members.length,best.att.length) || bestShared>=12)){
       o2e.set(oi,best.id); if(!e2o.has(best.id)) e2o.set(best.id,oi);
+      // same-entity check: an org whose every membership record traces to THIS one event
+      // is just the event's own roster re-listed (e.g. "Committee of twenty-five") -- it
+      // gets ONE shared hub, not a twin. Orgs with their own life beyond the event (the
+      // society behind a fair, a lodge, a church) keep the side-by-side twin hubs.
+      const nm=x=>String(x).toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim().replace(/^the /,'');
+      if(nm(best.name).startsWith(nm(o.name))) same.add(oi);
     }
   });
-  return {o2e,e2o};
+  return {o2e,e2o,same};
 })();
 const sorted = [...P.values()].sort((x,y)=> (activity(y)-activity(x)) || ((y.refs?.length||0)-(x.refs?.length||0)) || x.name.localeCompare(y.name));
 
@@ -665,7 +671,8 @@ function buildEventGraph(eid){
   function addNode(id,type,label,r){ if(nmap.has(type+id))return nmap.get(type+id);
     const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,z:0,vx:0,vy:0,vz:0};
     nmap.set(type+id,n); nodes.push(n); return n;}
-  const oi = ORG_EVENT_PAIR.e2o.has(eid) ? ORG_EVENT_PAIR.e2o.get(eid) : -1;
+  const oi0 = ORG_EVENT_PAIR.e2o.has(eid) ? ORG_EVENT_PAIR.e2o.get(eid) : -1;
+  const oi = (oi0>=0 && !ORG_EVENT_PAIR.same.has(oi0)) ? oi0 : -1;   // same-entity org: one hub only
   const center=addNode(eid,'e',e.name,15);
   // paired org: both hubs sit in the center, side by side, both fixed
   let orgHub=null;
@@ -727,7 +734,7 @@ function buildOrgGraph(oi){
   function addNode(id,type,label,r){ if(nmap.has(type+id))return nmap.get(type+id);
     const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,z:0,vx:0,vy:0,vz:0};
     nmap.set(type+id,n); nodes.push(n); return n;}
-  const peid = ORG_EVENT_PAIR.o2e.has(oi) ? ORG_EVENT_PAIR.o2e.get(oi) : -1;
+  const peid = (ORG_EVENT_PAIR.o2e.has(oi) && !ORG_EVENT_PAIR.same.has(oi)) ? ORG_EVENT_PAIR.o2e.get(oi) : -1;
   const center=addNode('g'+oi,'o',o.name,15); center.org=o.name;
   let evHub=null;
   if(peid>=0 && E.has(peid)){ const pe=E.get(peid);
@@ -949,7 +956,7 @@ function repulse(a,b){
     if(!a.fixed){a.vx-=fx;a.vy-=fy;a.vz-=fz;} if(!b.fixed){b.vx+=fx;b.vy+=fy;b.vz+=fz;}}
 }
 function tick(){
-  const SP = window._fullView ? 4.3 : 1;   // spacing multiplier for the full map
+  const SP = window._fullView ? 5.1 : 1;   // spacing multiplier for the full map
   const fv = !!window._fullView;
   for(const l of links){ const dx=l.t.x-l.s.x,dy=l.t.y-l.s.y,dz=(l.t.z||0)-(l.s.z||0),
     d=Math.hypot(dx,dy,dz)||1;
@@ -1092,6 +1099,7 @@ function buildFullGraph(){
   // organization nodes
   (DATA.orgs||[]).forEach((o,oi)=>{
     if(o.members.length<3) return;
+    if(ORG_EVENT_PAIR.same.has(oi)) return;   // event-roster org: its event node already represents it
     const memLinks=[];
     for(const q of o.members){
       const pn = core ? nmap.get('p'+q) : (nmap.get('p'+q)||addP(q));  // core: orgs link only to people already on the map
