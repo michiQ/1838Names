@@ -936,9 +936,13 @@
    {
     "name": "Samuel Williams",
     "source": "mobstats"
+   },
+   {
+    "name": "Williams, Samuel",
+    "source": "ugrr"
    }
   ],
-  "note": "Samuel Williams -- Boyer House Tavern owner (Mob Attack Statistics m07/m61) = the census Samuel Williams whose 1847 record is the porter house at 235 S. 7th (& 29 Washington). Confirmed by Michiko 2026-08-14 (she cited '245 S. 7th'; the census row reads 235 S. 7th -- only S. 7th Samuel Williams). Deliberately EXCLUDES the ugrr Williams, Samuel and blog Samuel Williams."
+  "note": "Samuel Williams -- Boyer House Tavern owner (Mob Attack Statistics m07/m61) = the census Samuel Williams whose 1847 record is the porter house at 235 S. 7th (& 29 Washington). Confirmed by Michiko 2026-08-14 (she cited '245 S. 7th'; the census row reads 235 S. 7th -- only S. 7th Samuel Williams). Deliberately EXCLUDES the ugrr Williams, Samuel and blog Samuel Williams. 2026-08-14 QA: Michiko also confirmed the William Still Underground Railroad 'Samuel Williams' (chapter at p.126) is the same man -- ugrr record folded in."
  },
  {
   "keep": {
