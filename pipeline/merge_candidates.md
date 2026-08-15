@@ -102,7 +102,6 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Freeman, Charles** (winch, 3 appearances, 1 Winch refs) ↔ **Freeman, Charles M** (census, 3 appearances, 1 census records)
 - [HIGH] **Freeman, Charles** (winch, 3 appearances, 1 Winch refs) ↔ **Freeman, Charles M** (census, 3 appearances, 1 census records)
 - [HIGH] **Freeman, William G** (census, 3 appearances, 1 census records) ↔ **Freeman, William** (coppin)
-- [HIGH] **Gardner, Charles W.** (winch, 18 appearances, 32 Winch refs) ↔ **Charles Gardner** (storymap, 1 appearances)
 - [HIGH] **Gardner, Margaretta** (winch, 1 Winch refs) ↔ **GARDNER, MARGARET** (census, 1 census records)
 - [HIGH] **J. Gardner** (newspaper, 1 appearances) ↔ **GARDNER, JOHN** (census, 4 appearances, 2 census records)
 - [HIGH] **J. Gardner** (newspaper, 1 appearances) ↔ **Gardner, Jacob** (census, 1 appearances, 1 census records)
@@ -124,3 +123,4 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Hart, John L** (census, 1 census records) ↔ **Hart, John** (1820directory, 1 1820 directory records)
 - [HIGH] **Henderson, Edward** (winch, 1 Winch refs, 2 census records) ↔ **HENDERSON, E J** (census, 1 census records)
 - [HIGH] **Henry, George** (winch, 5 appearances, 1 Winch refs) ↔ **HENRY, GEORGE W** (census, 5 appearances, 2 census records)
+- [HIGH] **Henry, J.** (winch, 11 appearances, 1 Winch refs) ↔ **HENRY, JOSEPH** (census, 2 appearances, 2 census records)

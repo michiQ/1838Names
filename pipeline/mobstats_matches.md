@@ -1,6 +1,6 @@
 # 1838 Mob Attack Statistics -- name matches to confirm
 
-62 sheet rows loaded. Of 50 unique named defenders: 31 linked to existing people, 8 created as new mobstats people, 11 held as ambiguous (NOT linked -- confirm below).
+62 sheet rows loaded. Of 50 unique named defenders: 29 linked to existing people, 10 created as new mobstats people, 11 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json to attach the mob-stats record to the right person:
@@ -38,7 +38,6 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - Joseph Stewart -> Stewart, Joseph [census] #355329
 - Martha Dunlap -> Martha Dunlap [storymap] #359730
 - Martha Thompson -> Thompson, Martha [census] #357043
-- Mary A. Hill -> Hill, Mary [census] #355963
 - Mary High -> High, Mary [census] #355311
 - Moses Morton -> MORTON, MOSES [census] #353434
 - Perry Chambers -> Chambers, Perry [census] #356474
@@ -47,7 +46,6 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - Thomas Shipley -> Thomas Shipley [newspaper] #148703
 - William Sammons -> Sammons, William [census] #355890
 - William Stevenson -> Stevenson, William [winch] #2489
-- William Watson -> Watson, William [1820directory] #358635
 - Wm Rice -> RICE, WILLIAM [census] #353652
 - Wm. Burke -> BURKE, WILLIAM [census] #352100
 
@@ -58,6 +56,8 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - Jacob Battis
 - James Braddock
 - Leah Robbins
+- Mary A. Hill
 - R McEwen
 - Samuel Gold
 - Samuel Madison
+- William Watson

@@ -125,10 +125,18 @@ def get_or_create_mob(name):
                       (name, norm(name)))
     return cur.lastrowid
 
+# Names Michiko has ruled must NOT be linked to any existing record (2026-08-14):
+# the Boyer House William Watson is NOT the 1820-directory Watson, William, and the
+# Arch Street Prison Mary A. Hill is NOT the census Hill, Mary. They stay mobstats-only.
+NOLINK = {"William Watson", "Mary A. Hill"}
+
 data = json.load(open(SRC, encoding="utf-8"))
 uniq_names = sorted({n for e in data["entries"] for n in e["names"]})
 resolved, ambiguous, created, linked = {}, [], [], []
 for nm in uniq_names:
+    if nm in NOLINK:
+        resolved[nm] = get_or_create_mob(nm); created.append(nm)
+        continue
     kind, val = match(nm)
     if kind == "one":
         resolved[nm] = val; linked.append(nm)
