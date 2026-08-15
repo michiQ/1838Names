@@ -333,7 +333,7 @@ const ORG_EVENT_PAIR = (()=>{   // oi -> eid, and eid -> oi
       let shared=0; for(const [q] of e.att) if(mem.has(q)) shared++;
       if(shared>bestShared){ bestShared=shared; best=e; }
     }
-    if(best && bestShared>=5 && bestShared>=0.6*Math.min(o.members.length,best.att.length)){
+    if(best && bestShared>=5 && (bestShared>=0.5*Math.min(o.members.length,best.att.length) || bestShared>=12)){
       o2e.set(oi,best.id); if(!e2o.has(best.id)) e2o.set(best.id,oi);
     }
   });
@@ -962,7 +962,7 @@ function tick(){
     // PP_GAP_BASE target so the core people who DO share direct connections read as a
     // clean cluster rather than a loose scatter. Everything else (ego views, org/event-
     // to-org/event, etc.) keeps the original width-based formula.
-    const target = l.hub ? (l.s.r+l.t.r+26)
+    const target = l.hub ? (l.s.r+l.t.r+120)
       : isPO ? (l.primary ? PRIMARY_GAP_BASE : SECONDARY_GAP_BASE)*SP
       : isPP ? PP_GAP_BASE*SP
       : (60+240/(l.w+1))*SP;
@@ -979,7 +979,10 @@ function tick(){
     const stiff = l.hub ? 0.14 : isPO ? (l.primary ? 0.02 : 0.0025) : isPP ? 0.015 : 0.004;
     const f=(d-target)*stiff*(l.faint?0.4:1);
     const fx=dx/d*f,fy=dy/d*f,fz=dz/d*f;
-    if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;} }
+    if(!l.s.fixed){l.s.vx+=fx;l.s.vy+=fy;l.s.vz+=fz;} if(!l.t.fixed){l.t.vx-=fx;l.t.vy-=fy;l.t.vz-=fz;}
+    // twin hubs: also collapse their depth difference so the pair reads side-by-side on
+    // screen instead of one circle stacked behind the other ("duplication" look)
+    if(l.hub){ if(!l.s.fixed)l.s.vz+=dz*0.06; if(!l.t.fixed)l.t.vz-=dz*0.06; } }
   if(nodes.length<=160){
     for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++) repulse(nodes[i],nodes[j]);
   } else {
