@@ -72,7 +72,10 @@ Before pushing ANY change to viewer_template.html, run `node pipeline/smoke_test
 The full-network map used to run community detection + a 260-tick force settle over ~1131
 nodes synchronously every time it opened, which froze the tab (~0.5-5s on real devices).
 Three viewer-only changes fixed this (no data/DB change; every other view untouched):
-- **Baked layout (instant first open):** `pipeline/precompute_fullmap.js` (headless Chromium)
+- **Baked layout (instant first open):** `pipeline/bake_fullmap_node.js` (pure Node, no browser --
+  added 2026-08-14 because the cloud sandbox can't install Chromium: ARM + no root + proxied apt;
+  it reuses the smoke_test DOM stub and drives buildFullGraph+tick directly, ~15s) or the original
+  `pipeline/precompute_fullmap.js` (headless Chromium)
   opens the built viewer, lets the map settle, and dumps the settled positions/communities to
   `pipeline/fullmap_layout.json` (~56KB). `build_viewer.py` injects that file into the
   `/*__FULLMAP__*/null` placeholder as `BAKED_FULLMAP`; the viewer restores it on first open and
@@ -86,6 +89,15 @@ Three viewer-only changes fixed this (no data/DB change; every other view untouc
   so reopening the map is instant even without the baked file.
 build_viewer.py stays runnable with NO Playwright (it just reads the JSON if present); only the
 optional refresh script needs it.
+
+## Twin-hub event/org co-centering (added 2026-08-14)
+When an event and an organization share most of their people (>=5 shared and >=60% of the smaller
+roster -- computed in-viewer as ORG_EVENT_PAIR), they are twin hubs: ego views draw BOTH fixed
+side-by-side in the center (event left, org right, members ringed around both), and the full map
+binds them with a short stiff spring (link flag `hub`) so the org no longer drifts to the
+periphery of its own cluster (Michiko 2026-08-14; 69 pairs currently). After ANY change to hub
+pairing or forces, re-run the bake (bake_fullmap_node.js) then build_viewer.py again, or the map
+falls back to live settle.
 
 ## Person merges
 `pipeline/merges.json` is the curated list of duplicate-person merges (e.g. "J. J. G. Bias" = "Bias, James J. G."). `apply_merges.py` applies it (idempotent): reassigns appearances/references/census links to the kept person, records the other spellings in `people.aliases`, dedupes appearances. It MUST run after the other imports (they recreate alias people) and before build_viewer. When Michiko identifies new duplicates, append a group to merges.json — never edit the DB by hand.
