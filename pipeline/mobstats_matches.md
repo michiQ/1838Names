@@ -1,6 +1,6 @@
 # 1838 Mob Attack Statistics -- name matches to confirm
 
-62 sheet rows loaded. Of 50 unique named defenders: 29 linked to existing people, 10 created as new mobstats people, 11 held as ambiguous (NOT linked -- confirm below).
+62 sheet rows loaded. Of 50 unique named defenders: 30 linked to existing people, 10 created as new mobstats people, 10 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json to attach the mob-stats record to the right person:
@@ -9,7 +9,6 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - **Charles Brown** (mobstats)  <->  Brown, Charles#359, Brown, Charles#360, Brown, Charles#351623, BROWN, CHARLES#352044, Brown, Charles#357456
 - **Charles Gardner** (mobstats)  <->  Gardner, Charles W.#1107, GARDNER, CHAS W#352611, Charles Gardner#359716, Charles Gardner#359922
 - **Daniel Payne** (mobstats)  <->  Payne, Daniel A.#2086, Daniel Payne#359717
-- **James Forten** (mobstats)  <->  Forten, James Jr.#1036, James Forten Sr.#42437, James Forten Jr.#360015
 - **James Williams** (mobstats)  <->  Williams, James#2818, Williams, James#2819, Williams, James W.#2820, James H. Williams#14294, James Williams#19966, WILLIAMS, JAMES#354258, Williams, James#358680, Williams, James H.#359536
 - **Jane Johnson** (mobstats)  <->  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360029
 - **Mary Moore** (mobstats)  <->  Moore, Mary#1932, Moore, Mary#359325
@@ -30,6 +29,7 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - Henry Van Brackle -> Henry Van Brackle [storymap] #359720
 - Horace Wilson -> WILSON, HORACE [census] #354304
 - Jacob Jones -> Jones, Jacob [winch] #1598
+- James Forten -> James Forten Sr. [newspaper] #42437
 - James Gross -> GROSS, JAMES [census] #352735
 - James Henderson -> Henderson, James [winch] #1362
 - Jeremiah Fitzgerald -> FITZGERALD, JEREMIAH [census] #352535
