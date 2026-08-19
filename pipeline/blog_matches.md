@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 189 linked to existing people, 242 created as new blog people, 48 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 187 linked to existing people, 242 created as new blog people, 50 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -28,20 +28,21 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **James Forten, Jr.** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
 - **James Gordon** (blog)  ↔  Gordon, James R.#1182, Gordon, James R#354661
 - **James Needham** (blog)  ↔  Needham, James#1996, Needham, James F.#359342
-- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588
+- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360582
 - **Jehu Jones** (blog)  ↔  Jones, Rev. Jehu#1600, JONES, JEHU#353059
 - **John Bowers** (blog)  ↔  Bowers, John#304, Bowers, John C.#305
 - **John Francis Cook Jr.** (blog)  ↔  Bowers, John C.#305, John Sellers Jr.#358765, John Atkinson Jr.#359641
 - **Jonathan Clarkson Gibbs** (blog)  ↔  Gibbs, Jonathan C.#1135, Gibbs, Rev. Jonathan C.#1136, Jonathan Gibbs#359769
 - **Joseph G. Anderson** (blog)  ↔  Anderson, Joseph#67, Joseph G. Anderson#14303
 - **Joseph Smith** (blog)  ↔  Smith, Joseph#354428, Smith, Joseph#358476
+- **Mary Hill** (blog)  ↔  Hill, Mary#355963, Mary A. Hill#360592
 - **Morris Brown** (blog)  ↔  Brown, Morris Sr.#398, BROWN, MORRIS#352069, Morris Brown#359790
 - **Richard Allen** (blog)  ↔  Allen, Richard#31, Richard Allen#14194, ALLEN, RICHARD#351780, Allen, Richard#357327
 - **Robert Douglass** (blog)  ↔  Robert Douglass#14271, Douglass, Robert#357712
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
-- **Samuel Williams** (blog)  ↔  Williams, Samuel#351596, WILLIAMS, SAMUEL#354264
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#360764
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312
@@ -53,6 +54,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **William Henry Dorsey** (blog)  ↔  Dorsey, William#891, Dorsey, William H.#892, DORSEY, WILLIAM#352432, William Dorsey#359637
 - **William Parker** (blog)  ↔  William Parker#169762, Parker, William#356888, Parker, William#358281
 - **William Still** (blog)  ↔  Still, William#2497, Still, William W.#359472
+- **William Watson** (blog)  ↔  Watson, William#358635, William Watson#360593
 
 ## Newly created as blog-only people (review: merge variants / delete non-subjects)
 e.g. honorific/nickname variants of existing people, or national/modern figures to prune.
