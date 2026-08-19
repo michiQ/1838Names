@@ -991,5 +991,26 @@
    }
   ],
   "note": "Benjamin Jackson -- California House Tavern owner (Mob Attack Statistics m08/m61) = the 1847 census Benjamin F Jackson, Bedford Street, porter. Confirmed by Michiko 2026-08-14, who directed this go to the 1847 census record and explicitly NOT to the Winch Jackson, Benjamin (which carries the other 1847 record, 29 Paschalle Alley)."
+ },
+ {
+  "keep": "Goines, George W.",
+  "aliases": [
+   "G. W. Goines",
+   "George W. Goines"
+  ],
+  "note": "George W. Goines -- Winch + census (same normalized name, both fold to the Winch record) + 'G. W. Goines', The North Star's Philadelphia agent (31 North Fifth St.) and author of the Lyceum/Library letter (NS_1848-02-25). Confirmed by Michiko 2026-08-19."
+ },
+ {
+  "keep": {
+   "name": "John Brown (abolitionist)",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "Mr. Brown",
+    "source": "newspaper"
+   }
+  ],
+  "note": "John Brown the abolitionist -- the 'Mr. Brown' of Douglass's Springfield conference (NS_1848-02-11), their first meeting. Curated per Michiko 2026-08-19. Deliberately NOT merged with any Philadelphia Brown, John (winch/census/1820directory)."
  }
 ]
