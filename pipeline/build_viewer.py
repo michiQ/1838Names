@@ -78,6 +78,16 @@ articles = {r["id"]: {"id": r["id"], "hl": r["headline"], "au": r["author"], "ty
                       "sum": r["summary"], "pg": r["page"], "issue": issues.get(r["issue_id"], {}).get("slug")}
             for r in con.execute("SELECT * FROM articles")}
 
+# mention -> article title attribution (added 2026-08-19, Michiko): a plain mention only knows
+# its issue+page, so attach the curated article headline ONLY when exactly one article is on
+# that page -- with 2+ articles the attribution would be a guess, so those show no title.
+arts_on_page = {}
+for a in articles.values():
+    arts_on_page.setdefault((a["issue"], a["pg"]), []).append(a["hl"])
+def page_article(isl, pg):
+    hls = arts_on_page.get((isl, pg))
+    return hls[0] if hls and len(hls) == 1 else None
+
 # org names appearing in newspaper text near a person's name (OCR-tolerant, proximity-based)
 ORG_CTX_RE = re.compile(
     r"(?:[A-Z][A-Za-z''&.\-]+[ ,]+){1,6}(?:Anti-Slavery Society|Society|Lodge|Church|Association|"
@@ -109,12 +119,18 @@ for r in con.execute("SELECT * FROM appearances"):
     elif r["role"] in ("mentioned", "mentioned?"):
         if r["role"].endswith("?"):
             continue  # ambiguous match (tied between >1 candidate person) -- too unreliable to show, drop entirely
-        people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"], "amb": 0})
+        m = {"i": isl, "p": r["page"], "ctx": r["context"], "amb": 0}
+        _hl = page_article(isl, r["page"])
+        if _hl: m["art"] = _hl
+        people[pid]["mentions"].append(m)
         ctx_orgs(pid, r["context"], {"i": isl, "p": r["page"]})
         if r["strength"] == 2:
             cooc.setdefault((isl, r["page"]), set()).add(pid)
     else:  # agent/other roles without event
-        people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"], "role": r["role"], "amb": 0})
+        m = {"i": isl, "p": r["page"], "ctx": r["context"], "role": r["role"], "amb": 0}
+        _hl = page_article(isl, r["page"])
+        if _hl: m["art"] = _hl
+        people[pid]["mentions"].append(m)
 
 # edges: event co-attendance (strong) + same-page mention co-occurrence (weak)
 edges = {}
