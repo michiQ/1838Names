@@ -137,7 +137,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman, The North Star, the Christian Recorder) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers + William Still's Underground Railroad + Institute for Colored Youth students (Fanny Jackson Coppin) + 1838 Black Metropolis mob-attack StoryMaps + the 1838 Black Metropolis blog archive + the 1838 Mob Attack Statistics — click a name to see every reference · build 2026-08-19 17:31</span>
+  <span class="sub">Winch Names Reference + historic Black newspapers (Freedoms Journal, Philadelphia Tribune, Colored American, Pennsylvania Freeman, The North Star, the Christian Recorder) + 1838, 1847 PAS Census + 1820 Directory + Edmonia Lewis Dissertation by Dr. Benbow-Flowers + William Still's Underground Railroad + Institute for Colored Youth students (Fanny Jackson Coppin) + 1838 Black Metropolis mob-attack StoryMaps + the 1838 Black Metropolis blog archive + the 1838 Mob Attack Statistics — click a name to see every reference · build 2026-08-19 19:42</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -563,7 +563,7 @@ function select(pid){
   }).join(''); }
   // mentions
   if(p.mentions?.length){ h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + p.mentions.slice(0,25).map(m=>
-    `<div class="card">${m.role?`<span class="role">${esc(m.role)}</span> — `:''}<q>…${esc(m.ctx)}…</q><div class="src">${ISSUE_LABEL(m.i)}, p.${m.p}${m.amb?' · <em>name match uncertain</em>':''}${srcLinks(m.i,m.p)}</div></div>`).join(''); }
+    `<div class="card"><span class="hl">Appears in ${esc(PAPERS[(m.i||'').split('_')[0]]||'the paper')}</span>${m.role?` — <span class="role">${esc(m.role)}</span>`:''}<div class="src">${ISSUE_LABEL(m.i)}, p.${m.p}${m.amb?' · <em>name match uncertain</em>':''}${srcLinks(m.i,m.p)}</div></div>`).join(''); }
   // census records
   if(p.census?.length){ h += `<h3>Census records</h3>` + p.census.map(c=>{
     const bits=[];
