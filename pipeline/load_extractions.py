@@ -60,6 +60,15 @@ def main():
                 pid, was_winch = person_id(m.group(1).strip(), a["issue"])
                 con.execute("INSERT INTO appearances(person_id, article_id, role, context, issue_id, page, strength) VALUES(?,?,?,?,?,?,?)",
                             (pid, aid, "author", a["headline"], iid, a["page"], 2))
+            # people NAMED IN the article (not the author): proprietors of an ad, the subject
+            # of a review/obituary, etc. -- each gets an article-linked appearance with its own
+            # role so the viewer can surface the piece on that person's card (added 2026-08-19).
+            for nm, role in a.get("people", []):
+                pid, was_winch = person_id(nm, a["issue"])
+                if was_winch: linked += 1
+                else: created += 1
+                con.execute("INSERT INTO appearances(person_id, article_id, role, context, issue_id, page, strength) VALUES(?,?,?,?,?,?,?)",
+                            (pid, aid, role, a["headline"], iid, a["page"], 2))
         for e in data.get("events", []):
             iid = issue_id(e["issue"])
             cur = con.execute("INSERT INTO events(name, event_date, location, description, issue_id, page) VALUES(?,?,?,?,?,?)",

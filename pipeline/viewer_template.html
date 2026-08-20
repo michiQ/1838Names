@@ -562,7 +562,7 @@ function select(pid){
     return `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(role)} · ${esc(e.date||'')} · ${esc(e.loc||'')}</div><q>${esc(e.desc)}</q>${others?`<div style="margin-top:5px;font-size:12.5px"><b style="color:var(--rust)">Also there:</b> ${others}</div>`:''}</div>`;
   }).join(''); }
   // mentions
-  if(p.mentions?.length){ h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + p.mentions.slice(0,25).map(m=>
+  if(p.mentions?.length){ const _ms=[...p.mentions].sort((a,b)=>((b.art?2:0)+(b.role?1:0))-((a.art?2:0)+(a.role?1:0))); h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + _ms.slice(0,25).map(m=>
     `<div class="card"><span class="hl">Appears in ${esc(PAPERS[(m.i||'').split('_')[0]]||'the paper')}</span>${m.role?` — <span class="role">${esc(m.role)}</span>`:''}${m.art?`<div style="margin-top:3px">in “<em>${esc(m.art)}</em>”</div>`:''}<div class="src">${ISSUE_LABEL(m.i)}, p.${m.p}${m.amb?' · <em>name match uncertain</em>':''}${srcLinks(m.i,m.p)}</div></div>`).join(''); }
   // census records
   if(p.census?.length){ h += `<h3>Census records</h3>` + p.census.map(c=>{

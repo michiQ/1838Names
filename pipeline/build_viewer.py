@@ -115,7 +115,15 @@ for r in con.execute("SELECT * FROM appearances"):
         events[r["event_id"]]["att"].append([pid, r["role"]])
         people[pid]["events"].append({"e": r["event_id"], "role": r["role"]})
     elif r["article_id"] and r["article_id"] in articles:
-        people[pid]["articles"].append({"a": r["article_id"], "role": r["role"]})
+        if r["role"] == "author":
+            people[pid]["articles"].append({"a": r["article_id"], "role": r["role"]})
+        else:
+            # named IN an article (proprietor of an ad, subject of a review/obituary, etc.) --
+            # surface under "Appears in the paper" with the article's title + their role, rather
+            # than mislabel them as having written/signed it (added 2026-08-19).
+            art = articles[r["article_id"]]
+            people[pid]["mentions"].append({"i": isl, "p": r["page"], "ctx": r["context"],
+                                            "role": r["role"], "amb": 0, "art": art["hl"]})
     elif r["role"] in ("mentioned", "mentioned?"):
         if r["role"].endswith("?"):
             continue  # ambiguous match (tied between >1 candidate person) -- too unreliable to show, drop entirely
