@@ -1,0 +1,284 @@
+{
+ "_note": "Batch: Christian Recorder Vol I reel, CHUNK 1 -- six issues, frames 2-20 of 'Christian Recorder 1854-07-13 to 1856-03-04 (Vol I reel).pdf': No.16 (CR_1854-07-13), No.18 (CR_1854-08-17), No.20 (CR_1854-09-16), No.21 (CR_1854-10-02), No.22 (CR_1854-10-18), No.23 (CR_1854-11-17). All six masthead dates image-verified; No.21's masthead reads 'Philadelphia, Monday, October 2, 1854' (an initial October 9 reading from the low-res survey was WRONG and was corrected before registration). The reel is volume-paginated (No.16 = printed pp. 61-64, No.23 = pp. 89-92) and ganged [prev-issue p4 | next-issue p1], [p2|p3], with duplicate frames (6L, 10L, 15, 22, 24L are re-photographs) and single frames for some p4s. GAPS: No.17 absent entirely; No.19 survives only as printed pp. 75-76 (its p1-2 frame was never filmed, so no masthead/date -- those two pages are HELD OUT of the DB in pipeline/cr_no19_pending/ awaiting Michiko's ruling on dating, internal letters run to Aug 25 1854, likely ~Aug 31/early Sep). No.23's editorial 'Cause of the Delay' confirms its publication was postponed to Nov 17 by the Baltimore jubilee. Extraction rule per Michiko (pilot): Philadelphia-focused, ads included as articles; article summaries are openings only. EVERY name below was verified against the 300dpi page-image crops unless flagged. OCR rescues this batch: appointments roster 'Joseph , Smith'=JOSEPH R. SMITH, 'Cxlh/Calsb Woodyard'=CALEB WOODYARD (but he signs the Greenwich camp-meeting notice 'C. F. Woodyard' with printed signature 'C. F. WOODWARD' -- given-name/spelling UNCERTAIN, flag for Michiko), 'Wo. J Pater'=WM. J. FULLER, marriage 'Isaac Const/Rowerra Caspneul'=ISAAC CONNER/ROSETTA CAMPBELL, 'Putwemon'=PHINEMON (as printed), 'Sonvtige Tyna/Mary A. Starce'=STEPHEN TURNER/MARY A. SLAYES (surname SLAYES uncertain even in print, could be Slater). 'J. G. Bulaugh' (Princeton) is doubtful in print (Bulangh/Bulaugh). The No.23 tour article names 'elder Robinson' (image-verified) -- REV. RICHARD ROBINSON's Frankford circuit; the unsigned tour follows Bishop Nazrey's published itinerary (Frankford Oct 8 -> Newhope -> Trenton Oct 16), so the author is almost certainly Nazrey himself, but an 'S. E. Hammond' signature sits nearby in the interleaved column -- author left unattributed. Non-Philadelphia matter deliberately NOT curated per the CR rule: Rhode Island State Council of Colored People constitution + committees (No.18 p1: Downing/Howland etc.), NYC Second Bethel lecture + NY Bethel Singing Association (No.22 p3), Baltimore Bethel mass meeting (Jas. A. Shorter, James H. Mandy, N. B. Bowser, No.22 p3), Good Hope camp-meeting D.C., John R. V. Morgan's NY revival letters.",
+ "articles": [
+  {
+   "issue": "CR_1854-07-13",
+   "page": 1,
+   "headline": "Funeral Sermon upon the death of Mrs. Stella Campbell",
+   "author": "Rev. Eli N. Hall",
+   "type": "sermon",
+   "summary": "'Original. FUNERAL SERMON, Upon the death of Mrs. Stella Campbell, late consort of Rev. Jabez P. Campbell, a minister of the A.M.E. Church, who departed this life April 10, 1854. Delivered before the Churches and Daughters of Conference of Weeksville, Brooklyn, and New York, June 4th, 1854, by Rev. Eli N. Hall.' Text: 'I heard a voice from heaven, saying unto me, Write, Blessed are the dead which die in the Lord...'"
+  },
+  {
+   "issue": "CR_1854-07-13",
+   "page": 2,
+   "headline": "To the Readers of the Christian Recorder (new editor's salutatory)",
+   "author": "Rev. J. P. Campbell",
+   "type": "editorial",
+   "summary": "'Dear Friend,--Rev. M. M. Clark, the former learned and able Editor of the Christian Recorder, and the one appointed by the General Conference of 1852 to fill this most important post, resigned his seat in the editorial chair... at the last session of the Philadelphia Annual Conference, held for that district in May, 1854. In consequence of this resignation, we, your humble subscriber, the present incumbent, have been called to fill the vacancy.' Campbell pledges to republish the church organ and keep the Book Concern's books in circulation."
+  },
+  {
+   "issue": "CR_1854-07-13",
+   "page": 4,
+   "headline": "Second Annual Report of the Book Concern of the African Methodist Episcopal Church, for 1854",
+   "author": "Book Steward",
+   "type": "report",
+   "summary": "'The present fiscal [year] commences at May 3d, 1853, and ends May 10th, 1854. Cash on hand at the close of last report... Total receipts this year, from all sources...' Donations itemized from Bethel church Philadelphia, the women's soiree, Wesley church, Union church, Bethel Baltimore, Israel church Washington, Union Bethel D.C. Expenditures name the Philadelphia printers Wm. S. Young and Geo. Eckert and bookbinder Peter Griffee; monies received through agents including Willis R. Revels, Wm. J. Fuller, [C.] Woodyard, Wm. Wilson, Darius Stokes (California), John W. Jackson (New York District), Henry Davis (Philadelphia), and Wm. H. Jones."
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "Obituary -- Rev. Thomas Lawrence",
+   "author": null,
+   "type": "obituary",
+   "summary": "'We have just received a letter from our brother, Rev. Geo. W. Johnson, in which is contained the sad news, that our old friend and fellow labourer in the Gospel of God, Rev. THOMAS LAWRENCE, of the Ohio Conference, is no more. He departed this life August 4th, 1854. At the time of his decease, he was stationed at one of the appointments in the city of Pittsburgh, Pa.' A companion letter in the same issue describes his March conversion at the Tygart Bottom (Ohio) quarterly meeting and his widow and several children."
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "Thomas M. Kinnard, Surgeon Dentist (advertisement)",
+   "author": "Thomas M. Kinnard",
+   "type": "advertisement",
+   "summary": "'THOMAS M. KINNARD, SURGEON DENTIST, No. 300 Cherry Street, above Thirteenth, PHILADELPHIA. After a practice of many years in this city, the subscriber feels confident of being able to give the most perfect satisfaction to those who may favour him with their patronage... Teeth filled with pure gold... Artificial teeth prepared in the most approved style... Terms moderate.' (Same dentist advertising at 300 Cherry in 1854 -- the 1856 pilot issues carry his later ads.) Runs in Nos. 18, 20, 22, 23."
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "J. J. Gould Bias, M.D., Eclectic Physician (advertisement with certificate of cure)",
+   "author": "J. J. Gould Bias",
+   "type": "advertisement",
+   "summary": "'J. J. GOULD BIAS, M.D., ECLECTIC PHYSICIAN, No. 189 South Sixth Street, Philadelphia. CERTIFICATE OF CURE. J. J. G. Bias, M.D.: Dear Sir--I was lifting a stone, which sprained my back... I then made application to you... under your medical treatment for nearly two months--in which time I was entirely cured, and for five years have had no return of it. JOHN DEAN. Sandtown, Gloucester county, N.J.' Bias at 189 S. Sixth in 1854 -- two years before his 263 Lombard / 393 Federal medicine-store ads of the 1856 pilot. Runs in Nos. 18, 20, 23."
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 1,
+   "headline": "A Discourse, delivered on the life and death of Thomas S. Richardson",
+   "author": "Rev. Henry Davis",
+   "type": "sermon",
+   "summary": "'A DISCOURSE, Delivered on the life and death of THOMAS S. RICHARDSON, on the 4th of the sixth month, 1854, in the African M. E. Bethel Church, Philadelphia, BY REV. HENRY DAVIS.' The discourse opens: 'It is true that nothing that can fall from the pen of a writer can increase the happiness of our dear father and friend; yet, perhaps, some facts can be presented which may awaken some pleasant recollections in the hearts of those who were favoured with his acquaintance and friendship.'"
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "Letter from Bishop Nazrey (Newport, R.I.)",
+   "author": "Bishop Willis Nazrey",
+   "type": "letter",
+   "summary": "'Mr. Editor,--I promised, in my last, to say something about the fashionable and lively little city of Newport, R.I., &c. I remained in this place two or three weeks, taking the benefit of the salt water and sea breeze...' Nazrey reports the members there have not yet been able to secure a house of worship, blaming among other causes 'the bad choice of a man to go out and collect the means to assist them in building.'"
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "Notices of New Publications -- Poems on Miscellaneous Subjects, by Frances Ellen Watkins",
+   "author": null,
+   "type": "review",
+   "summary": "'Poems on Miscellaneous Subjects, By Frances Ellen Watkins. Philadelphia: Anti-Slavery Office, No. 31 North Fifth street. This is a most interesting little publication, which has just appeared from the pen of that talented young lady, whose name is already familiarly known to the readers of the Recorder... we recommend it to our readers, not alone because it is written by a coloured young lady, but because we have examined it, and found it to have real literary merit.' (Frances Ellen Watkins, the future F. E. W. Harper; the Anti-Slavery Office at 31 North Fifth is the same address as the Pennsylvania Freeman/North Star agency.) The same column notices Wm. Neill D.D.'s tract printed by Wm. S. Young, 173 Race street."
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "Great Attraction! Coal! Coal!! Coal!!! -- Smith, Whipper & Co. (advertisement)",
+   "author": "Smith, Whipper & Co.",
+   "type": "advertisement",
+   "summary": "'THE Subscribers are pleased to inform their friends and customers, that they have just received a very superior quality of COAL, prepared expressly for family use, which they are ready to deliver at the VERY LOWEST PRICES. TERMS, CASH. Orders left at our Yard, corner of Broad and Willow, or 203 Lombard street, or at the Book-store of the A. M. E. Church, Lombard street, below Sixth, will be promptly attended to. SMITH, WHIPPER & CO. Philadelphia, Sept. 14, 1854.' (Stephen Smith and William Whipper's coal yard, two years before the 1856 pilot's version of the ad.) Runs in Nos. 20, 22, 23."
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "John Walker's New and Second-hand Clothing Cellar (advertisement)",
+   "author": "John Walker",
+   "type": "advertisement",
+   "summary": "'JOHN WALKER'S NEW AND SECOND-HAND CLOTHING CELLAR, BASEMENT OF NO. 157 NORTH SECOND STREET, (Between Race and New--east side.) PHILADELPHIA. Gentlemen's cast-off clothing bought and sold.' Runs in Nos. 20, 22, 23."
+  },
+  {
+   "issue": "CR_1854-10-02",
+   "page": 3,
+   "headline": "Bishop Nazrey's Appointments (autumn visitation itinerary)",
+   "author": "Bishop Willis Nazrey",
+   "type": "notice",
+   "summary": "'Philadelphia, [Sept.] ... Camden, N.J., Oct. 1st; Frankford the 8th; and from then to the 16th, on the Newhope Circuit. Trenton, N.J., Oct. 16th... Salem Circuit, the 26th, Brother Schureman will make the appointments... Greenwich Circuit, Oct. 31, Brother Woodyard... Burlington Circuit, Nov. 4th, Brother Holcomb... Allentown Circuit, Nov. 17th, Brother Sawyer... Princeton Circuit, Nov. 18th [also printed 20th], Brother Bulaugh... Reading Circuit, Pa., Nov. 25th, Brother Till... Downingtown Circuit, Nov. 28th. After which I shall visit Norristown and Chester Circuits... W. Nazrey.' (The Oct. 8 Frankford visit is to Rev. Richard Robinson's circuit; repeated with variations in Nos. 20, 22, 23.)"
+  },
+  {
+   "issue": "CR_1854-10-18",
+   "page": 2,
+   "headline": "Letter from Bishop Nazrey (Penningtonville and Media)",
+   "author": "Bishop Willis Nazrey",
+   "type": "letter",
+   "summary": "'Leaving Philadelphia on [the 25th] of Sept., [I went to] Penningtonville according to appointment... remained here, and preached... The people there turned out well, and appear to be prosperous. The next day we took the stage [to] Media, where brother Gardiner's Quarterly Meeting was held. On Sabbath we [had] a large and very good meeting; and on Monday I left for Philadelphia for [a few] days--then to go to [Frank]ford, and [New]hope Circuit.'"
+  },
+  {
+   "issue": "CR_1854-10-18",
+   "page": 1,
+   "headline": "Henry Mackey, Dealer in Real Estate (advertisement)",
+   "author": "Henry Mackey",
+   "type": "advertisement",
+   "summary": "'HENRY MACKEY, DEALER IN REAL ESTATE. A NUMBER OF SMALL HOUSES AND BUILDING LOTS FOR SALE. TERMS REASONABLE... Third Street, near Spruce, SOUTH CAMDEN, N.J.' Runs in Nos. 22, 23. The same page-1 prospectus box gives the Recorder office as No. 208 Lombard St., Philadelphia (Rev. J. P. Campbell, editor)."
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 2,
+   "headline": "Cause of the Delay (No. 23 postponed to November 17)",
+   "author": "Rev. J. P. Campbell",
+   "type": "editorial",
+   "summary": "'The [publishing] committee granted leave [for the editor to] attend a jubilee [meeting] in Baltimore--of which more hereafter. [By] this arrangement the publication of the twenty-third number was postponed [from] the first to the 17th of November. [There] will be no delays in future...' (The Baltimore Bethel jubilee is Jas. A. Shorter's debt-liquidation celebration reported in No. 22.)"
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 2,
+   "headline": "Notice -- the Book Committee and the Recorder's Philadelphia post-office box",
+   "author": null,
+   "type": "notice",
+   "summary": "'All communications addressed to the editor or any member of the Book committee, namely, Rev. J. P. Campbell, Rev. William Moore, Rev. Henry Davis, Rev. A. C. Crippen, and Rev. Stephen Smith, may be directed to the box of the Christian Recorder, at the Philadelphia [post] office...' A companion notice announces that the editor, in company with Rev. Stephen Smith of Philadelphia, will attend a meeting for the presentation of the claims of the Recorder and the General Book Concern at Rev. J. R. V. Morgan's Bethel Church, Second street, New York, on Wednesday evening, November 22d, 1854."
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "headline": "Tour to Frankford, Newhope Circuit and Trenton",
+   "author": null,
+   "type": "article",
+   "summary": "'On learning that elder Robinson had [not received notice of] the appointed time [of my visit to Frank]ford, and that he was [going to hold a quar]terly meeting at the mountains on that date, I concluded I would go to Attleboro, where [we arrived] about sunset on Saturday evening... arrived just at the opening of the love feast. We had quite a good quarterly meeting. They have an excellent new house, and when it is finished will be a lasting and beautiful edifice; and at night the elder laid before his congregation the merits and claims of the Christian Recorder.' The tour continues to the Newhope Circuit three days' meeting, Trenton, Penningtonville and Lawrenceville. 'Elder Robinson' (image-verified in print) is Rev. Richard Robinson of the Frankford circuit; the unsigned account follows Bishop Nazrey's published itinerary exactly, so the author is almost certainly Nazrey -- flagged rather than attributed."
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "headline": "Good News from Allentown",
+   "author": "Rev. C. Sawyer",
+   "type": "letter",
+   "summary": "'Mr. Editor--Being one that loves the [cause of] Christ and desires to see [it prosper]...' -- a report from the Allentown (N.J.) circuit, signed C. SAWYER (signature image-verified), the Allentown appointee of the May 1854 Philadelphia Annual Conference."
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "headline": "Cupping, Bleeding, Leeching, and Tooth-drawing, by J. J. Clinton (advertisement)",
+   "author": "J. J. Clinton",
+   "type": "advertisement",
+   "summary": "'Cupping, Bleeding, Leeching, and Tooth-drawing. BY J. J. CLINTON. OFFICE, No. 137 LOMBARD STREET, Between Fifth and Sixth, PHILADELPHIA.' (Joseph Jackson Clinton, the A.M.E. Zion minister and future bishop, practicing at 137 Lombard; address image-verified.)"
+  }
+ ],
+ "events": [
+  {
+   "issue": "CR_1854-07-13",
+   "page": 2,
+   "name": "Philadelphia Annual Conference of the A.M.E. Church, 1854 -- pastoral appointments by Bishop Nazrey",
+   "date": "1854-05-22",
+   "location": "Bethel Church, Sixth street, Philadelphia",
+   "description": "'The Philadelphia Annual Conference commenced its deliberations on Thursday the 11th of May, and adjourned on Tuesday the 23d. All the Bishops were present.' The measure adopted 'to raise funds to carry on the literary operations of the church' is singled out for praise. 'The following appointments were announced on Tuesday the 22d of May, by Bishop Nazrey' (roster image-verified): Bethel Church, Sixth street -- H. Davis; Wesley, Hurst street -- Wm. Moore; Union, Coates street -- J. P. Campbell; Frankford -- Richard Robinson; West Philadelphia -- Joseph R. Smith; Camden, N.J. -- A. C. Crippen; Burlington -- S. Holcomb; Allentown -- C. Sawyer; Trenton -- G. W. Johnson; Princeton -- J. G. Bulaugh; Salem -- W. D. W. Schureman; Westchester -- P. Gardner; Reading -- Andrew Till; Greenwich -- Caleb Woodyard; Bucks county, subject to R. Robinson; Lancaster -- John Butler; Penningtonville -- Richard Barney; Wilmington, Del. -- James Holland. George Standford and Wm. J. Fuller were transferred to the New England Conference. The accompanying 'Episcopal Districts' note assigns Bishop Quinn the Baltimore and New York districts, Bishop Nazrey Philadelphia and New England, and Bishop Payne Canada, Ohio and Indiana. (Also from the M. M. Clark resignation editorial: Rev. M. M. Clark resigned the editorship at this conference.)",
+   "attendees": [
+    ["Bishop Willis Nazrey", "presiding bishop; announced the appointments; assigned the Philadelphia and New England districts"],
+    ["Bishop William Paul Quinn", "present; assigned the Baltimore and New York districts"],
+    ["Bishop Daniel A. Payne", "present; assigned the Canada, Ohio and Indiana districts"],
+    ["Rev. Henry Davis", "appointed to Bethel Church, Sixth street, Philadelphia"],
+    ["Rev. William Moore", "appointed to Wesley, Hurst street"],
+    ["Rev. J. P. Campbell", "appointed to Union, Coates street; editor of the Christian Recorder"],
+    ["Rev. Richard Robinson", "appointed to Frankford, with Bucks county subject to him"],
+    ["Rev. Joseph R. Smith", "appointed to West Philadelphia"],
+    ["Rev. A. C. Crippen", "appointed to Camden, N.J."],
+    ["Rev. S. Holcomb", "appointed to Burlington, N.J."],
+    ["Rev. C. Sawyer", "appointed to Allentown, N.J."],
+    ["Rev. G. W. Johnson", "appointed to Trenton, N.J."],
+    ["Rev. J. G. Bulaugh", "appointed to Princeton, N.J. (surname doubtful in print: Bulaugh/Bulangh)"],
+    ["Rev. W. D. W. Schureman", "appointed to Salem, N.J."],
+    ["Rev. Peter Gardiner", "appointed to Westchester, Pa. (printed 'P. Gardner' in the roster; 'Rev. Peter Gardiner' elsewhere)"],
+    ["Rev. Andrew Till", "appointed to Reading, Pa."],
+    ["Rev. Caleb Woodyard", "appointed to Greenwich, N.J. (given name uncertain: roster reads 'Calsb'; he signs elsewhere 'C. F. Woodyard'/'C. F. Woodward')"],
+    ["Rev. John Butler", "appointed to Lancaster, Pa."],
+    ["Rev. Richard Barney", "appointed to Penningtonville, Pa."],
+    ["Rev. James Holland", "appointed to Wilmington, Del."],
+    ["Rev. George Standford", "transferred to the New England Conference"],
+    ["Rev. Wm. J. Fuller", "transferred to the New England Conference"],
+    ["Rev. M. M. Clark", "resigned the editorship of the Christian Recorder at this conference"]
+   ]
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 2,
+   "name": "Mass meeting on behalf of the Christian Recorder, Bethel Church",
+   "date": "1854-09-07",
+   "location": "Bethel Church, Sixth street, Philadelphia",
+   "description": "'A mass meeting, on behalf of the Christian Recorder, was held in Bethel Church, Sixth street, Philadelphia, under the pastoral charge of Rev. Henry Davis, on the evening of the 7th instant... assembled pursuant to a call issued by the publishing committee of the Book Concern, at the suggestion of Bishop Nazrey... Among the distinguished personages present, were Right Rev. W. Nazrey, Rev. Richard Robinson, and Rev. Peter Gardiner' (names image-verified). Bishop Nazrey stated the subscription plan and appealed for support. 'Rev. R. Robinson being called upon by the Bishop, arose and said, that he had been somewhat opposed to the paper, on account of the manner in which it was heretofore conducted... He expressed himself as having now more confidence, and felt certain that it could be carried on greatly to the advantage and benefit of ourselves and our people.' Rev. Stephen Smith arose and defended the former committee's handling of the funds; the Editor (J. P. Campbell) explained the paper's costs -- 1,500 copies against the New York Tribune's 180,000 -- and offered sliding subscription prices.",
+   "attendees": [
+    ["Bishop Willis Nazrey", "called the meeting; stated the subscription plan; made the closing appeal"],
+    ["Rev. Henry Davis", "pastor of Bethel Church, hosting the meeting"],
+    ["Rev. Richard Robinson", "called upon by the Bishop; spoke on his past opposition to and new confidence in the paper"],
+    ["Rev. Peter Gardiner", "present, named among the 'fathers of the church'"],
+    ["Rev. Stephen Smith", "spoke in defence of the former publishing committee's application of the funds"],
+    ["Rev. J. P. Campbell", "editor; explained the economics of the paper to the meeting"]
+   ]
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "name": "Camp-meeting on the Greenwich Circuit, near Springtown, N.J.",
+   "date": "1854-08-24",
+   "location": "near Springtown, Greenwich Circuit, N.J. (Philadelphians directed to the Salem boat)",
+   "description": "'Divine Providence permitting, there will be a Camp-Meeting holden on the Greenwich Circuit, in the neighbourhood of Springtown, August 24th, 1854, by Rev. C. F. Woodyard, Elder, having the charge of that Circuit... Persons wishing to attend this meeting, living in the city of Philadelphia, or vicinity, may take the Salem boat... (Signed,) C. F. WOODWARD.' The notice body spells him Woodyard, the printed signature Woodward -- flagged; he is the Greenwich appointee of the May conference ('Caleb Woodyard').",
+   "attendees": [
+    ["Rev. Caleb Woodyard", "elder in charge of the Greenwich Circuit; called the camp-meeting (spelling varies in print: C. F. Woodyard / C. F. Woodward)"]
+   ]
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "name": "Sabbath School celebration, Burlington, N.J.",
+   "date": "1854-08-03",
+   "location": "A.M.E. Church, Burlington, N.J.",
+   "description": "A letter (dateline reads 'Chesnuttree[?] August the 3 1854', image-checked but still doubtful) describes a Sabbath School day at Burlington: the children marched 'Like Ancient Joshua' to the ground where they spent the day; 'After Dinner was over prayer was offered By Rev S holcom After wich Rev henry Davis Addressed the Sunday School in [a] very Able and interesting manner' (both names verified in print). Signed 'George W. Janson' -- almost certainly Rev. G. W. Johnson, the Trenton appointee, whose letter on Rev. Thomas Lawrence appears in the same issue; flagged rather than silently corrected.",
+   "attendees": [
+    ["Rev. S. Holcomb", "offered prayer (printed 'Rev S holcom'); the Burlington appointee"],
+    ["Rev. Henry Davis", "addressed the Sunday School"],
+    ["George W. Janson", "letter writer (signature as printed; almost certainly Rev. G. W. Johnson of Trenton -- flag for Michiko)"]
+   ]
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "name": "Marriage of John Carson and Catherine Phinemon",
+   "date": "1854-08-02",
+   "location": "Camden, N.J.",
+   "description": "'In Camden, August 2d, 1854, by Rev. A. C. Crippen, Mr. JOHN CARSON, of the State of Delaware, to Mrs. CATHERINE PHINEMON, of New Jersey.' (Names image-verified; the surname is printed PHINEMON.)",
+   "attendees": [
+    ["Rev. A. C. Crippen", "officiating minister, Camden"],
+    ["John Carson", "bridegroom, of Delaware"],
+    ["Catherine Phinemon", "bride, of New Jersey"]
+   ]
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "name": "Marriage of Isaac Conner and Rosetta Campbell",
+   "date": "1854-09-02",
+   "location": "Philadelphia",
+   "description": "'In this city, on the 2d of Sept., by Rev. H. Davis, Mr. ISAAC CONNER, to Miss ROSETTA CAMPBELL, both of Byberry, Penn.' (Names image-verified; OCR had garbled them to 'Isaac Const'/'Rowerra Caspneul'.)",
+   "attendees": [
+    ["Rev. Henry Davis", "officiating minister"],
+    ["Isaac Conner", "bridegroom, of Byberry, Pa."],
+    ["Rosetta Campbell", "bride, of Byberry, Pa."]
+   ]
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "name": "Marriage of William H. Allen and Hannah A. Garnett",
+   "date": "1854-10-26",
+   "location": "Howellville, Delaware county, Pa.",
+   "description": "'At Howellville, Delaware county, Pa., on the 26th of October, by the Rev. Peter Gardiner, Miss HANNAH A. GARNETT, to Mr. WILLIAM H. ALLEN, of the same place.' (Names image-verified.)",
+   "attendees": [
+    ["Rev. Peter Gardiner", "officiating minister"],
+    ["William H. Allen", "bridegroom, of Howellville, Delaware county, Pa."],
+    ["Hannah A. Garnett", "bride, of Howellville, Delaware county, Pa."]
+   ]
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "name": "Marriage of Stephen Turner and Mary A. Slayes",
+   "date": "1854-09-25",
+   "location": "Camden, N.J.",
+   "description": "'On the 25th of September, by the Rev. A. C. Crippen, Sr., Mr. STEPHEN TURNER, to Miss MARY A. SLAYES, of the same place.' (Groom's name image-verified; the bride's surname reads SLAYES in print but is uncertain -- possibly Slater; flagged.)",
+   "attendees": [
+    ["Rev. A. C. Crippen", "officiating minister (printed 'A. C. Crippen, Sr.')"],
+    ["Stephen Turner", "bridegroom"],
+    ["Mary A. Slayes", "bride (surname uncertain even in print -- possibly Slater)"]
+   ]
+  }
+ ]
+}
