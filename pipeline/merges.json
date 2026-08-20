@@ -1012,5 +1012,19 @@
    }
   ],
   "note": "John Brown the abolitionist -- the 'Mr. Brown' of Douglass's Springfield conference (NS_1848-02-11), their first meeting. Curated per Michiko 2026-08-19. Deliberately NOT merged with any Philadelphia Brown, John (winch/census/1820directory)."
+ },
+ {
+  "keep": {
+   "name": "ROBINSON, RICHARD",
+   "source": "census"
+  },
+  "aliases": [
+   {
+    "name": "Rev. Richard Robertson",
+    "source": "newspaper"
+   },
+   "Rev. Richard Robinson"
+  ],
+  "note": "Rev. Richard Robinson -- AME minister. Confirmed by Michiko 2026-08-19: the 'Rev. Richard Robertson' printed as chairman (and 'Rev. Mr. Robertson', concluding remarks) of the Rt. Rev. Richard Allen anniversary at Bethel Church (Feb 4 1856, CR_1856-03-04 p2) IS Rev. Richard Robinson; the Christian Recorder's print/typesetting reads Robertson (image-verified) but the man is Robinson. Kept on the census record ROBINSON, RICHARD (1838 PAS census). The 'Rev. Richard Robinson' plain alias future-proofs correctly-spelled newspaper matches. Deliberately does NOT touch winch Robertson D./George/Ishmael-or-Israel/John (no Richard among them)."
  }
 ]
