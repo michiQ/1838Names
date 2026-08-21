@@ -1,0 +1,155 @@
+{
+  "_note": "RUN #73 -- Christian Recorder Vol I reel, CHUNK 2 (Feb-Dec 1855, printed pp.101-148; 11 complete issues CR_1855-02-01/03-19/04-04/05-01/06-01/07-11/08-18/10-20/11-17/12-03/12-22). These 1855 issues are heavily doctrinal (the 'Bishop's Council' controversy between Rev. J. P. Campbell and 'Itinerant Preacher', the 'Wants of the Church' series, 'Affairs Abroad'); Philadelphia name-content is concentrated in the recurring advertiser column and a handful of AME administrative items. Curated per the CR Philadelphia-focused rule (ads included as articles). EVERY name/address below was image-verified on the hi-res page JPEGs (microfilm OCR garbles names on this paper). RECURRING ADS: Smith Whipper & Co. coal, Thos. M. Kinnard dentist, J. J. Gould Bias M.D., J. J. Clinton cupping/leeching, Henry Mackey real estate, John Walker clothing -- these run in nearly every issue Feb-Jun; captured ONCE here at CR_1855-02-01 (the clearest impression) to avoid 60+ near-duplicate entries -- match_names.py auto-captures the proprietors' recurrence from each issue's OCR body text. NON-PHILADELPHIA names (New England Conference pledgers; the NY/Washington GUOOF lodge report; Hagerstown/California correspondents) are kept in description text only, NOT as linked attendees, to avoid the Philadelphia-census false-collision problem. FLAGS: 'John Walker' (clothing, 157 N. Second) is a very common name and may auto-link to census WALKER, JOHN -- needs Michiko's review. 'Mrs. Tillman/Hall/Royal' (D. of T. officers) are surname-only in print and will become newspaper-source people.",
+  "articles": [
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "headline": "Smith, Whipper & Co. -- White Ash Coal and Lumber (advertisement)",
+      "author": "",
+      "type": "advertisement",
+      "summary": "'FIRE! FIRE! FIRE! To a good and comfortable Fire, our Superior WHITE ASH COAL is indispensably necessary, which may be had at our Coal and Lumber Yard, corner of Broad and Willow ... SMITH, WHIPPER & CO.' Orders also received at the A. Meth. Ep. Church book-store, Lombard street below Sixth, and at U. A. Vidal's, 308 Lombard. The Black-owned coal-and-lumber firm of Stephen Smith and William Whipper; this 1855 impression runs a year before the pilot's 1856 version.",
+      "people": [["Stephen Smith", "proprietor"], ["William Whipper", "proprietor"]]
+    },
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "headline": "Thomas M. Kinnard, Surgeon Dentist (advertisement)",
+      "author": "",
+      "type": "advertisement",
+      "summary": "'THOMAS M. KINNARD, SURGEON DENTIST, No. 300 Cherry Street, above Thirteenth, Philadelphia. After a practice of many years in this city, the subscriber feels confident of being able to give the most perfect satisfaction ... Toothache cured, and the Teeth and Gums restored to health ... Teeth filled with pure gold ... Artificial teeth prepared ... Teeth extracted without pain ... N.B. Thos. M. Kinnard would strongly urge the attention of parents and guardians to the high importance of having all irregularities of the teeth of young persons promptly attended to. Terms moderate.'",
+      "people": [["Thomas M. Kinnard", "proprietor"]]
+    },
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "headline": "J. J. Gould Bias, M.D., Eclectic Physician (advertisement)",
+      "author": "",
+      "type": "advertisement",
+      "summary": "'J. J. GOULD BIAS, M.D., ECLECTIC PHYSICIAN, No. 189 South Sixth Street, Philadelphia.' Carries a patient testimonial: 'J. J. G. Bias, M.D.: Dear Sir -- I was lifting a stone, which sprained my back ... I then made application to you ... under your medical treatment for nearly two months -- in which time I was entirely cured, and for five years have had no return of it. JOHN DEAR, Sandtown, Gloucester county, N.J.'",
+      "people": [["James J. G. Bias", "proprietor (advertising physician)"], ["John Dear", "gave the printed testimonial; of Sandtown, Gloucester county, N.J."]]
+    },
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "headline": "J. J. Clinton -- Cupping, Bleeding, Leeching, and Tooth-drawing (advertisement)",
+      "author": "",
+      "type": "advertisement",
+      "summary": "'Cupping, Bleeding, Leeching, and Tooth-drawing. BY J. J. CLINTON. Office, No. 137 Lombard Street, between Fifth and Sixth, Philadelphia.' (J. J. Clinton, later an A.M.E. Zion bishop.)",
+      "people": [["J. J. Clinton", "proprietor"]]
+    },
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "headline": "Henry Mackey, Dealer in Real Estate (advertisement)",
+      "author": "",
+      "type": "advertisement",
+      "summary": "'HENRY MACKEY, DEALER IN REAL ESTATE. A number of small houses and building lots for sale. Terms reasonable. For further information, call in Third Street, near Spruce, SOUTH CAMDEN, N.J.'",
+      "people": [["Henry Mackey", "proprietor"]]
+    },
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "headline": "John Walker's New and Second-Hand Clothing Store (advertisement)",
+      "author": "",
+      "type": "advertisement",
+      "summary": "'JOHN WALKER'S NEW AND SECOND-HAND CLOTHING STORE, Basement of No. 157 North Second Street (between Race and New -- east side), Philadelphia. Gentlemen's Cast-off Clothing bought and sold.'",
+      "people": [["John Walker", "proprietor (clothing dealer; common name -- may false-match census, review)"]]
+    },
+    {
+      "issue": "CR_1855-02-01",
+      "page": 2,
+      "headline": "The Jubilees",
+      "author": "",
+      "type": "article",
+      "summary": "'There has been a Jubilee holden in Bethel Church, Baltimore, and another in Bethel Church, Philadelphia -- the first two churches in the connexion ...' An editorial note observing that a full account of the two A.M.E. Jubilees 'would be highly interesting; but we have nothing much to give,' appealing to readers to send accounts of what was done and said.",
+      "people": []
+    },
+    {
+      "issue": "CR_1855-07-11",
+      "page": 4,
+      "headline": "Address of Bishop Nazrey, delivered before the Philadelphia District Annual Conference",
+      "author": "Bishop Willis Nazrey",
+      "type": "address",
+      "summary": "'ADDRESS OF BISHOP [NAZREY], Delivered before the Philadelphia District [Annual Conference]. My dear Friends and Brethren -- In the Gospel of our Lord Jesus Christ, the kind providence of our Heavenly Father has conducted us safely through many conflicting circumstances and dangers, to this time and place ...' A long charge to the ministers of the Philadelphia District on the duties of an itinerant ministry, support of the Book Concern and the Christian Recorder, the superannuated preachers' fund, missions ('to establish a mission about this city ... Stroudsburgh'), and a proposed foreign mission to Africa.",
+      "people": []
+    },
+    {
+      "issue": "CR_1855-08-18",
+      "page": 2,
+      "headline": "Proposed Change in the Christian Recorder",
+      "author": "",
+      "type": "article",
+      "summary": "The Book Committee's statement that 'a religious newspaper cannot be sustained by us until we shall have a capital that will support it ... until it has become permanently established.' Proposes converting the Recorder from a semi-monthly newspaper into a monthly magazine unless reliable pledges are secured; notes the last Annual Conference made no appropriation to support the Concern. Followed by the Editor's endorsement of 'brother Gardener's plan' (Rev. Peter Gardiner's pledge scheme): '[Let brother Gardener's plan go] onward, and we will continue the monthly publication until the General Conference ... have the money. -- Ed.'",
+      "people": []
+    },
+    {
+      "issue": "CR_1855-08-18",
+      "page": 2,
+      "headline": "Celebration of the Act of Incorporation of the A.M.E. Church Book Concern",
+      "author": "",
+      "type": "article",
+      "summary": "'We have the pleasing satisfaction of announcing to the ministers and members of the African Methodist Episcopal Church, that the Book Committee have succeeded in obtaining from the State of Pennsylvania an act of incorporation for \"The African Methodist Episcopal Church Book Concern.\" ... the Committee have agreed to hold a three days' celebration for the benefit of the Concern. This event will take place on the third Tuesday (the 18th) of September, 1855, in the city of Philadelphia,' inviting elders, deacons, preachers and lay members of the connexion to attend.",
+      "people": []
+    }
+  ],
+  "events": [
+    {
+      "issue": "CR_1855-02-01",
+      "page": 3,
+      "name": "Hope Grand Union No. 1, Daughters of Temperance (Philadelphia) -- officers",
+      "date": "1855-02-01",
+      "location": "Philadelphia",
+      "description": "Notice that 'Hope Grand Union, No. 1, D[aughters of Temperance] ... State of Pennsylvania, are still prepared to open Unions, and grant Charters throughout the United States.' Communications to be addressed to the Grand officers (offices and home addresses image-verified): Mrs. Bundy, G.P.P.S., No. 356 South street, above Eighth; Mrs. Tillman, G.P.S., No. 19 Currant alley; Mrs. Hall, G.S.A., No. 5 Buckley street; Mrs. Royal, G.S., No. 252 Lombard street.",
+      "attendees": [
+        ["Mrs. Bundy", "Grand P.P.S.; No. 356 South street above Eighth"],
+        ["Mrs. Tillman", "Grand P.S.; No. 19 Currant alley"],
+        ["Mrs. Hall", "Grand S.A.; No. 5 Buckley street"],
+        ["Mrs. Royal", "Grand S.; No. 252 Lombard street"]
+      ]
+    },
+    {
+      "issue": "CR_1855-08-18",
+      "page": 2,
+      "name": "Book Committee meeting, A.M.E. Church Book Concern, Philadelphia (August 1855)",
+      "date": "1855-08",
+      "location": "Committee Room, Philadelphia",
+      "description": "'At a meeting of the [Book Committee of the] African Meth. Ep. Church, held in the Committee Room' in August 1855, resolutions were proposed and carried to 'take into consideration the propriety of [changing to a] magazine, instead of the [Recor]der in its present form,' and to issue the thirty-third number of the Recorder setting forth the reasons. Signed on behalf of the Committee by Rev. J. P. Campbell and A. C. Crippen, Sr.",
+      "attendees": [
+        ["Rev. J. P. Campbell", "editor; signed on behalf of the Book Committee"],
+        ["Abraham Crippen", "signed on behalf of the Book Committee (printed 'A. C. Crippen, Sr.')"]
+      ]
+    },
+    {
+      "issue": "CR_1855-08-18",
+      "page": 2,
+      "name": "Bishop Nazrey's fall 1855 appointment itinerary (Philadelphia District)",
+      "date": "1855-08-18",
+      "location": "Philadelphia District, A.M.E. Church",
+      "description": "Bishop Willis Nazrey's published itinerary: Ohio Conference (Aug 18) and Indiana Conference (Sept 1) with his colleagues; Lancaster, Pa. (Sept 15); Brother Barney to make an appointment at Columbia the 17th and cover his Circuit to the 21st; then Penningtonville (one Sabbath) and Westchester (the 28th, one week). October 5th in Philadelphia; the 7th preaching at Bethel Church (morning) and Union Church, Coates street (evening); the 12th at Springtown; Brother Davis to make appointments to the 19th, then Salem, N.J.; Brother Holcomb to the 26th, then Camden; the Elder to the 31st, then the Burlington Circuit. Signed 'WILLIS NAZREY.'",
+      "attendees": [
+        ["Bishop Willis Nazrey", "presiding bishop; published the appointment itinerary"],
+        ["Richard Barney", "to appoint at Columbia and cover his Circuit (printed 'Brother Barney')"],
+        ["Rev. Henry Davis", "to make appointments to Oct 19 (printed 'Brother Davis')"],
+        ["Rev. S. Holcomb", "to make appointments to Oct 26 (printed 'Brother Holcomb')"]
+      ]
+    },
+    {
+      "issue": "CR_1855-08-18",
+      "page": 2,
+      "name": "Pledges to sustain the Christian Recorder (Philadelphia Annual Conference)",
+      "date": "1855-08-18",
+      "location": "Philadelphia Annual Conference, A.M.E. Church",
+      "description": "A published list of subscribers pledging to sustain the Christian Recorder under Rev. Peter Gardiner's plan. Philadelphia Annual Conference pledgers (image-verified): John T. Jackson, Jer. Young, Rev. J. P. B. Eddy, W. D. Schureman, W. J. Fuller, J. P. Campbell, W. H. Jackson, J. Frisby. A separate 'New England Conference' column lists Rev. Chas. H. Pierce, Jas. D. S. Hall, G. A. Rue, Rev. Joseph Turner, Wm. W. Watson, Jacob Mitchell, and Jas. L. Smith (recorded in the description only, not linked, per the paper's Philadelphia-focus rule).",
+      "attendees": [
+        ["John T. Jackson", "pledged to sustain the Recorder"],
+        ["Jeremiah Young", "pledged to sustain the Recorder (printed 'Jer. Young')"],
+        ["Rev. J. P. B. Eddy", "pledged to sustain the Recorder"],
+        ["Rev. W. D. W. Schureman", "pledged to sustain the Recorder (printed 'W. D. Schureman')"],
+        ["Rev. Wm. J. Fuller", "pledged to sustain the Recorder (printed 'W. J. Fuller')"],
+        ["Rev. J. P. Campbell", "pledged to sustain the Recorder"],
+        ["W. H. Jackson", "pledged to sustain the Recorder"],
+        ["J. Frisby", "pledged to sustain the Recorder"]
+      ]
+    }
+  ]
+}

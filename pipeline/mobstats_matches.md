@@ -12,7 +12,7 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - **James Williams** (mobstats)  <->  Williams, James#2818, Williams, James#2819, Williams, James W.#2820, James H. Williams#14294, James Williams#19966, WILLIAMS, JAMES#354258, Williams, James#358680, Williams, James H.#359536
 - **Jane Johnson** (mobstats)  <->  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360029
 - **Mary Moore** (mobstats)  <->  Moore, Mary#1932, Moore, Mary#359325
-- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#360834
+- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#360939
 - **William Anderson** (mobstats)  <->  Anderson, William#74, ANDERSON, WM#351801
 - **William Simpson** (mobstats)  <->  Simpson, William#2410, Simpson, Wm.#358454
 
