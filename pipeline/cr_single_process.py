@@ -11,14 +11,17 @@ NCOLS: the 1861 Vol I NS reel prints SEVEN columns; check each new file before r
 downscaled to 2000px wide, q85 (readable zoomed; ~1-1.5MB).
 
 Usage: cr_single_process.py <pdf> <txtdir> <jpgdir> <frame>:<slug>:<pg> [...]
-Env NCOLS sets the column count (default 6; use 7 for the 1861 NS reel).
+Env NCOLS sets the column count (default 6; the 1861 NS reel AND the 1861 quarterlies are 7).
+Env DPI sets the render resolution (default 400). Aim for ~2x the scan's native pixels: the NS reel
+(pages 1422pt wide, 200ppi) -> 400; the quarterlies (pages ~475pt wide, 600ppi) -> 1200. Check with
+`pdfimages -list` before running a new file.
 """
 import os, subprocess, sys, tempfile
 import numpy as np
 from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
-DPI, PAD, BRIGHT, FRAC, Q, JPG_W = 400, 40, 120, 0.25, 85, 2000
+DPI, PAD, BRIGHT, FRAC, Q, JPG_W = int(os.environ.get("DPI", "400")), 40, 120, 0.25, 85, 2000
 NCOLS = int(os.environ.get("NCOLS", "6"))
 from PIL import ImageFilter
 
