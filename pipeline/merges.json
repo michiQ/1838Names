@@ -35,9 +35,13 @@
   "aliases": [
    "Douglass, Mrs. S.M.",
    "Mrs. S.M. Douglass",
-   "S.M. Douglass"
+   "S.M. Douglass",
+   {
+    "name": "S. M. Douglass",
+    "source": "newspaper"
+   }
   ],
-  "note": "Sarah Mapps Douglass — Philadelphia educator/abolitionist (Winch) = 'Mrs. S.M. Douglass' in the Edmonia Lewis dissertation. Confirmed by Michiko 2026-07-06."
+  "note": "Sarah Mapps Douglass — Philadelphia educator/abolitionist (Winch) = 'Mrs. S.M. Douglass' in the Edmonia Lewis dissertation. Confirmed by Michiko 2026-07-06. + 'S. M. Douglass' (Christian Recorder 1861, Run #74) confirmed by Michiko 2026-10-31."
  },
  {
   "keep": "Gibbs, Mifflin Wistar",
@@ -156,9 +160,13 @@
  {
   "keep": "Bassett, Ebenezer D.",
   "aliases": [
-   "E. D. Bassett"
+   "E. D. Bassett",
+   {
+    "name": "Prof. Bassett",
+    "source": "newspaper"
+   }
   ],
-  "note": "Bassett, Ebenezer D. (Winch) = E. D. Bassett (newspaper, principal/teacher, Institute for Colored Youth commencement, May 1864) -- matches his known biography as ICY principal before becoming the first African American U.S. diplomat (Minister to Haiti). Long-carried high-confidence candidate (merge_candidates.md, 8+ prior runs). Confirmed by Michiko 2026-07-09."
+  "note": "Bassett, Ebenezer D. (Winch) = E. D. Bassett (newspaper, principal/teacher, Institute for Colored Youth commencement, May 1864) -- matches his known biography as ICY principal before becoming the first African American U.S. diplomat (Minister to Haiti). Long-carried high-confidence candidate (merge_candidates.md, 8+ prior runs). Confirmed by Michiko 2026-07-09. + 'Prof. Bassett' (Christian Recorder 1861, Run #74) confirmed by Michiko 2026-10-31."
  },
  {
   "keep": "Hicks, Isaac",
@@ -662,9 +670,13 @@
    {
     "name": "Octavius V. Catto",
     "source": "newspaper"
+   },
+   {
+    "name": "O. V. Catto",
+    "source": "newspaper"
    }
   ],
-  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. Fold the 1871 StoryMap and the newspaper 'Octavius V. Catto' into the Winch/ICY Catto record."
+  "note": "Michiko approved 2026-07-30 (StoryMap review): fold the mob-attack StoryMap record into the existing person. Fold the 1871 StoryMap and the newspaper 'Octavius V. Catto' into the Winch/ICY Catto record. + 'O. V. Catto' (Christian Recorder 1861: Banneker committee, ICY lecture on Language; Run #74) confirmed by Michiko 2026-10-31."
  },
  {
   "keep": "Still, William",
@@ -1045,9 +1057,13 @@
    {
     "name": "Rev. A. C. Crippen",
     "source": "newspaper"
+   },
+   {
+    "name": "A. C. Crippen",
+    "source": "newspaper"
    }
   ],
-  "note": "Rev. A. C. Crippen -- the Camden A.M.E. pastor of the Christian Recorder 1854 (officiated marriages, appointed to Camden by Bishop Nazrey May 1854). = winch Crippen, Abraham. Confirmed by Michiko 2026-08-19 (Run #72)."
+  "note": "Rev. A. C. Crippen -- the Camden A.M.E. pastor of the Christian Recorder 1854 (officiated marriages, appointed to Camden by Bishop Nazrey May 1854). = winch Crippen, Abraham. Confirmed by Michiko 2026-08-19 (Run #72). + 'A. C. Crippen' (Christian Recorder 1861, Run #74) confirmed by Michiko 2026-10-31."
  },
  {
   "keep": {
