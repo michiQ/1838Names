@@ -291,3 +291,15 @@ census people). Those are false candidates; expect them on every issue and do no
   intercepts and re-credentials api.github.com too, so a manually-supplied token only reaches GitHub
   on the --noproxy / proxy-unset path. Confirmed: pushed RUN #67 (ac89b1f) this way. STAGING only --
   the prod-push password gate still applies to any production promote regardless of transport. ***
+
+## Christian Recorder 1861-63 single-page files (added 2026-10-31, Run #74)
+The Internet Archive CR files for 1861-1863 (`Christian Recorder 1861-01-19 to 1861-12-28 (Vol I NS reel).pdf`,
+the `1861 Q2..Q4`, `1862 Q1..Q4`, `1863 Q3/Q4` quarterlies and the `1863 ... (Vol III reel).pdf`) are ONE NEWSPAPER PAGE
+PER FRAME (frame 1 is a tiny cover), unlike the two-page spreads of the 1854-56 Vol I reel. BOTH "reel" filenames are
+wrong: each holds only Jan-Mar of its year, so every quarterly is needed. Use `pipeline/cr_single_process.py`:
+`NCOLS=<n> python3 cr_single_process.py <pdf> <txtdir> <jpgdir> <frame>:<slug>:<pg> ...` -- 400dpi gray, solid-black
+torn-film regions painted white before OCR (essential), equal columns, psm 4, 2000px q85 page JPEG. COUNT THE COLUMNS
+of each file first (the 1861 NS reel is 7 columns; the quarterlies may be 6). Do not trust the IA text layer (~600
+words/page). Image-verify every masthead and every recorded name (crop from the PDF at 400dpi). Large batches can be
+read by parallel readers given a written brief (Run #74's brief is pipeline/cr_reader_brief.md; its crop helper is pipeline/cr_crop.py -- adjust the scratch paths and the frame map per file); review their
+same-name auto-links after the rebuild -- subscriber lists from NJ/Bucks circuits collide with 1838 census names.

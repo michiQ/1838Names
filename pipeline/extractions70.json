@@ -1,0 +1,3486 @@
+{
+ "_note": "RUN #74 -- Christian Recorder, Vol. I New Series reel ('Christian Recorder 1861-01-19 to 1861-12-28 (Vol I NS reel).pdf' -- the filename is WRONG: the reel holds only Jan 19 - Mar 30 1861). 11 complete 4-page issues, Nos. 2-12 (No. 1 not filmed): CR_1861-01-19/01-26/02-02/02-09/02-16/02-23/03-02/03-09/03-16/03-23/03-30; all mastheads image-verified. Internet Archive single-page scans, 7 columns/page; OCR via pipeline/cr_single_process.py (400dpi, torn/black film masked, 7 equal columns, psm 4). Extraction rule per Michiko (Philadelphia-focused, ads included, opening-sentence summaries): four parallel readers (A=Jan 19-Feb 2, B=Feb 9-23, C=Mar 2-16, D=Mar 23-30); EVERY name/address/number below was read on 400dpi page-image crops, OCR used only to locate items. Names carry no honorifics (title in role). '[VERIFY name reading]' in a role = the name itself is an uncertain reading. Authors marked [VERIFY] are deliberately left unlinked. Non-Philadelphia names are kept in text only. Recurring weekly ads are entered once, at first appearance. DROPPED (out of scope per rule -- the 03-09 editorial says these are the paper's new white patrons procured by canvassing agent Burris): CR_1861-02-09 p3: F. Champion's New and Second Hand Clothing Store (advertisement); CR_1861-03-02 p3: Advertisement: P. P. Gustine's Furniture Warehouse; CR_1861-03-02 p3: Advertisement: Reimer's Photographic Gallery; CR_1861-03-02 p3: Advertisement: Ninth Street Wall Paper and Window Shade Warehouse; CR_1861-03-09 p3: Advertisement: D. W. Clark's Great One Dollar Store; CR_1861-03-09 p3: Advertisement: George G. Evans' Original Gift Book Store; CR_1861-03-09 p3: Advertisement: Leary, Getz & Co., Publishers and Book Sellers; CR_1861-03-09 p3: Advertisement: Dean & Co., Original One Dollar Store; CR_1861-03-16 p3: Advertisement: George W. Metz & Sons, Brush and Bellows Manufactory. Full reader notes and flags are in _notes/_flags below. LINK REVIEW (main session, after rebuild): same-name auto-links judged unsafe were removed from the linked lists (names remain in the text): Gouldtown hostess 'Mrs. Stewart' (had hit Winch Mrs. Priscilla Stewart); passing 'Mr. Jones'; 'James Foster' invoked as a historic figure (likely a misprint for James Forten -- not linked to either); NJ/Bucks subscribers Ann Harris, Sarah Smith, Joseph Green, Joseph Gibbs, Margaret Steward; uncertain groom William Stokes; Samuel Edwards (father of a deceased); and the 01-26 poem's deceased 'Rev. John Cornish' (a living Rev. John Cornish holds quarterly meetings in Feb/Mar, so the identity is unresolved). 'Mrs. Mary Jones' and 'Miss Mary Still' keep their printed honorifics so they do NOT auto-link to Winch Jones, Mary / Still, Mary -- Michiko to decide (Mary Still, Allentown N.J. subscriber, could be William Still's sister). The print reads 'Mrs. Laws' (not 'Lawes'). Bare-surname links resolved only where certain (Nazrey -> Willis Nazrey, Payne -> Daniel A. Payne; Wiggins/Peer/Goines take the full names printed in the same item); other bare surnames are text-only: Allen, Bassett, Campbell, Clark, Gaines, Hubert, Powell, Quinn, Robertson, Ruth, Seymour. 'Father Robertson' of the Bristol/Frankford circuits (01-19) is printed surname-only: per Michiko's Run #71 ruling he is Rev. Richard Robinson, but he is NOT linked here because no given name is printed -- the 02-23 Itinerant Preachers' Aid Society notice (Richard Robinson, President) does link to him.",
+ "articles": [
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Notice (Box No. 430)",
+   "author": "",
+   "type": "notice",
+   "summary": "Our Correspondents and Subscribers will please take notice that all letters, or anything sent by mail, must be directed to Box No. 430, Philadelphia, Pa."
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "To Our Friends (editorial)",
+   "author": "",
+   "type": "editorial",
+   "summary": "We have been much gratified by the numerous letters from friends, expressing their pleasure with the appearance and character of our paper. A letter from Bishop Nazrey we publish in another column.",
+   "people": [
+    [
+     "W. Nazrey",
+     "bishop (letter noticed)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Our City Carriers (notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "James Wiggins and W. T. Jones are our city carriers, and hope that all who subscribe by the week will always have their money ready for them... All our ministers throughout the connexion are agents for this paper.",
+   "people": [
+    [
+     "James Wiggins",
+     "city carrier"
+    ],
+    [
+     "W. T. Jones",
+     "city carrier"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Publication Society of Philadelphia (notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "This Society was organized some years ago to assist in publishing a paper. Mrs. Laws, I believe, is the President... The Young Ladies and Gentlemen in favor of our undertaking [are requested] to meet at our house, No. 619 Pine street, on Monday evening, the 21st inst., to organize themselves into a society to aid in establishing our paper. --Ed.",
+   "people": [
+    [
+     "Mrs. Laws",
+     "president, Publication Society of Philadelphia (as reported)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Book Depository of the African M. E. Church (advertisement)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Book Depository of the African M. E. Church, No. 619 Pine street, Philadelphia. We keep on hand Sabbath school books, Question Books, Catechisms, and books generally used in the Public Schools; also stationery. [Recurring house notice; captured once here.]",
+   "people": [
+    [
+     "Elisha Weaver",
+     "General Book Steward (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Quarterly Meetings (notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "Rev. W. D. W. Schureman's Quarterly Meeting [next Sabbath]... Rev. Peter Gardiner's Quarterly Meeting will be held at Woodbury, Gloucester co., N. J., Saturday and Sabbath day, the 19th and 20th. [Item on Rev. J. M. Brown and the Repository follows.]",
+   "people": [
+    [
+     "W. D. W. Schureman",
+     "pastor (Rev.)"
+    ],
+    [
+     "Peter Gardiner",
+     "pastor (Rev.), Woodbury N.J."
+    ],
+    [
+     "J. M. Brown",
+     "editor of the Repository (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Our First Visit to Bristol (with list of Bristol and Burlington subscribers)",
+   "author": "",
+   "type": "report",
+   "summary": "We spent last Sunday at Bristol with our Rev. and esteemed father, Robertson. It was his quarterly meeting. We had a good time together... We sold fifty copies, which were all we had with us, and got some twenty subscribers... We will give the names of those who subscribed for our paper in Bristol.",
+   "people": [
+    [
+     "Ann Louisa Williams",
+     "subscriber, Bristol (Miss)"
+    ],
+    [
+     "Mary Dean",
+     "subscriber, Bristol (Mrs.)"
+    ],
+    [
+     "Josiah Ross",
+     "subscriber, Bridgewater P.O. (Mr.); [VERIFY name reading]"
+    ],
+    [
+     "Peter Teneyick",
+     "subscriber, Bristol (Mr.)"
+    ],
+    [
+     "Harriet Freeman",
+     "subscriber, Bristol (Mrs.)"
+    ],
+    [
+     "Mary Johnson",
+     "subscriber, Bristol (Mrs.)"
+    ],
+    [
+     "Elizabeth Sharp",
+     "subscriber, Bristol (Mrs.; paid $1)"
+    ],
+    [
+     "Henry Blake",
+     "subscriber, Bristol"
+    ],
+    [
+     "Theodore Freeman",
+     "subscriber, Bristol"
+    ],
+    [
+     "Charles Anderson",
+     "subscriber, Bridgewater"
+    ],
+    [
+     "James Tilminion",
+     "subscriber, Bristol (Mr.); [VERIFY name reading]"
+    ],
+    [
+     "Sylvester Buckus",
+     "subscriber, Bristol"
+    ],
+    [
+     "Adeline Banks",
+     "subscriber, Bristol (Mrs.)"
+    ],
+    [
+     "Matilda Teneyick",
+     "subscriber, Bristol (Miss)"
+    ],
+    [
+     "Mary S. Thompson",
+     "subscriber, Burlington (Mrs.; paid)"
+    ],
+    [
+     "Lydia Ann Thomas",
+     "subscriber, Burlington (Mrs.)"
+    ],
+    [
+     "Lucy Ann Cumming",
+     "subscriber, Burlington (Miss)"
+    ],
+    [
+     "Aaron Johnson",
+     "subscriber, Burlington (paid)"
+    ],
+    [
+     "Sarah Page",
+     "subscriber, Burlington"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "News from the Churches (mission church; Frankford)",
+   "author": "",
+   "type": "report",
+   "summary": "We omitted, in our first issue, the [mention of the] mission [church] in this city. It was not designedly done... Rev. Stephen Smith is the pastor of the mission. They have had a protracted meeting in the mission, which seems to have resulted in good... On Wednesday night we had a meeting at Frankford with father Robertson... the Rev. H. Davis, a local preacher, and his son, take one hundred copies per week to supply Frankford. That is the way to do business. [Also notes a letter from Rev. ... W. Weyman of Frederick, Md.]",
+   "people": [
+    [
+     "Stephen Smith",
+     "pastor of the city mission (Rev.)"
+    ],
+    [
+     "H. Davis",
+     "local preacher (Rev.), Frankford"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "The Egyptian [Obelisk] in the Court of St. Peter's",
+   "author": "Jonathan C. Gibbs",
+   "type": "article",
+   "summary": "Whenever objects of nature or art have been consecrated by the memory of human affections... Such is the case with the Egyptian Obelisk in the court of St. Peter's. [Signed: Jonathan C. Gibbs, Pastor Seventh St. Presbyterian Church.]"
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "The Arts and Sciences (no. 1)",
+   "author": "",
+   "type": "article",
+   "summary": "When we take a retrospective view of the arts and sciences... Now, we colored people have the advantage of the ancients, apprentices, journeymen, and business men... [Unsigned first installment; series continues 26 Jan and 2 Feb.]"
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "A. M. E. Preachers' Association",
+   "author": "W. D. W. Schureman",
+   "type": "letter",
+   "summary": "Bro. Weaver:--You have requested me to write an article for our paper... The proper thinking part of the ministry of the Philadelphia district have seen, for a long time, the necessity of an organization of this kind. While our highly esteemed brother, J. P. Campbell, was in our city as general book steward, he, with others, attempted to meet weekly...",
+   "people": [
+    [
+     "J. P. Campbell",
+     "former general book steward (Rev.)"
+    ],
+    [
+     "Elisha Weaver",
+     "addressee, editor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Letter from Bishop Nazrey",
+   "author": "W. Nazrey",
+   "type": "letter",
+   "summary": "Mr. Editor,--After an absence of over four years from our numerous friends in the east, permit me to speak to them on subjects of importance through your columns... I have for the last four years been travelling through the Western region and the Canadas..."
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Letter from Brother Brown",
+   "author": "John M. Brown",
+   "type": "letter",
+   "summary": "Baltimore, Jan. 14th, 1861. Brother Weaver:--I thank you for proving that we can do something, as well as others... Philadelphia alone ought to give you two thousand subscribers. P.S. Your old friend, the Repository, is now out. It contains a fine likeness of the venerable founder of the A. M. E. Church, the late Bishop Allen. Our subscribers in Philadelphia can get them at your book store, No. 619 Pine Street.",
+   "people": []
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Married (Stokes--Robinson?)",
+   "author": "",
+   "type": "marriage",
+   "summary": "On the 3d inst., we had the pleasure of joining in the connubial knot our friends Mr. William Sto[k]es and Miss Anna Ro[binson?], both of Philadelphia city. We wish them a long and happy life.",
+   "people": [
+    [
+     "Anna Robinson",
+     "bride (Miss); [VERIFY name reading]"
+    ],
+    [
+     "Elisha Weaver",
+     "officiating minister (implied 'we')"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Fine Cake Bakery, Confectionary and Ice Cream Saloon (advertisement)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Fine Cake Bakery, Confectionary and Ice Cream Saloon, No. 80[1/2] South Street. Ellis J. Peer would announce that he keeps constantly on hand a general assortment of all kinds of Cakes, Creams, Jellies, and Pastries. Festivals, Balls, and Private Parties served upon the shortest notice. Jan. 19--1m. [Recurring; captured once.]",
+   "people": [
+    [
+     "Ellis J. Peer",
+     "proprietor, confectioner, No. 80 1/2 [VERIFY] South Street"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Teachers of the piano (advertisements)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Miss L. H. Robertson, Teacher of the Piano, No. 1150 S. Eleventh Street, Philadelphia. -- Miss M. E. Marsall [sic], Teacher of the Piano Forte, Residence No. 419 South Thirteenth Street, Philadelphia. [Race of advertisers not stated; this ad block is shared with the white-run Christian Instructor -- see notes.]"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 1,
+   "headline": "The Death of the Rev. John Cornish (poem)",
+   "author": "C. Danfield [VERIFY]",
+   "type": "obituary",
+   "summary": "Elegiac poem: '...Voices from heaven are in the still air... As Cornish' spirit wings empyrean space...' Signed C. Danfield [VERIFY].",
+   "people": []
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "The Daughters of Conference",
+   "author": "",
+   "type": "report",
+   "summary": "The Daughters of Conference, Bethel Church, Philadelphia, met in Bethel Church on last Thursday night, the 17th inst., to have a lecture delivered to them, to increase their fund. The Rev. J. M. Brown, being in the city, delivered a discourse to them from the 2d Chapter of Habakkuk, 4th verse...",
+   "people": [
+    [
+     "Mrs. Williams",
+     "president, Daughters of Conference"
+    ],
+    [
+     "Mrs. Highgate",
+     "treasurer, Daughters of Conference"
+    ],
+    [
+     "J. M. Brown",
+     "lecturer (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Congratulations",
+   "author": "",
+   "type": "notice",
+   "summary": "We are continually receiving letters from our friends, congratulating us on behalf of our paper; among which is one from our friend and scholar of Hamilton, O., Mr. A. J. Anderson, who is one of the leading Trustees of the Wilberforce University... We also have one from our friend, Mr. Wiggins, which appears in this week's paper.",
+   "people": [
+    [
+     "Nathaniel Wiggins",
+     "correspondent (Mr.) = Nathaniel Wiggins"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Protracted Meeting (Little Wesley)",
+   "author": "",
+   "type": "notice",
+   "summary": "The Rev. C. Woodyard is holding a protracted meeting in his charge, Little Wesley. May the Lord guide the battle.",
+   "people": [
+    [
+     "C. Woodyard",
+     "pastor, Little Wesley (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Dedication (Gouldtown)",
+   "author": "",
+   "type": "notice",
+   "summary": "The Rev. Bishop Nazrey will, the Lord willing, dedicate a new Church, built by Rev. Jos. Smith, at Gouldtown, N. J., next Sabbath, the 27th inst., at half-past 10 o'clock, A. M.",
+   "people": [
+    [
+     "Willis Nazrey",
+     "bishop"
+    ],
+    [
+     "Jos. Smith",
+     "pastor, builder of the Gouldtown church (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Quarterly Meeting (Bethel)",
+   "author": "",
+   "type": "notice",
+   "summary": "Rev. J. Woodlin's quarterly meeting, in Bethel Church, on Sabbath, the 27th inst.",
+   "people": [
+    [
+     "J. Woodlin",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Notice (Publication Society meeting)",
+   "author": "",
+   "type": "notice",
+   "summary": "The Publication Society will meet next Thursday evening in Bethel Church. All the members and friends are requested to meet, as the cause is a worthy one. We bespeak a full house for them. Mark, it is the first Thursday in February."
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Death of Brother Carr",
+   "author": "Sarah A. Carr",
+   "type": "obituary",
+   "summary": "We publish the following letter that we have received from Miss Carr... Another good man, a local preacher, Snider Carr, has fallen from the ranks of laborers... Gaysport, Jan. 18th, 1861. Mr. E. Weaver.--Dear Brother:--I drop you these few lines to inform you that my dear father departed this life on last Sabbath morning... [Non-Philadelphia: Gaysport, Pa.; names in summary only.]"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Letter from Friend Wiggins",
+   "author": "Nathaniel Wiggins",
+   "type": "letter",
+   "summary": "Rev. Elisha Weaver:--Dear Sir:--It is with pleasure that I have just read the second number of your valuable paper, The Christian Recorder. Allow me to say that it is a perfect triumph... I shall contribute to its columns occasionally."
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "California Mission",
+   "author": "Willis Nazrey",
+   "type": "letter",
+   "summary": "I will here call the attention of the ministers and members of the different districts in the A. M. E. Connexion, to the doings of the General Conference of 1860, at Pittsburgh, in relation to the California Mission... The Ohio Conference had taken action to raise their proportional part, and send it as follows: to the Rev. Stephen Smith, No. 319 Lombard Street, Philadelphia. Send it by Adams & Co.'s Express...",
+   "people": [
+    [
+     "Stephen Smith",
+     "receiver of California Mission funds (Rev.), No. 319 Lombard Street"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Confectionery (editorial puff for Mr. Peer)",
+   "author": "",
+   "type": "notice",
+   "summary": "It will be seen by referring to an advertisement or card, that our friend, Mr. Peer, in South street, is prepared to accommodate his friends at a very short notice. We hope he may get a fair share of patronage, for he and his good lady keep excellent articles.",
+   "people": [
+    [
+     "Ellis J. Peer",
+     "confectioner, South street (Mr.) = Ellis J. Peer"
+    ],
+    [
+     "Mrs. Peer",
+     "wife of Mr. Peer ('his good lady')"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Undertaker (editorial puff for Mrs. Duterte)",
+   "author": "",
+   "type": "notice",
+   "summary": "Mrs. Duterte's advertisement will be found under that head, in one of our columns. We would recommend her as being always ready to accommodate any one in her line of business. We hope she may receive a fair share of patronage, for she is worthy of it.",
+   "people": [
+    [
+     "Mrs. Duterte",
+     "undertaker = Mrs. H. S. Duterte"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Notice (Box 430; General Conference Minutes; Free-will Offering)",
+   "author": "",
+   "type": "notice",
+   "summary": "Our Correspondents and Subscribers will please take notice that all letters... must be directed to Box No. 430, Philadelphia, Pa. We would be very glad if those brethren who received the General Conference Minutes would have the kindness to forward us the money for them... also those brethren who hold the money called the Free-will Offering, should obey the General Conference."
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Colored Men Cannot Write (editorial)",
+   "author": "",
+   "type": "editorial",
+   "summary": "[A white acquaintance] considers himself a scholar... He said he did not know of more than one or two colored persons who could write... The experience of not a few of our race has been much like our own: left a fatherless and motherless boy at the age of ten years, in old North Carolina... [Autobiographical passage by editor Weaver.]"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Banneker Institute (resolutions on the death of Jesse Ewing Glasgow, Jr.)",
+   "author": "John W. Simpson",
+   "type": "report",
+   "summary": "At a special meeting held Jan. 16, 1861, the decease of Mr. Jesse Ewing Glasgow, Jr., was announced, whereupon a committee, consisting of Messrs. O. V. Catto, W. H. Minton and H. B. Black, was appointed to draft resolutions... Resolved, That copies of these resolutions be sent to the family of the deceased and the University of Edinburgh... John W. Simpson, President. (Attest,) J. C. White, Secretary.",
+   "people": [
+    [
+     "Jesse Ewing Glasgow, Jr.",
+     "deceased member; student, University of Edinburgh"
+    ],
+    [
+     "O. V. Catto",
+     "resolutions committee"
+    ],
+    [
+     "W. H. Minton",
+     "resolutions committee"
+    ],
+    [
+     "H. B. Black",
+     "resolutions committee"
+    ],
+    [
+     "J. C. White",
+     "secretary, Banneker Institute"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Observations of Bishop Nazrey: The People and their Occupation",
+   "author": "W. Nazrey",
+   "type": "article",
+   "summary": "Commencing in the western part of Pennsylvania, we find a large portion of the colored people, of both sexes, depending entirely for a living upon the steamboats plying on the various rivers and lakes... [Western/Ohio/Michigan settlements; non-Philadelphia.]"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Devotional Choir Singing (no. 1)",
+   "author": "A. Burris",
+   "type": "letter",
+   "summary": "Mr. Editor:--You will please pardon the boldness I have assumed in imposing the following article upon your columns... we know of several competent vocalists among our people, such as a E. T. G., or T. C. B., or a H. S., a Mr. A. W. L. Those, with a few others, are all Philadelphia can boast of as vocalists..."
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "Curious Facts in Science",
+   "author": "B.",
+   "type": "article",
+   "summary": "Mr. Editor:--Resuming the subject where we left off in our last, we purpose saying somewhat more of the curious property of Allotropism in Carbon... [Signed 'B.']"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "The Arts and Sciences (porcelain and pottery)",
+   "author": "Baisnea [VERIFY]",
+   "type": "article",
+   "summary": "We shall not enter into a history of this branch of the industrial arts... we hope that that gun, fired by Mr. H. Garnett, of New York, at our 'Negro Aristocracy,' may effectually clear the atmosphere... We think a company of young men might be formed for the purpose of manufacturing children's toys..."
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "The Rights of Colored People (Goines vs. McCandless)",
+   "author": "W. S.",
+   "type": "letter",
+   "summary": "Decision of the District Court against Colored People Riding in the City Railway Cars. Mr. Editor:--The colored people of Philadelphia, as you know, have, within the last week, had a second edition of the Dred Scott decision, from the District Court of Pennsylvania, sitting here, in the case of George W. Goines vs. McCandless. The defendant, McCandless, was a conductor on one of the city railways, who, some time back, ejected Mr. G. in a forcible manner from the cars on account of his color... Philadelphia, Jan. 23d, 1861.",
+   "people": [
+    [
+     "George W. Goines",
+     "plaintiff, ejected from city railway car"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "headline": "A Scene in Philadelphia: The Ups and Downs of Life",
+   "author": "",
+   "type": "article",
+   "summary": "[In a] neat, quiet, back street there is now living a young man and his wife, with their three children... The father, who learned the trade of [...] plating, found himself... entirely out of employment... [Unnamed family; summary from OCR, no names.]"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 3,
+   "headline": "Mrs. H. S. Duterte, General Undertaker and Furnisher (advertisement)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Mrs. H. S. Duterte, General Undertaker and Furnisher, respectfully informs her friends and the public, that she still continues the Undertaking business at the old establishment, No. 634 Lombard St., and being thankful for past favors, hopes still to obtain a share of the patronage of the public. Ready made Coffins always on hand. Also a handsome Hearse and Carriages, with careful drivers... [Recurring; captured once.]",
+   "people": [
+    [
+     "H. S. Duterte",
+     "proprietor, general undertaker (Mrs.), No. 634 [VERIFY] Lombard St."
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 3,
+   "headline": "A New Class of Emigrants (news item)",
+   "author": "",
+   "type": "article",
+   "summary": "Within a few weeks, some seventy-five colored families, who have emigrated from Charleston, S. C., have come to this city, and taken up their abode in the negro quarter of the town. They left their old homes because of the going into effect, in South Carolina, of a law which requires all free negroes to wear a badge... Their arrival here has caused quite a sensation in colored circles. I understand that New York has also received a share of these emigrants.--Cor. of World."
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Our Disciplines / Notice to correspondents / Bristol payments",
+   "author": "",
+   "type": "notice",
+   "summary": "Will the brethren send in their orders, get the Disciplines, sell them, and forward us the money... Our Bristol friends are paying up their subscriptions. We acknowledge the following: From Theodore Freeman, $2.00; Miss Matilda Tenyick, $2.00; Peter Tenyick, $2.00. From Miss Leana Page, Burlington, $1.00. Our city subscribers--those who have paid their dollar and a half, will only have to pay the carriers one cent, and those who have paid nothing must pay the carrier four cents on delivery.",
+   "people": [
+    [
+     "Theodore Freeman",
+     "subscriber, Bristol"
+    ],
+    [
+     "Matilda Tenyick",
+     "subscriber, Bristol (Miss)"
+    ],
+    [
+     "Peter Tenyick",
+     "subscriber, Bristol"
+    ],
+    [
+     "Leana Page",
+     "subscriber, Burlington (Miss); [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Revivals",
+   "author": "",
+   "type": "report",
+   "summary": "A number of churches are holding a series of meetings. Among which is Little Wesley A. M. E. C., Pastor, Rev. C. Woodyard. Also, the Rev. Mr. Cooper, pastor of St. John's M. E. Church, is having a glorious time. We preached for them on last Friday night, the 25th inst... [Also notes Rev. H. J. Young, New Bedford, Mass.]",
+   "people": [
+    [
+     "C. Woodyard",
+     "pastor, Little Wesley (Rev.)"
+    ],
+    [
+     "Mr. Cooper",
+     "pastor, St. John's M. E. Church (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "News from Churches",
+   "author": "",
+   "type": "notice",
+   "summary": "We received a letter from our good brother Strother, of Richmond, Ind., stating that he is engaged in carrying on a protracted meeting... Also, one from Rev. W. H. Waters, of Baltimore... Also, a letter from our young and esteemed brother, Henry M. Turner... Rev. Daniel Moore, of Washington... brother Rue, of Newport, R. I.... Rev. A. C. Crippen, of Newark, N. J., accompanied with some seven subscribers... Rev. Jesse Divine, of Columbus, Ohio. [All non-Philadelphia; names in summary only.]"
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Letter from Friend Wiggins",
+   "author": "Nathaniel Wiggins",
+   "type": "letter",
+   "summary": "January 2[?], 1861. To Rev. Elisha Weaver, Editor of Christian Recorder: Rev. and Dear Sir:--I have now before me the 2d No. of your valuable paper... My temporal business requires me to be in the presence of our most influential citizens, to whom I have shown the Christian Recorder... one, a distinguished member of the bar, said that the people of color were just beginning to display the lights from under the bushel."
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Episcopal Visits",
+   "author": "W. Nazrey",
+   "type": "notice",
+   "summary": "I will visit Bordentown, N. J., March 1st, and will remain in that circuit until the [4th]. I shall then leave for Princeton, on which circuit I shall remain from the 8th to the 11th. Leave thence for [New Bruns]wick... Next visit Burlington, and remain on that circuit until the 21st. I will be on Westchester circuit on the 23d... until the 29th, and will leave then for Penningtonville circuit and remain in that circuit until the [5th?] of April. Next visit Columbia circuit, and remain about a week."
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Our Visit to Gouldtown",
+   "author": "",
+   "type": "report",
+   "summary": "Saturday morning, the 26th inst., at 9 o'clock A. M., Rev. Bishop Nazrey and I stepped aboard of the boat which soon conveyed us across the Delaware River to Camden, where we were very politely asked by the conductor of the West Jersey Railroad Company to take back seats in the car... Among the first whom our eyes beheld was the Rev. Joseph Smith, pastor of the church which we went down to dedicate...",
+   "people": [
+    [
+     "Willis Nazrey",
+     "bishop"
+    ],
+    [
+     "Joseph Smith",
+     "pastor, Gouldtown church (Rev.)"
+    ],
+    [
+     "William Stewart",
+     "young man who conveyed bishop and editor; near Gouldtown"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Observations of Bishop Nazrey: The Religious Condition of our People in [the West]",
+   "author": "W. Nazrey",
+   "type": "article",
+   "summary": "They have, as a general thing, good buildings as places of worship, which are generally paid for. The attendance is reasonably good... [Western circuits; non-Philadelphia.]"
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Our Duty (to the Commonwealth)",
+   "author": "",
+   "type": "article",
+   "summary": "What are the obligations and duties of the colored population of Pennsylvania in the present crisis? It has been our good fortune to become the residents of a State whose ancestral virtue and humanity bear the indelible record that she was the first... to secure, by legislative enactments, the liberty of her bondmen!... (To be continued.)"
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Devotional Choir Singing (no. 2)",
+   "author": "A. B. [VERIFY]",
+   "type": "letter",
+   "summary": "Mr. Editor:--I hope you will pardon me for again intruding myself upon your columns. In our last article we stated that a greater portion of choristers had lost... the spirit of devotional psalmody... [Signature faint; continuation of A. Burris, 26 Jan.]"
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "The Bishop's Allowance",
+   "author": "Joshua Woodlin",
+   "type": "letter",
+   "summary": "Brother Weaver:--Permit me to inform the ministers who have charges of circuits and stations in the Philadelphia and New England Districts... that our beloved Bishop, Willis Nazrey, has arrived here some time since with his family, to preside over the said Districts... The Conference having appointed me District Book Steward... The Bishop's address is Philadelphia, Pa., 606 Pine Street, above Sixth. Yours fraternally, Joshua Woodlin, District Book Steward.",
+   "people": [
+    [
+     "Willis Nazrey",
+     "bishop; residence 606 Pine Street above Sixth"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "The Arts and Sciences (proposals: industrial societies, 'Industrial Congress')",
+   "author": "",
+   "type": "article",
+   "summary": "Mr. Editor:--The proposal which we have to make is this--that our young men and women form themselves into societies of six or more members, for the following... purposes... 5th. To elect annually or otherwise a delegate for the organization of an 'Industrial Congress'... [Signature not legible on film.]"
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "headline": "Reply to 'W. S.' on the Goines railway-car case",
+   "author": "[illegible]",
+   "type": "letter",
+   "summary": "Mr. Editor:--I notice an article in your paper of the 26th instant, by 'W. S.,' who has attempted to review the recent decision in the District Court, in the case of Goines vs. McCandless... Our counsel were W. S. Peirce [VERIFY], Esq., and Ex-Judge of the Supreme Court, Mr. Knox... I am informed the case is to be taken to the Supreme Court... let him attend the meetings that will be called for the purpose of raising funds... Phila., Jan. 28th, 1861.",
+   "people": [
+    [
+     "George W. Goines",
+     "plaintiff (Mr.) = George W. Goines"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Meetings (quarterly meeting notices)",
+   "author": "",
+   "type": "notice",
+   "summary": "Rev. L. C. Speaks' Quarterly Meeting is (this) Saturday and Sabbath evenings, the 9th and 10th insts. Rev. John Cornish's Quarterly Meeting is at Old Chester on the 17th inst., and at New Chester on the 24th.",
+   "people": [
+    [
+     "John Cornish",
+     "pastor; quarterly meetings at Old Chester and New Chester (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Anniversary (Ladies of the John Cornish Society)",
+   "author": "",
+   "type": "report",
+   "summary": "The ladies of the John Cornish Society held their Anniversary on Wednesday evening, the 10th inst. Mrs. Carter, their President, seems to be well qualified for that position; she is assisted by Mrs. Harris. The Annual Report, read by Mrs. Seymour, was a very interesting document.",
+   "people": [
+    [
+     "Mrs. Carter",
+     "president, John Cornish Society (ladies)"
+    ],
+    [
+     "Mrs. Harris",
+     "assistant to the president, John Cornish Society"
+    ],
+    [
+     "Mrs. Seymour",
+     "read the Annual Report, John Cornish Society"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Donation Visit (A.M.E. Church, Trenton, N.J.)",
+   "author": "",
+   "type": "report",
+   "summary": "We learn that the members of the A. M. E. Church, Trenton, N. J., paid their Pastor, Rev. J. P. Campbell, a donation visit, on Tuesday, the 5th inst. Some $17 cash and about $20 in presents was the result.",
+   "people": [
+    [
+     "J. P. Campbell",
+     "pastor, A.M.E. Church, Trenton, N.J. (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Visit to New York",
+   "author": "",
+   "type": "editorial",
+   "summary": "We left the 'City of Brotherly Love' on Saturday, the 2d inst., at 11 o'clock, a.m., for New York City, and arrived there at 4 o'clock, p.m. We stopped in at Mrs. Jones', near Bethel Church, and had a short conversation with this good sister. (Editor Weaver's trip: Rev. [George] Weir, Bethel Church NY; Rev. L. C. Speaks, Bridge Street Church, Brooklyn; Rev. Wm. Moore, Flushing; Watson of the New York Circuit; Mr. and Mrs. Champion, Brooklyn. Notes the paper supplies over 410 copies per week in Philadelphia. All named persons are New York; not linked.)"
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "News from the Churches",
+   "author": "J. P. Campbell",
+   "type": "letter",
+   "summary": "Dear Brother Weaver: The reappearance of the Christian Recorder is hailed by many as a most glorious advent. I have near me a letter from a most distinguished minister, an elder of the New England Conference ... (Names as supporters: Wm. Moore, J. A. Shorter, H. L. Brooks, J. Turner of St. Louis, J. M. Brown, A. W. Wayman, W. H. Waters, S. L. Hammond, W. D. W. Schureman, J. Woodlin, 'with our bishops'. Reports H. J. Young of New Bedford; Rev. Theodore Gould of the Princeton circuit raising funds for a new brick church at Princeton; Trenton circuit paid off church at Pennington; Princeton circuit +39 members, Trenton circuit +44. Brother Waters of Baltimore $3.42 and Mr. Edward M. Thomas of Washington acknowledged. Dated Trenton, Jan. [day illegible], 1861.)",
+   "people": [
+    [
+     "Theodore Gould",
+     "pastor, Princeton circuit, N.J. (Rev.)"
+    ],
+    [
+     "W. D. W. Schureman",
+     "named as supporter of the Recorder (Rev.)"
+    ],
+    [
+     "J. Woodlin",
+     "named as supporter of the Recorder"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Our Duty, No. 2",
+   "author": "",
+   "type": "editorial",
+   "summary": "In a former article we aimed to direct attention to the past policy of Pennsylvania, with respect to our rights and privileges ... and to point out the corresponding obligations imposed on us, as colored citizens, for the rich blessing of freedom and happiness we enjoy. (Invokes 'the proud historic deeds of Richard Allen, Absalom Jones, James Foster [sic, prob. Forten], Jeffrey, Johnson, Davis, Black, Durham, and Vashon'. To be continued.)",
+   "people": [
+    [
+     "Richard Allen",
+     "invoked as historic figure"
+    ],
+    [
+     "Absalom Jones",
+     "invoked as historic figure"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Thoughts on Marriage",
+   "author": "W. D. W. Schureman",
+   "type": "letter",
+   "summary": "Mr. Editor: I purpose writing a few practical thoughts on the above-mentioned subject. Marriage is the union of sexes, under matrimonial obligations. It is the proper mode to carry out a Divine mandate."
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "The Arts and Sciences: Smelting and Refining",
+   "author": "Brister",
+   "type": "article",
+   "summary": "Our attention has been frequently called to this subject, from the fact, that the sweepings from the benches and floors of the workshops of the workers in gold and silver ... are put through a process by which the precious metal is extracted. (Closes with 'a word on improvement in business': criticizes 'some of our men on Second Street in the clothes business' still in 'the same dark and dismal cellars' as twelve years ago. To be continued.)"
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "Devotional Choir Singing",
+   "author": "A. B.",
+   "type": "letter",
+   "summary": "Mr. Editor: In our last article we mentioned a few faults with regard to devotional choir singing. We proceed to speak of a few more ... (States there are 'some sixteen or eighteen churches in this city, and among them all, there are not more than three properly trained choirs'.)"
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "headline": "New clothing store (editorial puff)",
+   "author": "",
+   "type": "notice",
+   "summary": "[Opening lines illegible] ... at his new clothing store both new and second hand clothes, for the accommodation of all his customers. It is one of the cheapest, if not the cheapest store in the city. We hope all will give him a call. He has not only subscribed for the paper ... for one year. (Proprietor's name illegible on film; possibly F. Champion of Brooklyn, whose ad is on p3 and whom the editor visited, but not legible.)"
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Festival (Camden, N.J.)",
+   "author": "",
+   "type": "notice",
+   "summary": "A Festival will be given for the benefit of the ... [Sabbath School?] ... of the A. M. E. Church, Camden, N. J., commencing ... [dates illegible]."
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Official Notice (Independent Order of Brothers and Sisters of Love and Charity)",
+   "author": "",
+   "type": "notice",
+   "summary": "A grand demonstration of the entire Independent Order of Brothers and Sisters of Love and Charity, will be held at Bethel Church, on Thursday evening February 7th, 1861. All the officers and members of the grand and subordinate tabernacles, in and out of the State, are requested to meet in the basement ...",
+   "people": [
+    [
+     "Stephen Smith",
+     "Grand Worthy Superior, Independent Order of Brothers and Sisters of Love and Charity (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Lecture (Union Baptist Church)",
+   "author": "",
+   "type": "notice",
+   "summary": "The Rev. J. W[heaton?] Smith will deliver one of his interesting lectures at the Union Baptist church, Little Pine Street, above Sixth, on Tuesday, the 12th, at 8 o'clock, P. M. Subject: 'The Discoveries made by him, in the Holy Land.'",
+   "people": [
+    [
+     "E. Weaver",
+     "ticket agent, Book Concern, Pine Street above Sixth (Rev.)"
+    ],
+    [
+     "J. Asher",
+     "ticket agent, Rodman Street above Tenth (Rev.)"
+    ],
+    [
+     "J. Nickens",
+     "ticket agent, No. 1029 [VERIFY] Rodman Street (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Episcopal Appointments",
+   "author": "W. Nazrey",
+   "type": "notice",
+   "summary": "Bordentown circuit, N. J., March 1st to March 8. Princeton circuit, March 8th to March 11th. Brunswick circuit, March 11th to March 15th. Burlington circuit, March 15th to the 21st. West Chester circuit, March 23d to the 30th. Penningtonville circuit, March 30th to the 5th of April. Columbia circuit, April 6th to the 13th."
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "West Chester preaching notice",
+   "author": "",
+   "type": "notice",
+   "summary": "The friends in and about West Chester, (Rev. R. Barney's charge,) will remember that, by Divine permission, we will preach for them on Monday night, the 11th inst., at 7 1/2 o'clock.",
+   "people": [
+    [
+     "R. Barney",
+     "pastor, West Chester (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Thomas W. Allmond, Furnishing Undertaker (advertisement)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Thomas W. Allmond, Furnishing Undertaker, No. 1027 [VERIFY] Rodman Street, between 10th and 11th and South and Lombard Sts., Philadelphia.",
+   "people": [
+    [
+     "Thomas W. Allmond",
+     "furnishing undertaker, No. 1027 [VERIFY] Rodman Street, Philadelphia"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Meeting (Rev. S. Smith's Mission Church)",
+   "author": "",
+   "type": "report",
+   "summary": "We were at Rev. S. Smith's Mission Church Quarterly Meeting, on the 13th ult. It was a very interesting occasion. A protracted meeting was announced to continue.",
+   "people": [
+    [
+     "S. Smith",
+     "pastor, Mission Church (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Love and Charity Societies at Bethel Church",
+   "author": "",
+   "type": "report",
+   "summary": "On last Thursday night the Love and Charity Societies had a grand turn out in Bethel Church. Addresses were delivered by Rev. S. Smith, and Mr. A. M. Green, and Rev. Wm. Douglass.",
+   "people": [
+    [
+     "S. Smith",
+     "speaker (Rev.)"
+    ],
+    [
+     "A. M. Green",
+     "speaker"
+    ],
+    [
+     "Wm. Douglass",
+     "speaker (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Rev. Mr. Kinnard, formerly of this city",
+   "author": "",
+   "type": "notice",
+   "summary": "We also see from our Glasgow Examiner that the Rev. Mr. Kinnard, who used to live in this city, and moved to Canada, is now in Glasgow; and that he has, for the enterprise in which he is engaged, viz.: Church and School, sent home some four hundred dollars to Hamilton, Canada. (Same column: Anglo-African letter from Rev. E. P. Rogers, Freetown, Sierra Leone; Rev. S. H. Nesbit [VERIFY], editor, Pittsburgh Christian Advocate. Not linked.)",
+   "people": [
+    [
+     "Mr. Kinnard",
+     "clergyman (Rev.), former Philadelphia resident, now Glasgow [VERIFY spelling]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Memorial of the Young Men's Banneker Institute",
+   "author": "",
+   "type": "notice",
+   "summary": "We have on our table the Memorial of the Young Men's Banneker Institute, to the Legislature of the State of Pennsylvania, for 1861, relative to the repeal of a portion of the personal Liberty Bill, presented to us by their excellent President, Mr. Parker T. Smith.",
+   "people": [
+    [
+     "Parker T. Smith",
+     "president, Young Men's Banneker Institute"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Robert Campbell's 'A Pilgrimage to my Motherland' for sale",
+   "author": "",
+   "type": "notice",
+   "summary": "Mr. Jacob C. White, Jr., has brought to us for sale, the new work of Prof. Robert Campbell, his travels in Central Africa. The title is 'A Pilgrimage to my Motherland.' They can be had at our book store, No. 619 Pine St., or of Mr. Jacob White, the Agent, at his office in Lombard St. Price 62 1/2 cents.",
+   "people": [
+    [
+     "Jacob C. White, Jr.",
+     "agent for Campbell's book; office in Lombard St."
+    ],
+    [
+     "Robert Campbell",
+     "author (Prof.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Our Paper",
+   "author": "",
+   "type": "editorial",
+   "summary": "It is now six weeks since our paper started, and, for the encouragement of all, we will say, that we have not taken one cent of what little income there is from our Book Concern, but have made the paper pay its own way. (Executive Committee: Revs. W. Moore, W. D. W. Schureman, and W. H. Waters; General Committee to meet a day or two before the Philadelphia Annual Conference.)",
+   "people": [
+    [
+     "W. D. W. Schureman",
+     "member, Executive Committee (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "We are happy to acknowledge the following receipts from our good brethren ... From Rev. Daniel Cooper, Gallipolis, Ohio ... (Subscribers and agents in Ohio, Cincinnati, New Bedford, New York and Connecticut; none Philadelphia; not linked.)"
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "The Book Concern",
+   "author": "",
+   "type": "editorial",
+   "summary": "The duty of the Ministers and Lay Members of the A. M. E. Church toward their Book Concern. The duty of the elders, deacons, and preachers, having charge of circuits and stations, is to do their duty toward the book concern, and all of our periodicals ..."
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "West Chester",
+   "author": "",
+   "type": "report",
+   "summary": "We spent Monday night, the 11th inst., at West Chester, with Rev. R. Barney, the pastor in charge. We walked three quarters of a mile out of town to where the church is located.",
+   "people": [
+    [
+     "R. Barney",
+     "pastor in charge, West Chester (Rev.)"
+    ],
+    [
+     "Jane Thomas",
+     "new subscriber, West Chester, paid $1.00 (Mrs.)"
+    ],
+    [
+     "Ruth Anna Johnson",
+     "new subscriber, West Chester, paid $1.00 (Miss)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Lecture and Debate before the Philadelphia Library Company",
+   "author": "",
+   "type": "report",
+   "summary": "Professor J. P. Leslie, of this city, a member of the 'American Philosophical Society,' and a gentleman eminent for learning and scientific ability, and also noted as a geologist, lectured before the Philadelphia Library Company, on Tuesday evening, the 12th inst., on 'Books.'",
+   "people": [
+    [
+     "J. P. Leslie",
+     "lecturer (Professor) [VERIFY spelling; prob. J. P. Lesley]"
+    ],
+    [
+     "Isaiah C. Wear",
+     "debater, affirmative [VERIFY; prob. Isaiah C. Wears]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "The Arts and Sciences (continued)",
+   "author": "",
+   "type": "article",
+   "summary": "I shall in this article continue my views on this subject, which was commenced in the last ... (Urges despairing young men to look to 'the Rev. [initial illegible] Smith and Messrs. Dorsey, Minton, Jones, and Adger' as colored men who succeeded in business in spite of slavery and prejudice. Signature lost to film damage; presumably continues 'Brister' of CR_1861-02-09.)",
+   "people": [
+    [
+     "Mr. Dorsey",
+     "cited as successful colored businessman (surname only)"
+    ],
+    [
+     "Mr. Minton",
+     "cited as successful colored businessman (surname only)"
+    ],
+    [
+     "Mr. Adger",
+     "cited as successful colored businessman (surname only)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "headline": "Bishop Nazrey's Visit to Trenton",
+   "author": "J. P. Campbell",
+   "type": "letter",
+   "summary": "Bro. Weaver: According to previous arrangements, Bishop Nazrey and lady arrived in our midst at 1 o'clock, P. M., on Saturday. During the afternoon and evening they were visited by many warm-hearted friends. At 11 o'clock, Sabbath morning, the Bishop preached from these words: 'But out of them all the Lord delivered me.' 2 Tim. iii. 11. (Dated Trenton, N.J., Feb. 11, 1861.)",
+   "people": [
+    [
+     "W. Nazrey",
+     "bishop; visiting preacher"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 3,
+   "headline": "Meeting notice, Philadelphia Conference (illegible impression)",
+   "author": "",
+   "type": "notice",
+   "summary": "A ... Meeting of the Itinerant [Preachers' Aid?] ... of the Philadelphia Conference ... A. M. E. Church ... on the 2[6?]th of February, 1861, at 10 o'clock A. M. ... study of Bethel Church, Sixth S[treet] ... Punctual attendance is requested. (Nearly illegible; the clear impression is CR_1861-02-23 p3, recorded there.)"
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "headline": "Lecture before the Banneker Institute",
+   "author": "",
+   "type": "report",
+   "summary": "On Tuesday evening Professor A. M. Green lectured before the Banneker Institute. The lecture consisted of reminiscences of the anti-slavery movement, together with some practical suggestions concerning the duty of the colored people during the crisis.",
+   "people": [
+    [
+     "A. M. Green",
+     "lecturer (Professor) [VERIFY surname; partly blurred]"
+    ],
+    [
+     "D. D. Turner",
+     "read Sunday Dispatch article on citizenship and right of petition"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "headline": "Our Paper / city canvasser",
+   "author": "",
+   "type": "notice",
+   "summary": "All of last week's issue (No. 6) are gone, and we could dispose of some fifty copies more if we had them. We give notice that we have procured the services of Mr. A. Burris to canvass this city in getting subscribers for our paper from now until the 1st of April. Also to get advertisements for the same.",
+   "people": [
+    [
+     "A. Burris",
+     "canvasser for subscribers and advertisements, Philadelphia (to 1 April 1861)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "headline": "To Southern Travellers",
+   "author": "",
+   "type": "notice",
+   "summary": "We give notice to all our people who are in the habit of going South, to Baltimore and Washington, that the way is hedged up between here and there. No colored person is allowed to pass Havre de Grace, but is taken out of the cars, fined $20, and then made to return from whence they came."
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "headline": "Letters and acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "We are still receiving letters of a most encouraging nature from our brethren; one of which is from the Rev. Thomas Strother and his good lady ... Bishop Quinn is in the far West, visiting his Diocese ... Bishop Nazrey is paying his old friends a visit in the region of New Hope, N. J. Bishop Payne did the most of his visiting around in the fall. (Also: article and $1.05 from Rev. J. P. Campbell; receipts via Rev. Wm. Moore of Flushing, N.Y. (John S. Kearney, Elizabeth Mayhew, James Ames), from Mr. William Dixon $1.00 (place not stated), Rev. George Weir of New York, Mr. Robert Car[y?] of [place illegible], Rev. W. H. Waters of Baltimore; letter from brother Hammond of Baltimore on Recorder vs. Repository. Official notices and obituaries now placed in a column of p3.)",
+   "people": [
+    [
+     "W. Nazrey",
+     "bishop; visiting New Hope, N.J. region"
+    ],
+    [
+     "Daniel A. Payne",
+     "bishop (printed only as Bishop Payne; i.e. Bishop Daniel A. Payne)"
+    ],
+    [
+     "J. P. Campbell",
+     "sent article and $1.05 for papers sold (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "headline": "Our Visit (Wilmington; subscribers)",
+   "author": "",
+   "type": "report",
+   "summary": "[Opening paragraph illegible on film] ... Baltimore, to preach in the morning ... We also procured ... subscribers for the Recorder. (Wilmington, Del., subscribers, mostly blurred: Daniel P. Hamilton [VERIFY], ... Manlove, $1.00; Miss Mary Jane Manlove $1.00; Finley [VERIFY] J. Cooper $1.00; Miss Elizabeth Clark $1.00; Miss Catherine [surname illegible]; ... Yellow [VERIFY] $1.00. 'The young ladies in Wilmington manifest a greater disposition for religious literature than the young men do.' Newport, R.I., via Rev. G. A. Roe: Thomas Jones, William H. Womsley, Mary A. Williams, Sarah Banister. Gouldtown, N.J., via Miss Margaret Steward. Rev. George Weir of New York $1.00.)",
+   "people": [
+    [
+     "Horatio J. Mulford",
+     "subscriber, Gouldtown, N.J., $2.00 [VERIFY]"
+    ],
+    [
+     "Miss Gould",
+     "subscriber, Gouldtown, N.J., $2.00 [VERIFY; given name illegible]"
+    ],
+    [
+     "Hannah L. Lee",
+     "subscriber, Gouldtown, N.J., $2.00 (Miss)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "headline": "Bishop Nazrey on Trenton Circuit",
+   "author": "J. P. Campbell [VERIFY]",
+   "type": "letter",
+   "summary": "[Salutation and opening blurred] ... at Trenton. We will now trace his footsteps a few paces further. We have visited, dined and prayed with a number of families during the week, from Monday until Saturday night. On Sabbath morning, between nine and ten o'clock, by previous arrangement, he took private conveyance for Pennington, accompanied by his lady and myself.",
+   "people": [
+    [
+     "W. Nazrey",
+     "bishop; preached at Pennington and Trenton"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "Obituaries (Lewistown Circuit)",
+   "author": "W. W. Grimes [VERIFY]",
+   "type": "obituary",
+   "summary": "Died, on the 2[?]th of Jan., sister Susan S[...]s, of Lewistown, Pa. ... Died, in Juniata county, near Mifflintown, Jan. 29th [VERIFY], Rev. John Hall, aged 6[?] years. Father Hall was born in Frederick county, Md. In 1812 he emigrated to this State. (Signed W. W. Grimes [VERIFY], Lewistown Circuit. Central Pennsylvania; not linked pending owner's call on whether Lewistown circuit counts.)"
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "Obituaries (Princeton, N.J.)",
+   "author": "",
+   "type": "obituary",
+   "summary": "We have received the following from our Reverend and good Brother Gould, of Princeton, N. J.: Brother Noah Lane departed this life Feb. 15th, in the full triumphs of living faith, and had been, for seventeen years, a faithful member of the A. M. E. Church. ... We have had a notice of the death of a very old and distinguished sister handed to us by the Rev. T. Gould, of Princeton, N. J., Mrs. Phillis K[...], who departed this life on the 9th inst., aged 114 years.",
+   "people": [
+    [
+     "Noah Lane",
+     "deceased, d. 1861-02-15, member A.M.E. Church 17 years, Princeton, N.J. [VERIFY surname]"
+    ],
+    [
+     "Phillis K—",
+     "deceased, d. 9th inst. aged 114, Princeton, N.J. (Mrs.) [VERIFY surname illegible]"
+    ],
+    [
+     "T. Gould",
+     "reporting pastor, Princeton, N.J. (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "On the Death of Anna B. Bedford, formerly Anna [illegible]",
+   "author": "H. G. B. [VERIFY]",
+   "type": "obituary",
+   "summary": "Mr. Editor: As one of the readers of your interesting paper, and having been requested to submit the following to you, I have, therefore, consented to do so ... Our beloved sister, Anna Bedford, of whom we would say something as to her life and death, departed ... on the 13th inst. (She could neither read nor write; founded with six females a secret society, the 'Sisters of Wisdom'; it was presented to sister Bedford, and her brother changed the name to 'Love and Charity', the order that grew into the Independent Order of Brothers and Sisters of Love and Charity; few attended her bier.)",
+   "people": [
+    [
+     "Anna B. Bedford",
+     "deceased; founder of 'Sisters of Wisdom', forerunner of the order of Love and Charity [VERIFY middle initial]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "Publication Society notice",
+   "author": "",
+   "type": "notice",
+   "summary": "The Publication Society. The members of the Publication Society are all requested to meet, on next Thursday evening, in Bethel Church, without fail, at half-past seven o'clock. Business of importance to attend to. By order of the President, Mrs. Laws.",
+   "people": [
+    [
+     "Mrs. Laws",
+     "president, Publication Society"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "The Daughters of Cornish Society (standing notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "The Stated Quarterly Meetings of the Society are held on the first Wednesdays of February, May, August, and November. The meetings of the Board are held on the Wednesday previous to the regular stated meetings of the society. Mrs. Sarah Carter, President. [Secretary's name illegible], Sec'y.",
+   "people": [
+    [
+     "Sarah Carter",
+     "president, Daughters of Cornish Society (Mrs.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "Itinerant Preachers' Aid Society, Philadelphia Conference (meeting notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "All the Members of the Itinerant Preachers' Aid Society of the Philadelphia Conference, of the A. M. E. Church, are hereby notified to meet, on Tuesday, the 26th of February, 1861, at 10 o'clock, A. M., at the study of Bethel Church, Sixth Street, Philadelphia. By order of the President. Richard Robinson, President. Joshua Woodlin, Sec'y.",
+   "people": [
+    [
+     "Richard Robinson",
+     "president, Itinerant Preachers' Aid Society, Philadelphia Conference"
+    ],
+    [
+     "Joshua Woodlin",
+     "secretary, Itinerant Preachers' Aid Society, Philadelphia Conference"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "Grand Tabernacle meeting notice (Love and Charity)",
+   "author": "",
+   "type": "notice",
+   "summary": "A Meeting of the Grand Tabernacle of the Independent Order of Brothers and Sisters of Love and Charity, will meet on Friday, 1st of March, at Ma[sonic?] Hall, 11th Street, near Pine, at 7 1/2 o'clock. (Signers illegible.)"
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "A. Burris, Teacher of Vocal Music (advertisement)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "A. Burris, Teacher of Vocal Music. Also, the first lessons given on the Melodeon and Piano. Residence, No. [illegible] North 11th st., above Poplar st. N. B. Terms Moderate. [Feb. 23-1y.]",
+   "people": [
+    [
+     "A. Burris",
+     "teacher of vocal music, melodeon and piano; residence North 11th St. above Poplar [number illegible]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "The Henry Davis Society (editorial notice)",
+   "author": "",
+   "type": "report",
+   "summary": "Having received a complimentary note, by the hands of brother Seymour, from the President and members of this society, inviting us to be present at their meeting at the Philadelphia Institute on last Tuesday night, the 26th inst., we attended at the time and place specified, and found a goodly company assembled.",
+   "people": []
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "Acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "Rev. George Weir of New York, $3 for papers; Elizabeth Darry of Bristol, Pa., $2. Rev. Wm. H. Waters, our most excellent Agent in Baltimore, sent us $3 for papers sold.",
+   "people": [
+    [
+     "Elizabeth Darry",
+     "subscriber/remitter, Bristol, Pa., $2"
+    ],
+    [
+     "Zachariah Cain",
+     "remitter, West Chester, Pa., $1"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "Missionary Cause",
+   "author": "",
+   "type": "editorial",
+   "summary": "We call the attention of the Philadelphia Conference to the great need of the missionary work in this city. Jesus Christ may be considered as the first missionary in our moral world."
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "One of our carriers (notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "One of our carriers, Mr. W. Jones, was sick last week, and a great many in his route did not get their paper, on that account. Therefore, those who did not get it, can receive a copy by calling at the book store.",
+   "people": [
+    [
+     "W. Jones",
+     "city carrier of the Recorder (sick)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "Sister Lee (editorial)",
+   "author": "",
+   "type": "editorial",
+   "summary": "Letters have come to us from several brethren, making inquiry as to whether Sister Harriet Lee is in good standing in the church; whether she has ever been in prison, and if so, was she fined so heavily that she has to appeal to the people for aid; and whether she ever had the pastoral charge of any church?"
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "A Visit to Trenton, N. J.",
+   "author": "W. Nazrey",
+   "type": "letter",
+   "summary": "We left Philadelphia on the morning of the 9th of February, 1861, and in a short time we found ourselves at the Trenton Depot, where Brother Campbell was awaiting our arrival, and in a few minutes more we were at his house where we found Sister Campbell quite indisposed.",
+   "people": [
+    [
+     "Mrs. Campbell",
+     "wife of Elder Campbell, ill at Trenton"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "Scientific Lectures at the Institute for Colored Youth",
+   "author": "",
+   "type": "report",
+   "summary": "It is a fact that ought to be recorded, as of some significance and interest, that there has been for several years past a course of lectures on scientific subjects, each winter, given by colored men, before interested colored audiences, at the High School rooms, Lombard Street above 7th, in this city.",
+   "people": [
+    [
+     "Wm. Douglass",
+     "lecturer on Elocution; Rector of St. Thomas' (Episcopal) Church (Rev.)"
+    ],
+    [
+     "Octavius V. Catto",
+     "lecturer on Language; graduate and teacher of the High School (Mr.)"
+    ],
+    [
+     "Jonathan C. Gibbs",
+     "announced seventh lecturer, A.M. (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "headline": "Advice to Our Young People (No. 1)",
+   "author": "W. S.",
+   "type": "letter",
+   "summary": "Mr. Editor:--I propose, by your permission, to offer through your paper some advice and suggestions to our young people. Unquestionably wholesome lessons need to be urged upon the attention of this class to a degree greater than has hitherto been done."
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 3,
+   "headline": "The Publication Society (notice)",
+   "author": "Mrs. Laws [VERIFY]",
+   "type": "notice",
+   "summary": "The Publication Society.--The members of the Publication Society are all requested to meet, on next [Thursday? VERIFY] evening, in Bethel Church, without fail, at half past seven o'clock. Business of importance to attend to. By order of the President, Mrs. Laws.",
+   "people": [
+    [
+     "Mrs. Laws",
+     "President, Publication Society (signer); [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 3,
+   "headline": "Anniversary of the Zion Mission Sabbath School (notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "The Anniversary of the Zion Mission Sabbath School, Seventh St., below Dickerson St., will take place on the 7th of March, (Thursday) at 7 1/2 o'clock P.M. Said Mission is under the pastoral charge of Rev. S. Smith, Superintendent, and Rev. Thos. Jones, of Sabbath School.",
+   "people": [
+    [
+     "S. Smith",
+     "pastor in charge of Zion Mission (Rev.); 'Superintendent'"
+    ],
+    [
+     "Thos. Jones",
+     "of the Sabbath School (Rev.) [VERIFY role wording]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "Our Paper (editorial)",
+   "author": "",
+   "type": "editorial",
+   "summary": "We are glad that so many of our white friends are so well pleased with our paper. They are coming to our office, No. 619 Pine Street, nearly every day, and subscribing. We hope to be able to retain their approbation.",
+   "people": [
+    [
+     "Mr. Burris",
+     "canvassing agent of the Recorder in Philadelphia (Mr.); also 'our city agent, Mr. Burris' in 03-16"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "The Importance of a City Mission",
+   "author": "",
+   "type": "editorial",
+   "summary": "In last week's paper, we called the attention of the Philadelphia Conference, and of our readers, to the importance of having a regularly-appointed missionary, to labor among the poor, neglected, irreligious, and sinful of our people who are now to be found so thickly in many portions of the city."
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "Acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "We are glad to acknowledge the receipts of the following sums:--Miss Mary Still, of Allentown, N. J., $1.; from Rev. George Weir, of New York city, for papers disposed of, $3; from Mr. Charles Anderson, Bensalem, Bucks Co., Pa., $1.",
+   "people": [
+    [
+     "Miss Mary Still",
+     "subscriber, Allentown, N.J. (Miss), $1"
+    ],
+    [
+     "Charles Anderson",
+     "subscriber, Bensalem, Bucks Co., Pa. (Mr.), $1"
+    ],
+    [
+     "G. H. Gaines",
+     "forwarding minister (Rev.) for the Chester Co. / Bordentown list; [VERIFY name reading]"
+    ],
+    [
+     "Levi G. Rodson",
+     "subscriber, Kimble's Ville, Chester Co., Pa. (Mr.), $1; [VERIFY name reading]"
+    ],
+    [
+     "Samuel Bacon",
+     "subscriber, Chandlersville [VERIFY], Chester Co., Pa., $1"
+    ],
+    [
+     "John Cheemer",
+     "subscriber, $1 (place not given); [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "Episcopal Visits",
+   "author": "",
+   "type": "notice",
+   "summary": "Bishop Nazrey and his good lady are visiting the churches in his diocese, which the brethren will see, as arranged in another column of our paper. Brethren will keep on the look out for the Bishop.",
+   "people": [
+    [
+     "Willis Nazrey",
+     "bishop (Bishop)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "A Proposition to All the Colored Churches in the City",
+   "author": "",
+   "type": "notice",
+   "summary": "We will publish a Card with the name of the pastor, and the regular stated meetings for one year, on terms that will be agreeable to all parties. Will the pastors, stewards, and trustees give us their cards?"
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "Sabbath School of the Bethel Church, Philadelphia",
+   "author": "Willis Nazrey",
+   "type": "letter",
+   "summary": "I visited this school for the first time in 1842, to hear an address by an itinerating minister. It was then quite an interesting school; and the teachers seemed actively engaged in their several classes."
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "The Arts and Sciences",
+   "author": "",
+   "type": "letter",
+   "summary": "We cannot forbear to say that it is feared that we have hurt the feelings of some one in our remarks on 'Improvement in Business.' It was not done intentionally, although we have told the truth."
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "News from the Churches [Trenton Circuit]",
+   "author": "J. P. Campbell",
+   "type": "letter",
+   "summary": "Brother Weaver:--Having a little knowledge of the kind of intellectual material of which you and some of your numerous readers are made, I have thought that an occasional item of news from the churches, would neither be unacceptable to you nor them. With this view, we forward you the following.",
+   "people": [
+    [
+     "C. Woodyard",
+     "former pastor under whom the Trenton church was rebuilt c. 1859 (Rev.; initial C. faint)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "News from the Churches [Penningtonville, Frankford]",
+   "author": "",
+   "type": "report",
+   "summary": "Brother I. J. Hill, of Penningtonville Circuit, writes, 'that at Penningtonville the Lord has graciously poured out His Spirit upon the people.'",
+   "people": [
+    [
+     "I. J. Hill",
+     "preacher, Penningtonville Circuit (Brother)"
+    ],
+    [
+     "R. Robertson",
+     "pastor at Frankford, Pa. (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "headline": "Lecture and Debate before the Bannaker Institute",
+   "author": "",
+   "type": "report",
+   "summary": "The Rev. Jonathan C. Gibbs, lectured before the Bannaker Institute on Tuesday evening. The subject was Religious Intolerance. The lecture was very brief, not much exceeding twenty minutes.",
+   "people": [
+    [
+     "Jonathan C. Gibbs",
+     "lecturer (Rev.)"
+    ],
+    [
+     "A. M. Green",
+     "debater, affirmative"
+    ],
+    [
+     "D. B. Bawser",
+     "debater, negative (printed 'Bawser' twice)"
+    ],
+    [
+     "John C. Bowers",
+     "debater, negative"
+    ],
+    [
+     "I. Wesley Simpson",
+     "debater, affirmative (also 'I. W. Simpson')"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 3,
+   "headline": "Obituaries: Shadrach Bassett",
+   "author": "",
+   "type": "obituary",
+   "summary": "Shadrach Bassett, of Philada., a local preacher of the A. M. E. Church, departed this life on the 28th of February. He was about 80 or 90 years old. He has gone from labor to reward.",
+   "people": [
+    [
+     "Shadrach Bassett",
+     "deceased; local preacher, A.M.E. Church, of Philadelphia; d. 28 Feb. 1861, aged about 80 or 90"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 3,
+   "headline": "Corner Stone of Mount Moriah A.M.E. Church (notice)",
+   "author": "Henry Davis",
+   "type": "notice",
+   "summary": "By Divine Permission, the Corner Stone will be laid on the 16th of this month, (March) in Clarksburg, for the erection of the A. M. E. Mount Moriah Church, near Mount Holly. Services to commence at 3 o'clock, P. M., at which time there will be a special collection taken up for the building of the above-named church. Henry Davis, Minister. March 2, 1861."
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 3,
+   "headline": "The Daughters of Cornish Society (notice)",
+   "author": "Sarah Carter",
+   "type": "notice",
+   "summary": "The Stated Quarterly Meetings of the Society are held on the first Wednesdays of February, May, August, and November. The meetings of the Board are held on the Wednesday previous to the regular stated meetings of the society.",
+   "people": [
+    [
+     "Sarah Carter",
+     "President (Mrs.)"
+    ],
+    [
+     "L. B. Seymour",
+     "Secretary (Mrs.; initial I./L. uncertain) [VERIFY]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "News from the Churches",
+   "author": "",
+   "type": "report",
+   "summary": "Rev. A. T. Hall, of Salem, Indiana, writes, that God has graciously poured out his Spirit upon them in that portion of the vineyard, and blessed his labors at all the points of his circuit where he has been.",
+   "people": [
+    [
+     "J. Hollon",
+     "pastor, Columbia Circuit, Pa. (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "Our Paper (editorial)",
+   "author": "",
+   "type": "editorial",
+   "summary": "Will the brethren read the chapter on our Book Concern and periodicals, in our new Discipline, page 215 to 226, which has been revised and published by our excellent and worthy Committee, by the order of the General Conference, namely, Revs. Bishop Payne, John M. Brown, and Alexander W. Wayman?",
+   "people": [
+    [
+     "Daniel A. Payne",
+     "bishop; Discipline revision committee (Bishop)"
+    ],
+    [
+     "John M. Brown",
+     "Discipline revision committee (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "The Rush Society",
+   "author": "",
+   "type": "report",
+   "summary": "The Daughters of the Rush Society held their first anniversary on Wednesday the 12th inst., in Sourder's Hall, in Barclay Street. This Society is thirty-three years old, and is said to be the oldest in the city."
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "Acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "From our worthy agent, Mr. Wm. Stewart, of Gouldtown, N. J., who is very active there on behalf of the Recorder, as follows:--Philip Smith Pierce, Roadstown P. O., Cumb. county, N. J., $2.00, Mr. Archibald Cuff, Bridgeton, $1.00.",
+   "people": [
+    [
+     "Wm. Stewart",
+     "Recorder agent, Gouldtown, N.J. (Mr.)"
+    ],
+    [
+     "Philip Smith Pierce",
+     "subscriber, Roadstown P.O., Cumberland Co., N.J., $2"
+    ],
+    [
+     "Archibald Cuff",
+     "subscriber, Bridgeton, N.J. (Mr.), $1"
+    ],
+    [
+     "H. Davis",
+     "of the Burlington Circuit (Rev.); papers sold 75? cents and own subscription $1"
+    ],
+    [
+     "Georgiana Waters",
+     "subscriber, Strickersville, Chester Co., Pa. (Miss), $1"
+    ],
+    [
+     "Moses Nelson",
+     "subscriber, Chesterville, Chester Co., Pa., 50 cts (printed 'Mosea'/'Moses'); [VERIFY name reading]"
+    ],
+    [
+     "Rachel Nelson",
+     "subscriber (Miss), 50 cts"
+    ],
+    [
+     "Richard Barney",
+     "minister, West Chester, Pa. (Rev.); forwarded subscriptions"
+    ],
+    [
+     "Joseph S. Jones",
+     "subscriber via Rev. Richard Barney, $1"
+    ],
+    [
+     "Mary Ann Butler",
+     "subscriber via Rev. Richard Barney (Miss), $1"
+    ],
+    [
+     "Mr. Burris",
+     "city agent of the Recorder (Mr.)"
+    ],
+    [
+     "Wm. Shipley",
+     "subscriber, Camden, N.J. (Mr.), $1"
+    ],
+    [
+     "Abram B. Jackson",
+     "subscriber, West Chester, Pa., $1"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "Letter on the omitted General Rule in the new Discipline",
+   "author": "A. C. Crippen",
+   "type": "letter",
+   "summary": "Rev. Brother:--I purchased one of your Disciplines first, to see what the difficulties or the mistakes were that you desired not to be blamed for any. And, sir, I find, to my regret as a minister and pastor of the A. M. E. Church, that the cardinal link of our government that binds us to each other is not there."
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "Lecture at the Institute for Colored Youth",
+   "author": "",
+   "type": "report",
+   "summary": "On Thursday evening of last week, 7th instant, Rev. Jonathan C. Gibbs, A. M., gave an interesting and instructive lecture on Geology, at the High School Rooms, Nos. 716 and 718 Lombard Street.",
+   "people": [
+    [
+     "Jonathan C. Gibbs",
+     "lecturer (Rev.); A.M.; Dartmouth and Princeton Theological Seminary graduate; pastor, First Presbyterian Church, Seventh St. below Shippen"
+    ],
+    [
+     "Robert Campbell",
+     "announced eighth lecturer (Prof.); formerly High School teacher, lately of the Niger Valley Exploring Expedition"
+    ],
+    [
+     "S. M. Douglass",
+     "announced ninth lecturer"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "What is Moral Science?",
+   "author": "S. L. D.",
+   "type": "article",
+   "summary": "The following speech was written and spoken by a pupil of the 'School for Colored Youth,' established by members of the society of Friends in this city. The performance was highly creditable to himself, and bespoke superiority in the character of the school."
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "headline": "Reply concerning the late Sister Anna B. Bedford (Order of Love and Charity)",
+   "author": "G. W. Harman [VERIFY]",
+   "type": "letter",
+   "summary": "Dear Sir and Brother:--We observed in your issue of the 23d of February last an article on the death of Sister Anna B. Bedford, formerly Sister Anna B. Powell. The writer signs his name by the initials, 'H. G. R.' We do not know who 'H. G. R.' is--and would not trouble you or the public with this notice, but in justice to an order bearing the title of the Grand United Order of Brothers and Sisters of Love and Charity...",
+   "people": [
+    [
+     "Anna B. Bedford",
+     "deceased; formerly Anna B. Powell; 'the mother of the Order'; latterly of the 'Independent Order of Love and Charity'; [VERIFY name reading]"
+    ],
+    [
+     "E. W. Hemmenway",
+     "co-signer, officer 'G. W. N. S.'; [VERIFY name reading]"
+    ],
+    [
+     "E. F. Nixon",
+     "co-signer, officer 'P. G. W. U. S.' [VERIFY]; [VERIFY name reading]"
+    ],
+    [
+     "John H. Hughes",
+     "co-signer, officer 'G. G. D. M.'"
+    ],
+    [
+     "M. A. M.",
+     "brother of Anna B. Bedford, initials only ('her brother, M. A. M.')"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 3,
+   "headline": "Obituary: Mary Harred",
+   "author": "Victory",
+   "type": "obituary",
+   "summary": "Mr. Editor:--It becomes my painful duty to record the death of our young sister, Mary Harred, the daughter of Samuel and Elizabeth Edwards, who departed this life, March 3d, 1861, between sixteen and seventeen years of age. She leaves behind her a darling child.",
+   "people": [
+    [
+     "Mary Harred",
+     "deceased, d. 3 Mar. 1861, aged 16-17 (also 'Harrel', 'Mary E. Harred'); [VERIFY name reading]"
+    ],
+    [
+     "Elizabeth Edwards",
+     "mother of the deceased"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 1,
+   "headline": "Minister's Wife and Children for Sale (from the Christian Instructor)",
+   "author": "F. C.",
+   "type": "letter",
+   "summary": "From the Christian Instructor. Messrs. Editors:--The following information may not be uninteresting to some of the readers of the Instructor, as it will tend to show that, (whatever may be the cause,) the system of slavery is, at present, at a discount. The Rev. Andrew Wheeler (Methodist minister) is, at present, on a visit to this city, for the purpose of soliciting aid towards procuring the liberation from slavery of his wife and children. [Signed F. C., Philadelphia, March 12th, 1861.]"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Our California Missionary (editorial note)",
+   "author": "",
+   "type": "editorial",
+   "summary": "We have a letter from our missionary, Rev. T. M. D. Ward, who is en route to his mission in California, which will be very interesting to our readers. It is in another column of our paper.",
+   "people": [
+    [
+     "T. M. D. Ward",
+     "AME missionary to California (Rev.); not Philadelphia, named for context"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "News from the Churches (Detroit; Flushing remittance)",
+   "author": "",
+   "type": "editorial",
+   "summary": "We have received a very interesting letter from Rev. H. J. Young, who is now in the city of Detroit, Michigan, engaged in a protracted meeting with our old friend and brother, Warren. ... We received by the hands of Rev. William Moore, of Flushing, New York, the sum of ten dollars for the benefit of the Christian Recorder. [Prints the Flushing young people's letter of March 15th, 1861, naming the company: Mrs. Emeline Caffee [VERIFY], Caroline Jackson, Mary Johnson, Ellen W. Moore, Mrs. Joshua Tredwell, Silas Nickols, and Mr. J. B. Tredwell, Master of Ceremonies. All non-Philadelphia; not linked.]"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "We have received from Mrs. Ellen King, $2.00; James Thorp, $2.00; John H. Sullivan, $1.00; Rev. A. C. Crippen, $1.40. [Places not stated; Crippen is named below as of the New York Conference. Not linked.]"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Grateful Acknowledgments (Publication Society of Philadelphia)",
+   "author": "",
+   "type": "editorial",
+   "summary": "We received from the Publication Society of Philadelphia, by the hands of their excellent committee, whom they appointed to wait on us, viz., Rev. Mrs. Mary Frisby, Mrs. Mary Bell, and Mrs. Mary Jones [VERIFY], the sum of $10.00. These women are worthy of the name they bear, 'Mary'. ... In relation to the Philadelphia Conference members, we are glad to say that they all, as a general thing, came up square to the work.",
+   "people": [
+    [
+     "Mary Frisby",
+     "Publication Society of Philadelphia committee (printed 'Rev. Mrs.')"
+    ],
+    [
+     "Mary Bell",
+     "Publication Society of Philadelphia committee (Mrs.)"
+    ],
+    [
+     "Mrs. Mary Jones",
+     "Publication Society of Philadelphia committee (Mrs.); [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Notices: Rev. John Cornish's Quarterly Meetings",
+   "author": "",
+   "type": "notice",
+   "summary": "Rev. John Cornish's Quarterly Meetings are as follows:--At Tea Chester [as printed; VERIFY, probably West Chester], March 31st, West Philadelphia, April 7th, and at Norristown, on April 14th; also at Chester, April 20th, Germantown April 28th and Horntown [VERIFY], May 5th 1861.",
+   "people": [
+    [
+     "John Cornish",
+     "presiding elder / minister holding quarterly meetings (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Notice: Peter Gardiner's fourth quarterly meetings",
+   "author": "Peter Gardiner",
+   "type": "notice",
+   "summary": "April 7th, my fourth quarterly meeting will be held at Salem. April 14th, fourth quarterly meeting at Frogtown. April 21st, at Bushtown. May 5th, at Dutchtown. May 12th, at Woodbury."
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Errata: Chapters on Ethnology",
+   "author": "",
+   "type": "notice",
+   "summary": "In the fourth chapter of this series, (published last week,) several mistakes occurred in the printing of common and proper names."
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Letter: answers to Bishop Payne's eight questions on the Christian Recorder",
+   "author": "C. Woodyard",
+   "type": "letter",
+   "summary": "My Dear Editor:--I noticed an article published in the Anglo-African, written by our Reverend and much-esteemed Bishop, D. A. Payne, in which he asks eight questions, namely--1st. How came the Christian Recorder into present existence? I reply,--By the Editor, General Book Steward, and Committee appointed by the General Conference.",
+   "people": [
+    [
+     "D. A. Payne",
+     "AME bishop, author of the Anglo-African article (Bishop)"
+    ],
+    [
+     "Elisha Weaver",
+     "named as General Editor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Letter from T. M. D. Ward (at sea, en route to California)",
+   "author": "T. M. D. Ward",
+   "type": "letter",
+   "summary": "Rev. and Dear Brother:--We are now 1800 miles from New York, the 7th day out. We have encountered very heavy gales; head winds have been the order of the day."
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "The Baltimore Conference: A Warning Notice",
+   "author": "",
+   "type": "letter",
+   "summary": "My Dear Brother Weaver:--Just now the most intense excitement reigns in our midst! The bare idea that any interference should be had with the meeting of that very ancient and venerable body of Christian Ministers, causes all classes of our people to feel exceedingly sensitive. [Prints extracts from the Baltimore Exchange and Baltimore Sun: the Board of Police Commissioners will enforce the Maryland law against non-resident free negroes, so AME Baltimore Conference members from Virginia, Ohio, Pennsylvania and Delaware may not attend in April. Signer not found in the column.]"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Letter on Bishop Payne's Anglo-African article (defence of the General and Executive Committees)",
+   "author": "[illegible] Moore [VERIFY]",
+   "type": "letter",
+   "summary": "Rev. and Dear Brother Weaver: Editor of the Christian Recorder:--Dear Sir, in looking over the Anglo-African for March 9th, I saw an article signed D. A. Payne, which article calls upon the ministers of the A. M. E. Church. Now, sir, I am one of that class. [Signature faded: '... Moore' with an illegible place line; VERIFY.]",
+   "people": [
+    [
+     "D. A. Payne",
+     "AME bishop (Bishop)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Letter from Rev. H. J. Young (Detroit)",
+   "author": "H. J. Young",
+   "type": "letter",
+   "summary": "Rev. and Dear Bro. Weaver:--This will inform you that I left New Bedford on the 22d of February, to visit my family in Chatham, C.W. ... [Detroit revival under Rev. J. Warren; reprint from the New Bedford Standard. Non-Philadelphia; not linked.]"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Letter replying to Bishop John H. Hopkins of Vermont on human equality",
+   "author": "Johnson Woodlin [VERIFY]",
+   "type": "letter",
+   "summary": "Mr. Editor:--Having received the first number of the Recorder, I was much pleased with its appearance. ... Among the many passing events of the day, there appeared in the Sunday Dispatch, of your city, a letter, signed 'John H. Hopkins, Bishop of the Diocese of Vermont,' in which article there are more deadly blows aimed at the Declaration of American Independence."
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "The Divinity of Christ",
+   "author": "C. Woodyard",
+   "type": "article",
+   "summary": "Dear Editor--I take my pen in hand to write on the greatest of all subjects, namely, the character of Christ. (To be continued.)"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Advice to Our Young People, No. IV",
+   "author": "W. S. [VERIFY]",
+   "type": "article",
+   "summary": "'Honesty is the best policy.' Our young people cannot ground themselves too firmly on this foundation. (To be continued.)"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "headline": "Notice: concert for the Social, Civil and Statistical Association",
+   "author": "",
+   "type": "notice",
+   "summary": "NOTICE. [Faded on the film.] ... on Monday evening next, 25th inst., ... Hall, for the benefit of the Social, Civil, and Statistical Association of the Colored People of Pennsylvania ... [Most of the text is illegible; the Mar 30 report (CR_1861-03-30 p2) confirms it was the Hutchinson Family concert at Sansom Street Hall.]"
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 3,
+   "headline": "Dr. Brown's Lecture",
+   "author": "",
+   "type": "report",
+   "summary": "Dr. H. J. Brown of Burlington, New Jersey, paid us a visit a few days ago, and gave two very interesting and highly important lectures upon phrenology, physiology and the laws of health.",
+   "people": [
+    [
+     "H. J. Brown",
+     "lecturer on phrenology and physiology, of Burlington, N.J. (Dr.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 3,
+   "headline": "The Funeral of James Prosser (Domestic News)",
+   "author": "",
+   "type": "obituary",
+   "summary": "The Funeral of James Prosser.--Among the [first line illegible] ... the late James Prosser will long be remembered. Prosser was to Philadelphia what Downing is to New York, except that Prosser leaves about $2?,000 [VERIFY figure] as the result of his thrift and integrity, while Downing is worth at least five times that amount. For nearly half a century Mr. Prosser kept a restaurant in Market street, and was favorably known to the greater portion of the business community.",
+   "people": [
+    [
+     "James Prosser",
+     "deceased; restaurant keeper in Market street for nearly half a century"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 3,
+   "headline": "Obituary: Mrs. Mary Ingraw [VERIFY]",
+   "author": "",
+   "type": "obituary",
+   "summary": "Died in this city, Feb. 12th [VERIFY], Mrs. Mary Ingraw [VERIFY; probably INGRAM], after a lingering illness, which she bore with Christian fortitude. Her age was [illegible] years. Our loss is her infinite gain.",
+   "people": [
+    [
+     "Mary Ingraw",
+     "deceased (Mrs.); [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 1,
+   "headline": "Poem on the death of Miss Caroline Parks (Shiloh Baptist Sabbath School)",
+   "author": "",
+   "type": "obituary",
+   "summary": "The following beautiful lines were written by a youthful member of the Shiloh Baptist Sabbath School, of Philadelphia, which, on account of the youth of the author, and the subject of the lines (Miss Caroline Parks) having been a member of the School, it was unanimously agreed by the school that they be published in the Anglo-African, Recorder, and Royalist [VERIFY]. Miss Parks, it will be remembered, was brutally murdered a few months ago by a young man in California.",
+   "people": [
+    [
+     "Caroline Parks",
+     "deceased; former member of Shiloh Baptist Sabbath School, Philadelphia; murdered in California (Miss)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "To Our City Patrons",
+   "author": "",
+   "type": "notice",
+   "summary": "We wish our city subscribers would be particular, and try to pay the carriers, for we are depending upon the income of our paper every week. We would much rather that you would pay your four cents on delivery of the paper. Remember that the carriers cannot deliver the papers for nothing; and if any one of our subscribers do not get their papers, please let us know, and we will see whose route it is in, and have it attended to."
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Singing of the Hutchinson Family",
+   "author": "",
+   "type": "report",
+   "summary": "The Social, Civil and Statistical Association of Colored People, of Pennsylvania, a Society of a high literary character of this city, obtained the services of the Hutchinson family, whose fame is abroad, to give them a Concert in Sansom Street Hall, on Monday night, the 25th inst.",
+   "people": [
+    [
+     "Mr. Bowers",
+     "'our noted and distinguished friend and Professor', performed with the Hutchinsons"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "News from the Churches",
+   "author": "",
+   "type": "editorial",
+   "summary": "Rev. G. H. Graham, of Cincinnati, O., writes that God has very graciously poured out his Spirit upon the Church. [Also Rev. B. L. Brooks of Louisville, Ky.; Joseph P. Shreeves [VERIFY] of Bridgeport, Conn.; Rev. William H. Turner of Wilmington, Del.; Nelson H. Turpin of Detroit, licensed to exhort. None Philadelphia; not linked.]"
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Our Paper",
+   "author": "",
+   "type": "editorial",
+   "summary": "It is now three months since the appearance of the first number of the Christian Recorder. It was prophesied by some persons that the Recorder would not survive three weeks."
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Philadelphia Tribune",
+   "author": "",
+   "type": "review",
+   "summary": "We have before us the Philadelphia Tribune, published by a Stock Company, weekly, at the S. W. corner of Second and Brown Streets. It is a good size, fair type, and well conducted. We like this paper for many reasons, one of which is, because it has the right view of national subjects."
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "The Christian Chronicle",
+   "author": "",
+   "type": "review",
+   "summary": "We also have on our table this weekly, Christian paper, edited by Rev. James S. Dickerson. It is nearly the size of the Christian Recorder. [White Baptist paper; editor not linked.]"
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Letter from Bishop Nazrey (visit to the New Jersey circuits)",
+   "author": "W. Nazrey",
+   "type": "letter",
+   "summary": "Mr. Editor:--As I have always felt it to be a duty that I owed to the church to speak to and of the church through its organ ... I propose to give them a few words on the different subjects that have come under my observation while visiting some of our Circuits in New Jersey. My first visit was paid to Bordentown Circuit.",
+   "people": [
+    [
+     "Francis Raynor",
+     "AME member at Allentown, N.J.; rents a 150-acre farm at $800 a year, host of the Bishop (Brother)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "The Winter Lectures at the Institute for Colored Youth",
+   "author": "",
+   "type": "report",
+   "summary": "On Thursday evening, 21st inst., Mrs. S. M. Douglass delivered a scientific lecture on the circulation of blood in creative beings, the circulation of fluid in plants, in birds and reptiles, &c., to a crowded house of ladies and gentlemen.",
+   "people": [
+    [
+     "S. M. Douglass",
+     "lecturer at the Institute for Colored Youth (Mrs.)"
+    ],
+    [
+     "Prof. Bassett",
+     "Principal of the Institute for Colored Youth; gave the first lecture of the season (Prof.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Baltimore Methodist Conference: attempted separation from the Northern Church",
+   "author": "",
+   "type": "article",
+   "summary": "The Baltimore Methodist Conference, which has been in session at Staunton, Va., adjourned on Saturday, after adopting a plan for separation from the Northern Church. [M. E. Church, white; general news.]"
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Acknowledgments",
+   "author": "",
+   "type": "notice",
+   "summary": "We have received a very interesting letter from Rev. L. S. Lewis, of Boston, Mass., containing five dollars. [Also John H. Beal; Mr. William Nesbit of Altoona, Pa., and Rev. Alexander Johnson on the same circuit, $5; Rev. W. H. Waters of Baltimore, $2. None Philadelphia; not linked.]"
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Bro. Logan's Quarterly Meeting",
+   "author": "Spencer Logan",
+   "type": "notice",
+   "summary": "Philadelphia, March 2? [VERIFY day], 1861. My Quarterly Meeting will take place in New Hope on April 21st, at Buckingham Mountains on April 28th, at Newtown on May 5th, and at Attleborough on May 12th."
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Letters Received",
+   "author": "",
+   "type": "editorial",
+   "summary": "We have received a letter from Rev. A. McIntosh, of Springfield, Ill., one of the General Committee. ... this was the business of the Executive Committee, composed of Rev. Messrs. Moore, Schureman, and Waters. [Also reports from Rev. Daniel Cooper of Gallipolis, Ohio, the death of Mr. Elijah Anderson of Cleveland, Ohio, lately imprisoned in the Kentucky Penitentiary, who died in Kentucky.]",
+   "people": [
+    [
+     "W. D. W. Schureman",
+     "member of the Executive Committee (Rev.) [printed 'Schureman' surname only here]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Revival at Salem Church, Salem, N. J.",
+   "author": "Peter Gardner",
+   "type": "letter",
+   "summary": "Mr. Editor:--I wish to let you know that God, in mercy, has favored our Zion, at Salem, N. J., at the last Quarterly Meeting. ... The meeting was protracted two weeks longer. ... Ten persons turned their backs upon the powers of darkness ... A few backsliders were reclaimed, and the church revived."
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Sanctification",
+   "author": "Peter Gardner",
+   "type": "article",
+   "summary": "Write it upon pages of adamant, that the corroding tooth of time may never obliterate its legibility. ... Reader, is this your experience?"
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Chapters on Ethnology, Chapter Sixth: The Wars of Antiquity",
+   "author": "",
+   "type": "article",
+   "summary": "When sufficient time had elapsed, after the dispersion of mankind, for the development of great nationalities, a spirit of daring and a love of martial glory began to manifest itself."
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "The Executive Department of the General Book Committee, in Reply to Rev. D. A. Payne",
+   "author": "W. Moore, W. H. Waters, W. D. W. Schureman (Executive Committee)",
+   "type": "letter",
+   "summary": "Phila., March 11th, 1861. Mr. Editor:--In looking over the columns of the Anglo-African of the 9th inst., we find an article entitled 'The Christian Recorder, or Evil Behind a Right,' over the signature of our worthy and efficient New School Bishop, Rev. Daniel A. Payne.",
+   "people": [
+    [
+     "W. Moore",
+     "Executive Committee, co-signer (Rev.; of Flushing, N.Y., per CR_1861-03-23)"
+    ],
+    [
+     "W. H. Waters",
+     "Executive Committee, co-signer (Rev.; of Baltimore)"
+    ],
+    [
+     "W. D. W. Schureman",
+     "Executive Committee, co-signer (Rev.)"
+    ],
+    [
+     "Daniel A. Payne",
+     "bishop addressed (Bishop)"
+    ],
+    [
+     "Elisha Weaver",
+     "General Book Steward and Editor defended (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Letter from Henry Davis (Bishop Nazrey's visit to the Burlington circuit)",
+   "author": "Henry Davis",
+   "type": "letter",
+   "summary": "Brother Weaver:--According to appointment, Bishop Nazrey and his wife made their appearance on the 15th of March, about noon. He preached in Burlington in the evening, from the first Psalm, third verse; and on the 16th, in Clarksborough. A corner stone for a new church was laid by the Bishop, and the minister having the charge of the Burlington circuit.",
+   "people": [
+    [
+     "W. Nazrey",
+     "bishop, visiting (Bishop) [printed 'Bishop Nazrey']"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Notice (Bishop Nazrey on Bishop Payne's Anglo-African article)",
+   "author": "W. Nazrey",
+   "type": "notice",
+   "summary": "To the Readers and Friends of the Christian Recorder, or organ of the A. M. E. Church:--As there has lately appeared in the Anglo-African an article purporting to come from the Rev. D. A. Payne, one of the Bishops of the A. M. E. church, asking the ministers of said church certain questions in relation to the existence of the Christian Recorder, reason and propriety prompt me to doubt Bishop Payne being its author.",
+   "people": [
+    [
+     "D. A. Payne",
+     "bishop (Bishop)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Reply of Brother Wiggins (Independent Order of Brothers and Sisters of Love and Charity)",
+   "author": "Nathaniel Wiggins",
+   "type": "letter",
+   "summary": "To the Editor of the Christian Recorder, Rev. Elisha Weaver--Dear Sir:--Our attention has been called to a notice in your valuable paper of March 16th, 1861, of an article signed by G. W. S., G. W. N. S., P. G. W. U. S., G. G. D. M., &c., endeavoring to throw a stigma upon the Independent order of Brothers and Sisters of Love and Charity, on account of an article signed H. G. B., in a previous number of your paper, in reference to the death of our sister and fellow member, Anna B. Bedford.",
+   "people": [
+    [
+     "Anna B. Bedford",
+     "deceased member of the Independent Order of Brothers and Sisters of Love and Charity"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "headline": "Episcopal Visits",
+   "author": "Willis Nazrey",
+   "type": "notice",
+   "summary": "I propose visiting Frankford circuit, April 13th; Salem circuit, April 20th; Greenwich circuit, April 27th; Reading circuit, May 4th. It is possible these appointments may be changed somewhat in order to meet other demands."
+  }
+ ],
+ "events": [
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "Publication Society of Philadelphia -- meeting called to organize young people's society in aid of the paper",
+   "date": "1861-01-21",
+   "location": "No. 619 Pine street, Philadelphia (Weaver's house / AME Book Depository)",
+   "description": "Editor Elisha Weaver notes the Publication Society 'was organized some years ago to assist in publishing a paper'; 'Mrs. Laws, I believe, is the President.' He calls the young ladies and gentlemen in favor of the undertaking to meet at 'our house, No. 619 Pine street, on Monday evening, the 21st' [evening hour printed, about 7 1/2 o'clock] to organize themselves into a society to aid in establishing the Recorder. Follow-up: CR_1861-01-26 p2 announces the Publication Society will meet in Bethel Church the first Thursday in February.",
+   "attendees": [
+    [
+     "Mrs. Laws",
+     "president (as reported)"
+    ],
+    [
+     "Elisha Weaver",
+     "convener, editor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "Rev. W. D. W. Schureman's quarterly meeting",
+   "date": "1861-01-20",
+   "location": "[charge not named in notice; Philadelphia]",
+   "description": "Announced in the Quarterly Meetings notice for the coming Sabbath.",
+   "attendees": [
+    [
+     "W. D. W. Schureman",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "Rev. Peter Gardiner's quarterly meeting, Woodbury N.J.",
+   "date": "1861-01-19",
+   "location": "Woodbury, Gloucester co., N. J.",
+   "description": "Quarterly meeting to be held Saturday and Sabbath, the 19th and 20th January 1861 (date given = first day).",
+   "attendees": [
+    [
+     "Peter Gardiner",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "Rev. Robertson's quarterly meeting at Bristol; Recorder subscribers enrolled",
+   "date": "1861-01-13",
+   "location": "AME church, Bristol, Pa.",
+   "description": "Weaver spent 'last Sunday' (13 Jan 1861) at Bristol at the quarterly meeting of 'our Rev. and esteemed father, Robertson' [owner's ruling: = Rev. Richard Robinson of Frankford]. Robertson presented the book concern and paper; 50 copies sold, about 20 subscribers. Weaver remarks the young ladies showed more interest in improvement of mind than the young men and wishes the 'handsome little church' had backs to its seats. Bristol subscribers as printed (each $2.00 unless noted): Miss Ann Louisa Williams ($1.00); Mrs. Sarah Smith; Mrs. Mary Dean; Mr. Josiah Ross [VERIFY surname], Bridgewater P.O.; Mr. Peter Teneyick; [Eli]zabeth Derry [first name partly lost]; Mrs. Harriet Freeman; Mrs. Mary Johnson; Mrs. Elizabeth Sharp (paid $1); [Miss?] Anna E. Fry (paid) [VERIFY]; [Car]oline Williams [first name partly lost]; [Mr.] Henry Williams [VERIFY]; Henry Blake; Theodore Freeman; Charles Anderson, Bridgewater; Mr. James Tilminion [VERIFY]; Sylvester Buckus; Mrs. Adeline Banks; Miss Matilda Teneyick. Burlington subscribers 'not inserted in our first issue' (page torn at left, several names truncated): Mrs. Mary S. Thompson (paid) $1; Mrs. Ann Harris $1; Mrs. Lydia Ann Thomas $1; Miss Lucy Ann Cumming $2; [Mr.] Aaron Johnson (paid) $2; [...]ckson $1; [...] Stidum (paid) $1; [...]y (paid) $1; [...]ry Sels[?] $1; Sarah Page $1; [Cha]rles Williams $1; [...]dman Dutt[on?], Columbus, New Jersey $2; [...] Still, Allentown, N. J. $2.",
+   "attendees": [
+    [
+     "Elisha Weaver",
+     "visiting editor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "Protracted meeting at the AME mission church (Zion City Mission), Philadelphia",
+   "location": "Mission church, Philadelphia",
+   "description": "Rev. Stephen Smith, pastor of the mission, has held a protracted meeting there 'which seems to have resulted in good'; the editor has attended on several occasions. (The mission is listed as 'Zion City Mission, Phila.' in the Bishop's Allowance table, CR_1861-02-02 p2.)",
+   "attendees": [
+    [
+     "Stephen Smith",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "Weaver's Wednesday-night meeting at Frankford with father Robertson",
+   "location": "Frankford, Philadelphia",
+   "description": "Weather unfavorable but friends turned out; Weaver preached a short sermon and presented the paper, disposing of all copies he had (about sixty). Rev. H. Davis, a local preacher, and his son undertake to take one hundred copies per week to supply Frankford.",
+   "attendees": [
+    [
+     "H. Davis",
+     "local preacher (Rev.)"
+    ],
+    [
+     "Elisha Weaver",
+     "editor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "name": "A. M. E. Preachers' Association (Philadelphia district) -- weekly meetings",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Per W. D. W. Schureman: organized 'last August' (1860) on Weaver's proposal, after an earlier attempt at weekly meetings by J. P. Campbell (then general book steward) and others; meets in Bethel Church on Tuesday mornings at 9 o'clock A.M. Object: to correct errors historical, Biblical, logical or grammatical. Order: chairman appointed, scribe elected, singing and prayer, roll called alphabetically, each minister states the past week's ministerial labour, text and manner of treatment, open to criticism; a theological or Discipline question discussed each meeting.",
+   "attendees": [
+    [
+     "W. D. W. Schureman",
+     "member, author (Rev.)"
+    ],
+    [
+     "J. P. Campbell",
+     "earlier organizer (Rev.)"
+    ],
+    [
+     "Elisha Weaver",
+     "proposer (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "name": "Marriage of William Stokes [VERIFY] and Anna Robinson [VERIFY]",
+   "date": "1861-01-03",
+   "location": "Philadelphia",
+   "description": "Notice under 'Married': the editor ('we') joined in marriage 'our friends Mr. William Sto[k]es and Miss Anna Ro[...]n, both of Philadelphia city.' Both surnames are faint/blurred at the right column edge; readings uncertain.",
+   "attendees": [
+    [
+     "Anna Robinson",
+     "bride; [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "name": "Daughters of Conference (Bethel Church) -- benefit lecture by Rev. J. M. Brown",
+   "date": "1861-01-17",
+   "location": "Bethel Church, Philadelphia",
+   "description": "The Daughters of Conference of Bethel Church met Thursday night 17 Jan to hear a lecture to increase their fund; Rev. J. M. Brown, in the city, preached from Habakkuk 2:4; a collection was taken for the society. Officers: President Mrs. Williams; Treasurer Mrs. Highgate. The editor credits the sisters with 'the good they have done for some forty years' (i.e., organized c. 1820).",
+   "attendees": [
+    [
+     "Mrs. Williams",
+     "president"
+    ],
+    [
+     "Mrs. Highgate",
+     "treasurer"
+    ],
+    [
+     "J. M. Brown",
+     "lecturer (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "name": "Protracted meeting at Little Wesley AME Church",
+   "location": "Little Wesley, Philadelphia",
+   "description": "Rev. C. Woodyard, pastor, holding a protracted meeting in his charge (reported 26 Jan; still continuing per 2 Feb 'Revivals').",
+   "attendees": [
+    [
+     "C. Woodyard",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "name": "Rev. J. Woodlin's quarterly meeting at Bethel",
+   "date": "1861-01-27",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Announced quarterly meeting of Rev. J. Woodlin (Joshua Woodlin, who signs as District Book Steward on 2 Feb) at Bethel Church.",
+   "attendees": [
+    [
+     "J. Woodlin",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "name": "Publication Society meeting at Bethel Church",
+   "date": "1861-02-07",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Members and friends requested to attend; 'Mark, it is the first Thursday in February.' (Date computed: first Thursday of Feb 1861 = 7 Feb.) Follows the organizing call of 21 Jan (CR_1861-01-19 p2).",
+   "attendees": []
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 2,
+   "name": "Banneker Institute special meeting -- resolutions on death of Jesse Ewing Glasgow, Jr.",
+   "date": "1861-01-16",
+   "location": "Banneker Institute, Philadelphia",
+   "description": "Special meeting announced the death of member Jesse Ewing Glasgow, Jr. (student at the University of Edinburgh, near completion of his curriculum). Committee to draft resolutions: Messrs. O. V. Catto, W. H. Minton and H. B. Black. Resolutions call his death an irreparable loss to the community and Institute, 'one potent and living evidence of the black man's ability in the higher walks of knowledge', tender sympathy to his family and condolence to the University of Edinburgh, and order copies sent to the family and the University. Signed John W. Simpson, President; attest J. C. White, Secretary.",
+   "attendees": [
+    [
+     "John W. Simpson",
+     "president"
+    ],
+    [
+     "J. C. White",
+     "secretary"
+    ],
+    [
+     "O. V. Catto",
+     "committee"
+    ],
+    [
+     "W. H. Minton",
+     "committee"
+    ],
+    [
+     "H. B. Black",
+     "committee"
+    ],
+    [
+     "Jesse Ewing Glasgow, Jr.",
+     "deceased member"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "name": "Revival at St. John's M. E. Church; Weaver preaches",
+   "date": "1861-01-25",
+   "location": "St. John's M. E. Church [Philadelphia, as implied]",
+   "description": "Rev. Mr. Cooper, pastor of St. John's M. E. Church, 'is having a glorious time'; Weaver preached there Friday night 25 Jan; afterward Cooper 'without any exhortation at all, said, Come; and before the word was clearly from his lips, the altar was crowded.' Same notice: Little Wesley A.M.E. Church (Rev. C. Woodyard) holding a series of meetings. City of St. John's not stated explicitly.",
+   "attendees": [
+    [
+     "Mr. Cooper",
+     "pastor (Rev.)"
+    ],
+    [
+     "Elisha Weaver",
+     "guest preacher (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "name": "Bishop Nazrey's spring episcopal visitation, NJ and Pa. circuits of the Philadelphia Conference",
+   "date": "1861-03-01",
+   "location": "Bordentown, Princeton, New Brunswick, Burlington, West Chester, Penningtonville and Columbia circuits",
+   "description": "Itinerary as printed (signature faint, read as W. Nazrey): Bordentown N.J. from March 1 'until the [4th?]'; Princeton circuit 8th-11th; [New Bruns]wick 11th to [1?]th; Burlington circuit until the 21st; Westchester circuit on the 23d, remaining until the 29th (the elder to inform him where to meet); then Penningtonville circuit until the [5th?] of April; then Columbia circuit about a week. Ministers asked to arrange preaching points.",
+   "attendees": [
+    [
+     "Willis Nazrey",
+     "bishop"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "name": "Dedication of Trinity Church (African M. E.), Gouldtown, N.J.",
+   "date": "1861-01-27",
+   "location": "Gouldtown Church, near Bridgeton, N. J.",
+   "description": "Weaver's narrative. Sat 26 Jan: Weaver and Bishop Nazrey crossed to Camden; West Jersey Railroad conductor asked them to take back seats; by rail to Woodbury and stage (driver 'whose name, we think, is Mr. Snider' [VERIFY]) about thirty miles to Bridgeton, arriving about 4 P.M., met by Rev. Joseph Smith, pastor. Dined at the house of a brother 'whom they called Bishop' [surname or nickname unclear]; young William Stewart drove them to his father's house near Gouldtown, about two miles from Bridgeton; 'Sister Stewart, his good lady' served tea. Sun 27 Jan (snow 4-5 inches): at 11 o'clock the bishop, pastor and Weaver marched in, other ministers following; the trustees delivered the key; Smith and Weaver assisted the bishop in the consecration; the church was named 'Trinity Church, of the African M. E. Church'; bishop preached Zech. 2:5; $27 collected. 3 P.M. Weaver preached 1 Chron. 28:9, $23.50 collected (total fifty dollars and some cents); at night the bishop preached Gal. v. 9. Church about 45 by 37 feet, two carpeted aisles, pulpit decorated by 'the Gouldtown ladies', front gallery seating over one hundred; credit to the trustees. Mon 28 Jan: brother Stewart drove them to Bridgeton; returned via Woodbury, where the car conductor again required back seats.",
+   "attendees": [
+    [
+     "Willis Nazrey",
+     "bishop, dedicated church"
+    ],
+    [
+     "Joseph Smith",
+     "pastor (Rev.)"
+    ],
+    [
+     "Elisha Weaver",
+     "assisting minister (Rev.)"
+    ],
+    [
+     "William Stewart",
+     "host's son, conveyed party"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "name": "Assessment of the Bishop's allowance on Philadelphia District stations and circuits",
+   "location": "Philadelphia District, Philadelphia Annual Conference",
+   "description": "Joshua Woodlin, District Book Steward: the Philadelphia Annual Conference had moved a committee of three to apportion the Bishop's allowance but none was appointed; after interviewing Bishop Willis Nazrey (arrived with family to preside over the Philadelphia and New England Districts; address 606 Pine Street, above Sixth) he divides the sum by membership, requiring Philadelphia District members to pay 'a little over seven cents apiece'. Apportionment as printed: 1 Bethel Church, Phila., $100.00; 2 Union Church, Phila., $30.00; 3 Wesley Church, Phila., $15.00; 4 Zion City Mission, Phila., $10.00; 5 Camden, N.J., $10.00; 6 Frankford Circuit $20.00; 7 Bucks County Circuit $15.00; 8 Bordentown Circuit $20.00; 9 Trenton Circuit $20.00; 10 Bridgeton Circuit $25.00; 11 West Chester $2?.00 [amount illegible]; 12 Princeton Circuit $15.00; 13 Freehold Circuit $15.00; 14 Reading Circuit $20.00; 15 Norristown Circuit $20.00; 16 New Brunswick Circuit $15.00; 17 Burlington Circuit $27.50; 18 Penningtonville Circuit $20.00; 19 Salem Circuit $27.00; 20 Cape May Circuit $15.00; 21 Lancaster Circuit $20.00; 22 Denville [sic] Circuit $15.00.",
+   "attendees": [
+    [
+     "Joshua Woodlin",
+     "District Book Steward (Rev.)"
+    ],
+    [
+     "Willis Nazrey",
+     "bishop"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-02",
+   "page": 2,
+   "name": "Goines vs. McCandless: community committee, subscriptions and planned appeal",
+   "location": "Philadelphia",
+   "description": "Correspondent (signature illegible), replying to 'W. S.' (26 Jan): the suit was not sought by Mr. Goines but arose from his ejection; meetings were called to raise money; a committee managed it; petitions had been sent to the railway company 'on more than one occasion' and were met with silent contempt; counsel were W. S. Peirce [VERIFY], Esq., and ex-Supreme Court judge Mr. Knox; the case is to be taken to the Supreme Court and further meetings will be called to raise funds. Dated Phila., Jan. 28th, 1861.",
+   "attendees": [
+    [
+     "George W. Goines",
+     "plaintiff"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "name": "Rev. John Cornish's quarterly meetings, Old Chester and New Chester",
+   "date": "1861-02-17",
+   "location": "Old Chester; New Chester",
+   "description": "Notice: Rev. John Cornish's Quarterly Meeting at Old Chester on the 17th inst. (1861-02-17) and at New Chester on the 24th (1861-02-24). (Same notice announces Rev. L. C. Speaks' quarterly meeting, Saturday and Sabbath evenings 9th-10th inst.; Speaks is elder of Bridge Street Church, Brooklyn, per the same page, so not linked.)",
+   "attendees": [
+    [
+     "John Cornish",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "name": "Ladies of the John Cornish Society -- anniversary",
+   "location": "",
+   "description": "The ladies of the John Cornish Society held their anniversary on 'Wednesday evening, the 10th inst.' (date as printed is inconsistent: 10 Feb 1861 was a Sunday and postdates the 9 Feb issue). Mrs. Carter, President; assisted by Mrs. Harris; Annual Report read by Mrs. Seymour. The society had on hand about $1,860 [VERIFY third digit; could be $1,560]. A number of ministers were invited to partake of the refreshments. Location not stated (presumably Philadelphia). Compare CR_1861-02-23 p3 standing notice of 'The Daughters of Cornish Society', Mrs. Sarah Carter, President.",
+   "attendees": [
+    [
+     "Mrs. Carter",
+     "president"
+    ],
+    [
+     "Mrs. Harris",
+     "assistant"
+    ],
+    [
+     "Mrs. Seymour",
+     "read annual report"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 2,
+   "name": "Donation visit to Rev. J. P. Campbell, Trenton A.M.E. Church",
+   "date": "1861-02-05",
+   "location": "A.M.E. Church, Trenton, N.J.",
+   "description": "Members of the A.M.E. Church, Trenton, N.J., paid their pastor Rev. J. P. Campbell a donation visit on Tuesday the 5th inst.; some $17 cash and about $20 in presents [VERIFY both amounts; faint].",
+   "attendees": [
+    [
+     "J. P. Campbell",
+     "pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "name": "Independent Order of Brothers and Sisters of Love and Charity -- grand demonstration",
+   "date": "1861-02-07",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Grand demonstration of the entire Independent Order of Brothers and Sisters of Love and Charity at Bethel Church, Thursday evening Feb. 7, 1861; officers and members of the grand and subordinate tabernacles, in and out of the State, to meet in the basement. By order of Rev. Stephen Smith, Grand Worthy Superior; second signer (Grand Scribe) illegible. Reported in CR_1861-02-16 p2: addresses by Rev. S. Smith, Mr. A. M. Green, Rev. Wm. Douglass.",
+   "attendees": [
+    [
+     "Stephen Smith",
+     "Grand Worthy Superior (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "name": "Lecture for the benefit of Union Baptist Church",
+   "date": "1861-02-12",
+   "location": "Union Baptist Church, Little Pine Street above Sixth, Philadelphia",
+   "description": "Rev. J. W[heaton?] Smith [VERIFY name; probably the white Baptist minister Rev. J. Wheaton Smith, so not linked] lectures at the Union Baptist church, Little Pine Street above Sixth, Tuesday the 12th at 8 p.m., on 'The Discoveries made by him in the Holy Land: Hill of Calvary, the Mount of Olives', etc. Tickets [15 cents? VERIFY] at [one outlet illegible], Rev. E. Weaver's Book Concern, Pine Street above Sixth; Rev. J. Asher, Rodman Street above Tenth; Rev. J. Nickens, No. 1029 [VERIFY] Rodman Street; the Masonic Hall, Eleventh Street; or at the door. Proceeds to assist the Church in paying a very pressing debt. Brothers Shadd, Lively, Burrows, Johnson and others expected to assist the Choir.",
+   "attendees": [
+    [
+     "E. Weaver",
+     "ticket agent (Rev.)"
+    ],
+    [
+     "J. Asher",
+     "ticket agent (Rev.)"
+    ],
+    [
+     "J. Nickens",
+     "ticket agent (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "name": "Bishop Nazrey's episcopal appointments, Philadelphia Conference circuits",
+   "date": "1861-03-01",
+   "location": "Philadelphia Conference circuits (N.J. and Pa.)",
+   "description": "Episcopal visitation schedule signed W. Nazrey: Bordentown circuit, N.J., Mar 1-8; Princeton Mar 8-11; Brunswick Mar 11-15; Burlington Mar 15-21; West Chester Mar 23-30; Penningtonville Mar 30-Apr 5; Columbia Apr 6-13. Ministers of the circuits to arrange preaching points. Repeated CR_1861-02-16 p3 and 02-23 p3.",
+   "attendees": [
+    [
+     "W. Nazrey",
+     "bishop"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "name": "Rev. S. Smith's Mission Church -- quarterly meeting",
+   "date": "1861-01-13",
+   "location": "Rev. S. Smith's Mission Church, Philadelphia",
+   "description": "Editor attended Rev. S. Smith's Mission Church Quarterly Meeting 'on the 13th ult.'; a very interesting occasion; a protracted meeting was announced to continue. (Probably Rev. Stephen Smith; identification not stated.)",
+   "attendees": [
+    [
+     "S. Smith",
+     "pastor, Mission Church (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "name": "Editor Weaver's visit to West Chester",
+   "date": "1861-02-11",
+   "location": "West Chester, Pa.",
+   "description": "Editor (Weaver) preached at West Chester on Monday night Feb. 11 with Rev. R. Barney, pastor in charge; church three quarters of a mile out of town; house well filled despite rain; sold papers and obtained some ten cash subscribers. Mrs. Jane Thomas and Miss Ruth Anna Johnson each paid $1.00; other names to appear hereafter. (Announced CR_1861-02-09 p3.)",
+   "attendees": [
+    [
+     "R. Barney",
+     "pastor in charge (Rev.)"
+    ],
+    [
+     "Jane Thomas",
+     "subscriber (Mrs.)"
+    ],
+    [
+     "Ruth Anna Johnson",
+     "subscriber (Miss)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "name": "Philadelphia Library Company -- lecture on 'Books' and debate",
+   "date": "1861-02-12",
+   "location": "Lecture-room, St. Thomas' Episcopal Church, South Fifth Street below Walnut, Philadelphia",
+   "description": "Prof. J. P. Leslie [VERIFY spelling] of the American Philosophical Society lectured on 'Books' (arranging a library by the seven prismatic colors). A debate ensued between Messrs. Isaiah C. Wear [VERIFY], John C. B[...] and Wm. W[...] [surnames largely illegible; possibly Bowers and Whipper, not confirmed] on the question 'Could the Colored People, by taking active part in the present ... [illegible]'; Mr. Wear in the affirmative, the other two in the negative. Held in the lecture-room of St. Thomas' Episcopal Church, South Fifth street below Walnut.",
+   "attendees": [
+    [
+     "J. P. Leslie",
+     "lecturer (Professor)"
+    ],
+    [
+     "Isaiah C. Wear",
+     "debater, affirmative"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-16",
+   "page": 2,
+   "name": "Bishop Nazrey's visit to Trenton, N.J.",
+   "date": "1861-02-10",
+   "location": "A.M.E. Church, Trenton, N.J.",
+   "description": "Bishop Nazrey and lady arrived at Trenton Saturday (Feb. 9) at 1 p.m.; Sabbath (Feb. 10) at 11 a.m. preached on 2 Tim. iii. 11; also addressed the Sabbath school connected with the church and preached again. Reported by J. P. Campbell, Trenton, Feb. 11, 1861.",
+   "attendees": [
+    [
+     "W. Nazrey",
+     "bishop"
+    ],
+    [
+     "J. P. Campbell",
+     "pastor, Trenton (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "name": "Banneker Institute -- lecture by Professor A. M. Green",
+   "date": "1861-02-19",
+   "location": "Banneker Institute, Philadelphia",
+   "description": "On 'Tuesday evening' (computed as 1861-02-19, the Tuesday before the issue [VERIFY]) Professor A. M. Green [VERIFY] lectured before the Banneker Institute on reminiscences of the anti-slavery movement and the duty of the colored people during the crisis; audience small at first, respectable by the close; frequently applauded. Afterward Mr. D. D. Turner read an article from the Sunday Dispatch (of the 10th inst.) on citizenship and the right of petition, written by a member of the Institute in reply to an item of the 3d inst. denying the right of colored persons to petition.",
+   "attendees": [
+    [
+     "A. M. Green",
+     "lecturer (Professor)"
+    ],
+    [
+     "D. D. Turner",
+     "reader"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 2,
+   "name": "Bishop Nazrey at Pennington and Trenton, N.J.",
+   "date": "1861-02-17",
+   "location": "Pennington and Trenton, N.J.",
+   "description": "Bishop Nazrey, his lady and the writer drove to Pennington on the Sabbath (computed 1861-02-17, the Sabbath after the Feb. 10 Trenton visit [VERIFY]); arrived a few minutes before twelve; Bishop preached on Heb. iv. 11 ('Let us labour therefore to enter into that rest'), then addressed the congregation on the condition of our people; first episcopal visit there since about six years before. In the evening he preached at Trenton to a full house on Heb. xi. 16 ('But now they desire a better country'). Notes the Recorder taking hold; 25 copies wanted instead of 10.",
+   "attendees": [
+    [
+     "W. Nazrey",
+     "bishop"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "name": "Publication Society -- meeting called at Bethel Church",
+   "date": "1861-02-28",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Members of the Publication Society requested to meet 'next Thursday evening' (computed 1861-02-28) in Bethel Church at half-past seven, business of importance. By order of the President, Mrs. Laws [printed thus; same society's president read 'Mrs. Laws' in CR_1861-01-19].",
+   "attendees": [
+    [
+     "Mrs. Laws",
+     "president"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "name": "Itinerant Preachers' Aid Society of the Philadelphia Conference -- meeting",
+   "date": "1861-02-26",
+   "location": "Study of Bethel Church, Sixth Street, Philadelphia",
+   "description": "Members of the Itinerant Preachers' Aid Society of the Philadelphia Conference, A.M.E. Church, notified to meet Tuesday Feb. 26, 1861, 10 a.m., study of Bethel Church, Sixth Street; [middle line partly illegible: 'The Executive ... is requested']. By order of the President. Richard Robinson, President; Joshua Woodlin, Sec'y. (Same notice in CR_1861-02-16 p3, nearly illegible there.)",
+   "attendees": [
+    [
+     "Richard Robinson",
+     "president"
+    ],
+    [
+     "Joshua Woodlin",
+     "secretary"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "name": "Grand Tabernacle, Independent Order of Brothers and Sisters of Love and Charity -- meeting",
+   "date": "1861-03-01",
+   "location": "Ma[sonic?] Hall, 11th Street near Pine, Philadelphia",
+   "description": "A meeting of the Grand Tabernacle of the Independent Order of Brothers and Sisters of Love and Charity will be held Friday, 1st of March, at Ma[sonic?] Hall, 11th Street near Pine, at 7 1/2 o'clock, by order of [name illegible], G. W. Superior; attest J. W[...] [illegible], Secretary.",
+   "attendees": []
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "name": "Henry Davis Society -- meeting with invited clergy",
+   "date": "1861-02-26",
+   "location": "Philadelphia Institute, Philadelphia",
+   "description": "Meeting of the Henry Davis Society on Tuesday night, 26 Feb. 1861, at the Philadelphia Institute. The editor (Elisha Weaver) attended on an invitation delivered by 'brother Seymour' from the President and members; he had not known the society existed. A number of clergymen were invited, shared a 'free-will offering' (refreshments), and all the ministers gave addresses, after which the society voted them thanks. The society 'has upwards of $600 in the treasury.' Editor asks all societies to place a card for one year 'like the Daughters of Cornish.' President not named.",
+   "attendees": [
+    [
+     "Elisha Weaver",
+     "editor, attended (implied by editorial 'we')"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "name": "Bishop Nazrey's week on the Trenton Circuit",
+   "location": "Trenton, Pennington and New Hope (Trenton Circuit, N.J.)",
+   "description": "Bishop W. Nazrey left Philadelphia 9 Feb. 1861 [VERIFY day] for Trenton, met by Brother Campbell; Sister Campbell ill. Spent a week on the Trenton Circuit, which he had travelled in 1842. Trenton congregation has built 'a very beautiful little church' under Elder Campbell, with a fine Sabbath school; visited Pennington ('a neat little church'); went to New Hope to see relations; left 21st ult. (21 Feb.) for Philadelphia.",
+   "attendees": [
+    [
+     "W. Nazrey",
+     "bishop, visitor (signer)"
+    ],
+    [
+     "Mrs. Campbell",
+     "pastor's wife"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "name": "ICY winter lecture course -- Douglass on Elocution",
+   "date": "1861-02-15",
+   "location": "High School rooms, Lombard Street above 7th, Philadelphia",
+   "description": "Rev. Wm. Douglass, Rector of St. Thomas' (Episcopal) Church, 'gave an eloquent discourse on Elocution, which was well attended and received' on the evening of the 15th instant (February). Part of the annual winter course given by colored men at the Institute for Colored Youth, broadened this season from physical sciences to literary subjects.",
+   "attendees": [
+    [
+     "Wm. Douglass",
+     "lecturer; Rector, St. Thomas' Episcopal Church (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 2,
+   "name": "ICY winter lecture course -- Catto on Language",
+   "date": "1861-02-22",
+   "location": "High School rooms, Lombard Street above 7th, Philadelphia",
+   "description": "'On last Thursday evening, 22d instant, Mr. Octavius V. Catto, a graduate of the High School, and at present a worthy and efficient teacher therein, delivered one on Language, which was quite scholarly and acceptable. It was well attended.' Note: 22 Feb. 1861 was a Friday; the paper says Thursday [VERIFY date].",
+   "attendees": [
+    [
+     "Octavius V. Catto",
+     "lecturer; ICY graduate and teacher (middle initial faint) "
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 3,
+   "name": "Publication Society -- members called to meet at Bethel Church",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Notice (very faint print) calling all members of the Publication Society to meet 'on next [weekday illegible] evening, in Bethel Church, without fail, at half past seven o'clock. Business of importance.' Signed by order of the President, 'Mrs. Laws' (January notice spelled Mrs. Laws). Day of meeting unreadable, so no date given.",
+   "attendees": [
+    [
+     "Mrs. Laws",
+     "President; [VERIFY name reading]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-02",
+   "page": 3,
+   "name": "Zion Mission Sabbath School -- anniversary",
+   "date": "1861-03-07",
+   "location": "Zion Mission, Seventh St. below Dickerson St., Philadelphia",
+   "description": "Anniversary of the Zion Mission Sabbath School, Thursday 7 March 1861 at 7 1/2 P.M. The Mission is 'under the pastoral charge of Rev. S. Smith, Superintendent, and Rev. Thos. Jones, of Sabbath School' (the printed sentence is ambiguous about which man holds which office; last line faint).",
+   "attendees": [
+    [
+     "S. Smith",
+     "Rev.; pastoral charge / Superintendent"
+    ],
+    [
+     "Thos. Jones",
+     "Rev.; Sabbath School"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "name": "Bishop Nazrey visits Bethel Church Sabbath School",
+   "date": "1861-02-24",
+   "location": "Bethel Church, Philadelphia",
+   "description": "Bishop Willis Nazrey visited the Sabbath School of Bethel Church on Sunday 24 Feb. 1861. He recalls first visiting it in 1842; was stationed over the Bethel congregation in 1846 (two years) and again in 1851 (one year, until appointed elsewhere by the General Conference); gave the city's Sabbath schools an Annual Conference address in 1856 and was then absent about five years. The school numbered 650 scholars in 1856 and 'is now very large'; he recommends its system of instruction to all schools. Teachers not named.",
+   "attendees": [
+    [
+     "Willis Nazrey",
+     "bishop, visitor (signer); former pastor of Bethel 1846-48, 1851"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "name": "Trenton Circuit report",
+   "date": "1861-02-25",
+   "location": "Trenton, Pennington and Lawrenceville [printed 'Louisville'], N.J.",
+   "description": "Letter of J. P. Campbell dated Trenton, N.J., Feb. 25, 1861. Three appointments on the Trenton Circuit. The Trenton house, 'upon one of the most beautiful streets' in a wealthy neighbourhood, was rebuilt and remodelled at about $2,000 under Rev. C. Woodyard some two years ago; remaining debt not over $280. The house at Pennington is free from debt (all claims paid within four months). At 'Louisville' [sic; place uncertain] a band of men and women meet in private houses and support the gospel liberally. Campbell carries copies of the Recorder on pastoral visits for sale and urges support of both the Recorder and the Repository.",
+   "attendees": [
+    [
+     "J. P. Campbell",
+     "pastor, Trenton Circuit (signer)"
+    ],
+    [
+     "C. Woodyard",
+     "former pastor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "name": "Revivals on the Penningtonville Circuit and at Frankford",
+   "location": "Penningtonville, Coleraine and Britain (Pa.); Frankford, Pa.",
+   "description": "Brother I. J. Hill of Penningtonville Circuit reports a series of meetings with about fifteen conversions at Penningtonville and sixteen at Coleraine; writing from Britain [Britain Township?] he is holding a protracted meeting with mourners crowding the altar. 'Rev. R. Robertson, at Frankford, Pa., has just closed his Protracted Meetings, after some two or three weeks' labor'; old citizens say they never saw such a work in Frankford before.",
+   "attendees": [
+    [
+     "I. J. Hill",
+     "circuit preacher, Penningtonville"
+    ],
+    [
+     "R. Robertson",
+     "pastor, Frankford (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 2,
+   "name": "Banneker Institute -- Gibbs lecture and Haytian emigration debate",
+   "location": "Bannaker [Banneker] Institute, Philadelphia",
+   "description": "On a Tuesday evening (probably 5 March 1861; 'Tuesday evening' only) Rev. Jonathan C. Gibbs lectured on Religious Intolerance (about twenty minutes). A debate followed on 'Should the colored people emigrate to Hayti?' Affirmative: A. M. Green and I. W. (I. Wesley) Simpson. Negative: D. B. Bawser, J. C. (John C.) Bowers and Mr. Powell. Mr. Powell, 'a resident of England, and an officer under the government--though a colored man--was once a resident of Philadelphia,' was recognised by former associates and remarked on the great changes since he left.",
+   "attendees": [
+    [
+     "Jonathan C. Gibbs",
+     "lecturer (Rev.)"
+    ],
+    [
+     "A. M. Green",
+     "debater (affirmative)"
+    ],
+    [
+     "I. Wesley Simpson",
+     "debater (affirmative)"
+    ],
+    [
+     "D. B. Bawser",
+     "debater (negative)"
+    ],
+    [
+     "John C. Bowers",
+     "debater (negative)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 3,
+   "name": "Corner-stone laying, Mount Moriah A.M.E. Church",
+   "date": "1861-03-16",
+   "location": "Clarksburg, near Mount Holly, N.J.",
+   "description": "Corner stone of the A.M.E. Mount Moriah Church to be laid 16 March 1861 at 3 P.M., with a special collection for the building. Notice signed Henry Davis, Minister, dated March 2, 1861 (first printed, illegibly, in CR_1861-03-02 p3; text read on the 03-09 reprint).",
+   "attendees": [
+    [
+     "Henry Davis",
+     "minister in charge (signer)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-09",
+   "page": 3,
+   "name": "Daughters of Cornish Society -- standing card",
+   "location": "Philadelphia (place of meeting not stated)",
+   "description": "Card of the Daughters of Cornish Society (first in CR_1861-03-02 p3; repeated 03-09 and 03-16): stated quarterly meetings on the first Wednesdays of February, May, August and November; Board meets the Wednesday before each. Officers: Mrs. Sarah Carter, President; Mrs. L. B. Seymour, Sec'y (printed 'Mr. I. B. ...' in 03-09, 'Mrs. L. B. Seymour' or 'I. B.' in 03-16). The 03-02 editorial on the Henry Davis Society praises the Daughters of Cornish for buying a year's card.",
+   "attendees": [
+    [
+     "Sarah Carter",
+     "President (Mrs.)"
+    ],
+    [
+     "L. B. Seymour",
+     "Secretary [VERIFY initial]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "name": "Daughters of the Rush Society -- anniversary",
+   "date": "1861-03-12",
+   "location": "Sourder's [VERIFY] Hall, Barclay [VERIFY] Street, Philadelphia",
+   "description": "The Daughters of the Rush Society held their 'first anniversary' on Wednesday the 12th inst. (12 March 1861 was a Tuesday [VERIFY]). The society is 33 years old (founded c. 1828) and 'said to be the oldest in the city.' The Secretary's address (Secretary not named) reported $12,000 raised and distributed in sick and burial aid, with some $1,587.82 in the treasury. Clergy invited to address the meeting; refreshments served by the ladies. Editor remarks that the colored people of Philadelphia have more society money in the Saving Banks than any other class. No officers named.",
+   "attendees": []
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "name": "ICY winter lecture course -- Gibbs on Geology",
+   "date": "1861-03-07",
+   "location": "High School Rooms, Nos. 716 and 718 Lombard Street, Philadelphia",
+   "description": "Seventh lecture of the course, Thursday 7 March 1861: Rev. Jonathan C. Gibbs, A.M. (Dartmouth College; Princeton Theological Seminary; pastor of the First Presbyterian Church, Seventh Street below Shippen) on Geology, to a good audience; editor demurs at the recession of Niagara Falls and boulders boring into rock. Announced: eighth lecture by Prof. Robert Campbell, formerly a teacher in the High School, more recently of the Niger Valley Exploring Expedition; then S. M. Douglass; and, it is hoped, 'brother W[surname illegible], of Bethel Church, whom, we understand, Prof. Bassett has especially invited.' Lectures free to all; each lecturer receives a small fee from the Institute.",
+   "attendees": [
+    [
+     "Jonathan C. Gibbs",
+     "lecturer (Rev.)"
+    ],
+    [
+     "Robert Campbell",
+     "next lecturer (Prof.)"
+    ],
+    [
+     "S. M. Douglass",
+     "announced lecturer"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-16",
+   "page": 2,
+   "name": "Grand United Order of Brothers and Sisters of Love and Charity -- officers' disavowal",
+   "date": "1861-03-11",
+   "location": "not stated (presumably Philadelphia)",
+   "description": "Letter dated March 11th [VERIFY], 1861, signed G. W. Harman, G. W. S.; E. W. Hemmenway, G. W. N. S.; E. F. Nixon, P. G. W. U. S.; John H. Hughes, G. G. D. M. They reply to an obituary by 'H. G. R.' (CR 23 Feb. 1861) of Sister Anna B. Bedford (spelled Belford/Bedford), formerly Anna B. Powell, 'considered the mother of the Order.' They state there are two orders of Love and Charity: the 'Grand United Order', the elder, and the 'Independent Order' to which Anna Bedford belonged at her death; she had not been a member of the United Order for upwards of four or five years, having broken fellowship with 'her sister Ruth, and her brother, M. A. M.' Members of the United Order nevertheless attended her funeral.",
+   "attendees": [
+    [
+     "G. W. Harman",
+     "officer, G. W. S.; [VERIFY name reading]"
+    ],
+    [
+     "E. W. Hemmenway",
+     "officer, G. W. N. S.; [VERIFY name reading]"
+    ],
+    [
+     "E. F. Nixon",
+     "officer, P. G. W. U. S. [VERIFY]; [VERIFY name reading]"
+    ],
+    [
+     "John H. Hughes",
+     "officer, G. G. D. M."
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 1,
+   "name": "Meeting in aid of Rev. Andrew Wheeler's family (collection for redemption from slavery)",
+   "date": "1861-03-11",
+   "location": "Rev. Mr. Willson's church, Philadelphia [VERIFY spelling of Willson; church not otherwise identified]",
+   "description": "Reprinted letter (Christian Instructor) signed F. C., dated Philadelphia, March 12th, 1861: 'I was present at a meeting, last evening, in Rev. Mr. Willson's church, when a small collection was taken up', for the Rev. Andrew Wheeler (Methodist minister), recently manumitted under the will of his late owner, a lady in Maryland, whose wife belongs to a person residing in Baltimore. The claimant offers to sell the wife for $250, the eldest child 'Henrietta,' aged six, for $350, Thomas, aged four, for $300, the baby 'Frank' thrown in with the mother: $900 in all. Wheeler is a Maryland minister visiting Philadelphia, so he is not linked; the Philadelphia church is identified only as 'Rev. Mr. Willson's church'.",
+   "attendees": []
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "name": "Publication Society of Philadelphia -- committee presents $10 to the Christian Recorder",
+   "location": "Philadelphia",
+   "description": "The Publication Society of Philadelphia (the women's society that aids the paper; its president was reported as Mrs. Laws in CR_1861-01-19) sent a committee to wait on the editor, Rev. Elisha Weaver, and present $10.00. Committee as printed: 'Rev. Mrs. Mary Frisby, Mrs. Mary Bell, and Mrs. Mary Jones'. The same editorial lists ministers elsewhere who most support the Book Concern (Rev. Messrs. Moore, Weir, Crippen and Watson of the New York Conference; Geo. A. Rue and H. J. Young of New England; W. H. Waters and Daniel W. Moore of Baltimore; G. H. Graham and Daniel Cooper of Ohio; not linked) and says the Philadelphia Conference members 'all, as a general thing, came up square to the work'. Date of the presentation not stated (before March 23).",
+   "attendees": [
+    [
+     "Mary Frisby",
+     "committee member (printed 'Rev. Mrs.')"
+    ],
+    [
+     "Mary Bell",
+     "committee member (Mrs.)"
+    ],
+    [
+     "Mrs. Mary Jones",
+     "committee member (Mrs.); [VERIFY name reading]"
+    ],
+    [
+     "Elisha Weaver",
+     "editor, recipient (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "name": "Rev. John Cornish's quarterly meetings (West Philadelphia, Germantown, Norristown, Chester circuits)",
+   "date": "1861-03-31",
+   "location": "West Chester [VERIFY], West Philadelphia, Norristown, Chester, Germantown, Horntown [VERIFY]",
+   "description": "Schedule as printed: 'Tea Chester' [sic; probably West Chester] March 31st; West Philadelphia April 7th; Norristown April 14th; Chester April 20th; Germantown April 28th; 'Horntown' [VERIFY reading] May 5th, 1861. One event for the series; first date given.",
+   "attendees": [
+    [
+     "John Cornish",
+     "minister holding the quarterly meetings (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 2,
+   "name": "Rev. Peter Gardiner's fourth quarterly meetings (Salem / Woodbury NJ circuits)",
+   "date": "1861-04-07",
+   "location": "Salem, Frogtown, Bushtown, Dutchtown, Woodbury, N.J.",
+   "description": "Signed notice of Peter Gardiner: fourth quarterly meetings at Salem April 7th; Frogtown April 14th; Bushtown April 21st; Dutchtown May 5th; Woodbury May 12th (1861). NJ circuits of the Philadelphia Conference.",
+   "attendees": [
+    [
+     "Peter Gardiner",
+     "minister holding the meetings (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 3,
+   "name": "Dr. H. J. Brown's lectures on phrenology, physiology and the laws of health",
+   "description": "Report 'For the Recorder': Dr. H. J. Brown of Burlington, New Jersey, 'paid us a visit a few days ago' and gave two lectures on phrenology, physiology and the laws of health. Last summer he visited the principal cities of the Eastern States; the writer urges him to lecture also in remote localities in New Jersey. The end of the piece (top of col. 2) is lost in a tear in the film; a fragment there ends 'Allentown, March [..], 1861', so the writer may be at Allentown, N.J. [VERIFY]. Place of the lectures not stated.",
+   "attendees": [
+    [
+     "H. J. Brown",
+     "lecturer (Dr.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-23",
+   "page": 3,
+   "name": "Funeral of James Prosser",
+   "location": "Philadelphia",
+   "description": "Domestic News item: James Prosser, who for nearly half a century kept a restaurant in Market street, Philadelphia, 'favorably known to the greater portion of the business community', compared with Downing of New York (George T. Downing, presumably); left about $2?,000 [figure partly illegible]. A partly illegible line appears to say his funeral was 'Saturday last' [VERIFY], i.e. about 1861-03-16. 'He would, at any time, sooner have gone to the poor house than tell a lie.'",
+   "attendees": [
+    [
+     "James Prosser",
+     "deceased"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Hutchinson Family concert for the Social, Civil and Statistical Association of Colored People of Pennsylvania",
+   "date": "1861-03-25",
+   "location": "Sansom Street Hall, Philadelphia",
+   "description": "The Association ('a Society of a high literary character of this city') engaged the Hutchinson family (five in number) for a concert at Sansom Street Hall. The hall was 'crowded to its utmost capacity with white and colored folks'; many stood. The editor attended. The Family invited 'our noted and distinguished friend and Professor, Mr. Bowers' onto the platform twice to perform with them. Announced in CR_1861-03-23 p2 (faded notice). No officers of the Association named.",
+   "attendees": [
+    [
+     "Mr. Bowers",
+     "performer, Professor (Mr.)"
+    ],
+    [
+     "Elisha Weaver",
+     "editor, attended as guest (Rev.) [inferred from editorial 'we']"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Bishop Nazrey's visitation of the New Jersey circuits",
+   "location": "Bordentown, Allentown, Princeton, New Brunswick, Burlington, Mount Holly, N.J.",
+   "description": "Bishop W. Nazrey's account: arrived Bordentown circuit about 10 o'clock Saturday, preached Sabbath morning and evening; the church 'not as prosperous as some years ago', no local preachers and the circuit preacher there only once in four weeks. Monday to Allentown: church had upwards of 100 members in 1844, now only some 30 or 40; Brother Francis Raynor took the Bishop to his house (rents a farm of some 150 acres at $800 per annum, paid for the last eight years). Next to Princeton (preached Sabbath; new house of worship in course of erection), then Brunswick until Friday (large church building under erection); both places anxious to keep their present ministers another year. Friday to Burlington (preached that evening); next morning to Mount Holly where 'at 3 [VERIFY] o'clock in the afternoon we laid the corner-stone for a new church'. Henry Davis's letter (same page) dates the Burlington sermon to 15 March and places the 16 March cornerstone at Clarksborough [discrepancy; see flags].",
+   "attendees": [
+    [
+     "W. Nazrey",
+     "bishop, visiting (Bishop)"
+    ],
+    [
+     "Francis Raynor",
+     "host at Allentown, N.J. (Brother)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Institute for Colored Youth winter lecture: Mrs. S. M. Douglass on the circulation of the blood",
+   "date": "1861-03-21",
+   "location": "Institute for Colored Youth, Philadelphia",
+   "description": "Mrs. S. M. Douglass lectured on the circulation of blood in creative beings and of fluid in plants, birds and reptiles, to a crowded house; 'Mrs. D. is noted as an extraordinary lecturer.' The winter lectures are nearly over for the season; the first was given by Prof. Bassett, Principal of the school. The editor praises the Institute's teachers and asks why the Board of Managers (Controllers) of this city do not employ colored teachers in public schools where the children are all colored, 'for instance, Sixth Street Colored School, where some eight or ten teachers are required.'",
+   "attendees": [
+    [
+     "S. M. Douglass",
+     "lecturer (Mrs.)"
+    ],
+    [
+     "Prof. Bassett",
+     "Principal, Institute for Colored Youth (Prof.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Rev. Spencer Logan's quarterly meetings (Bucks County circuit)",
+   "date": "1861-04-21",
+   "location": "New Hope, Buckingham Mountains, Newtown, Attleborough, Pa.",
+   "description": "Signed Spencer Logan, dated Philadelphia, March 2? [VERIFY], 1861: quarterly meetings at New Hope April 21st; Buckingham Mountains April 28th; Newtown May 5th; Attleborough May 12th.",
+   "attendees": [
+    [
+     "Spencer Logan",
+     "minister holding the meetings (Bro.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Bishop Nazrey's episcopal visit to the Burlington circuit (cornerstone laid)",
+   "date": "1861-03-15",
+   "location": "Burlington circuit, N.J.: Burlington, Clarksborough, Mount Moriah (near Mount Holly), Evesham Mount, Milford, Snowhill, Jordantown",
+   "description": "Henry Davis, minister in charge of the Burlington circuit, dated March 21, 1861: Bishop Nazrey and his wife arrived 15 March about noon; he preached at Burlington that evening (Psalm 1:3). 16 March at Clarksborough, a corner stone for a new church was laid by the Bishop and the minister in charge of the Burlington circuit (Isaiah 28:16). 17 March, 10 o'clock, Mount Moriah church near Mount Holly (Song of Solomon 2:3); evening 7 1/2 o'clock, Evesham Mount church (Colossians 3:1). 18 March, Milford church, 7 1/2 o'clock (Luke 16:2). 19 March, Snowhill church (Psalm 24:12-13 as printed). 20 March, A. M. E. Union Bethel church, Jordantown (Acts 2:44), closing the visit. Large congregations at each appointment.",
+   "attendees": [
+    [
+     "W. Nazrey",
+     "bishop (Bishop)"
+    ],
+    [
+     "Henry Davis",
+     "minister in charge of the Burlington circuit, letter-writer"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Independent Order of Brothers and Sisters of Love and Charity -- tribute to deceased sister Anna B. Bedford",
+   "location": "Philadelphia",
+   "description": "Letter of Nathaniel Wiggins, Grand Scribe, I. O. B. and S. of L. and C., answering the March 16th notice signed G. W. S., G. W. N. S., P. G. W. U. S., G. G. D. M. (and an earlier article signed 'H. G. B.', later printed 'H. G. R.' [VERIFY]) about the death and funeral of Anna B. Bedford. Few attended her funeral because no notice of her death reached the Order except her own number; her brother testified to a neglect by the Scribe of No. 1, to which she belonged; members visited her in her sickness. Anna had earlier left 'her sister Ruth, her brother M. A. M. [VERIFY initials]' (i.e., another body) to join the Independent Order. 'Every subordinate tabernacle in the compact in the city, including the grand Tabernacle and Encampment, have paid a tribute of the highest regard known to the Order to our deceased sister.'",
+   "attendees": [
+    [
+     "Nathaniel Wiggins",
+     "Grand Scribe, I. O. B. and S. of L. and C."
+    ],
+    [
+     "Anna B. Bedford",
+     "deceased member, of No. 1"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1861-03-30",
+   "page": 2,
+   "name": "Bishop Willis Nazrey's proposed episcopal visits (Frankford, Salem, Greenwich, Reading circuits)",
+   "date": "1861-04-13",
+   "location": "Frankford, Salem (N.J.), Greenwich (N.J.), Reading circuits",
+   "description": "Signed Willis Nazrey: Frankford circuit April 13th; Salem circuit April 20th; Greenwich circuit April 27th; Reading circuit May 4th (1861); subject to change.",
+   "attendees": [
+    [
+     "Willis Nazrey",
+     "bishop (Bishop)"
+    ]
+   ]
+  }
+ ],
+ "_notes": [
+  "[A] Scope: CR_1861-01-19, -01-26, -02-02, pages 1-4 each (PDF frames 2-13). Pages 1 and 4 of all three issues are selections, poetry, foreign/general news and white commercial ads (insurance, Pennsylvania Central RR, Ayer's/Morris patent medicines, McAllister opticians, Lindsay & Blakiston, Smith English & Co., American Tract Society, Wm. S. Young printer, Graham Emlen & Passmore, Shugard confectioner, etc.); nothing in scope found there except the Cornish elegy (01-26 p1). Page 3 of each issue is general news plus the ad columns.",
+  "[A] Known identity (owner's ruling): 'our Rev. and esteemed father, Robertson' / 'father Robertson' (01-19 p2, Bristol and Frankford) = Rev. Richard Robinson of Frankford. Recorded as printed ('Robertson').",
+  "[A] OCR rescues: 'Pames Wiggivs aed W. T. Jonea' = JAMES WIGGINS and W. T. JONES; 'Mro. Laws' = MRS. LAWES; 'Rev, H. Dervis' = REV. H. DAVIS (Frankford local preacher); 'Seren Caan' = SNIDER CARR; 'Gaysport'/'Gayaport' = Gaysport (Pa.); 'Nusrey/Nasunr/Nazary/Nuarey' = NAZREY; 'Woodlia' = WOODLIN; 'Ellis J. Poor/Peer' = ELLIS J. PEER; 'DOTERTE/MLS DUTERTE' = MRS. H. S. DUTERTE; 'Giaxgow' = GLASGOW; 'A. Bonnia' = A. BURRIS; 'Joun W Simpeas' = JOHN W. SIMPSON; 'W. Hi. Weters' = W. H. WATERS.",
+  "[A] Mr. Wiggins of the 26 Jan 'Congratulations' and 'Letter from Friend Wiggins' signs as Nathaniel Wiggins; the 19 Jan city carrier is James Wiggins. Different given names; do not merge without evidence.",
+  "[A] Ellis J. Peer (confectioner, South Street) and 'Mr. Peer ... he and his good lady' (01-26 p2 editorial puff) are the same business; Mrs. H. S. Duterte (undertaker, Lombard St.) = 'Mrs. Duterte' of the 01-26 p2 puff.",
+  "[A] Recurring ads: Fine Cake Bakery (Ellis J. Peer) runs 01-19 p3, 01-26 p3, 02-02 p3 -- captured once (01-19). Mrs. H. S. Duterte undertaker runs 01-26 p3 and 02-02 p3 -- captured once (01-26). AME Book Depository No. 619 Pine runs every issue (p2/p3) -- captured once (01-19). Box No. 430 notice repeats 01-19, 01-26 -- captured both because 01-26 adds the Minutes/Free-will Offering request.",
+  "[A] J. Woodlin (quarterly meeting at Bethel, 01-26) and 'Joshua Woodlin, District Book Steward' (02-02 Bishop's Allowance) are presumably the same Philadelphia Conference minister.",
+  "[A] Rev. Stephen Smith (01-19 pastor of the city mission; 01-26 receiver of California Mission funds at No. 319 Lombard Street) is presumably the same man; the mission appears as 'Zion City Mission, Phila.' in the 02-02 apportionment table. Rev. Jos./Joseph Smith of Gouldtown is a different person.",
+  "[A] Bishop Nazrey's Philadelphia residence: 606 Pine Street, above Sixth (02-02 p2), near the Book Depository at 619 Pine.",
+  "[A] Probable identifications (not asserted in the records): Jonathan C. Gibbs signs the 01-19 obelisk essay as 'Pastor Seventh St. Presbyterian Church' (essay itself out of scope; author recorded only); O. V. Catto is probably Octavius V. Catto; Jesse Ewing Glasgow, Jr. the Philadelphia student at Edinburgh.",
+  "[A] Non-Philadelphia names mentioned only in summaries/descriptions: A. J. Anderson (Hamilton, O., Wilberforce trustee); Rev. H. J. Young (New Bedford); brother Strother (Richmond, Ind.); Rev. W. H. Waters (Baltimore); Henry M. Turner; Rev. Daniel Moore (Washington); brother Rue and wife (Newport, R.I.); Rev. A. C. Crippen (Newark, N.J.); Rev. Jesse Divine (Columbus, O.); Snider Carr and Sarah A. Carr (Gaysport, Pa.); Mr. Weyman of Frederick, Md.; H. Garnett of New York; New York Shiloh/Prince St. union prayer meeting (Rev. H. H. Garnet, Rev. John T. Raymond) reprinted 02-02 p2 col 7 from the Banner of the Covenant; 'B. T. T.' essay dated Washington City, 02-02 p2 col 6.",
+  "[A] Skipped as out of scope: poetry (01-19 p1 poem sent by 'our esteemed friend Mrs. ...'; 01-26 p1 'Parting' by Esther A. Palmer; 02-02 p1 'The Ray of Light', 'The Pastor's Crown'), selections, foreign and general news (incl. 02-02 p3 death of a white salesman on the Germantown cars), Breckinridge fast-day address, Law and Government, The Law about Newspapers.",
+  "[A] Miss L. H. Robertson and Miss M. E. Marsall (piano teachers) and an English, Classical and French Seminary at 419 S. Thirteenth St. advertise on 01-19 p3 in the same ad block as C. J. Walton's hats, which addresses readers of the 'Instructer' -- i.e., ad copy shared with the white-run Christian Instructor. Recorded as an article without linked people; race not determinable from the page.",
+  "[A] The 26 Jan 'Rights of Colored People' letter is signed 'W. S.' (Philadelphia, Jan. 23d, 1861); the 2 Feb reply's signature is illegible on the film. Neither signer is identified.",
+  "[A] Weaver writes autobiographically in 'Colored Men Cannot Write' (01-26 p2): left fatherless and motherless at ten in North Carolina.",
+  "[B] Coverage: CR_1861-02-09, 02-16, 02-23, pp. 1-4 each (PDF frames 14-25). All names/addresses/numbers above were read on 400dpi crops; OCR used only to locate.",
+  "[B] Pages 1 and 4 of all three issues: selections, poetry (incl. 02-16 p1 'Passing Away' by a Miss of Victoria; 02-23 p1 Whittier 'The Crisis'), general news and white-run commercial ads (insurance, rail, patent medicine, Shugard confectioner, George Katz ice cream, Graham Emlen & Passmore, etc.). No in-scope local notices found there.",
+  "[B] p3 cols 1-4 each week: domestic/foreign/secession news (e.g. Mayor Henry's message, Kentucky free-colored law); skipped as general news.",
+  "[B] Recurring items SKIPPED (first appeared in January/02-02 issues per OCR check, or repeat within my issues): Book Depository of the A.M.E. Church, No. 619 Pine St.; Fine Cake Bakery (Ellis J. Peer [name as on film], ad dated 'jan 19'); Mrs. H. S. Duterte, undertaker, Lombard St. (in 01-26, 02-02); William H. Attwood, furnishing undertaker, N. Eighth St. (in 01-19); Miss M. E./C. M. Marshall, piano teacher and seminary, 419 S. Thirteenth St. (in 01-19); William Weill [OCR] cheap clothing store, N. Second St. (01-26); Henry Floyd, grocer (01-26); C. Walton hats and caps (01-19); Gallaghar boots; B. J. Williams blinds; Simeon's Works (Wm. S. Young); 'Our Disciplines' standing editorial. Within my issues: F. Champion ad (02-16, 02-23), Allmond ad (02-16), Episcopal Appointments (02-16, 02-23) captured once at 02-09.",
+  "[B] New ads captured: Thomas W. Allmond, furnishing undertaker, Rodman St. (first seen 02-09); A. Burris, teacher of vocal music (02-23, ad dated 'Feb. 23-1y'). The same 'Mr. A. Burris' is hired as city canvasser in 02-23 p2.",
+  "[B] 02-23 p2 announces that official notices of meetings and obituaries now run in a dedicated column of p3.",
+  "[B] Identification notes (not asserted in data): 'Rev. S. Smith' (Mission Church; Love and Charity speaker) is probably Rev. Stephen Smith, who signs as Grand Worthy Superior in 02-09 p3. 'Richard Robinson', president of the Itinerant Preachers' Aid Society (02-23 p3), is printed Robinson here; probably the Rev. Richard Robinson of Frankford (owner's Robertson=Robinson ruling). 'J. Woodlin' (02-09 p2 supporters list) and 'Joshua Woodlin' (02-23 p3) likely the same man. 'Mrs. Carter', president of the ladies' John Cornish Society (02-09 p2), and 'Mrs. Sarah Carter', president of the Daughters of Cornish Society (02-23 p3), likely the same society/person. 'Mr. A. M. Green' (02-16) = 'Professor A. M. Green' (02-23), probably Alfred M. Green. 'Isaiah C. Wear' probably Isaiah C. Wears. 'James Foster' in 'Our Duty No. 2' probably James Forten. 'J. P. Leslie' probably the geologist J. Peter Lesley (white; included as lecturer to the Library Company).",
+  "[B] Anna B. Bedford obituary (02-23 p3) is a founding history of the Independent Order of Brothers and Sisters of Love and Charity (originally 'Sisters of Wisdom', six women); Philadelphia location implied, not stated.",
+  "[B] Surname-only persons left in description text, not linked: choir helpers 'Brothers Shadd, Lively, Burrows, Johnson' (02-09 p3); 'Rev. [initial illegible] Smith' (02-16 p2 Arts & Sciences); Our Duty's 'Jeffrey, Johnson, Davis, Black, Durham, Vashon'. Businessmen Dorsey, Minton, Jones, Adger linked as 'Mr. X' (from 'Messrs.').",
+  "[B] Non-Philadelphia names kept in summary text only: New York/Brooklyn (Speaks, Weir, Moore, Watson, Champion, Mrs. Jones), Baltimore (W. H. Waters, Hammond, John H. Gaines notice re Ebenezer Church), Ohio/Cincinnati, New Bedford, Connecticut and Newport R.I. subscribers, Wilmington Del. subscribers, Lewistown/Mifflintown Pa. obituaries (Susan S..., Rev. John Hall), D. Cooper (Gallipolis, O.) letter on Sabbath schools (02-16 p2). Owner may wish to decide whether Wilmington (Del.) and Lewistown circuit count as Philadelphia Conference territory.",
+  "[B] Princeton and Gouldtown, N.J., Trenton/Pennington and West Chester treated as Philadelphia Conference circuits and linked.",
+  "[B] Items skipped as out of scope: Sanctification (02-16 p2), Curious Facts in Science, Chapters on Ethnology, Kansas relief letter, Unity, Soliloquy of a Lily, Lecture at Sixth United Presbyterian Church with tickets at William S. Young's (02-23 p3; lecturer's name illegible, apparently white venue).",
+  "[C] CR_1861-03-02 p2 Acknowledgments: non-Philadelphia names kept out of `people` per rule: Rev. George Weir (New York), Rev. Wm. H. Waters (Baltimore agent; wife ill), W. Nesbit / Wm. Nesbit (Altoona), Rev. Alexander Johnson (Johnstown, Pa.), Mrs. Rosetta Ford (Hollidaysburg), Rev. George A. Rue (Newport, R.I.) and his list of new subscribers (Wm. H. Womsly, M. A. Williams, Sarah Banister, Thomas Jones, Hannah Burris, Mary Noyes, Louisa Hall, Susan Hill, James Shilow, Perry Brown, Ph. Jailes, Anthony Randolph, A. G. Wilcox, G. Johnson -- read on image but out of scope; several given names cut at column edge).",
+  "[C] CR_1861-03-02 p2 'Missionary Cause' and CR_1861-03-09 p2 'The Importance of a City Mission': unsigned two-part plea that the Philadelphia Annual Conference appoint a regular city missionary and form a 'Home Missionary Society'; describes groggeries and 'nine-tenths' of the people never attending church. Writer calls himself a 'sojourner' in the city who has travelled from Cape Fear River to Kansas -- probably Weaver (editorial page) but not signed.",
+  "[C] CR_1861-03-02 p2: carrier 'Mr. W. Jones' is presumably W. T. Jones of the January carriers notice (recurring carrier notice itself not re-entered).",
+  "[C] CR_1861-03-02 p2 'Sister Lee': warns against Sister Harriet Lee collecting money without authority from bishops or elders; refers inquirers to Rev. John M. Brown, No. 148 North Street, Baltimore. Harriet Lee's residence not stated (she 'was here in the Fall'), so not linked.",
+  "[C] Trenton: 'Elder/Brother Campbell' of Nazrey's letter (03-02) is very probably Rev. J. P. Campbell, who signs a Trenton Circuit letter dated Trenton, N.J., Feb. 25, 1861 in CR_1861-03-09 p2. Identification not printed in the 03-02 piece itself.",
+  "[C] 'Advice to Our Young People' by 'W. S.' is a serial: No. 1 CR_1861-03-02 p2, No. II CR_1861-03-09 p2, a further number CR_1861-03-16 p2 col 3 (on young people at service/day labor). Signer's identity unknown; not linked. Entered once.",
+  "[C] CR_1861-03-02 p2 also: notice that Rev. J. R. W. S[loane?] of New York is expected to lecture in the Sixth United Presbyterian Church, Race Street above 21st (faint; a white congregation, out of scope); 'The Length of Sermons' signed T. Strother of Richmond, Indiana; news from Rev. Wm. A. Dove (New Albany, Ind.), Rev. H. J. Young (Boston) and the 'Rev. D. A. Payne Literary Institute' formed by young men of Boston; Rev. Frederick Myers of Peoria ill; 'Chapters on Ethnology', poetry, 'Nature and God' essay -- all out of Philadelphia scope.",
+  "[C] CR_1861-03-02 p3 Notices column is badly blurred on the film. Readable: Zion Mission Sabbath School anniversary; Mount Moriah corner-stone notice (read on the clearer 03-09 reprint); Publication Society call; Daughters of Cornish Society card; Episcopal Appointments (W. Nazrey; first printed 02-23, skipped as recurring). UNREADABLE and therefore not recorded: (a) a notice to members of the Itinerant(?) Preachers' Aid Society of the Philadelphia Conference of the A.M.E. Church to meet at a church in Philadelphia, signed by a President and a Secretary whose names cannot be read; (b) a notice of a meeting of 'the second Tabernacle of the ... Order of Brothers and Sisters of [Love and] Charity' at a hall on ... Street, signed by three officers and a Secretary. Both deserve a re-scan or another film copy.",
+  "[C] New ads first seen in CR_1861-03-02 p3 and entered: Gustine, Reimer, Gregg. Probably white-run commercial firms (nothing in them indicates a Black proprietor); owner may wish to drop them. Also new but NOT entered: G. M. Elkinton & Son, soap and candles, 116 Margaretta St. [March 2-1y] (known white Quaker firm, skipped per rule); 'For sale or exchange, six small houses near 23d and Chestnut', Box 1065 P.O. (no name). Recurring ads in 03-02/03-09/03-16 not re-entered: Book Depository 619 Pine; Thomas W. Allmond furnishing undertaker, Rodman St.; Fine Cake Bakery (Ellis J. Peer, South St.); F. Champion's clothing (Brooklyn); Mrs. H. S. Duterte undertaker, 634 Lombard; A. Burris teacher of vocal music (first 'Feb. 23'); S. C. Flack seminary (Cooperstown); Dr. D. H. Goodwillie dentist, 1600 Arch; Fry & Carson; Miss M. E. Marsall/Marshall piano, 419 S. 13th; C. J. Walton? hats; Henry S. Tarr marble works; Massey & Co.; Lindsay & Blakiston; Wm. J. Gallagher boots; John Cochran & Co.; B. J. Williams blinds; Seminary 419 S. 13th (Marshall); Rothermel & Brother coal; R. Arthur & Brother coal; Wm. M. Caterson? photograph frames; Misses Burrows & Dales ivorytypes; Amalgam bells; Wm. Steinmetz; Henry Floyd grocer; Bachus real estate; McAllister; patent washing machine; W. J. Young clothing; McAllister & Brother opticians; Willcox & Gibbs; Frank Crosby; Smith, English & Co.; page-4 ads (Graham, Emlen & Passmore 427 Market; W. C. & J. Neff 3 S. Seventh; Philadelphia Commercial College; Wishart's tar cordial).",
+  "[C] CR_1861-03-09 p2 'Our Paper': canvassing agent 'Mr. Burris' (printed Barris/Burris; image reads 'Burris' in 03-16 and 'Barris' or 'Burris' in 03-09 -- see flags). Possibly the A. Burris, teacher of vocal music, of the Feb. 23 ad (No. 938? North 11th St.) -- not stated. Ads/subscriptions are to be sent to 619 Pine St. 'either through Blood's Despatch or the Post Office'.",
+  "[C] The four Chestnut/Second Street ads of CR_1861-03-09 p3 (Clark, Evans, Leary Getz & Co., Dean & Co.) were procured by the canvassing agent Burris and are, per the editorial, from the paper's new white patrons; entered because they are new, owner may drop.",
+  "[C] CR_1861-03-09 p2 Acknowledgments: also Rev. G. A. Rue of Newport, R.I. (Mr. James Shilow $1; new church ready for dedication) and Rev. W. H. Waters of Baltimore -- not linked.",
+  "[C] CR_1861-03-09 p2 'The Arts and Sciences' (For the Christian Recorder, unsigned): urges Black Philadelphians to found institutions like the Franklin Institute and Academy of Fine Arts; cites 'a certain well-known physician among us' (unnamed). Follows an earlier piece 'Improvement in Business' (not in my issues).",
+  "[C] Frankford: 'Rev. R. Robertson' (CR_1861-03-09 p2) is, per owner's ruling, Rev. Richard Robinson of Frankford; recorded as printed.",
+  "[C] Banneker debate: 'D. B. Bawser' as printed (both occurrences) is almost certainly the artist David B. Bowser; recorded as printed. 'I. Wesley Simpson' recorded as printed (no identification attempted). 'Mr. Powell' resident in England is probably William P. Powell (formerly of New York/New Bedford), but the paper says only 'once a resident of Philadelphia' -- identification unverified.",
+  "[C] CR_1861-03-09 p2 also: letter from Rev. A. R. Green, formerly Book Steward and Editor, now proprietor and editor of the Royalist in [Canada] (not linked); 'A Mother's ...' letter signed Philos; 'Our Disciplines' (recurring appeal); 'The Life of Trust' (Muller orphan houses); 'Chapters on Ethnology'.",
+  "[C] Henry Davis, minister of the Mount Moriah/Clarksburg notice, is presumably the 'Rev. H. Davis, of the Burlington Circuit' of the 03-16 acknowledgments. Whether the Philadelphia 'Henry Davis Society' (03-02) is named for him is not stated.",
+  "[C] Daughters of Cornish Society: 'brother Seymour' of the Henry Davis Society item (03-02) and the Society's secretary 'Mrs. L. B. Seymour' may be connected; not stated.",
+  "[C] Episcopal Appointments (W. Nazrey) in 03-02, 03-09, 03-16 p3: first printed 02-23 (other reader); not re-entered. The list shortens weekly as dates pass (03-09: Princeton Mar 8-11, Brunswick 11-15, Burlington 15-21, West Chester 23-30, Penningtonville Mar 30-Apr 5, Columbia Apr 6-13).",
+  "[C] CR_1861-03-16 p2 News: Rev. A. T. Hall is of Salem, Indiana (not linked). 'Rev. J. Hollon of Columbia Circuit, Pa.' reports many added to the church; his letter is said to be 'in another column' but I did not find it in 03-16.",
+  "[C] CR_1861-03-16 p2 'Our Paper': denies rumour that white men write the paper; only outside piece was an appeal from 'Rev. Mr. Foster, an agent for the Kansas sufferers'; says no church paper since 1852 lived above five weeks without suspending. Alexander W. Wayman (Baltimore) not linked.",
+  "[C] CR_1861-03-16 p2 Acknowledgments, not linked (outside area): Rev. Daniel Moore, Washington D.C., per Rev. J. M. Brown; Mr. Basil Patterson (D.C.); Rev. George Weir (N.Y.); Rev. A. C. Crippen, Newark, N.J. ($4.40 omitted earlier; Newark was in the New York Conference); Rev. William H. Waters, Baltimore; Rev. Geo. W[eir?] for papers $2.",
+  "[C] A. C. Crippen letter dated Newark, N.J., March 11, 1861 -- Newark, not linked; editor replies that he had nothing to do with printing the Discipline beyond raising the money.",
+  "[C] 'What is Moral Science?' (03-16 p2): ICY pupil's speech signed only 'S. L. D.'; pupil is male ('himself'). Not linked (initials only).",
+  "[C] Order of Love and Charity letter: city not printed. The 'sister Ruth' and 'brother M. A. M.' are probably lodge titles (sister/brother in the Order) rather than kin -- ambiguous. The 02-23 obituary by H. G. R. belongs to the other reader's range; cross-check.",
+  "[C] Mary Harred obituary (03-16 p3): place not stated; signed 'Victory' (pseudonym). 'Brother Campbell's protracted meeting' could point to Trenton (J. P. Campbell) -- unverified, so location unknown; flagged.",
+  "[C] CR_1861-03-16 p3 col 7 also has a new 'Ice Cream and Confectionery Saloon' ad whose proprietor's name (begins 'G') and street are illegible, and a watchmaker '[J.?] O. Bennett, ...04 Race Street above Fifth' (tag '[M]ar 7, tf'); neither read confidently, not entered. A one-price clothing ad (Market St.) is also illegible.",
+  "[C] Pages 1 and 4 of all three issues: selections, poetry, foreign/missionary news and recurring commercial ads only; nothing in scope found. Page 3 cols 1-3 of all issues: general, congressional and foreign news (03-02 p3 includes death of white missionary Rev. Amos Bingham in Philadelphia on 1 Feb. -- out of scope).",
+  "[C] Recurring items skipped as standing: Book Depository at 619 Pine (all three issues); Episcopal Appointments; 'Our Disciplines' appeal; carriers notice; masthead with Rev. Elisha Weaver.",
+  "[D] Coverage: CR_1861-03-23 pp1-4 (frames 38-41) and CR_1861-03-30 pp1-4 (frames 42-45). Every name, address and number recorded was read on 400dpi crops; OCR used only to locate items.",
+  "[D] 03-23 p3 top-left corner is torn away on the film: the end of 'Dr. Brown's Lecture' and the head of col. 2 are lost; a fragment there reads 'Allentown, March [..], 1861'.",
+  "[D] 03-30 p2 col. 6-7 top is also torn; the start of the Executive Committee reply's closing is lost, but the signatures survive.",
+  "[D] Philadelphia Annual Conference: no announcement, appointments or proceedings found in these two issues. Nearest items: quarterly-meeting notices (Cornish, Gardiner, Logan) and Nazrey's visitation plans/letters; the 03-30 Nazrey letter has NJ congregations asking whether 'they would be permitted to have the ministers at present with them ... another year', which points to the coming conference.",
+  "[D] 'TO OUR CITY PATRONS' (03-30 p2) names no carriers.",
+  "[D] Identifications (not used in name fields): 'Mrs. S. M. Douglass' = Sarah Mapps Douglass; 'Prof. Bassett' = Ebenezer D. Bassett, ICY principal; 'Mr. Bowers' the Professor, probably one of the Bowers musicians (Thomas or John C. Bowers), unconfirmed; 'Downing' in the Prosser piece = George T. Downing of New York (presumably); Peter Gardiner (03-23 notice) and Peter Gardner (03-30 signatures) are evidently the same minister of the Salem, N.J. charge, recorded as printed; 'Spencer Logan' signs from Philadelphia for the Bucks County appointments.",
+  "[D] Nathaniel Wiggins (Grand Scribe, I.O.B.&S. of L.&C.) is a different printed name from James Wiggins the city carrier (CR_1861-01-19); do not merge without evidence.",
+  "[D] Henry Davis (minister of the Burlington circuit, 03-30) vs 'Rev. H. Davis, a local preacher' of Frankford (CR_1861-01-19 notes): not the same role; possibly different men. Do not merge without evidence.",
+  "[D] The Philadelphia Tribune reviewed 03-30 (stock company, SW corner Second and Brown) is an 1861 general weekly, not the later Black-owned Tribune (1884); recorded as review without people.",
+  "[D] Debate with Bishop Payne over his Anglo-African article on the Recorder runs through both issues: C. Woodyard letter (03-23), a '... Moore' letter (03-23), Nazrey notice (03-30), Executive Committee reply signed W. Moore, W. H. Waters, W. D. W. Schureman, dated Phila., March 11th, 1861 (03-30).",
+  "[D] Non-Philadelphia names kept in summaries only (not linked): T. M. D. Ward, H. J. Young, J. Warren, William Moore and the Flushing company, A. C. Crippen, Ellen King, James Thorp, John H. Sullivan, G. H. Graham, B. L. Brooks, Joseph P. Shreeves, William H. Turner, Nelson H. Turpin, L. S. Lewis, John H. Beal, William Nesbit, Alexander Johnson, A. McIntosh, Daniel Cooper, Elijah Anderson, Andrew Wheeler (and children Henrietta, Thomas, Frank), Johnson Woodlin, C. Woodyard (residence not stated; left as author only). W. Moore and W. H. Waters are linked only as co-signers of the Executive Committee reply, as General Book Committee officers; drop them if that is too broad.",
+  "[D] RECURRING items skipped (already in earlier issues per OCR check): Book Depository of the AME Church, No. 619 Pine St. (both issues p3); Daughters of Cornish Society notice (unchanged; president's name faded on 03-23, Sec'y printed 'Mrs. L. B. Seymour' [VERIFY]; first in 03-09); Nazrey's 'Episcopal Appointments' (West Chester circuit Mar 23-30, Penningtonville circuit Mar 30-Apr 5, Columbia circuit Apr 6-13; already in 03-16, repeated 03-23 and 03-30); ads of Mrs. H. S. Duterte undertaker (Lombard St.), Thomas W. Allmond furnishing undertaker (Rodman St.), A. Burris teacher of vocal music, Fine Cake Bakery (South St.), George Bate ice cream saloon, P. P. Gustine furniture, Reimer's gallery, F. Champion (Brooklyn), William Neill clothing (1643 N. Second; first 02-09), W. S. Young printing office (52 N. Sixth), G. M. Elkinton soap, Henry Floyd grocer, Romer Eachus, W. J. Gallagher, John Cochran, B. J. Williams blinds, the 13th St. seminary, W. M. Caterson frames, D. W. Clark, G. G. Evans, Leary Getz, Dean & Co., McAllister, Metz, Plowman & M'Bride.",
+  "[D] Skipped as out of scope: pp1 and 4 of both issues (selections, poetry, foreign and general news, white commercial ads: railroads, insurance, patent medicines, Crittenden's Commercial College, Graham Emlen & Passmore, Shugard confectioner, James W. Williams ivorytypes, C. H. Needles, Baugh's phosphate etc.); new in 03-30 p3 is a Rothermel & Brother coal-dealer ad (white commercial, skipped); religious/domestic/general news columns on p3 (e.g., Young Men's Home Society, 273 S. Third St.)."
+ ],
+ "_flags": [
+  "[A] CR_1861-01-19 p2 Bristol list: 'Josiah Ross' surname uncertain (Ross/Bose); 'James Tilminion' surname uncertain; '[Eli]zabeth Derry', '[Car]oline Williams', '[Miss?] Anna E. Fry', '[Mr.] Henry Williams' have letters lost at the torn left edge -- left out of people, kept in event description only.",
+  "[A] CR_1861-01-19 p2 Burlington list: left margin torn; '[...]ckson', '[...] Stidum', '[...]ry Sels[?]', '[Cha]rles Williams', '[...]dman Dutt[on?], Columbus, N.J.', '[...] Still, Allentown, N.J.' are fragmentary -- description only.",
+  "[A] CR_1861-01-19 p2 Publication Society meeting hour (about 7 1/2 o'clock) not read with confidence.",
+  "[A] CR_1861-01-19 p2 Schureman's quarterly meeting: date 'next Sabbath' (1861-01-20) is from context; his charge not named.",
+  "[A] CR_1861-01-19 p3 Married: groom surname 'Sto[k]es' and bride surname 'Ro[...]n' (read as Robinson) are blurred at the column edge -- both [VERIFY]. Officiant implied as the editor ('we').",
+  "[A] CR_1861-01-19 p3 Ellis J. Peer address: 'No. 80 1/2 South Street' -- second digit uncertain (80 1/2 vs 89 1/2) on all three impressions; 02-02 p3 impression looks like '50 1/2' -- [VERIFY].",
+  "[A] CR_1861-01-26 p3 Mrs. H. S. Duterte address 'No. 634 Lombard St.' -- third digit faint; [VERIFY] (63? Lombard).",
+  "[A] CR_1861-01-26 p1 elegy 'The Death of the Rev. John Cornish' signed 'C. Danfield' -- signature and the identity of John Cornish (AME minister?) [VERIFY].",
+  "[A] CR_1861-01-26 p2 'The Arts and Sciences' signature read 'Baisnea' -- [VERIFY].",
+  "[A] CR_1861-01-26 p2 Banneker Institute: 'W. H. Minton' middle initial (H) slightly blurred.",
+  "[A] CR_1861-02-02 p2 Bristol payment 'Miss Leana Page, Burlington' -- given name uncertain (Leana/Leona); 01-19 list has 'Sarah Page', Burlington.",
+  "[A] CR_1861-02-02 p2 Wiggins letter date 'January 2?, 1861' -- second digit illegible.",
+  "[A] CR_1861-02-02 p2 Episcopal Visits: signature faint (read W. Nazrey from content and position); end dates 'until the [4th]', '[1?]th', and 'the [5th?] of April' uncertain; New Brunswick inferred from '...wick'.",
+  "[A] CR_1861-02-02 p2 Bishop's Allowance: West Chester amount illegible ($2?.00).",
+  "[A] CR_1861-02-02 p2 Devotional Choir Singing no. 2 signature faint ('A. B.'); attribution to A. Burris is an inference.",
+  "[A] CR_1861-02-02 p2 Gouldtown narrative: stage driver 'Mr. Snider' is Weaver's own 'we think'; host 'a good brother ... whom they called Bishop' -- unclear whether Bishop is surname or nickname; not linked.",
+  "[A] CR_1861-02-02 p2 Revivals: St. John's M. E. Church (Rev. Mr. Cooper) -- city and denomination (AME? MEC?) not stated; assumed Philadelphia.",
+  "[A] CR_1861-02-02 p2 reply to W. S.: counsel 'W. S. Peirce' spelling [VERIFY]; letter signature illegible.",
+  "[A] CR_1861-01-26 p3 'A New Class of Emigrants' (credited Cor. of World): 'this city' is implied Philadelphia by context (adjacent Philadelphia item; New York named as elsewhere) -- not stated.",
+  "[B] CR_1861-02-09 p2: John Cornish Society anniversary 'Wednesday evening, the 10th inst.': date impossible as printed (10 Feb 1861 was a Sunday, after the issue date); no ISO date recorded.",
+  "[B] CR_1861-02-09 p2: Cornish Society funds 'about $1,860' third digit uncertain (8 vs 5).",
+  "[B] CR_1861-02-09 p2: Trenton donation visit amounts '$17 cash and about $20 in presents' faint.",
+  "[B] CR_1861-02-09 p2: Campbell 'News from the Churches' dateline day illegible ('Trenton, Jan. [?]th, 1861').",
+  "[B] CR_1861-02-09 p2: 'new clothing store' puff at foot of col. 5: proprietor's name and opening lines unreadable on the film; not recorded.",
+  "[B] CR_1861-02-09 p2: 'Brister' signature on Arts & Sciences may be a pseudonym.",
+  "[B] CR_1861-02-09 p3: Camden festival notice largely illegible (beneficiary and dates).",
+  "[B] CR_1861-02-09 p3: Love and Charity notice second signer (Grand Scribe) illegible.",
+  "[B] CR_1861-02-09 p3: lecturer 'Rev. J. W[heaton?] Smith', middle name blurred; one ticket outlet line illegible; ticket price '15 cts' uncertain.",
+  "[B] CR_1861-02-09 p3: J. Nickens house number 1029 vs 1020 (OCR) uncertain.",
+  "[B] CR_1861-02-09 p3 / 02-16 p3: Thomas W. Allmond street number 1027 vs 1023 uncertain; initial A of surname faint.",
+  "[B] CR_1861-02-16 p2: 'Rev. Mr. Kinnard' could be 'Kinuard'.",
+  "[B] CR_1861-02-16 p2: Library Company debaters: 'Isaiah C. Wear' (as printed?), 'John C. B[...]' and 'Wm. W[...]' surnames blurred; latter two not linked. Question of debate partly illegible.",
+  "[B] CR_1861-02-16 p2: lecturer printed 'J. P. Leslie' (likely Lesley).",
+  "[B] CR_1861-02-16 p2: 'last Thursday night' Love and Charity turnout: notice in 02-09 set Feb. 7; 'last Thursday' relative to the Feb. 16 issue would be Feb. 14. No date recorded on the report.",
+  "[B] CR_1861-02-16 p2: Arts & Sciences continuation signature obliterated by film damage.",
+  "[B] CR_1861-02-16 p3: Philadelphia Conference meeting notice nearly illegible; resolved from 02-23 p3 clear impression (26 Feb).",
+  "[B] CR_1861-02-23 p2: 'Professor A. M. Gr[een]' surname partly blurred (clear as 'A. M. Green' in 02-16).",
+  "[B] CR_1861-02-23 p2: Banneker lecture date computed (Tuesday before issue = 19 Feb); not stated.",
+  "[B] CR_1861-02-23 p2: 'Our Visit' (Wilmington) first paragraph illegible; subscriber names Daniel P. Hamilton, Finley J. Cooper, '... Yellow' and Miss Catherine [?] uncertain.",
+  "[B] CR_1861-02-23 p2: Gouldtown subscribers 'Horatio J. Mulford' and 'Miss C[...] Gould' uncertain.",
+  "[B] CR_1861-02-23 p2: 'Bishop Nazrey on Trenton Circuit' signature illegible; attributed to J. P. Campbell from the editor's note that Campbell's article arrived for this issue. Pennington date (17 Feb) computed.",
+  "[B] CR_1861-02-23 p2: Mr. William Dixon ($1.00) and Mr. Robert Car[y?] places not stated/illegible; not linked.",
+  "[B] CR_1861-02-23 p3: Lewistown obituaries: Susan S[...]s surname and dates blurred; Rev. John Hall age '6?' illegible; signer 'W. W. Grimes' uncertain.",
+  "[B] CR_1861-02-23 p3: Princeton obituaries: 'Noah Lane' surname uncertain; 'Mrs. Phillis K[...]' surname illegible; death date '9th inst.' (could be 6th).",
+  "[B] CR_1861-02-23 p3: 'Anna B. Bedford' middle initial uncertain (B/H); maiden name in heading illegible; death '13th inst.' faint; signer 'H. G. B.' or 'H. G. R.'.",
+  "[B] CR_1861-02-23 p3: Publication Society president printed 'Mrs. Laws' here vs 'Mrs. Laws' in 01-19; recorded as printed.",
+  "[B] CR_1861-02-23 p3: Daughters of Cornish Society secretary name illegible ('Mrs. J. H. C...').",
+  "[B] CR_1861-02-23 p3: Grand Tabernacle notice: hall name ('Ma[sonic?] Hall'), G. W. Superior name and attesting secretary 'J. W...' illegible.",
+  "[B] CR_1861-02-23 p3: A. Burris residence number illegible; heading 'Teacher of Vocal Music' read through blur.",
+  "[C] CR_1861-03-02 p2 Nazrey Trenton letter: departure day read '9th of February' -- digit faint (5th/9th).",
+  "[C] CR_1861-03-02 p2 ICY lectures: Catto lecture printed 'last Thursday evening, 22d instant'; 22 Feb 1861 was a Friday. Douglass lecture 'evening of the 15th instant' (Feb 15 = Friday). Date entered as printed.",
+  "[C] CR_1861-03-02 p2: Octavius V. Catto -- middle initial 'V' faint.",
+  "[C] CR_1861-03-02 p3: Publication Society notice nearly illegible; signer read 'Mrs. Laws' (Jan. spelling 'Laws'); weekday of meeting unreadable; heading partly guessed from context.",
+  "[C] CR_1861-03-02 p3: Zion Mission notice -- 'Dickerson St.' and last line ('of Sabbath School') faint; division of offices between Rev. S. Smith and Rev. Thos. Jones ambiguous.",
+  "[C] CR_1861-03-02 p3: Preachers' Aid Society notice and Order of Brothers and Sisters of Love and Charity tabernacle notice illegible -- officers' names not recorded.",
+  "[C] CR_1861-03-02 p3: Reimer's address '615 & 617' -- first number could be 613/615.",
+  "[C] CR_1861-03-09 p2/03-16 p2: canvassing/city agent surname printed 'Barris' (03-09, OCR) / 'Burris' (03-16 image clear); recorded 'Burris'.",
+  "[C] CR_1861-03-09 p2 Acknowledgments: 'Rev. G. H. Gaines' faint (could be Gains/Gaine); 'Levi G. Rodson' could be Hodson/Dodson; 'Chandlersville' faint; 'John Cheemer' uncertain.",
+  "[C] CR_1861-03-09 p2 Trenton letter: 'Rev. C. Woodyard' initial faint; 'Louisville' as printed (probably a NJ place, e.g. Lawrenceville -- unverified).",
+  "[C] CR_1861-03-09 p2 Banneker debate: 'D. B. Bawser' printed twice (likely David B. Bowser); 'I. Wesley Simpson' first initial I/J ambiguous; Tuesday date not given (probably 1861-03-05), so no date recorded.",
+  "[C] CR_1861-03-09/03-16 p3 Daughters of Cornish: President 'Mrs. Sarah Carter' (surname small caps, faint); Secretary read 'Mr. I. B. C[e]rmore' in 03-09 and 'Mrs. L. B. Seymour' in 03-16 -- initial and Mr/Mrs uncertain.",
+  "[C] CR_1861-03-09 p3: 'Shadrach Bassett' read from small caps; spelling of surname (Bassett/Basset) should be checked.",
+  "[C] CR_1861-03-16 p2 Rush Society: 'Wednesday the 12th inst.' but 12 Mar 1861 was a Tuesday; hall name 'Sourder's' and street 'Barclay/Barcley' uncertain; 'first anniversary' as printed despite 33-year age.",
+  "[C] CR_1861-03-16 p2 Acknowledgments: 'Moses Nelson' printed 'Mosea'; 'Strickersville' printed 'Strickoreville'; H. Davis papers-sold amount '75' cents partly cut off.",
+  "[C] CR_1861-03-16 p2 ICY lecture: surname of 'brother W---, of Bethel Church' illegible (Worden/Wesdon?).",
+  "[C] CR_1861-03-16 p2 Order of Love and Charity letter: deceased printed 'Belford' then 'Bedford'; signers' names and titles faint ('G. W. Harman', 'E. W. Hemmenway', 'E. F. Nixon', 'P. G. W. U. S.'); date 'March 11th' faint; city not stated.",
+  "[C] CR_1861-03-16 p3 obituary: surname printed 'Harred', 'Harrel' and 'Mary E. Harred'; class leader 'Hubert' faint; place not stated.",
+  "[C] CR_1861-03-16 p3: Metz & Sons street number partly illegible ('61?').",
+  "[D] CR_1861-03-23 p2: 'Mrs. Mary Jones' of the Publication Society committee. Surname blurred; 'Jones' is the best reading. VERIFY.",
+  "[D] CR_1861-03-23 p2: 'Rev. Mrs. Mary Frisby' is as printed; the 'Rev.' before 'Mrs.' is odd (perhaps wife of a Rev. Frisby). Recorded in the role.",
+  "[D] CR_1861-03-23 p2: Cornish notice prints 'Tea Chester' (probably a misprint for West Chester) and 'Horntown' (blurred; could be Hornstown/Horatown). VERIFY both.",
+  "[D] CR_1861-03-23 p2: signature of the letter ending 'Yours in favor of the right way of doing good' is faded: '... Moore' (first name and place illegible). VERIFY.",
+  "[D] CR_1861-03-23 p2: reply to Bishop Hopkins signed 'Johnson Woodlin' (partly blotted). VERIFY.",
+  "[D] CR_1861-03-23 p2: 'Advice to Our Young People' signed 'W. S.' from OCR; signature not checked on the image. VERIFY.",
+  "[D] CR_1861-03-23 p2: the NOTICE of the Mar 25 concert is almost wholly faded; content inferred with the help of the Mar 30 report.",
+  "[D] CR_1861-03-23 p2: Flushing list: 'Mrs. Emeline Caffee' is uncertain (summary only).",
+  "[D] CR_1861-03-23 p3: James Prosser's estate '$2?,000' (second digit illegible, likely $25,000) and the funeral line ('Saturday last') are partly illegible. VERIFY.",
+  "[D] CR_1861-03-23 p3: obituary 'Mrs. Mary Ingraw' (likely INGRAM), date 'Feb. 12th' (could be 22nd), age illegible. VERIFY.",
+  "[D] CR_1861-03-23 p3: Dr. 'H. J. Brown' of Burlington: initials read as H. J.; the first may be another capital. VERIFY.",
+  "[D] CR_1861-03-23 p1: 'Rev. Mr. Willson's church' (Willson vs Wilson) and the letter date 'March 12th' read on a blurred line. VERIFY.",
+  "[D] CR_1861-03-30 p1: third paper named for the Parks poem reads 'Royalist' (italic, blurred). VERIFY.",
+  "[D] CR_1861-03-30 p2: Logan notice dated 'Philadelphia, March 2?, 1861' (day digit illegible). VERIFY.",
+  "[D] CR_1861-03-30 p2: Nazrey says the cornerstone was laid at Mount Holly the morning after Burlington (Saturday) at '3 [or 8] o'clock in the afternoon'; Henry Davis (same page) puts the 16 March cornerstone at Clarksborough. Conflicting reports. VERIFY.",
+  "[D] CR_1861-03-30 p2: Wiggins letter prints the critic's initials first as 'H. G. B.' and later as 'H. G. R.'; Anna Bedford's brother appears as 'M. A. M.' (could be M. A. B.). VERIFY.",
+  "[D] CR_1861-03-30 p2: 'Joseph P. Shreeves' of Bridgeport (summary only) is uncertain."
+ ]
+}
