@@ -11,9 +11,10 @@
     "aliases": [
       "A. M. E. Church",
       "A.M. E. Church",
-      "A.M.E Church"
+      "A.M.E Church",
+      "African Methodist Episcopal Church"
     ],
-    "note": "spelling/spacing/punctuation variants of African Methodist Episcopal Church. Confirmed by Michiko 2026-07-09."
+    "note": "spelling/spacing/punctuation variants of African Methodist Episcopal Church. Confirmed by Michiko 2026-07-09. + more variants, 2026-10-31."
   },
   {
     "canonical": "Female Vigilant Committee",
@@ -26,9 +27,11 @@
   {
     "canonical": "Humane Mechanics Society",
     "aliases": [
-      "Humane Mechanics' Society"
+      "Humane Mechanics' Society",
+      "Humane Mechanic Society meeting: committee for the British West India Emancipation celebration (Germantown, Aug 1, 1838)",
+      "Humane Mechanic Society"
     ],
-    "note": "apostrophe variant. Confirmed by Michiko 2026-07-09."
+    "note": "apostrophe variant. Confirmed by Michiko 2026-07-09. + variants merged per Michiko's org-list review, 2026-10-31."
   },
   {
     "canonical": "Banneker Institute",
@@ -43,5 +46,196 @@
       "Publication Society"
     ],
     "note": "Same society (Mrs. Laws / Ann Lawe, president) named with and without 'of Philadelphia' in the 1861 Christian Recorder. 2026-10-31."
+  },
+  {
+    "canonical": "African Porter Benevolent Society",
+    "aliases": [
+      "African Porters' Benevolent Society",
+      "African Porters Benevolent Society"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Junior Anti-Slavery Society",
+    "aliases": [
+      "Junior Anti-Slavery Society -- meeting at Clarkson Hall"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Institute for Colored Youth",
+    "aliases": [
+      "Institute for Colored Youth commencement, May 1864",
+      "Institute for Colored Youth winter lecture: Mrs. S. M. Douglass on the circulation of the blood",
+      "Ishmael Locke's school at Salter's Hall becomes the Institute for Colored Youth"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Free Produce Convention",
+    "aliases": [
+      "Free Produce Convention -- Philadelphia delegates"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "First Presbyterian Church",
+    "aliases": [
+      "First Preabyterian Church"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Bethel Church",
+    "aliases": [
+      "Bethel Church Quarterly"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "American Moral Reform Society",
+    "aliases": [
+      "AMRS from the Library Association",
+      "AMRS from the Mechanics' Association",
+      "AMRS from the Rush Education Society",
+      "American Moral Reform Convention",
+      "American Moral Reform Convention -- Philadelphia, opening session",
+      "American Moral Reform Society — annual Convention opens (James Forten presiding)"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "American Free Produce Association",
+    "aliases": [
+      "American Free Produce Association / Convention"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Philomathean Society",
+    "aliases": [
+      "Philomatheon Society",
+      "Philomathean Society lecture course",
+      "Philomathean Society anniversary exercises",
+      "Philomathean Society anniversary exercises -- inauguration of Dr. John Brown as Prefect",
+      "Philomethean Society meeting and colonization debate, Albany",
+      "Philomethean Society"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31. + more variants, 2026-10-31."
+  },
+  {
+    "canonical": "Philadelphia Female Anti-Slavery Society",
+    "aliases": [
+      "Philadelphia Female Anti-Slavery Society meeting (addressed by H. B. Stanton)"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Philadelphia City Anti-Slavery Society",
+    "aliases": [
+      "Philadelphia City Anti Slatery Society",
+      "Philadelphia City Anti-Slavery Society -- delegates to the National Anti-Slavery Convention (Albany)",
+      "Philadelphia City Anti-Slavery Society, annual election of officers"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Daughters of Cornish Society",
+    "aliases": [
+      "Ladies of the John Cornish Society"
+    ],
+    "note": "Same organization; merged per Michiko's org-list review (screenshots), 2026-10-31."
+  },
+  {
+    "canonical": "Philadelphia Annual Conference of the A.M.E. Church",
+    "aliases": [
+      "Philadelphia Conference",
+      "Philadelphia Annual Conference of the A.M.E. Church, 1854",
+      "Philadelphia Annual Conference of the A.M.E. Church, 1861",
+      "Philadelphia Annual Conference (A.M.E.) 1861"
+    ],
+    "note": "Same body (the A.M.E. Philadelphia Annual Conference) under several event-derived names. 2026-10-31."
+  },
+  {
+    "canonical": "Social, Civil and Statistical Association of the Colored People of Pennsylvania",
+    "aliases": [
+      "Social, Civil and Statistical Association of Colored People of Pennsylvania"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Philadelphia Library Company of Colored Persons",
+    "aliases": [
+      "Philadelphia Library Company of Colored People",
+      "Philadelphia Library Company"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Hope Grand Union, Daughters of Temperance",
+    "aliases": [
+      "Hope Grand Union No. 1, Daughters of Temperance (Philadelphia)",
+      "Daughters of Hope Grand Union Temperance Society"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Union Anti-Slavery Society of Philadelphia",
+    "aliases": [
+      "Union Anti-Slavery Society"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "St. Thomas African Episcopal Church",
+    "aliases": [
+      "St. Thomas' Church",
+      "St. Thomas's Episcopal Church",
+      "St Thomas Society"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Methodist Episcopal Church",
+    "aliases": [
+      "Methodst Episcopal Church"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "New-York Manumission Society",
+    "aliases": [
+      "Manumission Society of New-York",
+      "Manumisaion Society"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Pennsylvania Abolition Society",
+    "aliases": [
+      "Pennsylvania Society for Promoting the Abolition of Slavery"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Pennsylvania Anti-Slavery Society",
+    "aliases": [
+      "Pa. Anti-Slavery Society"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "St. George's Methodist Church",
+    "aliases": [
+      "St. Georges' Church"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Ladies' Literary Society of the City of New-York",
+    "aliases": [
+      "Ladies Literary Society"
+    ],
+    "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
   }
 ]

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Export DB to JSON and build the self-contained interactive viewer HTML."""
-import sqlite3, json, re, os
+import os, sqlite3, json, re
 
 DB = os.environ.get("BM_DB", "/tmp/black_metropolis.db")
 OUT = "/tmp/repo/index.html"
@@ -42,6 +42,7 @@ ORG_RE = re.compile(
     r"College|Colony|Studio|Circle))")
 def org_clean(s):
     s = re.sub(r"\s+", " ", s).strip(" .,;-")
+    s = re.sub(r"(?<=\w)-\s+(?=\w)", "-", s)   # OCR/line-break hyphen space: "Anti- Slavery" -> "Anti-Slavery"
     s = re.sub(r"^(?:of|the|to|at|in)\s+", "", s, flags=re.I)
     s = re.sub(r"\s+(?:meeting|annual meeting|celebration)$", "", s, flags=re.I)
     return s
@@ -233,23 +234,115 @@ if has_table("coppin_students"):
             add_org(pid, "Institute for Colored Youth", {"coppin": 1})
 
 # orgs from event attendance (event names are org-flavored)
-# Curated event names follow "Organization -- what happened"; when that pattern is present the
-# organization is the part before " -- " (so all Banneker Institute events share ONE org node, and
-# "Association/Company/Union/Lodge/Assembly/Order" bodies count -- added 2026-10-31 for the Social,
-# Civil and Statistical Association, Michiko). Names without " -- " keep the original whole-name rule.
+# Organizations from events (rewritten 2026-10-31, Michiko's org-list consolidation). An event adds its
+# attendees to the organization NAMED in it, not to an "organization" made of the whole event title:
+#   "Banneker Institute -- lecture by ..."            -> Banneker Institute
+#   "Fourth Annual Meeting of the Western New York Anti-Slavery Society" -> Western New York Anti-Slavery Society
+#   "John Brown sympathy meeting, National Hall"      -> (none: a meeting, stays in Events only)
+# pipeline/event_orgs.json holds hand-reviewed overrides (null = no organization) and always wins.
 ORG_WORDS_OLD = r"Society|Church|Conference|Convention|Club|Institute|Hall|College|Academy|Colony|Studio|Circle"
 ORG_WORDS_SPLIT = ORG_WORDS_OLD + r"|Association|Company|Union|Lodge|Assembly|Order|Tabernacle"
+ORG_END = {"Society","Association","Institute","Union","Church","Lodge","Company","Club","Academy","College","Assembly","Order","Tabernacle","Conference"}
+CONNECT = {"of","the","and","for","&"}
+LEAD = re.compile(r"^(?:(?:Death|Dedication|Founding|Organization|Consecration|Re-?opening|Anniversary|Annual|First|Second|Third|Fourth|Fifth|"
+                  r"Sixth|Seventh|Eighth|Sixteenth|Twentieth|Meeting|Public|Mass|Great|Festival|Lecture|Reception|Concert|Convention|Call|"
+                  r"Committee|Adjourned|Revival|Protracted|Quarterly|The|Expulsion|Donation|Corner-stone)\b[\w\s,'.-]*?\b(?:of|by|for|to|before)\s+(?:the\s+)?)", re.I)
+INNER_EVENT = {"Fair","Meeting","Meetings","Anniversary","Festival","Celebration","Concert","Dinner","Lecture","Camp"}
+ROLE = {"Clerk","Rev.","Rev","Bishop","Elder","Dr.","Dr","Brother","Sister","Mr.","Mrs."}
+LOC = {"at","in","near","from"}
+MEETING = re.compile(r"\b(?:meeting|meetings|celebration|reception|anniversary|exercises|dinner|fair|founded|lecture|sympathy|concert|"
+                     r"convention|vote|notices|official staff|tour|debate|revival|funeral|proceedings|session|parade|festival|settles|"
+                     r"installed|choir|entertainment|rescue|appointed|visits|admitted|formed|campaign|circular|pledges)\b", re.I)
+def _w(t): return t.strip(",;:()\"—–")
+def _brk(t): return t.endswith((",", ";", ":", ")")) or t in ("—","–","--")
+def longest_org(nm):
+    m = LEAD.match(nm)
+    body = nm[m.end():] if m else nm
+    toks = body.replace("—", " — ").replace("–", " – ").split()
+    best = None; i = 0
+    while i < len(toks):
+        w = _w(toks[i])
+        if not w or not (w[0].isupper() or w[0].isdigit()) or w in ROLE:
+            i += 1; continue
+        prev = _w(toks[i-1]).lower() if i else ""
+        j = i; span_end = None
+        while j < len(toks):
+            wj = _w(toks[j])
+            if not wj or not (wj[0].isupper() or wj[0].isdigit() or wj in CONNECT): break
+            if wj in INNER_EVENT: span_end = None; i = j + 1     # restart after an event word
+            if wj in ORG_END: span_end = j
+            if _brk(toks[j]):
+                nxt = _w(toks[j+1]) if j + 1 < len(toks) else ""
+                if not (toks[j].endswith(",") and nxt[:1].isupper() and span_end is None): break
+            j += 1
+        if span_end is not None and i <= span_end and prev not in LOC:
+            k = span_end
+            while k + 1 < len(toks) and not _brk(toks[k]) and _w(toks[k+1]).lower() in ("of","the"):
+                m2 = k + 1
+                while m2 < len(toks) and _w(toks[m2]).lower() in ("of","the","and"): m2 += 1
+                if m2 < len(toks) and _w(toks[m2])[:1].isupper():
+                    k = m2
+                    while k + 1 < len(toks) and not _brk(toks[k]) and _w(toks[k+1])[:1].isupper() and _w(toks[k+1]) not in INNER_EVENT: k += 1
+                else: break
+            span = " ".join(toks[i:k+1]).strip(" ,;:()")
+            span = re.sub(r"\s*\(.*$", "", span)
+            if len(span.split()) >= 2 and (best is None or len(span) > len(best)): best = span
+        i = max(j, i + 1)
+    return best
+def event_org_name(nm):
+    if " -- " in nm:
+        pre = nm.split(" -- ", 1)[0].strip()
+        if re.search(ORG_WORDS_SPLIT, pre) and not MEETING.search(pre):
+            return pre
+    if MEETING.search(nm) or LEAD.match(nm):
+        return longest_org(nm)
+    if re.search(ORG_WORDS_OLD, nm):
+        return longest_org(nm) or nm
+    return None
+
+EVENT_ORG_OVERRIDES = {}
+try:
+    EVENT_ORG_OVERRIDES = json.load(open(os.path.join(os.path.dirname(TPL), "event_orgs.json"), encoding="utf-8"))["events"]
+except FileNotFoundError:
+    pass
 for e in events.values():
     nm = e["name"]
-    if " -- " in nm and re.search(ORG_WORDS_SPLIT, nm.split(" -- ", 1)[0]):
-        org_name = nm.split(" -- ", 1)[0].strip()
-    elif re.search(ORG_WORDS_OLD, nm):
-        org_name = nm
-    else:
+    org_name = EVENT_ORG_OVERRIDES[nm] if nm in EVENT_ORG_OVERRIDES else event_org_name(nm)
+    if not org_name:
         continue
     for pid, _ in e["att"]:
         if pid in people:
             add_org(pid, org_name, {"e": e["id"]})
+# Fold "<Org> <meeting description>" entries into <Org> (added 2026-10-31, Michiko's org-list
+# consolidation). An entry folds only when it starts with another org's full name followed by
+# punctuation or an event word (meeting, annual, anniversary, quarterly, delegation ...), and never
+# into a generic name. Display-layer only; ORG_FOLD_LOG lists every fold for review.
+ORG_EVENT_WORDS = r"(?:meeting|meetings|annual|anniversary|quarterly|commencement|lecture|lectures|exercises|election|delegation|delegates|special|winter|admitted|convention|first|second|third|fourth|public|celebration|fair|festival|examination)\b"
+ORG_GENERIC = {"anti-slavery society", "african methodist episcopal church", "a.m.e. church", "methodist episcopal church",
+               "presbyterian church", "baptist church", "episcopal church"}
+ORG_FOLD_LOG = []
+def _fold_target(label):
+    best = None
+    for k, e2 in org_members.items():
+        kl = e2["label"]
+        if kl == label or len(kl) >= len(label) or k in ORG_GENERIC or len(kl.split()) < 2: continue
+        if not label.startswith(kl): continue
+        rest = label[len(kl):]
+        if re.match(r"\s*(?:[:,(]|—|–|--)", rest) or re.match(r"\s+" + ORG_EVENT_WORDS, rest, re.I):
+            if best is None or len(kl) > len(org_members[best]["label"]): best = k
+    return best
+for key in sorted(org_members, key=lambda k: -len(org_members[k]["label"])):
+    if key not in org_members: continue
+    tgt = _fold_target(org_members[key]["label"])
+    if tgt:
+        src_e, dst_e = org_members.pop(key), org_members[tgt]
+        dst_e["pids"] |= src_e["pids"]
+        for pid, sv in src_e["src"].items():
+            cur = dst_e["src"].get(pid)
+            if cur is None or _src_rank(sv) > _src_rank(cur): dst_e["src"][pid] = sv
+        ORG_FOLD_LOG.append((src_e["label"], dst_e["label"]))
+print("org folds:", len(ORG_FOLD_LOG))
+for a, b in ORG_FOLD_LOG: print("   fold:", a, "=>", b)
 # finalize orgs: keep those with >=2 members
 orgs_out = []
 for key, e in org_members.items():

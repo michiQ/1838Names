@@ -303,3 +303,10 @@ of each file first (the 1861 NS reel is 7 columns; the quarterlies may be 6). Do
 words/page). Image-verify every masthead and every recorded name (crop from the PDF at 400dpi). Large batches can be
 read by parallel readers given a written brief (Run #74's brief is pipeline/cr_reader_brief.md; its crop helper is pipeline/cr_crop.py -- adjust the scratch paths and the frame map per file); review their
 same-name auto-links after the rebuild -- subscriber lists from NJ/Bucks circuits collide with 1838 census names.
+
+## Organizations list (revised 2026-10-31)
+Display-layer only. Sources: Winch notes (ORG_RE), newspaper-mention proximity (ctx_orgs), the ICY roster, and EVENTS. An event adds
+its attendees to the organization NAMED in its title (`event_org_name()` in build_viewer.py); `pipeline/event_orgs.json` holds
+hand-reviewed overrides (null = the event is a meeting only) and always wins. '<Org> <meeting words>' labels fold into <Org>
+automatically; spelling/naming variants are folded via `org_aliases.json` (curated with Michiko). When adding extractions, name
+events 'Organization -- what happened' and the org is picked up cleanly.
