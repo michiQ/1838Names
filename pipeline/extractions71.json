@@ -1,5 +1,5 @@
 {
- "_note": "RUN #75 -- Christian Recorder 1861 Q2 ('Christian Recorder 1861 Q2 (from 1861-04-06).pdf', Internet Archive, one page per frame, NO cover frame): 13 complete 4-page issues, Nos. 13-25, CR_1861-04-06 .. CR_1861-06-29, all mastheads image-verified. OCR: cr_single_process.py DPI=1200 NCOLS=7 (600ppi native). Three parallel readers (A=April, B=May, C=June) under the CR Philadelphia-focused rule with pipeline/cr_reader_brief.md (Q2 version: already-captured recurring items listed; watch for Conference, ICY, war). EVERY name read on 1000dpi crops. Same clean-up as Run #74: '[VERIFY]' moved into roles; bare surnames text-only except bishops; printed 'J. C. White, Sr.' (May 4 war-meeting card) recorded as Jacob C. White Sr.; plain 'J. C. White' in Banneker/ICY contexts = Jacob C. White Jr. (Michiko 2026-10-31). Full reader notes/flags in _notes/_flags. The May 25 Shorter obituary is too blurred to link: Alice/Sarah/Thomas/Mary Shorter kept in text only. LINK REVIEW: unlinked same-name collisions -- 1861 ICY examination students Henry Boyer, John Q. Allen, James Needham (had hit 1830s-40s adults, likely their fathers); common names William Scott, William Young, Joshua Brown; 'Mrs. Elizabeth Harris' keeps her honorific. 'Miss Mary Still' (Allentown NJ subscriber; opening a school at Clarksborough; signer for the Female Union Publication Society) held unlinked pending Michiko's ruling on whether she is William Still's sister (Winch Still, Mary). 'James F. Needham', an 1861 ICY prize student, is NOT linked: merges.json folds newspaper 'James F. Needham' into Winch Needham, James (Sr.) per the July Coppin ruling, but this student fits the SON on the ICY roster -- question for Michiko. 'Mrs. H. M. Bunday' (Hope Grand Union, Daughters of Temperance, 1861) is very likely the 'Mrs. Bundy' who held office in the same society in 1855 (extractions69, Winch 'Bundy, Mrs.') -- not merged, question for Michiko.",
+ "_note": "RUN #75 -- Christian Recorder 1861 Q2 ('Christian Recorder 1861 Q2 (from 1861-04-06).pdf', Internet Archive, one page per frame, NO cover frame): 13 complete 4-page issues, Nos. 13-25, CR_1861-04-06 .. CR_1861-06-29, all mastheads image-verified. OCR: cr_single_process.py DPI=1200 NCOLS=7 (600ppi native). Three parallel readers (A=April, B=May, C=June) under the CR Philadelphia-focused rule with pipeline/cr_reader_brief.md (Q2 version: already-captured recurring items listed; watch for Conference, ICY, war). EVERY name read on 1000dpi crops. Same clean-up as Run #74: '[VERIFY]' moved into roles; bare surnames text-only except bishops; printed 'J. C. White, Sr.' (May 4 war-meeting card) recorded as Jacob C. White Sr.; plain 'J. C. White' in Banneker/ICY contexts = Jacob C. White Jr. (Michiko 2026-10-31). Full reader notes/flags in _notes/_flags. The May 25 Shorter obituary is too blurred to link: Alice/Sarah/Thomas/Mary Shorter kept in text only. LINK REVIEW: unlinked same-name collisions -- 1861 ICY examination students Henry Boyer, John Q. Allen, James Needham (had hit 1830s-40s adults, likely their fathers); common names William Scott, William Young, Joshua Brown; 'Mrs. Elizabeth Harris' keeps her honorific. 'Miss Mary Still' (Allentown NJ subscriber; opening a school at Clarksborough; signer for the Female Union Publication Society) held unlinked pending Michiko's ruling on whether she is William Still's sister (Winch Still, Mary). 'James F. Needham', an 1861 ICY prize student, is NOT linked: merges.json folds newspaper 'James F. Needham' into Winch Needham, James (Sr.) per the July Coppin ruling, but this student fits the SON on the ICY roster -- question for Michiko. 'Mrs. H. M. Bunday' (Hope Grand Union, Daughters of Temperance, 1861) is very likely the 'Mrs. Bundy' who held office in the same society in 1855 (extractions69, Winch 'Bundy, Mrs.') -- not merged, question for Michiko. MICHIKO 2026-10-31: (a) the Apr 22 war-meeting Card now carries the HSP manuscript minutes (Minutes of the Social, Civil and Statistical Association, Leon Gardiner Collection, Historical Society of Pennsylvania (vol. 27, pp. 264-268)); (b) 'James F. Needham' = James Fields Needham, the SON ('the F is the clue') -- restored and routed to the ICY record via merges.json; (c) Mrs. H. M. Bunday = Mrs. Bundy (1855); (d) Ann Lawe = Mrs. Laws; (e) Mary Still: no direct citation that she is William Still's sister, so she stays unlinked.",
  "articles": [
   {
    "issue": "CR_1861-04-06",
@@ -1850,12 +1850,12 @@
    "page": 2,
    "name": "Social, Civil and Statistical Association of the Colored People of Pennsylvania -- meeting on the war (Card)",
    "date": "1861-04-22",
-   "location": "Philadelphia (not stated)",
-   "description": "CARD. A meeting of the Social, Civil, and Statistical Association of the colored people of Pennsylvania was held on the 22d inst. [printed 'inst.'; the Card was evidently written in April, so 22 April 1861 -- VERIFY], to deliberate upon the alarming condition of the public peace, and to take such measures as the circumstances of the colored people of this State may seem, in our judgment, to demand, and best serve the cause of freedom to man. Formidable difficulties prevent our service being made available to the country in this time of its extremity. First, the laws of this State debar 10,000 able-bodied colored citizens from bearing arms in defence of the State, notwithstanding we have served the Government faithfully as soldiers, artisans and laborers upon every battle field in the country's history... The second is, that the 10,000 colored citizens of this State are not invited, at this stage, by the Government, to enroll themselves; still, in view of the present danger threatening the Commonwealth, we earnestly recommend that the colored citizens stand prepared, so that when officially solicited by the Government we may render such service as only men can render, who know how precious Liberty is. Signed: Isaiah C. Wears, C. Miller, J. P. Clay, William Still, S. M. Smith, J. C. White, Sr., Stephen Smith, Charles H. Bustill, J. P. Worthington, Jonathan C. Gibbs, Morris Brown, P. T. Smith, M. Wheeler.",
+   "location": "Office of J. C. White, Philadelphia (per the manuscript minutes)",
+   "description": "CARD. A meeting of the Social, Civil, and Statistical Association of the colored people of Pennsylvania was held on the 22d inst. [22 April 1861, confirmed by the manuscript minutes], to deliberate upon the alarming condition of the public peace, and to take such measures as the circumstances of the colored people of this State may seem, in our judgment, to demand, and best serve the cause of freedom to man. Formidable difficulties prevent our service being made available to the country in this time of its extremity. First, the laws of this State debar 10,000 able-bodied colored citizens from bearing arms in defence of the State, notwithstanding we have served the Government faithfully as soldiers, artisans and laborers upon every battle field in the country's history... The second is, that the 10,000 colored citizens of this State are not invited, at this stage, by the Government, to enroll themselves; still, in view of the present danger threatening the Commonwealth, we earnestly recommend that the colored citizens stand prepared, so that when officially solicited by the Government we may render such service as only men can render, who know how precious Liberty is. Signed: Isaiah C. Wears, C. Miller, J. P. Clay, William Still, S. M. Smith, J. C. White, Sr., Stephen Smith, Charles H. Bustill, J. P. Worthington, Jonathan C. Gibbs, Morris Brown, P. T. Smith, M. Wheeler. || MANUSCRIPT RECORD: Minutes of the Social, Civil and Statistical Association, Leon Gardiner Collection, Historical Society of Pennsylvania (vol. 27, pp. 264-268). The Executive Committee met at the office of J. C. White on Monday evening, April 22, 1861, Mr. Clay presiding [VERIFY: the minutes read 'Mr. [J.?] Clay'; the Card's signer is J. P. Clay] with Wm. Still as secretary, 'in consequence of the present state of public affairs.' A member [J. P. Worthington? VERIFY] reported an article he had heard read. William Still opposed any action by 'our people' at this time, since it would turn against them the papers that had been their friends, as with the Bulletin. Mr. Wears favored organizing and drilling so as to 'hold ourselves ready when called on,' and wanted the Bulletin article answered. J. C. White moved 'that in the opinion of this Com. the present time is inopportune for our people, from their peculiar situation, to take any active part in the present crisis.' Rev. Stephen Smith and Rev. J. C. Gibbs offered amendments; Gibbs's held that the Bulletin article was a 'hoax', lest 'Messrs Bowers & Green' be told they had been 'hoaxed' if they applied to those papers again. S. Morgan Smith asked to have his dissent recorded: while opposed to any display, he thought 'our people should in a quiet way express themselves as to their sympathies' and petition the Legislature 'for the right to bear arms' and, if necessary, form home regiments [VERIFY]; interrupted by questions from Wears and White and by Gibbs, he sat down and declined to continue. The matter was referred to a committee [VERIFY which: the April 29 minutes call it Gibbs's Civil Rights Committee] with instructions to report. The minutes also refer to a meeting 'convened at the Masonic Hall on the evening of the 22nd' [VERIFY]. At the April 29 meeting, again at White's office, Still moved that Rev. J. C. Gibbs chair; White corrected the minutes (he had not interrupted Smith), and Gibbs disclaimed any hostile feeling toward Smith; Gibbs, as chairman of the Civil Rights Committee, then read this Card, 'which had been published by the Com. in all the principal daily papers.' Minutes signed S. Morgan Smith, Secretary. Photographs of the minutes taken by Michiko Quinones at HSP (research use only; not published).",
    "attendees": [
     [
      "Isaiah C. Wears",
-     "signer"
+     "signer; at the April 22 meeting favored organizing and drilling (HSP minutes, 'Mr. Wears')"
     ],
     [
      "C. Miller",
@@ -1863,23 +1863,23 @@
     ],
     [
      "J. P. Clay",
-     "signer"
+     "signer; presiding at the April 22 committee meeting [VERIFY: minutes read 'Mr. Clay']"
     ],
     [
      "William Still",
-     "signer"
+     "signer; acting secretary at the April 22 committee meeting, spoke against any action (HSP minutes)"
     ],
     [
-     "S. M. Smith",
-     "signer"
+     "S. Morgan Smith",
+     "signer (printed 'S. M. Smith'); Secretary of the Association; recorded his dissent, urging a petition for the right to bear arms (HSP minutes)"
     ],
     [
      "Jacob C. White Sr.",
-     "signer (printed 'Sr.'; i.e. the elder Jacob C. White) (printed 'J. C. White, Sr.')"
+     "signer (printed 'J. C. White, Sr.'); the committee met at his office; moved that the time was 'inopportune' (HSP minutes)"
     ],
     [
      "Stephen Smith",
-     "signer"
+     "signer; offered an amendment at the April 22 meeting (HSP minutes)"
     ],
     [
      "Charles H. Bustill",
@@ -1891,7 +1891,7 @@
     ],
     [
      "Jonathan C. Gibbs",
-     "signer (middle initial C/O [VERIFY])"
+     "signer; chairman of the Civil Rights Committee; offered the 'hoax' amendment (HSP minutes, 'Rev. J. C. Gibbs')"
     ],
     [
      "Morris Brown",
@@ -2061,6 +2061,10 @@
     [
      "Charles Yarnall",
      "Board of Managers; delivered diplomas"
+    ],
+    [
+     "James F. Needham",
+     "prize for attendance and scholarship $5 (James Fields Needham, the son)"
     ]
    ]
   },

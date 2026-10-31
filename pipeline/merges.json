@@ -396,15 +396,11 @@
   "keep": "Needham, James",
   "aliases": [
    {
-    "name": "James F. Needham",
-    "source": "newspaper"
-   },
-   {
     "name": "James Needham",
     "source": "newspaper"
    }
   ],
-  "note": "Michiko approved 2026-07-29 ('newspaper sources are all James Needham Sr'). The newspaper 'James F. Needham' and 'James Needham' records are James Needham Sr. (the 1840s father) = Winch 'Needham, James'. Source-qualified aliases so it does NOT touch the ICY roster 'Needham, James F.' (coppin), who is the SON (James F. Needham Jr, ICY graduate) -- kept as a separate ICY person."
+  "note": "Michiko approved 2026-07-29 ('newspaper sources are all James Needham Sr'). The newspaper 'James F. Needham' and 'James Needham' records are James Needham Sr. (the 1840s father) = Winch 'Needham, James'. Source-qualified aliases so it does NOT touch the ICY roster 'Needham, James F.' (coppin), who is the SON (James F. Needham Jr, ICY graduate) -- kept as a separate ICY person. REVISED 2026-10-31 (Michiko: 'The F is the clue. James Fields Needham is the son.'): newspaper 'James F. Needham' moved to the son's group."
  },
  {
   "keep": "Jackson, Benjamin",
@@ -774,9 +770,13 @@
    {
     "name": "James Fields Needham",
     "source": "blog"
+   },
+   {
+    "name": "James F. Needham",
+    "source": "newspaper"
    }
   ],
-  "note": "Michiko approved 2026-07-30 (blog review). Blog 'James Fields Needham' is James Needham Jr. = the ICY roster 'Needham, James F.' (coppin, id359342, the son)."
+  "note": "Michiko approved 2026-07-30 (blog review). Blog 'James Fields Needham' is James Needham Jr. = the ICY roster 'Needham, James F.' (coppin, id359342, the son). + newspaper 'James F. Needham' (PP_058 ICY memorial orator; CR 1861 ICY prize student) -- Michiko 2026-10-31: 'The F is the clue.'"
  },
  {
   "keep": {
@@ -1113,5 +1113,28 @@
    }
   ],
   "note": "Frances Ellen Watkins Harper -- poet/abolitionist; her 'Poems on Miscellaneous Subjects' reviewed in the Christian Recorder (No.20, 1854). Folds the blog-source duplicate into the ugrr record. Confirmed by Michiko 2026-08-19 (Run #72)."
+ },
+ {
+  "keep": "Bundy, Mrs.",
+  "aliases": [
+   {
+    "name": "Mrs. H. M. Bunday",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Hope Grand Union, Daughters of Temperance: 'Mrs. H. M. Bunday' (Christian Recorder 1861) = 'Mrs. Bundy' (Winch; the society's officer in the 1855 CR). Confirmed by Michiko 2026-10-31 (Run #75)."
+ },
+ {
+  "keep": {
+   "name": "Ann Lawe",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "Mrs. Laws",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Publication Society of Philadelphia president 'Mrs. Laws' (CR Jan-Mar 1861) = 'Ann Lawe' of the May 1 1861 Recorder benefit committee. Confirmed by Michiko 2026-10-31 (Run #75)."
  }
 ]
