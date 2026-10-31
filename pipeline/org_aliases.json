@@ -1,22 +1,47 @@
 [
   {
     "canonical": "Coachmen's Benevolent Society",
-    "aliases": ["Coachman's Benevolent Society"],
+    "aliases": [
+      "Coachman's Benevolent Society"
+    ],
     "note": "apostrophe-s vs s-apostrophe spelling variant. Confirmed by Michiko 2026-07-09."
   },
   {
     "canonical": "A.M.E. Church",
-    "aliases": ["A. M. E. Church", "A.M. E. Church", "A.M.E Church"],
+    "aliases": [
+      "A. M. E. Church",
+      "A.M. E. Church",
+      "A.M.E Church"
+    ],
     "note": "spelling/spacing/punctuation variants of African Methodist Episcopal Church. Confirmed by Michiko 2026-07-09."
   },
   {
     "canonical": "Female Vigilant Committee",
-    "aliases": ["Female Vigilance Committee", "Female Vigilant Association"],
+    "aliases": [
+      "Female Vigilance Committee",
+      "Female Vigilant Association"
+    ],
     "note": "same organization despite 'Association'/'Committee' wording difference; canonical chosen as highest-count form. Confirmed by Michiko 2026-07-09."
   },
   {
     "canonical": "Humane Mechanics Society",
-    "aliases": ["Humane Mechanics' Society"],
+    "aliases": [
+      "Humane Mechanics' Society"
+    ],
     "note": "apostrophe variant. Confirmed by Michiko 2026-07-09."
+  },
+  {
+    "canonical": "Banneker Institute",
+    "aliases": [
+      "Banneker Institute special"
+    ],
+    "note": "'Banneker Institute special meeting' event name loses 'meeting' in org_clean; same institute. Run #74/75 cleanup, 2026-10-31."
+  },
+  {
+    "canonical": "Publication Society of Philadelphia",
+    "aliases": [
+      "Publication Society"
+    ],
+    "note": "Same society (Mrs. Laws / Ann Lawe, president) named with and without 'of Philadelphia' in the 1861 Christian Recorder. 2026-10-31."
   }
 ]

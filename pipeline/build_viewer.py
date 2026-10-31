@@ -233,10 +233,23 @@ if has_table("coppin_students"):
             add_org(pid, "Institute for Colored Youth", {"coppin": 1})
 
 # orgs from event attendance (event names are org-flavored)
+# Curated event names follow "Organization -- what happened"; when that pattern is present the
+# organization is the part before " -- " (so all Banneker Institute events share ONE org node, and
+# "Association/Company/Union/Lodge/Assembly/Order" bodies count -- added 2026-10-31 for the Social,
+# Civil and Statistical Association, Michiko). Names without " -- " keep the original whole-name rule.
+ORG_WORDS_OLD = r"Society|Church|Conference|Convention|Club|Institute|Hall|College|Academy|Colony|Studio|Circle"
+ORG_WORDS_SPLIT = ORG_WORDS_OLD + r"|Association|Company|Union|Lodge|Assembly|Order|Tabernacle"
 for e in events.values():
+    nm = e["name"]
+    if " -- " in nm and re.search(ORG_WORDS_SPLIT, nm.split(" -- ", 1)[0]):
+        org_name = nm.split(" -- ", 1)[0].strip()
+    elif re.search(ORG_WORDS_OLD, nm):
+        org_name = nm
+    else:
+        continue
     for pid, _ in e["att"]:
-        if pid in people and re.search(r"Society|Church|Conference|Convention|Club|Institute|Hall|College|Academy|Colony|Studio|Circle", e["name"]):
-            add_org(pid, e["name"], {"e": e["id"]})
+        if pid in people:
+            add_org(pid, org_name, {"e": e["id"]})
 # finalize orgs: keep those with >=2 members
 orgs_out = []
 for key, e in org_members.items():
