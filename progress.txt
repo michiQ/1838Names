@@ -1,3 +1,5 @@
+RUN #75 addendum 2, 2026-10-31: Michiko -- S. Morgan Smith (SCSA secretary; Card's 'S. M. Smith') = Rev. Stephen Smith ('Same man'). merges.json: alias added to the Rev. Stephen Smith -> Winch Smith, Stephen group; the war-meeting event description notes that the Card and minutes name him twice. Rebuilt, smoke_test PASSED, pushed to STAGING, Drive synced.
+
 VIEWER, 2026-10-31 (same session): event descriptions now turn web addresses and repo-hosted source files (manuscripts/...jpg|png|pdf) into links (linkify() in viewer_template.html, applied after esc()); the SCSA minutes event shows 'view p.264' .. 'view p.268'. smoke_test PASSED. New repo folder manuscripts/ for archival photos Michiko supplies.
 
 RUN #75 addendum, 2026-10-31 (same session). Michiko's rulings + a manuscript source:
