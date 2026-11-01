@@ -104,6 +104,7 @@ def build(people, events, orgs, here):
                 att.append([a, b, pid, rl, sc, 1 if OFF.search(rl) and not rl.lower().startswith("shareholder") else 0])
         att.sort(key=lambda x: (x[0], -x[5]))
         lane = {"name": L["label"], "cat": L["cat"], "note": note, "undated": undated, "att": att}
+        if L.get("marks"): lane["marks"] = L["marks"]
         if L.get("pas"):
             r = rows[L["pas"]]; used_pas.add(r[0])
             lane.update({"founded": r[2], "pas": r[3:], "pasName": r[1], "pasRow": r[0]})

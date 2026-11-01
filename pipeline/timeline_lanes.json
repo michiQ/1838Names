@@ -1,5 +1,5 @@
 {
- "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own.",
+ "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own. marks = [year, text] for a dated fact with no named people (drawn as a hollow dot).",
  "lanes": [
   {
    "label": "Free African Society",
@@ -355,6 +355,15 @@
    "pas": null
   },
   {
+   "label": "Protecting Society of the City and County of Philadelphia",
+   "cat": "rights",
+   "orgs": [
+    "Protecting Society of the City and County of Philadelphia"
+   ],
+   "kw": "Protecting Society",
+   "pas": null
+  },
+  {
    "label": "Haytien Emigration Society",
    "cat": "rights",
    "orgs": [
@@ -418,6 +427,21 @@
    "pas": null
   },
   {
+   "label": "Frank Johnson Guards",
+   "cat": "rights",
+   "orgs": [
+    "Frank Johnson Guards"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1859,
+     "Assembled and marched armed through the city; described in Amos Webber's diary and objected to by the Daily Ledger"
+    ]
+   ]
+  },
+  {
    "label": "Social, Civil and Statistical Association",
    "cat": "rights",
    "orgs": [
@@ -434,6 +458,15 @@
     "PA Equal Rights League"
    ],
    "kw": "Equal Rights League",
+   "pas": null
+  },
+  {
+   "label": "Williams Assembly (1865)",
+   "cat": "rights",
+   "orgs": [
+    "Williams Assembly (1865)"
+   ],
+   "kw": null,
    "pas": null
   }
  ]

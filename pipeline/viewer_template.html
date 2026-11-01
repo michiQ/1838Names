@@ -180,6 +180,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tlgrid .dot{position:absolute;top:50%;border-radius:50%;transform:translate(-50%,-50%);box-sizing:border-box}
 #tlgrid .dot.off{border:2px solid var(--bg);box-shadow:0 0 0 1.5px currentColor}
 #tlgrid .dia{position:absolute;top:50%;width:10px;height:10px;transform:translate(-50%,-50%) rotate(45deg);border:2px solid currentColor;background:var(--bg);box-sizing:border-box}
+#tlgrid .mk{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid currentColor;background:var(--bg);box-sizing:border-box}
 #tlgrid .sq{position:absolute;top:50%;width:7px;height:7px;transform:translate(-50%,-50%);background:currentColor;opacity:.8}
 #tlview .aid{color:#d0734f} #tlview .edu{color:#6fb3a6} #tlview .rights{color:var(--gold)}
 #tlview .c-aid{background:#d0734f} #tlview .c-edu{background:#6fb3a6} #tlview .c-rights{background:var(--gold)}
@@ -1576,7 +1577,7 @@ syncFab();
   const orgNames=new Set((DATA.orgs||[]).map(o=>o.name));
   let sel=-1;
   T.lanes.forEach((l,i)=>{ l.i=i; const ys=l.att.map(a=>a[0]), ye=l.att.map(a=>a[1]);
-    if(l.founded) ys.push(l.founded); if(l.pas) {ye.push(1837); ys.push(1837);}
+    if(l.founded) ys.push(l.founded); if(l.pas) {ye.push(1837); ys.push(1837);} (l.marks||[]).forEach(m=>ys.push(m[0]));
     l.lo=Math.min(...ys,9999); l.hi=Math.max(...ye,...ys,0); });
   const chips=document.getElementById('tlchips');
   chips.innerHTML=Object.entries(CATS).map(([k,v])=>`<button class="tlchip" data-k="${k}" aria-pressed="true"><i class="sw c-${k}"></i>${e(v)}</button>`).join('')
@@ -1604,10 +1605,11 @@ syncFab();
         const rng=new Set(l.att.filter(a=>a[1]>a[0]).map(a=>a[0]+'-'+a[1]));
         rng.forEach(r=>{const [a,b]=r.split('-').map(Number); t+=`<div class="rng c-${c}" style="left:${x(a)}%;width:${x(b)-x(a)}%"></div>`;});
         if(l.pas) t+=`<div class="sq ${c}" style="left:${x(1837)}%" title="1837: ${l.pas[0]==null?'members not given':l.pas[0]+' members'} (PAS report)"></div>`;
+        (l.marks||[]).forEach(m=>{t+=`<div class="mk ${c}" style="left:${x(m[0])}%" title="${m[0]}: ${e(m[1])}"></div>`;});
         if(l.founded) t+=`<div class="dia ${c}" style="left:${x(l.founded)}%" title="Instituted ${l.founded} (PAS report)"></div>`;
         Object.entries(ys).forEach(([y,v])=>{const d=Math.max(7,Math.min(24,5+Math.sqrt(v.n)*3.1));
           t+=`<div class="dot ${c} c-${c}${v.o?' off':''}" style="left:${x(+y)}%;width:${d}px;height:${d}px" title="${y}: ${v.n} name${v.n>1?'s':''}"></div>`;});
-        const meta=[]; if(l.founded) meta.push('founded '+l.founded); if(l.att.length) meta.push(l.att.length+' dated'); if(l.undated) meta.push(l.undated+' no date');
+        const meta=[]; if(l.founded) meta.push('founded '+l.founded); if(l.att.length) meta.push(l.att.length+' dated'); if(l.undated) meta.push(l.undated+' no date'); if(!l.att.length&&!l.undated&&l.marks) meta.push('no members on record yet');
         if(l.pas&&l.pas[0]!=null&&!l.att.length) meta.push(l.pas[0]+' members in 1837');
         h+=`<div class="tlrow${sel===l.i?' on':''}" tabindex="0" role="button" data-i="${l.i}"><div class="lab">${e(l.name)}<small>${e(meta.join(' · '))}</small></div><div class="trk">${t}</div></div>`;
       }
@@ -1632,6 +1634,7 @@ syncFab();
       <div><dt>Subscriptions, 1837</dt><dd>${money(l.pas[1])}</dd></div><div><dt>Expenditures, 1837</dt><dd>${money(l.pas[2])}</dd></div><div><dt>Fund</dt><dd>${money(l.pas[3])}</dd></div></dl>
       ${f?`<div class="pasf">Note in the report: ${e(f)}</div>`:''}${l.pasNote?`<div class="pasf">${e(l.pasNote)}</div>`:''}</div>`;
     }
+    if(l.marks) h+=`<div class="yrs">${l.marks.map(m=>`<div class="yr"><h3>${m[0]}</h3><p class="note">${e(m[1])}</p></div>`).join('')}</div>`;
     if(l.note) h+=`<p class="note">${e(l.note)}</p>`;
     const org=(DATA.orgs||[]).find(o=>o.name===l.name)||null;
     h+=`<div class="yrs${Object.keys(by).length===1?' single':''}">`;
@@ -1646,7 +1649,7 @@ syncFab();
       h+='</div>';
     });
     h+='</div>';
-    if(!l.att.length&&!l.undated) h+=`<p class="meta">No people from this society are in the database yet.</p>`;
+    if(!l.att.length&&!l.undated) h+=`<p class="meta">No people from this ${l.marks?'organization':'society'} are in the database yet.</p>`;
     el.innerHTML='<button class="tlx" title="Close this box">Close &#10005;</button>'+h;
   }
   const grid=document.getElementById('tlgrid');
