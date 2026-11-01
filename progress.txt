@@ -1,3 +1,5 @@
+PROD PROMOTE, 2026-11-01 (2nd). Promoted staging 0ada117 (Run #76 Christian Recorder Jul-Sep 1861 + Wears merge + stable ICY merges) to production. Michiko authorized in chat and gave the prod-push password (not stored). No PAT. commit-tree <staging tree 78d6b12> -p 716c364 -> 167f3b6; pushed 716c364..167f3b6. VERIFIED: prod tree == staging tree 78d6b12.
+
 ADDENDUM RUN #76, 2026-11-01 (Michiko): 'Isaiah C. Were' (CR Sept. 14, 1861, 'A Call') merged into Wears, Isaiah C. ('Were is Wears').
 - Stability fix: the nine ICY Alumni merges were keyed by coppin record id, but load_coppin re-creates a roster record after it has been merged away, with a new id, so Boyer and Burr came back as duplicates on the next rebuild. They are now keyed by name + source (coppin), with the roster name form also listed as a newspaper alias (the surviving record takes that name). The Joseph White move uses to_name/to_source instead of to_id. Two back-to-back rebuilds now give identical people tables. RULE: never key a merge or split on a coppin, blog or newspaper record id; use name + source.
 - Smoke test PASSED. Staging only.
