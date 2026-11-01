@@ -7,6 +7,20 @@
       "context_prefix": "Reform lectures of John Allen in Pittsburgh",
       "new_name": "John Allen (Massachusetts reform lecturer)",
       "note": "North Star, Feb. 18, 1848: a Massachusetts land reformer lecturing in Pittsburgh. Not the John Allen who was secretary of the 1827 Protecting Society; split off 2026-11-01 so that record could merge into Winch's Allen, John (Michiko's ruling)."
+    },
+    {
+      "from_name": "White, Joseph",
+      "from_source": "census",
+      "context_prefix": "Institute for Colored Youth -- Association of Alumni",
+      "to_id": 359530,
+      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01."
+    },
+    {
+      "from_name": "White, Joseph",
+      "from_source": "census",
+      "context_prefix": "Notice: Association of Alumni of the Institute for Colored Youth",
+      "to_id": 359530,
+      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01."
     }
   ],
   "renames": [

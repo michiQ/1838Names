@@ -10,12 +10,12 @@ con = sqlite3.connect(DB)
 for r in json.load(open(os.path.join(HERE, "split_appearances.json")))["rules"]:
     src = [x[0] for x in con.execute("SELECT id FROM people WHERE canonical_name=? AND source=?", (r["from_name"], r["from_source"]))]
     if not src: print("  no source record for", r["from_name"]); continue
-    row = con.execute("SELECT id FROM people WHERE canonical_name=?", (r["new_name"],)).fetchone()
+    row = [r["to_id"]] if r.get("to_id") else con.execute("SELECT id FROM people WHERE canonical_name=?", (r["new_name"],)).fetchone()
     new = row[0] if row else con.execute("INSERT INTO people(canonical_name, norm_name, source) VALUES(?,?,?)",
                                          (r["new_name"], norm(r["new_name"]), r["from_source"])).lastrowid
     q = f"UPDATE appearances SET person_id=? WHERE person_id IN ({','.join('?'*len(src))}) AND context LIKE ?"
     n = con.execute(q, (new, *src, r["context_prefix"] + "%")).rowcount
-    print(f"  {r['from_name']} -> {r['new_name']} (id {new}): moved {n} appearance(s)")
+    print(f"  {r['from_name']} -> {r.get('new_name') or r.get('to_id')} (id {new}): moved {n} appearance(s)")
 con.commit()
 
 # renames: fix a mis-parsed display name by id
