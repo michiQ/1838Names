@@ -1207,12 +1207,16 @@
  },
  {
   "keep": {
-   "id": 359249,
-   "name": "Johnson, Estellena"
+   "name": "Johnson, Estellena",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Estellena Johnson",
+    "source": "newspaper"
+   },
+   {
+    "name": "Johnson, Estellena",
     "source": "newspaper"
    }
   ],
@@ -1220,12 +1224,16 @@
  },
  {
   "keep": {
-   "id": 359034,
-   "name": "Boyer, Henry, Jr."
+   "name": "Boyer, Henry, Jr.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Henry Boyer Jr.",
+    "source": "newspaper"
+   },
+   {
+    "name": "Boyer, Henry, Jr.",
     "source": "newspaper"
    }
   ],
@@ -1233,12 +1241,16 @@
  },
  {
   "keep": {
-   "id": 359182,
-   "name": "Gould, Samuel G."
+   "name": "Gould, Samuel G.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Samuel G. Gould",
+    "source": "newspaper"
+   },
+   {
+    "name": "Gould, Samuel G.",
     "source": "newspaper"
    }
   ],
@@ -1246,12 +1258,16 @@
  },
  {
   "keep": {
-   "id": 359464,
-   "name": "Stevens, Sarah A."
+   "name": "Stevens, Sarah A.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Sarah A. Stevens",
+    "source": "newspaper"
+   },
+   {
+    "name": "Stevens, Sarah A.",
     "source": "newspaper"
    }
   ],
@@ -1259,12 +1275,16 @@
  },
  {
   "keep": {
-   "id": 359348,
-   "name": "Nicken, Lumberd L."
+   "name": "Nicken, Lumberd L.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Lamberd L. Nicken",
+    "source": "newspaper"
+   },
+   {
+    "name": "Nicken, Lumberd L.",
     "source": "newspaper"
    }
   ],
@@ -1272,12 +1292,16 @@
  },
  {
   "keep": {
-   "id": 359531,
-   "name": "White, Martin M."
+   "name": "White, Martin M.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Martin M. White",
+    "source": "newspaper"
+   },
+   {
+    "name": "White, Martin M.",
     "source": "newspaper"
    }
   ],
@@ -1285,12 +1309,16 @@
  },
  {
   "keep": {
-   "id": 359120,
-   "name": "Daffin, Sarah L."
+   "name": "Daffin, Sarah L.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Sarah L. Daffin",
+    "source": "newspaper"
+   },
+   {
+    "name": "Daffin, Sarah L.",
     "source": "newspaper"
    }
   ],
@@ -1298,12 +1326,16 @@
  },
  {
   "keep": {
-   "id": 359058,
-   "name": "Burr, Raymond J."
+   "name": "Burr, Raymond J.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Raymond J. Burr",
+    "source": "newspaper"
+   },
+   {
+    "name": "Burr, Raymond J.",
     "source": "newspaper"
    }
   ],
@@ -1311,15 +1343,32 @@
  },
  {
   "keep": {
-   "id": 359268,
-   "name": "Jones, William T."
+   "name": "Jones, William T.",
+   "source": "coppin"
   },
   "aliases": [
    {
     "name": "Wm. T. Jones",
     "source": "newspaper"
+   },
+   {
+    "name": "Jones, William T.",
+    "source": "newspaper"
    }
   ],
   "note": "Officer of the Institute for Colored Youth Alumni Association, formed Sept. 19, 1861 (Christian Recorder, Sept. 28, 1861, p. 2), printed 'Wm. T. Jones' = the ICY roster entry (Fanny Jackson Coppin, coppin source). Run #76, 2026-11-01: alumni of the ICY are by definition on its graduate roster; name readings confirmed against it."
+ },
+ {
+  "keep": {
+   "id": 2727,
+   "name": "Wears, Isaiah C."
+  },
+  "aliases": [
+   {
+    "name": "Isaiah C. Were",
+    "source": "newspaper"
+   }
+  ],
+  "note": "'Isaiah C. Were', the able Philadelphia layman named in 'A Call' (Christian Recorder, Sept. 14, 1861, p. 2; reading confirmed as printed) = Isaiah C. Wears. Michiko 2026-11-01: 'Were is Wears.'"
  }
 ]

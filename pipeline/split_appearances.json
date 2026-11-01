@@ -12,15 +12,17 @@
       "from_name": "White, Joseph",
       "from_source": "census",
       "context_prefix": "Institute for Colored Youth -- Association of Alumni",
-      "to_id": 359530,
-      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01."
+      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
+      "to_name": "White, Joseph",
+      "to_source": "coppin"
     },
     {
       "from_name": "White, Joseph",
       "from_source": "census",
       "context_prefix": "Notice: Association of Alumni of the Institute for Colored Youth",
-      "to_id": 359530,
-      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01."
+      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
+      "to_name": "White, Joseph",
+      "to_source": "coppin"
     }
   ],
   "renames": [

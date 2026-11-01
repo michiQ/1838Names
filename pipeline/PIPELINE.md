@@ -316,6 +316,8 @@ the Frank Johnson Guards, the Williams Assembly). Its members, roles, citations 
 `pipeline/split_appearances.py` + `.json` (added 2026-11-01) move specific appearances off a shared same-name record before
 apply_merges (first use: the 1848 Massachusetts lecturer John Allen, so the Protecting Society's John Allen could merge into Winch).
 The same file also holds 'renames' (fix a mis-parsed name/aliases/life_dates by id) and 'move_refs' (move Winch notes filed under the
-wrong record). `pipeline/person_links.json` holds hand-curated person-to-person connections ('Connected to' on both profiles).
+wrong record). Rules may target an existing record with to_name + to_source. NEVER key a merge or split on the id of a
+coppin, blog or newspaper record: those loaders re-create records with new ids after a merge; use name + source.
+`pipeline/person_links.json` holds hand-curated person-to-person connections ('Connected to' on both profiles).
 NO 'VERIFY' IN THE PUBLIC LISTINGS (Michiko, 2026-11-01): keep flagging uncertain readings with [VERIFY] in extraction JSON for
 review, but build_viewer.py strips them from everything the site displays. Do not write VERIFY into curated notes.

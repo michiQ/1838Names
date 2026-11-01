@@ -5,12 +5,14 @@ database. NONE are auto-linked. To confirm a same-person match, add a group to
 `merges.json` (keep the existing record; alias the ICY one), e.g.:
 `{"keep": "Catto, Octavius V.", "aliases": [{"name": "Catto, Octavius V.", "source": "coppin"}]}`
 
-35 of 598 ICY names have a same-name record:
+37 of 598 ICY names have a same-name record:
 
 - **Anderson, Mary** (coppin)  ↔  Anderson, Mary (winch)
 - **Bell, William** (coppin)  ↔  Bell, William (census)
+- **Boyer, Henry, Jr.** (coppin)  ↔  Boyer, Henry, Jr. (newspaper)
 - **Brister, James** (coppin)  ↔  Brister, James (census)
 - **Brown, Elizabeth** (coppin)  ↔  Brown, Elizabeth (winch)
+- **Burr, Raymond J.** (coppin)  ↔  Burr, Raymond J. (newspaper)
 - **Burton, Chas.** (coppin)  ↔  Burton, Chas (census)
 - **Catto, Octavius V.** (coppin)  ↔  Catto, Octavius V. (winch)
 - **Davis, Mary** (coppin)  ↔  Davis, Mary (winch)
