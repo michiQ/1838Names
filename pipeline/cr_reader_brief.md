@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, 1861 Q4 (October 5 - December 28, 1861)
+# Extraction brief: Christian Recorder, 1862 Q1 (January 4 - March 29, 1862)
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,13 +7,13 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr1861q4)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr1862q1)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
   higher resolution: render a crop from the source PDF instead. Frame numbers: issue k (0-based
-  in date order 10-05, 10-12, 10-19, 10-26, 11-02, 11-09, 11-16, 11-23, 11-30, 12-07, 12-14, 12-21, 12-28) page N
-  is PDF frame `1 + 4*k + (N-1)` (no cover frame; all 52 pages present). S/jobs.txt lists 'frame:slug:page'. Recipe (crop by fractions of the paper area; adjust to taste):
+  in date order 01-04 ... 03-29): ALWAYS look the frame up in S/jobs.txt ('frame:slug:page'). Frame 1 and frame 42 are
+  small cards, not pages, so frame = page + 1 up to the March 8 issue and page + 2 after it. Recipe (crop by fractions of the paper area; adjust to taste):
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
@@ -75,7 +75,7 @@ Philadelphia-focused deep read:
   ("W. T. Jones"). Expand nothing you cannot see; do not normalize spellings.
 - Dates ISO (yyyy-mm-dd) when the date of the event is stated or computable; else omit `date`.
 
-## Already captured in Runs #74-#76 (Jan-Sep 1861) -- do NOT re-enter unless changed
+## Already captured in Runs #74-#77 (all of 1861) -- do NOT re-enter unless changed
 Recurring: Book Depository of the AME Church (619 Pine; E. Weaver); city carriers James Wiggins & W. T. Jones; Ellis J. Peer's
 Fine Cake Bakery (South St.); Mrs. H. S. Duterte, undertaker (634 Lombard); Thomas W. Allmond, furnishing undertaker (1027
 Rodman); A. Burris, teacher of vocal music; teachers of the piano; Daughters of Cornish Society standing notice; Nazrey's
@@ -83,19 +83,20 @@ Rodman); A. Burris, teacher of vocal music; teachers of the piano; Daughters of 
 notice; Miss Mary Still's school, Clarksborough; hymn-book and carrier notices; the full 1861 Philadelphia Conference
 appointments; Wm. Still, coal and stoves (107 N. Fifth); Mrs. E. A. Palmer, trimmings (N. Fifth); the Grand United Order
 of Brothers and Sisters of Love and Charity officer list; the Rev. Willis Nazrey Society meeting notice (Aaron Bell, president);
-the Daughters of Cornish notice (now with a secretary). Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
+the Daughters of Cornish notice (now with a secretary); Mrs. Jane Johnson and Mrs. Ann Ware, laying out the dead
+(641 Lombard); the United Beneficial Sisters of Rev. J. Woodlin Society notice. Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
 Getz, Dean, Metz, Elkinton, Rothermel (coal), insurance, railroads, patent medicines. NEW Black-owned ads or changed notices
 SHOULD be entered. Quarterly-meeting schedules: one short article per notice, link only named preachers/officers.
 
 ## Watch for in this quarter
-- Autumn and winter society seasons: Banneker Institute lectures and debates, ICY lectures and the new ICY Alumni
-  Association (formed Sept. 1861, O. V. Catto president), Library Company of Colored Persons, Social, Civil and Statistical
-  Association, literary and benevolent society anniversaries and elections (capture officer lists whole).
-- Fairs, festivals, suppers and concerts for churches and schools (Bethel, Union, Wesley/Hurst St., Zoar, Mission,
-  St. Thomas, Shiloh, First African Presbyterian, etc.), with named managers and performers.
-- Thanksgiving (late November) and Christmas services; church dedications, revivals, protracted meetings.
-- The war: relief for contrabands and freedpeople, any Philadelphia meeting about enlistment or the Union cause,
-  letters from Black Philadelphians in the South or the army.
+- Winter society season: Banneker Institute lectures and debates, ICY lectures and the ICY Alumni Association, Library
+  Company of Colored Persons, Social, Civil and Statistical Association; society anniversaries and elections (officer
+  lists whole). January 1 (Emancipation Day) observances.
+- Church affairs: watch-night and New Year services, revivals and protracted meetings, church fairs and festivals, the
+  run-up to the 1862 Philadelphia Annual Conference (spring), Bishop Nazrey's Canada (B.M.E.) question.
+- The war: contraband and freedpeople relief, enlistment talk, letters from Black Philadelphians in the South.
+- NEW or changed Black-owned ads (Mrs. E. A. Palmer now advertises 'Dry Goods and Trimmings'; an Edwin A. Hughes,
+  undertaker, appears; enter changed ads once with the new details).
 - Marriages and deaths of Philadelphians, with officiating ministers.
 
 ## Known identities (record names as printed; mention the identification in `notes`)
@@ -112,6 +113,9 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
   "Mrs. Bunday"/"Mrs. Bundy" = Hope Grand Union. "James F. Needham" is the SON (James Fields Needham); plain "James
   Needham" of the 1830s-40s is the father. O. V. Catto, S. M. Douglass, A. C. Crippen, Prof. Bassett: record as printed.
 - Mary Still of Clarksborough / Allentown N.J.: do NOT describe her as William Still's sister (no citation).
+- Rev. Jonathan C. Gibbs (born 1821; Presbyterian, First African Presbyterian) is the SON. His father, Jonathan C. Gibbs Sr.,
+  died in 1831: any 1860s Gibbs is the son.
+- Rev. Walter Proctor died Dec. 10, 1861; Elisha Weaver resumed as editor in Dec. 1861 after A. L. Stanford resigned.
 - Isaiah C. Were = Isaiah C. Wears. W. D. W. Schureman (also printed Wm. D. W., Scheroman). Joshua Pernal (also printed
   Purnell). A. L. Stanford (Anthony L. Stanford) was acting editor in the autumn of 1861 while Weaver travelled.
 - Bishops of this period: Willis Nazrey ("W. Nazrey", often OCR'd Nazary/Nasrey), Daniel A. Payne,

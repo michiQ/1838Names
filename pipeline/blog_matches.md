@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 188 linked to existing people, 239 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 189 linked to existing people, 238 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -9,7 +9,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Benjamin Jackson** (blog)  ↔  Jackson, Benjamin#1459, Jackson, Benjamin F#356728
 - **Charles Black** (blog)  ↔  Black, Charles#230, Black, Charles#231, BLACK, CHARLES#351942
 - **Charles Bustill** (blog)  ↔  Bustill, Charles H.#477, Bustill, Charles C#354521
-- **Charles Gardner** (blog)  ↔  Gardner, Charles W.#1107, Charles Gardner#359716
+- **Charles Gardner** (blog)  ↔  Gardner, Charles W.#1107, Charles Gardner#359716, Charles L. Gardner#361744
 - **Christopher James Perry, Sr.** (blog)  ↔  CHRISTOPHER, JOHN#352211, Christopher, William#354792, Christopher, Levinia#356486, Christopher, Bayhs#357579
 - **Daniel Alexander Payne** (blog)  ↔  Payne, Daniel A.#2086, Daniel Payne#359717
 - **Daniel Colly** (blog)  ↔  Colley, Daniel#659, COLLY, DANIEL#352251
@@ -44,7 +44,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#361629
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#361746
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312
@@ -118,7 +118,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Frances Draper
 - Frances Gordon
 - Francis Burke Brandt
-- Francis Duterte
 - Francis Fauset
 - Francis Peets Jr.
 - Franklin Guinn
