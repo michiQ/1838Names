@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 187 linked to existing people, 240 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 186 linked to existing people, 240 created as new blog people, 53 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -28,8 +28,9 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **James Forten, Jr** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
 - **James Forten, Jr.** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
 - **James Gordon** (blog)  ↔  Gordon, James R.#1182, Gordon, James R#354661
+- **James Le Count** (blog)  ↔  Lecount, James#1691, James Le Count#361532
 - **James Needham** (blog)  ↔  Needham, James#1996, Needham, James F.#359342
-- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360582
+- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360582, Jane Johnson#361530
 - **Jehu Jones** (blog)  ↔  Jones, Rev. Jehu#1600, JONES, JEHU#353059
 - **John Bowers** (blog)  ↔  Bowers, John#304, Bowers, John C.#305
 - **John Francis Cook Jr.** (blog)  ↔  Bowers, John C.#305, John Sellers Jr.#358765, John Atkinson Jr.#359641
@@ -44,7 +45,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#361457
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#361588
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312

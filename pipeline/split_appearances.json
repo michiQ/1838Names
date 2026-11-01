@@ -23,6 +23,32 @@
       "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
       "to_name": "White, Joseph",
       "to_source": "coppin"
+    },
+    {
+      "from_name": "Gibbs, Jonathan C.",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_186%",
+      "to_name": "Gibbs, Rev. Jonathan C.",
+      "to_source": "winch",
+      "note": "Winch 'Gibbs, Jonathan C.' is the FATHER (Methodist minister, d. April 1831). Every 1860s Christian Recorder item (ICY and Banneker lectures, SCSA civil-rights committee, 1861 marriages) is the SON, Rev. Jonathan C. Gibbs (b. 1821; Winch 'Gibbs, Rev. Jonathan C.', PA Equal Rights League 1865). Caught in Run #77, 2026-11-01."
+    },
+    {
+      "from_name": "THOMPSON, JOSEPH",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1861-10%",
+      "new_name": "Joseph Thompson (Evesham, N.J.)",
+      "note": "Correspondent from Evesham, N.J. (Burlington Circuit Sabbath School celebration, CR Oct. 1861); not the Philadelphia census Joseph Thompson. Run #77.",
+      "new_source": "newspaper"
+    },
+    {
+      "from_name": "Smith, James W",
+      "from_source": "census",
+      "context_prefix": "Letter from Brother Smith",
+      "new_name": "James W. Smith (correspondent, 1861)",
+      "note": "Signer of 'Letter from Brother Smith' (CR Dec. 21, 1861), place not stated; not linked to the census James W. Smith. Run #77.",
+      "new_source": "newspaper"
     }
   ],
   "renames": [

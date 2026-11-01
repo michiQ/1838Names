@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, 1861 Q3 (July 6 - September 28, 1861)
+# Extraction brief: Christian Recorder, 1861 Q4 (October 5 - December 28, 1861)
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,14 +7,13 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr1861q3)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr1861q4)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
   higher resolution: render a crop from the source PDF instead. Frame numbers: issue k (0-based
-  in date order 07-06 ... 09-28): see S/jobs.txt, one line per PDF frame in order, 'frame:slug:page'.
-  NO cover frame. The Aug 17 issue is MISSING its page 2 (frames 25-27 are Aug 17 pp. 1, 3, 4), so frames
-  from Aug 24 on are shifted by one: ALWAYS look the frame up in jobs.txt. Recipe (crop by fractions of the paper area; adjust to taste):
+  in date order 10-05, 10-12, 10-19, 10-26, 11-02, 11-09, 11-16, 11-23, 11-30, 12-07, 12-14, 12-21, 12-28) page N
+  is PDF frame `1 + 4*k + (N-1)` (no cover frame; all 52 pages present). S/jobs.txt lists 'frame:slug:page'. Recipe (crop by fractions of the paper area; adjust to taste):
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
@@ -76,22 +75,27 @@ Philadelphia-focused deep read:
   ("W. T. Jones"). Expand nothing you cannot see; do not normalize spellings.
 - Dates ISO (yyyy-mm-dd) when the date of the event is stated or computable; else omit `date`.
 
-## Already captured in Runs #74-#75 (Jan-Jun 1861) -- do NOT re-enter unless changed
+## Already captured in Runs #74-#76 (Jan-Sep 1861) -- do NOT re-enter unless changed
 Recurring: Book Depository of the AME Church (619 Pine; E. Weaver); city carriers James Wiggins & W. T. Jones; Ellis J. Peer's
 Fine Cake Bakery (South St.); Mrs. H. S. Duterte, undertaker (634 Lombard); Thomas W. Allmond, furnishing undertaker (1027
 Rodman); A. Burris, teacher of vocal music; teachers of the piano; Daughters of Cornish Society standing notice; Nazrey's
 "Episcopal Appointments"; "Our Disciplines" appeal; James Downs, clothing; Hope Grand Union (Daughters of Temperance)
 notice; Miss Mary Still's school, Clarksborough; hymn-book and carrier notices; the full 1861 Philadelphia Conference
-appointments. Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
+appointments; Wm. Still, coal and stoves (107 N. Fifth); Mrs. E. A. Palmer, trimmings (N. Fifth); the Grand United Order
+of Brothers and Sisters of Love and Charity officer list; the Rev. Willis Nazrey Society meeting notice (Aaron Bell, president);
+the Daughters of Cornish notice (now with a secretary). Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
 Getz, Dean, Metz, Elkinton, Rothermel (coal), insurance, railroads, patent medicines. NEW Black-owned ads or changed notices
 SHOULD be entered. Quarterly-meeting schedules: one short article per notice, link only named preachers/officers.
 
 ## Watch for in this quarter
-- The war: First Bull Run (July 21), any Philadelphia meeting of colored men about volunteering, home guards, drilling,
-  or relief; letters from Black soldiers' families or contrabands; named officers and speakers.
-- August 1 (West India Emancipation) celebrations, picnics, excursions, camp meetings (with named preachers), Sabbath-school
-  excursions and anniversaries, society anniversaries (Daughters of Cornish, Hope Grand Union, Banneker Institute,
-  Library Company of Colored Persons, Social, Civil and Statistical Association), ICY items, fairs and festivals.
+- Autumn and winter society seasons: Banneker Institute lectures and debates, ICY lectures and the new ICY Alumni
+  Association (formed Sept. 1861, O. V. Catto president), Library Company of Colored Persons, Social, Civil and Statistical
+  Association, literary and benevolent society anniversaries and elections (capture officer lists whole).
+- Fairs, festivals, suppers and concerts for churches and schools (Bethel, Union, Wesley/Hurst St., Zoar, Mission,
+  St. Thomas, Shiloh, First African Presbyterian, etc.), with named managers and performers.
+- Thanksgiving (late November) and Christmas services; church dedications, revivals, protracted meetings.
+- The war: relief for contrabands and freedpeople, any Philadelphia meeting about enlistment or the Union cause,
+  letters from Black Philadelphians in the South or the army.
 - Marriages and deaths of Philadelphians, with officiating ministers.
 
 ## Known identities (record names as printed; mention the identification in `notes`)
@@ -108,6 +112,8 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
   "Mrs. Bunday"/"Mrs. Bundy" = Hope Grand Union. "James F. Needham" is the SON (James Fields Needham); plain "James
   Needham" of the 1830s-40s is the father. O. V. Catto, S. M. Douglass, A. C. Crippen, Prof. Bassett: record as printed.
 - Mary Still of Clarksborough / Allentown N.J.: do NOT describe her as William Still's sister (no citation).
+- Isaiah C. Were = Isaiah C. Wears. W. D. W. Schureman (also printed Wm. D. W., Scheroman). Joshua Pernal (also printed
+  Purnell). A. L. Stanford (Anthony L. Stanford) was acting editor in the autumn of 1861 while Weaver travelled.
 - Bishops of this period: Willis Nazrey ("W. Nazrey", often OCR'd Nazary/Nasrey), Daniel A. Payne,
   William Paul Quinn, Jabez P. Campbell. Elisha Weaver is the General Book Steward/editor.
   John M. Brown (J. M. Brown) edits the Repository of Religion and Literature.
@@ -116,6 +122,9 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
 - EVERY name, address and number you record must be read on the image crop, not taken from OCR.
 - If you cannot read it confidently, either leave it out or record your best reading followed by
   " [VERIFY]" in the name/role/description and add a `flags` entry saying what is uncertain.
+- The public site shows no VERIFY flags, so before you finish, RE-READ every [VERIFY] name at DPI=1600 (env DPI=1600 for
+  crop.py) and on every other printing of the same item. If it is now certain, remove the flag. If not, keep the flag:
+  those names will be kept out of the linked people (the text keeps your best reading). Fewer, certain links beat more.
 - Never invent a given name or fill a gap from outside knowledge. You may note a likely
   identification in `notes` (e.g. "probably the Rev. J. P. Campbell of Union Church").
 

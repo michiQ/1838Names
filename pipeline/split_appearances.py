@@ -15,9 +15,12 @@ for r in json.load(open(os.path.join(HERE, "split_appearances.json")))["rules"]:
         if not row: print("  no target record for", r["to_name"]); continue
     else: row = [r["to_id"]] if r.get("to_id") else con.execute("SELECT id FROM people WHERE canonical_name=?", (r["new_name"],)).fetchone()
     new = row[0] if row else con.execute("INSERT INTO people(canonical_name, norm_name, source) VALUES(?,?,?)",
-                                         (r["new_name"], norm(r["new_name"]), r["from_source"])).lastrowid
+                                         (r["new_name"], norm(r["new_name"]), r.get("new_source", r["from_source"]))).lastrowid
     q = f"UPDATE appearances SET person_id=? WHERE person_id IN ({','.join('?'*len(src))}) AND context LIKE ?"
-    n = con.execute(q, (new, *src, r["context_prefix"] + "%")).rowcount
+    args = [new, *src, r["context_prefix"] + "%"]
+    if r.get("issue_like"):   # optionally only appearances in matching issues (e.g. 'CR_186%')
+        q += " AND issue_id IN (SELECT id FROM issues WHERE filename LIKE ?)"; args.append(r["issue_like"])
+    n = con.execute(q, args).rowcount
     print(f"  {r['from_name']} -> {r.get('new_name') or r.get('to_name') or r.get('to_id')} (id {new}): moved {n} appearance(s)")
 con.commit()
 

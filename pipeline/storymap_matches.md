@@ -27,7 +27,7 @@ existing record; source-qualify the storymap alias), e.g.:
 - **Jacob Griffith** (storymap)  ↔  Griffith, Jacob (census), Jacob Griffith (blog)
 - **James J. G. Bias** (storymap)  ↔  Bias, James J. G. (newspaper)
 - **James Jones** (storymap)  ↔  Jones, James (winch)
-- **Jane Johnson** (storymap)  ↔  Johnson, Jane (winch), Johnson, Jane (ugrr), Jane Johnson (blog), Jane Johnson (mobstats)
+- **Jane Johnson** (storymap)  ↔  Johnson, Jane (winch), Johnson, Jane (ugrr), Jane Johnson (blog), Jane Johnson (mobstats), Jane Johnson (newspaper)
 - **John Mercer Langston** (storymap)  ↔  Langston, John Mercer (dissertation)
 - **John Nicholson** (storymap)  ↔  Nicholson, John (winch)
 - **John Scott** (storymap)  ↔  Scott, John (winch)
