@@ -1141,9 +1141,21 @@
    {
     "name": "Mrs. Laws",
     "source": "newspaper"
+   },
+   {
+    "name": "Laws, Ann",
+    "source": "census"
+   },
+   {
+    "name": "Ann Lawe",
+    "source": "census"
+   },
+   {
+    "name": "Ann Laws",
+    "source": "newspaper"
    }
   ],
-  "note": "Publication Society of Philadelphia president 'Mrs. Laws' (CR Jan-Mar 1861) = 'Ann Lawe' of the May 1 1861 Recorder benefit committee. Confirmed by Michiko 2026-10-31 (Run #75)."
+  "note": "Publication Society of Philadelphia president 'Mrs. Laws' (CR Jan-Mar 1861) = 'Ann Lawe' of the May 1 1861 Recorder benefit committee. Confirmed by Michiko 2026-10-31 (Run #75). 2026-11-01: Michiko confirmed the Ann Laws of the Bethel Dorcas Society committee (CR Nov. 23, 1861) is the same woman; the census record 'Laws, Ann' folds in."
  },
  {
   "keep": {
