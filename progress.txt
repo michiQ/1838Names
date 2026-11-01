@@ -1,3 +1,5 @@
+PROD PROMOTE, 2026-11-01. Promoted staging michiQ 0235857 (self-protection organizations, John Allen merge, Female Vigilant merges, Daniel Colley, Lamar-Lambsong connection, VERIFY removed from listings) to production 1838BlackMetropolis/NamesDB main. Gate per PIPELINE.md: Michiko authorized in chat and gave the prod-push password (not stored). No PAT (GitHub connection). Promote commit = commit-tree <staging tree f02a11a> -p 24195a6 -> 716c364; pushed 24195a6..716c364. VERIFIED: prod HEAD 716c364, prod tree == staging tree f02a11a.
+
 CLEANUP, 2026-11-01 (Michiko): 
 - NO 'VERIFY' IN THE LISTINGS: build_viewer.py strips every [VERIFY ...] flag and the 1820-directory '- verify against scan' notes from the displayed data (about 370 flags). Source JSON keeps the flags for review; the strip happens only at display. Positive notes such as 'names image-verified' are left as they are.
 - Daniel Colley: Winch id 659 renamed 'Colley, Daniel' (alias Colly, Daniel); the import had taken a later line as his name. Confirmed in the 1837 Vigilant Committee.
