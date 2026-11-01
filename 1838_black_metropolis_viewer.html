@@ -193,6 +193,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tldetail .note{max-width:80ch;font-size:14px}
 #tldetail .pas{border:1px solid var(--line);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
 #tldetail .pash{font-size:13px;color:var(--gold)}
+#tldetail .pash a{color:var(--gold)}
 #tldetail dl{display:flex;flex-wrap:wrap;gap:6px 22px}
 #tldetail dl div{display:flex;flex-direction:column}
 #tldetail dt{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
@@ -225,7 +226,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-01 18:37</span>
+  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-01 18:44</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -1629,7 +1630,7 @@ syncFab();
     if(meta.length) h+=`<div class="meta">${e(meta.join(' · '))}</div>`;
     if(l.pas){
       const f=T.pasFoot&&T.pasFoot[String(l.pasRow)];
-      h+=`<div class="pas"><div class="pash">1838 Pennsylvania Abolition Society report${l.pasName!==l.name?`, listed as &ldquo;${e(l.pasName)}&rdquo;`:''}</div>
+      h+=`<div class="pas"><div class="pash"><a href="${e(T.pasUrl)}" target="_blank" rel="noopener" title="Open pages 26-27 of the report at the Internet Archive">1838 Pennsylvania Abolition Society report, pp. 26&ndash;27</a>${l.pasName!==l.name?`, listed as &ldquo;${e(l.pasName)}&rdquo;`:''}</div>
       <dl><div><dt>Instituted</dt><dd>${l.founded||'not given'}</dd></div><div><dt>Members</dt><dd>${l.pas[0]==null?'—':l.pas[0]}</dd></div>
       <div><dt>Subscriptions, 1837</dt><dd>${money(l.pas[1])}</dd></div><div><dt>Expenditures, 1837</dt><dd>${money(l.pas[2])}</dd></div><div><dt>Fund</dt><dd>${money(l.pas[3])}</dd></div></dl>
       ${f?`<div class="pasf">Note in the report: ${e(f)}</div>`:''}${l.pasNote?`<div class="pasf">${e(l.pasNote)}</div>`:''}</div>`;
