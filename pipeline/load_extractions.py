@@ -74,8 +74,14 @@ def main():
             cur = con.execute("INSERT INTO events(name, event_date, location, description, issue_id, page) VALUES(?,?,?,?,?,?)",
                 (e["name"], e.get("date"), e.get("location"), e.get("description"), iid, e["page"]))
             eid = cur.lastrowid
-            for nm, role in e.get("attendees", []):
-                pid, was_winch = person_id(nm, e["issue"])
+            for att in e.get("attendees", []):
+                nm, role = att[0], att[1]
+                # optional third element: a fixed person id (hand-matched roster, e.g. the 1839
+                # Agricultural and Mechanics Association stock book) -- bypasses name matching
+                if len(att) > 2 and att[2] and con.execute("SELECT 1 FROM people WHERE id=?", (att[2],)).fetchone():
+                    pid, was_winch = att[2], True
+                else:
+                    pid, was_winch = person_id(nm, e["issue"])
                 if was_winch: linked += 1
                 else: created += 1
                 con.execute("INSERT INTO appearances(person_id, event_id, role, context, issue_id, page, strength) VALUES(?,?,?,?,?,?,?)",

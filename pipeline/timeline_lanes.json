@@ -1,0 +1,440 @@
+{
+ "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own.",
+ "lanes": [
+  {
+   "label": "Free African Society",
+   "cat": "aid",
+   "orgs": [
+    "Free African Society"
+   ],
+   "kw": "Free African Society",
+   "pas": null
+  },
+  {
+   "label": "Benevolent Daughters",
+   "cat": "aid",
+   "orgs": [],
+   "kw": null,
+   "pas": 74
+  },
+  {
+   "label": "Friendly Society",
+   "cat": "aid",
+   "orgs": [],
+   "kw": null,
+   "pas": 58
+  },
+  {
+   "label": "Philadelphia African Lodge (Masons)",
+   "cat": "aid",
+   "orgs": [
+    "Philadelphia African Lodge",
+    "African Lodge"
+   ],
+   "kw": "African Lodge",
+   "pas": null
+  },
+  {
+   "label": "Angolian Society",
+   "cat": "aid",
+   "orgs": [
+    "Angolian Ethiopian Society",
+    "Angolian Society"
+   ],
+   "kw": "Angolian",
+   "pas": 76
+  },
+  {
+   "label": "Sons of Africa",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Sons of Africa",
+   "pas": 64
+  },
+  {
+   "label": "Benezet Society (Benezet Philanthropic)",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Benezet Ph[Ii]lanthropic|Benzet Philanthropic",
+   "pas": 62,
+   "pasNote": "Probably the society Winch records as the Benezet Philanthropic; the 1838 report gives no founding year."
+  },
+  {
+   "label": "African Friendly Society of St. Thomas",
+   "cat": "aid",
+   "orgs": [
+    "African Friendly Society"
+   ],
+   "kw": "African Friendly",
+   "pas": null
+  },
+  {
+   "label": "Female Benevolent Society of St. Thomas",
+   "cat": "aid",
+   "orgs": [
+    "Female Benevolent Society"
+   ],
+   "kw": "Female Benevolent Society",
+   "pas": null
+  },
+  {
+   "label": "Granville Harmony Society",
+   "cat": "aid",
+   "orgs": [
+    "Granville Harmony Society"
+   ],
+   "kw": "Granville Harmony",
+   "pas": null
+  },
+  {
+   "label": "Female Benezet Society",
+   "cat": "aid",
+   "orgs": [
+    "Female Benezet Society"
+   ],
+   "kw": "Female Benezet",
+   "pas": 32
+  },
+  {
+   "label": "African Benevolent Association (Male African Benevolent Society)",
+   "cat": "aid",
+   "orgs": [
+    "African Benevolent Association"
+   ],
+   "kw": "African Benevolent Assoc",
+   "pas": 63,
+   "pasNote": "The 1838 report's 'Male African Benevolent Society, instituted 1819' is probably Winch's African Benevolent Association, whose officers she dates to 1819."
+  },
+  {
+   "label": "Brotherly Union",
+   "cat": "aid",
+   "orgs": [
+    "Brotherly Union"
+   ],
+   "kw": "Brotherly Union",
+   "pas": 10
+  },
+  {
+   "label": "Friendly Sons of Zion",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Friendly Benevolent Sons of Zion|Friendly Sons of Zion",
+   "pas": 21,
+   "pasNote": "Probably the society Winch records as the Society of the Friendly Benevolent Sons of Zion."
+  },
+  {
+   "label": "Daughters of Absalom",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Daughters of Absalom",
+   "pas": 43
+  },
+  {
+   "label": "Daughters of Hosea",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Daughters of Hosea",
+   "pas": 54
+  },
+  {
+   "label": "Coachmen's Benevolent Society",
+   "cat": "aid",
+   "orgs": [
+    "Coachmen's Benevolent Society"
+   ],
+   "kw": "Coach(?:men|man)'s Bene",
+   "pas": 19
+  },
+  {
+   "label": "African Porter Benevolent Society",
+   "cat": "aid",
+   "orgs": [
+    "African Porter Benevolent Society"
+   ],
+   "kw": "Porter'?s? Benevolent",
+   "pas": 20
+  },
+  {
+   "label": "Humane Mechanics Society",
+   "cat": "aid",
+   "orgs": [
+    "Humane Mechanics Society"
+   ],
+   "kw": "Humane Mechanics",
+   "pas": 2
+  },
+  {
+   "label": "Daughters of Aaron",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Daughters of Aaron",
+   "pas": 48
+  },
+  {
+   "label": "Sons of St. Thomas",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Sons of St\\.? Thomas",
+   "pas": 3
+  },
+  {
+   "label": "United Sons of Wilberforce",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "United Sons of Wilberforce",
+   "pas": null
+  },
+  {
+   "label": "Daughters of Africa",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Daughters of Africa",
+   "pas": null
+  },
+  {
+   "label": "Daughters of Ethiopia",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Daughters of Ethiopia",
+   "pas": null
+  },
+  {
+   "label": "African Warner Mifflin Society",
+   "cat": "aid",
+   "orgs": [
+    "African Warner Mifflin Society"
+   ],
+   "kw": "Warner Mifflin",
+   "pas": null
+  },
+  {
+   "label": "African Farmers and Mechanics Society",
+   "cat": "aid",
+   "orgs": [
+    "African Farmers and Mechanics Society"
+   ],
+   "kw": "Farmers and Mechanics",
+   "pas": null
+  },
+  {
+   "label": "African Humane Society",
+   "cat": "aid",
+   "orgs": [
+    "African Humane Society"
+   ],
+   "kw": "African Humane Society",
+   "pas": null
+  },
+  {
+   "label": "Harrison Benevolent Society",
+   "cat": "aid",
+   "orgs": [
+    "Harrison Benevolent Society"
+   ],
+   "kw": "(?<!Female )Harrison Benevolent",
+   "pas": 23,
+   "pasNote": "Matched to the report's 'Male Harrison Benevolent Society'."
+  },
+  {
+   "label": "Female Harrison Benevolent Society",
+   "cat": "aid",
+   "orgs": [
+    "Female Harrison Benevolent Society"
+   ],
+   "kw": "Female Harrison",
+   "pas": 17
+  },
+  {
+   "label": "United Shipley Beneficial Society",
+   "cat": "aid",
+   "orgs": [
+    "United Shipley Beneficial"
+   ],
+   "kw": "United Shipley",
+   "pas": null
+  },
+  {
+   "label": "Female Thomas Shipley Society",
+   "cat": "aid",
+   "orgs": [
+    "Female Thomas Shipley Association"
+   ],
+   "kw": "Female Thomas Shipley",
+   "pas": 40
+  },
+  {
+   "label": "Female Granville Society",
+   "cat": "aid",
+   "orgs": [
+    "Female Granville Society"
+   ],
+   "kw": "Female Granville",
+   "pas": 61,
+   "pasNote": "The 1838 report says instituted 1833, but Winch lists members in 1826."
+  },
+  {
+   "label": "Agricultural and Mechanics Association of Pennsylvania and New Jersey",
+   "cat": "aid",
+   "orgs": [
+    "Agricultural and Mechanics Association of Pennsylvania and New Jersey"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Daughters of Temperance, Hope Grand Union",
+   "cat": "aid",
+   "orgs": [
+    "Hope Grand Union, Daughters of Temperance"
+   ],
+   "kw": "Hope Grand Union",
+   "pas": null
+  },
+  {
+   "label": "Grand United Order of Love and Charity",
+   "cat": "aid",
+   "orgs": [
+    "Grand Tabernacle of Pennsylvania, Grand United Order of Brothers and Sisters of Love and Charity",
+    "Grand United Order of Brothers and Sisters of Love and Charity"
+   ],
+   "kw": "Love and Charity",
+   "pas": null
+  },
+  {
+   "label": "African Dorcas Association",
+   "cat": "edu",
+   "orgs": [
+    "African Dorcas Association"
+   ],
+   "kw": "African Dorcas",
+   "pas": null
+  },
+  {
+   "label": "Library Company of Colored Persons",
+   "cat": "edu",
+   "orgs": [
+    "Philadelphia Library Company of Colored Persons"
+   ],
+   "kw": "Library Company of Colo",
+   "pas": null
+  },
+  {
+   "label": "Philomathean Society",
+   "cat": "edu",
+   "orgs": [
+    "Philomathean Society"
+   ],
+   "kw": "Philomathean",
+   "pas": null
+  },
+  {
+   "label": "Institute for Colored Youth",
+   "cat": "edu",
+   "orgs": [
+    "Institute for Colored Youth"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Banneker Institute",
+   "cat": "edu",
+   "orgs": [
+    "Banneker Institute"
+   ],
+   "kw": "Banneker Institute",
+   "pas": null
+  },
+  {
+   "label": "Vigilant Committee to Suppress Crime (1822)",
+   "cat": "rights",
+   "orgs": [
+    "Vigilant Committee to suppress crime (1822)"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Haytien Emigration Society",
+   "cat": "rights",
+   "orgs": [
+    "Haytien Emigration Society"
+   ],
+   "kw": "Haytien Emigration",
+   "pas": null
+  },
+  {
+   "label": "Committee of Vigilance for the Rights of All (1829)",
+   "cat": "rights",
+   "orgs": [
+    "Committee of Vigilance to support the Rights of All (1829)"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "American Moral Reform Society",
+   "cat": "rights",
+   "orgs": [
+    "American Moral Reform Society"
+   ],
+   "kw": "American Moral Reform",
+   "pas": null
+  },
+  {
+   "label": "Vigilant Committee of Philadelphia (1837)",
+   "cat": "rights",
+   "orgs": [
+    "Vigilant Committee of Philadelphia (1837)"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Female Vigilant Committee",
+   "cat": "rights",
+   "orgs": [
+    "Female Vigilant Committee"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Special Vigilance Committee (1851)",
+   "cat": "rights",
+   "orgs": [
+    "Special Vigilance Committee (1851)"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Vigilance Committee (1852)",
+   "cat": "rights",
+   "orgs": [
+    "Vigilance Committee of 1852 (William Still)"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Social, Civil and Statistical Association",
+   "cat": "rights",
+   "orgs": [
+    "Social, Civil and Statistical Association of the Colored People of Pennsylvania",
+    "Social, Civil and Statistical Association"
+   ],
+   "kw": "Social, Civil and Statistical",
+   "pas": null
+  },
+  {
+   "label": "Pennsylvania Equal Rights League",
+   "cat": "rights",
+   "orgs": [
+    "PA Equal Rights League"
+   ],
+   "kw": "Equal Rights League",
+   "pas": null
+  }
+ ]
+}

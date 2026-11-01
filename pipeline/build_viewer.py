@@ -451,6 +451,10 @@ data = {"people": list(people.values()),
                   **({"note": o["note"]} if o.get("note") else {})} for o in orgs_out],
         "blogs": blogs_meta,
         "mobstats": mobstats_meta}
+# Organization Timelines tab (2026-11-01, Michiko): lanes built from the finished people/orgs/events
+import timeline_data
+data["timeline"] = timeline_data.build(people, events, data["orgs"], os.path.dirname(os.path.abspath(TPL)))
+print("timeline lanes:", len(data["timeline"]["lanes"]), "| dated rows:", sum(len(l["att"]) for l in data["timeline"]["lanes"]))
 
 import datetime
 tpl = open(TPL, encoding="utf-8").read()

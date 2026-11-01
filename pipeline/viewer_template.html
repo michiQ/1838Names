@@ -141,6 +141,78 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #scanimg{width:100%;max-width:1100px;height:auto;display:inline-block;background:#eee;cursor:zoom-in}
 #scanview.zoom #scanimg{width:250%;max-width:none;cursor:zoom-out}
 @media (max-width:600px){#scanbar .ttl{display:none}#scanbar{gap:6px;padding:8px}}
+/* Organization Timelines overlay (2026-11-01) */
+#tabs button{font-size:12px;letter-spacing:.05em;padding:7px 4px}
+#tabs button#tab-t{flex:1.3}
+#tlview{position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
+#tlview.on{display:flex}
+#tlbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
+#tlbar button{background:#33290f;color:var(--gold);border:1px solid var(--gold);border-radius:4px;font:13px Georgia;padding:6px 12px;cursor:pointer}
+#tlbar .ttl{letter-spacing:.12em;font-size:13px;color:var(--dim)}
+#tlscroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:18px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:14px}
+#tlscroll>*{max-width:1240px;width:100%;margin:0 auto;flex-shrink:0}
+#tlwip{background:#2a2214;border:1px solid var(--gold);border-radius:4px;padding:9px 14px;font-size:13.5px}
+#tlwip b{color:var(--gold)}
+#tllede{color:var(--ink);font-size:14px;max-width:80ch;margin:0}
+#tlchips{display:flex;flex-wrap:wrap;gap:8px}
+.tlchip{font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.tlchip[aria-pressed="false"]{opacity:.45}
+.tlchip .sw{width:9px;height:9px;border-radius:50%;display:inline-block}
+.tlchip .sw.dia{border-radius:0;transform:rotate(45deg);border:1.5px solid var(--dim);width:8px;height:8px}
+#tlchart{overflow-x:auto;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch}
+#tlgrid{min-width:900px}
+.tlaxis,.tlrow{display:grid;grid-template-columns:270px 1fr}
+.tlaxis{border-bottom:1px solid var(--line)}
+.tlaxis .lab,.tlrow .lab{position:sticky;left:0;background:var(--bg);z-index:1;padding:5px 12px 5px 0}
+#tlgrid .trk{position:relative;height:32px}
+.tlaxis .trk{height:28px}
+#tlgrid .tick{position:absolute;top:0;bottom:0;border-left:1px solid var(--line)}
+#tlgrid .tick span{position:absolute;bottom:5px;left:4px;font:11px ui-monospace,Menlo,monospace;color:var(--dim)}
+.tlsect{font:11px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;padding:16px 0 6px;color:var(--gold);border-bottom:1px solid var(--line);position:sticky;left:0;width:max-content}
+.tlsub{font:11px ui-monospace,Menlo,monospace;padding:12px 0 4px;color:var(--dim);position:sticky;left:0;width:max-content}
+.tlrow{cursor:pointer;border-bottom:1px dotted var(--line)}
+.tlrow:hover,.tlrow:hover .lab,.tlrow.on,.tlrow.on .lab{background:#2b2517}
+.tlrow:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.tlrow .lab{font-size:13.5px;line-height:1.25;display:flex;flex-direction:column;justify-content:center}
+.tlrow .lab small{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim)}
+#tlgrid .span{position:absolute;top:50%;height:2px;transform:translateY(-50%);opacity:.55}
+#tlgrid .rng{position:absolute;top:50%;height:8px;transform:translateY(-50%);border-radius:4px;opacity:.35}
+#tlgrid .dot{position:absolute;top:50%;border-radius:50%;transform:translate(-50%,-50%);box-sizing:border-box}
+#tlgrid .dot.off{border:2px solid var(--bg);box-shadow:0 0 0 1.5px currentColor}
+#tlgrid .dia{position:absolute;top:50%;width:10px;height:10px;transform:translate(-50%,-50%) rotate(45deg);border:2px solid currentColor;background:var(--bg);box-sizing:border-box}
+#tlgrid .sq{position:absolute;top:50%;width:7px;height:7px;transform:translate(-50%,-50%);background:currentColor;opacity:.8}
+#tlview .aid{color:#d0734f} #tlview .edu{color:#6fb3a6} #tlview .rights{color:var(--gold)}
+#tlview .c-aid{background:#d0734f} #tlview .c-edu{background:#6fb3a6} #tlview .c-rights{background:var(--gold)}
+#tldetail{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+#tldetail .eye{font:11px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+#tldetail h2{font-weight:normal;font-size:24px;line-height:1.15}
+#tldetail .meta{font:12px ui-monospace,Menlo,monospace;color:var(--dim)}
+#tldetail .note{max-width:80ch;font-size:14px}
+#tldetail .pas{border:1px solid var(--line);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+#tldetail .pash{font-size:13px;color:var(--gold)}
+#tldetail dl{display:flex;flex-wrap:wrap;gap:6px 22px}
+#tldetail dl div{display:flex;flex-direction:column}
+#tldetail dt{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+#tldetail dd{margin:0;font-size:16px;font-variant-numeric:tabular-nums}
+#tldetail .pasf{font-size:13px;color:var(--dim)}
+#tldetail .yrs{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+#tldetail .yr{min-width:0}
+#tldetail .yrs.single{grid-template-columns:1fr}
+#tldetail [hidden]{display:none!important}
+#tldetail .yrs.single ul{display:block;columns:3 250px;column-gap:28px}
+#tldetail .yrs.single li{break-inside:avoid;margin-bottom:5px}
+#tldetail h3{font:500 13px ui-monospace,Menlo,monospace;padding-bottom:4px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+#tldetail ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:5px}
+#tldetail li{font-size:13.5px;line-height:1.35}
+#tldetail .pn{background:none;border:0;padding:0;color:var(--gold);font:bold 13.5px Georgia;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:rgba(212,162,78,.4);text-underline-offset:2px}
+#tldetail .pn:hover{text-decoration-color:var(--gold)}
+#tldetail .r{color:var(--dim)}
+#tldetail .ys{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim);margin:-2px 0 8px}
+#tldetail .s{display:block;font:10.5px ui-monospace,Menlo,monospace;color:var(--dim)}
+#tldetail .more{font:12px ui-monospace,Menlo,monospace;background:none;border:0;color:var(--ink);text-decoration:underline;cursor:pointer;padding:4px 0 0}
+#tlfoot{font-size:12.5px;color:var(--dim)}
+#tlfoot a{color:var(--gold)}
+@media (max-width:640px){.tlaxis,.tlrow{grid-template-columns:165px 1fr}.tlrow .lab{font-size:12.5px}#tlgrid{min-width:780px}#tabs button{font-size:11.5px;letter-spacing:.04em;padding:7px 4px}}
 </style>
 </head>
 <body>
@@ -156,7 +228,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <div id="wrap">
   <div id="left">
     <button id="leftClose" aria-label="Close menu" title="Close">✕</button>
-    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button></div>
+    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button><button id="tab-t" title="Organization timelines">TIMELINES</button></div>
     <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
     <div id="filters">
       <span class="chip on" data-f="all">All</span>
@@ -1475,6 +1547,120 @@ window._suppressAutoOpen = true;
 if(sorted.length) select(sorted[0].id);
 window._suppressAutoOpen = false;
 syncFab();
+</script>
+<div id="tlview" role="dialog" aria-modal="true" aria-label="Organization timelines">
+ <div id="tlbar"><button id="tlclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">ORGANIZATION TIMELINES</span></div>
+ <div id="tlscroll">
+  <div id="tlwip"><b>Work in progress.</b> These timelines are still being built and will change as we add sources.</div>
+  <div><p id="tllede">Each row is one Black Philadelphia organization. A dot marks a year when the database has people in it; bigger dots mean more names, and a ringed dot means officers were named. A diamond marks the founding year given in the 1838 Pennsylvania Abolition Society report, and a small square marks that report&rsquo;s 1837 membership count. The thin line runs from the first record to the last. These are the years our sources cover, not closing dates. Click a row for the people and sources; click a name to open that person in the database.</p></div>
+  <div id="tlchips" role="group" aria-label="Show categories"></div>
+  <div id="tlchart"><div id="tlgrid"></div></div>
+  <section id="tldetail" aria-live="polite"></section>
+  <p id="tlfoot"></p>
+ </div>
+</div>
+<script>
+// Organization Timelines (2026-11-01, Michiko): full-screen overlay opened from the TIMELINES tab.
+(function(){
+  const T=(typeof DATA!=='undefined'&&DATA&&DATA.timeline)||null;
+  const tv=document.getElementById('tlview'), tab=document.getElementById('tab-t');
+  if(!T||!tv||!tab||typeof document.addEventListener!=='function'||typeof window.addEventListener!=='function') return;
+  const Y0=1785,Y1=1870, x=y=>((y-Y0)/(Y1-Y0)*100);
+  const CATS={aid:'Mutual aid, beneficial & economic',edu:'Education & literary',rights:'Rights, vigilance & reform'};
+  const show={aid:1,edu:1,rights:1,pas:1};
+  const PN={}; (DATA.people||[]).forEach(p=>PN[p.id]=p.name);
+  const e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const nm=id=>{let n=PN[id]||'';const m=n.match(/^([^,]+),\s*(.+)$/);if(m&&!/^(Jr|Sr)\.?$/.test(m[2])){const g=m[2].match(/^(.*?)\s+((?:Jr|Sr)\.?)$/);n=g?g[1]+' '+m[1]+' '+g[2]:m[2]+' '+m[1];}return n===n.toUpperCase()?n.replace(/\w\S*/g,w=>w[0]+w.slice(1).toLowerCase()):n;};
+  const orgNames=new Set((DATA.orgs||[]).map(o=>o.name));
+  let sel=-1;
+  T.lanes.forEach((l,i)=>{ l.i=i; const ys=l.att.map(a=>a[0]), ye=l.att.map(a=>a[1]);
+    if(l.founded) ys.push(l.founded); if(l.pas) {ye.push(1837); ys.push(1837);}
+    l.lo=Math.min(...ys,9999); l.hi=Math.max(...ye,...ys,0); });
+  const chips=document.getElementById('tlchips');
+  chips.innerHTML=Object.entries(CATS).map(([k,v])=>`<button class="tlchip" data-k="${k}" aria-pressed="true"><i class="sw c-${k}"></i>${e(v)}</button>`).join('')
+    +`<button class="tlchip" data-k="pas" aria-pressed="true"><i class="sw dia"></i>Societies known only from the 1838 report</button>`;
+  chips.addEventListener('click',ev=>{const b=ev.target.closest('.tlchip'); if(!b)return; const k=b.dataset.k; show[k]=!show[k]; b.setAttribute('aria-pressed',!!show[k]); render();});
+  document.getElementById('tlfoot').innerHTML=`Founding years and 1837 figures: <a href="${e(T.pasUrl)}" target="_blank" rel="noopener">${e(T.pasSource)}</a>. Other years come from Julie Winch&rsquo;s notes, the newspapers, and curated organization records in this database. Some lanes join a society in the report to one in Winch&rsquo;s notes; where that match is only probable, the lane says so.`;
+  function render(){
+    let h='<div class="tlaxis"><div class="lab"></div><div class="trk">';
+    for(let y=1790;y<=Y1;y+=10) h+=`<div class="tick" style="left:${x(y)}%"><span>${y}</span></div>`;
+    h+='</div></div>';
+    for(const c of Object.keys(CATS)){
+      if(!show[c]) continue;
+      const L=T.lanes.filter(l=>l.cat===c&&(show.pas||!l.pasOnly)).sort((a,b)=>(a.pasOnly||0)-(b.pasOnly||0)||a.lo-b.lo||a.name.localeCompare(b.name));
+      if(!L.length) continue;
+      h+=`<div class="tlsect">${e(CATS[c])}</div>`;
+      let sub=false;
+      for(const l of L){
+        if(l.pasOnly&&!sub){ sub=true; h+=`<div class="tlsub">Listed in the 1838 PAS report; no people in the database yet</div>`; }
+        const ys={}; l.att.forEach(a=>{const v=(ys[a[0]]=ys[a[0]]||{n:0,o:0}); v.n++; if(a[5]) v.o=1;});
+        let t=''; for(let y=1790;y<=Y1;y+=10) t+=`<div class="tick" style="left:${x(y)}%"></div>`;
+        if(l.hi>l.lo) t+=`<div class="span c-${c}" style="left:${x(l.lo)}%;width:${x(l.hi)-x(l.lo)}%"></div>`;
+        const rng=new Set(l.att.filter(a=>a[1]>a[0]).map(a=>a[0]+'-'+a[1]));
+        rng.forEach(r=>{const [a,b]=r.split('-').map(Number); t+=`<div class="rng c-${c}" style="left:${x(a)}%;width:${x(b)-x(a)}%"></div>`;});
+        if(l.pas) t+=`<div class="sq ${c}" style="left:${x(1837)}%" title="1837: ${l.pas[0]==null?'members not given':l.pas[0]+' members'} (PAS report)"></div>`;
+        if(l.founded) t+=`<div class="dia ${c}" style="left:${x(l.founded)}%" title="Instituted ${l.founded} (PAS report)"></div>`;
+        Object.entries(ys).forEach(([y,v])=>{const d=Math.max(7,Math.min(24,5+Math.sqrt(v.n)*3.1));
+          t+=`<div class="dot ${c} c-${c}${v.o?' off':''}" style="left:${x(+y)}%;width:${d}px;height:${d}px" title="${y}: ${v.n} name${v.n>1?'s':''}"></div>`;});
+        const meta=[]; if(l.founded) meta.push('founded '+l.founded); if(l.att.length) meta.push(l.att.length+' dated'); if(l.undated) meta.push(l.undated+' no date');
+        if(l.pas&&l.pas[0]!=null&&!l.att.length) meta.push(l.pas[0]+' members in 1837');
+        h+=`<div class="tlrow${sel===l.i?' on':''}" tabindex="0" role="button" data-i="${l.i}"><div class="lab">${e(l.name)}<small>${e(meta.join(' · '))}</small></div><div class="trk">${t}</div></div>`;
+      }
+    }
+    const g=document.getElementById('tlgrid'); g.innerHTML=h;
+  }
+  const money=v=>v==null?'—':'$'+v;
+  function detail(i){
+    const l=T.lanes[i], el=document.getElementById('tldetail'); const by={};
+    l.att.forEach(a=>(by[a[0]]=by[a[0]]||[]).push(a));
+    let h=`<div class="eye">${e(CATS[l.cat])}</div><h2>${e(l.name)}</h2>`;
+    const inDb=(l.att.length||l.undated)?[]:null;
+    const meta=[]; if(l.att.length) meta.push(`${l.att.length} dated records across ${Object.keys(by).length} year${Object.keys(by).length>1?'s':''}`);
+    if(l.undated) meta.push(`${l.undated} more members with no year`);
+    if(meta.length) h+=`<div class="meta">${e(meta.join(' · '))}</div>`;
+    if(l.pas){
+      const f=T.pasFoot&&T.pasFoot[String(l.pasRow)];
+      h+=`<div class="pas"><div class="pash">1838 Pennsylvania Abolition Society report${l.pasName!==l.name?`, listed as &ldquo;${e(l.pasName)}&rdquo;`:''}</div>
+      <dl><div><dt>Instituted</dt><dd>${l.founded||'not given'}</dd></div><div><dt>Members</dt><dd>${l.pas[0]==null?'—':l.pas[0]}</dd></div>
+      <div><dt>Subscriptions, 1837</dt><dd>${money(l.pas[1])}</dd></div><div><dt>Expenditures, 1837</dt><dd>${money(l.pas[2])}</dd></div><div><dt>Fund</dt><dd>${money(l.pas[3])}</dd></div></dl>
+      ${f?`<div class="pasf">Note in the report: ${e(f)}</div>`:''}${l.pasNote?`<div class="pasf">${e(l.pasNote)}</div>`:''}</div>`;
+    }
+    if(l.note) h+=`<p class="note">${e(l.note)}</p>`;
+    const org=(DATA.orgs||[]).find(o=>o.name===l.name)||null;
+    h+=`<div class="yrs${Object.keys(by).length===1?' single':''}">`;
+    Object.keys(by).sort().forEach(y=>{
+      const L=by[y].slice().sort((a,b)=>b[5]-a[5]||nm(a[2]).localeCompare(nm(b[2])));
+      const one=L.every(a=>a[4]===L[0][4]&&a[1]===a[0])&&L.length>1?L[0][4]:'';
+      const li=a=>`<li><button class="pn" data-pid="${a[2]}">${e(nm(a[2]))}</button>${a[3]&&!/^member\b/i.test(a[3])?` <span class="r">${e(a[3])}</span>`:''}${one?'':`<span class="s">${a[1]>a[0]?a[0]+'–'+a[1]+' · ':''}${e(a[4])}</span>`}</li>`;
+      const off=L.filter(a=>a[5]), rest=L.filter(a=>!a[5]);
+      const single=Object.keys(by).length===1, first=single?L:(off.length?off:rest.slice(0,8)), hid=single?[]:(off.length?rest:rest.slice(8));
+      h+=`<div class="yr"><h3>${y} · ${L.length} name${L.length>1?'s':''}</h3>${one?`<div class="ys">${e(one)}</div>`:''}<ul>${first.map(li).join('')}</ul>`;
+      if(hid.length) h+=`<ul hidden>${hid.map(li).join('')}</ul><button class="more">${off.length?'and':'show'} ${hid.length} more</button>`;
+      h+='</div>';
+    });
+    h+='</div>';
+    if(!l.att.length&&!l.undated) h+=`<p class="meta">No people from this society are in the database yet.</p>`;
+    el.innerHTML=h; el.hidden=false;
+  }
+  const grid=document.getElementById('tlgrid');
+  const pick=r=>{sel=+r.dataset.i; render(); detail(sel); const d=document.getElementById('tldetail'); if(d.scrollIntoView) d.scrollIntoView({behavior:'smooth',block:'start'});};
+  grid.addEventListener('click',ev=>{const r=ev.target.closest('.tlrow'); if(r) pick(r);});
+  grid.addEventListener('keydown',ev=>{const r=ev.target.closest('.tlrow'); if(r&&(ev.key==='Enter'||ev.key===' ')){ev.preventDefault(); pick(r);}});
+  const det=document.getElementById('tldetail');
+  det.addEventListener('click',ev=>{
+    const m=ev.target.closest('.more'); if(m){m.previousElementSibling.hidden=false; m.remove(); return;}
+    const p=ev.target.closest('.pn'); if(p){ const pid=+p.dataset.pid; close(false);
+      setTimeout(()=>{ try{ select(pid); if(typeof isMobile==='function'&&isMobile()&&typeof closeLeftDrawer==='function') closeLeftDrawer(); }catch(err){} },60); }
+  });
+  function open(){ tv.classList.add('on'); render(); if(sel<0){ sel=T.lanes.findIndex(l=>/^Agricultural and Mechanics/.test(l.name)); if(sel<0) sel=0; render(); } detail(sel);
+    try{ history.pushState({tl:1},''); }catch(err){} if(typeof isMobile==='function'&&isMobile()&&typeof closeLeftDrawer==='function') closeLeftDrawer(); }
+  function close(fromPop){ if(!tv.classList.contains('on')) return; tv.classList.remove('on');
+    if(!fromPop) try{ if(history.state&&history.state.tl) history.back(); }catch(err){} }
+  tab.addEventListener('click',open);
+  document.getElementById('tlclose').addEventListener('click',()=>close(false));
+  window.addEventListener('popstate',()=>close(true));
+  document.addEventListener('keydown',ev=>{ if(ev.key==='Escape') close(false); });
+})();
 </script>
 <div id="scanview" role="dialog" aria-modal="true" aria-label="Scanned page">
  <div id="scanbar"><button class="close" id="scanclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl" id="scanttl"></span>

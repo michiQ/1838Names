@@ -1151,3 +1151,14 @@ Run notes 2026-07-03:
 GitHub: pushed commit e3829a8 on 2026-07-03 (github.com/michiQ/1838Names; GitHub Pages index.html updated).
 
 Census datasets imported (1838 PAS census: 3296 households; 1847 SOFAAC: 4284; matches: 445). Source files in census/. Re-run pipeline/import_census.py after any people rebuild (requires re-uploading source files).
+
+## 2026-11-01 evening: Organization Timelines tab + AMAPNJ + 1838 PAS beneficial societies
+- New TIMELINES tab (viewer_template.html overlay #tlview; data from pipeline/timeline_data.py via build_viewer -> DATA.timeline).
+  Lanes configured in pipeline/timeline_lanes.json; unmatched rows of the 1838 PAS table become their own lanes.
+  Work-in-progress banner per Michiko. Names click through to the person in the database. No context markers (Michiko).
+- pipeline/pas1838_beneficial.json: PAS 1838 report pp. 26-27, all 80 beneficial societies; all four columns sum exactly
+  to the printed Carried over and Total lines.
+- Agricultural and Mechanics Association of Pennsylvania and New Jersey: curated org + extractions_amapnj.json (stock book,
+  May 1, 1839, Leon Gardiner Collection, HSP; Michiko's photos and transcription). 48 subscribers hand-matched by id
+  (load_extractions now accepts a third element = fixed person id). Text-only: William Nichwals, Corr (no first name).
+  Manuscript photos NOT published yet (awaiting Michiko's OK).
