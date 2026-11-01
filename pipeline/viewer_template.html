@@ -623,9 +623,11 @@ function select(pid){
     return `<div class="card"><span class="hl">${esc(bits.join(' — '))}</span><q>${esc(m.d||'')}</q>${m.o?`<div style="margin-top:4px;font-size:12px">Outcome: ${esc(m.o)}</div>`:''}<div class="src">${srcs.join(' · ')}</div></div>`;
   }).join(''); }
   // winch refs
+  if(p.links?.length){ h += `<h3>Connected to</h3>` + p.links.filter(l=>P.has(l.p)).map(l=>
+    `<div class="card"><span class="pl" data-p="${l.p}">${esc(P.get(l.p).name)}</span>${l.n?`<q>${esc(l.n)}</q>`:''}<div class="src">connection added by 1838 Black Metropolis</div></div>`).join(''); }
   if(p.refs?.length){ h += `<h3>Winch reference entry (${p.refs.length})</h3>` + p.refs.map(r=>
     `<div class="card">${esc(r.n||'')}${r.c?`<div class="src">(${esc(r.c)})</div>`:''}</div>`).join(''); }
-  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length&&!p.directory?.length&&!p.nolibs?.length&&!p.ugrr?.length&&!p.coppin?.length&&!p.storymap?.length&&!p.blog?.length&&!p.mobstats?.length) h += '<p class="empty">No records.</p>';
+  if(!arts.length&&!evs.length&&!p.mentions?.length&&!p.refs?.length&&!p.directory?.length&&!p.nolibs?.length&&!p.ugrr?.length&&!p.coppin?.length&&!p.storymap?.length&&!p.blog?.length&&!p.mobstats?.length&&!p.links?.length) h += '<p class="empty">No records.</p>';
   right.innerHTML = h;
   right.scrollTop = 0;
   if(isMobile() && !window._suppressAutoOpen) openRightDrawer();

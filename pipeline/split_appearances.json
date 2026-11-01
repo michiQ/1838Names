@@ -1,5 +1,5 @@
 {
-  "_doc": "Move specific appearances off a shared same-name record onto their own person, BEFORE apply_merges. Run by split_appearances.py right after split_swilliams. Each rule: from (canonical_name + source), the appearances whose context starts with context_prefix, and the new person's canonical_name.",
+  "_doc": "Move specific appearances off a shared same-name record onto their own person, BEFORE apply_merges. Run by split_appearances.py right after split_swilliams. Each rule: from (canonical_name + source), the appearances whose context starts with context_prefix, and the new person's canonical_name. 'renames' fix a record's display name by id; 'move_refs' move Winch reference notes (matched by note prefix) from one record to another.",
   "rules": [
     {
       "from_name": "John Allen",
@@ -7,6 +7,32 @@
       "context_prefix": "Reform lectures of John Allen in Pittsburgh",
       "new_name": "John Allen (Massachusetts reform lecturer)",
       "note": "North Star, Feb. 18, 1848: a Massachusetts land reformer lecturing in Pittsburgh. Not the John Allen who was secretary of the 1827 Protecting Society; split off 2026-11-01 so that record could merge into Winch's Allen, John (Michiko's ruling)."
+    }
+  ],
+  "renames": [
+    {
+      "id": 659,
+      "name": "Colley, Daniel",
+      "aliases": "Colly, Daniel",
+      "note": "Winch heads this entry 'Colly or Colley, D[aniel]' (bootmaker, tanner and currier, 189 S. 6th; Vigilance Committee 1839); the import had taken a later line as his name. Michiko confirmed 2026-11-01."
+    },
+    {
+      "id": 1831,
+      "name": "Mead, Mary",
+      "life_dates": "d. 1854",
+      "note": "Carries the death date from Winch 'Meade, Mary' (d. 1854), merged into this record 2026-11-01."
+    }
+  ],
+  "move_refs": [
+    {
+      "from_id": 1659,
+      "to_id": 344576,
+      "note_prefixes": [
+        "Lamsong or or Lambsong or Lamson, Mrs. Rebecca",
+        "Owns shares in Agric. and Mechanic. Assoc. (1839) Treasurer of the Female Vigilant Committee",
+        "Member of the Female Vigilant Committee."
+      ],
+      "note": "Winch filed Rebecca Lambsong's Female Vigilant notes under 'Lamar, Joseph'. Moved to her record 2026-11-01 (Michiko: keep Joseph Lamar out of the Female Vigilant Committee, but connect him to Rebecca Lambsong; see person_links.json)."
     }
   ]
 }

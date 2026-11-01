@@ -381,7 +381,7 @@
           659,
           {
             "w": 1,
-            "r": "active (1839) [VERIFY: Winch's Daniel Colly/Colley; record name is garbled]"
+            "r": "active (1839)"
           }
         ],
         [
@@ -498,20 +498,12 @@
           2014,
           {
             "w": 1,
-            "r": "member [VERIFY: the printed roster reads Mary Newton]",
-            "c": "Pa. Freeman, July 5, 1838"
-          }
-        ],
-        [
-          1831,
-          {
-            "w": 1,
             "r": "member",
             "c": "Pa. Freeman, July 5, 1838"
           }
         ],
         [
-          1832,
+          1831,
           {
             "w": 1,
             "r": "member; fair organizer",
@@ -552,7 +544,7 @@
     },
     {
       "name": "Vigilance Committee of 1852 (William Still)",
-      "note": "The committee William Still worked through after 1852, as remembered by William Carl Bolivar (Pencil Pusher Points, Philadelphia Tribune, Aug. 23, 1913): John P. Burr, Rev. Jeremiah Asher, N. Depee, William Still, I. C. Wear, Jacob C. White and Charles Wise. [VERIFY] Bolivar gives no date; the 1852 reorganization is the likeliest fit. [VERIFY] whether Jacob C. White here is the father or the son (linked to the father).",
+      "note": "The committee William Still worked through after 1852, as remembered by William Carl Bolivar (Pencil Pusher Points, Philadelphia Tribune, Aug. 23, 1913): John P. Burr, Rev. Jeremiah Asher, N. Depee, William Still, I. C. Wear, Jacob C. White and Charles Wise.",
       "members": [
         [
           2497,
@@ -599,7 +591,7 @@
           {
             "i": "PP_918",
             "p": 1,
-            "r": "member [VERIFY Sr. or Jr.]"
+            "r": "member"
           }
         ],
         [
@@ -614,7 +606,7 @@
     },
     {
       "name": "Frank Johnson Guards",
-      "note": "A Black militia company in Philadelphia. In 1859 it assembled and marched armed through the city. Amos Webber described the march in his diary, and the Daily Ledger objected that only white men could legally keep military companies; a Baltimore Sun article also covered it. Its name honors Frank Johnson, the bandleader, who died in 1844 [VERIFY]. No members are on record yet. Source: 1838 Black Metropolis blog post on Samuel Williams, https://www.1838blackmetropolis.com/post/williams",
+      "note": "A Black militia company in Philadelphia. In 1859 it assembled and marched armed through the city. Amos Webber described the march in his diary, and the Daily Ledger objected that only white men could legally keep military companies; a Baltimore Sun article also covered it. No members are on record yet. Source: 1838 Black Metropolis blog post on Samuel Williams, https://www.1838blackmetropolis.com/post/williams",
       "members": []
     },
     {

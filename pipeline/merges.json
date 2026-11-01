@@ -744,9 +744,13 @@
    {
     "name": "Mary Lewton",
     "source": "blog"
+   },
+   {
+    "id": 360240,
+    "name": "Mary Newton"
    }
   ],
-  "note": "Michiko approved 2026-07-30. 'Newton, Mary' (Winch id2014) is Mary Lewton, the Northern Liberties UGRR 'mother to the fleeing bondmen' / Union AME founder. Keyed on the STABLE Winch id2014 (the surviving merge target); folds any recreated newspaper/blog 'Mary Lewton' duplicate by name+source each rebuild. split_nichols.py runs first so only her Female Vigilant Committee note follows. John Lewton (census 'LEWTON, JOHN') and the unrelated 'Newton, John Y.' (Winch, Haytien Emigration Society) stay separate."
+  "note": "Michiko approved 2026-07-30. 'Newton, Mary' (Winch id2014) is Mary Lewton, the Northern Liberties UGRR 'mother to the fleeing bondmen' / Union AME founder. Keyed on the STABLE Winch id2014 (the surviving merge target); folds any recreated newspaper/blog 'Mary Lewton' duplicate by name+source each rebuild. split_nichols.py runs first so only her Female Vigilant Committee note follows. John Lewton (census 'LEWTON, JOHN') and the unrelated 'Newton, John Y.' (Winch, Haytien Emigration Society) stay separate. 2026-11-01: the 'Mary Newton' read from the July 5 1838 Female Vigilant roster folded in too (Michiko: merge the names)."
  },
  {
   "keep": {
@@ -1153,5 +1157,52 @@
    }
   ],
   "note": "John Allen, secretary of the Protecting Society of the City and County of Philadelphia for the Prevention of Kidnapping and Man-stealing (Freedom's Journal notices, April 24 1828 onward) = Winch's Allen, John (secretary of the African Warner Mifflin Society, 1830 convention delegate). Michiko ruled 2026-11-01: 'assume that John Allen winch is the same as the John Allen society.' The 1848 Massachusetts reform lecturer who shared the newspaper record was split off first (split_appearances.json)."
+ },
+ {
+  "keep": {
+   "id": 1831,
+   "name": "Mead, Mary"
+  },
+  "aliases": [
+   {
+    "id": 1832,
+    "name": "Meade, Mary"
+   },
+   {
+    "id": 344577,
+    "name": "Mary Meads"
+   },
+   {
+    "id": 337567,
+    "name": "Mary C. Meads"
+   }
+  ],
+  "note": "Female Vigilant Association member and fair collector (473 Market st.): Winch 'Mead, Mary' and 'Meade, Mary' (d. 1854) and the newspaper 'Mary Meads' / 'Mary C. Meads'. Michiko 2026-11-01: merge the names."
+ },
+ {
+  "keep": {
+   "id": 1365,
+   "name": "Henley, Elizabeth"
+  },
+  "aliases": [
+   {
+    "id": 344575,
+    "name": "Elizabeth Henly"
+   }
+  ],
+  "note": "Assistant secretary of the Female Vigilant Association (Pa. Freeman, July 5, 1838). Michiko 2026-11-01: merge the names."
+ },
+ {
+  "keep": {
+   "id": 660,
+   "name": "Colly, Eliza"
+  },
+  "aliases": [
+   {
+    "id": 344578,
+    "name": "Eliza Colley"
+   }
+  ],
+  "note": "Female Vigilant Association member (Pa. Freeman, July 5, 1838). Michiko 2026-11-01: merge the names."
  }
 ]

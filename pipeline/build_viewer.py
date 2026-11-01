@@ -426,7 +426,17 @@ if has_table("mobstats_people"):
             people[pid].setdefault("mobstats", []).append(mid)
 
 # prune people with no content at all (after census attach)
-keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap") or p.get("blog") or p.get("mobstats")}
+# Hand-curated person-to-person connections (pipeline/person_links.json, Michiko). Shown on both
+# profiles ("Connected to") and added as a strong map link.
+for lk in json.load(open(os.path.join(os.path.dirname(TPL), "person_links.json"), encoding="utf-8"))["links"]:
+    a, b2 = lk["a"], lk["b"]
+    if a in people and b2 in people:
+        people[a].setdefault("links", []).append({"p": b2, "n": lk.get("note", "")})
+        people[b2].setdefault("links", []).append({"p": a, "n": lk.get("note", "")})
+        k = (min(a, b2), max(a, b2)); edges[k] = edges.get(k, 0) + 3
+    else:
+        print("   person_links: WARNING missing id", a, b2)
+keep = {pid for pid, p in people.items() if p["refs"] or p["mentions"] or p["events"] or p["articles"] or p.get("census") or p.get("directory") or p.get("nolibs") or p.get("ugrr") or p.get("coppin") or p.get("storymap") or p.get("blog") or p.get("mobstats") or p.get("links")}
 people = {pid: p for pid, p in people.items() if pid in keep}
 edges = {k: v for k, v in edges.items() if k[0] in people and k[1] in people}
 
@@ -444,6 +454,24 @@ data = {"people": list(people.values()),
 
 import datetime
 tpl = open(TPL, encoding="utf-8").read()
+# Michiko 2026-11-01: no "VERIFY" wording in the public listings (the header says this is a curated
+# passion project). Source files keep their [VERIFY] flags for review; they are stripped here, at display.
+_VER_BRACKET = re.compile(r"\s*\[[^\[\]]*?\bVERIFY\b[^\[\]]*\]", re.I)
+_VER_SCAN = re.compile(r"\s*-\s*verify against scan", re.I)
+def _unverify(x):
+    if isinstance(x, str):
+        if "erif" not in x and "ERIF" not in x: return x
+        y = _VER_SCAN.sub("", _VER_BRACKET.sub("", x))
+        y = re.sub(r"\s*;\s*(?=$|[)\],])", "", y)          # dangling '; ' left where a flag was
+        y = re.sub(r"\(\s*\)", "", y)                     # empty parentheses
+        y = re.sub(r"\s+([,.;)])", r"\1", y)
+        return re.sub(r"  +", " ", y).strip() if y != x else x
+    if isinstance(x, list): return [_unverify(v) for v in x]
+    if isinstance(x, dict): return {k: _unverify(v) for k, v in x.items()}
+    return x
+data = _unverify(data)
+_left = len(re.findall(r"\bVERIFY\b|\bverify\b", json.dumps(data, ensure_ascii=False)))
+print("   verify flags stripped from display; remaining 'verify' words:", _left)
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 html = tpl.replace("/*__DATA__*/null", js)
 # Optional baked "All connections" layout (see viewer_template.html / precompute_fullmap.js):

@@ -1,0 +1,11 @@
+{
+  "_doc": "Hand-curated connections between two people (Michiko). Shown on both profiles and drawn as a link on the map.",
+  "links": [
+    {
+      "a": 1659,
+      "b": 344576,
+      "note": "Julie Winch filed Rebecca Lambsong's Female Vigilant Committee notes under Joseph Lamar's entry, along with the Lambsong household on Culvert Street.",
+      "_why": "Michiko 2026-11-01: keep Lamar out of the Female Vigilant Committee but connect him to Rebecca Lambsong."
+    }
+  ]
+}

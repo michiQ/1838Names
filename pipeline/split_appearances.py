@@ -17,3 +17,19 @@ for r in json.load(open(os.path.join(HERE, "split_appearances.json")))["rules"]:
     n = con.execute(q, (new, *src, r["context_prefix"] + "%")).rowcount
     print(f"  {r['from_name']} -> {r['new_name']} (id {new}): moved {n} appearance(s)")
 con.commit()
+
+# renames: fix a mis-parsed display name by id
+for r in json.load(open(os.path.join(HERE, "split_appearances.json"))).get("renames", []):
+    n = con.execute("UPDATE people SET canonical_name=?, norm_name=?, aliases=COALESCE(NULLIF(aliases,''),?) WHERE id=?",
+                    (r["name"], norm(r["name"]), r.get("aliases"), r["id"])).rowcount
+    if r.get("life_dates"):
+        con.execute("UPDATE people SET life_dates=? WHERE id=?", (r["life_dates"], r["id"]))
+    print(f"  rename id {r['id']} -> {r['name']}: {n} row")
+# move_refs: move Winch notes filed under the wrong record
+for r in json.load(open(os.path.join(HERE, "split_appearances.json"))).get("move_refs", []):
+    n = 0
+    for pre in r["note_prefixes"]:
+        n += con.execute("UPDATE winch_references SET person_id=? WHERE person_id=? AND note LIKE ?",
+                         (r["to_id"], r["from_id"], pre + "%")).rowcount
+    print(f"  moved {n} Winch note(s) from id {r['from_id']} to id {r['to_id']}")
+con.commit()
