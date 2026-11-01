@@ -19,7 +19,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **George Washington** (blog)  ↔  Washington, George#351632, WASHINGTON, GEORGE#354152
 - **George Williams** (blog)  ↔  George Williams#70420, Williams, George#357110, Williams, George#358678
 - **Henry Simpson** (blog)  ↔  SIMPSON, HENRY#353818, Simpson, Henry#358452
-- **Jacob C. White** (blog)  ↔  White, Jacob#2772, White, Jacob#2773, Jacob C. White Sr.#59208, Jacob C. White#358795
+- **Jacob C. White** (blog)  ↔  White, Jacob#2772, White, Jacob#2773, Jacob C. White Sr.#59208
 - **Jacob C. White Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
 - **Jacob C. White, Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
 - **Jacob Griffith** (blog)  ↔  Griffith, Jacob#356653, Jacob Griffith#359742
