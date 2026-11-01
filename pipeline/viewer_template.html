@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>1838 Black Metropolis — People & Papers Network</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 :root{--bg:#16130e;--panel:#221d15;--ink:#efe7d8;--dim:#a89c86;--gold:#d4a24e;--rust:#b4552d;--teal:#4e8f83;--line:#3a3226}
 *{box-sizing:border-box;margin:0}
@@ -146,18 +147,18 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 /* Organization Timelines overlay (2026-11-01) */
 #tabs button{font-size:12px;letter-spacing:.05em;padding:7px 4px}
 #tabs button#tab-t{flex:1.3}
-#tlview{position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
+#tlview{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--aid:#a5472a;--edu:#2f6f64;--rights:#8a6418;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
 #tlview.on{display:flex}
 #tlbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
-#tlbar button{background:#33290f;color:var(--gold);border:1px solid var(--gold);border-radius:4px;font:13px Georgia;padding:6px 12px;cursor:pointer}
+#tlbar button{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px "Libre Caslon Text",Georgia,serif;padding:6px 12px;cursor:pointer}
 #tlbar .ttl{letter-spacing:.12em;font-size:13px;color:var(--dim)}
 #tlscroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:18px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:14px}
 #tlscroll>*{max-width:1240px;width:100%;margin:0 auto;flex-shrink:0}
-#tlwip{background:#2a2214;border:1px solid var(--gold);border-radius:4px;padding:9px 14px;font-size:13.5px}
+#tlwip{background:#f7ead0;border:1px solid var(--gold);border-radius:4px;padding:9px 14px;font-size:13.5px}
 #tlwip b{color:var(--gold)}
 #tllede{color:var(--ink);font-size:14px;max-width:80ch;margin:0}
 #tlchips{display:flex;flex-wrap:wrap;gap:8px}
-.tlchip{font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.tlchip{font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;display:inline-flex;gap:7px;align-items:center}
 .tlchip[aria-pressed="false"]{opacity:.45}
 .tlchip .sw{width:9px;height:9px;border-radius:50%;display:inline-block}
 .tlchip .sw.dia{border-radius:0;transform:rotate(45deg);border:1.5px solid var(--dim);width:8px;height:8px}
@@ -169,14 +170,14 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tlgrid .trk{position:relative;height:32px}
 .tlaxis .trk{height:28px}
 #tlgrid .tick{position:absolute;top:0;bottom:0;border-left:1px solid var(--line)}
-#tlgrid .tick span{position:absolute;bottom:5px;left:4px;font:11px ui-monospace,Menlo,monospace;color:var(--dim)}
-.tlsect{font:11px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;padding:16px 0 6px;color:var(--gold);border-bottom:1px solid var(--line);position:sticky;left:0;width:max-content}
-.tlsub{font:11px ui-monospace,Menlo,monospace;padding:12px 0 4px;color:var(--dim);position:sticky;left:0;width:max-content}
+#tlgrid .tick span{position:absolute;bottom:5px;left:4px;font:11px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim)}
+.tlsect{font:11px "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;padding:16px 0 6px;color:var(--gold);border-bottom:1px solid var(--line);position:sticky;left:0;width:max-content}
+.tlsub{font:11px "IBM Plex Mono",ui-monospace,Menlo,monospace;padding:12px 0 4px;color:var(--dim);position:sticky;left:0;width:max-content}
 .tlrow{cursor:pointer;border-bottom:1px dotted var(--line)}
-.tlrow:hover,.tlrow:hover .lab,.tlrow.on,.tlrow.on .lab{background:#2b2517}
+.tlrow:hover,.tlrow:hover .lab,.tlrow.on,.tlrow.on .lab{background:var(--sel)}
 .tlrow:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 .tlrow .lab{font-size:13.5px;line-height:1.25;display:flex;flex-direction:column;justify-content:center}
-.tlrow .lab small{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim)}
+.tlrow .lab small{font:10.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim)}
 #tlgrid .span{position:absolute;top:50%;height:2px;transform:translateY(-50%);opacity:.55}
 #tlgrid .rng{position:absolute;top:50%;height:8px;transform:translateY(-50%);border-radius:4px;opacity:.35}
 #tlgrid .dot{position:absolute;top:50%;border-radius:50%;transform:translate(-50%,-50%);box-sizing:border-box}
@@ -184,21 +185,21 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tlgrid .dia{position:absolute;top:50%;width:10px;height:10px;transform:translate(-50%,-50%) rotate(45deg);border:2px solid currentColor;background:var(--bg);box-sizing:border-box}
 #tlgrid .mk{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid currentColor;background:var(--bg);box-sizing:border-box}
 #tlgrid .sq{position:absolute;top:50%;width:7px;height:7px;transform:translate(-50%,-50%);background:currentColor;opacity:.8}
-#tlview .aid{color:#d0734f} #tlview .edu{color:#6fb3a6} #tlview .rights{color:var(--gold)}
-#tlview .c-aid{background:#d0734f} #tlview .c-edu{background:#6fb3a6} #tlview .c-rights{background:var(--gold)}
+#tlview .aid{color:var(--aid)} #tlview .edu{color:var(--edu)} #tlview .rights{color:var(--rights)}
+#tlview .c-aid{background:var(--aid)} #tlview .c-edu{background:var(--edu)} #tlview .c-rights{background:var(--rights)}
 #tldetail{background:var(--panel);border:1px solid var(--gold);border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;gap:12px;box-sizing:border-box}
 #tlgrid #tldetail{position:sticky;left:0;margin:4px 0 14px;max-width:none}
-#tldetail .tlx{align-self:flex-start;font:12px ui-monospace,Menlo,monospace;background:none;border:1px solid var(--line);color:var(--dim);border-radius:4px;padding:3px 9px;cursor:pointer}
-#tldetail .eye{font:11px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-#tldetail h2{font-weight:normal;font-size:24px;line-height:1.15}
-#tldetail .meta{font:12px ui-monospace,Menlo,monospace;color:var(--dim)}
+#tldetail .tlx{align-self:flex-start;font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;background:none;border:1px solid var(--line);color:var(--dim);border-radius:4px;padding:3px 9px;cursor:pointer}
+#tldetail .eye{font:11px "IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+#tldetail h2{font-weight:normal;font-family:"Libre Caslon Display","Libre Caslon Text",Georgia,serif;font-size:28px;line-height:1.1}
+#tldetail .meta{font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim)}
 #tldetail .note{max-width:80ch;font-size:14px}
 #tldetail .pas{border:1px solid var(--line);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
 #tldetail .pash{font-size:13px;color:var(--gold)}
 #tldetail .pash a{color:var(--gold)}
 #tldetail dl{display:flex;flex-wrap:wrap;gap:6px 22px}
 #tldetail dl div{display:flex;flex-direction:column}
-#tldetail dt{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+#tldetail dt{font:10.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
 #tldetail dd{margin:0;font-size:16px;font-variant-numeric:tabular-nums}
 #tldetail .pasf{font-size:13px;color:var(--dim)}
 #tldetail .yrs{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
@@ -207,18 +208,20 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tldetail [hidden]{display:none!important}
 #tldetail .yrs.single ul{display:block;columns:3 250px;column-gap:28px}
 #tldetail .yrs.single li{break-inside:avoid;margin-bottom:5px}
-#tldetail h3{font:500 13px ui-monospace,Menlo,monospace;padding-bottom:4px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+#tldetail h3{font:500 13px "IBM Plex Mono",ui-monospace,Menlo,monospace;padding-bottom:4px;margin-bottom:6px;border-bottom:1px solid var(--line)}
 #tldetail ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:5px}
 #tldetail li{font-size:13.5px;line-height:1.35}
-#tldetail .pn{background:none;border:0;padding:0;color:var(--gold);font:bold 13.5px Georgia;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:rgba(212,162,78,.4);text-underline-offset:2px}
+#tldetail .pn{background:none;border:0;padding:0;color:var(--gold);font:bold 13.5px "Libre Caslon Text",Georgia,serif;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:rgba(138,100,24,.35);text-underline-offset:2px}
 #tldetail .pn:hover{text-decoration-color:var(--gold)}
 #tldetail .r{color:var(--dim)}
-#tldetail .ys{font:10.5px ui-monospace,Menlo,monospace;color:var(--dim);margin:-2px 0 8px}
-#tldetail .s{display:block;font:10.5px ui-monospace,Menlo,monospace;color:var(--dim)}
-#tldetail .more{font:12px ui-monospace,Menlo,monospace;background:none;border:0;color:var(--ink);text-decoration:underline;cursor:pointer;padding:4px 0 0}
+#tldetail .ys{font:10.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim);margin:-2px 0 8px}
+#tldetail .s{display:block;font:10.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim)}
+#tldetail .more{font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;background:none;border:0;color:var(--ink);text-decoration:underline;cursor:pointer;padding:4px 0 0}
 #tlfoot{font-size:12.5px;color:var(--dim)}
 #tlfoot a{color:var(--gold)}
 @media (max-width:640px){.tlaxis,.tlrow{grid-template-columns:165px 1fr}.tlrow .lab{font-size:12.5px}#tlgrid{min-width:780px}#tabs button{font-size:11.5px;letter-spacing:.04em;padding:7px 4px}}
+#tlview .tlsect{color:var(--dim)}
+#tlview h2,#tlbar .ttl{color:var(--ink)}
 </style>
 </head>
 <body>
