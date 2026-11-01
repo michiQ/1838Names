@@ -196,7 +196,12 @@
    "author": "",
    "type": "review",
    "summary": "This is the title of a new work put into our hands by the author, Mrs. Jacobs, of New York, a colored lady, who was born a slave in North Carolina... She is in this city for a few days, and those who wish the book can procure it of her, at No. 107 North Fifth St.",
-   "people": []
+   "people": [
+    [
+     "Harriet Jacobs",
+     "author of 'Linda' (Incidents in the Life of a Slave Girl, Boston, 1861), in Philadelphia selling her book at No. 107 North Fifth St. (printed 'Mrs. Jacobs, of New York')"
+    ]
+   ]
   },
   {
    "issue": "CR_1862-01-11",
