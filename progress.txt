@@ -1,3 +1,5 @@
+PROD PROMOTE, 2026-11-01 (4th). Promoted staging 93add37 (Gibbs records) to production. Michiko authorized in chat and gave the prod-push password (not stored). No PAT. commit-tree <staging tree 8dac382> -p 18a9c30 -> 7d26379; pushed 18a9c30..7d26379. VERIFIED: prod tree == staging tree 8dac382.
+
 GIBBS RECORDS, 2026-11-01 (Michiko: 'Jonathan Clarkson Gibbs is the same guy'; 'Jonathan Clarkson Gibbs Senior is the father and he was a Reverend and the son was born in 1821. Senior died in 1831'; 'Mifflin Wistar Gibbs is his brother').
 - SON: Winch 'Gibbs, Rev. Jonathan C.' (id 1136, now 1821-1874) + StoryMap 'Jonathan Gibbs' (1871) + blog 'Jonathan Clarkson Gibbs' merged; all 1860s CR items routed to him (split rules by Winch id: from 1135 for 'Jonathan Gibbs', and from newspaper 'Jonathan C. Gibbs'). person_links.json: brother of Mifflin Wistar Gibbs (id 1140).
 - FATHER: Winch 'Gibbs, Jonathan C.' (id 1135) renamed 'Gibbs, Jonathan C. Sr.' (d. April 1831) + blog 'Jonathan Clarkson Gibbs Sr.' merged; merge note records he was a Methodist minister. 'Rev.' kept out of his record name on purpose (see split_appearances.json).
