@@ -346,7 +346,9 @@ for a, b in ORG_FOLD_LOG: print("   fold:", a, "=>", b)
 # finalize orgs: keep those with >=2 members
 orgs_out = []
 for key, e in org_members.items():
-    if len(e["pids"]) >= 2:
+    # >=2 members, OR named in a curated event (a real organization even if only its secretary is known,
+    # e.g. the 1827 Protecting Society -- added 2026-10-31, Michiko)
+    if len(e["pids"]) >= 2 or any("e" in sv for sv in e["src"].values()):
         orgs_out.append({"name": e["label"], "members": sorted(e["pids"]), "src": e["src"]})
 orgs_out.sort(key=lambda o: (-len(o["members"]), o["name"]))
 for o in orgs_out:

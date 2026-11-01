@@ -20,9 +20,10 @@
     "canonical": "Female Vigilant Committee",
     "aliases": [
       "Female Vigilance Committee",
-      "Female Vigilant Association"
+      "Female Vigilant Association",
+      "Female Vigilant Association of Philadelphia"
     ],
-    "note": "same organization despite 'Association'/'Committee' wording difference; canonical chosen as highest-count form. Confirmed by Michiko 2026-07-09."
+    "note": "same organization despite 'Association'/'Committee' wording difference; canonical chosen as highest-count form. Confirmed by Michiko 2026-07-09. + 'Female Vigilant Association of Philadelphia', 2026-11-01."
   },
   {
     "canonical": "Humane Mechanics Society",
@@ -237,5 +238,12 @@
       "Ladies Literary Society"
     ],
     "note": "Same organization under variant names; folded in the 2026-10-31 org-list consolidation."
+  },
+  {
+    "canonical": "Protecting Society of the City and County of Philadelphia",
+    "aliases": [
+      "Protecting Society of Philadelphia"
+    ],
+    "note": "The Protecting Society of the City and County of Philadelphia for the preventing of Kidnapping and Man-stealing (1827), auxiliary to the Abolition Society; John Allen, Secretary (Freedom's Journal, 1828). 2026-11-01."
   }
 ]
