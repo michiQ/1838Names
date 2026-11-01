@@ -130,6 +130,17 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   #hint{font-size:10px;right:8px;left:8px;text-align:center;bottom:6px}
   .prow{padding:11px 14px;font-size:14.5px}
 }
+/* in-app scan viewer (2026-11-01): newspaper pages and manuscript photos open here, not in a new window */
+#scanview{position:fixed;inset:0;z-index:9999;background:#0a0805;display:none;flex-direction:column}
+#scanview.on{display:flex}
+#scanbar{display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--panel);color:var(--ink);font:13px Georgia}
+#scanbar .ttl{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--dim)}
+#scanbar button,#scanbar a{background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:6px 11px;font:13px Georgia;cursor:pointer;text-decoration:none;white-space:nowrap}
+#scanbar .close{border-color:var(--gold);color:var(--gold)}
+#scanwrap{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y pinch-zoom;text-align:center}
+#scanimg{width:100%;max-width:1100px;height:auto;display:inline-block;background:#eee;cursor:zoom-in}
+#scanview.zoom #scanimg{width:250%;max-width:none;cursor:zoom-out}
+@media (max-width:600px){#scanbar .ttl{display:none}#scanbar{gap:6px;padding:8px}}
 </style>
 </head>
 <body>
@@ -139,7 +150,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-01 17:10</span>
+  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-01 17:34</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -1464,6 +1475,36 @@ window._suppressAutoOpen = true;
 if(sorted.length) select(sorted[0].id);
 window._suppressAutoOpen = false;
 syncFab();
+</script>
+<div id="scanview" role="dialog" aria-modal="true" aria-label="Scanned page">
+ <div id="scanbar"><button class="close" id="scanclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl" id="scanttl"></span>
+ <button id="scanzoom" title="Zoom in or out">Zoom</button><a id="scannew" target="_blank" rel="noopener" title="Open the image by itself in a new tab">Open</a></div>
+ <div id="scanwrap"><img id="scanimg" alt="Scanned page"></div>
+</div>
+<script>
+// In-app scan viewer: page scans (pages/...jpg) and manuscript photos (manuscripts/...jpg|png) open in an overlay
+// with a Back button; the phone's Back button closes it too (history entry). Other links are unchanged.
+(function(){
+  const sv=document.getElementById('scanview'), img=document.getElementById('scanimg'), ttl=document.getElementById('scanttl'),
+        nw=document.getElementById('scannew'), wrap=document.getElementById('scanwrap');
+  if(!sv || !img || typeof document.addEventListener!=='function' || typeof window.addEventListener!=='function') return;  // non-browser (smoke test)
+  const isScan=h=>/^(pages|manuscripts)\/[^?#]+\.(jpe?g|png)$/i.test(h||'');
+  function label(h){ const f=h.split('/').pop().replace(/\.(jpe?g|png)$/i,'');
+    const m=f.match(/^([A-Z]+)_(\d{4}-\d{2}-\d{2})_p(\d+)$/);
+    if(m){ const P=(typeof PAPERS!=='undefined'&&PAPERS[m[1]])||m[1]; return P+', '+m[2]+', page '+m[3]; }
+    return f.replace(/_/g,' '); }
+  function open(h,push){ img.src=h; nw.href=h; ttl.textContent=label(h); sv.classList.remove('zoom'); sv.classList.add('on'); wrap.scrollTop=0;
+    if(push) try{ history.pushState({scan:h},'' ); }catch(e){} }
+  function close(fromPop){ if(!sv.classList.contains('on')) return; sv.classList.remove('on'); img.removeAttribute('src');
+    if(!fromPop) try{ if(history.state&&history.state.scan) history.back(); }catch(e){} }
+  document.addEventListener('click',ev=>{ const a=ev.target.closest&&ev.target.closest('a'); if(!a) return;
+    const h=a.getAttribute('href'); if(!isScan(h)||sv.contains(a)) return; ev.preventDefault(); open(h,true); },true);
+  document.getElementById('scanclose').addEventListener('click',()=>close(false));
+  document.getElementById('scanzoom').addEventListener('click',()=>sv.classList.toggle('zoom'));
+  img.addEventListener('click',()=>sv.classList.toggle('zoom'));
+  window.addEventListener('popstate',()=>close(true));
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(false); });
+})();
 </script>
 </body>
 </html>
