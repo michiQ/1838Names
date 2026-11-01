@@ -31,7 +31,8 @@
       "issue_like": "CR_186%",
       "to_name": "Gibbs, Rev. Jonathan C.",
       "to_source": "winch",
-      "note": "Winch 'Gibbs, Jonathan C.' is the FATHER (Methodist minister, d. April 1831). Every 1860s Christian Recorder item (ICY and Banneker lectures, SCSA civil-rights committee, 1861 marriages) is the SON, Rev. Jonathan C. Gibbs (b. 1821; Winch 'Gibbs, Rev. Jonathan C.', PA Equal Rights League 1865). Caught in Run #77, 2026-11-01."
+      "note": "Winch 'Gibbs, Jonathan C.' is the FATHER (Methodist minister, d. April 1831). Every 1860s Christian Recorder item (ICY and Banneker lectures, SCSA civil-rights committee, 1861 marriages) is the SON, Rev. Jonathan C. Gibbs (b. 1821; Winch 'Gibbs, Rev. Jonathan C.', PA Equal Rights League 1865). Caught in Run #77, 2026-11-01.",
+      "from_id": 1135
     },
     {
       "from_name": "THOMPSON, JOSEPH",
@@ -49,6 +50,14 @@
       "new_name": "James W. Smith (correspondent, 1861)",
       "note": "Signer of 'Letter from Brother Smith' (CR Dec. 21, 1861), place not stated; not linked to the census James W. Smith. Run #77.",
       "new_source": "newspaper"
+    },
+    {
+      "from_name": "Jonathan C. Gibbs",
+      "from_source": "newspaper",
+      "context_prefix": "",
+      "issue_like": "CR_186%",
+      "to_id": 1136,
+      "note": "1860s Christian Recorder items printed 'Jonathan C. Gibbs' are the son, Rev. Jonathan C. Gibbs (Winch id 1136, stable). Needed once the father's record became 'Gibbs, Jonathan C. Sr.' (2026-11-01)."
     }
   ],
   "renames": [
@@ -63,6 +72,18 @@
       "name": "Mead, Mary",
       "life_dates": "d. 1854",
       "note": "Carries the death date from Winch 'Meade, Mary' (d. 1854), merged into this record 2026-11-01."
+    },
+    {
+      "id": 1136,
+      "name": "Gibbs, Rev. Jonathan C.",
+      "life_dates": "1821-1874",
+      "note": "Dates from the 1838 Black Metropolis blog post 'The Gibbs Brothers Run the World' (born 1821, died 1874)."
+    },
+    {
+      "id": 1135,
+      "name": "Gibbs, Jonathan C. Sr.",
+      "aliases": "Gibbs, Jonathan C. | Jonathan Clarkson Gibbs Sr.",
+      "note": "Father, Rev. Jonathan Clarkson Gibbs Sr. (d. April 1831). 'Sr.' added 2026-11-01 (Michiko) to tell him from his son Rev. Jonathan C. Gibbs. 'Rev.' is kept out of the record name so that 1860s 'Jonathan Gibbs' items still reach the issue_like rule that moves them to the son."
     }
   ],
   "move_refs": [

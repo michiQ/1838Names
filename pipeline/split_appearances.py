@@ -8,7 +8,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 def norm(s): return re.sub(r"[^a-z ]", "", s.lower()).strip()
 con = sqlite3.connect(DB)
 for r in json.load(open(os.path.join(HERE, "split_appearances.json")))["rules"]:
-    src = [x[0] for x in con.execute("SELECT id FROM people WHERE canonical_name=? AND source=?", (r["from_name"], r["from_source"]))]
+    src = [r["from_id"]] if r.get("from_id") else [x[0] for x in con.execute("SELECT id FROM people WHERE canonical_name=? AND source=?", (r["from_name"], r["from_source"]))]   # from_id only for Winch ids (stable)
     if not src: print("  no source record for", r["from_name"]); continue
     if r.get("to_name"):
         row = con.execute("SELECT id FROM people WHERE canonical_name=? AND source=?", (r["to_name"], r["to_source"])).fetchone()
