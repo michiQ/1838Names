@@ -713,6 +713,7 @@ function selectOrg(name){
   const mem=o.members.filter(q=>P.has(q));
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='o' && r.dataset.name===name));
   let h=`<h2>${esc(o.name)}</h2><div class="dates">organization · ${mem.length} members on record</div>`;
+  if(o.note) h+=`<div class="card"><q>${linkify(esc(o.note))}</q></div>`;
   h+=`<div style="margin:2px 0 6px;font-size:12.5px"><span class="pl" id="orgfilterbtn">filter the people list to this organization</span></div>`;
   if(mem.length){
     h+=`<h3>Members (${mem.length})</h3>`+mem.map(q=>{const op=P.get(q);
@@ -720,8 +721,10 @@ function selectOrg(name){
       if(s&&s.i) sl=`<div class="src">${ISSUE_LABEL(s.i)}${s.p?', p.'+s.p:''}${srcLinks(s.i,s.p)}</div>`;
       else if(s&&s.e&&E.get(s.e)){const ev=E.get(s.e);
         sl=`<div class="src">from event: <span class="pl" data-e="${s.e}">${esc(ev.name)}</span>${ev.date?' · '+esc(ev.date):''}</div>`;}
-      else if(s&&s.w) sl=`<div class="src">named in Winch reference entry</div>`;
-      return `<div class="card"><span class="pl" data-p="${q}">${esc(op.name)}</span>${op.src==='winch'?' <span class="badge b-w">Winch</span>':''}${sl}</div>`;}).join('');
+      else if(s&&s.b){const bm=(DATA.blogs||{})[s.b]||{};
+        sl=`<div class="src">1838 Black Metropolis blog${bm.u?` · <a href="${esc(bm.u)}" target="_blank" rel="noopener">${esc(bm.t||s.b)}</a>`:''}</div>`;}
+      else if(s&&s.w) sl=`<div class="src">named in Winch reference entry${s.c?' ('+esc(s.c)+')':''}</div>`;
+      return `<div class="card"><span class="pl" data-p="${q}">${esc(op.name)}</span>${s&&s.r?` <span class="role">— ${esc(s.r)}</span>`:''}${op.src==='winch'?' <span class="badge b-w">Winch</span>':''}${sl}</div>`;}).join('');
   } else h+='<p class="empty">No members on record.</p>';
   right.innerHTML=h; right.scrollTop=0;
   if(isMobile() && !window._suppressAutoOpen) openRightDrawer();

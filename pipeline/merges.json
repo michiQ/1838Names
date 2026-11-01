@@ -1140,5 +1140,18 @@
    }
   ],
   "note": "Publication Society of Philadelphia president 'Mrs. Laws' (CR Jan-Mar 1861) = 'Ann Lawe' of the May 1 1861 Recorder benefit committee. Confirmed by Michiko 2026-10-31 (Run #75)."
+ },
+ {
+  "keep": {
+   "id": 27,
+   "name": "Allen, John"
+  },
+  "aliases": [
+   {
+    "id": 162748,
+    "name": "John Allen"
+   }
+  ],
+  "note": "John Allen, secretary of the Protecting Society of the City and County of Philadelphia for the Prevention of Kidnapping and Man-stealing (Freedom's Journal notices, April 24 1828 onward) = Winch's Allen, John (secretary of the African Warner Mifflin Society, 1830 convention delegate). Michiko ruled 2026-11-01: 'assume that John Allen winch is the same as the John Allen society.' The 1848 Massachusetts reform lecturer who shared the newspaper record was split off first (split_appearances.json)."
  }
 ]

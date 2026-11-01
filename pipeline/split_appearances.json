@@ -1,0 +1,12 @@
+{
+  "_doc": "Move specific appearances off a shared same-name record onto their own person, BEFORE apply_merges. Run by split_appearances.py right after split_swilliams. Each rule: from (canonical_name + source), the appearances whose context starts with context_prefix, and the new person's canonical_name.",
+  "rules": [
+    {
+      "from_name": "John Allen",
+      "from_source": "newspaper",
+      "context_prefix": "Reform lectures of John Allen in Pittsburgh",
+      "new_name": "John Allen (Massachusetts reform lecturer)",
+      "note": "North Star, Feb. 18, 1848: a Massachusetts land reformer lecturing in Pittsburgh. Not the John Allen who was secretary of the 1827 Protecting Society; split off 2026-11-01 so that record could merge into Winch's Allen, John (Michiko's ruling)."
+    }
+  ]
+}

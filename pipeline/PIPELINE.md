@@ -181,7 +181,7 @@ Michiko's identification (not a standalone person) — and John Myers — body s
 "Arrival from Harford County", p.434, a new ugrr person — this way, as curated mid-narrative links
 exactly like Sarah Ash.)
 Full rebuild order is now: import_census.py -> import_1820_directory.py -> match_names.py ->
-load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> split_swilliams.py -> apply_merges.py ->
+load_extractions.py -> load_coppin.py -> load_storymaps.py -> split_nichols.py -> split_swilliams.py -> split_appearances.py -> apply_merges.py ->
 load_nolibs.py -> load_ugrr.py -> load_blogs.py -> load_mobstats.py -> apply_merges.py (2nd pass) -> find_merge_candidates.py -> build_viewer.py.
 apply_merges runs TWICE: pass 1 folds the winch/census/newspaper/coppin/storymap groups so load_nolibs/
 load_ugrr resolve against canonical names; pass 2 (after load_blogs) folds the blog-source groups, since
@@ -310,3 +310,8 @@ its attendees to the organization NAMED in its title (`event_org_name()` in buil
 hand-reviewed overrides (null = the event is a meeting only) and always wins. '<Org> <meeting words>' labels fold into <Org>
 automatically; spelling/naming variants are folded via `org_aliases.json` (curated with Michiko). When adding extractions, name
 events 'Organization -- what happened' and the org is picked up cleanly.
+`pipeline/curated_orgs.json` (added 2026-11-01) holds hand-curated organizations (the vigilance committees, kept separate per Michiko,
+the Frank Johnson Guards, the Williams Assembly). Its members, roles, citations and note win over everything above; labels in its
+"drop" list are removed first. Curated orgs always show, even with no members.
+`pipeline/split_appearances.py` + `.json` (added 2026-11-01) move specific appearances off a shared same-name record before
+apply_merges (first use: the 1848 Massachusetts lecturer John Allen, so the Protecting Society's John Allen could merge into Winch).

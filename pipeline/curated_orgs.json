@@ -1,0 +1,634 @@
+{
+  "_doc": "Hand-curated organizations (Michiko, 2026-11-01). Each org's members, roles and citations are set here and win over the automatic org finder. 'drop' lists automatic labels whose members are replaced by these curated lists. Curated orgs are always shown, even with zero or one member.",
+  "drop": [
+    "Vigilance Committee",
+    "Vigilance Association",
+    "Special Vigilance Committee",
+    "Vigilant Committee",
+    "Vigilance Society"
+  ],
+  "orgs": [
+    {
+      "name": "Vigilant Committee to suppress crime (1822)",
+      "note": "An anti-crime, law-and-order committee formed in 1822, with Richard Allen as chairman and Russell Parrott as secretary (Poulson's, March 2, 1822). A different body from the later vigilance committees that aided fugitives. Members as listed in Julie Winch's reference entries.",
+      "members": [
+        [
+          31,
+          {
+            "w": 1,
+            "r": "chairman",
+            "c": "Poulson's American Daily Advertiser, March 2, 1822"
+          }
+        ],
+        [
+          2076,
+          {
+            "w": 1,
+            "r": "secretary",
+            "c": "Poulson's American Daily Advertiser, March 2, 1822"
+          }
+        ],
+        [
+          898,
+          {
+            "w": 1,
+            "r": "member (Robert Douglass Sr.)",
+            "c": "Poulson's American Daily Advertiser, March 2, 1822"
+          }
+        ],
+        [
+          465,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Poulson's American Daily Advertiser, March 2, 1822"
+          }
+        ],
+        [
+          1439,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Poulson's American Daily Advertiser, March 2, 1822"
+          }
+        ],
+        [
+          2404,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Poulson's American Daily Advertiser, March 2, 1822"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Committee of Vigilance to support the Rights of All (1829)",
+      "note": "Appointed at a meeting chaired by Benjamin Paschal Jr. to support Samuel Cornish's newspaper The Rights of All (Rights of All, Oct. 9, 1829). Members as listed in Julie Winch's reference entries.",
+      "members": [
+        [
+          2079,
+          {
+            "w": 1,
+            "r": "chairman of the founding meeting",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          115,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          224,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          365,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          551,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          712,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1103,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1203,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1308,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1392,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1403,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1857,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1864,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          1942,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ],
+        [
+          2394,
+          {
+            "w": 1,
+            "r": "appointed to the committee",
+            "c": "Rights of All, Oct. 9, 1829"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Vigilant Committee of Philadelphia (1837)",
+      "note": "Founded in 1837 to aid people escaping slavery. Winch's sources call it both the Vigilance Committee and the Vigilance Association: James McCrummell president (later Robert Purvis), James Needham treasurer, Jacob White secretary, with a standing committee. Active into the 1840s. Members as listed in Julie Winch's reference entries. Dr. James J. G. Bias is linked from Winch notes that are filed under Eliza A. Bias but describe him (cupper, later dentist, 2 Acorn Alley).",
+      "members": [
+        [
+          1770,
+          {
+            "w": 1,
+            "r": "president (1837)",
+            "c": "Nat. Enq., Oct. 12, 1837"
+          }
+        ],
+        [
+          2178,
+          {
+            "w": 1,
+            "r": "president (1839)",
+            "c": "Pa. Freeman, June 20, 1839"
+          }
+        ],
+        [
+          1996,
+          {
+            "w": 1,
+            "r": "treasurer",
+            "c": "Nat. Enq., Sept. 28, 1837"
+          }
+        ],
+        [
+          2773,
+          {
+            "w": 1,
+            "r": "secretary",
+            "c": "Nat. Enq., Sept. 28, 1837"
+          }
+        ],
+        [
+          115,
+          {
+            "w": 1,
+            "r": "secretary (1839)",
+            "c": "Pa. Freeman, June 20, 1839"
+          }
+        ],
+        [
+          99,
+          {
+            "w": 1,
+            "r": "agent, collected funds",
+            "c": "Nat. Enq., Sept. 28, 1837"
+          }
+        ],
+        [
+          1166,
+          {
+            "w": 1,
+            "r": "standing committee (1839)",
+            "c": "Pa. Freeman, June 11, 1840"
+          }
+        ],
+        [
+          1339,
+          {
+            "w": 1,
+            "r": "standing committee",
+            "c": "1839"
+          }
+        ],
+        [
+          1350,
+          {
+            "w": 1,
+            "r": "standing committee",
+            "c": "1839"
+          }
+        ],
+        [
+          1638,
+          {
+            "w": 1,
+            "r": "standing committee, resigned (1839)"
+          }
+        ],
+        [
+          1707,
+          {
+            "w": 1,
+            "r": "standing committee",
+            "c": "Pa. Freeman, June 20, 1839"
+          }
+        ],
+        [
+          2155,
+          {
+            "w": 1,
+            "r": "standing committee, resigned (1839)"
+          }
+        ],
+        [
+          2383,
+          {
+            "w": 1,
+            "r": "standing committee (1839)"
+          }
+        ],
+        [
+          2434,
+          {
+            "w": 1,
+            "r": "standing committee (1839)"
+          }
+        ],
+        [
+          2491,
+          {
+            "w": 1,
+            "r": "standing committee (1839)"
+          }
+        ],
+        [
+          2705,
+          {
+            "w": 1,
+            "r": "chaired a support meeting at Zoar",
+            "c": "Pa. Freeman, April 26, 1838"
+          }
+        ],
+        [
+          1775,
+          {
+            "w": 1,
+            "r": "secretary of a support meeting at Zoar",
+            "c": "Pa. Freeman, April 26, 1838"
+          }
+        ],
+        [
+          2865,
+          {
+            "w": 1,
+            "r": "spoke at a support meeting at Zoar",
+            "c": "Pa. Freeman, April 26, 1838"
+          }
+        ],
+        [
+          1107,
+          {
+            "w": 1,
+            "r": "member (1839); spoke for it",
+            "c": "Pa. Freeman, Oct. 10, 1839"
+          }
+        ],
+        [
+          1039,
+          {
+            "w": 1,
+            "r": "active (1840); addressed a meeting",
+            "c": "Nat. A.S. Standard, May 13, 1841"
+          }
+        ],
+        [
+          1036,
+          {
+            "w": 1,
+            "r": "sang at a meeting",
+            "c": "Nat. A.S. Standard, May 13, 1841"
+          }
+        ],
+        [
+          2086,
+          {
+            "w": 1,
+            "r": "active (1840); wrote a poem for its 1841 soiree",
+            "c": "Brawley, ed."
+          }
+        ],
+        [
+          187,
+          {
+            "w": 1,
+            "r": "involved (1839)"
+          }
+        ],
+        [
+          281,
+          {
+            "w": 1,
+            "r": "involved (1844)"
+          }
+        ],
+        [
+          659,
+          {
+            "w": 1,
+            "r": "active (1839) [VERIFY: Winch's Daniel Colly/Colley; record name is garbled]"
+          }
+        ],
+        [
+          768,
+          {
+            "w": 1,
+            "r": "involved (1843)"
+          }
+        ],
+        [
+          1126,
+          {
+            "w": 1,
+            "r": "involved (1839)"
+          }
+        ],
+        [
+          1550,
+          {
+            "w": 1,
+            "r": "involved (1841)"
+          }
+        ],
+        [
+          1565,
+          {
+            "w": 1,
+            "r": "involved (1839)"
+          }
+        ],
+        [
+          1704,
+          {
+            "w": 1,
+            "r": "involved (1843)"
+          }
+        ],
+        [
+          2049,
+          {
+            "w": 1,
+            "r": "involved (1840)"
+          }
+        ],
+        [
+          2219,
+          {
+            "w": 1,
+            "r": "member (1840)"
+          }
+        ],
+        [
+          2624,
+          {
+            "w": 1,
+            "r": "involved (1840)"
+          }
+        ],
+        [
+          2759,
+          {
+            "w": 1,
+            "r": "involved (1839)",
+            "c": "Pa. Freeman, Sept. 12, 1839"
+          }
+        ],
+        [
+          3026,
+          {
+            "w": 1,
+            "r": "active (1837-40); spoke at a support meeting at Zoar (1838) [Winch filed under Eliza A. Bias]",
+            "c": "Pa. Freeman, April 26, 1838"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Female Vigilant Committee",
+      "note": "The Female Vigilant Association of Philadelphia, founded 1838: Elizabeth White president, Sarah McCrummell treasurer, Ruth Harding secretary (Pennsylvania Freeman, July 5, 1838). It raised money and aid alongside the men's Vigilant Committee but was its own organization. Charles W. Gardner addressed it in 1840.",
+      "members": [
+        [
+          440,
+          {
+            "w": 1,
+            "r": "meeting held at her home, 169 Pine",
+            "c": "Pa. Freeman, March 12, 1840"
+          }
+        ],
+        [
+          444,
+          {
+            "w": 1,
+            "r": "active (1840)",
+            "c": "Pa. Freeman, March 12, 1840"
+          }
+        ],
+        [
+          660,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Pa. Freeman, July 5, 1838"
+          }
+        ],
+        [
+          1365,
+          {
+            "w": 1,
+            "r": "assistant secretary",
+            "c": "Pa. Freeman, July 5, 1838"
+          }
+        ],
+        [
+          2014,
+          {
+            "w": 1,
+            "r": "member [VERIFY: the printed roster reads Mary Newton]",
+            "c": "Pa. Freeman, July 5, 1838"
+          }
+        ],
+        [
+          1831,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Pa. Freeman, July 5, 1838"
+          }
+        ],
+        [
+          1832,
+          {
+            "w": 1,
+            "r": "member; fair organizer",
+            "c": "Pa. Freeman, July 5, 1838"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Special Vigilance Committee (1851)",
+      "note": "Formed in late 1851, after the Christiana resistance, to aid fugitives (Frederick Douglass' Paper, Nov. 13, 1851; Voice of the Fugitive, Jan. 15 and Feb. 12, 1852). Members as listed in Julie Winch's reference entries.",
+      "members": [
+        [
+          459,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Fred. Douglass' Paper, Nov. 13, 1851"
+          }
+        ],
+        [
+          835,
+          {
+            "w": 1,
+            "r": "member",
+            "c": "Fred. Douglass' Paper, Nov. 13, 1851"
+          }
+        ],
+        [
+          3026,
+          {
+            "w": 1,
+            "r": "member [Winch filed under Eliza A. Bias]",
+            "c": "Fred. Douglass' Paper, Nov. 13, 1851"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Vigilance Committee of 1852 (William Still)",
+      "note": "The committee William Still worked through after 1852, as remembered by William Carl Bolivar (Pencil Pusher Points, Philadelphia Tribune, Aug. 23, 1913): John P. Burr, Rev. Jeremiah Asher, N. Depee, William Still, I. C. Wear, Jacob C. White and Charles Wise. [VERIFY] Bolivar gives no date; the 1852 reorganization is the likeliest fit. [VERIFY] whether Jacob C. White here is the father or the son (linked to the father).",
+      "members": [
+        [
+          2497,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member"
+          }
+        ],
+        [
+          459,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member"
+          }
+        ],
+        [
+          835,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member (N. Depee)"
+          }
+        ],
+        [
+          14248,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member (Rev.)"
+          }
+        ],
+        [
+          2727,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member (printed 'I. C. Wear')"
+          }
+        ],
+        [
+          2773,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member [VERIFY Sr. or Jr.]"
+          }
+        ],
+        [
+          358777,
+          {
+            "i": "PP_918",
+            "p": 1,
+            "r": "member"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Frank Johnson Guards",
+      "note": "A Black militia company in Philadelphia. In 1859 it assembled and marched armed through the city. Amos Webber described the march in his diary, and the Daily Ledger objected that only white men could legally keep military companies; a Baltimore Sun article also covered it. Its name honors Frank Johnson, the bandleader, who died in 1844 [VERIFY]. No members are on record yet. Source: 1838 Black Metropolis blog post on Samuel Williams, https://www.1838blackmetropolis.com/post/williams",
+      "members": []
+    },
+    {
+      "name": "Williams Assembly (1865)",
+      "note": "Founded in 1865 by Samuel Williams specifically for protection. Its constitution speaks of 'protection' rather than the 'mutual relief' of ordinary beneficial societies; members were barred from gambling, profanity and public drunkenness, and it had a Marshall and bought badges, at a time when no Black man could join the Philadelphia police (until William Dicks in 1884). Source: 1838 Black Metropolis blog post on Samuel Williams, https://www.1838blackmetropolis.com/post/williams",
+      "members": [
+        [
+          351596,
+          {
+            "b": "williams",
+            "r": "founder (1865)"
+          }
+        ]
+      ]
+    }
+  ]
+}

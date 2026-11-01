@@ -313,6 +313,24 @@ for e in events.values():
     for pid, _ in e["att"]:
         if pid in people:
             add_org(pid, org_name, {"e": e["id"]})
+# Hand-curated organizations (pipeline/curated_orgs.json, Michiko 2026-11-01: the vigilance committees
+# kept as separate groups, plus the Frank Johnson Guards and Williams Assembly). Automatic labels in
+# "drop" are removed first, then each curated org gets exactly the listed members, each with its role
+# and citation. Curated orgs are always kept, even with no members, and carry a note shown in the panel.
+CURATED = json.load(open(os.path.join(os.path.dirname(TPL), "curated_orgs.json"), encoding="utf-8"))
+for lbl in CURATED.get("drop", []):
+    gone = org_members.pop(lbl.lower(), None)
+    if gone: print("   curated: dropped automatic org", repr(lbl), len(gone["pids"]), "members")
+CURATED_NOTES = {}
+for co in CURATED["orgs"]:
+    key = co["name"].lower()
+    e = org_members.setdefault(key, {"label": co["name"], "pids": set(), "src": {}})
+    e["label"] = co["name"]; e["curated"] = True
+    CURATED_NOTES[co["name"]] = co.get("note", "")
+    for pid, sv in co["members"]:
+        if pid not in people:
+            print("   curated: WARNING member id", pid, "not in people for", co["name"]); continue
+        e["pids"].add(pid); e["src"][pid] = sv
 # Fold "<Org> <meeting description>" entries into <Org> (added 2026-10-31, Michiko's org-list
 # consolidation). An entry folds only when it starts with another org's full name followed by
 # punctuation or an event word (meeting, annual, anniversary, quarterly, delegation ...), and never
@@ -348,8 +366,9 @@ orgs_out = []
 for key, e in org_members.items():
     # >=2 members, OR named in a curated event (a real organization even if only its secretary is known,
     # e.g. the 1827 Protecting Society -- added 2026-10-31, Michiko)
-    if len(e["pids"]) >= 2 or any("e" in sv for sv in e["src"].values()):
-        orgs_out.append({"name": e["label"], "members": sorted(e["pids"]), "src": e["src"]})
+    if e.get("curated") or len(e["pids"]) >= 2 or any("e" in sv for sv in e["src"].values()):
+        orgs_out.append({"name": e["label"], "members": sorted(e["pids"]), "src": e["src"],
+                         **({"note": CURATED_NOTES[e["label"]]} if CURATED_NOTES.get(e["label"]) else {})})
 orgs_out.sort(key=lambda o: (-len(o["members"]), o["name"]))
 for o in orgs_out:
     for pid in o["members"]:
@@ -418,7 +437,8 @@ data = {"people": list(people.values()),
         "issueUrls": urls,
         "jpegIssues": jpeg_slugs,
         "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people],
-                  "src": {str(p): s for p, s in o["src"].items() if p in people}} for o in orgs_out],
+                  "src": {str(p): s for p, s in o["src"].items() if p in people},
+                  **({"note": o["note"]} if o.get("note") else {})} for o in orgs_out],
         "blogs": blogs_meta,
         "mobstats": mobstats_meta}
 
