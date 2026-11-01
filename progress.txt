@@ -1162,3 +1162,4 @@ Census datasets imported (1838 PAS census: 3296 households; 1847 SOFAAC: 4284; m
   May 1, 1839, Leon Gardiner Collection, HSP; Michiko's photos and transcription). 48 subscribers hand-matched by id
   (load_extractions now accepts a third element = fixed person id). Text-only: William Nichwals, Corr (no first name).
   Manuscript photos NOT published yet (awaiting Michiko's OK).
+PROD PROMOTE, 2026-11-01 (9th). Promoted staging a81f968 (Organization Timelines tab, 1838 PAS beneficial societies, Agricultural and Mechanics Association stock book + photos, Protecting Society / Frank Johnson Guards / Williams Assembly on the timeline, readable description links) to production. Michiko authorized in chat and gave the prod-push password (not stored). No PAT. commit-tree <staging tree 6088946> -p 712ef9a -> 36088b7; pushed 712ef9a..36088b7. VERIFIED: prod tree == staging tree 6088946.
