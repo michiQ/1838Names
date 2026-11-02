@@ -1,5 +1,5 @@
 {
- "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own. marks = [year, text] for a dated fact with no named people (drawn as a hollow dot).",
+ "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights|vig); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own. marks = [year, text] for a dated fact with no named people (drawn as a hollow dot).",
  "lanes": [
   {
    "label": "Free African Society",
@@ -347,7 +347,7 @@
   },
   {
    "label": "Vigilant Committee to Suppress Crime (1822)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Vigilant Committee to suppress crime (1822)"
    ],
@@ -356,7 +356,7 @@
   },
   {
    "label": "Committee of Vigilance against kidnapping (1827)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Committee of Vigilance against kidnapping (1827)"
    ],
@@ -371,7 +371,7 @@
   },
   {
    "label": "Protecting Society of the City and County of Philadelphia",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Protecting Society of the City and County of Philadelphia"
    ],
@@ -389,7 +389,7 @@
   },
   {
    "label": "Committee of Vigilance for the Rights of All (1829)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Committee of Vigilance to support the Rights of All (1829)"
    ],
@@ -407,7 +407,7 @@
   },
   {
    "label": "Vigilant Committee of Philadelphia (1837)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Vigilant Committee of Philadelphia (1837)"
    ],
@@ -416,7 +416,7 @@
   },
   {
    "label": "Female Vigilant Committee",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Female Vigilant Committee"
    ],
@@ -425,7 +425,7 @@
   },
   {
    "label": "Special Vigilance Committee (1851)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Special Vigilance Committee (1851)"
    ],
@@ -434,7 +434,7 @@
   },
   {
    "label": "Vigilance Committee (1852)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Vigilance Committee of 1852 (William Still)"
    ],
@@ -443,7 +443,7 @@
   },
   {
    "label": "Frank Johnson Guards",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Frank Johnson Guards"
    ],
@@ -477,7 +477,7 @@
   },
   {
    "label": "Williams Assembly (1865)",
-   "cat": "rights",
+   "cat": "vig",
    "orgs": [
     "Williams Assembly (1865)"
    ],

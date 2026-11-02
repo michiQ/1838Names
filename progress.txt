@@ -1191,3 +1191,4 @@ CLIPPINGS, 2026-11-02 (Michiko's Newspapers.com finds, clipped by 1838 Black Met
 - Randall Shepherd linked to the 1820 directory 'Shepherd Randall, fruiterer, SW cor. Chestnut and 7th' (marked).
 MARY STILL (Michiko 2026-11-02): 'Mount Holley Mary Still is William Still's sister for sure.' Newspaper 'Miss Mary Still' (Allentown, Clarksborough school, Female Union Publication Society) and 'M. Still' merged into Winch Still, Mary (2496); person link Mary Still <-> William Still (sister and brother). Reader brief updated.
 Two rebuilds identical (13128 people). Smoke test PASSED. Staging only.
+VIEWER 2026-11-02: name search matches words in any order; Timelines gain a 'Vigilance & self-protection' category (10 lanes: 1822, 1827 kidnapping committee, Protecting Society, 1829, 1837, Female Vigilant, 1851, 1852, Frank Johnson Guards, Williams Assembly); 'Rights & reform' keeps Haytien, AMRS, SCSA, Equal Rights League.
