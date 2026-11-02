@@ -152,7 +152,13 @@
     "African Porter Benevolent Society"
    ],
    "kw": "Porter'?s? Benevolent",
-   "pas": 20
+   "pas": 20,
+   "marks": [
+    [
+     1852,
+     "Gave to the Vigilance Committee's fund for the Christiana prisoners (Frederick Douglass' Paper, Mar. 4, 1852): 'Porters' Beneficial', $5"
+    ]
+   ]
   },
   {
    "label": "Humane Mechanics Society",
@@ -263,6 +269,32 @@
    "pas": 40
   },
   {
+   "label": "Daughters of Clayton Durham",
+   "cat": "aid",
+   "orgs": [],
+   "kw": null,
+   "pas": 80,
+   "marks": [
+    [
+     1852,
+     "Gave to the Vigilance Committee's fund for the Christiana prisoners (Frederick Douglass' Paper, Mar. 4, 1852): $10"
+    ]
+   ]
+  },
+  {
+   "label": "United Daughters of St. Mark",
+   "cat": "aid",
+   "orgs": [],
+   "kw": null,
+   "pas": 47,
+   "marks": [
+    [
+     1852,
+     "Gave to the Vigilance Committee's fund for the Christiana prisoners (Frederick Douglass' Paper, Mar. 4, 1852): $5"
+    ]
+   ]
+  },
+  {
    "label": "Female Granville Society",
    "cat": "aid",
    "orgs": [
@@ -288,7 +320,13 @@
     "Hope Grand Union, Daughters of Temperance"
    ],
    "kw": "Hope Grand Union",
-   "pas": null
+   "pas": null,
+   "marks": [
+    [
+     1852,
+     "Gave to the Vigilance Committee's fund for the Christiana prisoners (Frederick Douglass' Paper, Mar. 4, 1852): 'Grand Union Daughters of Temperance', $2.50"
+    ]
+   ]
   },
   {
    "label": "Grand United Order of Love and Charity",
@@ -430,13 +468,7 @@
     "Special Vigilance Committee (1851)"
    ],
    "kw": null,
-   "pas": null,
-   "marks": [
-    [
-     1852,
-     "Report in Frederick Douglass' Paper (Mar. 4, 1852): support for the people jailed after the Christiana resistance"
-    ]
-   ]
+   "pas": null
   },
   {
    "label": "Vigilance Committee (1852)",
