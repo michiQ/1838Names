@@ -180,9 +180,13 @@
   "keep": "Wears, Isaiah C.",
   "aliases": [
    "Wear, Isaiah C",
-   "Isaiah C. Wear"
+   "Isaiah C. Wear",
+   {
+    "name": "J. C. Wears",
+    "source": "newspaper"
+   }
   ],
-  "note": "Wears, Isaiah C. (Winch) = Wear, Isaiah C (census) = Isaiah C. Wear (newspaper). Same name modulo trailing 's' and first/last order; Isaiah C. Wears is the well-documented Philadelphia activist. Winch+census pair confirmed by Michiko 2026-07-09; newspaper inversion included as the identical name."
+  "note": "Wears, Isaiah C. (Winch) = Wear, Isaiah C (census) = Isaiah C. Wear (newspaper). Same name modulo trailing 's' and first/last order; Isaiah C. Wears is the well-documented Philadelphia activist. Winch+census pair confirmed by Michiko 2026-07-09; newspaper inversion included as the identical name. 'J. C. Wears' (SCSA president, CR April 1862) added Run #79 per the Run #78 ruling (I/J identical in this type)."
  },
  {
   "keep": "Bell, Philip A.",
@@ -1051,9 +1055,13 @@
     "name": "Rev. Richard Robertson",
     "source": "newspaper"
    },
-   "Rev. Richard Robinson"
+   "Rev. Richard Robinson",
+   {
+    "name": "R. Roberson",
+    "source": "newspaper"
+   }
   ],
-  "note": "Rev. Richard Robinson -- AME minister. Confirmed by Michiko 2026-08-19: the 'Rev. Richard Robertson' printed as chairman (and 'Rev. Mr. Robertson', concluding remarks) of the Rt. Rev. Richard Allen anniversary at Bethel Church (Feb 4 1856, CR_1856-03-04 p2) IS Rev. Richard Robinson; the Christian Recorder's print/typesetting reads Robertson (image-verified) but the man is Robinson. Kept on the census record ROBINSON, RICHARD (1838 PAS census). The 'Rev. Richard Robinson' plain alias future-proofs correctly-spelled newspaper matches. Deliberately does NOT touch winch Robertson D./George/Ishmael-or-Israel/John (no Richard among them)."
+  "note": "Rev. Richard Robinson -- AME minister. Confirmed by Michiko 2026-08-19: the 'Rev. Richard Robertson' printed as chairman (and 'Rev. Mr. Robertson', concluding remarks) of the Rt. Rev. Richard Allen anniversary at Bethel Church (Feb 4 1856, CR_1856-03-04 p2) IS Rev. Richard Robinson; the Christian Recorder's print/typesetting reads Robertson (image-verified) but the man is Robinson. Kept on the census record ROBINSON, RICHARD (1838 PAS census). The 'Rev. Richard Robinson' plain alias future-proofs correctly-spelled newspaper matches. Deliberately does NOT touch winch Robertson D./George/Ishmael-or-Israel/John (no Richard among them). 'R. Roberson' (Frankford, 1862 appointments) added Run #79."
  },
  {
   "keep": "Crippen, Abraham",
@@ -1450,5 +1458,57 @@
    }
   ],
   "note": "Harriet Jacobs (Linda Brent), author of Incidents in the Life of a Slave Girl (Boston, 1861): the blog record (freedom seeker at Jeremiah Durham's house, spring 1842) = 'Mrs. Jacobs, of New York' selling 'Linda' at No. 107 North Fifth St. (Christian Recorder, Jan. 11, 1862, p. 2). Michiko 2026-11-01: yes, link it."
+ },
+ {
+  "keep": {
+   "id": 555,
+   "name": "Catto, Octavius V."
+  },
+  "aliases": [
+   {
+    "name": "Octave Catto",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Octave Catto (ICY 1862 commencement eulogy, as printed) = Octavius V. Catto. Run #79."
+ },
+ {
+  "keep": {
+   "id": 172,
+   "name": "Bassett, Ebenezer D."
+  },
+  "aliases": [
+   {
+    "name": "E. Bassett",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Prof. E. Bassett, ICY principal 1862 = Ebenezer D. Bassett. Run #79."
+ },
+ {
+  "keep": {
+   "name": "William Paul Quinn",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "W. Paul Quinn",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Bishop W. Paul Quinn = William Paul Quinn. Run #79."
+ },
+ {
+  "keep": {
+   "name": "W. D. W. Schureman",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "W. D. Schureman",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Rev. W. D. Schureman (assistant secretary, 1862 Philadelphia Conference) = W. D. W. Schureman. Run #79."
  }
 ]

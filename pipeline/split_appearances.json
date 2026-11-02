@@ -58,6 +58,68 @@
       "issue_like": "CR_186%",
       "to_id": 1136,
       "note": "1860s Christian Recorder items printed 'Jonathan C. Gibbs' are the son, Rev. Jonathan C. Gibbs (Winch id 1136, stable). Needed once the father's record became 'Gibbs, Jonathan C. Sr.' (2026-11-01)."
+    },
+    {
+      "from_name": "Moore, Wm.",
+      "from_source": "1820directory",
+      "context_prefix": "",
+      "issue_like": "CR_1862%",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "Rev. William Moore (A.M.E., Trenton; Book Concern president 1862) is not the 1820 city-directory Wm. Moore. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "Still, Wm. sawyer",
+      "from_source": "1820directory",
+      "context_prefix": "",
+      "issue_like": "CR_1862%",
+      "to_id": 2497,
+      "note": "Wm. Still, corresponding secretary of the Social, Civil and Statistical Association (1862), is William Still (Winch), not the 1820 directory sawyer. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "DAVIS, HENRY",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862%",
+      "to_name": "H. Davis",
+      "to_source": "newspaper",
+      "note": "Rev. Henry Davis of Union A.M.E. Church: a common name, not tied to the census householder. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "EMMONS, DANIEL",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862%",
+      "new_name": "Daniel Emmons (Bristol, Bucks County)",
+      "new_source": "newspaper",
+      "note": "Witness in a Bucks County certificate (Bristol); out of town, not the census householder. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "Frisby, James",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862%",
+      "new_name": "James Frisby (Burlington)",
+      "new_source": "newspaper",
+      "note": "Preached Mrs. Schureman's funeral at Burlington, N.J.; out of town, not the census householder (as in Run #78). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "Samuel Johnson",
+      "from_source": "newspaper",
+      "context_prefix": "Bucks County",
+      "issue_like": "CR_1862%",
+      "new_name": "Samuel Johnson (Bristol, Bucks County)",
+      "new_source": "newspaper",
+      "note": "The husband named in a Bucks County certificate; a common name, kept apart from the other Samuel Johnson. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "Roberson, Richard",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862%",
+      "to_name": "ROBINSON, RICHARD",
+      "to_source": "census",
+      "note": "Rev. Richard Roberson of Frankford = Rev. Richard Robinson (Michiko's ruling; record ROBINSON, RICHARD). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
     }
   ],
   "renames": [

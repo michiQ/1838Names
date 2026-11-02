@@ -612,6 +612,18 @@
     0.295
    ],
    "check": "Boarding & Lodging, Eliza Johnson, col 1 top; print reads House No. 28 Elizabeth St (summary says 24) [VERIFY]"
+  },
+  {
+   "issue": "CR_1862-05-24",
+   "page": 3,
+   "headline": "Thomas Charnock, General Furnishing Undertaker (advertisement)",
+   "box": [
+    0.428,
+    0.377,
+    0.584,
+    0.431
+   ],
+   "check": "Run #79: Charnock ad, col 4, under ADVERTISEMENTS; checked by eye"
   }
  ]
 }
