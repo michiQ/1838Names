@@ -1174,3 +1174,4 @@ PROD PROMOTE, 2026-11-01 (10th). Promoted staging 34ec4e0 (Timelines in the prot
   Peterson, Daniel); Hinton dressing-room ad FJ 1827-10-12 is on p3; Shippard school ad FJ 1828-05-30 is on p6; John Roberts at
   25 Currant-alley (not 95). Open: Eliza Johnson No. 24 or 28 Elizabeth St [VERIFY]; Burris concert 'Sixth' or 'Ninth' street;
   Allmond 1027 Rodman faint.
+PROD PROMOTE, 2026-11-01 (11th). Promoted staging f260880 (Business ads page, deep links, source corrections) to production. Michiko authorized in chat and gave the prod-push password (not stored). No PAT. commit-tree <staging tree e5b48e7> -p 5f74f1e -> 76fb1fa; pushed 5f74f1e..76fb1fa. VERIFIED: prod tree == staging tree e5b48e7.
