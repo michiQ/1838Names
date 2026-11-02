@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, 1862 Q1 (January 4 - March 29, 1862)
+# Extraction brief: Christian Recorder, 1862 Q2 (April 5 - June 28, 1862)
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,13 +7,14 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr1862q1)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr1862q2)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
   higher resolution: render a crop from the source PDF instead. Frame numbers: issue k (0-based
-  in date order 01-04 ... 03-29): ALWAYS look the frame up in S/jobs.txt ('frame:slug:page'). Frame 1 and frame 42 are
-  small cards, not pages, so frame = page + 1 up to the March 8 issue and page + 2 after it. Recipe (crop by fractions of the paper area; adjust to taste):
+  in date order 04-05 ... 06-28): ALWAYS look the frame up in S/jobs.txt ('frame:slug:page'). Frame 9 and frame 42 are
+  small library cards, not pages (frame 9: 'No. 16, April 19 (correct date) should be serially No. 15'; frame 42: 'No. 24
+  first sheet missing'). So the June 14 issue has ONLY pages 3 and 4 (frames 43, 44); its pages 1-2 do not survive. Recipe (crop by fractions of the paper area; adjust to taste):
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
@@ -75,7 +76,7 @@ Philadelphia-focused deep read:
   ("W. T. Jones"). Expand nothing you cannot see; do not normalize spellings.
 - Dates ISO (yyyy-mm-dd) when the date of the event is stated or computable; else omit `date`.
 
-## Already captured in Runs #74-#77 (all of 1861) -- do NOT re-enter unless changed
+## Already captured in Runs #74-#78 (1861 and Jan-Mar 1862) -- do NOT re-enter unless changed
 Recurring: Book Depository of the AME Church (619 Pine; E. Weaver); city carriers James Wiggins & W. T. Jones; Ellis J. Peer's
 Fine Cake Bakery (South St.); Mrs. H. S. Duterte, undertaker (634 Lombard); Thomas W. Allmond, furnishing undertaker (1027
 Rodman); A. Burris, teacher of vocal music; teachers of the piano; Daughters of Cornish Society standing notice; Nazrey's
@@ -84,20 +85,23 @@ notice; Miss Mary Still's school, Clarksborough; hymn-book and carrier notices; 
 appointments; Wm. Still, coal and stoves (107 N. Fifth); Mrs. E. A. Palmer, trimmings (N. Fifth); the Grand United Order
 of Brothers and Sisters of Love and Charity officer list; the Rev. Willis Nazrey Society meeting notice (Aaron Bell, president);
 the Daughters of Cornish notice (now with a secretary); Mrs. Jane Johnson and Mrs. Ann Ware, laying out the dead
-(641 Lombard); the United Beneficial Sisters of Rev. J. Woodlin Society notice. Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
+(641 Lombard); the United Beneficial Sisters of Rev. J. Woodlin Society notice. From Jan-Mar 1862: Joseph H. Cole's Continental Restaurant
+(717 Lombard); Mrs. S. Shorter Hawkins (615 Lombard); Mrs. Rebecca O'Donnell, china and glass (South St.); Mrs. E. A. Palmer's
+Dry Goods and Trimmings (105 N. Fifth); 'Good News' cutting system (Wm. Bradley; Mrs. Mary C. Weaver); 'Wanted, charge of a
+Public School' (J. W. A., 1641 Helmuth St.); Harriet Jacobs's 'Linda' for sale at 107 N. Fifth; the Dorcas Society of Bethel
+officers; the Philadelphia Grand Lodge installation roster. Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
 Getz, Dean, Metz, Elkinton, Rothermel (coal), insurance, railroads, patent medicines. NEW Black-owned ads or changed notices
 SHOULD be entered. Quarterly-meeting schedules: one short article per notice, link only named preachers/officers.
 
 ## Watch for in this quarter
-- Winter society season: Banneker Institute lectures and debates, ICY lectures and the ICY Alumni Association, Library
-  Company of Colored Persons, Social, Civil and Statistical Association; society anniversaries and elections (officer
-  lists whole). January 1 (Emancipation Day) observances.
-- Church affairs: watch-night and New Year services, revivals and protracted meetings, church fairs and festivals, the
-  run-up to the 1862 Philadelphia Annual Conference (spring), Bishop Nazrey's Canada (B.M.E.) question.
-- The war: contraband and freedpeople relief, enlistment talk, letters from Black Philadelphians in the South.
-- NEW or changed Black-owned ads (Mrs. E. A. Palmer now advertises 'Dry Goods and Trimmings'; an Edwin A. Hughes,
-  undertaker, appears; enter changed ads once with the new details).
-- Marriages and deaths of Philadelphians, with officiating ministers.
+- The 1862 PHILADELPHIA ANNUAL CONFERENCE (spring): proceedings, committees, ordinations and the full list of pastoral
+  appointments. If an appointments roster appears, capture it whole (station -> preacher) as one event; link the preachers.
+- Emancipation in the District of Columbia (April 16, 1862) and any Philadelphia meetings or celebrations about it;
+  contraband and freedpeople relief (Port Royal), the Social, Civil and Statistical Association, enlistment talk.
+- Spring society season: Banneker Institute, ICY examinations and commencement and the ICY Alumni Association, the
+  Library Company of Colored Persons; society anniversaries and elections (officer lists whole), e.g. the Daughters of
+  Hope Grand Union (Temperance) anniversary; Sabbath-school anniversaries and festivals; church fairs.
+- NEW or changed Black-owned ads; marriages and deaths of Philadelphians, with officiating ministers.
 
 ## Known identities (record names as printed; mention the identification in `notes`)
 - "Robertson" / "Father Robertson" (Bristol, Frankford circuits): the owner has ruled that the
@@ -110,6 +114,9 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
 - Subscriber lists from New Jersey / Bucks / Chester County circuits: list them in the event description; link only
   names that are clearly read AND not extremely common (skip linking e.g. "Mary Jones", "John Smith").
 - S. Morgan Smith = Rev. Stephen Smith (record as printed). "Mrs. Laws" / "Ann Lawe" = the Publication Society president.
+- LAWS FAMILY (owner's rulings, Nov 2026): Mrs. Anna Laws (wife of John Laws; mother of Rev. William J. Laws) is NOT
+  Stephen Laws's daughter Anna. The early Stephen Laws (1820 city directory) is a separate man from the later Stephen Laws.
+  Record every Laws exactly as printed and put any identification in `notes` only.
   "Mrs. Bunday"/"Mrs. Bundy" = Hope Grand Union. "James F. Needham" is the SON (James Fields Needham); plain "James
   Needham" of the 1830s-40s is the father. O. V. Catto, S. M. Douglass, A. C. Crippen, Prof. Bassett: record as printed.
 - Mary Still of Clarksborough / Allentown N.J.: do NOT describe her as William Still's sister (no citation).
