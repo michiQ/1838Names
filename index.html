@@ -234,7 +234,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
   <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a>
-  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-02 14:20</span>
+  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-02 14:28</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -493,7 +493,9 @@ function renderList(q){
         p._blob = parts.join(' ').toLowerCase();
       }
       return p._blob;};
-    const nameHit = p=>p.name.toLowerCase().includes(q)||(p.aka||'').toLowerCase().includes(q);
+    // order-insensitive name match (2026-11-02): 'Catharine Williams' also finds 'Williams, Catharine'
+    const qt = q.split(/[\s,.]+/).filter(Boolean);
+    const nameHit = p=>{ const n=(p.name+' '+(p.aka||'')).toLowerCase(); return n.includes(q) || (qt.length>1 && qt.every(t=>n.includes(t))); };
     const deep = q.length>=3;
     let rows = sorted.filter(p=>pass(p)&&(nameHit(p)||(deep&&blob(p).includes(q))));
     if(deep && q) rows = [...rows.filter(nameHit), ...rows.filter(p=>!nameHit(p))];

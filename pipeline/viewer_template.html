@@ -493,7 +493,9 @@ function renderList(q){
         p._blob = parts.join(' ').toLowerCase();
       }
       return p._blob;};
-    const nameHit = p=>p.name.toLowerCase().includes(q)||(p.aka||'').toLowerCase().includes(q);
+    // order-insensitive name match (2026-11-02): 'Catharine Williams' also finds 'Williams, Catharine'
+    const qt = q.split(/[\s,.]+/).filter(Boolean);
+    const nameHit = p=>{ const n=(p.name+' '+(p.aka||'')).toLowerCase(); return n.includes(q) || (qt.length>1 && qt.every(t=>n.includes(t))); };
     const deep = q.length>=3;
     let rows = sorted.filter(p=>pass(p)&&(nameHit(p)||(deep&&blob(p).includes(q))));
     if(deep && q) rows = [...rows.filter(nameHit), ...rows.filter(p=>!nameHit(p))];
