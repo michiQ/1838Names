@@ -120,6 +120,14 @@
       "to_name": "ROBINSON, RICHARD",
       "to_source": "census",
       "note": "Rev. Richard Roberson of Frankford = Rev. Richard Robinson (Michiko's ruling; record ROBINSON, RICHARD). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+    },
+    {
+      "from_name": "Williams, Catharine",
+      "from_source": "census",
+      "context_prefix": "Cayenne pepper outrage at Bethel",
+      "new_name": "Catharine Williams (died at Bethel Church, 1825)",
+      "new_source": "newspaper",
+      "note": "Killed in the crush at Bethel Church, Nov. 20, 1825 (U.S. Gazette, Nov. 22, 1825); cannot be the census householder of the same name. Clippings run, 2026-11-02."
     }
   ],
   "renames": [

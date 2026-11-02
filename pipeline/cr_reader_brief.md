@@ -119,7 +119,7 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
   Record every Laws exactly as printed and put any identification in `notes` only.
   "Mrs. Bunday"/"Mrs. Bundy" = Hope Grand Union. "James F. Needham" is the SON (James Fields Needham); plain "James
   Needham" of the 1830s-40s is the father. O. V. Catto, S. M. Douglass, A. C. Crippen, Prof. Bassett: record as printed.
-- Mary Still of Clarksborough / Allentown N.J.: do NOT describe her as William Still's sister (no citation).
+- Miss Mary Still (Allentown / Clarksborough near Mount Holly N.J.; the Recorder's Philadelphia canvasser from June 1862) is William Still's sister (owner's ruling, Nov 2026); record her as printed.
 - Rev. Jonathan C. Gibbs (born 1821; Presbyterian, First African Presbyterian) is the SON. His father, Jonathan C. Gibbs Sr.,
   died in 1831: any 1860s Gibbs is the son.
 - Rev. Walter Proctor died Dec. 10, 1861; Elisha Weaver resumed as editor in Dec. 1861 after A. L. Stanford resigned.
