@@ -196,6 +196,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tldetail h2{font-weight:normal;font-family:"Libre Caslon Display","Libre Caslon Text",Georgia,serif;font-size:28px;line-height:1.1}
 #tldetail .meta{font:12px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim)}
 #tldetail .note{max-width:80ch;font-size:14px}
+#tldetail .note a{color:var(--gold);word-break:break-word}
 #tldetail .pas{border:1px solid var(--line);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
 #tldetail .pash{font-size:13px;color:var(--gold)}
 #tldetail .pash a{color:var(--gold)}
@@ -1648,7 +1649,7 @@ syncFab();
       ${f?`<div class="pasf">Note in the report: ${e(f)}</div>`:''}${l.pasNote?`<div class="pasf">${e(l.pasNote)}</div>`:''}</div>`;
     }
     if(l.marks) h+=`<div class="yrs">${l.marks.map(m=>`<div class="yr"><h3>${m[0]}</h3><p class="note">${e(m[1])}</p></div>`).join('')}</div>`;
-    if(l.note) h+=`<p class="note">${e(l.note)}</p>`;
+    if(l.note) h+=`<p class="note">${typeof linkify==='function'?linkify(e(l.note)):e(l.note)}</p>`;
     const org=(DATA.orgs||[]).find(o=>o.name===l.name)||null;
     h+=`<div class="yrs${Object.keys(by).length===1?' single':''}">`;
     Object.keys(by).sort().forEach(y=>{
