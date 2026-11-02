@@ -430,6 +430,12 @@ if has_table("mobstats_people"):
 # profiles ("Connected to") and added as a strong map link.
 for lk in json.load(open(os.path.join(os.path.dirname(TPL), "person_links.json"), encoding="utf-8"))["links"]:
     a, b2 = lk["a"], lk["b"]
+    # an end may be {"name","source"} for non-Winch records whose ids shift between rebuilds (2026-11-02)
+    def _res(x):
+        if isinstance(x, dict):
+            return next((pid for pid, p in people.items() if p["name"] == x["name"] and p["src"] == x["source"]), None)
+        return x
+    a, b2 = _res(a), _res(b2)
     if a in people and b2 in people:
         people[a].setdefault("links", []).append({"p": b2, "n": lk.get("note", "")})
         people[b2].setdefault("links", []).append({"p": a, "n": lk.get("note", "")})
