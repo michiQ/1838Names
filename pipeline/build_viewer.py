@@ -486,5 +486,10 @@ _fm = open(_fm_path, encoding="utf-8").read().strip() if os.path.exists(_fm_path
 html = html.replace("/*__FULLMAP__*/null", _fm or "null")
 html = html.replace("__BUILD__", datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
 open(OUT, "w", encoding="utf-8").write(html)
+# Business ads page (ads.html), regenerated with every build so its person links stay current
+try:
+    import build_ads; build_ads.main()
+except FileNotFoundError as _e:
+    print("   ads page skipped:", _e)
 print("people:", len(people), "events:", len(events), "articles:", len(articles),
       "edges:", len(edges), "html bytes:", len(html))
