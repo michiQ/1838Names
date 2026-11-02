@@ -57,11 +57,17 @@
   {
    "issue": "FJ_1827-04-20",
    "page": 4,
-   "headline": "Cheap Clothing Store, No. 218 South Sixth-street, Philadelphia (Asa B. Peterson)",
+   "headline": "Cheap Clothing Store, No. 218 South Sixth-street, Philadelphia (Daniel Peterson)",
    "author": null,
    "type": "advertisement",
-   "summary": "Advertisement of Asa B. Peterson's Cheap Clothing Store at No. 218 South Sixth-street, Philadelphia: a large assortment of gentlemen's ready-made wearing apparel, new and second-handed, with tailoring carried on in its various branches 'on the cheapest terms.' A recurring Philadelphia advertisement in Freedom's Journal.",
-   "notes": "Philadelphia Black business advertising in the New York paper -- evidence of the paper's Philadelphia readership alongside agent Francis Webb."
+   "summary": "Advertisement of Daniel Peterson's Cheap Clothing Store at No. 218 South Sixth-street, Philadelphia: a large assortment of gentlemen's ready-made wearing apparel, new and second-handed, with tailoring carried on in its various branches 'on the cheapest terms.' A recurring Philadelphia advertisement in Freedom's Journal.",
+   "notes": "Philadelphia Black business advertising in the New York paper -- evidence of the paper's Philadelphia readership alongside agent Francis Webb.",
+   "people": [
+    [
+     "Daniel Peterson",
+     "proprietor, Cheap Clothing Store, 218 South Sixth Street"
+    ]
+   ]
   },
   {
    "issue": "FJ_1827-04-20",
@@ -271,21 +277,66 @@
    "location": "African meeting-house, Albany, N.Y.",
    "description": "Meeting of the people of colour of Albany to consider celebrating the July 4, 1827 abolition of slavery in New York State; resolved to celebrate on the 5th of July (since the 4th is the white citizens' Independence Day) and appointed a committee of arrangement of twelve.",
    "attendees": [
-    ["Benjamin Lattimore Sen.", "Chairman"],
-    ["Anthony Olcott", "Secretary; committee of arrangement"],
-    ["Nathaniel Paul", "Rev., delivered the opening address"],
-    ["Lewis Topp", "his son moved the first resolution"],
-    ["Benjamin Lattimore Jr.", "moved the committee resolution; committee of arrangement"],
-    ["Adam Blake", "committee of arrangement"],
-    ["Thomas Alcott", "committee of arrangement"],
-    ["Richard Thompson", "committee of arrangement"],
-    ["William Hyres", "committee of arrangement"],
-    ["Robert Harrison", "committee of arrangement"],
-    ["John Jackson", "committee of arrangement"],
-    ["Asher Root", "committee of arrangement"],
-    ["Daniel Maynard", "committee of arrangement"],
-    ["Peter Hallenbeck", "committee of arrangement"],
-    ["Henry Jackson", "committee of arrangement"]
+    [
+     "Benjamin Lattimore Sen.",
+     "Chairman"
+    ],
+    [
+     "Anthony Olcott",
+     "Secretary; committee of arrangement"
+    ],
+    [
+     "Nathaniel Paul",
+     "Rev., delivered the opening address"
+    ],
+    [
+     "Lewis Topp",
+     "his son moved the first resolution"
+    ],
+    [
+     "Benjamin Lattimore Jr.",
+     "moved the committee resolution; committee of arrangement"
+    ],
+    [
+     "Adam Blake",
+     "committee of arrangement"
+    ],
+    [
+     "Thomas Alcott",
+     "committee of arrangement"
+    ],
+    [
+     "Richard Thompson",
+     "committee of arrangement"
+    ],
+    [
+     "William Hyres",
+     "committee of arrangement"
+    ],
+    [
+     "Robert Harrison",
+     "committee of arrangement"
+    ],
+    [
+     "John Jackson",
+     "committee of arrangement"
+    ],
+    [
+     "Asher Root",
+     "committee of arrangement"
+    ],
+    [
+     "Daniel Maynard",
+     "committee of arrangement"
+    ],
+    [
+     "Peter Hallenbeck",
+     "committee of arrangement"
+    ],
+    [
+     "Henry Jackson",
+     "committee of arrangement"
+    ]
    ]
   },
   {
@@ -296,10 +347,22 @@
    "location": "North Church, New Haven, Conn.",
    "description": "Public meeting of the African Improvement Society of New-Haven 'on Friday evening last' with a large collection of citizens; resolution of united patronage unanimously adopted. Date approximate (the Friday preceding the April 20 issue, as reprinted from the Connecticut Journal).",
    "attendees": [
-    ["S. S. Jocelyn", "Rev., addressed the meeting"],
-    ["Silliman", "Prof., addressed the meeting"],
-    ["N. W. Taylor", "Prof., addressed the meeting"],
-    ["T. Dwight", "addressed the meeting"]
+    [
+     "S. S. Jocelyn",
+     "Rev., addressed the meeting"
+    ],
+    [
+     "Silliman",
+     "Prof., addressed the meeting"
+    ],
+    [
+     "N. W. Taylor",
+     "Prof., addressed the meeting"
+    ],
+    [
+     "T. Dwight",
+     "addressed the meeting"
+    ]
    ]
   },
   {
@@ -310,15 +373,42 @@
    "location": "Mutual Relief Hall, 44 Orange-street, New York",
    "description": "Very large and respectable general meeting to plan the commemoration of the abolition of domestic slavery in New York State: resolved to celebrate July 4, 1827 as a Jubilee of emancipation, with church services and an oration but no public street processions; a committee of seven was nominated by the chair (its membership printed in the May 4 issue via T. L. Jinnings' correction letter). Called by a committee of William Hamilton, Thomas L. Jennings, and Peter Bane (notice in the April 20 issue).",
    "attendees": [
-    ["William Hamilton", "Chairman; member of the calling committee"],
-    ["Thomas L. Jinnings", "Secretary; committee of seven; member of the calling committee"],
-    ["Peter Bane", "member of the calling committee"],
-    ["John Marander", "committee of seven"],
-    ["Thomas Sipkins", "committee of seven"],
-    ["Soup Robertson", "committee of seven (OCR of given name uncertain)"],
-    ["William Miller", "committee of seven"],
-    ["Henry Scott", "committee of seven"],
-    ["Moses Blue", "committee of seven"]
+    [
+     "William Hamilton",
+     "Chairman; member of the calling committee"
+    ],
+    [
+     "Thomas L. Jinnings",
+     "Secretary; committee of seven; member of the calling committee"
+    ],
+    [
+     "Peter Bane",
+     "member of the calling committee"
+    ],
+    [
+     "John Marander",
+     "committee of seven"
+    ],
+    [
+     "Thomas Sipkins",
+     "committee of seven"
+    ],
+    [
+     "Soup Robertson",
+     "committee of seven (OCR of given name uncertain)"
+    ],
+    [
+     "William Miller",
+     "committee of seven"
+    ],
+    [
+     "Henry Scott",
+     "committee of seven"
+    ],
+    [
+     "Moses Blue",
+     "committee of seven"
+    ]
    ]
   },
   {
@@ -329,7 +419,10 @@
    "location": "No. 136 Mulberry-street (between Hester and Grand, opposite the African Free School), New York",
    "description": "Consecration of the house designed for the use of the African Free Methodist Society, at 2 o'clock P.M. on the Lord's Day, with a sermon by Rev. William Quinn.",
    "attendees": [
-    ["William Quinn", "Rev., preached the consecration sermon"]
+    [
+     "William Quinn",
+     "Rev., preached the consecration sermon"
+    ]
    ]
   },
   {
@@ -340,9 +433,18 @@
    "location": "Philadelphia",
    "description": "Marriage in Philadelphia of Mr. Nathaniel Adams of Washington, D.C., to Miss Anne Allen, youngest daughter of the Rt. Rev. Richard Allen, Bishop of the African Methodist Episcopal Church.",
    "attendees": [
-    ["Nathaniel Adams", "groom"],
-    ["Anne Allen", "bride"],
-    ["Richard Allen", "Rt. Rev., father of the bride"]
+    [
+     "Nathaniel Adams",
+     "groom"
+    ],
+    [
+     "Anne Allen",
+     "bride"
+    ],
+    [
+     "Richard Allen",
+     "Rt. Rev., father of the bride"
+    ]
    ]
   },
   {
@@ -353,9 +455,18 @@
    "location": "Philadelphia (adjourned meeting at the hall of the Second African Presbyterian congregation)",
    "description": "Organization of a society of respectable people of colour of Philadelphia to raise funds to secure a suitable building and furniture for the reception of coloured youth; adjourned to meet the second Wednesday in May 1827 at 8 P.M. in the hall occupied by the Second African Presbyterian congregation, where Rev. Jeremiah Gloucester was expected to deliver an address on education.",
    "attendees": [
-    ["John Bowers", "President"],
-    ["John Gloucester", "Secretary"],
-    ["Jeremiah Gloucester", "Rev., to deliver the address on education"]
+    [
+     "John Bowers",
+     "President"
+    ],
+    [
+     "John Gloucester",
+     "Secretary"
+    ],
+    [
+     "Jeremiah Gloucester",
+     "Rev., to deliver the address on education"
+    ]
    ]
   }
  ]

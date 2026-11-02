@@ -12,7 +12,7 @@
   },
   {
    "issue": "FJ_1827-10-12",
-   "page": 4,
+   "page": 3,
    "headline": "Business notice: FREDERICK A. HINTON, Gentleman's Dressing-Room",
    "author": null,
    "type": "advertisement",
@@ -52,8 +52,8 @@
    "headline": "Business notice: JOHN ROBERTS, sperm oil dealer",
    "author": null,
    "type": "advertisement",
-   "summary": "John Roberts returns thanks to his patrons and informs the public he keeps a supply of seasonable sperm oil (best summer and winter-strained) at 95 Currant-alley, third door above Locust street, Philadelphia, with a liberal deduction to churches and quantity buyers.",
-   "notes": "Same Philadelphia oil dealer noted in run #29's extractions31.json (there given as '25 Currant-alley' -- OCR variance on the street number; likely the same person/business). Match candidate."
+   "summary": "John Roberts returns thanks to his patrons and informs the public he keeps a supply of seasonable sperm oil (best summer and winter-strained) at 25 Currant-alley, third door above Locust street, Philadelphia, with a liberal deduction to churches and quantity buyers.",
+   "notes": "Same Philadelphia oil dealer as in run #29's extractions31.json. Address checked on the page image 2026-11-01: 25 Currant-alley (an earlier reading of 95 was an OCR error)."
   },
   {
    "issue": "FJ_1827-10-12",
@@ -155,9 +155,18 @@
    "location": "New York (St. Philip's Church)",
    "description": "A concert of sacred music given by the pupils of Mr. Robinson at St. Philip's Church, New York, with the orchestra directed by Mr. F. Johnson (likely Francis 'Frank' Johnson) and Mr. Robinson at the organ. Reviewed at length in the 'Observer No. VI' letter; performances included the duet 'O lovely Peace,' solos 'My Song shall be' and 'Jubal's Lyre.'",
    "attendees": [
-    ["F. Johnson", "orchestra director"],
-    ["Robinson", "music teacher / organist"],
-    ["Observer", "reviewer (pseudonym)"]
+    [
+     "F. Johnson",
+     "orchestra director"
+    ],
+    [
+     "Robinson",
+     "music teacher / organist"
+    ],
+    [
+     "Observer",
+     "reviewer (pseudonym)"
+    ]
    ]
   },
   {
@@ -168,7 +177,10 @@
    "location": "New York (School-Room under St. Philip's Church)",
    "description": "The St. Philip's Church music school, under the direction of Mr. Robinson, announced it is open every Tuesday and Friday evening at 7 o'clock in the school-room under St. Philip's Church; those wishing to join requested to do so without delay. Notice dated Oct. 16, 1827; recurs in the Oct. 26 issue.",
    "attendees": [
-    ["Robinson", "director"]
+    [
+     "Robinson",
+     "director"
+    ]
    ]
   }
  ]

@@ -8,7 +8,7 @@ between rebuilds). Crops are written to ads/<issue>_p<page>_<n>.jpg. Run after b
 (build_viewer calls it at the end).
 """
 import json, os, re, sqlite3, html
-from PIL import Image
+from PIL import Image, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -25,6 +25,7 @@ def nice_date(slug):
 def clean_head(h):
     h = re.sub(r"\s*\((?:advertisements?|advertisement,[^)]*)\)\s*$", "", h, flags=re.I)
     h = re.sub(r"^Business notice:\s*", "", h, flags=re.I)
+    h = re.sub(r"\s+(?:\u2014|--)\s+", ", ", h)   # no em dashes in titles (Michiko's preference)
     return h.strip()
 
 
@@ -55,7 +56,8 @@ def main():
         im = Image.open(os.path.join(ROOT, "pages", f"{iss}_p{pg}.jpg")).convert("L")
         W, H = im.size
         x0, y0, x1, y1 = c["box"]
-        im.crop((int(W * x0), int(H * y0), int(W * x1), int(H * y1))).save(os.path.join(ROOT, fn), "JPEG", quality=85)
+        crop = ImageOps.autocontrast(im.crop((int(W * x0), int(H * y0), int(W * x1), int(H * y1))), cutoff=1)
+        crop.save(os.path.join(ROOT, fn), "JPEG", quality=85)
         ppl, seen = [], set()
         for pid, nm, role in con.execute("""SELECT p.id, p.canonical_name, ap.role FROM appearances ap
                                             JOIN people p ON p.id = ap.person_id WHERE ap.article_id = ?""", (aid,)):

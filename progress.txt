@@ -1164,3 +1164,13 @@ Census datasets imported (1838 PAS census: 3296 households; 1847 SOFAAC: 4284; m
   Manuscript photos NOT published yet (awaiting Michiko's OK).
 PROD PROMOTE, 2026-11-01 (9th). Promoted staging a81f968 (Organization Timelines tab, 1838 PAS beneficial societies, Agricultural and Mechanics Association stock book + photos, Protecting Society / Frank Johnson Guards / Williams Assembly on the timeline, readable description links) to production. Michiko authorized in chat and gave the prod-push password (not stored). No PAT. commit-tree <staging tree 6088946> -p 712ef9a -> 36088b7; pushed 712ef9a..36088b7. VERIFIED: prod tree == staging tree 6088946.
 PROD PROMOTE, 2026-11-01 (10th). Promoted staging 34ec4e0 (Timelines in the prototype's parchment palette) to production. Michiko authorized in chat and gave the prod-push password (not stored). No PAT. commit-tree <staging tree 788c003> -p 36088b7 -> 5f74f1e; pushed 36088b7..5f74f1e. VERIFIED: prod tree == staging tree 788c003.
+
+## 2026-11-01 late evening: Business ads page
+- ads.html (pipeline/build_ads.py + ads_template.html, called at the end of build_viewer): all 51 advertisements as images cropped
+  from the page JPEGs (ads/), boxes in pipeline/ad_crops.json keyed by issue+page+headline; parchment palette; names link to
+  index.html#p<id> (new deep link in the viewer); 'Business ads' link in the viewer header. Crops placed by three parallel readers,
+  each crop checked by eye.
+- Source corrections found while cropping: FJ 1827-04-20 clothing ad is signed DANIEL PETERSON (not Asa B.; now linked to Winch
+  Peterson, Daniel); Hinton dressing-room ad FJ 1827-10-12 is on p3; Shippard school ad FJ 1828-05-30 is on p6; John Roberts at
+  25 Currant-alley (not 95). Open: Eliza Johnson No. 24 or 28 Elizabeth St [VERIFY]; Burris concert 'Sixth' or 'Ninth' street;
+  Allmond 1027 Rodman faint.

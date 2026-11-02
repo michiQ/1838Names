@@ -1,0 +1,617 @@
+{
+ "_doc": "Crop boxes for the business ads page (build_ads.py). box = [x0,y0,x1,y1] as fractions of pages/<issue>_p<page>.jpg. Keyed by issue + page + headline because article ids shift between rebuilds. 'check' = the note from the person who placed the box (2026-11-01). Corrections found while cropping were made in the extraction files: Hinton FJ 1827-10-12 is on p3, Shippard FJ 1828-05-30 on p6, the 1827-04-20 clothing ad is signed Daniel Peterson (not Asa B.), John Roberts is at 25 Currant-alley.",
+ "ads": [
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "Thomas M. Kinnard, Surgeon Dentist (advertisement)",
+   "box": [
+    0.741,
+    0.585,
+    0.95,
+    0.795
+   ],
+   "check": "Kinnard surgeon dentist ad, col 4, name through TERMS MODERATE"
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "J. J. Gould Bias, M.D., Eclectic Physician (advertisement with certificate of cure)",
+   "box": [
+    0.741,
+    0.795,
+    0.95,
+    0.935
+   ],
+   "check": "Bias eclectic physician ad with certificate of cure, col 4, through 'Sandtown, Gloucester county'"
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "Great Attraction! Coal! Coal!! Coal!!! -- Smith, Whipper & Co. (advertisement)",
+   "box": [
+    0.782,
+    0.357,
+    0.99,
+    0.487
+   ],
+   "check": "Great Attraction Coal ad, Smith, Whipper & Co., col 4, through date line Sept. 14, 1854"
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "John Walker's New and Second-hand Clothing Cellar (advertisement)",
+   "box": [
+    0.782,
+    0.485,
+    0.99,
+    0.582
+   ],
+   "check": "John Walker's clothing cellar ad, col 4"
+  },
+  {
+   "issue": "CR_1854-10-18",
+   "page": 1,
+   "headline": "Henry Mackey, Dealer in Real Estate (advertisement)",
+   "box": [
+    0.006,
+    0.431,
+    0.252,
+    0.525
+   ],
+   "check": "Henry Mackey real estate ad, col 1 below advertising terms"
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "headline": "Cupping, Bleeding, Leeching, and Tooth-drawing, by J. J. Clinton (advertisement)",
+   "box": [
+    0.782,
+    0.205,
+    0.99,
+    0.284
+   ],
+   "check": "Clinton cupping/bleeding ad, col 4 top; slightly faint"
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "Smith, Whipper & Co. -- White Ash Coal and Lumber (advertisement)",
+   "box": [
+    0.782,
+    0.182,
+    0.992,
+    0.283
+   ],
+   "check": "Fire! Fire!! Fire!!! white ash coal ad, Smith, Whipper & Co., col 4, through date Jan. 26, 1855"
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "Thomas M. Kinnard, Surgeon Dentist (advertisement)",
+   "box": [
+    0.77,
+    0.583,
+    0.99,
+    0.792
+   ],
+   "check": "Kinnard surgeon dentist ad, col 4"
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "J. J. Gould Bias, M.D., Eclectic Physician (advertisement)",
+   "box": [
+    0.762,
+    0.797,
+    0.99,
+    0.942
+   ],
+   "check": "Bias eclectic physician ad with testimonial, col 4, through Sandtown line"
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "J. J. Clinton -- Cupping, Bleeding, Leeching, and Tooth-drawing (advertisement)",
+   "box": [
+    0.782,
+    0.402,
+    0.992,
+    0.479
+   ],
+   "check": "Clinton cupping/bleeding ad, col 4"
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "Henry Mackey, Dealer in Real Estate (advertisement)",
+   "box": [
+    0.782,
+    0.483,
+    0.992,
+    0.579
+   ],
+   "check": "Henry Mackey real estate ad, col 4"
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "John Walker's New and Second-Hand Clothing Store (advertisement)",
+   "box": [
+    0.782,
+    0.287,
+    0.992,
+    0.398
+   ],
+   "check": "John Walker's clothing store ad, col 4"
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Book Depository of the African M. E. Church (advertisement)",
+   "box": [
+    0.0,
+    0.366,
+    0.143,
+    0.438
+   ],
+   "check": "Book Depository of the African M. E. Church notice, col 1; page torn/darkened at left edge, first letters of lines damaged"
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Fine Cake Bakery, Confectionary and Ice Cream Saloon (advertisement)",
+   "box": [
+    0.562,
+    0.06,
+    0.714,
+    0.112
+   ],
+   "check": "Fine Cake Bakery (Ellis J. Peer) ad, col 5 top under Advertisements heading; faint"
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Teachers of the piano (advertisements)",
+   "box": [
+    0.563,
+    0.597,
+    0.716,
+    0.653
+   ],
+   "check": "Two piano-teacher cards (Miss L. H. Robertson; Miss M. E. Marsall) stacked, col 5"
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 3,
+   "headline": "Mrs. H. S. Duterte, General Undertaker and Furnisher (advertisement)",
+   "box": [
+    0.562,
+    0.105,
+    0.716,
+    0.151
+   ],
+   "check": "Mrs. H. S. Duterte undertaker ad, col 5 near top; faint"
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Thomas W. Allmond, Furnishing Undertaker (advertisement)",
+   "box": [
+    0.562,
+    0.403,
+    0.716,
+    0.441
+   ],
+   "check": "Thomas W. Allmond furnishing undertaker card, col 5; faint, street number hard to read"
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "A. Burris, Teacher of Vocal Music (advertisement)",
+   "box": [
+    0.569,
+    0.943,
+    0.708,
+    0.987
+   ],
+   "check": "A. Burris, Teacher of Vocal Music; bottom of col 5. Faint print, house number unclear."
+  },
+  {
+   "issue": "CR_1861-05-04",
+   "page": 3,
+   "headline": "James Downs, dealer in new and second hand clothing (advertisement)",
+   "box": [
+    0.443,
+    0.781,
+    0.566,
+    0.827
+   ],
+   "check": "James Downs clothing ad, col 4 lower; No 17--3mo date code visible."
+  },
+  {
+   "issue": "CR_1861-07-06",
+   "page": 3,
+   "headline": "Coal, Stoves, &c. (Wm. Still, 107 North Fifth Street)",
+   "box": [
+    0.564,
+    0.798,
+    0.701,
+    0.932
+   ],
+   "check": "Wm. Still Coal, Stoves &c. at 107 North Fifth St, col 5, including the References block."
+  },
+  {
+   "issue": "CR_1861-07-06",
+   "page": 3,
+   "headline": "Mrs. E. A. Palmer, Trimmings, Hosiery, &c.",
+   "box": [
+    0.564,
+    0.932,
+    0.701,
+    0.976
+   ],
+   "check": "Mrs. E. A. Palmer trimmings/hosiery ad directly below the Still ad, col 5; house number faint."
+  },
+  {
+   "issue": "CR_1861-09-14",
+   "page": 4,
+   "headline": "Henry Floyd, Grocer (Fine Groceries for Family Use)",
+   "box": [
+    0.558,
+    0.772,
+    0.695,
+    0.823
+   ],
+   "check": "Henry Floyd, Grocer, under the ADVERTISEMENTS header, col 5."
+  },
+  {
+   "issue": "CR_1861-10-12",
+   "page": 3,
+   "headline": "Wanted: charge of a Public School (advertisement)",
+   "box": [
+    0.298,
+    0.6525,
+    0.435,
+    0.6715
+   ],
+   "check": "Wanted, charge of a Public School, J. W. A., 1641 Helmuth St; small 3-line notice, col 3."
+  },
+  {
+   "issue": "CR_1861-11-16",
+   "page": 3,
+   "headline": "Mrs. Johnson and Mrs. Ware, laying out and shrouding the dead (advertisement)",
+   "box": [
+    0.436,
+    0.495,
+    0.571,
+    0.571
+   ],
+   "check": "Mrs. Johnson and Mrs. Ware, laying out and shrouding the dead, with references and both residences; col 4."
+  },
+  {
+   "issue": "CR_1862-01-11",
+   "page": 3,
+   "headline": "Mrs. E. A. Palmer's Dry Goods and Trimmings Store (advertisement, changed)",
+   "box": [
+    0.434,
+    0.335,
+    0.573,
+    0.402
+   ],
+   "check": "Mrs. E. A. Palmer Dry Goods and Trimmings Store, No. 105 North Fifth St (changed version), col 4. An older Palmer ad also appears at the bottom of col 7."
+  },
+  {
+   "issue": "CR_1862-01-18",
+   "page": 3,
+   "headline": "Mrs. S. Shorter Hawkins (advertisement)",
+   "box": [
+    0.564,
+    0.918,
+    0.701,
+    0.968
+   ],
+   "check": "Mrs. S. Shorter Hawkins, 615 Lombard St, bottom of col 5."
+  },
+  {
+   "issue": "CR_1862-01-25",
+   "page": 3,
+   "headline": "Joseph H. Cole, Continental Restaurant (advertisement)",
+   "box": [
+    0.563,
+    0.797,
+    0.701,
+    0.867
+   ],
+   "check": "Joseph H. Cole, Continental Restaurant, 717 Lombard St, col 5."
+  },
+  {
+   "issue": "CR_1862-02-01",
+   "page": 3,
+   "headline": "Mr. A. Burris and troupe -- grand prize concert, Franklin Hall",
+   "box": [
+    0.564,
+    0.718,
+    0.703,
+    0.75
+   ],
+   "check": "Burris troupe grand prize concert notice, Franklin Hall, col 5 just above the Hawkins ad. Street name in the notice is faint; reading of Sixth vs Ninth is uncertain [VERIFY]."
+  },
+  {
+   "issue": "CR_1862-02-01",
+   "page": 3,
+   "headline": "Wanted -- charge of a Public School",
+   "box": [
+    0.565,
+    0.344,
+    0.705,
+    0.365
+   ],
+   "check": "Wanted, charge of a Public School, J. W. A., 1641 Helmuth St; below the Book Depository ad, col 5."
+  },
+  {
+   "issue": "CR_1862-03-01",
+   "page": 3,
+   "headline": "Mrs. Rebecca O'Donnell, China, Glass and Queensware",
+   "box": [
+    0.567,
+    0.927,
+    0.706,
+    0.966
+   ],
+   "check": "Mrs. Rebecca O'Donnell, China, Glass and Queensware, No. 740 South St; bottom of col 5."
+  },
+  {
+   "issue": "CR_1862-03-01",
+   "page": 3,
+   "headline": "Good News (cutting system; agents wanted)",
+   "box": [
+    0.567,
+    0.447,
+    0.705,
+    0.497
+   ],
+   "check": "Good News cutting-system ad with Local and Travelling Agents Wanted (Wm. Bradley; Mrs. Mary C. Weaver), col 5."
+  },
+  {
+   "issue": "FJ_1827-03-23",
+   "page": 4,
+   "headline": "Land for Sale -- 2,000 acres in New York state offered to colored farmers",
+   "box": [
+    0.499,
+    0.749,
+    0.741,
+    0.973
+   ],
+   "check": "Land for Sale, signed Samuel E. Cornish, New-York March 20, with the N.B. line; col 3 lower."
+  },
+  {
+   "issue": "FJ_1827-04-20",
+   "page": 4,
+   "headline": "Cheap Clothing Store, No. 218 South Sixth-street, Philadelphia (Daniel Peterson)",
+   "box": [
+    0.742,
+    0.054,
+    0.975,
+    0.199
+   ],
+   "check": "Cheap Clothing Store, No. 218 South Sixth-st; top of col 4. The proprietor printed in the ad reads DANIEL PETERSON, not Asa B. Peterson [VERIFY the inventory name]."
+  },
+  {
+   "issue": "FJ_1827-04-20",
+   "page": 4,
+   "headline": "United States' Scouring and Steam Sponging, No. 122 North Third-street, Philadelphia (John H. Smith)",
+   "box": [
+    0.504,
+    0.375,
+    0.731,
+    0.669
+   ],
+   "check": "Beauty and Economy: United States Scouring and Steam Sponging, John H. Smith, No. 122 North Third-st, through April 20 1827 dateline; col 3."
+  },
+  {
+   "issue": "FJ_1827-09-14",
+   "page": 4,
+   "headline": "Business notice: John Roberts, oil dealer",
+   "box": [
+    0.508,
+    0.46,
+    0.752,
+    0.578
+   ],
+   "check": "John Roberts 'Best Summer and Winter-Strained Sperm Oil', col 3, 25 Currant-alley"
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "headline": "Business notice: APPO & SAMMONS, Tailors",
+   "box": [
+    0.742,
+    0.728,
+    0.998,
+    0.818
+   ],
+   "check": "'A Card' Appo & Sammons, Tailors, 64 Walnut St, col 4"
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "headline": "Business notice: FREDERICK A. HINTON, Gentleman's Dressing-Room",
+   "box": [
+    0.742,
+    0.818,
+    0.998,
+    0.902
+   ],
+   "check": "Frederick A. Hinton Gentleman's Dressing-Room, 51 S. Fourth St. NOTE: found on PAGE 3 (col 4, just below Appo & Sammons), not p4 as inventory says; box is relative to FJ_1827-10-12_p3.jpg"
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: DANIEL PETERSON, Cheap Clothing Store",
+   "box": [
+    0.5,
+    0.18,
+    0.746,
+    0.334
+   ],
+   "check": "Cheap Clothing Store, Daniel Peterson, 218 S. Sixth St, col 3"
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: CHARLES SHORT, boarding house",
+   "box": [
+    0.5,
+    0.856,
+    0.746,
+    0.996
+   ],
+   "check": "Union Hotel, Charles Short, 182 S. Sixth St, col 3 bottom; bottom lines slightly faint"
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: JOHN ROBERTS, sperm oil dealer",
+   "box": [
+    0.5,
+    0.732,
+    0.746,
+    0.86
+   ],
+   "check": "John Roberts Sperm Oil, 25 Currant-alley (print reads 25, not 95), col 3"
+  },
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 3,
+   "headline": "Boot & Shoe / Blacking store of W. P. Johnson, 551 Pearl-street, New York",
+   "box": [
+    0.728,
+    0.884,
+    0.998,
+    0.994
+   ],
+   "check": "W. P. Johnson Boots & Shoes / liquid blacking, 551 Pearl St, col 4 bottom"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Boarding and Lodging house for persons of colour — Gracy Jones (Philadelphia)",
+   "box": [
+    0.005,
+    0.751,
+    0.345,
+    0.912
+   ],
+   "check": "Boarding & Lodging, Gracy Jones, No. 8 1/2 S. Fourth St, col 1"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Fresh Goshen Butter — David Ruggles (New York)",
+   "box": [
+    0.318,
+    0.036,
+    0.632,
+    0.152
+   ],
+   "check": "Fresh Goshen Butter, David Ruggles, col 2 top"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Land for sale to coloured farmers — Samuel E. Cornish",
+   "box": [
+    0.645,
+    0.2,
+    0.995,
+    0.556
+   ],
+   "check": "Land for Sale, Samuel E. Cornish, col 3, incl. N.B. line"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Leghorn and straw hat dressing — Mrs. Sarah Johnson (New York)",
+   "box": [
+    0.318,
+    0.148,
+    0.632,
+    0.33
+   ],
+   "check": "Leghorn Bonnets, Mrs. Sarah Johnson, 551 Pearl St, col 2"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "House of Refreshment / oysters — William Parker (New York)",
+   "box": [
+    0.322,
+    0.328,
+    0.64,
+    0.492
+   ],
+   "check": "House of Refreshment / Oysters, William Parker, 445 Broadway, col 2"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 6,
+   "headline": "School for free coloured pupils — Joseph Shippard",
+   "box": [
+    0.355,
+    0.385,
+    0.685,
+    0.81
+   ],
+   "check": "'To Free People of Colour' school, Joseph Shippard, dated Richmond Va. NOTE: found on PAGE 6 (col 2), not p7; box is relative to FJ_1828-05-30_p6.jpg"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 8,
+   "headline": "Boarding house for gentlemen of colour — Richard Johnson (New York)",
+   "box": [
+    0.01,
+    0.636,
+    0.355,
+    0.834
+   ],
+   "check": "Boarding, Richard Johnson, 27 Sullivan St, col 1"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 8,
+   "headline": "Boots, shoes and liquid blacking — W. P. Johnson (New York)",
+   "box": [
+    0.01,
+    0.832,
+    0.355,
+    0.934
+   ],
+   "check": "W. P. Johnson, 551 Pearl St, boots/shoes/blacking, col 1; print somewhat blurred"
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 8,
+   "headline": "G. & R. Draper, coloured tobacco manufacturers (Baltimore)",
+   "box": [
+    0.348,
+    0.04,
+    0.675,
+    0.215
+   ],
+   "check": "G. & R. Draper (Coloured Men), Baltimore tobacco, signed Samuel E. Cornish, col 2 top"
+  },
+  {
+   "issue": "FJ_1828-06-13",
+   "page": 7,
+   "headline": "Boarding and lodging / oysters — Eliza Johnson (New York)",
+   "box": [
+    0.01,
+    0.052,
+    0.345,
+    0.295
+   ],
+   "check": "Boarding & Lodging, Eliza Johnson, col 1 top; print reads House No. 28 Elizabeth St (summary says 24) [VERIFY]"
+  }
+ ]
+}
