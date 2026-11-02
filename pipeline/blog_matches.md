@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 189 linked to existing people, 238 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 478 unique names: 188 linked to existing people, 238 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
