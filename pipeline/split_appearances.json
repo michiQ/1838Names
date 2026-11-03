@@ -146,6 +146,14 @@
       "to_name": "W. Moore",
       "to_source": "newspaper",
       "note": "Rev. William Moore, pastor of Mount Zion A.M.E. Church, Trenton (Grand Harvest Home notice) is the newspaper W. Moore of Run #79, not tied to the Winch AME cleric of the 1830s-40s on a common name. Run #81 link review, 2026-11-03 (CR 1862 Q3)."
+    },
+    {
+      "from_name": "Cropper, Henry",
+      "from_source": "census",
+      "context_prefix": "Frank Johnson Guards",
+      "new_name": "Henry Cropper",
+      "new_source": "newspaper",
+      "note": "Capt. Henry Cropper of the Frank Johnson Guards (1859), 'from Liberia' per the Baltimore Sun: not tied to the census Henry Cropper on a name match alone. 2026-11-03."
     }
   ],
   "renames": [

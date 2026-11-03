@@ -1705,8 +1705,8 @@ syncFab();
     const m=f.match(/^([A-Z]+)_(\d{4}-\d{2}-\d{2})_p(\d+)$/);
     if(m){ const P=(typeof PAPERS!=='undefined'&&PAPERS[m[1]])||m[1]; return P+', '+m[2]+', page '+m[3]; }
     const c=f.match(/^([A-Z]+)_(\d{4}-\d{2}-\d{2})_p(\d+)_/);
-    if(c){ const CP={PI:'Philadelphia Inquirer',USG:'United States Gazette',FDP:"Frederick Douglass' Paper",PF:'Pennsylvania Freeman',FJ:"Freedom's Journal"};
-      const SRC={FDP:' (New York Heritage)',PI:' (Newspapers.com clipping)',USG:' (Newspapers.com clipping)',PF:' (clipped from the scan)',FJ:' (clipped from the scan)'};
+    if(c){ const CP={PI:'Philadelphia Inquirer',USG:'United States Gazette',FDP:"Frederick Douglass' Paper",PF:'Pennsylvania Freeman',FJ:"Freedom's Journal",BS:'Baltimore Sun'};
+      const SRC={FDP:' (New York Heritage)',PI:' (Newspapers.com clipping)',USG:' (Newspapers.com clipping)',BS:' (Newspapers.com clipping)',PF:' (clipped from the scan)',FJ:' (clipped from the scan)'};
       return (CP[c[1]]||c[1])+', '+c[2]+', page '+c[3]+(SRC[c[1]]||''); }
     return f.replace(/_/g,' '); }
   function open(h,push){ img.src=h; nw.href=h; ttl.textContent=label(h); sv.classList.remove('zoom'); sv.classList.add('on'); wrap.scrollTop=0;

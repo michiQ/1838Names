@@ -1,5 +1,5 @@
 {
- "_note": "Newspapers.com clippings found and clipped by Michiko Quinones (1838 Black Metropolis), Nov. 2, 2026: United States Gazette and Philadelphia Inquirer items on Bethel Church, 1817-1827. Transcribed from the clipping images (clippings/); fixed person ids for the 1817 committee where Winch has the man (Francis Perkins: Winch notes his 'Committee of Eleven'). Robert Gordon and James Johnson left in the text only (several Winch men of each name). Newspapers.com image ids in each description. Added 2026-11-03 (Run #81 follow-up): Phila. Inquirer, June 14, 1893, p. 7, Starr Garden condemnation (clipped by 1838 Black Metropolis, Aug 18, 2023).",
+ "_note": "Newspapers.com clippings found and clipped by Michiko Quinones (1838 Black Metropolis), Nov. 2, 2026: United States Gazette and Philadelphia Inquirer items on Bethel Church, 1817-1827. Transcribed from the clipping images (clippings/); fixed person ids for the 1817 committee where Winch has the man (Francis Perkins: Winch notes his 'Committee of Eleven'). Robert Gordon and James Johnson left in the text only (several Winch men of each name). Newspapers.com image ids in each description. Added 2026-11-03 (Run #81 follow-up): Phila. Inquirer, June 14, 1893, p. 7, Starr Garden condemnation (clipped by 1838 Black Metropolis, Aug 18, 2023). Added 2026-11-03: Baltimore Sun, Aug. 18, 1859, p. 4, Frank Johnson Guards parade (clipped by 1838 Black Metropolis, Apr 15, 2026).",
  "articles": [],
  "events": [
   {
@@ -152,6 +152,20 @@
    "location": "Starr Garden, Fifth ward: Sixth to Seventh, Lombard to St. Mary streets, Philadelphia",
    "description": "\"The ordinance to appropriate for park purposes land within the boundaries of Starr Garden, in the Fifth ward, was passed. It is to be located between Sixth and Seventh and Lombard and St. Mary streets. As the city could not reach an agreement with the owners the property will be condemned.\" The owners' refusal to sell was a form of protest against the taking of the block (Michiko Quinones, 1838 Black Metropolis, 2026-11-03). The block held Henrietta Duterte's undertaking business until it was torn down. The Philadelphia Inquirer, Wednesday, June 14, 1893, p. 7 (Councils proceedings). Courtesy Newspapers.com (clipped by 1838 Black Metropolis, Aug 18, 2023). Clipping: clippings/PI_1893-06-14_p7_starr-garden-condemned.jpg (Newspapers.com image 168279626).",
    "attendees": []
+  },
+  {
+   "issue": "",
+   "page": 4,
+   "name": "Frank Johnson Guards -- parade with arms under Capt. Henry Cropper (August 16, 1859)",
+   "date": "1859-08-16",
+   "location": "Philadelphia",
+   "description": "\"Parade of a Colored Military Company. There was a novel military parade in this city yesterday, that of a company composed of colored men, calling themselves the 'Frank Johnson Guards,' under command of Capt. Henry Cropper. The men were equipped in regular military style, with dark blue uniform, frock coats, with shoulder knots, white pants, cap with pompoon and infantry ornaments, belts and cartridge boxes, and were accompanied by martial music. Their captain is from Liberia, and is something of a military man, but the company generally exhibited but little military efficiency. This is their second parade, but not until yesterday did they appear with arms. There is a law of the State confining military organizations to white men, and therefore the parade yesterday creates considerable remark.\" The Baltimore Sun, Thursday, Aug. 18, 1859, p. 4 (Correspondence of the Baltimore Sun, Philadelphia, August 17). Courtesy Newspapers.com (clipped by 1838 Black Metropolis, Apr 15, 2026). Clipping: clippings/BS_1859-08-18_p4_frank-johnson-guards.jpg (Newspapers.com image 372430286).",
+   "attendees": [
+    [
+     "Henry Cropper",
+     "captain; 'from Liberia' (Capt.)"
+    ]
+   ]
   }
  ]
 }
