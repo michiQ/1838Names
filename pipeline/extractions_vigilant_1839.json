@@ -1,5 +1,5 @@
 {
- "_note": "Pennsylvania Freeman, June 20, 1839, p. 2: Vigilant Association officers and financial committee. Found by the vigilance search of Nov 3, 2026 and read from the CRL scan (dds-41242, PDF page 25, left half) at Michiko's request. Samuel Levick kept as text only (ink blot on the second letter; Winch has Levick, Samuel J.).",
+ "_note": "Pennsylvania Freeman, June 20, 1839, p. 2: Vigilant Association officers and financial committee. Found by the vigilance search of Nov 3, 2026 and read from the CRL scan (dds-41242, PDF page 25, left half) at Michiko's request. Samuel Levick kept as text only (ink blot on the second letter; Winch has Levick, Samuel J.). 2026-11-03 later: Levick confirmed and linked (Winch 1707), Ayres linked to Winch 115; the minute book officers and standing committee (HSP Am .3375, pp. 25 and 27, Michiko's images) added as a second event.",
  "articles": [],
  "events": [
   {
@@ -8,7 +8,7 @@
    "name": "Vigilant Association of Philadelphia -- officers elected (May 31, 1839) and financial committee (June 10, 1839)",
    "date": "1839-05-31",
    "location": "Philadelphia",
-   "description": "For the Pennsylvania Freeman. \"At a meeting of the Vigilant Association, held on the 31st of May, the following officers were unanimously elected. Robert Purvis, President. Edwin H. Coats, Vice President. James Needham, Treasurer. Robert B. Ayres, Secretary. Jacob C. White, Agent, And a standing committee of twelve. At a special meeting, held on the 10th of June, Robert Purvis, Edward Needles, Joseph Healy, and Samuel Levick [VERIFY: second letter covered by an ink blot] were chosen as financial committee, and they, together with the agent, Jacob C. White, were empowered to receive and collect donations, and those who feel an interest in the objects of the Association are earnestly desired to leave contributions with either or any of the above named persons. Jacob C. White, Secretary, pro. tem.\" The standing committee of twelve is not named. Pennsylvania Freeman, June 20, 1839, p. 2.",
+   "description": "For the Pennsylvania Freeman. \"At a meeting of the Vigilant Association, held on the 31st of May, the following officers were unanimously elected. Robert Purvis, President. Edwin H. Coats, Vice President. James Needham, Treasurer. Robert B. Ayres, Secretary. Jacob C. White, Agent, And a standing committee of twelve. At a special meeting, held on the 10th of June, Robert Purvis, Edward Needles, Joseph Healy, and Samuel L[e]vick (second letter under an ink blot; the minute book confirms Samuel J. Levick) were chosen as financial committee, and they, together with the agent, Jacob C. White, were empowered to receive and collect donations, and those who feel an interest in the objects of the Association are earnestly desired to leave contributions with either or any of the above named persons. Jacob C. White, Secretary, pro. tem.\" The standing committee of twelve is not named. Pennsylvania Freeman, June 20, 1839, p. 2. Clipping: clippings/PF_1839-06-20_p2_vigilant-association-officers.jpg",
    "attendees": [
     [
      "Robert Purvis",
@@ -26,7 +26,8 @@
     ],
     [
      "Robert B. Ayres",
-     "secretary"
+     "secretary",
+     115
     ],
     [
      "Jacob C. White Sr.",
@@ -40,6 +41,113 @@
      "Joseph Healy",
      "financial committee (June 10)",
      1350
+    ],
+    [
+     "Samuel J. Levick",
+     "financial committee (June 10); printed 'Samuel L[e]vick' under an ink blot, confirmed by the minute book",
+     1707
+    ]
+   ]
+  },
+  {
+   "issue": "",
+   "page": 27,
+   "name": "Vigilant Committee of Philadelphia -- officers, standing committee of twelve and agent (minute book, 1839)",
+   "date": "1839-05-31",
+   "location": "Philadelphia",
+   "description": "Minute book, p. 27: \"Robert Purvis, President; Edwin Coats, Vice President; James Needham, Treasurer; & Robert B. Ayres, Secretary. Standing Committee: James Gibbons, George W. Steward, James J. G. Bias, Joseph Healy, Walter Proctor, Shephard Shay, Stephen H. Gloucester, Westward F. Keeling, Ralph Smith, Samuel Hastings & Daniel Colly, Samuel Levick. Agent, Jacob C. White.\" These are the officers elected May 31, 1839 and the standing committee of twelve that the Pennsylvania Freeman (June 20, 1839) mentions without naming. A roll of the committee with columns for May through February (p. 25; the year is not written on the page, and is taken as 1839-40 from p. 27) lists the same twelve (written Geo. H. Steward, Danl. Colly, J. G. Bias, S. H. Gloucester, Dr. Samuel Hastings, Samuel J. Levick), with Walter Proctor struck through and Rowland Johnson written beside him, and Westward Keeling struck through and Edward Needles written beside him. Source: Vigilant Committee of Philadelphia Records (Am .3375), Leon Gardiner Collection, Historical Society of Pennsylvania. Digitized by 1838 Black Metropolis: https://online.flippingbook.com/view/485219936/26-27/ (p. 27) and https://online.flippingbook.com/view/485219936/24-25/ (p. 25). Minute book, p. 27: manuscripts/VCP_1839/HSP_LGC_VCP_minutes_p27.jpg Minute book, p. 25: manuscripts/VCP_1839/HSP_LGC_VCP_minutes_p25.jpg",
+   "attendees": [
+    [
+     "Robert Purvis",
+     "president",
+     2178
+    ],
+    [
+     "Edwin H. Coates",
+     "vice president (written 'Edwin Coats')"
+    ],
+    [
+     "James Needham",
+     "treasurer",
+     1996
+    ],
+    [
+     "Robert B. Ayres",
+     "secretary",
+     115
+    ],
+    [
+     "James Gibbons",
+     "standing committee",
+     1126
+    ],
+    [
+     "George W. Steward",
+     "standing committee (p. 25: 'Geo. H. Steward')",
+     2491
+    ],
+    [
+     "James J. G. Bias",
+     "standing committee",
+     3026
+    ],
+    [
+     "Joseph Healy",
+     "standing committee",
+     1350
+    ],
+    [
+     "Walter Proctor",
+     "standing committee; struck from the roll, replaced by Rowland Johnson (p. 25)",
+     2155
+    ],
+    [
+     "Shephard Shay",
+     "standing committee",
+     2383
+    ],
+    [
+     "Stephen H. Gloucester",
+     "standing committee",
+     1166
+    ],
+    [
+     "Westward F. Keeling",
+     "standing committee; struck from the roll, replaced by Edward Needles (p. 25)",
+     1638
+    ],
+    [
+     "Ralph Smith",
+     "standing committee",
+     2434
+    ],
+    [
+     "Samuel Hastings",
+     "standing committee ('Dr.' on p. 25)",
+     1339
+    ],
+    [
+     "Daniel Colly",
+     "standing committee",
+     659
+    ],
+    [
+     "Samuel J. Levick",
+     "standing committee",
+     1707
+    ],
+    [
+     "Rowland Johnson",
+     "standing committee, in place of Walter Proctor (p. 25)",
+     1565
+    ],
+    [
+     "Edward Needles",
+     "standing committee, in place of Westward F. Keeling (p. 25)"
+    ],
+    [
+     "Jacob C. White Sr.",
+     "agent (written 'Jacob C. White')"
     ]
    ]
   }
