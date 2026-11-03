@@ -6,7 +6,7 @@
   "CR_1861-01-26 p3 Duterte: 634 Lombard, faint here; OCR of this printing family gives 634 and 631 (left out)",
   "CR_1861-02-09 p3 Allmond: faint here, shown as 1027 because the repeat printings and the Johnson and Ware ad read 1027",
   "CR_1861-02-23 p3 Burris: house number illegible in every printing, North 11th (left out)",
-  "CR_1861-05-04 p3 Downs: looks like 285 here; shown as 225, the clear reading on the May 18 printing and most repeats",
+  "CR_1861-05-04 p3 Downs: looks like 285 here, 225 on the May 18 printing and most repeats (number left out)",
   "CR_1861-07-06 p3 Palmer: house number faint, probably 105 North Fifth (left out)",
   "CR_1861-11-16 p3 Johnson and Ware: Mrs. Jane Johnson's residence, about 616 S. 9th St. (left out)",
   "CR_1862-02-01 p3 Burris concert: Franklin Hall on Sixth or Ninth street (street left out)",
@@ -169,7 +169,7 @@
    "page": 3,
    "headline": "James Downs, dealer in new and second hand clothing (advertisement)",
    "address": [
-    "No. 225 South Second Street, Philadelphia"
+    "South Second Street, Philadelphia"
    ]
   },
   {
