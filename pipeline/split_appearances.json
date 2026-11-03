@@ -137,6 +137,15 @@
       "issue_like": "PF_1838-01-25",
       "to_id": 178,
       "note": "Jan 1838 Musical Fund Hall gallery ejection (Pa. Freeman, Jan 25, 1838) is the father, not the son. Michiko 2026-11-02."
+    },
+    {
+      "from_name": "Moore, William",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1862-08-02",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "Rev. William Moore, pastor of Mount Zion A.M.E. Church, Trenton (Grand Harvest Home notice) is the newspaper W. Moore of Run #79, not tied to the Winch AME cleric of the 1830s-40s on a common name. Run #81 link review, 2026-11-03 (CR 1862 Q3)."
     }
   ],
   "renames": [

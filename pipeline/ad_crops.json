@@ -1,5 +1,5 @@
 {
- "_doc": "Crop boxes for the business ads page (build_ads.py). box = [x0,y0,x1,y1] as fractions of pages/<issue>_p<page>.jpg. Keyed by issue + page + headline because article ids shift between rebuilds. 'check' = the note from the person who placed the box (2026-11-01). Corrections found while cropping were made in the extraction files: Hinton FJ 1827-10-12 is on p3, Shippard FJ 1828-05-30 on p6, the 1827-04-20 clothing ad is signed Daniel Peterson (not Asa B.), John Roberts is at 25 Currant-alley.",
+ "_doc": "Crop boxes for the business ads page (build_ads.py). box = [x0,y0,x1,y1] as fractions of pages/<issue>_p<page>.jpg. Keyed by issue + page + headline because article ids shift between rebuilds. 'check' = the note from the person who placed the box (2026-11-01). Corrections found while cropping were made in the extraction files: Hinton FJ 1827-10-12 is on p3, Shippard FJ 1828-05-30 on p6, the 1827-04-20 clothing ad is signed Daniel Peterson (not Asa B.), John Roberts is at 25 Currant-alley. 'philadelphia': false marks an ad from outside Philadelphia: kept in the database and here, but left off ads.html (Michiko, 2026-11-03: 'only have philadelphia ads').",
  "ads": [
   {
    "issue": "CR_1854-08-17",
@@ -59,7 +59,8 @@
     0.252,
     0.525
    ],
-   "check": "Henry Mackey real estate ad, col 1 below advertising terms"
+   "check": "Henry Mackey real estate ad, col 1 below advertising terms",
+   "philadelphia": false
   },
   {
    "issue": "CR_1854-11-17",
@@ -131,7 +132,8 @@
     0.992,
     0.579
    ],
-   "check": "Henry Mackey real estate ad, col 4"
+   "check": "Henry Mackey real estate ad, col 4",
+   "philadelphia": false
   },
   {
    "issue": "CR_1855-02-01",
@@ -383,7 +385,8 @@
     0.741,
     0.973
    ],
-   "check": "Land for Sale, signed Samuel E. Cornish, New-York March 20, with the N.B. line; col 3 lower."
+   "check": "Land for Sale, signed Samuel E. Cornish, New-York March 20, with the N.B. line; col 3 lower.",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1827-04-20",
@@ -491,7 +494,8 @@
     0.998,
     0.994
    ],
-   "check": "W. P. Johnson Boots & Shoes / liquid blacking, 551 Pearl St, col 4 bottom"
+   "check": "W. P. Johnson Boots & Shoes / liquid blacking, 551 Pearl St, col 4 bottom",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -515,7 +519,8 @@
     0.632,
     0.152
    ],
-   "check": "Fresh Goshen Butter, David Ruggles, col 2 top"
+   "check": "Fresh Goshen Butter, David Ruggles, col 2 top",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -527,7 +532,8 @@
     0.995,
     0.556
    ],
-   "check": "Land for Sale, Samuel E. Cornish, col 3, incl. N.B. line"
+   "check": "Land for Sale, Samuel E. Cornish, col 3, incl. N.B. line",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -539,7 +545,8 @@
     0.632,
     0.33
    ],
-   "check": "Leghorn Bonnets, Mrs. Sarah Johnson, 551 Pearl St, col 2"
+   "check": "Leghorn Bonnets, Mrs. Sarah Johnson, 551 Pearl St, col 2",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -551,7 +558,8 @@
     0.64,
     0.492
    ],
-   "check": "House of Refreshment / Oysters, William Parker, 445 Broadway, col 2"
+   "check": "House of Refreshment / Oysters, William Parker, 445 Broadway, col 2",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -563,7 +571,8 @@
     0.685,
     0.81
    ],
-   "check": "'To Free People of Colour' school, Joseph Shippard, dated Richmond Va. NOTE: found on PAGE 6 (col 2), not p7; box is relative to FJ_1828-05-30_p6.jpg"
+   "check": "'To Free People of Colour' school, Joseph Shippard, dated Richmond Va. NOTE: found on PAGE 6 (col 2), not p7; box is relative to FJ_1828-05-30_p6.jpg",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -575,7 +584,8 @@
     0.355,
     0.834
    ],
-   "check": "Boarding, Richard Johnson, 27 Sullivan St, col 1"
+   "check": "Boarding, Richard Johnson, 27 Sullivan St, col 1",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -587,7 +597,8 @@
     0.355,
     0.934
    ],
-   "check": "W. P. Johnson, 551 Pearl St, boots/shoes/blacking, col 1; print somewhat blurred"
+   "check": "W. P. Johnson, 551 Pearl St, boots/shoes/blacking, col 1; print somewhat blurred",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-05-30",
@@ -599,7 +610,8 @@
     0.675,
     0.215
    ],
-   "check": "G. & R. Draper (Coloured Men), Baltimore tobacco, signed Samuel E. Cornish, col 2 top"
+   "check": "G. & R. Draper (Coloured Men), Baltimore tobacco, signed Samuel E. Cornish, col 2 top",
+   "philadelphia": false
   },
   {
    "issue": "FJ_1828-06-13",
@@ -611,7 +623,8 @@
     0.345,
     0.295
    ],
-   "check": "Boarding & Lodging, Eliza Johnson, col 1 top; print reads House No. 28 Elizabeth St (summary says 24) [VERIFY]"
+   "check": "Boarding & Lodging, Eliza Johnson, col 1 top; print reads House No. 28 Elizabeth St (summary says 24) [VERIFY]",
+   "philadelphia": false
   },
   {
    "issue": "CR_1862-05-24",
@@ -624,6 +637,56 @@
     0.431
    ],
    "check": "Run #79: Charnock ad, col 4, under ADVERTISEMENTS; checked by eye"
+  },
+  {
+   "issue": "CR_1862-07-05",
+   "page": 3,
+   "headline": "Boarding: Banaker House, Cape May (advertisement)",
+   "box": [
+    0.43,
+    0.438,
+    0.572,
+    0.484
+   ],
+   "check": "Run #81: Banaker House boarding ad, col 4, 'BOARDING' through 'Prices very reasonable'; checked by eye",
+   "philadelphia": false
+  },
+  {
+   "issue": "CR_1862-08-02",
+   "page": 3,
+   "headline": "Union Cottage, Atlantic City (advertisement)",
+   "box": [
+    0.29,
+    0.59,
+    0.43,
+    0.645
+   ],
+   "check": "Run #81: Union Cottage ad, col 3 under ADVERTISEMENTS, through 'S. H. Wailes, Proprietress'; checked by eye",
+   "philadelphia": false
+  },
+  {
+   "issue": "CR_1862-09-06",
+   "page": 3,
+   "headline": "Miss Jane Johnson (advertisement)",
+   "box": [
+    0.43,
+    0.648,
+    0.585,
+    0.69
+   ],
+   "check": "Run #81: Jane Johnson card, col 4, name through 'RESIDENCE, 618 South 8th St.'; checked by eye"
+  },
+  {
+   "issue": "CR_1862-09-20",
+   "page": 3,
+   "headline": "Mrs. Martha Collins, infant school (advertisement)",
+   "box": [
+    0.29,
+    0.884,
+    0.445,
+    0.95
+   ],
+   "check": "Run #81: Martha Collins infant school ad, col 3, name through 'give her a trial'; checked by eye"
   }
  ]
 }

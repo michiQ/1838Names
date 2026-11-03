@@ -303,6 +303,13 @@ of each file first (the 1861 NS reel is 7 columns; the quarterlies may be 6). Do
 words/page). Image-verify every masthead and every recorded name (crop from the PDF at 400dpi). Large batches can be
 read by parallel readers given a written brief (Run #74's brief is pipeline/cr_reader_brief.md; its crop helper is pipeline/cr_crop.py -- adjust the scratch paths and the frame map per file); review their
 same-name auto-links after the rebuild -- subscriber lists from NJ/Bucks circuits collide with 1838 census names.
+GETTING THE QUARTERLY PDFs (added 2026-11-03, Run #81; earlier notes never said): the CR quarterlies (~21 MB each) are larger than the
+Google Drive connector's 10 MB download cap, and the cloud workspace's network policy blocks drive.usercontent.google.com and
+archive.org (Run #80 was stopped by this). Run on Michiko's iMac session instead: the files live in her Google Drive for desktop folder
+(connect@1838blackmetropolis.com > My Drive > 1838 Sources and Scholarship > Newspapers > Christian Recorder). device_list_dir shows
+whether a file is cloudOnly; if it is, ask her to mark the folder Available offline. Stage it with device_stage_files into the cloud
+workspace and OCR there. Do not route around a blocked network path.
+Frame maps: Q2 52 frames with cards at 9 and 42; Q3 50 frames, NO cover, cards at 13 ('No. 30 first sheet missing') and 28 ('No. 34').
 
 ## Organizations list (revised 2026-10-31)
 Display-layer only. Sources: Winch notes (ORG_RE), newspaper-mention proximity (ctx_orgs), the ICY roster, and EVENTS. An event adds
@@ -319,6 +326,8 @@ The same file also holds 'renames' (fix a mis-parsed name/aliases/life_dates by 
 wrong record). Rules may target an existing record with to_name + to_source. NEVER key a merge or split on the id of a
 coppin, blog or newspaper record: those loaders re-create records with new ids after a merge; use name + source.
 `pipeline/ad_addresses.json` (added 2026-11-03) holds the address printed in each ad for ads.html, keyed like ad_crops.json; new ads need an entry in both.
+ADS PAGE IS PHILADELPHIA ONLY (Michiko, 2026-11-03): give an out-of-town ad 'philadelphia': false in ad_crops.json (keep its box); build_ads.py
+leaves it off ads.html but it stays in the database. Remove its old crop from ads/ when you mark it.
 `pipeline/person_links.json` holds hand-curated person-to-person connections ('Connected to' on both profiles).
 NO 'VERIFY' IN THE PUBLIC LISTINGS (Michiko, 2026-11-01): keep flagging uncertain readings with [VERIFY] in extraction JSON for
 review, but build_viewer.py strips them from everything the site displays. Do not write VERIFY into curated notes.

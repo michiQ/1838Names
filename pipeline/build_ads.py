@@ -52,6 +52,8 @@ def main():
     out, n_by_page, missing = [], {}, []
     for aid, iss, pg, hl, sm in rows:
         c = boxes.get(key(iss, pg, hl))
+        if c and c.get("philadelphia") is False:
+            continue   # out-of-town ad: kept in the DB, left off the page (Michiko, 2026-11-03)
         if not c or not c.get("box"):
             missing.append(f"{iss} p{pg} {hl}"); continue
         n_by_page[(iss, pg)] = n_by_page.get((iss, pg), 0) + 1
