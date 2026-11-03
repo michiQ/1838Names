@@ -10,6 +10,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Ayres, Mary Ann** (winch, 1 appearances, 1 Winch refs) ↔ **Mary Ayres** (newspaper, 1 appearances)
 - [HIGH] **Ayres, Mary C.** (winch, 1 appearances, 1 Winch refs) ↔ **Mary Ayres** (newspaper, 1 appearances)
 - [HIGH] **Ayres, Robert** (winch, 1 Winch refs) ↔ **Ayres, Robert B** (census, 1 census records)
+- [HIGH] **Ayres, Robert** (winch, 1 Winch refs) ↔ **Robert B. Ayres** (newspaper, 1 appearances)
 - [HIGH] **Ayres, Robert B.** (winch, 1 appearances, 11 Winch refs) ↔ **Robert Ayres** (newspaper, 1 appearances)
 - [HIGH] **Ayres, Robert B** (census, 1 census records) ↔ **Robert Ayres** (newspaper, 1 appearances)
 - [HIGH] **Bailey, Sarah** (winch, 1 Winch refs) ↔ **Bailey, S.** (coppin)
@@ -123,4 +124,3 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Eddy, Joshua P.B.** (winch, 5 appearances, 3 Winch refs) ↔ **Rev. J. P. B. Eddy** (newspaper, 1 appearances)
 - [HIGH] **Eddy, Joshua P.B.** (winch, 5 appearances, 3 Winch refs) ↔ **J. P. B. Eddy** (newspaper, 5 appearances)
 - [HIGH] **Eddy, Joshua P.B.** (winch, 5 appearances, 3 Winch refs) ↔ **J. Eddy** (newspaper, 4 appearances)
-- [HIGH] **EDDY, JOSHUA P** (census, 5 appearances, 1 census records) ↔ **Rev. J. P. B. Eddy** (newspaper, 1 appearances)
