@@ -1687,5 +1687,18 @@
    }
   ],
   "note": "Rev. Lewis Woodson: the 'Thrown Out of Democracy' post's 'Louis Woodson' is Lewis Woodson (Michiko 2026-11-03: 'Lewis Woodson and please merge with Louis Woodson')."
+ },
+ {
+  "keep": {
+   "name": "Cropper, Henry",
+   "source": "census"
+  },
+  "aliases": [
+   {
+    "name": "Henry Cropper",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Capt. Henry Cropper of the Frank Johnson Guards (Baltimore Sun, Aug. 18, 1859, 'from Liberia') is the census Henry Cropper: Michiko 2026-11-03, 'there was a lot of people going back-and-forth from Liberia to Philly.'"
  }
 ]
