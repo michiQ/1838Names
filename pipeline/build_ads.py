@@ -4,7 +4,7 @@
 Builds ads.html at the repo root: every advertisement in the database, shown as a picture cropped
 from its newspaper page, with the advertiser linked to their record (index.html#p<id>).
 Crop boxes live in pipeline/ad_crops.json, keyed by issue + page + headline (article ids shift
-between rebuilds). Crops are written to ads/<issue>_p<page>_<n>.jpg. Run after build_viewer.py
+between rebuilds); the addresses printed in the ads live in pipeline/ad_addresses.json, keyed the same way. Crops are written to ads/<issue>_p<page>_<n>.jpg. Run after build_viewer.py
 (build_viewer calls it at the end).
 """
 import json, os, re, sqlite3, html
@@ -41,6 +41,9 @@ def main():
     crops = json.load(open(os.path.join(HERE, "ad_crops.json"), encoding="utf-8"))
     key = lambda iss, pg, hl: f"{iss}|{pg}|{hl}"
     boxes = {key(c["issue"], c["page"], c["headline"]): c for c in crops["ads"]}
+    # business addresses as printed in the ad (added 2026-11-03); plain text, never linked
+    addrs = {key(a["issue"], a["page"], a["headline"]): a["address"]
+             for a in json.load(open(os.path.join(HERE, "ad_addresses.json"), encoding="utf-8"))["ads"]}
     con = sqlite3.connect(DB)
     rows = con.execute("""SELECT a.id, i.filename, a.page, a.headline, a.summary FROM articles a
                           JOIN issues i ON i.id = a.issue_id WHERE a.article_type = 'advertisement'
@@ -65,11 +68,11 @@ def main():
             seen.add(pid); ppl.append([pid, display_name(nm)])
         out.append({"img": fn, "issue": iss, "paper": PAPERS.get(iss[:2], iss[:2]), "date": nice_date(iss),
                     "iso": iss.split("_")[1], "page": pg, "title": clean_head(hl), "people": ppl,
-                    "where": c.get("where", ""), "note": c.get("note_public", "")})
+                    "addr": addrs.get(key(iss, pg, hl), []), "where": c.get("where", ""), "note": c.get("note_public", "")})
     tpl = open(os.path.join(HERE, "ads_template.html"), encoding="utf-8").read()
     page = tpl.replace("/*__ADS__*/[]", json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     open(os.path.join(ROOT, "ads.html"), "w", encoding="utf-8").write(page)
-    print("ads page:", len(out), "ads |", len(missing), "without a crop box")
+    print("ads page:", len(out), "ads |", sum(1 for a in out if a["addr"]), "with an address |", len(missing), "without a crop box")
     for m in missing: print("   no crop:", m)
 
 

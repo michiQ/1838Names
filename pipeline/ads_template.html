@@ -32,6 +32,8 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
 .card button.img{display:block;border:0;padding:0;background:#fff;cursor:zoom-in;width:100%}
 .card img{display:block;width:100%;height:auto;filter:sepia(.25) contrast(1.05)}
 .card .meta{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px}
+.card .addr{padding:8px 12px 7px;font:12.5px/1.4 var(--body);background:var(--sel);border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.card .addr div+div{margin-top:2px}
 .card h2{font:400 16px/1.25 var(--body);margin:0}
 .card .src{font:11px var(--mono);color:var(--dim)}
 .card .who{font-size:13.5px}
@@ -52,13 +54,13 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
 <main>
   <div class="eyebrow">From the newspapers in the 1838 Names Database</div>
   <h1>Business Ads</h1>
-  <p class="lede">Advertisements placed by Black business owners, teachers and institutions, cut from the pages of <i>Freedom&rsquo;s Journal</i> (1827&ndash;1828) and the <i>Christian Recorder</i> (1854&ndash;1862). Undertakers, dentists, coal dealers, bakers, clothiers, boarding houses, music teachers. Click an ad to read it larger; click a name to open that person in the database.</p>
+  <p class="lede">Advertisements placed by Black business owners, teachers and institutions, cut from the pages of <i>Freedom&rsquo;s Journal</i> (1827&ndash;1828) and the <i>Christian Recorder</i> (1854&ndash;1862). Undertakers, dentists, coal dealers, bakers, clothiers, boarding houses, music teachers. Addresses appear as printed in the ad, in the old street numbering. Click an ad to read it larger; click a name to open that person in the database.</p>
   <div class="wip"><b>Work in progress.</b> More ads are added as we read more issues. <i>Freedom&rsquo;s Journal</i> was published in New York, so some of its advertisers are New Yorkers.</div>
   <div class="controls" role="group" aria-label="Filter the ads">
     <button class="chip" data-p="" aria-pressed="true">All papers</button>
     <button class="chip" data-p="Freedom's Journal" aria-pressed="false">Freedom&rsquo;s Journal</button>
     <button class="chip" data-p="Christian Recorder" aria-pressed="false">Christian Recorder</button>
-    <input id="q" type="search" placeholder="Search a name or trade… e.g. coal" aria-label="Search the ads">
+    <input id="q" type="search" placeholder="Search a name, trade or street… e.g. coal" aria-label="Search the ads">
     <span class="count" id="count"></span>
   </div>
   <div class="grid" id="grid"></div>
@@ -71,11 +73,11 @@ const e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>
 let paper='', q='';
 function render(){
   const t=q.toLowerCase();
-  const L=ADS.filter(a=>(!paper||a.paper===paper)&&(!t||(a.title+' '+a.people.map(p=>p[1]).join(' ')).toLowerCase().includes(t)))
+  const L=ADS.filter(a=>(!paper||a.paper===paper)&&(!t||(a.title+' '+a.addr.join(' ')+' '+a.people.map(p=>p[1]).join(' ')).toLowerCase().includes(t)))
              .sort((a,b)=>a.iso.localeCompare(b.iso));
   document.getElementById('count').textContent=L.length+' ad'+(L.length===1?'':'s');
   document.getElementById('grid').innerHTML=L.map(a=>{const i=ADS.indexOf(a);
-    return `<article class="card"><button class="img" data-i="${i}" aria-label="Read this ad larger"><img src="${e(a.img)}" alt="${e(a.title)}, ${e(a.paper)}, ${e(a.date)}" loading="lazy"></button>
+    return `<article class="card">${a.addr.length?`<div class="addr">${a.addr.map(x=>`<div>${e(x)}</div>`).join('')}</div>`:''}<button class="img" data-i="${i}" aria-label="Read this ad larger"><img src="${e(a.img)}" alt="${e(a.title)}, ${e(a.paper)}, ${e(a.date)}" loading="lazy"></button>
     <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · <a href="pages/${e(a.issue)}_p${a.page}.jpg" target="_blank" rel="noopener">page ${a.page}</a></div>
     ${a.people.length?`<div class="who">${a.people.map(p=>`<a href="index.html#p${p[0]}">${e(p[1])}</a>`).join(', ')}</div>`:''}</div></article>`;}).join('')
     || '<p class="count">No ads match.</p>';

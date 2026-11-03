@@ -1579,5 +1579,60 @@
    }
   ],
   "note": "Francis A. Duterte, carpenter, builder and coffin maker, husband of Henrietta Duterte. 1847 census 'Dutert, Francis A' (1 Washington Court; carpenter, builder; household dressmaker & tailoress); blog 'F.A. Duterte' (1851 exhibition; paid from Francis Petts' will, Petts d. 1851); newspaper 'Francis Duterte' (CR 1862, Olive Cemetery quo warranto relator). Michiko 2026-11-02: 'We should merge the Francis, FA Duterte records.' [VERIFY] the 1862 relator against F.A.'s death date, which some accounts put in 1858."
+ },
+ {
+  "keep": {
+   "id": 178,
+   "name": "Butler, Thomas"
+  },
+  "aliases": [
+   {
+    "id": 497,
+    "name": "Butler, Thomas"
+   },
+   {
+    "name": "Thomas Butler",
+    "source": "newspaper"
+   },
+   {
+    "name": "Thomas Butler",
+    "source": "blog"
+   },
+   {
+    "name": "BUTLER, THOMAS",
+    "source": "census"
+   }
+  ],
+  "note": "Thomas Butler, hairdresser, barber and perfumer, 6 S. 8th. Winch 'Butler, Thomas', Winch 'Battler, Thomas (prob. Butler)' (Colored American committee, Dec 9, 1837), the newspaper and blog Thomas Butler, and the 1838 census row are one man. Michiko 2026-11-02. apply_merges keeps the lowest Winch id, so the surviving row is id 178, renamed 'Butler, Thomas', carrying both Winch entries. NOT his son, Winch 'Butler, Thomas Jr.' (498), who stays separate."
+ },
+ {
+  "keep": {
+   "id": 1036,
+   "name": "Forten, James Jr."
+  },
+  "aliases": [
+   {
+    "name": "James Forten, Jr.",
+    "source": "blog"
+   }
+  ],
+  "note": "Blog spellings of James Forten Jr. were held as ambiguous by load_blogs; folded into the Winch record so the posts reach his profile (Run #80, Thrown Out of Democracy task, Michiko 2026-11-02). Winch 963 and newspaper 14268 'James Forten, Jr.' are left for Michiko's review."
+ },
+ {
+  "keep": {
+   "id": 459,
+   "name": "Burr, John P."
+  },
+  "aliases": [
+   {
+    "name": "Jean Pierre Burr",
+    "source": "blog"
+   },
+   {
+    "name": "J.P. Burr",
+    "source": "blog"
+   }
+  ],
+  "note": "Blog Jean Pierre (J. P.) Burr = Winch Burr, John P. Blog records only, per the Thrown Out of Democracy task (Michiko 2026-11-02). Newspaper and census John P. Burr are left for Michiko's review."
  }
 ]

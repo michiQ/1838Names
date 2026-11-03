@@ -1,0 +1,57 @@
+{
+ "_note": "Event from the 1838 Black Metropolis post 'Thrown Out of Democracy' (Mar 16, 2025) and the Pa. Freeman, Jan 25, 1838, p2. No earlier event covered the gallery ejections (event 'Pennsylvania Reform Convention: white freemen suffrage vote' covers the vote only). Run #80.",
+ "articles": [],
+ "events": [
+  {
+   "issue": "PF_1838-01-25",
+   "page": 2,
+   "name": "Black men ejected from the Musical Fund Hall gallery during the Reform Convention debate on 'white'",
+   "date": "1838-01-20",
+   "location": "Musical Fund Hall, Locust Street, Philadelphia",
+   "description": "On Saturday, Jan. 20, 1838, while the Reform Convention at Musical Fund Hall debated inserting the word 'white' into the suffrage article, Black men were ejected from the spectators' gallery. The Pennsylvania Freeman of Jan. 25, 1838 reports that four were forcibly ejected: 'John P. Burr, Thomas Butler, and James Forten, jr., with another highly respectable and worthy colored man.' The 1838 Black Metropolis post 'Thrown Out of Democracy' (historical fiction based on the newspapers) tells it as two planned actions. In the morning John Vashon and Louis Woodson, first in line for the gallery, were confronted by the doorkeeper Thomas Jefferson Becket and protested their right to be there. At 5 p.m. Burr, Butler and James Forten Jr. entered the gallery. Burr and Butler left when ordered out; Forten Jr. stayed seated and was dragged out by Becket and his men, and later sued Becket. The post assumes the actions were planned, and places a strategy meeting on Jan. 19 at James Forten's home at 4th and Lombard as a high-probability guess. Representative Earle argued that day for keeping the vote, waving a Black man's passport, probably Robert Purvis's. The convention voted 77 to 45 to insert 'white'.",
+   "attendees": [
+    [
+     "Thomas Butler",
+     "ejected from the gallery",
+     178
+    ],
+    [
+     "John P. Burr",
+     "ejected from the gallery",
+     459
+    ],
+    [
+     "James Forten, Jr.",
+     "ejected from the gallery; dragged out; later sued Becket",
+     1036
+    ],
+    [
+     "John Vashon",
+     "in the gallery (morning), per the blog post",
+     2667
+    ],
+    [
+     "Louis Woodson",
+     "in the gallery (morning), per the blog post"
+    ],
+    [
+     "Thomas Jefferson Becket",
+     "doorkeeper"
+    ],
+    [
+     "James Forten Sr.",
+     "host of the strategy meeting (the post's high-probability guess)"
+    ],
+    [
+     "Robert Purvis",
+     "at the strategy meeting (the post's high-probability guess)",
+     2178
+    ],
+    [
+     "Representative Earle",
+     "speaker against inserting 'white'"
+    ]
+   ]
+  }
+ ]
+}

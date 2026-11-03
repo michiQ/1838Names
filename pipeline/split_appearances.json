@@ -128,6 +128,15 @@
       "new_name": "Catharine Williams (died at Bethel Church, 1825)",
       "new_source": "newspaper",
       "note": "Killed in the crush at Bethel Church, Nov. 20, 1825 (U.S. Gazette, Nov. 22, 1825); cannot be the census householder of the same name. Clippings run, 2026-11-02."
+    },
+    {
+      "from_id": 498,
+      "from_name": "Butler, Thomas Jr.",
+      "from_source": "winch",
+      "context_prefix": "ctators* gallery, to prevent them",
+      "issue_like": "PF_1838-01-25",
+      "to_id": 178,
+      "note": "Jan 1838 Musical Fund Hall gallery ejection (Pa. Freeman, Jan 25, 1838) is the father, not the son. Michiko 2026-11-02."
     }
   ],
   "renames": [

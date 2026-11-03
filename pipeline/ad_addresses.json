@@ -1,0 +1,426 @@
+{
+ "_doc": "Business addresses for the ads page (build_ads.py), read from the ad itself (crop image or OCR of the same ad), as printed. Keyed like ad_crops.json: issue + page + headline. 'address' is a list; each entry shows on its own line at the top of the ad card, plain text, never linked. An ad with no address has no entry. Uncertain parts are left out here (the public page shows no VERIFY) and listed in 'uncertain'.",
+ "uncertain": [
+  "CR_1855-02-01 p3 Smith, Whipper: U. A. Widal's house number, 303 or 308 Lombard (left out)",
+  "CR_1861-01-19 p3 Peer: house number, 80 1/2 or 90 1/2 South Street (left out)",
+  "CR_1861-01-26 p3 Duterte: 634 Lombard, faint here; OCR of this printing family gives 634 and 631 (left out)",
+  "CR_1861-02-09 p3 Allmond: faint here, shown as 1027 because the repeat printings and the Johnson and Ware ad read 1027",
+  "CR_1861-02-23 p3 Burris: house number illegible in every printing, North 11th (left out)",
+  "CR_1861-05-04 p3 Downs: looks like 285 here; shown as 225, the clear reading on the May 18 printing and most repeats",
+  "CR_1861-07-06 p3 Palmer: house number faint, probably 105 North Fifth (left out)",
+  "CR_1861-11-16 p3 Johnson and Ware: Mrs. Jane Johnson's residence, about 616 S. 9th St. (left out)",
+  "CR_1862-02-01 p3 Burris concert: Franklin Hall on Sixth or Ninth street (street left out)",
+  "FJ_1828-05-30 p7 Gracy Jones: No. 8 1/2 South Fourth, fraction not certain (left out)",
+  "FJ_1828-05-30 p8 Richard Johnson: No. 111 or 114 Varick-Street (left out)",
+  "FJ_1828-06-13 p7 Eliza Johnson: No. 24 or 28 Elizabeth street (left out). The ad's dateline appears to read Philadelphia, not New York"
+ ],
+ "ads": [
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "Thomas M. Kinnard, Surgeon Dentist (advertisement)",
+   "address": [
+    "No. 300 Cherry Street, above Thirteenth, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1854-08-17",
+   "page": 3,
+   "headline": "J. J. Gould Bias, M.D., Eclectic Physician (advertisement with certificate of cure)",
+   "address": [
+    "No. 189 South Sixth Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "Great Attraction! Coal! Coal!! Coal!!! -- Smith, Whipper & Co. (advertisement)",
+   "address": [
+    "Yard, corner of Broad and Willow",
+    "203 Lombard street",
+    "Book-store of the A. M. E. Church, Lombard street, below Sixth"
+   ]
+  },
+  {
+   "issue": "CR_1854-09-16",
+   "page": 3,
+   "headline": "John Walker's New and Second-hand Clothing Cellar (advertisement)",
+   "address": [
+    "Basement of No. 157 North Second Street (between Race and New, east side), Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1854-10-18",
+   "page": 1,
+   "headline": "Henry Mackey, Dealer in Real Estate (advertisement)",
+   "address": [
+    "Third Street, near Spruce, South Camden, N.J."
+   ]
+  },
+  {
+   "issue": "CR_1854-11-17",
+   "page": 3,
+   "headline": "Cupping, Bleeding, Leeching, and Tooth-drawing, by J. J. Clinton (advertisement)",
+   "address": [
+    "Office, No. 137 Lombard Street, between Fifth and Sixth, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "Smith, Whipper & Co. -- White Ash Coal and Lumber (advertisement)",
+   "address": [
+    "Yard, corner of Broad and Willow streets",
+    "Book-store of the A. Meth. Ep. Church, Lombard street, below Sixth",
+    "U. A. Widal's, Lombard street"
+   ]
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "Thomas M. Kinnard, Surgeon Dentist (advertisement)",
+   "address": [
+    "No. 300 Cherry Street, above Thirteenth, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "J. J. Gould Bias, M.D., Eclectic Physician (advertisement)",
+   "address": [
+    "No. 189 South Sixth Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "J. J. Clinton -- Cupping, Bleeding, Leeching, and Tooth-drawing (advertisement)",
+   "address": [
+    "Office, No. 137 Lombard Street, between Fifth and Sixth, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "Henry Mackey, Dealer in Real Estate (advertisement)",
+   "address": [
+    "Third Street, near Spruce, South Camden, N.J."
+   ]
+  },
+  {
+   "issue": "CR_1855-02-01",
+   "page": 3,
+   "headline": "John Walker's New and Second-Hand Clothing Store (advertisement)",
+   "address": [
+    "Basement of No. 157 North Second Street (between Race and New, east side), Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 2,
+   "headline": "Book Depository of the African M. E. Church (advertisement)",
+   "address": [
+    "No. 619 Pine street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Fine Cake Bakery, Confectionary and Ice Cream Saloon (advertisement)",
+   "address": [
+    "South Street"
+   ]
+  },
+  {
+   "issue": "CR_1861-01-19",
+   "page": 3,
+   "headline": "Teachers of the piano (advertisements)",
+   "address": [
+    "Miss L. H. Robertson: No. 1150 S. Eleventh Street, Philadelphia",
+    "Miss M. E. Marsall: Residence, No. 419 South Thirteenth Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-01-26",
+   "page": 3,
+   "headline": "Mrs. H. S. Duterte, General Undertaker and Furnisher (advertisement)",
+   "address": [
+    "Lombard St."
+   ]
+  },
+  {
+   "issue": "CR_1861-02-09",
+   "page": 3,
+   "headline": "Thomas W. Allmond, Furnishing Undertaker (advertisement)",
+   "address": [
+    "No. 1027 Rodman Street, between 10th and 11th and South and Lombard Sts., Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-02-23",
+   "page": 3,
+   "headline": "A. Burris, Teacher of Vocal Music (advertisement)",
+   "address": [
+    "Residence, North 11th st., abv. Poplar st."
+   ]
+  },
+  {
+   "issue": "CR_1861-05-04",
+   "page": 3,
+   "headline": "James Downs, dealer in new and second hand clothing (advertisement)",
+   "address": [
+    "No. 225 South Second Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-07-06",
+   "page": 3,
+   "headline": "Coal, Stoves, &c. (Wm. Still, 107 North Fifth Street)",
+   "address": [
+    "No. 107 North Fifth Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-07-06",
+   "page": 3,
+   "headline": "Mrs. E. A. Palmer, Trimmings, Hosiery, &c.",
+   "address": [
+    "North Fifth St."
+   ]
+  },
+  {
+   "issue": "CR_1861-09-14",
+   "page": 4,
+   "headline": "Henry Floyd, Grocer (Fine Groceries for Family Use)",
+   "address": [
+    "No. 407 South Twelfth Street, below Pine, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1861-10-12",
+   "page": 3,
+   "headline": "Wanted: charge of a Public School (advertisement)",
+   "address": [
+    "1641 Helmuth St."
+   ]
+  },
+  {
+   "issue": "CR_1861-11-16",
+   "page": 3,
+   "headline": "Mrs. Johnson and Mrs. Ware, laying out and shrouding the dead (advertisement)",
+   "address": [
+    "Mrs. Ann Ware: Residence, 641 Lombard St."
+   ]
+  },
+  {
+   "issue": "CR_1862-01-11",
+   "page": 3,
+   "headline": "Mrs. E. A. Palmer's Dry Goods and Trimmings Store (advertisement, changed)",
+   "address": [
+    "No. 105 North Fifth Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1862-01-18",
+   "page": 3,
+   "headline": "Mrs. S. Shorter Hawkins (advertisement)",
+   "address": [
+    "615 Lombard Street"
+   ]
+  },
+  {
+   "issue": "CR_1862-01-25",
+   "page": 3,
+   "headline": "Joseph H. Cole, Continental Restaurant (advertisement)",
+   "address": [
+    "No. 717 Lombard Street, Phila. (above Seventh St., under Philadelphia Institute)"
+   ]
+  },
+  {
+   "issue": "CR_1862-02-01",
+   "page": 3,
+   "headline": "Mr. A. Burris and troupe -- grand prize concert, Franklin Hall",
+   "address": [
+    "Franklin Hall, below Arch"
+   ]
+  },
+  {
+   "issue": "CR_1862-02-01",
+   "page": 3,
+   "headline": "Wanted -- charge of a Public School",
+   "address": [
+    "1641 Helmuth St."
+   ]
+  },
+  {
+   "issue": "CR_1862-03-01",
+   "page": 3,
+   "headline": "Mrs. Rebecca O'Donnell, China, Glass and Queensware",
+   "address": [
+    "No. 740 South Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1862-03-01",
+   "page": 3,
+   "headline": "Good News (cutting system; agents wanted)",
+   "address": [
+    "Rev. Wm. Bradley, Carversville, Bucks Co., Pa.",
+    "Mrs. Mary C. Weaver, 619 Pine St., Philada., Pa."
+   ]
+  },
+  {
+   "issue": "CR_1862-05-24",
+   "page": 3,
+   "headline": "Thomas Charnock, General Furnishing Undertaker (advertisement)",
+   "address": [
+    "No. 427 South 6th St., second door below Bethel Church"
+   ]
+  },
+  {
+   "issue": "FJ_1827-04-20",
+   "page": 4,
+   "headline": "Cheap Clothing Store, No. 218 South Sixth-street, Philadelphia (Daniel Peterson)",
+   "address": [
+    "No. 218, South Sixth-street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "FJ_1827-04-20",
+   "page": 4,
+   "headline": "United States' Scouring and Steam Sponging, No. 122 North Third-street, Philadelphia (John H. Smith)",
+   "address": [
+    "No. 122 North-Third-st. (above Race,) Philadelphia"
+   ]
+  },
+  {
+   "issue": "FJ_1827-09-14",
+   "page": 4,
+   "headline": "Business notice: John Roberts, oil dealer",
+   "address": [
+    "25 Currant-alley, third door above Locust-street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "headline": "Business notice: FREDERICK A. HINTON, Gentleman's Dressing-Room",
+   "address": [
+    "No. 51 South Fourth Street, between Chesnut and Walnut"
+   ]
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 3,
+   "headline": "Business notice: APPO & SAMMONS, Tailors",
+   "address": [
+    "No. 64 Walnut-St., three doors above Third-st."
+   ]
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: DANIEL PETERSON, Cheap Clothing Store",
+   "address": [
+    "No. 218, South Sixth-street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: CHARLES SHORT, boarding house",
+   "address": [
+    "No. 182, South Sixth-street, below Pine"
+   ]
+  },
+  {
+   "issue": "FJ_1827-10-12",
+   "page": 4,
+   "headline": "Business notice: JOHN ROBERTS, sperm oil dealer",
+   "address": [
+    "25 Currant-alley, third door above Locust-street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "FJ_1828-01-25",
+   "page": 3,
+   "headline": "Boot & Shoe / Blacking store of W. P. Johnson, 551 Pearl-street, New York",
+   "address": [
+    "No. 551, Pearl-street, near Broadway"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 6,
+   "headline": "School for free coloured pupils — Joseph Shippard",
+   "address": [
+    "18th street, Richmond, Va."
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Boarding and Lodging house for persons of colour — Gracy Jones (Philadelphia)",
+   "address": [
+    "South-Fourth-St., above Lombard-st., Philadelphia"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Fresh Goshen Butter — David Ruggles (New York)",
+   "address": [
+    "No. 1 Courtlandt-street, near Broadway"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "Leghorn and straw hat dressing — Mrs. Sarah Johnson (New York)",
+   "address": [
+    "No. 551 Pearl-Street"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 7,
+   "headline": "House of Refreshment / oysters — William Parker (New York)",
+   "address": [
+    "No. 445, Broadway"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 8,
+   "headline": "Boarding house for gentlemen of colour — Richard Johnson (New York)",
+   "address": [
+    "No. 27 Sullivan-Street",
+    "Varick-Street"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 8,
+   "headline": "Boots, shoes and liquid blacking — W. P. Johnson (New York)",
+   "address": [
+    "551, Pearl street, near Broadway"
+   ]
+  },
+  {
+   "issue": "FJ_1828-05-30",
+   "page": 8,
+   "headline": "G. & R. Draper, coloured tobacco manufacturers (Baltimore)",
+   "address": [
+    "Forest-street, Baltimore"
+   ]
+  },
+  {
+   "issue": "FJ_1828-06-13",
+   "page": 7,
+   "headline": "Boarding and lodging / oysters — Eliza Johnson (New York)",
+   "address": [
+    "Elizabeth street"
+   ]
+  }
+ ]
+}

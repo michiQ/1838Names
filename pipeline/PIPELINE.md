@@ -318,6 +318,7 @@ apply_merges (first use: the 1848 Massachusetts lecturer John Allen, so the Prot
 The same file also holds 'renames' (fix a mis-parsed name/aliases/life_dates by id) and 'move_refs' (move Winch notes filed under the
 wrong record). Rules may target an existing record with to_name + to_source. NEVER key a merge or split on the id of a
 coppin, blog or newspaper record: those loaders re-create records with new ids after a merge; use name + source.
+`pipeline/ad_addresses.json` (added 2026-11-03) holds the address printed in each ad for ads.html, keyed like ad_crops.json; new ads need an entry in both.
 `pipeline/person_links.json` holds hand-curated person-to-person connections ('Connected to' on both profiles).
 NO 'VERIFY' IN THE PUBLIC LISTINGS (Michiko, 2026-11-01): keep flagging uncertain readings with [VERIFY] in extraction JSON for
 review, but build_viewer.py strips them from everything the site displays. Do not write VERIFY into curated notes.
