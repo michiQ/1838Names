@@ -842,9 +842,13 @@
    {
     "name": "Dr. Joseph Brister",
     "source": "blog"
+   },
+   {
+    "name": "Joseph Brister",
+    "source": "newspaper"
    }
   ],
-  "note": "Michiko approved 2026-07-30 (blog review): the Winch 'Brister, J.' (id344) IS Dr. Joseph Brister -- fold both blog spellings ('Joseph Brister', 'Dr. Joseph Brister') in."
+  "note": "Michiko approved 2026-07-30 (blog review): the Winch 'Brister, J.' (id344) IS Dr. Joseph Brister -- fold both blog spellings ('Joseph Brister', 'Dr. Joseph Brister') in. Newspaper 'Joseph Brister' (CR Aug 9, 1862, Bethel Sunday School committee on the death of librarian Henry Downing) folded in: Michiko approved 2026-11-03 (Run #81 merge candidate 1)."
  },
  {
   "keep": {
@@ -1126,9 +1130,13 @@
    {
     "name": "Francis Ellen Watkins Harper",
     "source": "blog"
+   },
+   {
+    "name": "Francis E. Watkins Harper",
+    "source": "newspaper"
    }
   ],
-  "note": "Frances Ellen Watkins Harper -- poet/abolitionist; her 'Poems on Miscellaneous Subjects' reviewed in the Christian Recorder (No.20, 1854). Folds the blog-source duplicate into the ugrr record. Confirmed by Michiko 2026-08-19 (Run #72)."
+  "note": "Frances Ellen Watkins Harper -- poet/abolitionist; her 'Poems on Miscellaneous Subjects' reviewed in the Christian Recorder (No.20, 1854). Folds the blog-source duplicate into the ugrr record. Confirmed by Michiko 2026-08-19 (Run #72). Newspaper 'Francis E. Watkins Harper' (CR Sept 27, 1862, letter on the war and the colonization scheme) folded in: Michiko approved 2026-11-03 (Run #81 merge candidate 3)."
  },
  {
   "keep": "Bundy, Mrs.",
@@ -1634,5 +1642,18 @@
    }
   ],
   "note": "Blog Jean Pierre (J. P.) Burr = Winch Burr, John P. Blog records only, per the Thrown Out of Democracy task (Michiko 2026-11-02). Newspaper and census John P. Burr are left for Michiko's review."
+ },
+ {
+  "keep": {
+   "id": 2373,
+   "name": "Seymour, Lewis R."
+  },
+  "aliases": [
+   {
+    "name": "R. L. Seymour",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Newspaper 'R. L. Seymour' (CR Sept 27, 1862, secretary of the Bethel meeting for the relief of the contrabands; the Sept 6 Bethel meeting prints 'Lewis R. Seymour' and 'L. R. Seymour') is Winch Seymour, Lewis R.: Michiko approved 2026-11-03 (Run #81 merge candidate 2)."
  }
 ]
