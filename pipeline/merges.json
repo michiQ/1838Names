@@ -1615,16 +1615,23 @@
  },
  {
   "keep": {
-   "id": 1036,
+   "id": 963,
    "name": "Forten, James Jr."
   },
   "aliases": [
    {
     "name": "James Forten, Jr.",
     "source": "blog"
+   },
+   {
+    "name": "James Forten, Jr.",
+    "source": "newspaper"
+   },
+   {
+    "id": 1036
    }
   ],
-  "note": "Blog spellings of James Forten Jr. were held as ambiguous by load_blogs; folded into the Winch record so the posts reach his profile (Run #80, Thrown Out of Democracy task, Michiko 2026-11-02). Winch 963 and newspaper 14268 'James Forten, Jr.' are left for Michiko's review."
+  "note": "Blog spellings of James Forten Jr. were held as ambiguous by load_blogs; folded into the Winch record so the posts reach his profile (Run #80, Thrown Out of Democracy task, Michiko 2026-11-02). Winch 963 and newspaper 14268 'James Forten, Jr.' are left for Michiko's review. Winch 963 and newspaper 'James Forten, Jr.' folded in: Michiko approved 2026-11-03. apply_merges keeps the lowest Winch id, so the surviving row is id 963 ('Forten, James Jr.'); fixed links repointed from 1036 to 963."
  },
  {
   "keep": {
@@ -1639,9 +1646,17 @@
    {
     "name": "J.P. Burr",
     "source": "blog"
+   },
+   {
+    "name": "John P. Burr",
+    "source": "newspaper"
+   },
+   {
+    "name": "BURR, JOHN P",
+    "source": "census"
    }
   ],
-  "note": "Blog Jean Pierre (J. P.) Burr = Winch Burr, John P. Blog records only, per the Thrown Out of Democracy task (Michiko 2026-11-02). Newspaper and census John P. Burr are left for Michiko's review."
+  "note": "Blog Jean Pierre (J. P.) Burr = Winch Burr, John P. Blog records only, per the Thrown Out of Democracy task (Michiko 2026-11-02). Newspaper and census John P. Burr are left for Michiko's review. Newspaper and census (1838) John P. Burr folded in: Michiko approved 2026-11-03."
  },
  {
   "keep": {
@@ -1655,5 +1670,22 @@
    }
   ],
   "note": "Newspaper 'R. L. Seymour' (CR Sept 27, 1862, secretary of the Bethel meeting for the relief of the contrabands; the Sept 6 Bethel meeting prints 'Lewis R. Seymour' and 'L. R. Seymour') is Winch Seymour, Lewis R.: Michiko approved 2026-11-03 (Run #81 merge candidate 2)."
+ },
+ {
+  "keep": {
+   "name": "Lewis Woodson",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "Louis Woodson",
+    "source": "newspaper"
+   },
+   {
+    "name": "Louis Woodson",
+    "source": "blog"
+   }
+  ],
+  "note": "Rev. Lewis Woodson: the 'Thrown Out of Democracy' post's 'Louis Woodson' is Lewis Woodson (Michiko 2026-11-03: 'Lewis Woodson and please merge with Louis Woodson')."
  }
 ]

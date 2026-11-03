@@ -1,5 +1,5 @@
 {
- "_note": "Newspapers.com clippings found and clipped by Michiko Quinones (1838 Black Metropolis), Nov. 2, 2026: United States Gazette and Philadelphia Inquirer items on Bethel Church, 1817-1827. Transcribed from the clipping images (clippings/); fixed person ids for the 1817 committee where Winch has the man (Francis Perkins: Winch notes his 'Committee of Eleven'). Robert Gordon and James Johnson left in the text only (several Winch men of each name). Newspapers.com image ids in each description.",
+ "_note": "Newspapers.com clippings found and clipped by Michiko Quinones (1838 Black Metropolis), Nov. 2, 2026: United States Gazette and Philadelphia Inquirer items on Bethel Church, 1817-1827. Transcribed from the clipping images (clippings/); fixed person ids for the 1817 committee where Winch has the man (Francis Perkins: Winch notes his 'Committee of Eleven'). Robert Gordon and James Johnson left in the text only (several Winch men of each name). Newspapers.com image ids in each description. Added 2026-11-03 (Run #81 follow-up): Phila. Inquirer, June 14, 1893, p. 7, Starr Garden condemnation (clipped by 1838 Black Metropolis, Aug 18, 2023).",
  "articles": [],
  "events": [
   {
@@ -143,6 +143,15 @@
      "collected $22.00 at West Chester (printed 'Abram Shad'; Abraham D. Shadd, father of Mary Ann Shadd Cary)"
     ]
    ]
+  },
+  {
+   "issue": "",
+   "page": 7,
+   "name": "Starr Garden -- owners refuse to sell; Councils pass the ordinance to condemn the block for a park (June 1893)",
+   "date": "1893-06",
+   "location": "Starr Garden, Fifth ward: Sixth to Seventh, Lombard to St. Mary streets, Philadelphia",
+   "description": "\"The ordinance to appropriate for park purposes land within the boundaries of Starr Garden, in the Fifth ward, was passed. It is to be located between Sixth and Seventh and Lombard and St. Mary streets. As the city could not reach an agreement with the owners the property will be condemned.\" The owners' refusal to sell was a form of protest against the taking of the block (Michiko Quinones, 1838 Black Metropolis, 2026-11-03). The block held Henrietta Duterte's undertaking business until it was torn down. The Philadelphia Inquirer, Wednesday, June 14, 1893, p. 7 (Councils proceedings). Courtesy Newspapers.com (clipped by 1838 Black Metropolis, Aug 18, 2023). Clipping: clippings/PI_1893-06-14_p7_starr-garden-condemned.jpg (Newspapers.com image 168279626).",
+   "attendees": []
   }
  ]
 }

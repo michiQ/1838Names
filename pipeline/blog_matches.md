@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 194 linked to existing people, 234 created as new blog people, 51 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 197 linked to existing people, 234 created as new blog people, 48 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -24,9 +24,6 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Jacob C. White, Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
 - **Jacob Griffith** (blog)  ↔  Griffith, Jacob#356653, Jacob Griffith#359742
 - **James Brister** (blog)  ↔  Brister, James#354473, Brister, James#359042
-- **James Forten Jr.** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
-- **James Forten, Jr** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
-- **James Forten, Jr.** (blog)  ↔  James Forten, Jr.#963, Forten, James Jr.#1036, James Forten, Jr.#14268
 - **James Gordon** (blog)  ↔  Gordon, James R.#1182, Gordon, James R#354661
 - **James Le Count** (blog)  ↔  Lecount, James#1691, James Le Count#361532
 - **James Needham** (blog)  ↔  Needham, James#1996, Needham, James F.#359342
