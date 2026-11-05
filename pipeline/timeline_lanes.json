@@ -531,6 +531,15 @@
    ],
    "kw": null,
    "pas": null
+  },
+  {
+   "label": "African Insurance Company",
+   "cat": "aid",
+   "orgs": [
+    "African Insurance Company"
+   ],
+   "kw": "African Insurance Company",
+   "pas": null
   }
  ]
 }

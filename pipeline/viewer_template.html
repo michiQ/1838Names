@@ -248,6 +248,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
       <span class="chip" data-f="c1838">1838 census</span>
       <span class="chip" data-f="c1847">1847 census</span>
       <span class="chip" data-f="ugrr">Still's UGRR</span>
+      <span class="chip" data-f="dir1811">1811 directory</span>
       <span class="chip" data-f="dir1820">1820 directory</span>
     </div>
     <select id="papersel"><option value="">All newspapers…</option></select>
@@ -471,7 +472,8 @@ function renderList(q){
       if(f==='papers') return (p.mentions?.length||p.articles?.length||p.events?.length);
       if(f==='c1838') return (p.census||[]).some(c=>c.y===1838);
       if(f==='c1847') return (p.census||[]).some(c=>c.y===1847);
-      if(f==='dir1820') return (p.directory||[]).length>0;
+      if(f==='dir1820') return (p.directory||[]).some(d=>d.y===1820);
+      if(f==='dir1811') return (p.directory||[]).some(d=>d.y===1811);
       if(f==='ugrr') return (p.ugrr||[]).length>0;
       if(f==='mobstats') return (p.mobstats||[]).length>0;
       if(f==='coppin') return (p.coppin||[]).length>0;
@@ -505,6 +507,7 @@ function renderList(q){
       const badge = p.src==='winch' ? '<span class="badge b-w">Winch</span>'
         : p.src==='census' ? '<span class="badge b-c">census</span>'
         : p.src==='1820directory' ? '<span class="badge b-d">1820 directory</span>'
+        : p.src==='1811directory' ? '<span class="badge b-d">1811 directory</span>'
         : p.src==='ugrr' ? '<span class="badge b-u">UGRR</span>'
         : p.src==='coppin' ? '<span class="badge b-i">I.C.Y.</span>'
         : p.src==='storymap' ? '<span class="badge b-s">StoryMap</span>'
@@ -647,7 +650,7 @@ function select(pid){
   const p = P.get(pid); if(!p) return;
   window._sel = pid;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', +r.dataset.id===pid));
-  let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':p.src==='census'?' · from census records':p.src==='1820directory'?' · from the 1820 city directory':p.src==='ugrr'?" · from William Still's Underground Railroad":p.src==='coppin'?' · Institute for Colored Youth (per F. J. Coppin)':p.src==='storymap'?' · from the 1838 Black Metropolis StoryMaps':p.src==='blog'?' · from the 1838 Black Metropolis blog':p.src==='mobstats'?' · from the 1838 Mob Attack Statistics':' · found in newspapers'}</div>`;
+  let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':p.src==='census'?' · from census records':p.src==='1820directory'?' · from the 1820 city directory':p.src==='1811directory'?' · from the 1811 city directory':p.src==='ugrr'?" · from William Still's Underground Railroad":p.src==='coppin'?' · Institute for Colored Youth (per F. J. Coppin)':p.src==='storymap'?' · from the 1838 Black Metropolis StoryMaps':p.src==='blog'?' · from the 1838 Black Metropolis blog':p.src==='mobstats'?' · from the 1838 Mob Attack Statistics':' · found in newspapers'}</div>`;
   if(p.aka) h += `<div class="dates" style="margin-top:-8px">also recorded as: ${esc(p.aka)}</div>`;
   if(p.orgs?.length) h += `<div class="orgchips">${p.orgs.map(o=>`<span data-o="${esc(o)}">${esc(o)}</span>`).join('')}</div>`;
   // articles authored
@@ -683,7 +686,16 @@ function select(pid){
     return `<div class="card"><span class="hl">${c.y} census — ${esc(c.name)}</span><q>${esc(bits.join(' · '))}</q>${mh}<div class="src">${c.y===1838?'Pennsylvania Abolition Society census of 1838':'Society of Friends census of 1847 (SOFAAC)'} · household ID ${esc(c.cid||'?')} · <em>name-based link</em></div></div>`;
   }).join(''); }
   // 1820 city directory records
-  if(p.directory?.length){ h += `<h3>1820 city directory (${p.directory.length})</h3>` + p.directory.map(d=>{
+  const d1811=(p.directory||[]).filter(d=>d.y===1811);
+  if(d1811.length){ h += `<h3>1811 city directory (${d1811.length})</h3>` + d1811.map(d=>{
+    const bits=[]; if(d.occ) bits.push(d.occ); if(d.addr) bits.push(d.addr);
+    if(d.printedPage) bits.push('directory p.'+d.printedPage);
+    const rev = d.needsReview ? `<div style="margin-top:4px;font-size:12px;color:var(--rust)">⚑ needs review: ${esc(d.needsReview)}</div>` : '';
+    const leaf = d.pdfPage ? (parseInt(d.pdfPage,10)-1) : null;
+    return `<div class="card"><span class="hl">${esc(d.name||p.name)}</span><q>${esc(bits.join(' · '))}</q>${rev}<div class="src">1811 Philadelphia city directory, Directory of Coloured Persons${d.ocr?` · as printed: "${esc(d.ocr)}"`:''} · <em>name-based link</em>${leaf!==null?` · <a href="https://archive.org/details/philadelphiadire1811phil/page/n${leaf}/mode/1up" target="_blank" rel="noopener">view page (Internet Archive)</a>`:''}</div></div>`;
+  }).join(''); }
+  const d1820=(p.directory||[]).filter(d=>d.y!==1811);
+  if(d1820.length){ h += `<h3>1820 city directory (${d1820.length})</h3>` + d1820.map(d=>{
     const bits=[];
     if(d.occ) bits.push(d.occ);
     if(d.addr) bits.push(d.addr);

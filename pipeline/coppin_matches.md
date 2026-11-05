@@ -5,7 +5,7 @@ database. NONE are auto-linked. To confirm a same-person match, add a group to
 `merges.json` (keep the existing record; alias the ICY one), e.g.:
 `{"keep": "Catto, Octavius V.", "aliases": [{"name": "Catto, Octavius V.", "source": "coppin"}]}`
 
-37 of 598 ICY names have a same-name record:
+38 of 598 ICY names have a same-name record:
 
 - **Anderson, Mary** (coppin)  ↔  Anderson, Mary (winch)
 - **Bell, William** (coppin)  ↔  Bell, William (census)
@@ -18,11 +18,12 @@ database. NONE are auto-linked. To confirm a same-person match, add a group to
 - **Davis, Mary** (coppin)  ↔  Davis, Mary (winch)
 - **Dorsey, William** (coppin)  ↔  Dorsey, William (winch), DORSEY, WILLIAM (census)
 - **Fisher, David** (coppin)  ↔  FISHER, DAVID (census)
+- **Francis, William** (coppin)  ↔  Francis, William (1811directory), Francis, William (1811directory)
 - **Freeman, William** (coppin)  ↔  Freeman, William (census)
 - **Frisby, Chas.** (coppin)  ↔  FRISBY, CHAS (census)
 - **Harris, James** (coppin)  ↔  Harris, James (winch)
 - **Howell, Andrew** (coppin)  ↔  Howell, Andrew (winch)
-- **Johnson, James** (coppin)  ↔  Johnson, James (winch), Johnson, James (winch), JOHNSON, JAMES (census), Johnson, James (1820directory), Johnson, James (1820directory)
+- **Johnson, James** (coppin)  ↔  Johnson, James (winch), Johnson, James (winch), JOHNSON, JAMES (census), Johnson, James (1820directory), Johnson, James (1820directory), Johnson, James (1811directory)
 - **Jones, George** (coppin)  ↔  Jones, George (winch), Jones, George (census), Jones, George (1820directory)
 - **Lewis, James** (coppin)  ↔  Lewis, James (census)
 - **Mitchell, Mary** (coppin)  ↔  Mitchell, Mary (census)
@@ -38,7 +39,7 @@ database. NONE are auto-linked. To confirm a same-person match, add a group to
 - **Scott, Mary** (coppin)  ↔  Scott, Mary (winch), Scott, Mary (winch), Scott, Mary (census)
 - **Smith, Mary** (coppin)  ↔  Smith, Mary (census)
 - **Thomas, Mary** (coppin)  ↔  Thomas, Mary (census)
-- **Thomas, William** (coppin)  ↔  Thomas, William (winch), Thomas, William (winch), THOMAS, WILLIAM (census)
+- **Thomas, William** (coppin)  ↔  Thomas, William (winch), Thomas, William (winch), THOMAS, WILLIAM (census), Thomas, William (1811directory), Thomas, William (1811directory)
 - **Washington, Samuel** (coppin)  ↔  WASHINGTON, SAMUEL (census)
 - **Washington, William** (coppin)  ↔  Washington, William (census)
 - **White, Joseph** (coppin)  ↔  White, Joseph (census)

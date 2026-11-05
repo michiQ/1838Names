@@ -1,0 +1,30 @@
+{
+ "_note": "The Philadelphia Directory for 1811 (Internet Archive philadelphiadire1811phil), appendix p. 416: the African Insurance Company. Added 2026-11-04 with the 1811 Directory of Coloured Persons (import_1811_directory.py).",
+ "articles": [],
+ "events": [
+  {
+   "issue": "",
+   "page": 416,
+   "name": "African Insurance Company: officers listed in the 1811 Philadelphia directory",
+   "date": "1811",
+   "location": "Office No. 159 Lombard street, Philadelphia",
+   "description": "The Philadelphia Directory for 1811 (p. 416) lists the company among the city's insurance companies: office No. 159 Lombard Street, capital 5,000 dollars, shares 50 dollars, President Joseph Randolph, Treasurer Cyrus Porter, Secretary William Coleman. It adds, 'The members of this company are all coloured persons.' The same directory's list of coloured persons gives Joseph Randolph, confectioner, 162 S. Fifth; Cyrus Porter, stablekeeper, 159 Lombard (the company's office address); and William Coleman, teacher, 155 Lombard.",
+   "attendees": [
+    [
+     "Joseph Randolph",
+     "president",
+     2193
+    ],
+    [
+     "Cyrus Porter",
+     "treasurer"
+    ],
+    [
+     "William Coleman",
+     "secretary",
+     636
+    ]
+   ]
+  }
+ ]
+}

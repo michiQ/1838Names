@@ -331,3 +331,11 @@ leaves it off ads.html but it stays in the database. Remove its old crop from ad
 `pipeline/person_links.json` holds hand-curated person-to-person connections ('Connected to' on both profiles).
 NO 'VERIFY' IN THE PUBLIC LISTINGS (Michiko, 2026-11-01): keep flagging uncertain readings with [VERIFY] in extraction JSON for
 review, but build_viewer.py strips them from everything the site displays. Do not write VERIFY into curated notes.
+
+## 1811 city directory (added 2026-11-04)
+
+- Source: The Philadelphia Directory for 1811, Internet Archive `philadelphiadire1811phil`. The "Directory of Coloured Persons" is at the back (PDF pages 372-391, printed 366-385; printed page = PDF page - 6). Transcribed to `pipeline/1811_directory_source.csv` (691 rows, 37 marked for review).
+- `import_1811_directory.py` runs FIRST in the rebuild chain. It loads table `directory_1811`, links a row to a Winch person only when the "given surname" name matches exactly one Winch record, and otherwise creates a person with source `1811directory`. Existing 1811 records are reused by name so ids stay stable between rebuilds.
+- 1811 records are kept out of name matching by every later loader (match_names, load_extractions, load_blogs, load_mobstats, load_ugrr, load_nolibs), so ~550 new "Surname, Given" records never make an existing unique match ambiguous. Possible matches show up in merge_candidates.md for Michiko to decide.
+- The viewer shows a "1811 city directory" card with a link to the Internet Archive page, and a "1811 directory" filter chip.
+- The African Insurance Company (appendix p. 416, PDF 422) is in `extractions_1811_directory.json`, curated_orgs.json, event_orgs.json and a timeline lane (aid).

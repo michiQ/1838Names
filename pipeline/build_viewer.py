@@ -208,6 +208,7 @@ if has_table("census_links"):
 # like census: enriches the person with occupation/address/etc, no graph edges synthesized.
 if has_table("directory_links"):
     d1820 = {r["rowid_"]: r for r in con.execute("SELECT * FROM directory_1820")}
+    d1811 = {r["rowid_"]: r for r in con.execute("SELECT * FROM directory_1811")} if has_table("directory_1811") else {}
     for pid, dirn, rid in con.execute("SELECT person_id, directory, row_id FROM directory_links"):
         if pid not in people: continue
         p = people[pid]
@@ -217,6 +218,13 @@ if has_table("directory_links"):
                    "occ": g(r,"occupation"), "addr": g(r,"address"), "pdfPage": g(r,"pdf_page"),
                    "conf": g(r,"confidence"), "needsReview": g(r,"needs_review"),
                    "ocr": g(r,"original_ocr_entry")}
+            p.setdefault("directory", []).append(rec)
+        elif dirn == "1811" and rid in d1811:
+            r = d1811[rid]
+            rec = {"y": 1811, "name": f'{g(r,"second_name") or ""} {g(r,"first_name") or ""}'.strip(),
+                   "occ": g(r,"occupation"), "addr": g(r,"address"), "pdfPage": g(r,"pdf_page"),
+                   "printedPage": g(r,"printed_page"), "conf": g(r,"confidence"),
+                   "needsReview": g(r,"needs_review"), "ocr": g(r,"original_ocr_entry")}
             p.setdefault("directory", []).append(rec)
 
 # orgs found in newspaper text near a person's name (from match_names pass)

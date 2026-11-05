@@ -100,7 +100,7 @@ for score, a, b in pairs[:120]:
         if p[5]: bits.append(f"{p[5]} appearances")
         if p[6]: bits.append(f"{p[6]} Winch refs")
         if p[7]: bits.append(f"{p[7]} census records")
-        if len(p) > 8 and p[8]: bits.append(f"{p[8]} 1820 directory records")
+        if len(p) > 8 and p[8]: bits.append(f"{p[8]} directory records")
         return f"**{p[1]}** ({', '.join(bits)})"
     lines.append(f"- [{'HIGH' if score>=2 else 'maybe'}] {desc(a)} ↔ {desc(b)}")
 open(OUT, "w").write("\n".join(lines) + "\n")

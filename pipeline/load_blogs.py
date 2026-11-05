@@ -75,7 +75,7 @@ def parse_forms(name):
             yield (t[-1], t[0])      # First ... Last
 
 for pid, cn, src, al in con.execute(
-        "SELECT id, canonical_name, source, aliases FROM people WHERE source IS NOT 'blog'"):
+        "SELECT id, canonical_name, source, aliases FROM people WHERE source IS NOT 'blog' AND source IS NOT '1811directory'"):
     forms = [cn] + ([a for a in al.split(" | ") if a.strip()] if al else [])
     for f in forms:
         k = okey(f)
