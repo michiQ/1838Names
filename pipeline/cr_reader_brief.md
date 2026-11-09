@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, 1862 Q4 (October 4 - December 27, 1862)
+# Extraction brief: Christian Recorder, 1863 Q1 (January 3 - March 28, 1863)
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,11 +7,11 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr62q4)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr63q1)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
-  higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt ('frame:slug:page'). This file has NO cover frame; frame 1 is the October 4 masthead. Frames 21, 30, 43 and 46 are small library cards, not pages (21: 'No. 44, November 8 should be No. 45; the preceding, of November 1, is also No. 44'; 30: 'No. 47 should be No. 46, dating series correct'; 43: 'No. 50 first sheet missing'; 46: 'No. 51 first sheet missing'). So the December 13 issue (No. 50) has ONLY pages 3 and 4 (frames 44, 45; printed pp. 199-200) and the December 20 issue (No. 51) has ONLY pages 3 and 4 (frames 47, 48; printed pp. 203-204). Their pages 1-2 do not survive. Issues run No. 40 (Oct 4) to No. 52 (Dec 27), Vol. II New Series, Whole Nos. 91-103/104; the printed issue numbers from Nov 8 are off by one (the cards explain it), so always cite by DATE. Recipe (crop by fractions of the paper area; adjust to taste):
+  higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt ('frame:slug:page'). Frame 1 is a library title card (Vol. III, New Series, No. 1 Jan 3 to No. 52 Dec 26, Elisha Weaver editor; this file holds only Jan-Mar). Frames 10, 21 and 32 are library cards, not pages (10: 'No. 3 first page missing'; 21: 'No. 6 first sheet missing'; 32: 'No. 9 first sheet missing'). So January 17 (No. 3), February 7 (No. 6) and February 28 (No. 9) have ONLY pages 3 and 4 (frames 11-12, 22-23, 33-34). Issues run No. 1 (Jan 3) to No. 13 (Mar 28), Vol. III New Series, Whole Nos. 104-116; cite by DATE. Recipe (crop by fractions of the paper area; adjust to taste):
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
@@ -73,7 +73,7 @@ Philadelphia-focused deep read:
   ("W. T. Jones"). Expand nothing you cannot see; do not normalize spellings.
 - Dates ISO (yyyy-mm-dd) when the date of the event is stated or computable; else omit `date`.
 
-## Already captured in Runs #74-#81 (1861 and Jan-Sep 1862) -- do NOT re-enter unless changed
+## Already captured in Runs #74-#82 (1861 and 1862) -- do NOT re-enter unless changed
 Recurring: Book Depository of the AME Church (619 Pine; E. Weaver); city carriers James Wiggins & W. T. Jones; Ellis J. Peer's
 Fine Cake Bakery (South St.); Mrs. H. S. Duterte, undertaker (634 Lombard); Thomas W. Allmond, furnishing undertaker (1027
 Rodman); A. Burris, teacher of vocal music; teachers of the piano; Daughters of Cornish Society standing notice; Nazrey's
@@ -86,20 +86,19 @@ the Daughters of Cornish notice (now with a secretary); Mrs. Jane Johnson and Mr
 (717 Lombard); Mrs. S. Shorter Hawkins (615 Lombard); Mrs. Rebecca O'Donnell, china and glass (South St.); Mrs. E. A. Palmer's
 Dry Goods and Trimmings (105 N. Fifth); 'Good News' cutting system (Wm. Bradley; Mrs. Mary C. Weaver); 'Wanted, charge of a
 Public School' (J. W. A., 1641 Helmuth St.); Harriet Jacobs's 'Linda' for sale at 107 N. Fifth; the Dorcas Society of Bethel
-officers; the Philadelphia Grand Lodge installation roster. From Apr-Jun 1862 (Run #79): Thomas Charnock, General Furnishing Undertaker (427 S. 6th St., second door below Bethel Church), ad and editorial puff; Mrs. S. Shorter Hawkins's 'New Spring Goods' puff (615 Lombard); Miss Mary Still as the Recorder's city and county canvasser ('Our City Canvass', June 28); Rev. Henry Davis boarding notice (Wood St.) and illness notice; A. L. Stanford's twelve lectures at Wesley, Hurst St.; the SCSA Port Royal subscription and donor list; the Bucks County certificate (Emily Johnson); the Nazrey/Quinn 'Recommendation to the Districts'; the 1862 Philadelphia Conference appointments (Campbell to Bethel, Stanford to Wesley, H. Davis to Union, Roberson to Frankford); the Book Concern trustees; John S. Rock's lectures; the death of Rev. William Douglass of St. Thomas'; the J. Woodlin Society anniversary; recurring quarterly-meeting notices for the NJ and West Chester circuits. From Jul-Sep 1862 (Run #81): Miss Jane Johnson, laying out and shrouding the dead (618 South 8th St.) ad and notice; Mrs. Martha Collins's infant school (730 Russell St. above Fitzwater) ad; Banaker House (Cape May) and Union Cottage (Atlantic City) ads (out of town); Miss Mary Still named authorized agent for the city and county; Prof. P. Houston Murray's lectures; Rev. J. P. Campbell's residence notice; the Bethel male members' meeting on colored men as soldiers (Sept 6); the Bethel contraband relief meeting and committee of seven (Sept 27); the Sabbath School Convention of the Philadelphia District called by Bishop Nazrey; Wesley (Hurst St.) pastor's lecture series and appointments; Rev. W. D. W. Schureman's illness; the death of Henry Downing, Bethel Sunday School librarian. Ads that ran all quarter (Book Depository, Duterte, Allmond, Peer, Still's coal, Palmer, Charnock, Jane Johnson, Martha Collins): do NOT re-enter. If any of these ads or notices simply REPEAT in Q3, do not re-enter them (note the repeat). A changed notice (new officers, new dates) is new. Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
+officers; the Philadelphia Grand Lodge installation roster. From Apr-Jun 1862 (Run #79): Thomas Charnock, General Furnishing Undertaker (427 S. 6th St., second door below Bethel Church), ad and editorial puff; Mrs. S. Shorter Hawkins's 'New Spring Goods' puff (615 Lombard); Miss Mary Still as the Recorder's city and county canvasser ('Our City Canvass', June 28); Rev. Henry Davis boarding notice (Wood St.) and illness notice; A. L. Stanford's twelve lectures at Wesley, Hurst St.; the SCSA Port Royal subscription and donor list; the Bucks County certificate (Emily Johnson); the Nazrey/Quinn 'Recommendation to the Districts'; the 1862 Philadelphia Conference appointments (Campbell to Bethel, Stanford to Wesley, H. Davis to Union, Roberson to Frankford); the Book Concern trustees; John S. Rock's lectures; the death of Rev. William Douglass of St. Thomas'; the J. Woodlin Society anniversary; recurring quarterly-meeting notices for the NJ and West Chester circuits. From Jul-Sep 1862 (Run #81): Miss Jane Johnson, laying out and shrouding the dead (618 South 8th St.) ad and notice; Mrs. Martha Collins's infant school (730 Russell St. above Fitzwater) ad; Banaker House (Cape May) and Union Cottage (Atlantic City) ads (out of town); Miss Mary Still named authorized agent for the city and county; Prof. P. Houston Murray's lectures; Rev. J. P. Campbell's residence notice; the Bethel male members' meeting on colored men as soldiers (Sept 6); the Bethel contraband relief meeting and committee of seven (Sept 27); the Sabbath School Convention of the Philadelphia District called by Bishop Nazrey; Wesley (Hurst St.) pastor's lecture series and appointments; Rev. W. D. W. Schureman's illness; the death of Henry Downing, Bethel Sunday School librarian. Ads that ran all quarter (Book Depository, Duterte, Allmond, Peer, Still's coal, Palmer, Charnock, Jane Johnson, Martha Collins): do NOT re-enter. From Oct-Dec 1862 (Run #82): Mrs. S. Shorter Hawkins's fall and winter goods ad (615 Lombard); Wm. H. Longfellow, surgeon dentist (1126 Rodman) ad and puff; 'Wanted' lodgers (424 South 7th) ad; the Bethel contraband committee roster; the Union A.M.E. freedmen's committee of 21; the SCSA election of Nov 3, Port Royal list, Contraband Fund and clothing lists; Father Richard Roberson's (Robinson's) injury, death and funeral; Garrison James's obituary; the Philadelphia Library Co. 29th anniversary; Rev. Wm. Alston's installation at St. Thomas'; the St. Thomas' Sinking Fund fair; the Friends' evening schools; ICY lecture course (Collins, Bassett); Book Concern executive committee and hymn-book appeal; A. Burris's concerts; Henry Christian seeking his children. If any of these ads or notices simply REPEAT in Q3, do not re-enter them (note the repeat). A changed notice (new officers, new dates) is new. Out of scope (white patrons): F. Champion (Brooklyn), Gustine, Reimer, Gregg, D. W. Clark, G. G. Evans, Leary
 Getz, Dean, Metz, Elkinton, Rothermel (coal), insurance, railroads, patent medicines. NEW Black-owned ads or changed notices
 SHOULD be entered. Quarterly-meeting schedules: one short article per notice, link only named preachers/officers.
 
 ## Watch for in this quarter
-- Responses to the preliminary Emancipation Proclamation (Sept. 22): Philadelphia meetings, resolutions, sermons, letters;
-  plans for watch-night / Jubilee meetings for January 1, 1863 (announced in late December issues).
-- Contraband and freedpeople relief: the Bethel relief committee's work, collections, donor lists, the Contraband Relief
-  Association, boxes sent to Washington, Port Royal, Fortress Monroe; colonization (Chiriqui, Liberia, Haiti) debates.
-- Thanksgiving (late November) collections and services; fairs, festivals and church anniversaries in the autumn; Christmas.
-- Black enlistment talk; the elections of October 1862.
-- Society business: Banneker Institute (autumn lectures), ICY and its Alumni, the Social, Civil and Statistical Association,
-  lodges (Odd Fellows, Masons, Samaritans), beneficial societies (officer lists whole), Daughters of Temperance, Sabbath-school
-  conventions (the Philadelphia District convention called in Sept.).
+- EMANCIPATION PROCLAMATION (Jan. 1, 1863): Philadelphia watch-night and Jubilee meetings, celebrations, resolutions, sermons
+  and addresses, with officers and speakers; reports of celebrations elsewhere go in text only.
+- The enlistment of Black soldiers (the 54th Massachusetts recruiting from February; Philadelphia meetings and recruiters; the
+  Supervisory Committee for Recruiting Colored Regiments is later, but early agitation may appear).
+- Contraband and freedpeople relief continued (SCSA, Bethel and Union committees, the Contraband Relief Association); fairs.
+- Society business: Banneker Institute winter lectures, ICY lecture course and examinations, the SCSA, lodges, beneficial
+  societies (officer lists whole), Daughters of Temperance, Sabbath-school anniversaries; the Philadelphia Annual Conference is
+  usually in the spring (watch for the call and the appointments if printed by late March).
 - Streetcar (passenger railway) exclusion: any new ejection, petition or meeting (Q2 had the Blyden/Crummell ejections and
   the car petition signed by Gibbs and Still).
 - NEW or changed Black-owned ads; marriages and deaths of Philadelphians, with officiating ministers.
@@ -123,6 +122,9 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
 - Miss Mary Still (Allentown / Clarksborough near Mount Holly N.J.; the Recorder's Philadelphia canvasser from June 1862) is William Still's sister (owner's ruling, Nov 2026); record her as printed.
 - Rev. Jonathan C. Gibbs (born 1821; Presbyterian, First African Presbyterian) is the SON. His father, Jonathan C. Gibbs Sr.,
   died in 1831: any 1860s Gibbs is the son.
+- 1862 rulings (owner): Rev. Richard Roberson / Robertson = Rev. Richard Robinson of Frankford (died Nov. 18, 1862); Mrs. S. Shorter
+  Hawkins = Sarah S. Hawkins = Sarah S. Shorter; Wm. Alston / W. A. Alston = Rev. William J. Alston of St. Thomas'; 'E. H. Bassett' =
+  E. D. Bassett; Garrison James served both Bethel (chorister) and Union (trustee). Record as printed; identifications in notes.
 - Lambsong the confectioner (Culvert above Apple) is Rebecca Lambsong's husband; Robert J. Douglass / Robert Douglass Jr. is the
   painter (owner's rulings, Nov 2026). The 1838 Register of Trades is now in the database: a tradesperson with an address may already
   have a record; record as printed.
