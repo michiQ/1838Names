@@ -1727,11 +1727,12 @@
   "note": "Cyrus Porter, treasurer of the African Insurance Company (1811 directory, p. 416), is the 1811 Directory of Coloured Persons' 'Porter Cyrus, stablekeeper, 159 Lombard' (the company's office address). 2026-11-04."
  },
  {
-  "keep": {
-   "name": "Sarah S. Hawkins",
-   "source": "newspaper"
-  },
+  "keep": "Shorter, Sarah S.",
   "aliases": [
+   {
+    "name": "Sarah S. Hawkins",
+    "source": "newspaper"
+   },
    {
     "name": "S. S. Hawkins",
     "source": "newspaper"
@@ -1743,9 +1744,13 @@
    {
     "name": "Mrs. S. Shorter Hawkins",
     "source": "newspaper"
+   },
+   {
+    "name": "Sarah B. Hawkins",
+    "source": "newspaper"
    }
   ],
-  "note": "Mrs. S. Shorter Hawkins, dry goods and trimmings, 615 Lombard, is the SCSA donor Sarah S. Hawkins / S. S. Hawkins. Michiko, 2026-11-09 (after Run #82)."
+  "note": "Mrs. S. Shorter Hawkins, dry goods and trimmings, 615 Lombard, is the SCSA donor Sarah S. Hawkins / S. S. Hawkins. Michiko, 2026-11-09 (after Run #82). Michiko, 2026-11-09: she is Julie Winch's Sarah S. Shorter (milliner and dressmaker, 18 Currant alley, 1838 Register of Trades) after her marriage, and the Nov. 29, 1862 donor printed 'Sarah B. Hawkins' is the same woman."
  },
  {
   "keep": "Alston, William J.",
