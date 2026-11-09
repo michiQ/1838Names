@@ -660,10 +660,16 @@ function select(pid){
   // events
   const evs = (p.events||[]).map(x=>({e:E.get(x.e),role:x.role})).filter(x=>x.e);
   if(evs.length){ h += `<h3>Events</h3>` + evs.map(({e,role})=>{
-    const others = e.att.filter(([q])=>q!==pid).map(([q,r])=>{
-      const op=P.get(q); return op?`<span class="pl" data-p="${q}">${esc(op.name)}</span> <em style="color:var(--dim)">(${esc(r)})</em>`:'';
-    }).filter(Boolean).join(', ');
-    return `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(role)} · ${esc(e.date||'')} · ${esc(e.loc||'')}</div><q>${esc(e.desc)}</q>${others?`<div style="margin-top:5px;font-size:12.5px"><b style="color:var(--rust)">Also there:</b> ${others}</div>`:''}</div>`;
+    // Long rosters and long descriptions are shortened on a person's card (2026-11-08, Michiko: the
+    // 1813 school roll filled Sarah Douglass's card); the full text and list open with the event.
+    const oth = e.att.filter(([q])=>q!==pid && P.get(q));
+    const others = oth.length>25 ? `${oth.length} others. <span class="pl" data-e="${e.id}" style="text-decoration:underline">See the full list</span>`
+      : oth.map(([q,r])=>`<span class="pl" data-p="${q}">${esc(P.get(q).name)}</span> <em style="color:var(--dim)">(${esc(r)})</em>`).join(', ');
+    // A description may open with a short summary followed by ' || ' and the full text; cards show the summary.
+    const d0 = (e.desc||'').split(' || ')[0];
+    const longDesc = d0.length < (e.desc||'').length || d0.length>700;
+    const dtxt = d0.length>700 ? d0.slice(0, d0.lastIndexOf(' ', 600)).replace(/[\s,;:]+$/,'') + '…' : d0;
+    return `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(role)} · ${esc(e.date||'')} · ${esc(e.loc||'')}</div><q>${linkify(esc(dtxt))}</q>${longDesc?`<div style="margin-top:4px;font-size:12.5px"><span class="pl" data-e="${e.id}" style="text-decoration:underline">Read the full entry, with sources and scans</span></div>`:''}${others?`<div style="margin-top:5px;font-size:12.5px"><b style="color:var(--rust)">Also there:</b> ${others}</div>`:''}</div>`;
   }).join(''); }
   // mentions
   if(p.mentions?.length){ const _ms=[...p.mentions].sort((a,b)=>((b.art?2:0)+(b.role?1:0))-((a.art?2:0)+(a.role?1:0))); h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + _ms.map(m=>
@@ -769,7 +775,7 @@ function selectEvent(eid){
   const e = E.get(eid); if(!e) return;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='e' && +r.dataset.id===eid));
   let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>`;
-  if(e.desc) h += `<div class="card"><q>${linkify(esc(e.desc))}</q>${e.issue?`<div class="src">${ISSUE_LABEL(e.issue)}, p.${e.pg}${srcLinks(e.issue,e.pg)}</div>`:''}</div>`;
+  if(e.desc) h += `<div class="card"><q>${linkify(esc(e.desc)).split(' || ').join('<br><br>')}</q>${e.issue?`<div class="src">${ISSUE_LABEL(e.issue)}, p.${e.pg}${srcLinks(e.issue,e.pg)}</div>`:''}</div>`;
   if(e.att.length){
     h += `<h3>Who was there (${e.att.length})</h3>` + e.att.map(([q,role])=>{
       const op=P.get(q); if(!op) return '';

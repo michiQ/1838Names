@@ -83,8 +83,8 @@ def main():
     for base in ("Mary Sammons", "Mary Johnson"):
         a, b = kids.get(base), kids.get(base + "#2")
         if a and b is None and "H2" in a["lists"] and "H" in a["lists"]:
-            kids[base + "#2"] = {"name": base, "roles": [r for r in a["roles"] if "May 3" in r], "night": False, "lists": {"H2"}}
-            a["roles"] = [r for r in a["roles"] if "May 3" not in r]; order.append(base + "#2")
+            kids[base + "#2"] = {"name": base, "roles": [r for r in a["roles"] if "May-July" in r], "night": False, "lists": {"H2"}}
+            a["roles"] = [r for r in a["roles"] if "May-July" not in r]; order.append(base + "#2")
     cls_seen = {}
     for nm, cl in R["classes"]["entries"]:
         base = VAR.get(nm, nm)
@@ -94,15 +94,15 @@ def main():
         if nm == "William Thomas" and cl == "does not yet write": base = "William Thomas, jun."
         if base not in kids:   # on the class lists only (Caroline and Susan Butler)
             print("   on the class list only:", nm)
-            kids[base] = {"name": base, "roles": ["listed only in the May 1813 class lists"], "night": False, "lists": set()}; order.append(base)
-        kids[base]["roles"].append("May 1813 class: " + cl)
+            kids[base] = {"name": base, "roles": ["in the May 1813 class lists only"], "night": False, "lists": set()}; order.append(base)
+        kids[base]["roles"].append("class: " + cl)
 
     att, report = [], {"winch": [], "fixed": [], "new": [], "fuzzy": []}
     n_new = {}
     merged = {}   # winch id -> attendee index (two printed people collapsing onto one Winch record)
     for k in order:
         kd = kids[k]; nm = kd["name"]
-        role = "scholar at Arthur Donaldson's school: " + "; ".join(dict.fromkeys(kd["roles"]))
+        role = "; ".join(dict.fromkeys(kd["roles"]))
         pid = FIXED.get(nm)
         if pid is None and nm not in NO_WINCH:
             c = widx.get(norm(nm), [])
@@ -116,7 +116,7 @@ def main():
         elif pid is not None: report["fixed"].append(nm)
         if pid is not None:
             if pid in merged:
-                a = att[merged[pid]]; a[1] += " | listed again: " + role.split(": ", 1)[1]; continue
+                a = att[merged[pid]]; a[1] += " | listed twice: " + role; continue
             merged[pid] = len(att); att.append([nm, role, pid])
         else:
             report["new"].append(nm + (" (night)" if kd["night"] else ""))

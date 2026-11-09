@@ -1,31 +1,1103 @@
 {
   "_doc": "Transcription of the scholar rosters in The Juvenile Magazine, No. 3 (Philadelphia: Arthur Donaldson, Seventh Month 1st [July 1], 1813), pp. 4-15. Names exactly as printed, in printed order. Transcribed 2026-11-08 from the Internet Archive scan Michiko supplied, checked against 300 dpi crops. build_jm1813.py turns this into extractions_jm1813.json.",
   "lists": {
-    "A": {"label": "day scholar, on the boys' list from the school's opening (May 1, 1809) to the fire (Oct. 1811)", "page": 4, "names": ["William Perkins","Joseph Pancoast","William Brummage","John Collins","Manlif Nixon","Oliver Williams","James Williams","Joseph Appo","Peter Quire","Cyrus R. Burten","Thomas Fitzgiles","Francis Lewis","Robert Lewis","John Humphreys","Jeremiah Harris","Henry Waters","William Mount","Horace Smith","Moses Jenkins","Samuel White","Simon Dows","William Thomas","Randol Shepherd","James Newman","Wiley Quotance","William Yard","George Parker","Sinclair Mitchel","Lindo Lorum","William Brown","Jonathan Blundon","Joseph Lewis","Pompey Jones","Samuel Green","John James","Thomas James","David Conyers","John Conyers","Nathaniel Todd","Benjamin Clover","George Dows","Hugh Griffith","James Harmon","Thomas Mount","Richard Jenkins","Samuel Campbell","Samuel Hagerman","Thomas Conyar","Ashbury Beuly","Robert Lewis","Samuel Jackson","Henry Butler","George Plato","Charles Blunden","Charles Davis","Samuel Camble","Emanuel Quotance","James Simpson","Robert Anderson"]},
-    "B": {"label": "day scholar, a boy who entered between Oct. 28, 1811 and May 1, 1813", "page": 4, "names": ["James Bettle","Eleven Chase","Henry Duff","James Smith","William Sockham","Luke Burton","William Fraser","Charles Black","Solomon Malony","Emanuel Rowen","John Burket","Henry Laurence","Philip Taylor","Henry Wiltshire","Samuel Millar","James Golar","Felix Perue","John Wiley","Thomas Lewis","Luner Brown","John Amos","Nathan Brown","Lewis Wolf","John Blake","William Archer","Thomas Ross","Robert Freeman","Jacob Johnson","William Wincoob","John Davis","William Johnson","Thomas Lewis, Jr.","Thomas Williams","Samuel Lewis","Peter Jones","Samuel Jackson","Aaron Shavers","Abner Cromwell","Joseph Gilmer","Bennet Wilson","Peter Gray","Robert C. Gordon","Thomas Barager","Johnson Penn","Peter Duff","Scipio Sewell","William Jennings","Selby Roads","George Rowen","Robert Douglass, jr.","James Stotts","James Quire","John Black","Ezekiel M'Neal","Myres R. Burten","Robert Montier","James Bray"]},
-    "C": {"label": "day scholar, on the girls' list from the school's opening (May 1, 1809) to the fire (Oct. 1811)", "page": 5, "names": ["Sarah Montier","Mary Montier","Susanna Montier","Hannah Montier","Helen Appo","Sarah Collings","Eleanor Quire","Elizabeth Harding","Eliza Morgan","Mary Morgan","Ann Perkins","Eliza Barkley","Priscilla Brown","Priscilla Fields","Susan Sang","Mary Cole","Grace Harding","Singular Skinner","Maria Still","Martha Waterford","Eliza Pancoast","Charlotte Lavinia","Margaret Weatherhead","Catherine Weatherhead","Rachel Mitchel","Ann Campbell","Mary Anderson","Margaret Stotts","Maria Still","Carolina Waterford","Sarah Waterford","Catharine Thomas","Julian Mitchell"]},
-    "D": {"label": "day scholar, a girl who entered between Oct. 28, 1811 and May 1, 1813", "page": 6, "names": ["Sarah Wheeler","Jane Shorts","Maria Colwell","Amelia Poke","Louisa Marks","Mary Marks","Elizabeth Davis","Harriet Williams","Eliza Harris","Hannah Brown","Nancy Shepherd","Lydia Shepherd","Mary Richmond","Harriet Fosset","Eliza Fosset","Henrietta Gardner","Jane Duffel","Maria Parker","Sarah Lodman","Elizabeth Cooper","Lydia White","Rachel Till","Violet Lake","Mary Lawrie","Ann Wheeler","Matilda Milburn","Ann Spanso","Esther Ann Murphy","Nancy Easton","Eliza Easton","Amy Perkins","Margaret Litle","Jane Harard","Mary Cooper","Esther Perue","Mary Ann Miller","Sarah Robinson","Alice Luff","Elizabeth Williams","Sarah Douglass","Jane Fergason","Amelia Ringold","Mary Ann Ringold","Elizabeth Luff","Sarah Green","Ann Roberts","Mary Ann Stotts","Elizabeth Duncan"]},
-    "E": {"label": "night scholar, men's list, 1809-1813 (probably an adult)", "page": 6, "night": true, "names": ["Charles Morgan","Charles Brown","Henry Burton","Samuel White","Daniel Tillison","Samuel Barry","Abraham M'Clain","James Newman","Jacob Stoops","Jeremiah Alexander","Peter Wilson","William Wincoob","Isaac Dill","Henry Duff","John Lister","Henry Hummings","Thomas Ganges","Ishmael Barto","Richard Gale","Thomas Black","Henry Simmons","Elijah Burton","William Jones","Isaac Colwell","Richard Morris","Anthony Stewart","Philip Luff","Jonathan Harding","William Rowley","Joseph Holmes","Luke Cesar","William Weeks","Samuel Bardly","Wiley Quotance","George Patterson","Thomas Sewell","Immanuel Madenis","Lewis Kirkum","Thomas Lewis","Johnson Penn","Philip Smith","Yorick Tittle","Joseph Greggs","Eleven Davis","Elias Hunt","John Adams","James Alsop","Elijah Millar","Joseph Le Count","Samuel Presgrove","Isaac Fenes","Charles Marks","Robert Down","Perry Bryan","Joseph Thomson","Samson Taylor","Benjamin Holt","John Henry","William Groves","Thomas Black","Ezekiel Harman","Peter Field","Tilman Dansbury","Simon Collins","Charles Murry","James Ballard","James Anderson","Immanuel Brown","Joseph Thomas","William Rowly"]},
-    "F": {"label": "night scholar, women's list, 1809-1813 (probably an adult)", "page": 7, "night": true, "names": ["Mary Lawrie","Frances Manwell","Mary Edwards","Alice Rogers","Jane Radney","Dinah Hall","Harriet Allen","Sarah Osburn","Henrietta Pierce","Sinthy Branson","Sarah Dunn","Jane Lofly","Hannah Gray","Hannah Hill","Judith Mans","Jane White","Mary Peterson","Delia Davis","Sidney Brokens","Ann Bradwick","Mariah Boon","Famy Absalom","Rebecca Brown","Sarah Till","Frances Smith","Ann White","Susan Rayman"]},
-    "G": {"label": "on the boys' roll as it stood May 1, 1813", "page": 10, "names": ["Francis Lewis","John Sammons","Oliver Williams","Henry Waters","Randol Shepherd","Robert Gordon","Cyrus R. Burten","William Thomas","John Black","William Jennings","Jacob Augustine","Joseph Appo","George Rowen","Thomas Fitzgiles","William Gordon","James Williams","John Collins","Manliff Nixon","Elijah Burton","Selby Roads","Lindo Lorum","Leven Bailey","Felix Perue","Solomon Brown","Aaron Shavers","Robert Douglass","Peter Duff","William Blake","Jeremiah Jones","Robert Montier","Walter Gordon","Isaiah Lecount","John Gordon","William Appo","George Douglass","John Henry","Thomas Lawrie","Joseph Williams","Abraham M'Coy","Henry Middleton","John Umphreys","Robert Jackson","Samuel Lewis","James West","Benjamin Middleton","James Quire","William Johnston"]},
-    "G2": {"label": "a boy who entered between May 1 and July 1, 1813", "page": 11, "names": ["Jesse Le Count","William Thomas, jun.","Edward Thomas","Joseph Johnson","Charles Bristel","James Gray","Charles Taught","Archibald Shavers","John Stoops","Alexander Pratos","David Bennet","Garrison Blake","George Mongatus","Jacob Johnston","Lewis Wolf","Robert Bougal"]},
-    "H": {"label": "on the girls' roll as it stood May 1, 1813", "page": 11, "names": ["Mary Montier","Elizabeth Harding","Mary Marks","Ann Perkins","Maria Parker","Nancy Shepherd","Sarah Bailey","Margaret Oakey","Maryann Nelson","Hannah Montier","Susan Montier","Grace Harding","Amelia Ringold","Lydia Shepherd","Amelia Turner","Eleanor Quire","Elizabeth Nelson","Elizabeth Lewis","Eliza Smith","Mary Gordon","Elizabeth Dunken","Singular Skinner","Sarah Collings","Sarah Douglass","Catherine Gibbs","Mary Ann Ringold","Sarah Ann Gordon","Harriet Dill","Mary Hazel","Mary Sammons","Mary Johnson","Susan Quire","Elizabeth Ginn","Mary Wilks","Isabella Francis","Sarah Jones","Caroline Waterford","Jane Lewis","Sarah Nelson","Catherine Thomas","Susan Thomas","Lydia Dixon","Ann Middleton","Margaret Harris","Margaret Litle"]},
-    "H2": {"label": "a girl who entered between May 3 and July 1, 1813", "page": 12, "names": ["Mary Sammons","Maria Carrel","Ann Maria Bogal","Sarah Moses","Mary Roberts","Nancy Shields","Susan Jackson","Maria Williams","Mary Johnson","Helen Merrit","Susan Black","Martha Black","Sarah Battis","Ruth Harding","Nancy Francis","Esther Morgan","Charlotte Chambers","Elizabeth Reading","Jane Duffis","Ann Morain","Abigail Biat","Henrietta Warring","Nancy Norris","Amelia Rodman","Emelia Rodwell","Elizabeth Parrot","Juliann Mitchell","Ann Wheelar","Elizabeth Williams","Mariann Stotts","Rachel Till","Jane Shorts","Nancy James","Margaret Stotts"]}
+    "A": {
+      "label": "day scholar, 1809-11 list",
+      "page": 4,
+      "names": [
+        "William Perkins",
+        "Joseph Pancoast",
+        "William Brummage",
+        "John Collins",
+        "Manlif Nixon",
+        "Oliver Williams",
+        "James Williams",
+        "Joseph Appo",
+        "Peter Quire",
+        "Cyrus R. Burten",
+        "Thomas Fitzgiles",
+        "Francis Lewis",
+        "Robert Lewis",
+        "John Humphreys",
+        "Jeremiah Harris",
+        "Henry Waters",
+        "William Mount",
+        "Horace Smith",
+        "Moses Jenkins",
+        "Samuel White",
+        "Simon Dows",
+        "William Thomas",
+        "Randol Shepherd",
+        "James Newman",
+        "Wiley Quotance",
+        "William Yard",
+        "George Parker",
+        "Sinclair Mitchel",
+        "Lindo Lorum",
+        "William Brown",
+        "Jonathan Blundon",
+        "Joseph Lewis",
+        "Pompey Jones",
+        "Samuel Green",
+        "John James",
+        "Thomas James",
+        "David Conyers",
+        "John Conyers",
+        "Nathaniel Todd",
+        "Benjamin Clover",
+        "George Dows",
+        "Hugh Griffith",
+        "James Harmon",
+        "Thomas Mount",
+        "Richard Jenkins",
+        "Samuel Campbell",
+        "Samuel Hagerman",
+        "Thomas Conyar",
+        "Ashbury Beuly",
+        "Robert Lewis",
+        "Samuel Jackson",
+        "Henry Butler",
+        "George Plato",
+        "Charles Blunden",
+        "Charles Davis",
+        "Samuel Camble",
+        "Emanuel Quotance",
+        "James Simpson",
+        "Robert Anderson"
+      ],
+      "label_full": "day scholar, on the boys' list from the school's opening (May 1, 1809) to the fire (Oct. 1811)"
+    },
+    "B": {
+      "label": "day scholar, entered 1811-13",
+      "page": 4,
+      "names": [
+        "James Bettle",
+        "Eleven Chase",
+        "Henry Duff",
+        "James Smith",
+        "William Sockham",
+        "Luke Burton",
+        "William Fraser",
+        "Charles Black",
+        "Solomon Malony",
+        "Emanuel Rowen",
+        "John Burket",
+        "Henry Laurence",
+        "Philip Taylor",
+        "Henry Wiltshire",
+        "Samuel Millar",
+        "James Golar",
+        "Felix Perue",
+        "John Wiley",
+        "Thomas Lewis",
+        "Luner Brown",
+        "John Amos",
+        "Nathan Brown",
+        "Lewis Wolf",
+        "John Blake",
+        "William Archer",
+        "Thomas Ross",
+        "Robert Freeman",
+        "Jacob Johnson",
+        "William Wincoob",
+        "John Davis",
+        "William Johnson",
+        "Thomas Lewis, Jr.",
+        "Thomas Williams",
+        "Samuel Lewis",
+        "Peter Jones",
+        "Samuel Jackson",
+        "Aaron Shavers",
+        "Abner Cromwell",
+        "Joseph Gilmer",
+        "Bennet Wilson",
+        "Peter Gray",
+        "Robert C. Gordon",
+        "Thomas Barager",
+        "Johnson Penn",
+        "Peter Duff",
+        "Scipio Sewell",
+        "William Jennings",
+        "Selby Roads",
+        "George Rowen",
+        "Robert Douglass, jr.",
+        "James Stotts",
+        "James Quire",
+        "John Black",
+        "Ezekiel M'Neal",
+        "Myres R. Burten",
+        "Robert Montier",
+        "James Bray"
+      ],
+      "label_full": "day scholar, a boy who entered between Oct. 28, 1811 and May 1, 1813"
+    },
+    "C": {
+      "label": "day scholar, 1809-11 list",
+      "page": 5,
+      "names": [
+        "Sarah Montier",
+        "Mary Montier",
+        "Susanna Montier",
+        "Hannah Montier",
+        "Helen Appo",
+        "Sarah Collings",
+        "Eleanor Quire",
+        "Elizabeth Harding",
+        "Eliza Morgan",
+        "Mary Morgan",
+        "Ann Perkins",
+        "Eliza Barkley",
+        "Priscilla Brown",
+        "Priscilla Fields",
+        "Susan Sang",
+        "Mary Cole",
+        "Grace Harding",
+        "Singular Skinner",
+        "Maria Still",
+        "Martha Waterford",
+        "Eliza Pancoast",
+        "Charlotte Lavinia",
+        "Margaret Weatherhead",
+        "Catherine Weatherhead",
+        "Rachel Mitchel",
+        "Ann Campbell",
+        "Mary Anderson",
+        "Margaret Stotts",
+        "Maria Still",
+        "Carolina Waterford",
+        "Sarah Waterford",
+        "Catharine Thomas",
+        "Julian Mitchell"
+      ],
+      "label_full": "day scholar, on the girls' list from the school's opening (May 1, 1809) to the fire (Oct. 1811)"
+    },
+    "D": {
+      "label": "day scholar, entered 1811-13",
+      "page": 6,
+      "names": [
+        "Sarah Wheeler",
+        "Jane Shorts",
+        "Maria Colwell",
+        "Amelia Poke",
+        "Louisa Marks",
+        "Mary Marks",
+        "Elizabeth Davis",
+        "Harriet Williams",
+        "Eliza Harris",
+        "Hannah Brown",
+        "Nancy Shepherd",
+        "Lydia Shepherd",
+        "Mary Richmond",
+        "Harriet Fosset",
+        "Eliza Fosset",
+        "Henrietta Gardner",
+        "Jane Duffel",
+        "Maria Parker",
+        "Sarah Lodman",
+        "Elizabeth Cooper",
+        "Lydia White",
+        "Rachel Till",
+        "Violet Lake",
+        "Mary Lawrie",
+        "Ann Wheeler",
+        "Matilda Milburn",
+        "Ann Spanso",
+        "Esther Ann Murphy",
+        "Nancy Easton",
+        "Eliza Easton",
+        "Amy Perkins",
+        "Margaret Litle",
+        "Jane Harard",
+        "Mary Cooper",
+        "Esther Perue",
+        "Mary Ann Miller",
+        "Sarah Robinson",
+        "Alice Luff",
+        "Elizabeth Williams",
+        "Sarah Douglass",
+        "Jane Fergason",
+        "Amelia Ringold",
+        "Mary Ann Ringold",
+        "Elizabeth Luff",
+        "Sarah Green",
+        "Ann Roberts",
+        "Mary Ann Stotts",
+        "Elizabeth Duncan"
+      ],
+      "label_full": "day scholar, a girl who entered between Oct. 28, 1811 and May 1, 1813"
+    },
+    "E": {
+      "label": "night scholar (probably an adult)",
+      "page": 6,
+      "night": true,
+      "names": [
+        "Charles Morgan",
+        "Charles Brown",
+        "Henry Burton",
+        "Samuel White",
+        "Daniel Tillison",
+        "Samuel Barry",
+        "Abraham M'Clain",
+        "James Newman",
+        "Jacob Stoops",
+        "Jeremiah Alexander",
+        "Peter Wilson",
+        "William Wincoob",
+        "Isaac Dill",
+        "Henry Duff",
+        "John Lister",
+        "Henry Hummings",
+        "Thomas Ganges",
+        "Ishmael Barto",
+        "Richard Gale",
+        "Thomas Black",
+        "Henry Simmons",
+        "Elijah Burton",
+        "William Jones",
+        "Isaac Colwell",
+        "Richard Morris",
+        "Anthony Stewart",
+        "Philip Luff",
+        "Jonathan Harding",
+        "William Rowley",
+        "Joseph Holmes",
+        "Luke Cesar",
+        "William Weeks",
+        "Samuel Bardly",
+        "Wiley Quotance",
+        "George Patterson",
+        "Thomas Sewell",
+        "Immanuel Madenis",
+        "Lewis Kirkum",
+        "Thomas Lewis",
+        "Johnson Penn",
+        "Philip Smith",
+        "Yorick Tittle",
+        "Joseph Greggs",
+        "Eleven Davis",
+        "Elias Hunt",
+        "John Adams",
+        "James Alsop",
+        "Elijah Millar",
+        "Joseph Le Count",
+        "Samuel Presgrove",
+        "Isaac Fenes",
+        "Charles Marks",
+        "Robert Down",
+        "Perry Bryan",
+        "Joseph Thomson",
+        "Samson Taylor",
+        "Benjamin Holt",
+        "John Henry",
+        "William Groves",
+        "Thomas Black",
+        "Ezekiel Harman",
+        "Peter Field",
+        "Tilman Dansbury",
+        "Simon Collins",
+        "Charles Murry",
+        "James Ballard",
+        "James Anderson",
+        "Immanuel Brown",
+        "Joseph Thomas",
+        "William Rowly"
+      ],
+      "label_full": "night scholar, men's list, 1809-1813 (probably an adult)"
+    },
+    "F": {
+      "label": "night scholar (probably an adult)",
+      "page": 7,
+      "night": true,
+      "names": [
+        "Mary Lawrie",
+        "Frances Manwell",
+        "Mary Edwards",
+        "Alice Rogers",
+        "Jane Radney",
+        "Dinah Hall",
+        "Harriet Allen",
+        "Sarah Osburn",
+        "Henrietta Pierce",
+        "Sinthy Branson",
+        "Sarah Dunn",
+        "Jane Lofly",
+        "Hannah Gray",
+        "Hannah Hill",
+        "Judith Mans",
+        "Jane White",
+        "Mary Peterson",
+        "Delia Davis",
+        "Sidney Brokens",
+        "Ann Bradwick",
+        "Mariah Boon",
+        "Famy Absalom",
+        "Rebecca Brown",
+        "Sarah Till",
+        "Frances Smith",
+        "Ann White",
+        "Susan Rayman"
+      ],
+      "label_full": "night scholar, women's list, 1809-1813 (probably an adult)"
+    },
+    "G": {
+      "label": "on the roll, May 1813",
+      "page": 10,
+      "names": [
+        "Francis Lewis",
+        "John Sammons",
+        "Oliver Williams",
+        "Henry Waters",
+        "Randol Shepherd",
+        "Robert Gordon",
+        "Cyrus R. Burten",
+        "William Thomas",
+        "John Black",
+        "William Jennings",
+        "Jacob Augustine",
+        "Joseph Appo",
+        "George Rowen",
+        "Thomas Fitzgiles",
+        "William Gordon",
+        "James Williams",
+        "John Collins",
+        "Manliff Nixon",
+        "Elijah Burton",
+        "Selby Roads",
+        "Lindo Lorum",
+        "Leven Bailey",
+        "Felix Perue",
+        "Solomon Brown",
+        "Aaron Shavers",
+        "Robert Douglass",
+        "Peter Duff",
+        "William Blake",
+        "Jeremiah Jones",
+        "Robert Montier",
+        "Walter Gordon",
+        "Isaiah Lecount",
+        "John Gordon",
+        "William Appo",
+        "George Douglass",
+        "John Henry",
+        "Thomas Lawrie",
+        "Joseph Williams",
+        "Abraham M'Coy",
+        "Henry Middleton",
+        "John Umphreys",
+        "Robert Jackson",
+        "Samuel Lewis",
+        "James West",
+        "Benjamin Middleton",
+        "James Quire",
+        "William Johnston"
+      ],
+      "label_full": "on the boys' roll as it stood May 1, 1813"
+    },
+    "G2": {
+      "label": "entered May-July 1813",
+      "page": 11,
+      "names": [
+        "Jesse Le Count",
+        "William Thomas, jun.",
+        "Edward Thomas",
+        "Joseph Johnson",
+        "Charles Bristel",
+        "James Gray",
+        "Charles Taught",
+        "Archibald Shavers",
+        "John Stoops",
+        "Alexander Pratos",
+        "David Bennet",
+        "Garrison Blake",
+        "George Mongatus",
+        "Jacob Johnston",
+        "Lewis Wolf",
+        "Robert Bougal"
+      ],
+      "label_full": "a boy who entered between May 1 and July 1, 1813"
+    },
+    "H": {
+      "label": "on the roll, May 1813",
+      "page": 11,
+      "names": [
+        "Mary Montier",
+        "Elizabeth Harding",
+        "Mary Marks",
+        "Ann Perkins",
+        "Maria Parker",
+        "Nancy Shepherd",
+        "Sarah Bailey",
+        "Margaret Oakey",
+        "Maryann Nelson",
+        "Hannah Montier",
+        "Susan Montier",
+        "Grace Harding",
+        "Amelia Ringold",
+        "Lydia Shepherd",
+        "Amelia Turner",
+        "Eleanor Quire",
+        "Elizabeth Nelson",
+        "Elizabeth Lewis",
+        "Eliza Smith",
+        "Mary Gordon",
+        "Elizabeth Dunken",
+        "Singular Skinner",
+        "Sarah Collings",
+        "Sarah Douglass",
+        "Catherine Gibbs",
+        "Mary Ann Ringold",
+        "Sarah Ann Gordon",
+        "Harriet Dill",
+        "Mary Hazel",
+        "Mary Sammons",
+        "Mary Johnson",
+        "Susan Quire",
+        "Elizabeth Ginn",
+        "Mary Wilks",
+        "Isabella Francis",
+        "Sarah Jones",
+        "Caroline Waterford",
+        "Jane Lewis",
+        "Sarah Nelson",
+        "Catherine Thomas",
+        "Susan Thomas",
+        "Lydia Dixon",
+        "Ann Middleton",
+        "Margaret Harris",
+        "Margaret Litle"
+      ],
+      "label_full": "on the girls' roll as it stood May 1, 1813"
+    },
+    "H2": {
+      "label": "entered May-July 1813",
+      "page": 12,
+      "names": [
+        "Mary Sammons",
+        "Maria Carrel",
+        "Ann Maria Bogal",
+        "Sarah Moses",
+        "Mary Roberts",
+        "Nancy Shields",
+        "Susan Jackson",
+        "Maria Williams",
+        "Mary Johnson",
+        "Helen Merrit",
+        "Susan Black",
+        "Martha Black",
+        "Sarah Battis",
+        "Ruth Harding",
+        "Nancy Francis",
+        "Esther Morgan",
+        "Charlotte Chambers",
+        "Elizabeth Reading",
+        "Jane Duffis",
+        "Ann Morain",
+        "Abigail Biat",
+        "Henrietta Warring",
+        "Nancy Norris",
+        "Amelia Rodman",
+        "Emelia Rodwell",
+        "Elizabeth Parrot",
+        "Juliann Mitchell",
+        "Ann Wheelar",
+        "Elizabeth Williams",
+        "Mariann Stotts",
+        "Rachel Till",
+        "Jane Shorts",
+        "Nancy James",
+        "Margaret Stotts"
+      ],
+      "label_full": "a girl who entered between May 3 and July 1, 1813"
+    }
   },
   "classes": {
     "_doc": "'A List of Scholars, as they are now classed, and as they excel' (pp. 12-15). Each entry: [name as printed, class].",
     "page": 12,
     "entries": [
-      ["Francis Lewis","first class, arithmetic: Practice"],["Randol Shepherd","first class, arithmetic: Practice"],["William Thomas","first class, arithmetic: Practice"],["Henry Warters","first class, arithmetic: Practice"],
-      ["Oliver Williams","first class, arithmetic: Addition of Weights and Measures"],["Robert Gordon","first class, arithmetic: Addition of Weights and Measures"],
-      ["John Sammons","first class, arithmetic: Addition of Money"],["John Black","first class, arithmetic: Division of Integers"],["Jacob Augustine","first class, arithmetic: Division of Integers"],
-      ["Cyrus Burton","first class, arithmetic: Subtraction of Integers"],["William Jennings","first class, arithmetic: Subtraction of Integers"],
-      ["Ann Perkins","first class, arithmetic: Multiplication of Federal Money"],["Elizabeth Harding","first class, arithmetic: Division of Integers"],
-      ["Mary Montier","first class, arithmetic: Multiplication of Integers"],["Mary Marks","first class, arithmetic: Multiplication of Integers"],
-      ["George Rowen","writes, does not yet cipher"],["Joseph Appo","writes, does not yet cipher"],["William Gordon","writes, does not yet cipher"],["James Williams","writes, does not yet cipher"],["Manliff Nixon","writes, does not yet cipher"],["Elijah Burton","writes, does not yet cipher"],["Eleven Baily","writes, does not yet cipher"],["Sinclair Mitchell","writes, does not yet cipher"],["Lindo Lorum","writes, does not yet cipher"],["Thomas Fitzgiles","writes, does not yet cipher"],["Silby Roads","writes, does not yet cipher"],["John Collins","writes, does not yet cipher"],["Lewis Wolf","writes, does not yet cipher"],["Jacob Johnson","writes, does not yet cipher"],["James Gray","writes, does not yet cipher"],["John Stoops","writes, does not yet cipher"],["David Bennet","writes, does not yet cipher"],["Garrison Blake","writes, does not yet cipher"],
-      ["Elizabeth Dunken","writes, does not yet cipher"],["Hannah Montier","writes, does not yet cipher"],["Maria Parker","writes, does not yet cipher"],["Nancy Shepherd","writes, does not yet cipher"],["Susan Montier","writes, does not yet cipher"],["Grace Harding","writes, does not yet cipher"],["Sarah Bailey","writes, does not yet cipher"],["Mary Ann Nelson","writes, does not yet cipher"],["Lydia Shepherd","writes, does not yet cipher"],["Eleanor Quire","writes, does not yet cipher"],["Elizabeth Nelson","writes, does not yet cipher"],["Elizabeth Lewis","writes, does not yet cipher"],["Elizabeth Smith","writes, does not yet cipher"],["Mary Gordon","writes, does not yet cipher"],["Margaret Litle","writes, does not yet cipher"],["Sarah Collings","writes, does not yet cipher"],["Singular Skinner","writes, does not yet cipher"],["Amelia Ringold","writes, does not yet cipher"],["Margaret Oakey","writes, does not yet cipher"],["Margaret Stotts","writes, does not yet cipher"],["Mariah Williams","writes, does not yet cipher"],["Eliza Pancost","writes, does not yet cipher"],["Elizabeth Williams","writes, does not yet cipher"],["Juliann Mitchell","writes, does not yet cipher"],
-      ["Felix Perue","does not yet write"],["Solomon Brown","does not yet write"],["Aaron Shavers","does not yet write"],["James Quire","does not yet write"],["Robert Montier","does not yet write"],["Robert Douglass","does not yet write"],["Peter Duff","does not yet write"],["William Blake","does not yet write"],["Jeremiah Jones","does not yet write"],["Walter Gordon","does not yet write"],["Isaiah Le Count","does not yet write"],["John Gordon","does not yet write"],["William Appo","does not yet write"],["George Douglas","does not yet write"],["John Henry","does not yet write"],["Thomas Lawrie","does not yet write"],["Joseph Williams","does not yet write"],["Abraham M'Coy","does not yet write"],["Henry Middleton","does not yet write"],["John Umphreys","does not yet write"],["Robert Jackson","does not yet write"],["William Johnson","does not yet write"],["Samuel Lewis","does not yet write"],["James West","does not yet write"],["Benjamin Middleton","does not yet write"],["Robert Bogal","does not yet write"],["Charles Taught","does not yet write"],["Archibald Shavers","does not yet write"],["Alexander Pratus","does not yet write"],["George Monzatus","does not yet write"],["Jesse Le Count","does not yet write"],["William Thomas","does not yet write"],["Edward Thomas","does not yet write"],["Joseph Johnston","does not yet write"],["Charles Bristel","does not yet write"],
-      ["Sarah Douglass","does not yet write"],["Catherine Gibbs","does not yet write"],["Mary Ann Ringold","does not yet write"],["Caroline Butler","does not yet write"],["Sarah Ann Gordon","does not yet write"],["Harriet Dill","does not yet write"],["Mary Hazel","does not yet write"],["Amy Perkins","does not yet write"],["Mary Sammons","does not yet write"],["Mary Johnson","does not yet write"],["Susan Quire","does not yet write"],["Elizabeth Ginn","does not yet write"],["Mary Wilks","does not yet write"],["Isabella Francis","does not yet write"],["Sarah Jones","does not yet write"],["Caroline Waterford","does not yet write"],["Jane Lewis","does not yet write"],["Sarah Nelson","does not yet write"],["Catherine Thomas","does not yet write"],["Lydia Dixon","does not yet write"],["Susan Thomas","does not yet write"],["Susan Butler","does not yet write"],["Ann Middleton","does not yet write"],["Margaret Harris","does not yet write"],["Mary Sammons","does not yet write"],["Mariah Correl","does not yet write"],["Ann Mariah Bogal","does not yet write"],["Sarah Moses","does not yet write"],["Mary Roberts","does not yet write"],["Nancy Shields","does not yet write"],["Susan Jackson","does not yet write"],["Mary Johnston","does not yet write"],["Nancy James","does not yet write"],["Helen Merrit","does not yet write"],["Susan Black","does not yet write"],["Martha Black","does not yet write"],["Jane Shorts","does not yet write"],["Sarah Battis","does not yet write"],["Ruth Harding","does not yet write"],["Nancy Francis","does not yet write"],["Esther Morgan","does not yet write"],["Rachel Till","does not yet write"],["Mary Ann Stotts","does not yet write"],["Charlotte Chambers","does not yet write"],["Elizabeth Reading","does not yet write"],["Ann Wheeler","does not yet write"],["Jane Duffis","does not yet write"],["Ann Moran","does not yet write"],["Abigail Biot","does not yet write"],["Henrietta Warren","does not yet write"],["Nancy Norris","does not yet write"],["Amelia Rodman","does not yet write"],["Emelia Rodwell","does not yet write"],["Elizabeth Parrot","does not yet write"]
+      [
+        "Francis Lewis",
+        "first class, arithmetic: Practice"
+      ],
+      [
+        "Randol Shepherd",
+        "first class, arithmetic: Practice"
+      ],
+      [
+        "William Thomas",
+        "first class, arithmetic: Practice"
+      ],
+      [
+        "Henry Warters",
+        "first class, arithmetic: Practice"
+      ],
+      [
+        "Oliver Williams",
+        "first class, arithmetic: Addition of Weights and Measures"
+      ],
+      [
+        "Robert Gordon",
+        "first class, arithmetic: Addition of Weights and Measures"
+      ],
+      [
+        "John Sammons",
+        "first class, arithmetic: Addition of Money"
+      ],
+      [
+        "John Black",
+        "first class, arithmetic: Division of Integers"
+      ],
+      [
+        "Jacob Augustine",
+        "first class, arithmetic: Division of Integers"
+      ],
+      [
+        "Cyrus Burton",
+        "first class, arithmetic: Subtraction of Integers"
+      ],
+      [
+        "William Jennings",
+        "first class, arithmetic: Subtraction of Integers"
+      ],
+      [
+        "Ann Perkins",
+        "first class, arithmetic: Multiplication of Federal Money"
+      ],
+      [
+        "Elizabeth Harding",
+        "first class, arithmetic: Division of Integers"
+      ],
+      [
+        "Mary Montier",
+        "first class, arithmetic: Multiplication of Integers"
+      ],
+      [
+        "Mary Marks",
+        "first class, arithmetic: Multiplication of Integers"
+      ],
+      [
+        "George Rowen",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Joseph Appo",
+        "writes, does not yet cipher"
+      ],
+      [
+        "William Gordon",
+        "writes, does not yet cipher"
+      ],
+      [
+        "James Williams",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Manliff Nixon",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Elijah Burton",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Eleven Baily",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Sinclair Mitchell",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Lindo Lorum",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Thomas Fitzgiles",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Silby Roads",
+        "writes, does not yet cipher"
+      ],
+      [
+        "John Collins",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Lewis Wolf",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Jacob Johnson",
+        "writes, does not yet cipher"
+      ],
+      [
+        "James Gray",
+        "writes, does not yet cipher"
+      ],
+      [
+        "John Stoops",
+        "writes, does not yet cipher"
+      ],
+      [
+        "David Bennet",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Garrison Blake",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Elizabeth Dunken",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Hannah Montier",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Maria Parker",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Nancy Shepherd",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Susan Montier",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Grace Harding",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Sarah Bailey",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Mary Ann Nelson",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Lydia Shepherd",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Eleanor Quire",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Elizabeth Nelson",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Elizabeth Lewis",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Elizabeth Smith",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Mary Gordon",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Margaret Litle",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Sarah Collings",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Singular Skinner",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Amelia Ringold",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Margaret Oakey",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Margaret Stotts",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Mariah Williams",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Eliza Pancost",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Elizabeth Williams",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Juliann Mitchell",
+        "writes, does not yet cipher"
+      ],
+      [
+        "Felix Perue",
+        "does not yet write"
+      ],
+      [
+        "Solomon Brown",
+        "does not yet write"
+      ],
+      [
+        "Aaron Shavers",
+        "does not yet write"
+      ],
+      [
+        "James Quire",
+        "does not yet write"
+      ],
+      [
+        "Robert Montier",
+        "does not yet write"
+      ],
+      [
+        "Robert Douglass",
+        "does not yet write"
+      ],
+      [
+        "Peter Duff",
+        "does not yet write"
+      ],
+      [
+        "William Blake",
+        "does not yet write"
+      ],
+      [
+        "Jeremiah Jones",
+        "does not yet write"
+      ],
+      [
+        "Walter Gordon",
+        "does not yet write"
+      ],
+      [
+        "Isaiah Le Count",
+        "does not yet write"
+      ],
+      [
+        "John Gordon",
+        "does not yet write"
+      ],
+      [
+        "William Appo",
+        "does not yet write"
+      ],
+      [
+        "George Douglas",
+        "does not yet write"
+      ],
+      [
+        "John Henry",
+        "does not yet write"
+      ],
+      [
+        "Thomas Lawrie",
+        "does not yet write"
+      ],
+      [
+        "Joseph Williams",
+        "does not yet write"
+      ],
+      [
+        "Abraham M'Coy",
+        "does not yet write"
+      ],
+      [
+        "Henry Middleton",
+        "does not yet write"
+      ],
+      [
+        "John Umphreys",
+        "does not yet write"
+      ],
+      [
+        "Robert Jackson",
+        "does not yet write"
+      ],
+      [
+        "William Johnson",
+        "does not yet write"
+      ],
+      [
+        "Samuel Lewis",
+        "does not yet write"
+      ],
+      [
+        "James West",
+        "does not yet write"
+      ],
+      [
+        "Benjamin Middleton",
+        "does not yet write"
+      ],
+      [
+        "Robert Bogal",
+        "does not yet write"
+      ],
+      [
+        "Charles Taught",
+        "does not yet write"
+      ],
+      [
+        "Archibald Shavers",
+        "does not yet write"
+      ],
+      [
+        "Alexander Pratus",
+        "does not yet write"
+      ],
+      [
+        "George Monzatus",
+        "does not yet write"
+      ],
+      [
+        "Jesse Le Count",
+        "does not yet write"
+      ],
+      [
+        "William Thomas",
+        "does not yet write"
+      ],
+      [
+        "Edward Thomas",
+        "does not yet write"
+      ],
+      [
+        "Joseph Johnston",
+        "does not yet write"
+      ],
+      [
+        "Charles Bristel",
+        "does not yet write"
+      ],
+      [
+        "Sarah Douglass",
+        "does not yet write"
+      ],
+      [
+        "Catherine Gibbs",
+        "does not yet write"
+      ],
+      [
+        "Mary Ann Ringold",
+        "does not yet write"
+      ],
+      [
+        "Caroline Butler",
+        "does not yet write"
+      ],
+      [
+        "Sarah Ann Gordon",
+        "does not yet write"
+      ],
+      [
+        "Harriet Dill",
+        "does not yet write"
+      ],
+      [
+        "Mary Hazel",
+        "does not yet write"
+      ],
+      [
+        "Amy Perkins",
+        "does not yet write"
+      ],
+      [
+        "Mary Sammons",
+        "does not yet write"
+      ],
+      [
+        "Mary Johnson",
+        "does not yet write"
+      ],
+      [
+        "Susan Quire",
+        "does not yet write"
+      ],
+      [
+        "Elizabeth Ginn",
+        "does not yet write"
+      ],
+      [
+        "Mary Wilks",
+        "does not yet write"
+      ],
+      [
+        "Isabella Francis",
+        "does not yet write"
+      ],
+      [
+        "Sarah Jones",
+        "does not yet write"
+      ],
+      [
+        "Caroline Waterford",
+        "does not yet write"
+      ],
+      [
+        "Jane Lewis",
+        "does not yet write"
+      ],
+      [
+        "Sarah Nelson",
+        "does not yet write"
+      ],
+      [
+        "Catherine Thomas",
+        "does not yet write"
+      ],
+      [
+        "Lydia Dixon",
+        "does not yet write"
+      ],
+      [
+        "Susan Thomas",
+        "does not yet write"
+      ],
+      [
+        "Susan Butler",
+        "does not yet write"
+      ],
+      [
+        "Ann Middleton",
+        "does not yet write"
+      ],
+      [
+        "Margaret Harris",
+        "does not yet write"
+      ],
+      [
+        "Mary Sammons",
+        "does not yet write"
+      ],
+      [
+        "Mariah Correl",
+        "does not yet write"
+      ],
+      [
+        "Ann Mariah Bogal",
+        "does not yet write"
+      ],
+      [
+        "Sarah Moses",
+        "does not yet write"
+      ],
+      [
+        "Mary Roberts",
+        "does not yet write"
+      ],
+      [
+        "Nancy Shields",
+        "does not yet write"
+      ],
+      [
+        "Susan Jackson",
+        "does not yet write"
+      ],
+      [
+        "Mary Johnston",
+        "does not yet write"
+      ],
+      [
+        "Nancy James",
+        "does not yet write"
+      ],
+      [
+        "Helen Merrit",
+        "does not yet write"
+      ],
+      [
+        "Susan Black",
+        "does not yet write"
+      ],
+      [
+        "Martha Black",
+        "does not yet write"
+      ],
+      [
+        "Jane Shorts",
+        "does not yet write"
+      ],
+      [
+        "Sarah Battis",
+        "does not yet write"
+      ],
+      [
+        "Ruth Harding",
+        "does not yet write"
+      ],
+      [
+        "Nancy Francis",
+        "does not yet write"
+      ],
+      [
+        "Esther Morgan",
+        "does not yet write"
+      ],
+      [
+        "Rachel Till",
+        "does not yet write"
+      ],
+      [
+        "Mary Ann Stotts",
+        "does not yet write"
+      ],
+      [
+        "Charlotte Chambers",
+        "does not yet write"
+      ],
+      [
+        "Elizabeth Reading",
+        "does not yet write"
+      ],
+      [
+        "Ann Wheeler",
+        "does not yet write"
+      ],
+      [
+        "Jane Duffis",
+        "does not yet write"
+      ],
+      [
+        "Ann Moran",
+        "does not yet write"
+      ],
+      [
+        "Abigail Biot",
+        "does not yet write"
+      ],
+      [
+        "Henrietta Warren",
+        "does not yet write"
+      ],
+      [
+        "Nancy Norris",
+        "does not yet write"
+      ],
+      [
+        "Amelia Rodman",
+        "does not yet write"
+      ],
+      [
+        "Emelia Rodwell",
+        "does not yet write"
+      ],
+      [
+        "Elizabeth Parrot",
+        "does not yet write"
+      ]
     ]
   }
 }
