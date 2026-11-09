@@ -687,6 +687,42 @@
     0.95
    ],
    "check": "Run #81: Martha Collins infant school ad, col 3, name through 'give her a trial'; checked by eye"
+  },
+  {
+   "issue": "CR_1862-10-11",
+   "page": 3,
+   "headline": "Mrs. S. Shorter Hawkins' Dry Goods, Hosiery, and Trimming Store (fall and winter goods)",
+   "box": [
+    0.432,
+    0.486,
+    0.578,
+    0.538
+   ],
+   "check": "Run #82: Hawkins fall and winter goods ad, col 4, name through 'Call and see'; checked by eye"
+  },
+  {
+   "issue": "CR_1862-11-29",
+   "page": 3,
+   "headline": "Wm. H. Longfellow, Surgeon Dentist (advertisement)",
+   "box": [
+    0.445,
+    0.897,
+    0.565,
+    0.962
+   ],
+   "check": "Run #82: Longfellow surgeon dentist ad, col 4, name through 'Nov 17'; checked by eye. The CR's Oct 4 editorial 'Colored Dentistry of Philadelphia' names him."
+  },
+  {
+   "issue": "CR_1862-11-29",
+   "page": 3,
+   "headline": "Wanted (lodgers, 424 South 7th St.) and board or lodging at Lombard Street (advertisements)",
+   "box": [
+    0.568,
+    0.896,
+    0.714,
+    0.975
+   ],
+   "check": "Run #82: 'Wanted' lodgers (424 South 7th) and board or lodging ad, col 5, bottom; checked by eye"
   }
  ]
 }

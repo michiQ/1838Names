@@ -146,6 +146,96 @@
       "to_name": "W. Moore",
       "to_source": "newspaper",
       "note": "Rev. William Moore, pastor of Mount Zion A.M.E. Church, Trenton (Grand Harvest Home notice) is the newspaper W. Moore of Run #79, not tied to the Winch AME cleric of the 1830s-40s on a common name. Run #81 link review, 2026-11-03 (CR 1862 Q3)."
+    },
+    {
+      "from_name": "Irvin, John",
+      "from_source": "1820directory",
+      "context_prefix": "",
+      "issue_like": "CR_1862-11-29",
+      "new_name": "John Irvin",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): an 1862 contraband-fund donor is not tied to the 1820 directory John Irvin on name alone."
+    },
+    {
+      "from_name": "Campbell, Mary",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862-10-04",
+      "new_name": "Mrs. Mary Campbell (Bethel contraband committee, 1862)",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Mrs. Mary Campbell, secretary of the Bethel contraband committee (wife of Rev. J. P. Campbell, who came to Bethel in 1862), is not tied to a census Mary Campbell on a common name."
+    },
+    {
+      "from_name": "DAVIS, SARAH",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862-10-25",
+      "new_name": "Sarah Davis (Union A.M.E. freedmen's committee, 1862)",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a common name; the 1862 committee member of 538 Vincent St. is kept apart from the census Sarah Davis."
+    },
+    {
+      "from_name": "Young, Edward",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1862-10-25",
+      "new_name": "Edward Young (Union A.M.E. freedmen's meeting, 1862)",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a common name; the 1862 meeting secretary is kept apart from the census Edward Young."
+    },
+    {
+      "from_name": "Miller, Mrs.",
+      "from_source": "dissertation",
+      "context_prefix": "",
+      "issue_like": "CR_1862-12-27",
+      "new_name": "Mrs. Miller (St. Thomas' Sinking Fund fair, 1862)",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a bare 'Mrs. Miller' cannot be tied to the dissertation record."
+    },
+    {
+      "from_name": "Miller, Edward",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1862-11-08",
+      "new_name": "Edward Miller (Snow Hill, N.J.)",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a local preacher at Snow Hill, N.J., not Winch's Philadelphia Edward Miller (paper-maker, 1838)."
+    },
+    {
+      "from_name": "Taylor, Robert",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1862-10-18",
+      "new_name": "Robert Taylor (Burlington, N.J.)",
+      "new_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a Burlington, N.J. committee member, not Winch's Philadelphia Robert Taylor."
+    },
+    {
+      "from_name": "Moore, William",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1862-11-15",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
+    },
+    {
+      "from_name": "Moore, William",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1862-11-22",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
+    },
+    {
+      "from_name": "Moore, William",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1862-11-29",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
     }
   ],
   "renames": [

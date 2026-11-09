@@ -4,4 +4,3 @@ Each line below shares its name with more than one Julie Winch record, and the R
 
 - *Allen, Richard, 7th, below Lombard. (Bleeders) -- 2 Winch records: #31, #32
 - *Jones, Robert, cor. Frankford road & Maiden. (Hair-Dressers) -- 2 Winch records: #1611, #1612
-- *Douglass, Robert J., (and portrait and sign painter) 54 Arch. (Painters) -- 2 Winch records: #898, #899

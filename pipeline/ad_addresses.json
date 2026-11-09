@@ -14,7 +14,8 @@
   "FJ_1828-05-30 p8 Richard Johnson: No. 111 or 114 Varick-Street (left out)",
   "FJ_1828-06-13 p7 Eliza Johnson: No. 24 or 28 Elizabeth street (left out). The ad's dateline appears to read Philadelphia, not New York",
   "CR_1862-09-06 p3 Jane Johnson: the ad and the Sept. 6 reading notice give 618 South 8th St.; the Sept. 27 contraband relief committee list prints 'Mrs. Jane Johnson, No. 618 South St.' (ad address kept as printed in the ad)",
-  "CR_1862-07-05 p3 Banaker House: proprietor printed 'Mrs. AMIA WILLIAM, of Cape May' (possibly Anna Williams); no street given"
+  "CR_1862-07-05 p3 Banaker House: proprietor printed 'Mrs. AMIA WILLIAM, of Cape May' (possibly Anna Williams); no street given",
+  "CR_1862-11-29 p3 'Wanted' lodgers: the board-or-lodging house number, 1027 or 1627 Lombard (left out)"
  ],
  "ads": [
   {
@@ -454,6 +455,30 @@
    "headline": "Mrs. Martha Collins, infant school (advertisement)",
    "address": [
     "730 Russell Street, above Fitzwater"
+   ]
+  },
+  {
+   "issue": "CR_1862-10-11",
+   "page": 3,
+   "headline": "Mrs. S. Shorter Hawkins' Dry Goods, Hosiery, and Trimming Store (fall and winter goods)",
+   "address": [
+    "No. 615 Lombard Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1862-11-29",
+   "page": 3,
+   "headline": "Wm. H. Longfellow, Surgeon Dentist (advertisement)",
+   "address": [
+    "No. 1126 Rodman Street, between 11th and 12th, and Lombard and South Sts., Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1862-11-29",
+   "page": 3,
+   "headline": "Wanted (lodgers, 424 South 7th St.) and board or lodging at Lombard Street (advertisements)",
+   "address": [
+    "No. 424 South 7th St., Philadelphia"
    ]
   }
  ]
