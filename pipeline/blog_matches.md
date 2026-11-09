@@ -37,7 +37,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Mary Hill** (blog)  ↔  Hill, Mary#355963, Mary A. Hill#360592
 - **Morris Brown** (blog)  ↔  Brown, Morris Sr.#398, BROWN, MORRIS#352069, Morris Brown#359790
 - **Richard Allen** (blog)  ↔  Allen, Richard#31, Richard Allen#14194, ALLEN, RICHARD#351780, Allen, Richard#357327
-- **Robert Douglass** (blog)  ↔  Robert Douglass#14271, Douglass, Robert#357712
+- **Robert Douglass** (blog)  ↔  Douglass, Robert Jr.#899, Robert Douglass#14271, Douglass, Robert#357712
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
