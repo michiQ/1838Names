@@ -25,7 +25,7 @@ existing record; source-qualify the storymap alias), e.g.:
 - **Jacob C. White Jr.** (storymap)  ↔  Jacob C. White Jr. (newspaper), White, Jacob C., Jr. (coppin)
 - **Jacob C. White Sr.** (storymap)  ↔  Jacob C. White Sr. (newspaper)
 - **Jacob Griffith** (storymap)  ↔  Griffith, Jacob (census), Jacob Griffith (blog)
-- **James J. G. Bias** (storymap)  ↔  Bias, James J. G. (newspaper)
+- **James J. G. Bias** (storymap)  ↔  Bias, James J. G. (newspaper), Bias, James J. G. (1838register)
 - **James Jones** (storymap)  ↔  Jones, James (winch)
 - **Jane Johnson** (storymap)  ↔  Johnson, Jane (winch), Johnson, Jane (ugrr), Jane Johnson (blog), Jane Johnson (mobstats), Jane Johnson (newspaper)
 - **John Mercer Langston** (storymap)  ↔  Langston, John Mercer (dissertation)

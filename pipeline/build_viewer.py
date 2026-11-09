@@ -213,6 +213,7 @@ if has_table("census_links"):
 if has_table("directory_links"):
     d1820 = {r["rowid_"]: r for r in con.execute("SELECT * FROM directory_1820")}
     d1811 = {r["rowid_"]: r for r in con.execute("SELECT * FROM directory_1811")} if has_table("directory_1811") else {}
+    r1838 = {r["rowid_"]: r for r in con.execute("SELECT * FROM register_1838")} if has_table("register_1838") else {}
     for pid, dirn, rid in con.execute("SELECT person_id, directory, row_id FROM directory_links"):
         if pid not in people: continue
         p = people[pid]
@@ -222,6 +223,14 @@ if has_table("directory_links"):
                    "occ": g(r,"occupation"), "addr": g(r,"address"), "pdfPage": g(r,"pdf_page"),
                    "conf": g(r,"confidence"), "needsReview": g(r,"needs_review"),
                    "ocr": g(r,"original_ocr_entry")}
+            p.setdefault("directory", []).append(rec)
+        elif dirn == "1838rot" and rid in r1838:
+            # 1838 Register of Trades (added 2026-11-08): trade heading, '*' = carries on business
+            r = r1838[rid]
+            rec = {"y": 1838, "rot": 1, "name": f'{g(r,"given") or ""} {g(r,"surname") or ""}'.strip(),
+                   "occ": g(r,"trade"), "also": g(r,"also"), "addr": g(r,"address"),
+                   "biz": 1 if g(r,"carries_on_business") else 0, "printedPage": g(r,"printed_page"),
+                   "pdfPage": g(r,"pdf_page"), "ocr": g(r,"as_printed"), "note": g(r,"note")}
             p.setdefault("directory", []).append(rec)
         elif dirn == "1811" and rid in d1811:
             r = d1811[rid]
@@ -507,6 +516,7 @@ open(OUT, "w", encoding="utf-8").write(html)
 # Business ads page (ads.html), regenerated with every build so its person links stay current
 try:
     import build_ads; build_ads.main()
+    import build_trades; build_trades.main()
 except FileNotFoundError as _e:
     print("   ads page skipped:", _e)
 print("people:", len(people), "events:", len(events), "articles:", len(articles),

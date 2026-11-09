@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>1838 Register of Trades · 1838 Black Metropolis</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 1838 Register of Trades page (2026-11-08): same parchment palette as the Business Ads page */
+:root{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;
+  --display:"Libre Caslon Display","Libre Caslon Text",Georgia,serif;--body:"Libre Caslon Text",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body)}
+a{color:var(--gold)}
+.top{display:flex;align-items:center;gap:12px;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+.top a.back{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px var(--body);padding:6px 12px;text-decoration:none}
+.top .ttl{font:12px var(--mono);letter-spacing:.12em;color:var(--dim)}
+main{max-width:1240px;margin:0 auto;padding:22px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px}
+.eyebrow{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
+.lede{max-width:72ch;margin:0}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#q{font:14px var(--body);padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);min-width:0;flex:1 1 220px;max-width:340px}
+#q:focus,.chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.chip{font:12px var(--mono);border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.count{font:12px var(--mono);color:var(--dim)}
+.toc{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px}
+.grid{columns:3 300px;column-gap:22px}
+section{break-inside:avoid;margin:0 0 20px;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:12px 14px 10px}
+section h2{font:400 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;color:var(--dim);display:flex;justify-content:space-between;gap:8px}
+ul{list-style:none;margin:0;padding:0}
+li{padding:3px 0;border-top:1px dotted var(--line);font-size:14px}
+li:first-child{border-top:0}
+li .ad{color:var(--dim);font-size:13px}
+li .biz{color:var(--gold);font-weight:700}
+.foot{font-size:12.5px;color:var(--dim);max-width:90ch}
+</style>
+</head>
+<body>
+<div class="top"><a class="back" href="index.html">&#8592; Database</a><span class="ttl">1838 BLACK METROPOLIS · REGISTER OF TRADES</span></div>
+<main>
+  <div class="eyebrow">Philadelphia, 1838</div>
+  <h1>Register of Trades of the Colored People</h1>
+  <p class="lede">This register, printed in Philadelphia in 1838 by Merrihew and Gunn, lists the Black tradespeople of the city and its districts by trade, with their addresses. It marked with a star those who carried on business for themselves; of the others, it said, "about one-half work as journeymen, and the rest from choice or necessity follow other occupations." Click a name to open that person in the database.</p>
+  <div class="controls" role="group" aria-label="Filter the register">
+    <input id="q" type="search" placeholder="Search a name, trade or street… e.g. Lombard" aria-label="Search the register">
+    <button class="chip" id="biz" aria-pressed="false">&#9733; Carry on business</button>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="toc" id="toc"></div>
+  <div class="grid" id="grid"></div>
+  <p class="foot">Source: <i>Register of Trades of the Colored People in the City of Philadelphia and Districts</i> (Philadelphia: Merrihew and Gunn, 1838), Library of Congress copy, courtesy the Internet Archive (<a href="https://archive.org/details/registeroftrades00phil" target="_blank" rel="noopener">archive.org</a>). Transcribed from the page images; each name links to its record, where the printed line and the page scan are shown. A name links to Julie Winch's record when the match is clear; otherwise it has its own record. &copy; 1838 Black Metropolis, Inc., <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.</p>
+</main>
+<script>
+const ROWS=/*__ROWS__*/[];
+const e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let q='', biz=false;
+const slug=s=>s.toLowerCase().replace(/[^a-z]+/g,'-');
+function render(){
+  const t=q.toLowerCase();
+  const L=ROWS.filter(r=>(!biz||r.biz)&&(!t||(r.name+' '+r.trade+' '+r.addr+' '+(r.also||'')).toLowerCase().includes(t)));
+  document.getElementById('count').textContent=L.length+' of '+ROWS.length+' listings';
+  const by=new Map(); L.forEach(r=>{if(!by.has(r.trade))by.set(r.trade,[]);by.get(r.trade).push(r);});
+  document.getElementById('toc').innerHTML=[...by.keys()].map(k=>`<a href="#${slug(k)}">${e(k)} (${by.get(k).length})</a>`).join('');
+  document.getElementById('grid').innerHTML=[...by.entries()].map(([k,rs])=>`<section id="${slug(k)}"><h2><span>${e(k)}</span><span>${rs.length}</span></h2><ul>${rs.map(r=>
+    `<li>${r.biz?'<span class="biz" title="carries on business">&#9733;</span> ':''}${r.pid?`<a href="index.html#p${r.pid}">${e(r.name)}</a>`:e(r.name)}${r.also?` <span class="ad">(and ${e(r.also)})</span>`:''}${r.addr?` <span class="ad">· ${e(r.addr)}</span>`:''}</li>`).join('')}</ul></section>`).join('')
+    || '<p class="count">No listings match.</p>';
+}
+document.getElementById('q').addEventListener('input',ev=>{q=ev.target.value;render();});
+document.getElementById('biz').addEventListener('click',ev=>{biz=!biz;ev.currentTarget.setAttribute('aria-pressed',biz);render();});
+render();
+</script>
+</body>
+</html>

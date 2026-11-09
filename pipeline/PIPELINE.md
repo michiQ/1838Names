@@ -339,3 +339,13 @@ review, but build_viewer.py strips them from everything the site displays. Do no
 - 1811 records are kept out of name matching by every later loader (match_names, load_extractions, load_blogs, load_mobstats, load_ugrr, load_nolibs), so ~550 new "Surname, Given" records never make an existing unique match ambiguous. Possible matches show up in merge_candidates.md for Michiko to decide.
 - The viewer shows a "1811 city directory" card with a link to the Internet Archive page, and a "1811 directory" filter chip.
 - The African Insurance Company (appendix p. 416, PDF 422) is in `extractions_1811_directory.json`, curated_orgs.json, event_orgs.json and a timeline lane (aid).
+
+
+## 1838 Register of Trades (added 2026-11-08)
+- Source: *Register of Trades of the Colored People in the City of Philadelphia and Districts* (Philadelphia: Merrihew and Gunn, 1838), Library of Congress copy, Internet Archive `registeroftrades00phil` (PDF pp. 7-12 = printed pp. 3-8). Transcribed by hand from the page images to `pipeline/1838_register_of_trades_source.csv` (656 lines; trade heading, '*' carries on business, name, '(and ...)' second trade, address, as printed). The text layer's OCR missed most asterisks, so do not re-derive from OCR.
+- `import_1838_register.py` runs right after `import_1811_directory.py`. It links a line to a Winch record when the name is unique there; when several Winch people share the name it uses, in order: the one whose notes cite the Register of Trades, a jr./sr. suffix, the trade word in Winch's note, the address in Winch's note. Unresolved lines become `1838register` people (one per name + address) and are listed in `pipeline/register_1838_matches.md`. Those records are kept out of every other loader's name matching.
+- Viewer: "1838 Register of Trades" card with the printed line and the page scan (`manuscripts/RegisterOfTrades_1838/ROT_1838_p<printed page>.jpg`), a "1838 trades" filter chip and badge, and `trades.html` (built by `build_trades.py`, called from build_viewer) listing every line by trade.
+
+## The Juvenile Magazine, 1813, and the 1838 school table (added 2026-11-08)
+- `jm1813_rosters.json` (Arthur Donaldson's scholar rolls) -> `build_jm1813.py` -> `extractions_jm1813.json`. Scholars link to Winch's "Attended Donaldson's school" records; everyone else gets a fixed new record (`new:jm1813` in load_extractions) that is never name-matched to a later adult.
+- `extractions_pas1838_schools.json`: the school table from *Present State and Condition* (1838), p. 29.

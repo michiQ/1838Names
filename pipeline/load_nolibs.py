@@ -54,7 +54,7 @@ def resolve(find):
         r = con.execute("SELECT id FROM people WHERE canonical_name=? AND source='newspaper'", (find["newspaper"],)).fetchone()
         return [r["id"]] if r else []
     if "name" in find:
-        rs = con.execute("SELECT id FROM people WHERE canonical_name=? AND source IS NOT '1811directory'", (find["name"],)).fetchall()
+        rs = con.execute("SELECT id FROM people WHERE canonical_name=? AND source IS NOT '1811directory' AND source IS NOT '1838register'", (find["name"],)).fetchall()
         return [r["id"] for r in rs]
     return []
 
