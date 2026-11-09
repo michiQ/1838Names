@@ -168,9 +168,13 @@
    {
     "name": "Prof. Bassett",
     "source": "newspaper"
+   },
+   {
+    "name": "E. H. Bassett",
+    "source": "newspaper"
    }
   ],
-  "note": "Bassett, Ebenezer D. (Winch) = E. D. Bassett (newspaper, principal/teacher, Institute for Colored Youth commencement, May 1864) -- matches his known biography as ICY principal before becoming the first African American U.S. diplomat (Minister to Haiti). Long-carried high-confidence candidate (merge_candidates.md, 8+ prior runs). Confirmed by Michiko 2026-07-09. + 'Prof. Bassett' (Christian Recorder 1861, Run #74) confirmed by Michiko 2026-10-31."
+  "note": "Bassett, Ebenezer D. (Winch) = E. D. Bassett (newspaper, principal/teacher, Institute for Colored Youth commencement, May 1864) -- matches his known biography as ICY principal before becoming the first African American U.S. diplomat (Minister to Haiti). Long-carried high-confidence candidate (merge_candidates.md, 8+ prior runs). Confirmed by Michiko 2026-07-09. + 'Prof. Bassett' (Christian Recorder 1861, Run #74) confirmed by Michiko 2026-10-31. 'E. H. Bassett' (CR Nov. 29, 1862, ICY lecture on the Atmosphere) is a misprint for E. D. Bassett (Michiko, 2026-11-09 (after Run #82))."
  },
  {
   "keep": "Hicks, Isaac",
@@ -1721,5 +1725,50 @@
    }
   ],
   "note": "Cyrus Porter, treasurer of the African Insurance Company (1811 directory, p. 416), is the 1811 Directory of Coloured Persons' 'Porter Cyrus, stablekeeper, 159 Lombard' (the company's office address). 2026-11-04."
+ },
+ {
+  "keep": {
+   "name": "Sarah S. Hawkins",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "S. S. Hawkins",
+    "source": "newspaper"
+   },
+   {
+    "name": "S. Shorter Hawkins",
+    "source": "newspaper"
+   },
+   {
+    "name": "Mrs. S. Shorter Hawkins",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Mrs. S. Shorter Hawkins, dry goods and trimmings, 615 Lombard, is the SCSA donor Sarah S. Hawkins / S. S. Hawkins. Michiko, 2026-11-09 (after Run #82)."
+ },
+ {
+  "keep": "Alston, William J.",
+  "aliases": [
+   {
+    "name": "Wm. Alston",
+    "source": "newspaper"
+   },
+   {
+    "name": "W. A. Alston",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Rev. William Alston, installed Rector of St. Thomas' in Nov. 1862 (printed 'Wm. Alston', 'W. A. Alston'). Michiko, 2026-11-09 (after Run #82)."
+ },
+ {
+  "keep": "ROBINSON, RICHARD",
+  "aliases": [
+   {
+    "name": "Roberson",
+    "source": "newspaper"
+   }
+  ],
+  "note": "'Father Roberson' of the Nov. 29, 1862 funeral report is Rev. Richard Robinson of Frankford (Michiko, 2026-11-09 (after Run #82): 'Richard Roberson is Richard Robinson')."
  }
 ]
