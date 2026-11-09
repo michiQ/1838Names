@@ -51,6 +51,7 @@ FIXED = {
     "Robert Gordon": 1188,      # Winch: Gordon, Robert (the child, not Robert C. Gordon the grocer)
     "Cyrus R. Burten": 466,     # Winch: Burton, Cyrus R.
     "Catherine Gibbs": 1127,    # Winch: Gibbs, Catherina
+    "Joseph Le Count": 1695,    # Winch: Lecount, Joseph (Michiko 2026-11-08: same man, uncle of Caroline R. Le Count)
 }
 # Winch notes for these scholars are buried inside another person's entry; do not link there.
 NO_WINCH = {"Eleven Davis", "Jane Duffel"}
