@@ -705,6 +705,76 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Pay schools taught by colored teachers (1838)",
+      "note": "The 1838 Abolition Society report lists ten pay schools taught by colored teachers, with 288 scholars on their rolls and 260 attending. M. and S. Gordon (30 on the roll) are also on the list but are not linked to a record. Source: https://archive.org/details/presentstatecond00penn/page/29/mode/2up",
+      "members": [
+        [
+          2701,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 45 on the roll, 37 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          603,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 40 on the roll, 40 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          2147,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 8 on the roll, 8 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          367,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 22 on the roll, 22 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          530,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 30 on the roll, 25 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          901,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 43 on the roll, 38 attending; 37 in cyphering and grammar, 21 in geography",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          1825,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 33 on the roll, 33 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          2299,
+          {
+            "w": 1,
+            "r": "teacher of a pay school: 12 on the roll, 12 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ]
+      ]
     }
   ]
 }

@@ -436,6 +436,10 @@
     [
      1813,
      "May 12, 1813: 48 boys taught by Zebulon Holmes and 48 girls taught by Mary Walton (Donaldson's count)."
+    ],
+    [
+     1837,
+     "Part free and part pay: boys 72 on the roll, 45 attending; girls 82 on the roll, 40 attending (Abolition Society report, 1838)."
     ]
    ]
   },
@@ -455,6 +459,10 @@
     [
      1813,
      "May 12, 1813: 7 boys and 29 girls (Donaldson's count)."
+    ],
+    [
+     1837,
+     "'Bray's' free school: 12 on the roll, 10 attending (Abolition Society report, 1838). Probably this school: Julie Winch notes that Ruth Hand was mistress of the girls' school supported by the Associates of Dr. Bray in 1824."
     ]
    ]
   },
@@ -569,6 +577,10 @@
     [
      1813,
      "May 12, 1813: 19 boys and 5 girls (Donaldson's count)."
+    ],
+    [
+     1837,
+     "Still teaching: a pay school with 40 on the roll, all 40 attending (Abolition Society report, 1838)."
     ]
    ]
   },
@@ -582,6 +594,103 @@
     [
      1813,
      "Established by the Abolition Society March 1, 1813, free; 52 boys, taught by James Kelly, on May 12, 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1837,
+     "The Abolition Society's Clarkson School: girls 72 on the roll and 40 attending (part free, part pay); boys at Clarkson Hall under G. Luther, 50 on the roll and 45 attending (pay) (Abolition Society report, 1838). Probably the same school as the 1813 Cherry Alley school [to confirm]."
+    ]
+   ]
+  },
+  {
+   "label": "Lombard Street public school (1838 report)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Free public school: boys 200 on the roll, 150 attending; girls 263 on the roll, 160 attending (Abolition Society report, 1838)."
+    ]
+   ]
+  },
+  {
+   "label": "Northern Liberties public school (1838 report)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Free public school: 220 on the roll, 84 attending (Abolition Society report, 1838)."
+    ]
+   ]
+  },
+  {
+   "label": "Infant schools: Locust Street, Adelphi, Tidmarsh (1838 report)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Free infant schools: Locust Street 120 on the roll, Adelphi 90, Tidmarsh 82 (Abolition Society report, 1838)."
+    ]
+   ]
+  },
+  {
+   "label": "Adelphi school, boys (1838 report)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Free school: 88 on the roll, 60 attending (Abolition Society report, 1838)."
+    ]
+   ]
+  },
+  {
+   "label": "Shelter for Colored Orphans (1838 report)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Free school: 41 on the roll, all attending (Abolition Society report, 1838)."
+    ]
+   ]
+  },
+  {
+   "label": "Pay schools under white teachers (1838 report)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Mount Zion Church, Is. Corbet, 17 on the roll; Elizabeth Street, Abigail Brown, 35 (Abolition Society report, 1838)."
+    ]
+   ]
+  },
+  {
+   "label": "Pay schools taught by colored teachers (1838 report)",
+   "cat": "edu",
+   "orgs": [
+    "Pay schools taught by colored teachers (1838)"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1837,
+     "Ten schools, 288 on the rolls and 260 attending (Abolition Society report, 1838)."
     ]
    ]
   },
