@@ -12,7 +12,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Ayres, Robert** (winch, 1 Winch refs) ↔ **Ayres, Robert B** (census, 1 census records)
 - [HIGH] **Ayres, Robert B.** (winch, 3 appearances, 11 Winch refs) ↔ **Robert Ayres** (newspaper, 1 appearances)
 - [HIGH] **Ayres, Robert B** (census, 1 census records) ↔ **Robert Ayres** (newspaper, 1 appearances)
-- [HIGH] **Bailey, Sarah** (winch, 1 Winch refs) ↔ **Bailey, S.** (coppin)
+- [HIGH] **Bailey, Sarah** (winch, 1 appearances, 1 Winch refs) ↔ **Bailey, S.** (coppin)
 - [HIGH] **Bailey, Suzanna** (census, 1 census records) ↔ **Bailey, S.** (coppin)
 - [HIGH] **Ballard, Adam** (winch, 1 appearances, 1 Winch refs) ↔ **A. Ballard** (newspaper, 1 appearances)
 - [HIGH] **Banks, Solomon** (winch, 2 appearances, 1 Winch refs, 1 census records) ↔ **Banks, Soloman J** (census, 2 appearances, 1 census records)

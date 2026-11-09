@@ -649,6 +649,62 @@
       "name": "African Insurance Company",
       "note": "A Black-owned insurance company with its office at No. 159 Lombard Street, capital of 5,000 dollars in 50-dollar shares. In 1811 its president was Joseph Randolph, its treasurer Cyrus Porter and its secretary William Coleman, and the directory notes that 'The members of this company are all coloured persons' (The Philadelphia Directory for 1811, p. 416). Treasurer Cyrus Porter, a stablekeeper, lived at 159 Lombard, the company's office. Julie Winch's notes also record William Coleman as its secretary. Internet Archive: https://archive.org/details/philadelphiadire1811phil/page/n421/mode/1up Clipping: clippings/DIR_1811_p416_african-insurance-company.jpg",
       "members": []
+    },
+    {
+      "name": "Quomony Clarkson's school, Green's Court",
+      "note": "A school for children of colour in Green's Court between Spruce and Pine, established 1804. Arthur Donaldson counted about 50 scholars and a night school of about 30 in October 1811, and 31 boys and 19 girls on May 12, 1813 (The Juvenile Magazine, July 1813).",
+      "members": [
+        [
+          602,
+          {
+            "w": 1,
+            "r": "teacher",
+            "c": "The Juvenile Magazine, July 1813 (Arthur Donaldson's survey of May 12, 1813)"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Solomon Clarkson's school, Lombard Street",
+      "note": "A school for children of colour in Lombard Street, established by Solomon Clarkson on October 27, 1812; 19 boys and 5 girls on May 12, 1813 (The Juvenile Magazine, July 1813).",
+      "members": [
+        [
+          603,
+          {
+            "w": 1,
+            "r": "founder and teacher",
+            "c": "The Juvenile Magazine, July 1813 (Arthur Donaldson's survey of May 12, 1813)"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "John Gloucester's school, Seventh below Shippen",
+      "note": "John Gloucester's school for children of colour in Seventh Street below Shippen, by his Presbyterian church, established 1810; 16 boys and 11 girls on May 12, 1813 (The Juvenile Magazine, July 1813).",
+      "members": [
+        [
+          1161,
+          {
+            "w": 1,
+            "r": "teacher",
+            "c": "The Juvenile Magazine, July 1813 (Arthur Donaldson's survey of May 12, 1813)"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Ruth Hand's school, Race Street",
+      "note": "A school in Race Street teaching reading and sewing, supported by a fund belonging to the Episcopal Church under three trustees, established about 1786; 7 boys and 29 girls on May 12, 1813 (The Juvenile Magazine, July 1813).",
+      "members": [
+        [
+          1295,
+          {
+            "w": 1,
+            "r": "teacher of reading and sewing",
+            "c": "The Juvenile Magazine, July 1813 (Arthur Donaldson's survey of May 12, 1813)"
+          }
+        ]
+      ]
     }
   ]
 }

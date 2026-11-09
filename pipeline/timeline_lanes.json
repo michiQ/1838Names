@@ -22,7 +22,13 @@
    "cat": "aid",
    "orgs": [],
    "kw": null,
-   "pas": 58
+   "pas": 58,
+   "marks": [
+    [
+     1796,
+     "Established 1796; 85 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813). The 1838 report gives 1795."
+    ]
+   ]
   },
   {
    "label": "Philadelphia African Lodge (Masons)",
@@ -32,7 +38,13 @@
     "African Lodge"
    ],
    "kw": "African Lodge",
-   "pas": null
+   "pas": null,
+   "marks": [
+    [
+     1809,
+     "'African Lodge, No. 459, established June 24, 1809', '514 members' as printed (Arthur Donaldson, Juvenile Magazine, July 1813). The magazine's total of 590 for all the societies works only if the figure was 154."
+    ]
+   ]
   },
   {
    "label": "Angolian Society",
@@ -42,14 +54,26 @@
     "Angolian Society"
    ],
    "kw": "Angolian",
-   "pas": 76
+   "pas": 76,
+   "marks": [
+    [
+     1808,
+     "'The Angola Society': established November 1808; 26 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
   },
   {
    "label": "Sons of Africa",
    "cat": "aid",
    "orgs": [],
    "kw": "Sons of Africa",
-   "pas": 64
+   "pas": 64,
+   "marks": [
+    [
+     1810,
+     "Established March 6, 1810; 49 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
   },
   {
    "label": "Benezet Society (Benezet Philanthropic)",
@@ -57,7 +81,13 @@
    "orgs": [],
    "kw": "Benezet Ph[Ii]lanthropic|Benzet Philanthropic",
    "pas": 62,
-   "pasNote": "Probably the society Winch records as the Benezet Philanthropic; the 1838 report gives no founding year."
+   "pasNote": "Probably the society Winch records as the Benezet Philanthropic; the 1838 report gives no founding year.",
+   "marks": [
+    [
+     1812,
+     "The Benezette Philanthropic Society: established June 18, 1812; 52 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
   },
   {
    "label": "African Friendly Society of St. Thomas",
@@ -75,7 +105,13 @@
     "Female Benevolent Society"
    ],
    "kw": "Female Benevolent Society",
-   "pas": null
+   "pas": null,
+   "marks": [
+    [
+     1803,
+     "'The Female Benevolent Society': established November 3, 1803; 95 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813). Probably this society."
+    ]
+   ]
   },
   {
    "label": "Granville Harmony Society",
@@ -181,7 +217,13 @@
    "cat": "aid",
    "orgs": [],
    "kw": "Sons of St\\.? Thomas",
-   "pas": 3
+   "pas": 3,
+   "marks": [
+    [
+     1812,
+     "Established February 15, 1812; 28 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813). The 1838 report gives 1829, so it may have been re-formed."
+    ]
+   ]
   },
   {
    "label": "United Sons of Wilberforce",
@@ -202,7 +244,13 @@
    "cat": "aid",
    "orgs": [],
    "kw": "Daughters of Ethiopia",
-   "pas": null
+   "pas": null,
+   "marks": [
+    [
+     1811,
+     "Female Society, the Daughters of Ethiopia: established January 8, 1811; 30 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
   },
   {
    "label": "African Warner Mifflin Society",
@@ -220,7 +268,13 @@
     "African Farmers and Mechanics Society"
    ],
    "kw": "Farmers and Mechanics",
-   "pas": null
+   "pas": null,
+   "marks": [
+    [
+     1812,
+     "'Farmers and Mechanics': established January 18, 1812; about 36 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
   },
   {
    "label": "African Humane Society",
@@ -337,6 +391,199 @@
    ],
    "kw": "Love and Charity",
    "pas": null
+  },
+  {
+   "label": "Daughters of Samaria",
+   "cat": "aid",
+   "orgs": [],
+   "kw": "Daughters of Samaria",
+   "pas": null,
+   "marks": [
+    [
+     1812,
+     "Female Society, the Daughters of Samaria: established June 10, 1812; 24 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
+  },
+  {
+   "label": "St. James's Society",
+   "cat": "aid",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1812,
+     "Established February 14, 1812; 11 members in 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
+  },
+  {
+   "label": "Willing's Alley school (Friends, 1771)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1771,
+     "Established 1771, free, under the care of the Monthly Meetings of Friends (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1811,
+     "October 26, 1811: 50 boys and 54 girls, plus a free night school of about 60 run by an association of young men (Donaldson's count)."
+    ],
+    [
+     1813,
+     "May 12, 1813: 48 boys taught by Zebulon Holmes and 48 girls taught by Mary Walton (Donaldson's count)."
+    ]
+   ]
+  },
+  {
+   "label": "Ruth Hand's school, Race Street (Episcopal fund, c. 1786)",
+   "cat": "edu",
+   "orgs": [
+    "Ruth Hand's school, Race Street"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1786,
+     "Established about 1786; reading and sewing, supported by a fund belonging to the Episcopal Church under three trustees (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1813,
+     "May 12, 1813: 7 boys and 29 girls (Donaldson's count)."
+    ]
+   ]
+  },
+  {
+   "label": "Jane Hut's school, Sixth Street (1803)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1803,
+     "Established 1803 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1813,
+     "May 12, 1813: 9 boys and 13 girls, taught by Jane Hut (Donaldson's count)."
+    ]
+   ]
+  },
+  {
+   "label": "Quomony Clarkson's school, Green's Court (1804)",
+   "cat": "edu",
+   "orgs": [
+    "Quomony Clarkson's school, Green's Court"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1804,
+     "Established 1804, in Green's Court between Spruce and Pine (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1811,
+     "October 26, 1811: about 50 boys and girls, and a night school of about 30 (Donaldson's count)."
+    ],
+    [
+     1813,
+     "May 12, 1813: 31 boys and 19 girls (Donaldson's count)."
+    ]
+   ]
+  },
+  {
+   "label": "Arthur Donaldson's school for children of colour (1809)",
+   "cat": "edu",
+   "orgs": [
+    "Arthur Donaldson's School for People of Colour"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1809,
+     "Opened May 1, 1809 in Front Street between Arch and Race, with four scholars."
+    ],
+    [
+     1811,
+     "Schoolroom burned October 23, 1811; reopened five days later at Wood and Crown streets."
+    ],
+    [
+     1813,
+     "May 12, 1813: 55 boys and 52 girls, plus a night school. Arthur Donaldson printed his rolls in The Juvenile Magazine, July 1813."
+    ]
+   ]
+  },
+  {
+   "label": "John Gloucester's school, Seventh below Shippen (1810)",
+   "cat": "edu",
+   "orgs": [
+    "John Gloucester's school, Seventh below Shippen"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1810,
+     "Established 1810 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1813,
+     "May 12, 1813: 16 boys and 11 girls (Donaldson's count)."
+    ]
+   ]
+  },
+  {
+   "label": "Union Society for schools and domestic manufactures (1810)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1810,
+     "'The Union Society, for the support of schools and domestic manufactures, for the benefit of the African race and people of colour, established in 1810' (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
+  },
+  {
+   "label": "Solomon Clarkson's school, Lombard Street (1812)",
+   "cat": "edu",
+   "orgs": [
+    "Solomon Clarkson's school, Lombard Street"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1812,
+     "Established by Solomon Clarkson, October 27, 1812 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ],
+    [
+     1813,
+     "May 12, 1813: 19 boys and 5 girls (Donaldson's count)."
+    ]
+   ]
+  },
+  {
+   "label": "Abolition Society school, Cherry Alley (1813)",
+   "cat": "edu",
+   "orgs": [],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1813,
+     "Established by the Abolition Society March 1, 1813, free; 52 boys, taught by James Kelly, on May 12, 1813 (Arthur Donaldson, Juvenile Magazine, July 1813)."
+    ]
+   ]
   },
   {
    "label": "African Dorcas Association",

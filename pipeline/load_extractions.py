@@ -78,7 +78,18 @@ def main():
                 nm, role = att[0], att[1]
                 # optional third element: a fixed person id (hand-matched roster, e.g. the 1839
                 # Agricultural and Mechanics Association stock book) -- bypasses name matching
-                if len(att) > 2 and att[2] and con.execute("SELECT 1 FROM people WHERE id=?", (att[2],)).fetchone():
+                # third element "new:<tag>" (2026-11-08, Juvenile Magazine 1813 rosters): always create a
+                # fresh record that nothing else can match by name (children and night scholars must not
+                # attach to later adults of the same name).
+                if len(att) > 2 and isinstance(att[2], str) and att[2].startswith("new:"):
+                    nkey = norm(nm) + " " + att[2][4:]   # tag is unique per record (jm1813, jm1813b, ...)
+                    cur = con.execute("SELECT id FROM people WHERE norm_name=? AND source='newspaper'", (nkey,)).fetchone()
+                    if cur: pid = cur[0]   # reuse on rebuild so ids stay stable
+                    else:
+                        pid = con.execute("INSERT INTO people(canonical_name, norm_name, source) VALUES(?,?,'newspaper')",
+                                          (nm, nkey)).lastrowid
+                    was_winch = False
+                elif len(att) > 2 and att[2] and not isinstance(att[2], str) and con.execute("SELECT 1 FROM people WHERE id=?", (att[2],)).fetchone():
                     pid, was_winch = att[2], True
                 else:
                     pid, was_winch = person_id(nm, e["issue"])

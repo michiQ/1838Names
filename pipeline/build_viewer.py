@@ -145,6 +145,10 @@ for r in con.execute("SELECT * FROM appearances"):
 edges = {}
 for e in events.values():
     ids = sorted({p for p, _ in e["att"]})
+    # A school roll is not a web of ties (2026-11-08: Donaldson's 1809-13 rolls hold 372 scholars,
+    # which would add ~69,000 links). Very large rosters get no pairwise links; the event and the
+    # organization still list everyone.
+    if len(ids) > 100: continue
     for i in range(len(ids)):
         for j in range(i+1, len(ids)):
             k = (ids[i], ids[j])
