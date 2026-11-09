@@ -708,7 +708,7 @@
     },
     {
       "name": "Pay schools taught by colored teachers (1838)",
-      "note": "The 1838 Abolition Society report lists ten pay schools taught by colored teachers, with 288 scholars on their rolls and 260 attending. M. and S. Gordon (30 on the roll) are also on the list but are not linked to a record. Source: https://archive.org/details/presentstatecond00penn/page/29/mode/2up",
+      "note": "The 1838 Abolition Society report lists ten pay schools taught by colored teachers, with 288 scholars on their rolls and 260 attending. 'M. and S. Gordon' are Martha B. and Sarah Ann Gordon of 57 Pine Street. Source: https://archive.org/details/presentstatecond00penn/page/29/mode/2up",
       "members": [
         [
           2701,
@@ -771,6 +771,22 @@
           {
             "w": 1,
             "r": "teacher of a pay school: 12 on the roll, 12 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          1185,
+          {
+            "w": 1,
+            "r": "teacher of a pay school with Sarah Ann Gordon ('M. and S. Gordon'): 30 on the roll, 25 attending",
+            "c": "Abolition Society report, Present State and Condition (1838), p. 29"
+          }
+        ],
+        [
+          1194,
+          {
+            "w": 1,
+            "r": "teacher of a pay school with Martha B. Gordon ('M. and S. Gordon'): 30 on the roll, 25 attending",
             "c": "Abolition Society report, Present State and Condition (1838), p. 29"
           }
         ]
