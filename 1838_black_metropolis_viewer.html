@@ -237,7 +237,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
   <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades &#8594;</a>
-  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-10 10:13</span>
+  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-10 10:21</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -356,7 +356,7 @@ function selectTopic(slug){
   right.querySelectorAll('.pl[data-e]').forEach(el=>el.addEventListener('click',()=>selectEvent(+el.dataset.e)));
   try{ history.replaceState(null,'','#t-'+slug); }catch(err){}
 }
-document.addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('.tchip'); if(b){ev.stopPropagation(); selectTopic(b.dataset.topic);}});
+if(document.addEventListener) document.addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('.tchip'); if(b){ev.stopPropagation(); selectTopic(b.dataset.topic);}});
 const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)', NS:'The North Star', CR:'Christian Recorder'};
 const NBR = new Map(); // pid -> Map(pid -> weight)
 for (const [a,b,w] of DATA.edges){

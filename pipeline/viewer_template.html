@@ -356,7 +356,7 @@ function selectTopic(slug){
   right.querySelectorAll('.pl[data-e]').forEach(el=>el.addEventListener('click',()=>selectEvent(+el.dataset.e)));
   try{ history.replaceState(null,'','#t-'+slug); }catch(err){}
 }
-document.addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('.tchip'); if(b){ev.stopPropagation(); selectTopic(b.dataset.topic);}});
+if(document.addEventListener) document.addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('.tchip'); if(b){ev.stopPropagation(); selectTopic(b.dataset.topic);}});
 const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)', NS:'The North Star', CR:'Christian Recorder'};
 const NBR = new Map(); // pid -> Map(pid -> weight)
 for (const [a,b,w] of DATA.edges){
