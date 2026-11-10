@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 197 linked to existing people, 232 created as new blog people, 50 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 196 linked to existing people, 232 created as new blog people, 51 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -42,9 +42,10 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
 - **Robert Purvis** (blog)  ↔  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364296
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#364736
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#364918
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
+- **Stephen Smith** (blog)  ↔  Smith, Stephen#2436, Mrs. Stephen Smith#364846
 - **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312
 - **William A. Brown** (blog)  ↔  Brown, William#421, Brown, William#422, Brown, William C.#423, Brown, William#355146, Brown, William J#355415, Brown, William#357492, William W. Brown#360410
 - **William Bell** (blog)  ↔  Bell, William#354955, Bell, William#359015, William Bell#359735

@@ -387,6 +387,60 @@
       "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
       "to_source": "newspaper",
       "note": "Henry Brooks of the Love and Charity Grand Tabernacle (Oct. and Dec. 1863 sessions). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Colley, Daniel",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1863-04-18",
+      "new_name": "Daniel Colley (Lieutenant, 1863)",
+      "new_source": "newspaper",
+      "note": "Speaker as 'Lieutenant Daniel Colley' at the West Philadelphia meeting for the 54th Massachusetts, April 1863; Winch's Daniel Colley was born in 1794, so not assumed to be the same man. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+    },
+    {
+      "from_name": "Williams, Richard",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1863-06-%",
+      "new_name": "Richard Williams (Israel Church, 1863)",
+      "new_source": "newspaper",
+      "note": "President of the incorporation of the F. C. M. P. Israel Church, 1863; Winch's Richard Williams was a member of St. Thomas's in 1794. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+    },
+    {
+      "from_name": "Gibson, Hannah",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1863-06-%",
+      "new_name": "Hannah Gibson (Methodist Protestant, 1863)",
+      "new_source": "newspaper",
+      "note": "Thanked by the Methodist Protestant conference, 1863; Winch's Hannah Gibson is of the Benevolent Daughters of St. Thomas, about 1825. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+    },
+    {
+      "from_name": "Armstrong, E.",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1863-05-%",
+      "new_name": "E. Armstrong (Bethel Sabbath School singer, 1863)",
+      "new_source": "newspaper",
+      "note": "Singer at the Bethel Sabbath School concert, May 1863; not assumed to be the E. Armstrong of the 1847 Gloucester protest. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+    },
+    {
+      "from_name": "Mitchell, Mary",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863-05-16",
+      "new_name": "Mary Mitchell (Mount Holly, N.J., 1863)",
+      "new_source": "newspaper",
+      "note": "Miss Mary Mitchell, subscriber at Mount Holly, N.J.; not a Philadelphia census Mary Mitchell. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+    },
+    {
+      "from_name": "Miller, Eliza",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863-06-%",
+      "new_name": "Eliza Miller (Methodist Protestant, 1863)",
+      "new_source": "newspaper",
+      "note": "Sister Eliza Miller, thanked by the Methodist Protestant conference, 1863; common name, not assumed to be the census Eliza Miller. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
     }
   ],
   "renames": [
