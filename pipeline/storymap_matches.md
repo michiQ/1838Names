@@ -42,7 +42,7 @@ existing record; source-qualify the storymap alias), e.g.:
 - **Robert Purvis** (storymap)  ↔  Purvis, Robert (winch), Robert Purvis (blog), Robert Purvis (mobstats)
 - **Samuel Williams** (storymap)  ↔  WILLIAMS, SAMUEL (census), Samuel Williams (blog), WILLIAMS, SAMUEL (census), Williams, Samuel (census), Williams, Samuel (census), Williams, Samuel (census)
 - **Stephen James** (storymap)  ↔  James, Stephen (1820directory)
-- **Stephen Smith** (storymap)  ↔  Smith, Stephen (winch)
+- **Stephen Smith** (storymap)  ↔  Smith, Stephen (winch), Stephen Smith (blog)
 - **Thomas Shipley** (storymap)  ↔  Thomas Shipley (newspaper)
 - **William Bell** (storymap)  ↔  Bell, William (census), Bell, William (coppin), William Bell (blog)
 - **William Sammons** (storymap)  ↔  Sammons, William (census)
