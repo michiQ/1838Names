@@ -236,6 +236,51 @@
       "to_name": "W. Moore",
       "to_source": "newspaper",
       "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
+    },
+    {
+      "from_name": "Roberson, Richard",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "to_name": "ROBINSON, RICHARD",
+      "to_source": "census",
+      "note": "Rev. Richard Roberson = Rev. Richard Robinson (Michiko's ruling; the Feb 21 issue itself says Robinson is the proper spelling). Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+    },
+    {
+      "from_name": "Moore, William",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "Rev. William Moore of Trenton (Book Concern committee; Recorder agent) is the newspaper W. Moore, as in Runs #79-82. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+    },
+    {
+      "from_name": "Moore, Wm.",
+      "from_source": "1820directory",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "to_name": "W. Moore",
+      "to_source": "newspaper",
+      "note": "As in Run #79: Rev. William Moore of Trenton is not the 1820 city-directory Wm. Moore. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+    },
+    {
+      "from_name": "Edwin Johnson",
+      "from_source": "newspaper",
+      "context_prefix": "Public meeting at Bethel",
+      "issue_like": "CR_1863-03-21",
+      "new_name": "Edwin Johnson (volunteer, 1863)",
+      "new_source": "newspaper",
+      "note": "One of five men who gave their names for the Massachusetts colored regiment at Bethel, Mar 18, 1863; a common name, kept apart from the earlier Edwin Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+    },
+    {
+      "from_name": "Henry Johnson",
+      "from_source": "newspaper",
+      "context_prefix": "Public meeting at Bethel",
+      "issue_like": "CR_1863-03-21",
+      "new_name": "Henry Johnson (volunteer, 1863)",
+      "new_source": "newspaper",
+      "note": "One of five volunteers for the Massachusetts colored regiment at Bethel, Mar 18, 1863; not the 1828 Troy, N.Y. Henry Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
     }
   ],
   "renames": [

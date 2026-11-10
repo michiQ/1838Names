@@ -723,6 +723,78 @@
     0.975
    ],
    "check": "Run #82: 'Wanted' lodgers (424 South 7th) and board or lodging ad, col 5, bottom; checked by eye"
+  },
+  {
+   "issue": "CR_1863-01-10",
+   "page": 3,
+   "headline": "Shrouding (Mrs. Jane Johnson & Mrs. Ann Weaver, 618 South Eighth St.)",
+   "box": [
+    0.438,
+    0.862,
+    0.585,
+    0.93
+   ],
+   "check": "Shrouding ad, Johnson and Wear, through Philada line"
+  },
+  {
+   "issue": "CR_1863-02-21",
+   "page": 3,
+   "headline": "Wanted (dress-making apprentice; Mrs. Margaret Hassard's establishment)",
+   "box": [
+    0.835,
+    0.92,
+    0.995,
+    0.978
+   ],
+   "check": "Wanted dress-making apprentice, Mrs. Margaret Hassard"
+  },
+  {
+   "issue": "CR_1863-02-28",
+   "page": 4,
+   "headline": "Edwin A. Hughes, Undertaker, and Sexton of Dr. Wadsworth's Church",
+   "box": [
+    0.565,
+    0.598,
+    0.695,
+    0.64
+   ],
+   "check": "Hughes undertaker and sexton ad"
+  },
+  {
+   "issue": "CR_1863-02-28",
+   "page": 4,
+   "headline": "Lewis Fayette, General Furnishing Undertaker",
+   "box": [
+    0.565,
+    0.745,
+    0.727,
+    0.802
+   ],
+   "check": "Fayette general furnishing undertaker ad"
+  },
+  {
+   "issue": "CR_1863-03-07",
+   "page": 3,
+   "headline": "George W. Loff [VERIFY], General Furnishing Undertaker",
+   "box": [
+    0.575,
+    0.82,
+    0.71,
+    0.866
+   ],
+   "check": "Loff general furnishing undertaker ad"
+  },
+  {
+   "issue": "CR_1863-03-21",
+   "page": 3,
+   "headline": "Spring and Summer Goods (S. Shorter Hawkins)",
+   "box": [
+    0.565,
+    0.068,
+    0.727,
+    0.14
+   ],
+   "check": "Hawkins spring goods ad through PHILADELPHIA"
   }
  ]
 }
