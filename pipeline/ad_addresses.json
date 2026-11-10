@@ -528,6 +528,38 @@
    "address": [
     "815 Lombard Street, Philadelphia"
    ]
+  },
+  {
+   "issue": "CR_1863-07-04",
+   "page": 3,
+   "headline": "Steam-Dyeing, Scouring, and Repairing Works (James W. Brown)",
+   "address": [
+    "South Sixth St., above Walnut, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1863-07-04",
+   "page": 4,
+   "headline": "Mrs. M. Bennett, Herb Doctress",
+   "address": [
+    "South Seventh Street, below Pine, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1863-07-25",
+   "page": 3,
+   "headline": "Boarding (Mr. and Mrs. H. M. Cropper)",
+   "address": [
+    "Lombard Street, between Fourth and Fifth Streets, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1863-09-26",
+   "page": 3,
+   "headline": "Grocery Store, P. Guinn & Son (advertisement)",
+   "address": [
+    "South Street, four doors above Eleventh, north side, Philadelphia"
+   ]
   }
  ]
 }

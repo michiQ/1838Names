@@ -281,6 +281,42 @@
       "new_name": "Henry Johnson (volunteer, 1863)",
       "new_source": "newspaper",
       "note": "One of five volunteers for the Massachusetts colored regiment at Bethel, Mar 18, 1863; not the 1828 Troy, N.Y. Henry Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+    },
+    {
+      "from_name": "Campbell, Mary",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863-07-18",
+      "to_name": "Mrs. Mary Campbell (Bethel contraband committee, 1862)",
+      "to_source": "newspaper",
+      "note": "Mary Campbell of the Bethel Soldiers' Relief Association committee: the same Bethel women's relief work as the 1862 contraband committee secretary; not tied to a census Mary Campbell on a common name. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+    },
+    {
+      "from_name": "Edward Johnson",
+      "from_source": "newspaper",
+      "context_prefix": "",
+      "issue_like": "CR_1863-09-12",
+      "new_name": "Edward Johnson (Love and Charity district deputy, 1863)",
+      "new_source": "newspaper",
+      "note": "District deputy of the Grand Tabernacle (Brothers and Sisters of Love and Charity), elected at West Chester; a common name, kept apart. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+    },
+    {
+      "from_name": "Johnson, Jacob",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1863-09-12",
+      "new_name": "Jacob Johnson (Love and Charity, 1863)",
+      "new_source": "newspaper",
+      "note": "Outer Sentinel of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to Winch's Jacob Johnson. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+    },
+    {
+      "from_name": "Brooks, Henry",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863-09-12",
+      "new_name": "Henry Brooks (Love and Charity district deputy, 1863)",
+      "new_source": "newspaper",
+      "note": "District deputy of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to a census Henry Brooks. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
     }
   ],
   "renames": [

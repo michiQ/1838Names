@@ -795,6 +795,78 @@
     0.14
    ],
    "check": "Hawkins spring goods ad through PHILADELPHIA"
+  },
+  {
+   "issue": "CR_1863-07-04",
+   "page": 3,
+   "headline": "Steam-Dyeing, Scouring, and Repairing Works (James W. Brown)",
+   "box": [
+    0.838,
+    0.554,
+    0.995,
+    0.621
+   ],
+   "check": "Steam-Dyeing ... James W Brown ... Chestnut St"
+  },
+  {
+   "issue": "CR_1863-07-04",
+   "page": 4,
+   "headline": "Mrs. M. Bennett, Herb Doctress",
+   "box": [
+    0.703,
+    0.861,
+    0.837,
+    0.966
+   ],
+   "check": "Mrs. M. Bennett, Herb Doctress, full text"
+  },
+  {
+   "issue": "CR_1863-07-25",
+   "page": 3,
+   "headline": "Lodging (Mrs. Julia A. Brown)",
+   "box": [
+    0.832,
+    0.884,
+    0.99,
+    0.921
+   ],
+   "check": "Lodging, Mrs. Julia A. Brown"
+  },
+  {
+   "issue": "CR_1863-07-25",
+   "page": 3,
+   "headline": "Boarding (Mr. and Mrs. H. M. Cropper)",
+   "box": [
+    0.832,
+    0.921,
+    0.99,
+    0.968
+   ],
+   "check": "Boarding, Mr. and Mrs. H. M. Cropper"
+  },
+  {
+   "issue": "CR_1863-08-08",
+   "page": 3,
+   "headline": "Dr. P. Gardiner, Botanic Physician (advertisement)",
+   "box": [
+    0.572,
+    0.488,
+    0.717,
+    0.555
+   ],
+   "check": "Feeling grateful ... Dr. P. Gardiner, Botanic Physician"
+  },
+  {
+   "issue": "CR_1863-09-26",
+   "page": 3,
+   "headline": "Grocery Store, P. Guinn & Son (advertisement)",
+   "box": [
+    0.838,
+    0.813,
+    1.0,
+    0.896
+   ],
+   "check": "Grocery Store, P. Guinn & Son, signed Peter Guinn and Franklin A. Guinn"
   }
  ]
 }
