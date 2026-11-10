@@ -763,8 +763,13 @@
    "headline": "Wanted (dress-making apprentice; Mrs. Margaret Hassard's establishment)",
    "author": "",
    "type": "advertisement",
-   "summary": "WANTED. A very respectable moral young woman to learn the dress making business in all of its various branches, one that has learned to sew and has a regard for that business, can apply at Mrs. Margaret Hassard's dress making establishment, where they can be accommodated with board in the house if required. Inquire at No. 820 [VERIFY] Shippen Street between 8th and 9th Streets, South side.",
-   "people": []
+   "summary": "WANTED. A very respectable moral young woman to learn the dress making business in all of its various branches, one that has learned to sew and has a regard for that business, can apply at Mrs. Margaret Hassard's dress making establishment, where they can be accommodated with board in the house if required. Inquire at No. 820 [VERIFY] Shippen Street between 8th and 9th Streets, South side. (Printed 'Hassard' here and 'Hazzard' the next week; the same woman, spelled Hazzard per Michiko.)",
+   "people": [
+    [
+     "Margaret Hazzard",
+     "dressmaker (Mrs.), dress-making establishment on Shippen St. between 8th and 9th, south side"
+    ]
+   ]
   },
   {
    "issue": "CR_1863-01-31",
@@ -1068,8 +1073,13 @@
    "headline": "Wanted (apprentice at Mrs. Margaret Hazzard's dress making establishment)",
    "author": "",
    "type": "advertisement",
-   "summary": "A very respectable moral young woman to learn the dress making business in all of its various branches, one that has learned to sew, and has a regard for Christianity, can apply at Mrs. Margaret Hazzard's [VERIFY] dress making establishment, where they can be accommodated with board in the house if required. Inquire at No. 830 [VERIFY] Shippen Street, between 8th and 9th Streets, South side. Feb 20-1t.",
-   "people": []
+   "summary": "A very respectable moral young woman to learn the dress making business in all of its various branches, one that has learned to sew, and has a regard for Christianity, can apply at Mrs. Margaret Hazzard's dress making establishment, where they can be accommodated with board in the house if required. Inquire at No. 830 [VERIFY] Shippen Street, between 8th and 9th Streets, South side. Feb 20-1t.",
+   "people": [
+    [
+     "Margaret Hazzard",
+     "dressmaker (Mrs.), dress-making establishment on Shippen St. between 8th and 9th, south side"
+    ]
+   ]
   },
   {
    "issue": "CR_1863-02-28",
@@ -1300,11 +1310,16 @@
   {
    "issue": "CR_1863-03-07",
    "page": 3,
-   "headline": "George W. Loff [VERIFY], General Furnishing Undertaker",
+   "headline": "George W. Lott, General Furnishing Undertaker",
    "author": "",
    "type": "advertisement",
-   "summary": "George W. Loff [VERIFY], General Furnishing Undertaker, No. 509 South Thirteenth Street, (first door below [street illegible]), Philadelphia. Every requisite furnished ... on the most reasonable terms. Dec 19 1y.",
-   "people": []
+   "summary": "George W. Lott, General Furnishing Undertaker, No. 509 South Thirteenth Street, (first door below [street illegible]), Philadelphia. Every requisite furnished ... on the most reasonable terms. Dec 19 1y. (Surname printed faintly; Michiko reads it Lott.)",
+   "people": [
+    [
+     "George W. Lott",
+     "general furnishing undertaker, No. 509 South Thirteenth St."
+    ]
+   ]
   },
   {
    "issue": "CR_1863-03-14",
