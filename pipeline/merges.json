@@ -1830,5 +1830,38 @@
    }
   ],
   "note": "Rev. Theodore Gould, A.M.E. elder (New Brunswick, Burlington circuits). Michiko's ruling 2026-11-10 (after Run #84): merge the initials and full-name newspaper records of the same man. The Coppin-source 'Gould, Theodore' is not merged here."
+ },
+ {
+  "keep": {
+   "name": "Eddy, Joshua P.B.",
+   "source": "winch"
+  },
+  "aliases": [
+   {
+    "name": "Eddy, Josiah",
+    "source": "winch"
+   },
+   {
+    "name": "EDDY, JOSHUA P",
+    "source": "census"
+   },
+   {
+    "name": "Eddy, Joshua P B",
+    "source": "census"
+   },
+   {
+    "name": "Rev. J. P. B. Eddy",
+    "source": "newspaper"
+   },
+   {
+    "name": "J. P. B. Eddy",
+    "source": "newspaper"
+   },
+   {
+    "name": "J. Eddy",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko's ruling 2026-11-10 (after Run #85): all the Joshua / Josiah / Joseph Eddy variations are one person, the A.M.E. minister J. P. B. Eddy, who married a daughter of Bishop Richard Allen and was divorced. Both Winch entries are kept in the merged notes. NOTE for review: the 1838 Register of Trades prints two hairdresser lines, 'Eddy, Josiah, 460 Race' and 'Eddy, Joshua P.B., 11th above Market'. Not merged: Sarah Eddy, James Eddy, The Eddy Family."
  }
 ]
