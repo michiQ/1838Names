@@ -39,7 +39,7 @@ existing record; source-qualify the storymap alias), e.g.:
 - **Octavius V. Catto** (storymap)  ↔  Catto, Octavius V. (winch), Catto, Octavius V. (coppin)
 - **Robert Douglass Jr.** (storymap)  ↔  Douglass, Robert Jr. (winch)
 - **Robert Patterson** (storymap)  ↔  Robert Patterson (newspaper), Robert Patterson (blog)
-- **Robert Purvis** (storymap)  ↔  Purvis, Robert (winch)
+- **Robert Purvis** (storymap)  ↔  Purvis, Robert (winch), Robert Purvis (blog), Robert Purvis (mobstats)
 - **Samuel Williams** (storymap)  ↔  WILLIAMS, SAMUEL (census), Samuel Williams (blog), WILLIAMS, SAMUEL (census), Williams, Samuel (census), Williams, Samuel (census), Williams, Samuel (census)
 - **Stephen James** (storymap)  ↔  James, Stephen (1820directory)
 - **Stephen Smith** (storymap)  ↔  Smith, Stephen (winch)

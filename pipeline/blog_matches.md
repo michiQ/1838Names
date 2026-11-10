@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 197 linked to existing people, 233 created as new blog people, 49 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 197 linked to existing people, 232 created as new blog people, 50 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -16,18 +16,18 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Daniel Fox** (blog)  ↔  Fox, Daniel#1049, FOX, DANIEL D.#352553, Daniel Fox#359771
 - **Elizabeth Brown** (blog)  ↔  Brown, Elizabeth#366, Brown, Elizabeth#359047
 - **Ellen Craft** (blog)  ↔  Craft, Ellen#31200, Craft, Ellen#351701, Ellen Craft#358733
-- **George Washington** (blog)  ↔  Washington, George#351632, WASHINGTON, GEORGE#354152
+- **George Washington** (blog)  ↔  Washington, George#351632, WASHINGTON, GEORGE#354152, George Washington#364251
 - **George Williams** (blog)  ↔  George Williams#70420, Williams, George#357110, Williams, George#358678
 - **Henry Simpson** (blog)  ↔  SIMPSON, HENRY#353818, Simpson, Henry#358452
-- **Jacob C. White** (blog)  ↔  White, Jacob#2772, White, Jacob#2773, Jacob C. White Sr.#59208
+- **Jacob C. White** (blog)  ↔  White, Jacob#2772, White, Jacob#2773, Jacob C. White Sr.#59208, Jacob White#364235
 - **Jacob C. White Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
 - **Jacob C. White, Jr.** (blog)  ↔  Jacob White, Jr.#2774, Jacob C. White Jr.#3037
 - **Jacob Griffith** (blog)  ↔  Griffith, Jacob#356653, Jacob Griffith#359742
 - **James Brister** (blog)  ↔  Brister, James#354473, Brister, James#359042
-- **James Gordon** (blog)  ↔  Gordon, James R.#1182, Gordon, James R#354661
+- **James Gordon** (blog)  ↔  Gordon, James R.#1182, Gordon, James R#354661, James R. Gordon#364242
 - **James Le Count** (blog)  ↔  Lecount, James#1691, James Le Count#361532
 - **James Needham** (blog)  ↔  Needham, James#1996, Needham, James F.#359342
-- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360582, Jane Johnson#361530
+- **Jane Johnson** (blog)  ↔  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360582, Jane Johnson#361530, Jane L. Johnson#364270
 - **Jehu Jones** (blog)  ↔  Jones, Rev. Jehu#1600, JONES, JEHU#353059
 - **John Bowers** (blog)  ↔  Bowers, John#304, Bowers, John C.#305
 - **John Francis Cook Jr.** (blog)  ↔  Bowers, John C.#305, John Sellers Jr.#358765, John Atkinson Jr.#359641
@@ -41,7 +41,8 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#364111
+- **Robert Purvis** (blog)  ↔  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364296
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#364429
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Thomas Bowers** (blog)  ↔  Bowers, Thomas#311, Bowers, Thomas J.#312
@@ -117,7 +118,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Francis Burke Brandt
 - Francis Fauset
 - Francis Peets Jr.
-- Franklin Guinn
 - Franklin Vansant
 - Garnet Appo
 - General Grant
