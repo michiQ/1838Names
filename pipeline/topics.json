@@ -108,6 +108,14 @@
     {
      "issue": "CR_1863-12-26",
      "headline": "The Passenger Cars of Philadelphia (William Still's letter, 'The Passenger Cars and Colored Citizens')"
+    },
+    {
+     "issue": "CR_1863-05-02",
+     "headline": "An Incident (Green and Coates St. passenger car)"
+    },
+    {
+     "issue": "CR_1863-05-16",
+     "headline": "Lecture by Rev. Mr. Logan at Wesley church (streetcar ejection)"
     }
    ],
    "events": [
@@ -146,6 +154,10 @@
     {
      "issue": "CR_1863-12-26",
      "name": "William Still put off a city passenger car between Germantown and the city (streetcar discrimination)"
+    },
+    {
+     "issue": "CR_1863-05-16",
+     "name": "Lecture by Rev. Mr. Logan at Wesley church"
     }
    ]
   }
