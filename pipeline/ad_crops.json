@@ -939,6 +939,18 @@
     0.836
    ],
    "check": "Oysters! Oysters! Georgiana Gleaves"
+  },
+  {
+   "issue": "CR_1863-06-20",
+   "page": 2,
+   "headline": "Notice: Wanted, a boy for a barber-shop (Wm. S. Walker, Frankford)",
+   "box": [
+    0.0,
+    0.6435,
+    0.153,
+    0.6685
+   ],
+   "check": "Notice. Wanted, a good active boy ... Wm. S. Walker, No. 22 Main Street, Frankford"
   }
  ]
 }
