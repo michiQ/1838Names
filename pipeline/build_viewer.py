@@ -165,6 +165,17 @@ try:
 except FileNotFoundError:
     urls = {}
 
+# Internet Archive item for each issue (2026-11-10, Michiko): pipeline/ia_items.json maps slug ranges to items
+try:
+    _ia_rules = json.load(open("/tmp/repo/pipeline/ia_items.json"))["rules"]
+except FileNotFoundError:
+    _ia_rules = []
+def ia_url(slug):
+    for r in _ia_rules:
+        if r["from"] <= slug <= r["to"]: return r["url"]
+    return None
+ia_urls = {v["slug"]: ia_url(v["slug"]) for v in issues.values() if v.get("slug") and ia_url(v["slug"])}
+
 # which issues have local page JPEGs rendered (pages/<slug>_p<N>.jpg) -- issues without
 # any (e.g. a born-digital dissertation source) fall back to a page-anchored Drive link instead.
 import glob as _glob, os as _os
@@ -472,6 +483,7 @@ data = {"people": list(people.values()),
         "articles": list(articles.values()),
         "edges": [[a, b, w] for (a, b), w in edges.items()],
         "issueUrls": urls,
+        "iaUrls": ia_urls,
         "jpegIssues": jpeg_slugs,
         "orgs": [{"name": o["name"], "members": [p for p in o["members"] if p in people],
                   "src": {str(p): s for p, s in o["src"].items() if p in people},

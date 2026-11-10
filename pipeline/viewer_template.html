@@ -671,6 +671,8 @@ function srcLinks(slug,pg){
     h += ` · <a href="${URLS[slug]}#page=${pg}" target="_blank" title="open this page in the source document">view page</a>`;
     h += ` · <a href="${URLS[slug]}" target="_blank" title="full document on Google Drive">full document</a>`;
   }
+  // 2026-11-10 (Michiko): sharper scans of the same film are on the Internet Archive
+  if((DATA.iaUrls||{})[slug]) h += ` · <a href="${DATA.iaUrls[slug]}" target="_blank" rel="noopener" title="this quarter of the paper on the Internet Archive, at full resolution">Internet Archive</a>`;
   return h;
 }
 function esc(t){return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}

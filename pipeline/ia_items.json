@@ -1,0 +1,19 @@
+{
+ "_doc": "Internet Archive items for the Christian Recorder microfilm (added 2026-11-10, Michiko: give readers a link to the Internet Archive when they want more detail than our page images). Each rule: issue slugs from 'from' to 'to' (inclusive, compared as text) belong to the item at 'url'. Identifiers are from the Online Books Page listing for the Christian Recorder (onlinebooks.library.upenn.edu/webbin/serial?id=christrecordame); they are irregular, so do not guess new ones. The viewer adds an 'Internet Archive' link beside 'view page' and 'full issue'; the ads page adds one under each ad and in the ad viewer. April-June 1863 (nos. 14-26) is on the Archive at christianrecorder_1863_v3_no14_to_26 but is not in the database yet.",
+ "rules": [
+  {"from": "CR_1854-01-01", "to": "CR_1855-12-31", "url": "https://archive.org/details/christianrecorder_1854_1855"},
+  {"from": "CR_1856-01-01", "to": "CR_1856-12-31", "url": "https://archive.org/details/christianrecorder_1856"},
+  {"from": "CR_1861-01-01", "to": "CR_1861-03-31", "url": "https://archive.org/details/christianrecorder_1861_no1_to_12"},
+  {"from": "CR_1861-04-01", "to": "CR_1861-06-30", "url": "https://archive.org/details/christianrecorder_1861_no13_to_25"},
+  {"from": "CR_1861-07-01", "to": "CR_1861-09-30", "url": "https://archive.org/details/christianrecorder_1861_no26_to_38"},
+  {"from": "CR_1861-10-01", "to": "CR_1861-12-31", "url": "https://archive.org/details/christianrecorder_1861_no_39_to_51"},
+  {"from": "CR_1862-01-01", "to": "CR_1862-03-31", "url": "https://archive.org/details/christianrecorder_1862_v2_no52_to_64"},
+  {"from": "CR_1862-04-01", "to": "CR_1862-06-30", "url": "https://archive.org/details/christianrecorder_1862_v2_no65_to_68"},
+  {"from": "CR_1862-07-01", "to": "CR_1862-09-30", "url": "https://archive.org/details/christianrecorder_1862_v2_no_78_to_90"},
+  {"from": "CR_1862-10-01", "to": "CR_1862-12-31", "url": "https://archive.org/details/christianrecorder_1862_v2_no_91_to_104"},
+  {"from": "CR_1863-01-01", "to": "CR_1863-03-31", "url": "https://archive.org/details/christianrecorder_1863_v_3_no1_to_13"},
+  {"from": "CR_1863-04-01", "to": "CR_1863-06-30", "url": "https://archive.org/details/christianrecorder_1863_v3_no14_to_26"},
+  {"from": "CR_1863-07-01", "to": "CR_1863-09-30", "url": "https://archive.org/details/christianrecorder_1863_v3_no27_to_39"},
+  {"from": "CR_1863-10-01", "to": "CR_1863-12-31", "url": "https://archive.org/details/christianrecorder_1863_v3_no40_to52"}
+ ]
+}

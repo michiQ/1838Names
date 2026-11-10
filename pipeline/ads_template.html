@@ -66,9 +66,9 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
     <span class="count" id="count"></span>
   </div>
   <div class="grid" id="grid"></div>
-  <p class="foot">Images are cropped from the newspaper page scans in the database: <i>Freedom&rsquo;s Journal</i> courtesy the Center for Research Libraries, the <i>Christian Recorder</i> courtesy the Internet Archive. Each card links to its full page. &copy; 1838 Black Metropolis, Inc., <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.</p>
+  <p class="foot">Images are cropped from the newspaper page scans in the database: <i>Freedom&rsquo;s Journal</i> courtesy the Center for Research Libraries, the <i>Christian Recorder</i> courtesy the Internet Archive. Each card links to its full page. For a sharper image of a <i>Christian Recorder</i> page, follow the Internet Archive link on the card. &copy; 1838 Black Metropolis, Inc., <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.</p>
 </main>
-<div id="zoom" role="dialog" aria-modal="true" aria-label="Advertisement"><div class="bar"><button id="zclose">&#8592; Back</button><span id="zt"></span><button id="zpage">Whole page</button></div><div class="wrap"><img id="zimg" alt=""></div></div>
+<div id="zoom" role="dialog" aria-modal="true" aria-label="Advertisement"><div class="bar"><button id="zclose">&#8592; Back</button><span id="zt"></span><button id="zpage">Whole page</button><a id="zia" target="_blank" rel="noopener" hidden>Internet Archive</a></div><div class="wrap"><img id="zimg" alt=""></div></div>
 <script>
 const ADS=/*__ADS__*/[];
 const e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -80,7 +80,7 @@ function render(){
   document.getElementById('count').textContent=L.length+' ad'+(L.length===1?'':'s');
   document.getElementById('grid').innerHTML=L.map(a=>{const i=ADS.indexOf(a);
     return `<article class="card">${a.addr.length?`<div class="addr">${a.addr.map(x=>`<div>${e(x)}</div>`).join('')}</div>`:''}<button class="img" data-i="${i}" aria-label="Read this ad larger"><img src="${e(a.img)}" alt="${e(a.title)}, ${e(a.paper)}, ${e(a.date)}" loading="lazy"></button>
-    <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · <a href="pages/${e(a.issue)}_p${a.page}.jpg" class="pg" data-i="${i}">page ${a.page}</a></div>
+    <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · <a href="pages/${e(a.issue)}_p${a.page}.jpg" class="pg" data-i="${i}">page ${a.page}</a>${a.ia?` · <a href="${e(a.ia)}" target="_blank" rel="noopener" title="This quarter of the paper on the Internet Archive, at full resolution">Internet Archive</a>`:''}</div>
     ${a.people.length?`<div class="who">${a.people.map(p=>`<a href="index.html#p${p[0]}">${e(p[1])}</a>`).join(', ')}</div>`:''}</div></article>`;}).join('')
     || '<p class="count">No ads match.</p>';
 }
@@ -94,7 +94,8 @@ function showZ(){const a=ADS[zi], im=document.getElementById('zimg');
   im.src=zwhole?`pages/${a.issue}_p${a.page}.jpg`:a.img; im.alt=a.title+(zwhole?', whole page '+a.page:'');
   im.style.maxWidth=zwhole?'min(1600px,100%)':'';
   z.classList.toggle('whole',zwhole); z.classList.remove('big');
-  document.getElementById('zpage').textContent=zwhole?'Just the ad':'Whole page';}
+  document.getElementById('zpage').textContent=zwhole?'Just the ad':'Whole page';
+  const ia=document.getElementById('zia'); if(a.ia){ia.href=a.ia;ia.hidden=false;}else ia.hidden=true;}
 document.getElementById('zimg').addEventListener('click',()=>{if(zwhole)z.classList.toggle('big');});
 function openZ(i,push,whole){zi=i;zwhole=!!whole;const a=ADS[i];
   document.getElementById('zt').textContent=a.title+' · '+a.paper+', '+a.date;showZ();

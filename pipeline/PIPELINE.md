@@ -360,3 +360,14 @@ review, but build_viewer.py strips them from everything the site displays. Do no
 - The Events tab lists topics first and its search matches topic labels (try "streetcar").
 - Deep link: `index.html#t-<slug>`, e.g. `index.html#t-streetcar-discrimination`.
 - To add an entry or a new topic, edit `topics.json` and rebuild the viewer. No database change is needed.
+
+## Internet Archive links and sharper ad images (added 2026-11-10)
+
+- `pipeline/ia_items.json` maps Christian Recorder issue slugs (by date range, one rule per film quarter) to the
+  Internet Archive item that holds the same microfilm at full resolution. `build_viewer.py` adds an
+  "Internet Archive" link after "view page" and "full issue"; `build_ads.py` adds one on each ad card and in the
+  ad viewer. The identifiers are irregular: take new ones from the Online Books Page listing, never guess.
+- `pipeline/render_ad_hires.py <source.pdf> <jobs.txt>` renders each ad box straight from the film PDF (about
+  1100px wide) into `ads_hires/`. `build_ads.py` uses that file when it exists, else crops the 2000px page JPEG.
+  Run it after adding ads for a new quarter (jobs.txt is the same frame:slug:page map used for OCR), and again
+  after changing a box. The film scans are about 3900px wide per page, so that is the ceiling.

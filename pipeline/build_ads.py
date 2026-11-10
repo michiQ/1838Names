@@ -37,6 +37,12 @@ def display_name(n):
     return n.title() if n.isupper() else n
 
 
+try:   # Internet Archive item per issue (2026-11-10), see ia_items.json
+    IA_RULES = json.load(open(os.path.join(HERE, "ia_items.json"), encoding="utf-8"))["rules"]
+except FileNotFoundError:
+    IA_RULES = []
+
+
 def main():
     crops = json.load(open(os.path.join(HERE, "ad_crops.json"), encoding="utf-8"))
     key = lambda iss, pg, hl: f"{iss}|{pg}|{hl}"
@@ -75,7 +81,8 @@ def main():
             seen.add(pid); ppl.append([pid, display_name(nm)])
         out.append({"img": fn, "issue": iss, "paper": PAPERS.get(iss[:2], iss[:2]), "date": nice_date(iss),
                     "iso": iss.split("_")[1], "page": pg, "title": clean_head(hl), "people": ppl,
-                    "addr": addrs.get(key(iss, pg, hl), []), "where": c.get("where", ""), "note": c.get("note_public", "")})
+                    "addr": addrs.get(key(iss, pg, hl), []), "where": c.get("where", ""), "note": c.get("note_public", ""),
+                    "ia": next((r["url"] for r in IA_RULES if r["from"] <= iss <= r["to"]), "")})
     tpl = open(os.path.join(HERE, "ads_template.html"), encoding="utf-8").read()
     page = tpl.replace("/*__ADS__*/[]", json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     open(os.path.join(ROOT, "ads.html"), "w", encoding="utf-8").write(page)
