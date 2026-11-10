@@ -682,9 +682,9 @@
    "headline": "Mrs. Martha Collins, infant school (advertisement)",
    "box": [
     0.29,
-    0.884,
+    0.909,
     0.445,
-    0.95
+    0.96
    ],
    "check": "Run #81: Martha Collins infant school ad, col 3, name through 'give her a trial'; checked by eye"
   },
@@ -732,7 +732,7 @@
     0.438,
     0.862,
     0.585,
-    0.93
+    0.934
    ],
    "check": "Shrouding ad, Johnson and Wear, through Philada line"
   },
@@ -790,9 +790,9 @@
    "headline": "Spring and Summer Goods (S. Shorter Hawkins)",
    "box": [
     0.565,
-    0.068,
+    0.044,
     0.727,
-    0.14
+    0.143
    ],
    "check": "Hawkins spring goods ad through PHILADELPHIA"
   },
@@ -933,7 +933,7 @@
    "page": 3,
    "headline": "Oysters! Oysters! (Georgiana Gleaves)",
    "box": [
-    0.439,
+    0.431,
     0.758,
     0.563,
     0.836
