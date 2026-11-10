@@ -349,3 +349,14 @@ review, but build_viewer.py strips them from everything the site displays. Do no
 ## The Juvenile Magazine, 1813, and the 1838 school table (added 2026-11-08)
 - `jm1813_rosters.json` (Arthur Donaldson's scholar rolls) -> `build_jm1813.py` -> `extractions_jm1813.json`. Scholars link to Winch's "Attended Donaldson's school" records; everyone else gets a fixed new record (`new:jm1813` in load_extractions) that is never name-matched to a later adult.
 - `extractions_pas1838_schools.json`: the school table from *Present State and Condition* (1838), p. 29.
+
+## Topic labels (added 2026-11-10)
+
+`pipeline/topics.json` tags articles and events with a topic label, for example "Streetcar discrimination".
+- Articles are keyed by issue + headline (plus page when a headline repeats in one issue); events by issue + name.
+  A key that matches nothing stops `build_viewer.py`, so a renamed headline cannot silently drop out of a topic.
+- Each tagged entry shows a chip. The chip opens the topic page: the note, "Read more" links (blog posts), and every
+  tagged event and article in date order with scan links. Articles with no linked author are only reachable this way.
+- The Events tab lists topics first and its search matches topic labels (try "streetcar").
+- Deep link: `index.html#t-<slug>`, e.g. `index.html#t-streetcar-discrimination`.
+- To add an entry or a new topic, edit `topics.json` and rebuild the viewer. No database change is needed.
