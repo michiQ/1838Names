@@ -867,6 +867,78 @@
     0.896
    ],
    "check": "Grocery Store, P. Guinn & Son, signed Peter Guinn and Franklin A. Guinn"
+  },
+  {
+   "issue": "CR_1863-10-03",
+   "page": 3,
+   "headline": "New Fall and Winter Goods, at the lowest cash prices (S. Shorter Hawkins)",
+   "box": [
+    0.84,
+    0.906,
+    1.0,
+    0.962
+   ],
+   "check": "New Fall and Winter Goods, S. Shorter Hawkins, Lombard Street"
+  },
+  {
+   "issue": "CR_1863-10-10",
+   "page": 3,
+   "headline": "Office for Obtaining Employment for Colored Persons of both Sexes (John Oliver)",
+   "box": [
+    0.42,
+    0.89,
+    0.578,
+    0.962
+   ],
+   "check": "Office for obtaining employment, Clarkson Hall, John Oliver"
+  },
+  {
+   "issue": "CR_1863-10-10",
+   "page": 3,
+   "headline": "Dr. Wm. Armstrong, North Ninth Street, Phila.",
+   "box": [
+    0.84,
+    0.882,
+    1.0,
+    0.957
+   ],
+   "check": "Dr. Wm. Armstrong, North Ninth Street"
+  },
+  {
+   "issue": "CR_1863-10-24",
+   "page": 3,
+   "headline": "Olive Branch Boarding House, by Mrs. H. M. Cropper",
+   "box": [
+    0.565,
+    0.142,
+    0.7,
+    0.192
+   ],
+   "check": "Olive Branch Boarding House, Mrs. H. M. Cropper, 403 Lombard"
+  },
+  {
+   "issue": "CR_1863-10-24",
+   "page": 3,
+   "headline": "Stove Store! (William Still)",
+   "box": [
+    0.565,
+    0.69,
+    0.7,
+    0.843
+   ],
+   "check": "Stove Store! ... William Still, 107 North 5th St."
+  },
+  {
+   "issue": "CR_1863-11-07",
+   "page": 3,
+   "headline": "Oysters! Oysters! (Georgiana Gleaves)",
+   "box": [
+    0.439,
+    0.758,
+    0.563,
+    0.836
+   ],
+   "check": "Oysters! Oysters! Georgiana Gleaves"
   }
  ]
 }
