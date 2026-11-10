@@ -46,6 +46,8 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
 #zoom .bar span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #zoom .wrap{flex:1;overflow:auto;text-align:center;padding:0 16px 24px}
 #zoom img{max-width:min(900px,100%);height:auto;background:#fff}
+#zoom.whole img{cursor:zoom-in}
+#zoom.whole.big img{width:250%;max-width:none!important;cursor:zoom-out}
 @media (prefers-reduced-motion:no-preference){.card{transition:box-shadow .15s}.card:hover{box-shadow:0 2px 10px rgba(42,33,24,.12)}}
 </style>
 </head>
@@ -54,7 +56,7 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
 <main>
   <div class="eyebrow">From the newspapers in the 1838 Names Database</div>
   <h1>Business Ads</h1>
-  <p class="lede">Advertisements placed by Black business owners, teachers and institutions, cut from the pages of <i>Freedom&rsquo;s Journal</i> (1827&ndash;1828) and the <i>Christian Recorder</i> (1854&ndash;1862). Undertakers, dentists, coal dealers, bakers, clothiers, boarding houses, music teachers. Addresses appear as printed in the ad, in the old street numbering. Click an ad to read it larger; click a name to open that person in the database.</p>
+  <p class="lede">Advertisements placed by Black business owners, teachers and institutions, cut from the pages of <i>Freedom&rsquo;s Journal</i> (1827&ndash;1828) and the <i>Christian Recorder</i> (1854&ndash;1863). Undertakers, dentists, coal dealers, bakers, clothiers, boarding houses, music teachers. Addresses appear as printed in the ad, in the old street numbering. Click an ad to read it larger; click a name to open that person in the database.</p>
   <div class="wip"><b>Work in progress.</b> More ads are added as we read more issues. This page shows Philadelphia businesses only. Ads from other cities stay in the database.</div>
   <div class="controls" role="group" aria-label="Filter the ads">
     <button class="chip" data-p="" aria-pressed="true">All papers</button>
@@ -66,7 +68,7 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
   <div class="grid" id="grid"></div>
   <p class="foot">Images are cropped from the newspaper page scans in the database: <i>Freedom&rsquo;s Journal</i> courtesy the Center for Research Libraries, the <i>Christian Recorder</i> courtesy the Internet Archive. Each card links to its full page. &copy; 1838 Black Metropolis, Inc., <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.</p>
 </main>
-<div id="zoom" role="dialog" aria-modal="true" aria-label="Advertisement"><div class="bar"><button id="zclose">&#8592; Back</button><span id="zt"></span><a id="zpage" href="#">Whole page</a></div><div class="wrap"><img id="zimg" alt=""></div></div>
+<div id="zoom" role="dialog" aria-modal="true" aria-label="Advertisement"><div class="bar"><button id="zclose">&#8592; Back</button><span id="zt"></span><button id="zpage">Whole page</button></div><div class="wrap"><img id="zimg" alt=""></div></div>
 <script>
 const ADS=/*__ADS__*/[];
 const e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -78,7 +80,7 @@ function render(){
   document.getElementById('count').textContent=L.length+' ad'+(L.length===1?'':'s');
   document.getElementById('grid').innerHTML=L.map(a=>{const i=ADS.indexOf(a);
     return `<article class="card">${a.addr.length?`<div class="addr">${a.addr.map(x=>`<div>${e(x)}</div>`).join('')}</div>`:''}<button class="img" data-i="${i}" aria-label="Read this ad larger"><img src="${e(a.img)}" alt="${e(a.title)}, ${e(a.paper)}, ${e(a.date)}" loading="lazy"></button>
-    <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · <a href="pages/${e(a.issue)}_p${a.page}.jpg" target="_blank" rel="noopener">page ${a.page}</a></div>
+    <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · <a href="pages/${e(a.issue)}_p${a.page}.jpg" class="pg" data-i="${i}">page ${a.page}</a></div>
     ${a.people.length?`<div class="who">${a.people.map(p=>`<a href="index.html#p${p[0]}">${e(p[1])}</a>`).join(', ')}</div>`:''}</div></article>`;}).join('')
     || '<p class="count">No ads match.</p>';
 }
@@ -86,11 +88,22 @@ document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{pa
   document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render();}));
 document.getElementById('q').addEventListener('input',ev=>{q=ev.target.value;render();});
 const z=document.getElementById('zoom');
-function openZ(i,push){const a=ADS[i];document.getElementById('zimg').src=a.img;document.getElementById('zimg').alt=a.title;
-  document.getElementById('zt').textContent=a.title+' · '+a.paper+', '+a.date;document.getElementById('zpage').href=`pages/${a.issue}_p${a.page}.jpg`;
-  z.classList.add('on');if(push)try{history.pushState({ad:i},'');}catch(err){}}
+// 2026-11-09 (Michiko): the whole page opens inside this viewer, not a new tab, so the Back button is always there
+let zi=-1, zwhole=false;
+function showZ(){const a=ADS[zi], im=document.getElementById('zimg');
+  im.src=zwhole?`pages/${a.issue}_p${a.page}.jpg`:a.img; im.alt=a.title+(zwhole?', whole page '+a.page:'');
+  im.style.maxWidth=zwhole?'min(1600px,100%)':'';
+  z.classList.toggle('whole',zwhole); z.classList.remove('big');
+  document.getElementById('zpage').textContent=zwhole?'Just the ad':'Whole page';}
+document.getElementById('zimg').addEventListener('click',()=>{if(zwhole)z.classList.toggle('big');});
+function openZ(i,push,whole){zi=i;zwhole=!!whole;const a=ADS[i];
+  document.getElementById('zt').textContent=a.title+' · '+a.paper+', '+a.date;showZ();
+  if(!z.classList.contains('on')){z.classList.add('on');if(push)try{history.pushState({ad:i},'');}catch(err){}}
+  document.querySelector('#zoom .wrap').scrollTop=0;}
+document.getElementById('zpage').addEventListener('click',()=>{zwhole=!zwhole;showZ();document.querySelector('#zoom .wrap').scrollTop=0;});
 function closeZ(fromPop){if(!z.classList.contains('on'))return;z.classList.remove('on');if(!fromPop)try{if(history.state&&history.state.ad!=null)history.back();}catch(err){}}
-document.getElementById('grid').addEventListener('click',ev=>{const b=ev.target.closest('button.img');if(b)openZ(+b.dataset.i,true);});
+document.getElementById('grid').addEventListener('click',ev=>{const b=ev.target.closest('button.img');if(b){openZ(+b.dataset.i,true);return;}
+  const g=ev.target.closest('a.pg');if(g){ev.preventDefault();openZ(+g.dataset.i,true,true);}});
 document.getElementById('zclose').addEventListener('click',()=>closeZ(false));
 window.addEventListener('popstate',()=>closeZ(true));
 document.addEventListener('keydown',ev=>{if(ev.key==='Escape')closeZ(false);});
