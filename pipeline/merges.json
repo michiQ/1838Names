@@ -1129,9 +1129,13 @@
    {
     "name": "Bishop Willis Nazrey",
     "source": "newspaper"
+   },
+   {
+    "name": "W. Nazrey",
+    "source": "newspaper"
    }
   ],
-  "note": "Bishop Willis Nazrey of the A.M.E. Church -- two newspaper-source nodes for the same man (pilot-era 'Willis Nazrey' 3027 + 'Bishop Willis Nazrey'). Kept on 3027. Confirmed by Michiko 2026-08-19 (Run #72)."
+  "note": "Bishop Willis Nazrey of the A.M.E. Church -- two newspaper-source nodes for the same man (pilot-era 'Willis Nazrey' 3027 + 'Bishop Willis Nazrey'). Kept on 3027. Confirmed by Michiko 2026-08-19 (Run #72). [Michiko's ruling 2026-11-10 (after Run #84): merge the initials and full-name newspaper records of the same man. Added 'W. Nazrey'.]"
  },
  {
   "keep": {
@@ -1775,5 +1779,56 @@
    }
   ],
   "note": "'Father Roberson' of the Nov. 29, 1862 funeral report is Rev. Richard Robinson of Frankford (Michiko, 2026-11-09 (after Run #82): 'Richard Roberson is Richard Robinson')."
+ },
+ {
+  "keep": {
+   "name": "Anthony L. Stanford",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "A. L. Stanford",
+    "source": "newspaper"
+   },
+   {
+    "name": "A. Stanford",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Rev. Anthony L. Stanford of the A.M.E. Church (Wesley/Little Wesley; acting editor 1861; drafted 1863). Michiko's ruling 2026-11-10 (after Run #84): merge the initials and full-name newspaper records of the same man. 'A. Stanford' is the pastor of Little Wesley, Mar 1862."
+ },
+ {
+  "keep": {
+   "name": "Ulysses B. Vidal",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "U. B. Vidal",
+    "source": "newspaper"
+   },
+   {
+    "name": "U. B. Vidall",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Ulysses B. Vidal (Olive Cemetery, Bethel meetings, the 6th USCT flag list). Michiko's ruling 2026-11-10 (after Run #84): merge the initials and full-name newspaper records of the same man. 'Vidall' is a printing of Mar 21, 1863."
+ },
+ {
+  "keep": {
+   "name": "Theodore Gould",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "T. Gould",
+    "source": "newspaper"
+   },
+   {
+    "name": "Theo. Gould",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Rev. Theodore Gould, A.M.E. elder (New Brunswick, Burlington circuits). Michiko's ruling 2026-11-10 (after Run #84): merge the initials and full-name newspaper records of the same man. The Coppin-source 'Gould, Theodore' is not merged here."
  }
 ]
