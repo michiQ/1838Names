@@ -1,0 +1,129 @@
+{
+ "_doc": "Topic labels (added 2026-11-10 at Michiko's request). Each topic tags articles (by issue + headline, plus page when a headline repeats in an issue) and events (by issue + name). build_viewer.py puts a chip on every tagged entry; the chip opens a page listing everything under the topic. The Events tab search also finds a topic by its label. To add an entry, add its issue and headline/name here and rebuild. A key that matches nothing stops the build.",
+ "topics": [
+  {
+   "label": "Streetcar discrimination",
+   "slug": "streetcar-discrimination",
+   "note": "Exclusion of Black riders from Philadelphia's city passenger railways (streetcars), and the protests, petitions and court cases against it. Related entries on railroad cars and on other cities are included (the 1837 Broadway omnibus in New York, the West Jersey Railroad, the Pennsylvania Railroad's separate car, Havre de Grace).",
+   "links": [
+    {
+     "title": "The Law In Her Pocket: A Look into Black Philadelphia's Struggles and Victories in Public Transit in the 19th Century",
+     "source": "1838 Black Metropolis blog",
+     "url": "https://www.1838blackmetropolis.org/site/post/black-philadelphia-transit-victories/"
+    }
+   ],
+   "articles": [
+    {
+     "issue": "CR_1861-01-26",
+     "headline": "The Rights of Colored People (Goines vs. McCandless)"
+    },
+    {
+     "issue": "CR_1861-02-02",
+     "headline": "Reply to 'W. S.' on the Goines railway-car case"
+    },
+    {
+     "issue": "CR_1862-01-25",
+     "headline": "Prejudice (city passenger cars)"
+    },
+    {
+     "issue": "CR_1862-03-15",
+     "headline": "An Outrage -- To the Public (Mrs. Palmer ejected from the city cars)"
+    },
+    {
+     "issue": "CR_1862-06-21",
+     "headline": "Pass It Around! (Blyden and Crummell ejected from Philadelphia city cars)"
+    },
+    {
+     "issue": "CR_1862-06-28",
+     "headline": "Expectations (petition on Philadelphia passenger railway cars)"
+    },
+    {
+     "issue": "CR_1862-10-11",
+     "headline": "Letter from Peter Lester (Victoria)"
+    },
+    {
+     "issue": "CR_1862-11-15",
+     "headline": "A Very Sad Accident (Father Roberson injured on a city railway car)"
+    },
+    {
+     "issue": "CR_1862-11-22",
+     "headline": "Passing Away (editor's visit to the dying Father Roberson)"
+    },
+    {
+     "issue": "CR_1862-11-29",
+     "headline": "City Cars and Colored Passengers"
+    },
+    {
+     "issue": "CR_1863-08-01",
+     "headline": "A Disloyal Colonel"
+    },
+    {
+     "issue": "CR_1863-08-08",
+     "headline": "The Editor's Experience on the City Passenger Cars"
+    },
+    {
+     "issue": "CR_1863-09-19",
+     "headline": "Railway Injustice (from the Press)"
+    },
+    {
+     "issue": "PP_093",
+     "headline": "Pencil Pusher Points: white champions of the anti-slavery cause"
+    },
+    {
+     "issue": "PP_916",
+     "headline": "Pencil Pusher Points: Alfred H. Love and Philadelphia abolitionists"
+    },
+    {
+     "issue": "PP_059",
+     "headline": "Pencil Pusher Points"
+    },
+    {
+     "issue": "CA_1837-06-10",
+     "headline": "Colored man ejected from a Broadway omnibus -- editorial rebuke"
+    },
+    {
+     "issue": "CR_1861-02-02",
+     "headline": "Our Visit to Gouldtown"
+    },
+    {
+     "issue": "CR_1861-08-03",
+     "headline": "From Our General Book Steward"
+    },
+    {
+     "issue": "CR_1862-04-26",
+     "headline": "Western Tour (Weaver's journey to the Ohio Conference, Zanesville)"
+    },
+    {
+     "issue": "CR_1861-02-23",
+     "headline": "To Southern Travellers"
+    }
+   ],
+   "events": [
+    {
+     "issue": "CR_1861-02-02",
+     "name": "Goines vs. McCandless: community committee, subscriptions and planned appeal"
+    },
+    {
+     "issue": "CR_1862-03-15",
+     "name": "Mrs. Palmer ejected from a Philadelphia street car (Spruce St. near Tenth)"
+    },
+    {
+     "issue": "CR_1862-11-15",
+     "name": "Father Roberson injured while forced to ride on the front platform of a city railway car"
+    },
+    {
+     "issue": "CR_1862-11-22",
+     "name": "Ministers' meeting on the death of Rev. Richard Roberson"
+    },
+    {
+     "issue": "PP_059",
+     "name": "William J. Alston succeeds William Douglass as rector of St. Thomas'"
+    },
+    {
+     "issue": "CR_1861-02-02",
+     "name": "Dedication of Trinity Church (African M. E.), Gouldtown, N.J."
+    }
+   ]
+  }
+ ]
+}

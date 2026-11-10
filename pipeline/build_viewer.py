@@ -478,6 +478,28 @@ data = {"people": list(people.values()),
                   **({"note": o["note"]} if o.get("note") else {})} for o in orgs_out],
         "blogs": blogs_meta,
         "mobstats": mobstats_meta}
+# Topic labels (2026-11-10, Michiko): pipeline/topics.json tags articles and events; each tagged entry
+# carries "tp" (topic slugs) and data["topics"] lists the entries in date order for the topic page.
+_tp_path = os.path.join(os.path.dirname(os.path.abspath(TPL)), "topics.json")
+data["topics"] = []
+if os.path.exists(_tp_path):
+    _idate = {v["slug"]: (v["date"] or "") for v in issues.values()}
+    for t in json.load(open(_tp_path, encoding="utf-8"))["topics"]:
+        aids, eids = [], []
+        for k in t.get("articles", []):
+            hit = [a for a in articles.values() if a["issue"] == k["issue"] and a["hl"] == k["headline"]
+                   and ("page" not in k or a["pg"] == k["page"])]
+            if not hit: raise SystemExit(f"topics.json: no article {k}")
+            for a in hit: a.setdefault("tp", []).append(t["slug"]); aids.append(a["id"])
+        for k in t.get("events", []):
+            hit = [e for e in events.values() if e["issue"] == k["issue"] and e["name"] == k["name"]]
+            if not hit: raise SystemExit(f"topics.json: no event {k}")
+            for e in hit: e.setdefault("tp", []).append(t["slug"]); eids.append(e["id"])
+        aids.sort(key=lambda i: (_idate.get(articles[i]["issue"]) or "9999", articles[i]["pg"] or 0))
+        eids.sort(key=lambda i: (events[i].get("date") or _idate.get(events[i]["issue"]) or "9999"))
+        data["topics"].append({"label": t["label"], "slug": t["slug"], "note": t.get("note", ""),
+                               "links": t.get("links", []), "articles": aids, "events": eids})
+        print("topic:", t["label"], "|", len(aids), "articles,", len(eids), "events")
 # Organization Timelines tab (2026-11-01, Michiko): lanes built from the finished people/orgs/events
 import timeline_data
 data["timeline"] = timeline_data.build(people, events, data["orgs"], os.path.dirname(os.path.abspath(TPL)))

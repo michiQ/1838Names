@@ -32,6 +32,8 @@ header .sub{color:var(--dim);font-size:12.5px;font-style:italic}
 .prow.sel{background:#33290f;border-left:3px solid var(--gold)}
 .prow .ct{color:var(--dim);font-size:11.5px;white-space:nowrap}
 .badge{display:inline-block;font-size:10px;border-radius:3px;padding:0 5px;margin-left:5px;vertical-align:1px}
+.tchip{display:inline-block;font:11px var(--mono,monospace);border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:1px 9px;margin:4px 6px 0 0;cursor:pointer;background:none}
+.tchip:hover{background:#33290f}
 .b-w{background:#463818;color:var(--gold)} .b-n{background:#1d3a35;color:#7fc2b4} .b-c{background:#3a2430;color:#d18aa8}
 .b-d{background:#2a3a1d;color:#a8c27f} .b-u{background:#3a2a18;color:#e0a765} .b-m{background:#3a1d1d;color:#d99a8a}
 .b-i{background:#24303f;color:#8ab6d1}
@@ -336,6 +338,25 @@ window._fullLayoutCache = BAKED_FULLMAP ? new Map(BAKED_FULLMAP) : null;
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
 const A = new Map(DATA.articles.map(a=>[a.id,a]));
+// Topic labels (2026-11-10, Michiko): a chip on each tagged article/event opens the topic page
+const T = new Map((DATA.topics||[]).map(t=>[t.slug,t]));
+function topicChips(x){ return (x&&x.tp||[]).map(s=>T.get(s)).filter(Boolean).map(t=>`<button class="tchip" data-topic="${t.slug}" title="Show everything labelled ${t.label}">${t.label}</button>`).join(''); }
+function selectTopic(slug){
+  const t=T.get(slug); if(!t) return;
+  document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='t' && r.dataset.slug===slug));
+  let h=`<h2>${esc(t.label)}</h2><div class="dates">Topic · ${t.articles.length} articles · ${t.events.length} events</div>`;
+  if(t.note) h+=`<div class="card"><q>${esc(t.note)}</q></div>`;
+  if((t.links||[]).length) h+=`<h3>Read more</h3>`+t.links.map(l=>`<div class="card"><a href="${esc(l.url)}" target="_blank" rel="noopener" style="color:var(--gold)">${esc(l.title)}</a><div class="src">${esc(l.source||'')}</div></div>`).join('');
+  if(t.events.length) h+=`<h3>Events (${t.events.length})</h3>`+t.events.map(i=>E.get(i)).filter(Boolean).map(e=>
+    `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(e.date||'')}${e.loc?' · '+esc(e.loc):''}</div>${e.issue?`<div class="src">${ISSUE_LABEL(e.issue)}, p.${e.pg}${srcLinks(e.issue,e.pg)}</div>`:''}</div>`).join('');
+  if(t.articles.length) h+=`<h3>Articles (${t.articles.length})</h3>`+t.articles.map(i=>A.get(i)).filter(Boolean).map(a=>
+    `<div class="card"><span class="hl">${esc(a.hl)}</span><q>${esc(a.sum||'')}</q><div class="src">${ISSUE_LABEL(a.issue)}, p.${a.pg} · ${esc(a.ty||'')}${a.au?' · '+esc(a.au):''}${srcLinks(a.issue,a.pg)}</div></div>`).join('');
+  right.innerHTML=h; right.scrollTop=0;
+  if(isMobile() && !window._suppressAutoOpen) openRightDrawer();
+  right.querySelectorAll('.pl[data-e]').forEach(el=>el.addEventListener('click',()=>selectEvent(+el.dataset.e)));
+  try{ history.replaceState(null,'','#t-'+slug); }catch(err){}
+}
+document.addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('.tchip'); if(b){ev.stopPropagation(); selectTopic(b.dataset.topic);}});
 const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)', NS:'The North Star', CR:'Christian Recorder'};
 const NBR = new Map(); // pid -> Map(pid -> weight)
 for (const [a,b,w] of DATA.edges){
@@ -532,20 +553,24 @@ function renderList(q){
     plist.innerHTML = rows.map(o=>
       `<div class="prow" data-t="o" data-name="${o.name.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}"><span>${o.name}</span><span class="ct">${o.members.length}◆</span></div>`).join('');
   } else {
-    const rows = sortedEvents.filter(e=>(e.name+' '+(e.loc||'')+' '+(e.desc||'')+' '+(e.date||'')).toLowerCase().includes(q)).slice(0,400);
-    plist.innerHTML = rows.map(e=>
+    const tl = e=>(e.tp||[]).map(s=>(T.get(s)||{}).label||'').join(' ');
+    const rows = sortedEvents.filter(e=>(e.name+' '+(e.loc||'')+' '+(e.desc||'')+' '+(e.date||'')+' '+tl(e)).toLowerCase().includes(q)).slice(0,400);
+    const trows = q ? [...T.values()].filter(t=>t.label.toLowerCase().includes(q)||q.split(/\s+/).every(w=>(t.label+' '+t.note).toLowerCase().includes(w))) : [...T.values()];
+    plist.innerHTML = trows.map(t=>
+      `<div class="prow" data-t="t" data-slug="${t.slug}"><span>${t.label} <span class="badge b-w">Topic</span></span><span class="ct">${t.articles.length}✎ ${t.events.length}★</span></div>`).join('') + rows.map(e=>
       `<div class="prow" data-id="${e.id}" data-t="e"><span>${e.name}</span><span class="ct">${e.date||''} · ${e.att.length}♦</span></div>`).join('');
   }
 }
 plist.addEventListener('click',ev=>{const r=ev.target.closest('.prow'); if(!r)return;
-  if(r.dataset.t==='e') selectEvent(+r.dataset.id);
+  if(r.dataset.t==='t') selectTopic(r.dataset.slug);
+  else if(r.dataset.t==='e') selectEvent(+r.dataset.id);
   else if(r.dataset.t==='o') selectOrg(r.dataset.name);
   else select(+r.dataset.id);
   if(isMobile()) closeLeftDrawer();});
 search.addEventListener('input',()=>renderList(search.value));
 const tabP=document.getElementById('tab-p'), tabE=document.getElementById('tab-e'), tabO=document.getElementById('tab-o');
 function setMode(m){ mode=m; tabP.classList.toggle('on',m==='p'); tabE.classList.toggle('on',m==='e'); tabO.classList.toggle('on',m==='o');
-  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : m==='o' ? 'Search organizations… e.g. Lodge' : 'Search events… e.g. convention';
+  search.placeholder = m==='p' ? 'Search a name… e.g. Cornish' : m==='o' ? 'Search organizations… e.g. Lodge' : 'Search events and topics… e.g. streetcar';
   renderList(search.value); }
 tabP.addEventListener('click',()=>setMode('p'));
 tabE.addEventListener('click',()=>setMode('e'));
@@ -659,7 +684,7 @@ function select(pid){
   // articles authored
   const arts = (p.articles||[]).map(x=>A.get(x.a)).filter(Boolean);
   if(arts.length){ h += `<h3>Wrote / signed in the paper</h3>` + arts.map(a=>
-    `<div class="card"><span class="hl">${esc(a.hl)}</span><q>${esc(a.sum)}</q><div class="src">${ISSUE_LABEL(a.issue)}, p.${a.pg} · ${esc(a.ty)}${srcLinks(a.issue,a.pg)}</div></div>`).join(''); }
+    `<div class="card"><span class="hl">${esc(a.hl)}</span><q>${esc(a.sum)}</q><div class="src">${ISSUE_LABEL(a.issue)}, p.${a.pg} · ${esc(a.ty)}${srcLinks(a.issue,a.pg)}</div>${topicChips(a)}</div>`).join(''); }
   // events
   const evs = (p.events||[]).map(x=>({e:E.get(x.e),role:x.role})).filter(x=>x.e);
   if(evs.length){ h += `<h3>Events</h3>` + evs.map(({e,role})=>{
@@ -672,7 +697,7 @@ function select(pid){
     const d0 = (e.desc||'').split(' || ')[0];
     const longDesc = d0.length < (e.desc||'').length || d0.length>700;
     const dtxt = d0.length>700 ? d0.slice(0, d0.lastIndexOf(' ', 600)).replace(/[\s,;:]+$/,'') + '…' : d0;
-    return `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(role)} · ${esc(e.date||'')} · ${esc(e.loc||'')}</div><q>${linkify(esc(dtxt))}</q>${longDesc?`<div style="margin-top:4px;font-size:12.5px"><span class="pl" data-e="${e.id}" style="text-decoration:underline">Read the full entry, with sources and scans</span></div>`:''}${others?`<div style="margin-top:5px;font-size:12.5px"><b style="color:var(--rust)">Also there:</b> ${others}</div>`:''}</div>`;
+    return `<div class="card"><span class="hl pl" data-e="${e.id}">${esc(e.name)}</span><div class="role">${esc(role)} · ${esc(e.date||'')} · ${esc(e.loc||'')}</div><q>${linkify(esc(dtxt))}</q>${longDesc?`<div style="margin-top:4px;font-size:12.5px"><span class="pl" data-e="${e.id}" style="text-decoration:underline">Read the full entry, with sources and scans</span></div>`:''}${others?`<div style="margin-top:5px;font-size:12.5px"><b style="color:var(--rust)">Also there:</b> ${others}</div>`:''}${topicChips(e)}</div>`;
   }).join(''); }
   // mentions
   if(p.mentions?.length){ const _ms=[...p.mentions].sort((a,b)=>((b.art?2:0)+(b.role?1:0))-((a.art?2:0)+(a.role?1:0))); h += `<h3>Appears in the paper (${p.mentions.length})</h3>` + _ms.map(m=>
@@ -785,7 +810,7 @@ function linkify(s){
 function selectEvent(eid){
   const e = E.get(eid); if(!e) return;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='e' && +r.dataset.id===eid));
-  let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>`;
+  let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>${topicChips(e)}`;
   if(e.desc) h += `<div class="card"><q>${linkify(esc(e.desc)).split(' || ').join('<br><br>')}</q>${e.issue?`<div class="src">${ISSUE_LABEL(e.issue)}, p.${e.pg}${srcLinks(e.issue,e.pg)}</div>`:''}</div>`;
   if(e.att.length){
     h += `<h3>Who was there (${e.att.length})</h3>` + e.att.map(([q,role])=>{
@@ -1592,6 +1617,7 @@ if(sorted.length) select(sorted[0].id);
 window._suppressAutoOpen = false;
 syncFab();
 // Deep link (2026-11-01): index.html#p<id> opens that person (used by the business ads page)
+(function(){ try{ const tm=(location.hash||'').match(/^#t-([a-z0-9-]+)$/); if(tm && T.get(tm[1])) setTimeout(()=>selectTopic(tm[1]),0); }catch(e){} })();
 (function(){ try{ const m=(location.hash||'').match(/^#p(\d+)$/); if(m && typeof select==='function' && P.get(+m[1])) setTimeout(()=>select(+m[1]),0); }catch(e){} })();
 </script>
 <div id="tlview" role="dialog" aria-modal="true" aria-label="Organization timelines">
