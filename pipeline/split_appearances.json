@@ -317,6 +317,76 @@
       "new_name": "Henry Brooks (Love and Charity district deputy, 1863)",
       "new_source": "newspaper",
       "note": "District deputy of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to a census Henry Brooks. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+    },
+    {
+      "from_name": "Still, Wm. sawyer",
+      "from_source": "1820directory",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "to_id": 2497,
+      "note": "Wm. Still of the stove store (107 N. Fifth) and the Dec. 1863 passenger-car letter is William Still (Winch), not the 1820 directory sawyer. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Mrs. Hawkins",
+      "from_source": "newspaper",
+      "context_prefix": "",
+      "issue_like": "CR_1863-10-03",
+      "to_id": 2401,
+      "note": "Mrs. Hawkins of the Lombard St. dry-goods store is Sarah S. Shorter Hawkins (Michiko's ruling, Run #82). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Cooper, Anna Julia",
+      "from_source": "dissertation",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "new_name": "Anna Cooper (Love and Charity, 1863)",
+      "new_source": "newspaper",
+      "note": "Sister Anna Cooper of the Grand Tabernacle's book committee, Dec. 1863; not the educator Anna Julia Cooper (born 1858). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Young, Sarah",
+      "from_source": "dissertation",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "new_name": "Sarah Young (Love and Charity, 1863)",
+      "new_source": "newspaper",
+      "note": "Sister Sarah Young, grand worthy Vice of the Grand Tabernacle, Dec. 1863; not tied to the 1876 boarding-house keeper on a common name. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "ARMSTRONG, WILLIAM",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863%",
+      "new_name": "Dr. William Armstrong (physician, 1863)",
+      "new_source": "newspaper",
+      "note": "Dr. Wm. Armstrong, physician, 240 North Ninth St. (ads from Oct. 1863); not tied to a census William Armstrong on the name alone. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Turner, Edward",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1863-11-14",
+      "new_name": "Edward Turner (Love and Charity, New Jersey, 1863)",
+      "new_source": "newspaper",
+      "note": "G. W. Chaplain of the New Jersey Grand Tabernacle formed at Camden, Oct. 28, 1863; not a Philadelphia census Edward Turner. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Brooks, Henry",
+      "from_source": "census",
+      "context_prefix": "To All Whom",
+      "issue_like": "CR_1863-1%",
+      "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
+      "to_source": "newspaper",
+      "note": "Henry Brooks of the Love and Charity Grand Tabernacle (West Chester meeting), same man as the Sept. 1863 district deputy. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+    },
+    {
+      "from_name": "Brooks, Henry",
+      "from_source": "census",
+      "context_prefix": "Grand Tabernacle",
+      "issue_like": "CR_1863-1%",
+      "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
+      "to_source": "newspaper",
+      "note": "Henry Brooks of the Love and Charity Grand Tabernacle (Oct. and Dec. 1863 sessions). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
     }
   ],
   "renames": [
