@@ -951,6 +951,42 @@
     0.6685
    ],
    "check": "Notice. Wanted, a good active boy ... Wm. S. Walker, No. 22 Main Street, Frankford"
+  },
+  {
+   "issue": "CR_1864-03-12",
+   "page": 3,
+   "headline": "Joseph Brister, Dentist (advertisement)",
+   "box": [
+    0.858,
+    0.706,
+    0.997,
+    0.838
+   ],
+   "check": "Joseph Brister, Dentist, No. 844 Lombard Street"
+  },
+  {
+   "issue": "CR_1864-03-12",
+   "page": 3,
+   "headline": "Intelligence Office (John Oliver, Pine Street)",
+   "box": [
+    0.851,
+    0.91,
+    0.99,
+    0.965
+   ],
+   "check": "Intelligence Office ... John Oliver, 1113 Pine Street, bet. 11th and 12th"
+  },
+  {
+   "issue": "CR_1864-03-12",
+   "page": 3,
+   "headline": "Dry Goods Store (Mrs. S. Shorter Hawkins, spring 1864 advertisement)",
+   "box": [
+    0.435,
+    0.872,
+    0.582,
+    0.966
+   ],
+   "check": "Dry Goods Store ... S. Shorter Hawkins, No. 615 Lombard Street"
   }
  ]
 }

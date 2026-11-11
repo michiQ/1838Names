@@ -616,6 +616,30 @@
    "address": [
     "No. 22 Main Street, Frankford, Pa."
    ]
+  },
+  {
+   "issue": "CR_1864-03-12",
+   "page": 3,
+   "headline": "Joseph Brister, Dentist (advertisement)",
+   "address": [
+    "No. 844 Lombard Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1864-03-12",
+   "page": 3,
+   "headline": "Intelligence Office (John Oliver, Pine Street)",
+   "address": [
+    "1113 Pine Street, between 11th and 12th, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1864-03-12",
+   "page": 3,
+   "headline": "Dry Goods Store (Mrs. S. Shorter Hawkins, spring 1864 advertisement)",
+   "address": [
+    "No. 615 Lombard Street, Philadelphia"
+   ]
   }
  ]
 }
