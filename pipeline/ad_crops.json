@@ -987,6 +987,30 @@
     0.966
    ],
    "check": "Dry Goods Store ... S. Shorter Hawkins, No. 615 Lombard Street"
+  },
+  {
+   "issue": "CR_1864-04-09",
+   "page": 3,
+   "headline": "Joseph C. Bustill and Sarah Bustill, Wig Makers, Hair Braiders and Ladies' Head-Dressers (advertisement)",
+   "box": [
+    0.424,
+    0.758,
+    0.563,
+    0.968
+   ],
+   "check": "Ornamental Hair Work. Wig Makers ... No. 403 South Sixth Street"
+  },
+  {
+   "issue": "CR_1864-06-18",
+   "page": 3,
+   "headline": "One Price Notion Store: Georgiana Gleaves (advertisement)",
+   "box": [
+    0.568,
+    0.894,
+    0.706,
+    0.963
+   ],
+   "check": "New Store. One Price Notion Store. Georgiana Gleaves ... No. 633 Pine St."
   }
  ]
 }

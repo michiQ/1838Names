@@ -7,7 +7,7 @@ existing record; source-qualify the storymap alias), e.g.:
 
 40 of 97 StoryMap people share a name with an existing record:
 
-- **Benjamin Jackson** (storymap)  ↔  Jackson, Benjamin (winch), Benjamin Jackson (blog)
+- **Benjamin Jackson** (storymap)  ↔  Jackson, Benjamin (winch), Benjamin Jackson (blog), Benjamin Jackson (newspaper)
 - **Charles Black** (storymap)  ↔  Black, Charles (winch), Black, Charles (winch), BLACK, CHARLES (census), Charles Black (blog)
 - **Charles Gardner** (storymap)  ↔  Charles Gardner (blog)
 - **Daniel Fox** (storymap)  ↔  Fox, Daniel (winch), Daniel Fox (blog)

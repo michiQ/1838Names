@@ -5,15 +5,15 @@
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json to attach the mob-stats record to the right person:
 
-- **Benjamin Jackson** (mobstats)  <->  Jackson, Benjamin#1459, JACKSON, BENJ#352956, Jackson, Benjamin F#356728, Benjamin Jackson#359904
+- **Benjamin Jackson** (mobstats)  <->  Jackson, Benjamin#1459, JACKSON, BENJ#352956, Jackson, Benjamin F#356728, Benjamin Jackson#359904, Benjamin Jackson#365190
 - **Charles Brown** (mobstats)  <->  Brown, Charles#359, Brown, Charles#360, Brown, Charles#351623, BROWN, CHARLES#352044, Brown, Charles#357456
-- **Charles Gardner** (mobstats)  <->  Gardner, Charles W.#1107, GARDNER, CHAS W#352611, Charles Gardner#359716, Charles Gardner#359922, Charles L. Gardner#361744
+- **Charles Gardner** (mobstats)  <->  Gardner, Charles W.#1107, GARDNER, CHAS W#352611, Charles Gardner#359716, Charles Gardner#359922, Charles L. Gardner#361744, Charles F. Gardner#365189
 - **Daniel Payne** (mobstats)  <->  Payne, Daniel A.#2086, Daniel Payne#359717
 - **James Williams** (mobstats)  <->  Williams, James#2818, Williams, James#2819, Williams, James W.#2820, James H. Williams#14294, James Williams#19966, WILLIAMS, JAMES#354258, Williams, James#358680, Williams, James H.#359536
 - **Jane Johnson** (mobstats)  <->  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360029, Jane Johnson#361530, Jane L. Johnson#364270
 - **Mary Moore** (mobstats)  <->  Moore, Mary#1932, Moore, Mary#359325
 - **Robert Purvis** (mobstats)  <->  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364289
-- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#365078
+- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#365365
 - **William Anderson** (mobstats)  <->  Anderson, William#74, ANDERSON, WM#351801
 - **William Simpson** (mobstats)  <->  Simpson, William#2410, Simpson, Wm.#358454
 

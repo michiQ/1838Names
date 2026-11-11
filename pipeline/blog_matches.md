@@ -1,21 +1,22 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 196 linked to existing people, 232 created as new blog people, 51 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 197 linked to existing people, 230 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
 
 - **Ann Eliza Carey** (blog)  ↔  Carey, Ann Eliza#530, CAREY, ANN ELIZA#352154
-- **Benjamin Jackson** (blog)  ↔  Jackson, Benjamin#1459, Jackson, Benjamin F#356728
+- **Benjamin Jackson** (blog)  ↔  Jackson, Benjamin#1459, Jackson, Benjamin F#356728, Benjamin Jackson#365190
 - **Charles Black** (blog)  ↔  Black, Charles#230, Black, Charles#231, BLACK, CHARLES#351942
 - **Charles Bustill** (blog)  ↔  Bustill, Charles H.#477, Bustill, Charles C#354521
-- **Charles Gardner** (blog)  ↔  Gardner, Charles W.#1107, Charles Gardner#359716, Charles L. Gardner#361744
+- **Charles Gardner** (blog)  ↔  Gardner, Charles W.#1107, Charles Gardner#359716, Charles L. Gardner#361744, Charles F. Gardner#365189
 - **Christopher James Perry, Sr.** (blog)  ↔  CHRISTOPHER, JOHN#352211, Christopher, William#354792, Christopher, Levinia#356486, Christopher, Bayhs#357579
 - **Daniel Alexander Payne** (blog)  ↔  Payne, Daniel A.#2086, Daniel Payne#359717
 - **Daniel Colly** (blog)  ↔  Colley, Daniel#659, COLLY, DANIEL#352251
 - **Daniel Fox** (blog)  ↔  Fox, Daniel#1049, FOX, DANIEL D.#352553, Daniel Fox#359771
 - **Elizabeth Brown** (blog)  ↔  Brown, Elizabeth#366, Brown, Elizabeth#359047
 - **Ellen Craft** (blog)  ↔  Craft, Ellen#31200, Craft, Ellen#351701, Ellen Craft#358733
+- **Francis Seymour** (blog)  ↔  Seymour, Francis#355936, Francis M. Seymour#365341
 - **George Washington** (blog)  ↔  Washington, George#351632, WASHINGTON, GEORGE#354152, George Washington#364251
 - **George Williams** (blog)  ↔  George Williams#70420, Williams, George#357110, Williams, George#358678
 - **Henry Simpson** (blog)  ↔  SIMPSON, HENRY#353818, Simpson, Henry#358452
@@ -39,10 +40,10 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Richard Allen** (blog)  ↔  Allen, Richard#31, Richard Allen#14194, ALLEN, RICHARD#351780, Allen, Richard#357327
 - **Robert Douglass** (blog)  ↔  Douglass, Robert Jr.#899, Robert Douglass#14271, Douglass, Robert#357712
 - **Robert Johnson** (blog)  ↔  Johnson, Robert#1560, Johnson, Robert#1561, Johnson, Robert#1562, Johnson, Robert#1563, Johnson, Robert C.#1564, JOHNSON, ROBERT#353012
-- **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265
+- **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265, Robert T. Jones#365240
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
 - **Robert Purvis** (blog)  ↔  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364296
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#365078
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#365365
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Stephen Smith** (blog)  ↔  Smith, Stephen#2436, Mrs. Stephen Smith#364846
@@ -98,7 +99,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Delores Walters
 - Denmark Vesey
 - Dinah Nevil
-- Dr. John Rock
 - Edmund Kean
 - Edward Gorsuch
 - Edward Roland
@@ -131,7 +131,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Hannah Dellum
 - Harriet Bayley
 - Harriet Jacobs
-- Harriet Smith
 - Harriet Tubman
 - Harriet Whipper
 - Hawkins Family
