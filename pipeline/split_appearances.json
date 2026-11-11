@@ -441,6 +441,96 @@
       "new_name": "Eliza Miller (Methodist Protestant, 1863)",
       "new_source": "newspaper",
       "note": "Sister Eliza Miller, thanked by the Methodist Protestant conference, 1863; common name, not assumed to be the census Eliza Miller. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+    },
+    {
+      "from_name": "Bustill, Joseph Cassey",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1864-0%",
+      "new_name": "Joseph C. Bustill (wig maker, 1864)",
+      "new_source": "newspaper",
+      "note": "Joseph C. Bustill, wig maker and hair braider with Sarah H. Bustill, No. 403 South Sixth St., 1864; not assumed to be Winch's Joseph Cassey Bustill (teacher) without confirmation. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Smallwood, James",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1864-05%",
+      "new_name": "James Smallwood (1864 address)",
+      "new_source": "newspaper",
+      "note": "Author of 'Progress of Liberty', an address of May 5, 1864, possibly the ICY student James L. Smallwood; not Winch's hairdresser of 1838. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Davis, Thomas",
+      "from_source": "1820directory",
+      "context_prefix": "",
+      "issue_like": "CR_1864-01%",
+      "new_name": "Thomas Davis (Frankford volunteer, 1864)",
+      "new_source": "newspaper",
+      "note": "Enlisted from Frankford, January 1864; not the Thomas Davis of the 1820 directory. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Spencer, John",
+      "from_source": "ugrr",
+      "context_prefix": "",
+      "issue_like": "CR_1864-03%",
+      "new_name": "John Spencer (Mount Holly, N.J., 1864)",
+      "new_source": "newspaper",
+      "note": "Recorder subscriber at Mount Holly, N.J. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Walker, William",
+      "from_source": "winch",
+      "context_prefix": "",
+      "issue_like": "CR_1864-02%",
+      "new_name": "William Walker (Frankford subscriber, 1864)",
+      "new_source": "newspaper",
+      "note": "Recorder subscriber at Frankford, 1864; not assumed to be Winch's William Walker of 1837. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Jackson, Joshua",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1864-01-02",
+      "new_name": "Joshua Jackson (New Jersey Grand Lodge, 1864)",
+      "new_source": "newspaper",
+      "note": "Officer of the New Jersey Grand Lodge (Burlington), 1864; not the Philadelphia census Joshua Jackson. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Harris, Elizabeth",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1864-04%",
+      "new_name": "Elizabeth Harris (Darby, 1864)",
+      "new_source": "newspaper",
+      "note": "Sister who held a festival at Darby for the Recorder, 1864; common name, not assumed to be the census Elizabeth Harris. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "DRAPER, JOHN",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1864-0%",
+      "new_name": "John Draper (basso, Burris troupe, 1864)",
+      "new_source": "newspaper",
+      "note": "Basso in A. Burris's troupe, 1864; not assumed to be the census John Draper. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "Jenkins, Sarah",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1864-06%",
+      "new_name": "Sarah Jenkins (Good Samaritans, 1864)",
+      "new_source": "newspaper",
+      "note": "Officer of District Grand Lodge No. 2, Good Samaritans and Daughters of Samaria, 1864; common name. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+    },
+    {
+      "from_name": "CARPENTER, WILLIAM",
+      "from_source": "census",
+      "context_prefix": "",
+      "issue_like": "CR_1864-01%",
+      "new_name": "William Carpenter (Israel Church, d. 1864)",
+      "new_source": "newspaper",
+      "note": "Died January 1864 in his 59th year, member of the First Colored M. P. (Israel) Church; the paper does not make clear whether in Philadelphia or Washington. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
     }
   ],
   "renames": [
