@@ -14,6 +14,8 @@
   {"from": "CR_1863-01-01", "to": "CR_1863-03-31", "url": "https://archive.org/details/christianrecorder_1863_v_3_no1_to_13"},
   {"from": "CR_1863-04-01", "to": "CR_1863-06-30", "url": "https://archive.org/details/christianrecorder_1863_v3_no14_to_26"},
   {"from": "CR_1863-07-01", "to": "CR_1863-09-30", "url": "https://archive.org/details/christianrecorder_1863_v3_no27_to_39"},
-  {"from": "CR_1863-10-01", "to": "CR_1863-12-31", "url": "https://archive.org/details/christianrecorder_1863_v3_no40_to52"}
+  {"from": "CR_1863-10-01", "to": "CR_1863-12-31", "url": "https://archive.org/details/christianrecorder_1863_v3_no40_to52"},
+  {"from": "CR_1864-01-01", "to": "CR_1864-03-31", "url": "https://archive.org/details/christianrecorder_1864_v4_no1_to_13"},
+  {"from": "CR_1864-04-01", "to": "CR_1864-06-30", "url": "https://archive.org/details/christianrecorder_1864_v4_no14_to_26"}
  ]
 }
