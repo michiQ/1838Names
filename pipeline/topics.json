@@ -144,6 +144,22 @@
     {
      "issue": "CR_1864-08-27",
      "headline": "Another Great Mass Meeting of the Colored People of Philadelphia (streetcars)"
+    },
+    {
+     "issue": "CR_1864-11-26",
+     "headline": "A Grand National Convention of Colored Clergymen and Editors of America (call)"
+    },
+    {
+     "issue": "CR_1864-12-03",
+     "headline": "A Great Work to be Done (editorial)"
+    },
+    {
+     "issue": "CR_1864-12-10",
+     "headline": "Lecture on Thursday night, at Concert Hall, by Theodore Tilton, Esq."
+    },
+    {
+     "issue": "CR_1864-12-24",
+     "headline": "Speech of Dr. Armstrong, at Bethel A.M.E. Church, on Thursday, Nov. 24th, at the meeting in behalf of the 'Christian Recorder'"
     }
    ],
    "events": [
@@ -206,6 +222,10 @@
     {
      "issue": "CR_1864-08-27",
      "name": "Mass meeting of colored citizens on the Passenger Railway (streetcar) exclusion"
+    },
+    {
+     "issue": "CR_1864-12-31",
+     "name": "Social, Civil and Statistical Association -- course of lectures at Concert Hall (announced)"
     }
    ]
   }
