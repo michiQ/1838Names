@@ -675,6 +675,14 @@
       "new_name": "Jonathan Fisher (Bethel class leader, 1865)",
       "new_source": "newspaper",
       "note": "Bethel class leader named in an obituary, 1865. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+    },
+    {
+      "from_name": "William Sill",
+      "from_source": "newspaper",
+      "context_prefix": "",
+      "issue_like": "CR_1864-10-01",
+      "to_id": 2497,
+      "note": "'Mr. William Sill', post sutler at Camp William Penn (Oct 1, 1864), is William Still. Michiko 2026-11-11."
     }
   ],
   "renames": [

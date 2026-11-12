@@ -1071,7 +1071,12 @@
    "author": "J. Asher",
    "type": "notice",
    "summary": "All those persons who have purchased lots in the Lebanon Cemetery, and have not as yet received the necessary deeds, will please call upon Mr. J. C. White, the Secretary, as he is hereby authorized to receive payment in part or in full. He will also answer every inquiry concerning the grounds. Full satisfaction will be given in the whole matter. (Signed) J. Asher.",
-   "people": []
+   "people": [
+    [
+     "J. C. White",
+     "secretary, Lebanon Cemetery (Jacob C. White Sr., per Michiko 2026-11-11)"
+    ]
+   ]
   },
   {
    "issue": "CR_1865-02-25",
@@ -3350,7 +3355,8 @@
   "CR_1865-03-25 p3: 'From the 41st U.S.C.T.' gives the regiment's Philadelphia departure: left Camp William Penn on the 13th of October [1864], by cars to Philadelphia (Berks street station [?]), marched down Second street to Prime and to the [Union Volunteer] Refreshment Saloon, then by cars to Baltimore; names Lieut. A. K. Kepner and Capt. Frederick A. Allmond (officers, probably white; text only) and John Wooden (detailed for provost duty; text only). Signature read 'Wm. H. Fray' [VERIFY], Private, Co. D, 41st U.S.C.T.; not linked. The Charleston relief notice is reprinted from Mar 18 ('No. 11-2t'); not re-entered.",
   "CR_1865-03-25: Rev. Ed. Laws of the Westchester circuit recorded as printed (author field only); Laws family ruling: no identification attempted.",
   "CR_1865-03-25 recurring ads NOT re-entered: Mrs. Highgates shrouding (1026 Barley St.); Hawkins; Olive Branch; Bennett; Bustill wig makers; Decordover; J. C. Clark, M.D.; Lebanon Cemetery; Durham; Georgina Gleaves trimmings (633 Pine); Book Depository; Longfellow; Jane Johnson shrouding; Charnock; Harding; Avery College; James W. Brown; Continental Restaurant (Charles W. Brister); Spelman; Rodgers; Bowers coal; plus the white and out-of-town ads (railroads, Magarge, Jones' clothing, Champion, Washington Hotel, Winston & Thomas, Creek, boarding at Fairhaven N.J.).",
-  "Merge (Run #91): unlinked 'J. C. White' (Lebanon Cemetery secretary; which Jacob C. White is not stated, owner to rule), 'Mrs. Highgates' (surname-only woman, per the owner's 1864 ruling) and bare 'Bassett'."
+  "Merge (Run #91): unlinked 'J. C. White' (Lebanon Cemetery secretary; which Jacob C. White is not stated, owner to rule), 'Mrs. Highgates' (surname-only woman, per the owner's 1864 ruling) and bare 'Bassett'.",
+  "Michiko 2026-11-11: 'Jacob C. White' (SCSA committee, Dec 31, 1864) and 'J. C. White' (Lebanon Cemetery secretary, Feb 18, 1865) are the father, Jacob C. White Sr."
  ],
  "flags": [
   "CR_1865-01-07 p3 / CR_1865-01-21 p3: League executive board member read 'John B. Reeve' (Jan 7) but 'John R. Reeve' (Jan 21); almost certainly Rev. J. B. Reeve of Central Presbyterian. Linked as John B. Reeve with [VERIFY] in the role.",

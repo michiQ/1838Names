@@ -1102,13 +1102,9 @@
    {
     "name": "Rev. Stephen Smith",
     "source": "newspaper"
-   },
-   {
-    "name": "S. Morgan Smith",
-    "source": "newspaper"
    }
   ],
-  "note": "Rev. Stephen Smith -- Local Elder / Book Concern committeeman who defended the publishing committee at the Sept 1854 Bethel mass meeting (Christian Recorder). = winch Smith, Stephen (2436, already aliased 'Stephen Smith'). Confirmed by Michiko 2026-08-19 (Run #72). NB deliberately does not touch the separate blog-source 'Stephen Smith' node unless Michiko says so. + 'S. Morgan Smith' (secretary of the Social, Civil and Statistical Association; printed 'S. M. Smith' on the Apr 1861 Card) -- Michiko 2026-10-31: 'Same man.'"
+  "note": "Rev. Stephen Smith -- Local Elder / Book Concern committeeman who defended the publishing committee at the Sept 1854 Bethel mass meeting (Christian Recorder). = winch Smith, Stephen (2436, already aliased 'Stephen Smith'). Confirmed by Michiko 2026-08-19 (Run #72). NB deliberately does not touch the separate blog-source 'Stephen Smith' node unless Michiko says so. + 'S. Morgan Smith' (secretary of the Social, Civil and Statistical Association; printed 'S. M. Smith' on the Apr 1861 Card) -- Michiko 2026-10-31: 'Same man.' REVERSED 2026-11-11: Michiko: 'keep this S. Morgan Smith separate from Stephen Smith' (the Mar 18, 1865 lecture committee lists Stephen Smith and S. Morgan Smith separately; S. Morgan Smith gives dramatic readings). She will research."
  },
  {
   "keep": "Gardiner, Peter",
@@ -1871,5 +1867,18 @@
    }
   ],
   "note": "Michiko's ruling 2026-11-10 (after Run #85): all the Joshua / Josiah / Joseph Eddy variations are one person, the A.M.E. minister J. P. B. Eddy. Both Winch entries are kept in the merged notes. NOTE for review: the 1838 Register of Trades prints two hairdresser lines, 'Eddy, Josiah, 460 Race' and 'Eddy, Joshua P.B., 11th above Market'. Not merged: Sarah Eddy, James Eddy, The Eddy Family."
+ },
+ {
+  "keep": {
+   "name": "Brister, Charles",
+   "source": "winch"
+  },
+  "aliases": [
+   {
+    "name": "Charles W. Brister",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Continental Restaurant, 717 Lombard: the proprietor is printed 'Charles W. Brister' in 1864-65 (bought Cole's eating saloon, Oct 1864); the earlier Continental ad appearances were already linked to Winch Brister, Charles. Michiko 2026-11-11 confirmed the Brister reading."
  }
 ]
