@@ -1011,6 +1011,42 @@
     0.963
    ],
    "check": "New Store. One Price Notion Store. Georgiana Gleaves ... No. 633 Pine St."
+  },
+  {
+   "issue": "CR_1864-08-06",
+   "page": 3,
+   "headline": "Hannibal Hotel (advertisement)",
+   "box": [
+    0.428,
+    0.905,
+    0.57,
+    0.962
+   ],
+   "check": "Hannibal Hotel, No. 620 Pine Street ... Thomas D. Jordon, Proprietor"
+  },
+  {
+   "issue": "CR_1864-09-17",
+   "page": 3,
+   "headline": "Intelligence Office, by Mrs. M. E. Gibson, successor to Mr. J. Oliver (advertisement)",
+   "box": [
+    0.572,
+    0.198,
+    0.712,
+    0.245
+   ],
+   "check": "Intelligence Office ... 1113 Pine Street"
+  },
+  {
+   "issue": "CR_1864-09-24",
+   "page": 3,
+   "headline": "Mrs. S. Shorter Hawkins: New Fall and Winter Goods (advertisement)",
+   "box": [
+    0.575,
+    0.054,
+    0.718,
+    0.146
+   ],
+   "check": "New Fall & Winter Goods ... S. Shorter Hawkins, 615 Lombard"
   }
  ]
 }

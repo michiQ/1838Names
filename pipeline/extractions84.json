@@ -524,7 +524,7 @@
    "page": 2,
    "headline": "Liniment, Sure Cure (notice) and Specific Liniment (advertisement), Mrs. H. A. Lee, agent",
    "author": "",
-   "type": "advertisement",
+   "type": "notice",
    "summary": "Notice p2: 'Mrs. Harriet Ann Lee is Agent for a Liniment, an advertisement of which may be found in another column of our paper. It is highly recommended as a sure cure for head-ache, rheumatism, &c.' Advertisement p3: 'Specific Liniment. This is one of the greatest Liniments known in the world for Sprains, Bruises, Stiff Limbs, Cramps', with testimonials from Pittsburgh (Mrs. C. Young), Washington (John Cook; Mrs. H. A. Lee), Ohio (Professor Davis, Susan Rhodes, E. J. Hargrave); 'Mrs. H. A. Lee, Agent.' No address given.",
    "people": []
   },
@@ -851,7 +851,7 @@
    "page": 3,
    "headline": "A New Boarding House at Cape Island (advertisement)",
    "author": "",
-   "type": "advertisement",
+   "type": "notice",
    "summary": "A New Boarding House at Cape Island. Mrs. H. Lunn has opened a private Boarding House in [street illegible], ... houses from the Bridge. It is hoped our colored friends, as Christians, will give us their patronage. Board: $7.50 for Ladies, and $8 for Gentlemen. Mrs. H. Lunn. Cape Island, August 9th, 1864.",
    "people": []
   },
@@ -1770,7 +1770,7 @@
    "page": 3,
    "headline": "Olive Branch Boarding House, No. 814 Lombard Street (advertisement, new address)",
    "author": "",
-   "type": "advertisement",
+   "type": "notice",
    "summary": "Olive Branch Boarding House, No. 814 Lombard Street. Mrs. H. M. Cropper [rest of the ad too faint to read on this copy].",
    "people": [
     [
