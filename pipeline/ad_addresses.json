@@ -680,6 +680,30 @@
    "address": [
     "No. 615 Lombard Street, Philadelphia"
    ]
+  },
+  {
+   "issue": "CR_1864-10-01",
+   "page": 3,
+   "headline": "Olive Branch Boarding House (new address)",
+   "address": [
+    "No. 814 Lombard Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1864-10-15",
+   "page": 3,
+   "headline": "Dry Goods and Trimmings, 713 Lombard Street (Mrs. C. E. Harding)",
+   "address": [
+    "713 Lombard Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1864-12-24",
+   "page": 3,
+   "headline": "Coal Yard (Thos. J. Bowers)",
+   "address": [
+    "631 Lombard Street, above Sixth, Philadelphia"
+   ]
   }
  ]
 }
