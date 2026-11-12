@@ -75,7 +75,6 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **BOYER, S** (census, 1 census records) ↔ **Boyer, Sarah P.** (coppin)
 - [HIGH] **Braddock, A.** (winch, 2 Winch refs) ↔ **BRADDOCK, ANN** (census, 1 census records)
 - [HIGH] **Brice, J. William** (coppin) ↔ **John W. Brice** (newspaper, 1 appearances)
-- [HIGH] **Brister, Charles** (winch, 6 appearances, 3 Winch refs, 1 census records, 1 directory records) ↔ **Charles W. Brister** (newspaper, 2 appearances)
 - [HIGH] **Brister, J.** (winch, 3 appearances, 1 Winch refs) ↔ **Brister, James** (census, 2 census records)
 - [HIGH] **Brister, J.** (winch, 3 appearances, 1 Winch refs) ↔ **Brister, James** (coppin)
 - [HIGH] **BROOKS, JOHN** (census, 7 appearances, 3 census records) ↔ **J. D. Brooks** (newspaper, 3 appearances)
@@ -124,3 +123,4 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Chambers, S.** (winch, 1 Winch refs) ↔ **Chambers, Sophia** (census, 1 census records)
 - [HIGH] **Chapman, Maria Weston** (dissertation, 10 appearances) ↔ **Maria W. Chapman** (newspaper, 2 appearances)
 - [HIGH] **Chester, Charles** (winch, 2 appearances, 1 Winch refs) ↔ **Charles Anderson Chester** (storymap, 1 appearances)
+- [HIGH] **Chew, John** (winch, 1 appearances, 2 Winch refs, 1 directory records) ↔ **Chew, John A** (census, 1 appearances, 1 census records)
