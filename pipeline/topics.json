@@ -124,6 +124,26 @@
     {
      "issue": "CR_1864-03-26",
      "headline": "One of the Monagan Family (assault on James W. Brown; refuge in a passenger car)"
+    },
+    {
+     "issue": "CR_1864-07-09",
+     "headline": "Justice Restored (editorial on the Philadelphia passenger railways, with the New York Ellen Anderson case)"
+    },
+    {
+     "issue": "CR_1864-07-23",
+     "headline": "The Colored People and the City Railways (with Rev. Wm. Johnson Alston's letter to the Press)"
+    },
+    {
+     "issue": "CR_1864-07-30",
+     "headline": "The Colored Men in this State Have Been Loyal to the Government (editorial)"
+    },
+    {
+     "issue": "CR_1864-08-20",
+     "headline": "Is Rev. Morgan Dead? / Another Mass Meeting / Our New Disciplines (editorial notes)"
+    },
+    {
+     "issue": "CR_1864-08-27",
+     "headline": "Another Great Mass Meeting of the Colored People of Philadelphia (streetcars)"
     }
    ],
    "events": [
@@ -174,6 +194,18 @@
     {
      "issue": "CR_1864-03-26",
      "name": "Mob assault on James W. Brown at Tenth and Washington Streets"
+    },
+    {
+     "issue": "CR_1864-07-30",
+     "name": "Mass meeting on exclusion from the city passenger railways, Sansom Street Hall"
+    },
+    {
+     "issue": "CR_1864-08-20",
+     "name": "Mass meeting of colored citizens at Sansom Hall"
+    },
+    {
+     "issue": "CR_1864-08-27",
+     "name": "Mass meeting of colored citizens on the Passenger Railway (streetcar) exclusion"
     }
    ]
   }
