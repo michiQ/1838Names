@@ -1083,6 +1083,42 @@
     0.352
    ],
    "check": "Coal Yard. Thos. J. Bowers (At 631 Lombard Street, above Sixth)"
+  },
+  {
+   "issue": "CR_1865-01-07",
+   "page": 3,
+   "headline": "Cupping, Leeching & Bleeding attended to by Nathaniel L. Durham, 911 1/2 Christian Street",
+   "box": [
+    0.568,
+    0.155,
+    0.705,
+    0.229
+   ],
+   "check": "Cupping, Leeching & Bleeding ... Nathaniel L. Durham, 911 1/2 Christian Street"
+  },
+  {
+   "issue": "CR_1865-01-07",
+   "page": 4,
+   "headline": "Continental Restaurant, Charles W. Brister, No. 717 Lombard Street (proprietor reading)",
+   "box": [
+    0.56,
+    0.277,
+    0.706,
+    0.353
+   ],
+   "check": "Charles W. Brister, Continental Restaurant, No. 717 Lombard Street"
+  },
+  {
+   "issue": "CR_1865-03-18",
+   "page": 3,
+   "headline": "Shrouding and Laying Out of the Dead (Mrs. Highgates)",
+   "box": [
+    0.566,
+    0.742,
+    0.712,
+    0.818
+   ],
+   "check": "Shrouding and Laying Out of the Dead. Mrs. Highgates ... No. 1026 Barley street"
   }
  ]
 }
