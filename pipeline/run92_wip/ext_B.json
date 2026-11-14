@@ -274,8 +274,13 @@
    "headline": "Private Boarding at 633 Pine Street",
    "author": "",
    "type": "advertisement",
-   "summary": "Private Boarding at 633 Pine Street, Philadelphia. The Subscriber, having fitted up his house, takes pleasure in announcing to his friends and acquaintances travelling, that he is prepared to accommodate them when visiting the city. Warm and Cold Baths. R. H. Gleaves [VERIFY first initial], Proprietor. The card is dated April 22.",
-   "people": []
+   "summary": "Private Boarding at 633 Pine Street, Philadelphia. The Subscriber, having fitted up his house, takes pleasure in announcing to his friends and acquaintances travelling, that he is prepared to accommodate them when visiting the city. Warm and Cold Baths. R. H. Gleaves, Proprietor. The card is dated April 22.",
+   "people": [
+    [
+     "R. H. Gleaves",
+     "proprietor, private boarding house, 633 Pine Street"
+    ]
+   ]
   },
   {
    "issue": "CR_1865-05-20",
@@ -747,6 +752,57 @@
      "of the Philadelphia Conference (Rev.); husband of the deceased"
     ]
    ]
+  },
+  {
+   "issue": "CR_1865-05-06",
+   "page": 4,
+   "headline": "Military Instruction: James J. Spelman, South Street",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Military Instruction given to Companies, Associations, &c. Terms Moderate. Address James J. Spelman, 1021 [VERIFY number] South Street, Philadelphia.",
+   "people": [
+    [
+     "James J. Spelman",
+     "gives military instruction to companies and associations; South Street"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-05-06",
+   "page": 3,
+   "headline": "W. R. DeCordover's Periodical Depot, 419 South Seventh Street",
+   "author": "",
+   "type": "notice",
+   "summary": "W. R. DeCordover's Periodical Depot, 419 South Seventh Street, Philada. Daily and Weekly papers always on hand. New York Ledger, Anglo-African, Harper's Weekly, &c., for sale. Also, Stationery.",
+   "people": [
+    [
+     "W. R. DeCordover",
+     "proprietor, Periodical Depot, 419 South Seventh Street (sells the Anglo-African; not known to be Black)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-05-06",
+   "page": 3,
+   "headline": "James C. Clark, M. D. (Eclectic), No. 618 Pine Street",
+   "author": "",
+   "type": "notice",
+   "summary": "James C. Clark, M. D. (Eclectic.) No. 618 Pine Street, Philadelphia, Pennsylv'a. Office hours: from 7 to 9 A. M., from 12 to 2 P. M., from 6 to 9 P. M. Also, particular attention directed to all classes of Ulcers, recent or chronic. Treatment and cure, without the use of Mercury or any other injurious drug, warranted. The card is dated January 7.",
+   "people": [
+    [
+     "James C. Clark",
+     "eclectic physician (M. D.), No. 618 Pine Street (not known to be Black)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-05-06",
+   "page": 4,
+   "headline": "Intelligence Office: Help Wanted (agency at 1113 Pine Street)",
+   "author": "",
+   "type": "notice",
+   "summary": "Intelligence Office. Help Wanted at Mrs. M. C. Gibbons' [VERIFY name] Agency for the employment of help, No. 1113 Pine Street, Philada. Also operating on the Sewing Machine, together with fashionable Dressmaking. The card is dated Sept. 24, 6m.",
+   "people": []
   }
  ],
  "events": [
@@ -1323,7 +1379,14 @@
   "CR_1865-05-27 p2 and p3: the Conference minute speaks of 'the widow of the late Andrew Till' while the death notice on page 3 says Anna M. Till, wife of Rev. Andrew Till, died May 13. One of the two is a slip of the paper; both recorded as printed.",
   "CR_1865-05-27 p2: also on the page, not entered: P. L. Stanford's letter from Boston (end), soldiers' letters, letters from Louisville and South Carolina, 'Congojoco' serial, California letter, Morrowtown, Ohio. p1: Ascension hymn, 'To young men: how to get rich', 'A spring day up the James', 54th Mass. letter, the serial, 'From Boston'. p3: Chaplain Turner's army correspondence, 'The Blacks and the Ballot' (reprint on suffrage, general), marriages at Newport R.I. (David Jones and Sabrey Ann Viney; Charles S. Green and Emma Laws of Newport), white-run ads. p4: children's reading and the standing ads. Triage from OCR and page crops; no streetcar item, no Equal Rights League meeting and no account of Lincoln's funeral in Philadelphia was found in any of the four issues.",
   "CR_1865-05-27 p3: Mrs. Mary Stroder's notice (1132 Lombard St.) and the O'Donnell card repeat from May 20; standing ads repeat as before.",
-  "All four issues: repeats seen and not re-entered include T. J. Bowers coal (634 Lombard), Georgina Gleaves trimmings (633 Pine), Mrs. Maria Highgates shrouding, Mrs. S. Shorter Hawkins, Olive Branch, Mrs. M. Bennett, Bustill wig makers, Lebanon Cemetery notice, N. L. Durham, the Mary Still agency notice signed Elisha Weaver, Book Depository, Wm. H. Longfellow, Jane Johnson and Ann Wear, Mrs. H. S. Duterte, Thomas Charnock, Mrs. C. E. Harding, James W. Brown, Charles W. Brister, 'Military Instruction' (James J. Spelman, South Street), Avery College, and the out-of-town cards (Globe Hotel New York, Washington Hotel Georgetown, Winston & Thomas Baltimore, Dr. J. W. Creek Baltimore, Jane Jobs's boarding at Fairhaven N.J.). The Spelman card and the Fairhaven card are not on the brief's list of captured ads; they were not entered here because their text could not be read cleanly on this film."
+  "All four issues: repeats seen and not re-entered include T. J. Bowers coal (634 Lombard), Georgina Gleaves trimmings (633 Pine), Mrs. Maria Highgates shrouding, Mrs. S. Shorter Hawkins, Olive Branch, Mrs. M. Bennett, Bustill wig makers, Lebanon Cemetery notice, N. L. Durham, the Mary Still agency notice signed Elisha Weaver, Book Depository, Wm. H. Longfellow, Jane Johnson and Ann Wear, Mrs. H. S. Duterte, Thomas Charnock, Mrs. C. E. Harding, James W. Brown, Charles W. Brister, 'Military Instruction' (James J. Spelman, South Street), Avery College, and the out-of-town cards (Globe Hotel New York, Washington Hotel Georgetown, Winston & Thomas Baltimore, Dr. J. W. Creek Baltimore, Jane Jobs's boarding at Fairhaven N.J.). The Fairhaven card (Miss Jane Jobs, near Sandy Hook Bay) is out of town and stays a note; the Spelman card was entered on the second pass.",
+  "SECOND PASS (2026-11-14), coverage. Read from image crops, every column top to bottom: Apr 29 p1 (frame 17) cols 1-7; Apr 29 p4 (frame 20) cols 1-7; May 6 p1 (frame 21) cols 1-7; May 6 true p4 (frame 23) cols 1-7; May 6 true p3 (frame 24) cols 3-7 in full; May 20 p1 (frame 26) cols 1-7; May 20 p4 (frame 29) cols 1-7; May 27 p1 (frame 30) cols 1-7; May 27 p4 (frame 33) cols 1-7; and the advertising columns 5-7 of page 3 in every issue. Most columns were read at about 1/7 width by 1/3 or 1/4 height; some whole-page-width passes were at lower magnification (enough to read headings and body text, not small type).",
+  "SECOND PASS, what could not be read: the lowest quarter of May 27 p1 (all seven columns: ends of 'To young men', 'Our Future', 'A Spring Day up the James', the 54th Mass. letter, the serial, 'Reconstruction' and the start of 'From Boston') and the lowest fifth of May 27 p4 cols 1-4 are out of focus on the film; the lowest part of May 20 p1 cols 4 and 6 (end of the Portsmouth letter, serial) and May 20 p4 cols 1-2 feet are also blurred. Headings there were read; body text only in part. None of these is a notice column.",
+  "SECOND PASS, result of the search. No account of Lincoln's funeral in Philadelphia (April 22-24) appears on pages 1 or 4 of any of the four issues, nor on Apr 29 pages 2 and 3 (read by column in the first pass and re-checked against the OCR for the editorial columns): the Apr 29 Lincoln matter is poetry (p1), the Frankford memorial meeting and Camp William Penn services (p2), and out-of-town resolutions from Washington and Bridgeport (p3). The only funeral-procession report is from Chicago (May 20 p1, signed Ruth): the colored citizens there turned out and were cheered, John Jones went with the remains to Springfield. The New York exclusion from the procession is noted editorially May 6 p2. The Philadelphia account was most likely in the Apr 22 issue (Reader A) or the missing May 13 number.",
+  "SECOND PASS: no street car item, no Equal Rights League meeting or notice (other than the Proceedings for sale, May 20 p3, and the League of the first district in the Frankford procession, Apr 29 p2), and no society meeting notice was found on any page 4 or at the foot of any page 3 in these four issues. Page 4 in each issue is poetry, family and children's reading, science and household items, then standing advertisements; the standing society notices of earlier years (Daughters of Cornish, Woodlin, Nazrey) do not appear.",
+  "SECOND PASS, page 1 contents confirmed out of scope: Apr 29 (27th U.S.C.T. at Faison's Station N.C.; Louisiana; Indiana; 'The Times'; Ohio Conference; Beaufort S.C.; serial; 'How will the Negro vote'); May 6 (National Ode; J. C. Gibbs from Wilmington, entered; James Lynch on the word African; army correspondence; 'Death of the President'; serial); May 20 (Xenia: flag raising and the burning of Wilberforce; sermon of Rev. Mr. Kendrick; Chicago; Portsmouth Va.; Easton Md.; serial; 35th U.S.C.T. at Mount Pleasant S.C.; 3d U.S.C.T. at Jacksonville); May 27 (hymns; 'To young men'; 'Our Future' by E. J. A.; 'A Spring Day up the James'; 54th Mass.; serial; 'Reconstruction'; 'From Boston').",
+  "SECOND PASS, ads. Newly entered: James J. Spelman's Military Instruction card (South Street), W. R. DeCordover's Periodical Depot (419 South Seventh), James C. Clark M.D., Eclectic (618 Pine) and the Intelligence Office at 1113 Pine. The last three are not known to be Black-owned and are typed as notices; 1113 Pine was John Oliver's intelligence office in 1864, now under a woman's name. Out of town, left as notes: Globe Hotel (William P. Powell, 2 Dover Street, New York); Madame Tilmon's employment agency (New York); Freedmen's Employment Bureau (Brooklyn); Dandrige Kelly's restaurant and Dr. J. W. Creek (Baltimore); Winston & Thomas (New Orleans); Washington Hotel (William Taylor, Georgetown D.C.); Miss Jane Jobs, boarding at Fairhaven, New Jersey (near Sandy Hook Bay).",
+  "Owner's rulings applied: 'R. H. Gleaves' of the 633 Pine private boarding card = Richard H. Gleaves (read again at high magnification: R. H. GLEAVES, Proprietor; now linked). 'Thos. J. Bowers' / 'T. J. Bowers', coal, 634 Lombard = Thomas J. Bowers the singer, brother of Henrietta Duterte (repeat ad, not re-entered)."
  ],
  "flags": [
   "CR_1865-04-29 p3 Literary Association notice: secretary read as 'Rev. H. W. Winder' but the print is faint (could be another initial or surname); 'basement of Bethel Church' also faint. Not linked.",
@@ -1335,7 +1398,6 @@
   "CR_1865-05-06 p1 Gibbs letter: dateline day reads 'April 15' (OCR '16'); not certain.",
   "CR_1865-05-06 p2 Conferences: day of the New York and New England Conferences in June not confirmed on the crop (OCR is garbled).",
   "CR_1865-05-06 p3 Teagle concert: 'A. S. Purnell' middle initial could be S or B; 'Madam Brown' and 'W. F. Sturgis, New York' kept in text only.",
-  "CR_1865-05-06 p3 Private Boarding card: proprietor reads 'R. H. Gleaves' (first initial R or B); 633 Pine Street is also Georgina Gleaves's store. The card is dated April 22, so Reader A may have it from that issue. Not linked.",
   "CR_1865-05-06 p3 Rebecca O'Donnell card: the Lombard Street number reads 913 but the first digit is blurred (could be 613 or 813); '740 South Sixth St.' is clear.",
   "CR_1865-05-20 p3 Married: groom 'Wilkerson Boardley' (small capitals blurred), bride 'Miss Mary W. ...' surname illegible, 'York county' uncertain; second couple 'Jas. Butter' and 'Violena C. Hutchinson' of Frankford uncertain in spelling. None linked. 'Rev. Mr. Allen' text only.",
   "CR_1865-05-20 p3 Dumas Dramatic Association: the deceased president reads 'Junius H. Purnell'; the given name is blurred (Junius or Justus). Not linked. The three officers are clear.",
@@ -1345,6 +1407,8 @@
   "CR_1865-05-27 p2 appointments: Downingtown circuit 'E. Laws', the initial could be E or K; Woodbury circuit 'Richard Barney', surname blurred (OCR 'Harvey'). Neither is linked.",
   "CR_1865-05-27 p2: 'Friend Hood' (speaker, May 22) uncertain; Missionary Society cash receipts '$36' and total '$940.97' (first digit could be 4 or 9) uncertain; Bethel Sabbath school contribution '$50' uncertain.",
   "CR_1865-05-27 p3 Died: place of Anna M. Till's death reads 'Glen R..., Penna.' and is not legible.",
-  "CR_1865-05-06 / 05-20 / 05-27 O'Donnell boarding-house card: May 6 prints 'Mrs. Rebecca O'Donnell, formerly of No. 740 South Sixth St.'; the May 20 and May 27 impressions print 'Mrs. H. T. O'Donnell, formerly of No. 740 South St.' The card was reset between the two; which form is right is not known. Entered under the May 6 form, with the Lombard Street number (913) uncertain in its first digit."
+  "CR_1865-05-06 / 05-20 / 05-27 O'Donnell boarding-house card: May 6 prints 'Mrs. Rebecca O'Donnell, formerly of No. 740 South Sixth St.'; the May 20 and May 27 impressions print 'Mrs. H. T. O'Donnell, formerly of No. 740 South St.' The card was reset between the two; which form is right is not known. Entered under the May 6 form, with the Lombard Street number (913) uncertain in its first digit.",
+  "CR_1865-05-06 p4 Spelman card: the South Street number reads 1021 but the third digit is blurred in every impression (1021 or 1031). The name James J. Spelman is read on three impressions.",
+  "CR_1865-05-06 p4 Intelligence Office card: the proprietor's name reads 'Mrs. M. C. Gibbons' in the clearest impression but the type is very small and blurred; not linked. 'No. 1113 Pine Street' is legible."
  ]
 }

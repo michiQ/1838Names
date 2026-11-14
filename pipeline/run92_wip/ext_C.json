@@ -147,8 +147,13 @@
    "headline": "Sermon by Bishop Campbell. 'The War and Its Issues'",
    "author": "",
    "type": "report",
-   "summary": "Report of a lecture by Bishop Campbell on the war and its issues at the Powell street African M. E. church (San Francisco), reprinted from a California paper; it runs over to page 3, where the Bishop speaks of colored people being allowed to ride in the street cars.",
-   "people": []
+   "summary": "Report of a lecture by Bishop Campbell on the war and its issues at the Powell street African M. E. church (San Francisco), reprinted from a California paper; it runs over to page 3. There the Bishop says colored people are now allowed to testify in the courts and, in Washington and Alexandria, to ride in the street cars; he believed they had been allowed that privilege here (San Francisco) by Judge Pratt's decision.",
+   "people": [
+    [
+     "J. P. Campbell",
+     "lecturer (Bishop; printed 'Bishop Campbell')"
+    ]
+   ]
   },
   {
    "issue": "CR_1865-06-03",
@@ -174,8 +179,13 @@
    "headline": "Notice. First class accommodations for boarders and lodgers",
    "author": "",
    "type": "advertisement",
-   "summary": "First class accommodations for boarders and lodgers, by Mrs. Mary Strodes [VERIFY], 1122 Lombard St., Philadelphia. May 20, 3t.",
-   "people": []
+   "summary": "First class accommodations for boarders and lodgers, by Mrs. Mary Stroder, 1132 Lombard St., Philadelphia. May 20, 3t.",
+   "people": [
+    [
+     "Mary Stroder",
+     "boarding-house keeper, 1132 Lombard St. (Mrs.)"
+    ]
+   ]
   },
   {
    "issue": "CR_1865-06-03",
@@ -579,6 +589,29 @@
    ]
   },
   {
+   "issue": "CR_1865-06-10",
+   "page": 3,
+   "headline": "Our National Fast",
+   "author": "",
+   "type": "article",
+   "summary": "Never in the history of Philadelphia, has there been such a general or appropriate observance of a national fast day, as was noticed yesterday throughout our city. Business was entirely suspended. There was preaching in all the churches in the morning, and the invitation of the Committee of the Lincoln Monument Fund, asking that a collection be taken in the several churches, was read.",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-06-10",
+   "page": 3,
+   "headline": "Greytown, Central America",
+   "author": "",
+   "type": "article",
+   "summary": "Some twelve years since, a colored preacher of Philadelphia, felt moved to go to Greytown and preach the gospel to the people. He left all, and procured a lease of a lot, erected a church building and a dwelling, and has since been the recognized pastor of the people composing the Protestant congregation. His name is Benjamin Smith. After a few years residence in Greytown, he went to Canada and procured orders, under the authority of the Canadian Conference.",
+   "people": [
+    [
+     "Benjamin Smith",
+     "colored preacher of Philadelphia; pastor at Greytown, Central America"
+    ]
+   ]
+  },
+  {
    "issue": "CR_1865-06-17",
    "page": 1,
    "headline": "Meeting of the South Carolina Conference",
@@ -667,6 +700,15 @@
      "deceased; Co. I, 25th U. S. C. T.; resident of Philadelphia"
     ]
    ]
+  },
+  {
+   "issue": "CR_1865-06-17",
+   "page": 3,
+   "headline": "Gov. Curtin to the People of Pennsylvania",
+   "author": "",
+   "type": "notice",
+   "summary": "Executive Chamber, Harrisburg, June 10, 1865. To the People of Pennsylvania: The bloody struggle of four years is ended. The survivors are now returning to us; I recommend that in every part of the State, on the approaching anniversary of Independence, special observances be had of welcome to our returned defenders. Signed Andrew G. Curtin, Governor of Pennsylvania. (General; no colored regiment is named.)",
+   "people": []
   },
   {
    "issue": "CR_1865-06-24",
@@ -964,6 +1006,19 @@
     [
      "Stephen Smith",
      "treasurer (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "name": "Bishop Campbell on the street cars (lecture 'The War and Its Issues', San Francisco)",
+   "location": "Powell street African M. E. church, San Francisco",
+   "description": "In his lecture at the Powell street African M. E. church, San Francisco, reprinted June 3, 1865, Bishop Campbell counted among the gains of the war that colored people were now allowed to testify in the courts and, in Washington and Alexandria, to ride in the street cars. He believed they had been allowed that privilege in San Francisco by Judge Pratt's decision. He told how he got on a car in Washington before colored people had been allowed by law to ride in the cars of that city, and heard the conductor and driver say that if the bill then in Congress ever passed there would be a rebellion in Washington: 'A rebellion to be inaugurated by drivers and conductors of street cars! The law passed, but who ever heard of the threatened rebellion?' He had travelled from Washington to Baltimore and from Baltimore to Philadelphia without a pass. No Philadelphia car item appears in this issue; this is the only street car passage in the four June issues.",
+   "attendees": [
+    [
+     "J. P. Campbell",
+     "lecturer (Bishop; printed 'Bishop Campbell')"
     ]
    ]
   },
@@ -1272,23 +1327,29 @@
   "June 3 repeats, not re-entered: Olive Branch (814 Lombard), Mrs. M. Bennett, Miss Mary Still agent notice, Bustill wig makers (403 South Sixth), Lebanon Cemetery notice (J. C. White, J. Asher), N. L. Durham, T. J. Bowers coal (631/634 Lombard), Mrs. Maria Highgates (1026 Barley), Longfellow, Jane Johnson and Ann Wear, Duterte, Charnock, Mrs. C. E. Harding (713 Lombard), James W. Brown, Charles W. Brister, Book Depository, Avery College. White-run ads (Hopkins hoop skirts, John H. Stokes, Henderson's Capitol Clothing House, Costar, Perry & Co., Jones, Reimer, Matlack, Rodgers, railroad) skipped.",
   "June 3 page 4, columns 1 to 4 (poetry, family and children's reading) were checked from the OCR headings only, not read from crops.",
   "The Recorder's 'Rev. Stephen Smith, Treasurer' of the Lincoln monument is the Philadelphia lumber merchant and minister.",
+  "SECOND PASS, June 3: page 1 (all 7 columns) and page 4 (all 7 columns) read from 400 dpi crops, page 3 columns 1 to 3 read in full. Page 4 columns 1 to 4 hold poetry, 'Hens and Chickens', family and children's reading and a sketch; nothing in scope. The South Carolina Conference ordination and appointment lists were tried at 600 dpi: the station names can be read (Savannah city Station, Charleston city Station, Raleigh, Hilton Head, Beaufort, Edisto) but the preachers' names cannot. The boarding-house notice is settled from the clear May 27 printing (page 3, column 4) and the editor's May 20 puff: Mrs. Mary Stroder, 1132 Lombard St.",
+  "Owner's rulings applied: 'R. H. Gleaves' of 633 Pine Street = Richard H. Gleaves (linked as printed); T. J. Bowers, coal, 634 Lombard = Thomas J. Bowers the singer, brother of Henrietta Duterte (repeat ad, not re-entered).",
   "June 10 (Vol. V, No. 23). Page 1: poetry; army correspondence by Chaplain Turner; Louisville, South Carolina and Charleston correspondence; a chaplain's letter; the serial 'The Curse of Caste'. Only the Letter from Darby falls within the Philadelphia rule. Page 1 is very faint on the film.",
   "June 10 page 2 also has: 'The Right of Franchise' (editorial), the New School General Assembly, the Christian Commission, a letter on Manchester, England, letters from Beaufort, Wilmington N.C. and from Brother Spriggs, 'Ill treatment of colored people in Charleston' (out of town). Not entered. The two Information Wanted notices repeat from June 3.",
   "June 10 page 3: the obituary is of Father Adams of Vicksburg, Miss., by H. R. Revels (out of town). No marriages or deaths of Philadelphians were found in this issue. The ads on pages 3 and 4 repeat those of June 3 (Foster, O'Donnell, Lyons, Gleaves, Hawkins, DeCordover, Clark, Spelman and the standing ads); not re-entered.",
   "The Equal Rights League secretary's address, 717 Lombard St., is the building of the Continental Restaurant and the Philadelphia Institute (see the Brister ad). James W. Brown the steam dyer advertises No. 1002 Shippen St.; the lodge notice gives Mrs. James W. Brown's number as 1008 (faint).",
+  "SECOND PASS, June 10: page 1 and page 4 (all 7 columns each) read from 400 dpi crops; page 3 columns 1 to 3 read in full. Page 1 holds no Philadelphia item besides the Letter from Darby. Page 4 columns 1 to 4: poetry, 'Conversation for the Little Folks', 'Matters and Things in Olympus' (a satire); columns 5 to 7 repeat the June 3 advertisements with no new card or society notice. Added from page 3: 'Our National Fast' and the Greytown item.",
   "June 17 (No. 24): only pages 3 and 4 survive on the film. Page 3, column 1 opens with the end of a letter on the franchise signed Benj'n M. Bond of a Massachusetts regiment (out of town); the Equal Rights Convention minutes notice (Jacob C. White, Jr., 717 Lombard St.) and both Information Wanted notices repeat from June 3 and 10. Other marriages printed are of Baltimore, Washington and Trenton couples (text of the paper only, not entered). Columns 2 and 3 are reprinted miscellany.",
   "June 17 ads on pages 3 and 4 repeat the June 3 set (the Cape Island house is now spelled 'Banneker House'); not re-entered. Page 4 columns 1 to 4 are family reading (checked by OCR headings only).",
   "The marriage by Rev. Theo. Doughty Miller is by the pastor of a Philadelphia Baptist church; identification not made here.",
+  "SECOND PASS, June 17: page 4 (all 7 columns) and page 3 columns 2 and 3 read from 400 dpi crops. Page 4 columns 1 to 4: poetry ('Coming'), 'Summerings', 'Woman's True Beauty', 'Our Dogs', 'Rearing Children'; columns 5 to 7 repeat the standing ads (Bowers, Gleaves, Globe Hotel, Madame Tilmon's agency in New York, Matlack, Brooklyn bureau, the Book Depository catalogue, Mrs. M. C. Gibbons' Intelligence Office at 1113 Pine, Longfellow, Johnson and Wear, Duterte, Charnock, Harding, Avery College, James W. Brown, Brister, Spelman, Rodgers). No new card or society notice. The 'Intelligence Office' heading of the Gibbons ad is clear on this printing.",
   "June 24 (No. 25). Page 1: poem by Rev. G. L. Mineley; an appeal of the Society of Inquiry of Missions of Wilberforce University; 'Letter from the Mountain City'; 'Our Church in Kentucky'; the serial 'The Curse of Caste' by Mrs. Julia C. Collins; a Tribune item on the Freedman's Savings Bank at Richmond; reprints on the churches and the colored race and General Butler on negro suffrage. Nothing within the Philadelphia rule was found on page 1; it was checked by OCR keyword search and sample crops, not read in full from crops.",
   "June 24 page 2: the editor's account of the New England and New York Conferences, 'Education for the Freedmen', 'Universal Suffrage', army correspondence by a chaplain and a Wilberforce student's address were skimmed, not entered. Page 3: the Hannah Cole (New Bedford) and the two earlier Information Wanted notices, the Equal Rights minutes notice and the Conference minutes notice (price 15 cents, clear here) repeat. The married notice (Lafayette, Ind.) and the Brum obituary (Washington) are out of town. Page 4 and the page 3 ads repeat the June 3 set; not re-entered.",
   "Obituary of John Veazey is signed Margaret Williams, No. 1115 Pine street, Philadelphia (author field). The signer of the Good Samaritans notice prints as 'William A. K. Smith' but in the roster as 'William A. R. Smith'.",
   "'Brother Stephen Smith, R. W. G. Treasurer' of the Good Samaritans is recorded as printed; no identification with Rev. Stephen Smith is made here. 'Sister Maria L. Highgates' is probably Mrs. Maria Highgates of 1026 Barley street (shrouding ad); 'Sister Martha C. Gibbons' matches 'Mrs. M. C. Gibbons' of the 1113 Pine Street employment agency; Henry M. and Ann M. Cropper are the Olive Branch boarding-house family; Richard H. Gleaves is 'R. H. Gleaves' of 633 Pine Street.",
-  "The June 24 printing confirms the reading 'Asberry or Rousbey Henry' (Rev. Thomas W. Henry's son) in the Information Wanted notice first seen June 3."
+  "The June 24 printing confirms the reading 'Asberry or Rousbey Henry' (Rev. Thomas W. Henry's son) in the Information Wanted notice first seen June 3.",
+  "SECOND PASS, June 24: page 1 and page 4 (all 7 columns each) viewed from 400 dpi crops reduced to montages (headings and most body text legible; a few faint passages in page 4 columns 1, 4 and 5 were not legible). Page 1: masthead, three poems, the Wilberforce missions appeal (T. H. Jackson, B. F. Lee, J. Shorter), letters from Frederick City (E. W. Hammond), Morrow, Ohio, Lexington and Danville, Ky., the serial, the Richmond savings bank item, 'The American Churches and the Colored Race' (quotes the Universe, the Irish Catholic paper of Philadelphia, against negro suffrage), General Butler on negro suffrage, a Canada letter on black refugees. No Philadelphia names. Page 4: poetry, 'The Fish I Didn't Catch', 'Making Fun of People', 'The Great Sanitary Fair at Olympus' (satire), 'The Oak', 'Gift Swindling', and the repeat ads. Nothing added.",
+  "Rechecks at 600 dpi: the Good Samaritans secretary is printed 'William A. R. Smith' in the roster (page 2) and 'William A. K. Smith' in the attestation (page 3); both readings are certain, so the inconsistency is the paper's. Mrs. O'Donnell's card reads 'No. 913 Lombard Street' on the June 17 and June 24 printings.",
+  "NOT FOUND after the second pass (pages read: June 3 pp. 1-4, June 10 pp. 1-4, June 17 pp. 3-4, June 24 pp. 1-4; page 2 of June 3, 10 and 24 was read by headings plus crops of the local columns, not every column in full): no Philadelphia street car item, no Institute for Colored Youth examination or commencement, no Equal Rights League meeting (only the notice of minutes for sale), no report of a returning colored regiment or of Camp William Penn beyond the Trippe letter (24th U.S.C.T.), and no Annual Conference appointments."
  ],
  "flags": [
   "CR_1865-06-03 p2 'A Tardy Jury': the cross street at Washington Avenue (read 15th) is faint; the uninjured man 'Thos. ...' could not be read and is left out. Rhodes and Thompson are confirmed by the death notice on page 3.",
   "CR_1865-06-03 p3 Trippe letter: 'Sergeant Stephen F. R. Burdy' and 'William H. Rox' are my best readings of soldiers' names; not linked.",
-  "CR_1865-06-03 p3 Notice: boarding-house keeper read as 'Mrs. Mary Strodes', 1122 Lombard St.; surname and number uncertain; not linked.",
   "CR_1865-06-03 p4 Help Wanted: the first letter of 'Mrs. M. C. Gibbons' is worn in every printing of the ad; the reading rests on 'Sister Martha C. Gibbons' in the Good Samaritans roster of June 24. Linked on that basis; the owner may wish to check.",
   "CR_1865-06-10 p1 Letter from Darby: every personal name (Georgianna Thompson, E. Y. Dingle, Isaac Carr, Samuel Thompson, George Sanford, signature E. Y. T.) is a best reading from very faint print, rechecked at 600 dpi without gain; none linked.",
   "CR_1865-06-10 p2 A Pleasant Surprise: donors 'Diana Bristo', 'Rachel Cassidy' and 'Charlotte Bostic' uncertain and not linked; the value of the cane ($57) is uncertain. Common-name donors (Mary Brown, W. Thompson, J. Thompson, S. Evans) are left in the text only.",
@@ -1297,7 +1358,7 @@
   "CR_1865-06-10 p2 quarterly meeting notices: 'J. P. Jay' (Attleborough), 'A. Till' (Snow Hill) and 'G. E. Boyer' (South Camden) are uncertain readings; not linked.",
   "CR_1865-06-10 p2 Unity Lodge notice: Mrs. James W. Brown's Shippen street number read as 1008, uncertain (her husband's ad gives 1002).",
   "CR_1865-06-10 p3 Unity Lodge ad: 'James McC. Crummill', 'Charles F. Jones' and 'Charles B. Colly' are uncertain in spelling or initials at 600 dpi; not linked. David B. Bowser is clear.",
-  "CR_1865-06-03 to 06-24 p3 O'Donnell card: the new Lombard Street number reads 913 on three printings but the last digit is never sharp; her former address reads 'No. 740 South St.' on the clear June 24 printing.",
+  "CR_1865-06-03 to 06-24 p3 O'Donnell card: the new Lombard Street number reads 913 on the June 3, 17 and 24 printings (600 dpi); the last digit is soft on all of them, so the [VERIFY] is kept in the text; her former address reads 'No. 740 South St.' on the clear June 24 printing.",
   "CR_1865-06-17 p3 Married: bride 'Fanny Robinson' (surname faint), and the Bristol marriage (day read as 15th; 'Samuel W. Stockton'; 'Martha Lena Conn') are uncertain at 600 dpi; those persons are not linked.",
   "CR_1865-06-17 p3 notices: the pastor of Zion Mission Church reads 'H. J. Rhodes'; first initial not certain; not linked.",
   "CR_1865-06-24 p2/p3 Good Samaritans roster: secretary printed 'William A. R. Smith' in the list and 'William A. K. Smith' in the attestation (the paper's own inconsistency), not linked; 'Elisha Hevelo' and 'Saml. Bevons' uncertain at 600 dpi, not linked; 'Thomas Jones' left unlinked as too common; Jonathan Davis's house number on South Eleventh street reads 733 or 783.",

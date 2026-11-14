@@ -1119,6 +1119,30 @@
     0.818
    ],
    "check": "Shrouding and Laying Out of the Dead. Mrs. Highgates ... No. 1026 Barley street"
+  },
+  {
+   "issue": "CR_1865-04-22",
+   "page": 3,
+   "headline": "Coal! Coal!! T. J. Bowers, Coal and Kindling Wood Depot, No. 634 Lombard Street",
+   "box": [
+    0.57,
+    0.38,
+    0.705,
+    0.433
+   ],
+   "check": "COAL! COAL!! ... T. J. BOWERS, Coal and Kindling Wood Depot, No 634 Lombard Street, April 15 (placed 2026-11-14)"
+  },
+  {
+   "issue": "CR_1865-04-22",
+   "page": 3,
+   "headline": "Private Boarding at 633 Pine Street, Philadelphia (R. H. Gleaves, Proprietor)",
+   "box": [
+    0.57,
+    0.434,
+    0.705,
+    0.497
+   ],
+   "check": "Private Boarding at 633 Pine Street ... R. H. GLEAVES, Proprietor, April 22 (placed 2026-11-14)"
   }
  ]
 }

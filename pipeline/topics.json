@@ -188,6 +188,10 @@
     {
      "issue": "CR_1865-02-25",
      "headline": "Negro Suffrage: 'A Reply' by 'Another American' (reprinted from the Evening Bulletin)"
+    },
+    {
+     "issue": "CR_1865-04-22",
+     "headline": "Our Domestic Correspondence (Amityville, N. Y.: speech demanding equal access to the street cars)"
     }
    ],
    "events": [
@@ -270,6 +274,10 @@
     {
      "issue": "CR_1865-03-25",
      "name": "Two Black soldiers forced off a streetcar platform; a Black man beaten for carrying a 'Greeley is coming' placard"
+    },
+    {
+     "issue": "CR_1865-06-03",
+     "name": "Bishop Campbell on the street cars (lecture 'The War and Its Issues', San Francisco)"
     }
    ]
   },
@@ -314,6 +322,18 @@
     {
      "issue": "CR_1864-09-10",
      "headline": "Notice: Camden, East Camden and Kaighnsville A.M.E. Sabbath Schools to Diamond Cottage"
+    },
+    {
+     "issue": "CR_1865-04-22",
+     "headline": "The Procession of Friday Last"
+    },
+    {
+     "issue": "CR_1865-04-22",
+     "headline": "Presentation of Colors to the 24th Regt. U. S. C. T."
+    },
+    {
+     "issue": "CR_1865-04-29",
+     "headline": "Meeting in Frankford"
     }
    ],
    "events": [
@@ -380,6 +400,14 @@
     {
      "issue": "PP_004",
      "name": "Fifteenth Amendment celebration parade and jubilee"
+    },
+    {
+     "issue": "CR_1865-04-22",
+     "name": "Procession of the colored people of Philadelphia and presentation of colors to the 24th U. S. C. T. at the State House"
+    },
+    {
+     "issue": "CR_1865-04-29",
+     "name": "Frankford -- memorial meeting for President Lincoln at the A. M. E. church"
     }
    ]
   }

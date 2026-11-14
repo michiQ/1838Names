@@ -612,6 +612,15 @@
   },
   {
    "issue": "CR_1865-04-22",
+   "page": 1,
+   "headline": "Our Domestic Correspondence (Amityville, N. Y.: speech demanding equal access to the street cars)",
+   "author": "",
+   "type": "letter",
+   "summary": "Amityville, N. Y., April 15, 1865. Mr. Editor: On the 14th of last month the colored folks of our town held a general mass meeting. We expected several distinguished speakers, including Rev. R. H. Cain, of Brooklyn. The speaker reported said: 'we do demand of the American government civil, religious and political equality, that we may enter the street cars of our most populous cities, without being invited to the front of the car to take a seat at the feet of the driver.' (Out of town; no Philadelphia persons. Parts of the letter and its signature are illegible.)",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-04-22",
    "page": 2,
    "headline": "Our National Sacrifice",
    "author": "",
@@ -625,13 +634,8 @@
    "headline": "The Procession of Friday Last",
    "author": "",
    "type": "report",
-   "summary": "On last Friday the colored people of Philadelphia celebrated the capture of Richmond and the other recent victories of the Union army, by a grand parade. The procession passed through most of the principal streets, and when it reached the State House, a flag was presented to the 24th U. S. C. T. The presentation speech was made by Mr. O. V. Catto. The Delmonico Assembly, No. 1, formed one of the leading features of the parade. (Faint impression; this reading is partly reconstructed and the marshals' names cannot be read.) [VERIFY]",
-   "people": [
-    [
-     "O. V. Catto",
-     "made the presentation speech (Mr.)"
-    ]
-   ]
+   "summary": "On last Friday the colored people of Phila[delphia] ... (the rest of the opening sentence is illegible on the film; the words 'capture' and 'Union army' can be made out). Second paragraph: 'The Delmonico Assembly, No. 1, formed one of the leading features of the parade ...' (rest illegible). Third paragraph: 'The whole was under the direction of Mr. J. F. G[illegible], Sr., assisted by a large number of deputy marshals, among whom were Serg. Maj. [illegible] of the [illegible] U. S. C. T. and Mr. W. E. [illegible]'. The remainder of the item is illegible on the film.",
+   "people": []
   },
   {
    "issue": "CR_1865-04-22",
@@ -678,8 +682,8 @@
      "president of the meeting (printed Mr. J. C. White, Jr.)"
     ],
     [
-     "Jos. La Combe",
-     "vice president"
+     "Joseph LeCount",
+     "vice president (printed Jos. Le Count; owner's reading)"
     ],
     [
      "Jos. C. Bustill",
@@ -690,12 +694,20 @@
      "vice president"
     ],
     [
+     "Clayton Miller",
+     "vice president"
+    ],
+    [
      "Chas. Simpson",
      "vice president"
     ],
     [
      "W. H. Minton",
      "secretary"
+    ],
+    [
+     "Henry Highland Garnet",
+     "offered prayer (printed Rev. H. H. Garnet, of Washington)"
     ],
     [
      "O. V. Catto",
@@ -986,15 +998,15 @@
    "name": "Grand parade of the colored people of Philadelphia for the capture of Richmond; presentation of colors to the 24th U. S. C. T.",
    "date": "1865-04-14",
    "location": "In front of the State House (Independence Hall), Philadelphia",
-   "description": "On Friday, April 14 ('at the very moment when the gallant Anderson is raising the Stars and Stripes over Fort Sumter'), the colored people of Philadelphia celebrated the capture of Richmond and the other Union victories with a grand parade through the principal streets; the Delmonico Assembly, No. 1, was a leading feature. The whole was under the direction of a chief marshal with a large number of deputy marshals (names too faint to read; the chief appears as 'Mr. J. F. G..., Sr.' and one deputy as a Sergeant-Major of a U. S. C. T. regiment). At noon the 24th United States Colored Troops, Lieutenant Colonel Trippe commanding, followed by various civic organizations, were drawn up before the State House. A meeting was organized with Mr. J. C. White, Jr., as President; Messrs. Jos. La Combe, Jos. C. Bustill, Richard Gleaves, Clayton Miller [VERIFY] and Chas. Simpson as Vice Presidents; and W. H. Minton, Secretary. After prayer by Rev. H. H. Garnet, of Washington, the President introduced Mr. O. V. Catto, who presented a regimental flag 'gotten up under the auspices of the Banneker Institute by contributions from the public'. Catto paid tribute to the two hundred thousand black soldiers and argued that in the plan of reconstruction the votes of the blacks could not be dispensed with. The Lieutenant Colonel accepted the flag (the close of the report is illegible). The regiment then returned to Camp Wm. Penn with the flag, 'the gift of our colored citizens'.",
+   "description": "Friday, April 14, 1865. Two items report the day. (1) 'The Procession of Friday Last' is almost wholly illegible on the film: what can be read is that the colored people of Philadelphia paraded on 'last Friday', that the Delmonico Assembly, No. 1, formed one of the leading features of the parade, and that the whole was under the direction of 'Mr. J. F. G..., Sr.' (surname illegible) assisted by a large number of deputy marshals, among them a Sergeant-Major of a U. S. C. T. regiment and a 'Mr. W. E. ...' (names illegible). (2) 'Presentation of Colors to the 24th Regt. U. S. C. T.' is legible in its first half and is the source of everything that follows. At noon the 24th United States Colored Troops, Lieutenant Colonel Trippe commanding, followed by various civic organizations, were drawn up before the State House. A meeting was organized with Mr. J. C. White, Jr., as President; Messrs. Jos. Le Count, Jos. C. Bustill, Richard Gleaves, Clayton Miller and Chas. Simpson as Vice Presidents; and W. H. Minton, Secretary. After prayer by Rev. H. H. Garnet, of Washington, the President introduced Mr. O. V. Catto, who presented a regimental flag 'gotten up under the auspices of the Banneker Institute by contributions from the public'. The President's introduction places the meeting 'at the very moment when the gallant Anderson is raising the Stars and Stripes over Fort Sumter'. The paper gives only 'a few of the points' of Catto's speech; the legible part speaks of the plan of reconstruction and of the votes of the blacks. From that point to the foot of the column the report is illegible on the film (the reply for the regiment and the close cannot be read). The shorter item says, as far as it can be read, that the regiment then left for Camp Wm. Penn with the flag.",
    "attendees": [
     [
      "Jacob C. White Jr.",
      "president of the meeting (printed J. C. White, Jr.)"
     ],
     [
-     "Jos. La Combe",
-     "vice president"
+     "Joseph LeCount",
+     "vice president (printed Jos. Le Count; owner's reading)"
     ],
     [
      "Jos. C. Bustill",
@@ -1005,12 +1017,20 @@
      "vice president"
     ],
     [
+     "Clayton Miller",
+     "vice president"
+    ],
+    [
      "Chas. Simpson",
      "vice president"
     ],
     [
      "W. H. Minton",
      "secretary"
+    ],
+    [
+     "Henry Highland Garnet",
+     "offered prayer (printed Rev. H. H. Garnet, of Washington)"
     ],
     [
      "O. V. Catto",
@@ -1055,24 +1075,27 @@
   }
  ],
  "notes": [
-  "CR_1865-04-01: page 1 has no Philadelphia matter (Latin hymns; H. M. Turner's Wilmington, N. C. letter on Chaplain Hunter and Rev. Hood; T. Strother from Louisville; Wm. P. Allen's 'Negro Suffrage' speech, St. Louis; a Havre de Grace letter; N. B. Sterrett, 39th U.S.C.T.; Frederick, Md.; 'The Curse of Caste' ch. VI by Mrs. Julia C. Collins; Albany, N. Y.). Page 1 was triaged from the OCR and headings, not read crop by crop.",
+  "CR_1865-04-01: page 1 has no Philadelphia matter (Latin hymns; H. M. Turner's Wilmington, N. C. letter on Chaplain Hunter and Rev. Hood; T. Strother from Louisville; Wm. P. Allen's 'Negro Suffrage' speech, St. Louis; a Havre de Grace letter; N. B. Sterrett, 39th U.S.C.T.; Frederick, Md.; 'The Curse of Caste' ch. VI by Mrs. Julia C. Collins; Albany, N. Y.). (Read in full from crops in the second pass.)",
   "CR_1865-04-01 p2: Weaver's 'Editorial Correspondence' (a trip to Brooklyn, Bridge street A. M. E. Church), 'Church and State', an item signed Stanford on the denominational title, and soldiers' letters (28th U.S.C.T., 29th Conn., New Albany, Kinderhook) were not entered (out of scope). A donation list from Natchez (Rev. N. Fitzhugh) for sending the Recorder to the 6th Mississippi and 58th U.S.C.T. is text only.",
   "CR_1865-04-01 p3-4 standing ads that only repeat, not re-entered: Mrs. Highgates (1026 Barley), Mrs. S. Shorter Hawkins (615 Lombard), Olive Branch (814 Lombard), Mrs. M. Bennett, Miss Mary Still agent certificate, Bustill wig makers (403 S. Sixth), Decordover (419 S. Seventh), James C. Clark M.D. (618 Pine), Lebanon Cemetery notice, N. L. Durham, Thos. J. Bowers coal, Georgina Gleaves (633 Pine), Mrs. M. C. Gibbons' agency (1112 Pine), Book Depository, Wm. H. Longfellow (1126 Rodman), Jane Johnson and Ann Wear (618 S. Eighth), Duterte, Charnock, Harding, James W. Brown, Brister, Spelman. Out of town: Miss Jane Jobs's boarding house, Fairhaven, N. J.; Washington Hotel (William Taylor), Georgetown, D. C.",
   "CR_1865-04-01 p3: 'S. Smith' on the Parent Missionary Society board for the Philadelphia Conference is recorded as printed (probably Rev. Stephen Smith). The Ladies' Union Association's Zoar church member is printed 'Miss Mary Burton'.",
-  "CR_1865-04-08: page 1 has no Philadelphia matter (poem; a letter from Beaufort, S. C.; 'What Shall We Do to Be Respected'; a Wilmington, N. C. meeting; Rev. G. E. Boyer on keeping the word African in the Discipline; 'The Curse of Caste' ch. VII; 'Our Colored Population'; Bethel Church, Baltimore; letters from L. W. Moore and Geo. A. Rue; 'Funeral Expenses' on livery-stable charges, no persons named). Page 1 and page 4 were triaged from the OCR headings and spot crops, not read crop by crop.",
+  "CR_1865-04-08: page 1 has no Philadelphia matter (poem; a letter from Beaufort, S. C.; 'What Shall We Do to Be Respected'; a Wilmington, N. C. meeting; Rev. G. E. Boyer on keeping the word African in the Discipline; 'The Curse of Caste' ch. VII; 'Our Colored Population'; Bethel Church, Baltimore; letters from L. W. Moore and Geo. A. Rue; 'Funeral Expenses' on livery-stable charges, no persons named). (Pages 1 and 4 read in full from crops in the second pass.)",
   "CR_1865-04-08 p2: the Camp William Penn letter signed 'A. H.' praises Col. Wagner, Adjutant Mulliken, Surgeon Styer, Dr. Beal and a Mrs. Mears (white officers and a neighbor; text only). 'Another Pioneer Gone' is a Cincinnati obituary (Mrs. Brown, Allen Chapel), out of scope. Deaths printed are of Pittsburg, Ithaca and Washington. The Parent Missionary Society call and the West Philadelphia Circuit notice repeat from April 1.",
   "CR_1865-04-08 p3-4: standing ads repeat from April 1 (see that note); none re-entered. 'An Invention' (R. L. Wolcott, Chatham Square, N. Y.) is an out-of-town ad.",
   "CR_1865-04-08 p2: 'Rev. Stanford' and 'Rev. Elder Moore' in the John Wesley notice are bare surnames, not linked (probably A. L. Stanford and William Moore).",
   "CR_1865-04-15: page 3 of this issue is a very faint, smeared exposure on the film; only the darker patches can be read, even at 600 dpi. The Brooklyn correspondence, 'Caution and Counsel to Young...', a Boston 'Dedication' letter, an obituary at the foot of column 3 (wholly illegible), part of the Married column and the small ads were not readable. The next issue was checked for reprints.",
-  "CR_1865-04-15 p1: H. M. Turner's army correspondence and the New England corresponding editor's letter (Wm. W. Grimes, New Haven: Sabbath School Union, a city Equal Rights' League) are out of scope. Page 1 columns 5-7 ('The Curse of Caste' ch. VIII, a devotional essay) were triaged from the OCR. Harriet Tubman is left unlinked as a non-Philadelphian; 'Professors Burris and Turner' are bare surnames (Burris is probably A. Burris, the teacher of vocal music).",
+  "CR_1865-04-15 p1: H. M. Turner's army correspondence and the New England corresponding editor's letter (Wm. W. Grimes, New Haven: Sabbath School Union, a city Equal Rights' League) are out of scope. Page 1 columns 5-7 hold 'The Curse of Caste' ch. VIII and a devotional essay (read from crops in the second pass). Harriet Tubman is left unlinked as a non-Philadelphian; 'Professors Burris and Turner' are bare surnames (Burris is probably A. Burris, the teacher of vocal music).",
   "CR_1865-04-15 p2: Weaver's 'Editorial Correspondence' continues his Southern trip (Savannah, Hilton Head, with Bishop Wayman and Rev. J. Lynch); the Acknowledgments are Savannah subscribers; letters from Wilmington, N. C. ('Arnold'), the 54th Mass. and Boston, Allegheny City: all text only. John H. Smith, the reader at Sansom Street Hall, is not linked (very common name; nothing printed about who he is).",
   "CR_1865-04-15 p3: 'Rev. Josiah Eddy' is the Rev. Joshua P. B. Eddy by the owner's ruling. The Globe Hotel (William P. Powell, No. 2 Dover Street, New York) is a new out-of-town ad, with an editorial puff on page 2. A 'Help Wanted' agency ad gives No. 70 East Thirteenth Street (New York). Standing ads on pages 3-4 repeat.",
   "CR_1865-04-15 p3: Wm. Nesbit's place line is not legible (he was of Altoona, Pa.; not read from the image).",
+  "SECOND PASS (2026-11-14): pages 1 and 4 of all four issues were rendered at 400 dpi and read from image crops, all 7 columns, five slices per column. Result: no Philadelphia item had been missed on any page 1 or page 4. Page 4 of every issue holds only poetry, family reading, miscellany and the standing ads; no small society notice or new card is printed there in these four issues. The feet of page 3 were rechecked in each issue: no further society notices, marriages or deaths.",
+  "SECOND PASS, street cars: no Philadelphia street car item (ejection, meeting, petition, company vote, editorial) appears in April 1, 8, 15 or 22 on the legible parts of pages 1-4. The only street car reference is in a speech at Amityville, N. Y. (April 22, page 1, column 5), entered as an article for the topic. Equal Rights League matter in these issues: the National League's 'Appeal' and Wm. Nesbit's query on the Harrisburg minutes (April 15 p3), a New Haven city League (April 15 p1, out of town) and 'Commerce and the E. R. Leagues' (April 22 p1, signed from Reading, Pa.; signature illegible). No notice of a Philadelphia auxiliary League meeting was found.",
+  "SECOND PASS, columns that cannot be read on the film: April 15 page 4, columns 1 to 4 (poetry and 'Ice in the Blood', only headings and scattered lines legible) and parts of columns 5-6; April 15 page 3, most of columns 1-5; April 22 page 1, the lower third of columns 1-3 and 5 and the foot of column 7; April 22 page 2, column 3 top (the Procession item) and lower half; April 22 page 3, patches of columns 1-3. The legible headings in these areas show no Philadelphia item, but the unreadable text itself could not be checked. Rechecks at 600 dpi did not recover the two unreadable marriages or the League office number (April 15 p3) or the Good Samaritans fair details (April 22 p3).",
   "CR_1865-04-22 (mourning issue, heavy black column rules): large parts of pages 1, 2 and 3 are a faint, smeared exposure and cannot be read even at 600 dpi. This issue went to press before the Philadelphia funeral (April 22-24): it carries NO report of Philadelphia meetings, church resolutions or funeral arrangements apart from the Ladies' Union Association card. It has the editorial 'Our National Sacrifice', an unsigned poem dated Philadelphia, April 15, and telegraphic news (the search for the murderer, Johnson's oath, the funeral ceremonies in Washington). Look for the Philadelphia funeral in the April 29 issue.",
-  "CR_1865-04-22 p2: the April 14 parade and flag presentation at the State House is the main Philadelphia item; the 'Procession of Friday Last' paragraph is barely legible, so the chief marshal and deputy marshals are not entered. 'Mr. J. C. White, Jr.' is Jacob C. White Jr.; 'Jos. C. Bustill' is Joseph Cassey Bustill. Rev. H. H. Garnet 'of Washington' is text only.",
+  "CR_1865-04-22 p2: the April 14 parade and flag presentation at the State House is the main Philadelphia item; the 'Procession of Friday Last' paragraph is barely legible, so the chief marshal and deputy marshals are not entered. 'Mr. J. C. White, Jr.' is Jacob C. White Jr.; 'Jos. C. Bustill' is Joseph Cassey Bustill. Rev. H. H. Garnet 'of Washington' is linked as Henry Highland Garnet at the owner's direction. T. J. Bowers (coal, 634 Lombard) is Thomas J. Bowers the singer, brother of Henrietta Duterte (owner's identification); recorded as printed.",
   "CR_1865-04-22: Garland H. White's 'Letter from Richmond' (chaplain, 28th U. S. C. T.; he finds his mother in Richmond) is entered as an article without linked people (not a Philadelphian). Also not entered: 'Commerce and the E. R. Leagues' (page 1, a letter to the National and State Equal Rights Leagues, signature illegible, from Reading, Pa. as far as it can be read), letters from Kansas, Cairo, Williamsport Circuit, Cleveland, California (T. M. D. Ward), Dublin, Indiana, Calvin Fairbank's letter, the Weaver editorial correspondence from Mitchellville, S. C., 'The Curse of Caste', Wm. G. Trevan's query on the Indiana Conference.",
   "CR_1865-04-22 p3: 633 Pine Street is Georgina Gleaves's store; the new 'Private Boarding' ad there is by a male proprietor printed 'R. M. Gleaves' (possibly the Richard Gleaves of the flag meeting; not identified). The shirt-making apprentice notice gives the same address. Elizabeth James's notice names 'Bishop Waters, of the A. M. E. Church', Rev. L. Lee and Rev. D. Thomas (bare or out-of-scope names, text only). Globe Hotel, J. H. Smith's reading, the Syracuse minutes and the standing ads repeat. Thos. J. Bowers's old coal yard ad still runs on page 4; the new 'Coal! Coal!!' ad is entered once.",
-  "Method, all four issues: pages 2 and 3 were read from image crops item by item. Pages 1 and 4 were first triaged from the OCR column by column and then every Philadelphia or in-scope item was read on a crop; the out-of-scope columns of pages 1 and 4 (poetry, serial fiction, letters from the South and West, selections, repeated ads) were NOT read crop by crop. Page 4 of each issue carries only the standing ads already in the database."
+  "Method, all four issues: first pass read pages 2 and 3 from image crops item by item and triaged pages 1 and 4 from the OCR; the second pass (see the SECOND PASS notes) read pages 1 and 4 in full from crops."
  ],
  "flags": [
   "CR_1865-04-01 p3 Married: bride's surname in the New Haven marriage of Samuel Johnson, both of Philadelphia, reads 'Kavous' or 'Ravens' (faint even at 600 dpi); not linked.",
@@ -1082,8 +1105,8 @@
   "CR_1865-04-15 p3 Married: 'Horsham' (printed apparently 'Hersham'), Montgomery Co.; two further marriage notices (one by Rev. W. W. H. Winder, groom of Greenwich, N. J.; one 'at the residence of the bride's mother') could not be read.",
   "CR_1865-04-15 p1 Camp Wm. Penn: chaplain's name read 'Henry Anstice'; white officer, text only.",
   "CR_1865-04-15 p3 An Appeal: the street number of the National Equal Rights League office on South 7th Street is illegible.",
-  "CR_1865-04-22 p2 Procession of Friday Last: faint; the chief marshal ('Mr. J. F. G..., Sr.') and the deputy marshals (a Sergeant-Major of a U. S. C. T. regiment, and 'Mr. W. E. ...') cannot be read; the summary is a partial reconstruction.",
-  "CR_1865-04-22 p2 Presentation of Colors: vice president 'Clayton Miller' is a faint reading (OCR gives 'Sieber'); not linked. 'Jos. La Combe', 'Chas. Simpson' and 'W. H. Minton' were read at 600 dpi and are linked, but the line is faint. The commanding officer reads 'Trippe'. The name of the officer who accepted the flag and the end of the report are illegible.",
+  "CR_1865-04-22 p2 Procession of Friday Last: rechecked at 600 dpi in narrow slices (second pass). Still illegible: the chief marshal ('Mr. J. F. G..., Sr.') and the deputy marshals (a Sergeant-Major of a U. S. C. T. regiment, and 'Mr. W. E. ...'). The article summary now gives only the legible words; O. V. Catto is no longer linked on this item (his name there is not readable; he is linked on the Presentation of Colors item).",
+  "CR_1865-04-22 p2 Presentation of Colors: the roster follows the owner's own reading of the film (2026-11-14): Joseph LeCount (printed Jos. Le Count; I had read 'La Combe'), Jos. C. Bustill, Richard Gleaves, Clayton Miller, Chas. Simpson, W. H. Minton, with Henry Highland Garnet offering prayer. The commanding officer reads 'Trippe'. The second half of the report (the reply for the regiment and the close) is illegible on the film.",
   "CR_1865-04-22 p3 Ladies' Union Association committee: third name reads 'Mary A. Brown' (faint), fourth name illegible (begins 'M'); neither linked.",
   "CR_1865-04-22 p3 Good Samaritans fair notice: lodge number, hall and the May date illegible.",
   "CR_1865-04-22 p3 Private Boarding, 633 Pine: proprietor's initials read 'R. M.' Gleaves, the middle initial uncertain (M or H); not linked.",

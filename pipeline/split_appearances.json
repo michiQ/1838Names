@@ -1,732 +1,911 @@
 {
-  "_doc": "Move specific appearances off a shared same-name record onto their own person, BEFORE apply_merges. Run by split_appearances.py right after split_swilliams. Each rule: from (canonical_name + source), the appearances whose context starts with context_prefix, and the new person's canonical_name. 'renames' fix a record's display name by id; 'move_refs' move Winch reference notes (matched by note prefix) from one record to another.",
-  "rules": [
-    {
-      "from_name": "John Allen",
-      "from_source": "newspaper",
-      "context_prefix": "Reform lectures of John Allen in Pittsburgh",
-      "new_name": "John Allen (Massachusetts reform lecturer)",
-      "note": "North Star, Feb. 18, 1848: a Massachusetts land reformer lecturing in Pittsburgh. Not the John Allen who was secretary of the 1827 Protecting Society; split off 2026-11-01 so that record could merge into Winch's Allen, John (Michiko's ruling)."
-    },
-    {
-      "from_name": "White, Joseph",
-      "from_source": "census",
-      "context_prefix": "Institute for Colored Youth -- Association of Alumni",
-      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
-      "to_name": "White, Joseph",
-      "to_source": "coppin"
-    },
-    {
-      "from_name": "White, Joseph",
-      "from_source": "census",
-      "context_prefix": "Notice: Association of Alumni of the Institute for Colored Youth",
-      "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
-      "to_name": "White, Joseph",
-      "to_source": "coppin"
-    },
-    {
-      "from_name": "Gibbs, Jonathan C.",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_186%",
-      "to_name": "Gibbs, Rev. Jonathan C.",
-      "to_source": "winch",
-      "note": "Winch 'Gibbs, Jonathan C.' is the FATHER (Methodist minister, d. April 1831). Every 1860s Christian Recorder item (ICY and Banneker lectures, SCSA civil-rights committee, 1861 marriages) is the SON, Rev. Jonathan C. Gibbs (b. 1821; Winch 'Gibbs, Rev. Jonathan C.', PA Equal Rights League 1865). Caught in Run #77, 2026-11-01.",
-      "from_id": 1135
-    },
-    {
-      "from_name": "THOMPSON, JOSEPH",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1861-10%",
-      "new_name": "Joseph Thompson (Evesham, N.J.)",
-      "note": "Correspondent from Evesham, N.J. (Burlington Circuit Sabbath School celebration, CR Oct. 1861); not the Philadelphia census Joseph Thompson. Run #77.",
-      "new_source": "newspaper"
-    },
-    {
-      "from_name": "Smith, James W",
-      "from_source": "census",
-      "context_prefix": "Letter from Brother Smith",
-      "new_name": "James W. Smith (correspondent, 1861)",
-      "note": "Signer of 'Letter from Brother Smith' (CR Dec. 21, 1861), place not stated; not linked to the census James W. Smith. Run #77.",
-      "new_source": "newspaper"
-    },
-    {
-      "from_name": "Jonathan C. Gibbs",
-      "from_source": "newspaper",
-      "context_prefix": "",
-      "issue_like": "CR_186%",
-      "to_id": 1136,
-      "note": "1860s Christian Recorder items printed 'Jonathan C. Gibbs' are the son, Rev. Jonathan C. Gibbs (Winch id 1136, stable). Needed once the father's record became 'Gibbs, Jonathan C. Sr.' (2026-11-01)."
-    },
-    {
-      "from_name": "Moore, Wm.",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1862%",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "Rev. William Moore (A.M.E., Trenton; Book Concern president 1862) is not the 1820 city-directory Wm. Moore. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "Still, Wm. sawyer",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1862%",
-      "to_id": 2497,
-      "note": "Wm. Still, corresponding secretary of the Social, Civil and Statistical Association (1862), is William Still (Winch), not the 1820 directory sawyer. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "DAVIS, HENRY",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862%",
-      "to_name": "H. Davis",
-      "to_source": "newspaper",
-      "note": "Rev. Henry Davis of Union A.M.E. Church: a common name, not tied to the census householder. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "EMMONS, DANIEL",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862%",
-      "new_name": "Daniel Emmons (Bristol, Bucks County)",
-      "new_source": "newspaper",
-      "note": "Witness in a Bucks County certificate (Bristol); out of town, not the census householder. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "Frisby, James",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862%",
-      "new_name": "James Frisby (Burlington)",
-      "new_source": "newspaper",
-      "note": "Preached Mrs. Schureman's funeral at Burlington, N.J.; out of town, not the census householder (as in Run #78). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "Samuel Johnson",
-      "from_source": "newspaper",
-      "context_prefix": "Bucks County",
-      "issue_like": "CR_1862%",
-      "new_name": "Samuel Johnson (Bristol, Bucks County)",
-      "new_source": "newspaper",
-      "note": "The husband named in a Bucks County certificate; a common name, kept apart from the other Samuel Johnson. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "Roberson, Richard",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862%",
-      "to_name": "ROBINSON, RICHARD",
-      "to_source": "census",
-      "note": "Rev. Richard Roberson of Frankford = Rev. Richard Robinson (Michiko's ruling; record ROBINSON, RICHARD). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
-    },
-    {
-      "from_name": "Williams, Catharine",
-      "from_source": "census",
-      "context_prefix": "Cayenne pepper outrage at Bethel",
-      "new_name": "Catharine Williams (died at Bethel Church, 1825)",
-      "new_source": "newspaper",
-      "note": "Killed in the crush at Bethel Church, Nov. 20, 1825 (U.S. Gazette, Nov. 22, 1825); cannot be the census householder of the same name. Clippings run, 2026-11-02."
-    },
-    {
-      "from_id": 498,
-      "from_name": "Butler, Thomas Jr.",
-      "from_source": "winch",
-      "context_prefix": "ctators* gallery, to prevent them",
-      "issue_like": "PF_1838-01-25",
-      "to_id": 178,
-      "note": "Jan 1838 Musical Fund Hall gallery ejection (Pa. Freeman, Jan 25, 1838) is the father, not the son. Michiko 2026-11-02."
-    },
-    {
-      "from_name": "Moore, William",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1862-08-02",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "Rev. William Moore, pastor of Mount Zion A.M.E. Church, Trenton (Grand Harvest Home notice) is the newspaper W. Moore of Run #79, not tied to the Winch AME cleric of the 1830s-40s on a common name. Run #81 link review, 2026-11-03 (CR 1862 Q3)."
-    },
-    {
-      "from_name": "Irvin, John",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1862-11-29",
-      "new_name": "John Irvin",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): an 1862 contraband-fund donor is not tied to the 1820 directory John Irvin on name alone."
-    },
-    {
-      "from_name": "Campbell, Mary",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862-10-04",
-      "new_name": "Mrs. Mary Campbell (Bethel contraband committee, 1862)",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Mrs. Mary Campbell, secretary of the Bethel contraband committee (wife of Rev. J. P. Campbell, who came to Bethel in 1862), is not tied to a census Mary Campbell on a common name."
-    },
-    {
-      "from_name": "DAVIS, SARAH",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862-10-25",
-      "new_name": "Sarah Davis (Union A.M.E. freedmen's committee, 1862)",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a common name; the 1862 committee member of 538 Vincent St. is kept apart from the census Sarah Davis."
-    },
-    {
-      "from_name": "Young, Edward",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1862-10-25",
-      "new_name": "Edward Young (Union A.M.E. freedmen's meeting, 1862)",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a common name; the 1862 meeting secretary is kept apart from the census Edward Young."
-    },
-    {
-      "from_name": "Miller, Mrs.",
-      "from_source": "dissertation",
-      "context_prefix": "",
-      "issue_like": "CR_1862-12-27",
-      "new_name": "Mrs. Miller (St. Thomas' Sinking Fund fair, 1862)",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a bare 'Mrs. Miller' cannot be tied to the dissertation record."
-    },
-    {
-      "from_name": "Miller, Edward",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1862-11-08",
-      "new_name": "Edward Miller (Snow Hill, N.J.)",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a local preacher at Snow Hill, N.J., not Winch's Philadelphia Edward Miller (paper-maker, 1838)."
-    },
-    {
-      "from_name": "Taylor, Robert",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1862-10-18",
-      "new_name": "Robert Taylor (Burlington, N.J.)",
-      "new_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a Burlington, N.J. committee member, not Winch's Philadelphia Robert Taylor."
-    },
-    {
-      "from_name": "Moore, William",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1862-11-15",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
-    },
-    {
-      "from_name": "Moore, William",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1862-11-22",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
-    },
-    {
-      "from_name": "Moore, William",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1862-11-29",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
-    },
-    {
-      "from_name": "Roberson, Richard",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "to_name": "ROBINSON, RICHARD",
-      "to_source": "census",
-      "note": "Rev. Richard Roberson = Rev. Richard Robinson (Michiko's ruling; the Feb 21 issue itself says Robinson is the proper spelling). Run #83 link review, 2026-11-09 (CR 1863 Q1)."
-    },
-    {
-      "from_name": "Moore, William",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "Rev. William Moore of Trenton (Book Concern committee; Recorder agent) is the newspaper W. Moore, as in Runs #79-82. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
-    },
-    {
-      "from_name": "Moore, Wm.",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "to_name": "W. Moore",
-      "to_source": "newspaper",
-      "note": "As in Run #79: Rev. William Moore of Trenton is not the 1820 city-directory Wm. Moore. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
-    },
-    {
-      "from_name": "Edwin Johnson",
-      "from_source": "newspaper",
-      "context_prefix": "Public meeting at Bethel",
-      "issue_like": "CR_1863-03-21",
-      "new_name": "Edwin Johnson (volunteer, 1863)",
-      "new_source": "newspaper",
-      "note": "One of five men who gave their names for the Massachusetts colored regiment at Bethel, Mar 18, 1863; a common name, kept apart from the earlier Edwin Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
-    },
-    {
-      "from_name": "Henry Johnson",
-      "from_source": "newspaper",
-      "context_prefix": "Public meeting at Bethel",
-      "issue_like": "CR_1863-03-21",
-      "new_name": "Henry Johnson (volunteer, 1863)",
-      "new_source": "newspaper",
-      "note": "One of five volunteers for the Massachusetts colored regiment at Bethel, Mar 18, 1863; not the 1828 Troy, N.Y. Henry Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
-    },
-    {
-      "from_name": "Campbell, Mary",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863-07-18",
-      "to_name": "Mrs. Mary Campbell (Bethel contraband committee, 1862)",
-      "to_source": "newspaper",
-      "note": "Mary Campbell of the Bethel Soldiers' Relief Association committee: the same Bethel women's relief work as the 1862 contraband committee secretary; not tied to a census Mary Campbell on a common name. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
-    },
-    {
-      "from_name": "Edward Johnson",
-      "from_source": "newspaper",
-      "context_prefix": "",
-      "issue_like": "CR_1863-09-12",
-      "new_name": "Edward Johnson (Love and Charity district deputy, 1863)",
-      "new_source": "newspaper",
-      "note": "District deputy of the Grand Tabernacle (Brothers and Sisters of Love and Charity), elected at West Chester; a common name, kept apart. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
-    },
-    {
-      "from_name": "Johnson, Jacob",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1863-09-12",
-      "new_name": "Jacob Johnson (Love and Charity, 1863)",
-      "new_source": "newspaper",
-      "note": "Outer Sentinel of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to Winch's Jacob Johnson. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
-    },
-    {
-      "from_name": "Brooks, Henry",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863-09-12",
-      "new_name": "Henry Brooks (Love and Charity district deputy, 1863)",
-      "new_source": "newspaper",
-      "note": "District deputy of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to a census Henry Brooks. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
-    },
-    {
-      "from_name": "Still, Wm. sawyer",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "to_id": 2497,
-      "note": "Wm. Still of the stove store (107 N. Fifth) and the Dec. 1863 passenger-car letter is William Still (Winch), not the 1820 directory sawyer. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Mrs. Hawkins",
-      "from_source": "newspaper",
-      "context_prefix": "",
-      "issue_like": "CR_1863-10-03",
-      "to_id": 2401,
-      "note": "Mrs. Hawkins of the Lombard St. dry-goods store is Sarah S. Shorter Hawkins (Michiko's ruling, Run #82). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Cooper, Anna Julia",
-      "from_source": "dissertation",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "new_name": "Anna Cooper (Love and Charity, 1863)",
-      "new_source": "newspaper",
-      "note": "Sister Anna Cooper of the Grand Tabernacle's book committee, Dec. 1863; not the educator Anna Julia Cooper (born 1858). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Young, Sarah",
-      "from_source": "dissertation",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "new_name": "Sarah Young (Love and Charity, 1863)",
-      "new_source": "newspaper",
-      "note": "Sister Sarah Young, grand worthy Vice of the Grand Tabernacle, Dec. 1863; not tied to the 1876 boarding-house keeper on a common name. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "ARMSTRONG, WILLIAM",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863%",
-      "new_name": "Dr. William Armstrong (physician, 1863)",
-      "new_source": "newspaper",
-      "note": "Dr. Wm. Armstrong, physician, 240 North Ninth St. (ads from Oct. 1863); not tied to a census William Armstrong on the name alone. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Turner, Edward",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863-11-14",
-      "new_name": "Edward Turner (Love and Charity, New Jersey, 1863)",
-      "new_source": "newspaper",
-      "note": "G. W. Chaplain of the New Jersey Grand Tabernacle formed at Camden, Oct. 28, 1863; not a Philadelphia census Edward Turner. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Brooks, Henry",
-      "from_source": "census",
-      "context_prefix": "To All Whom",
-      "issue_like": "CR_1863-1%",
-      "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
-      "to_source": "newspaper",
-      "note": "Henry Brooks of the Love and Charity Grand Tabernacle (West Chester meeting), same man as the Sept. 1863 district deputy. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Brooks, Henry",
-      "from_source": "census",
-      "context_prefix": "Grand Tabernacle",
-      "issue_like": "CR_1863-1%",
-      "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
-      "to_source": "newspaper",
-      "note": "Henry Brooks of the Love and Charity Grand Tabernacle (Oct. and Dec. 1863 sessions). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
-    },
-    {
-      "from_name": "Colley, Daniel",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1863-04-18",
-      "new_name": "Daniel Colley (Lieutenant, 1863)",
-      "new_source": "newspaper",
-      "note": "Speaker as 'Lieutenant Daniel Colley' at the West Philadelphia meeting for the 54th Massachusetts, April 1863; Winch's Daniel Colley was born in 1794, so not assumed to be the same man. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
-    },
-    {
-      "from_name": "Williams, Richard",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1863-06-%",
-      "new_name": "Richard Williams (Israel Church, 1863)",
-      "new_source": "newspaper",
-      "note": "President of the incorporation of the F. C. M. P. Israel Church, 1863; Winch's Richard Williams was a member of St. Thomas's in 1794. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
-    },
-    {
-      "from_name": "Gibson, Hannah",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1863-06-%",
-      "new_name": "Hannah Gibson (Methodist Protestant, 1863)",
-      "new_source": "newspaper",
-      "note": "Thanked by the Methodist Protestant conference, 1863; Winch's Hannah Gibson is of the Benevolent Daughters of St. Thomas, about 1825. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
-    },
-    {
-      "from_name": "Armstrong, E.",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1863-05-%",
-      "new_name": "E. Armstrong (Bethel Sabbath School singer, 1863)",
-      "new_source": "newspaper",
-      "note": "Singer at the Bethel Sabbath School concert, May 1863; not assumed to be the E. Armstrong of the 1847 Gloucester protest. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
-    },
-    {
-      "from_name": "Mitchell, Mary",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863-05-16",
-      "new_name": "Mary Mitchell (Mount Holly, N.J., 1863)",
-      "new_source": "newspaper",
-      "note": "Miss Mary Mitchell, subscriber at Mount Holly, N.J.; not a Philadelphia census Mary Mitchell. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
-    },
-    {
-      "from_name": "Miller, Eliza",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1863-06-%",
-      "new_name": "Eliza Miller (Methodist Protestant, 1863)",
-      "new_source": "newspaper",
-      "note": "Sister Eliza Miller, thanked by the Methodist Protestant conference, 1863; common name, not assumed to be the census Eliza Miller. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
-    },
-    {
-      "from_name": "Smallwood, James",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1864-05%",
-      "new_name": "James Smallwood (1864 address)",
-      "new_source": "newspaper",
-      "note": "Author of 'Progress of Liberty', an address of May 5, 1864, possibly the ICY student James L. Smallwood; not Winch's hairdresser of 1838. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Davis, Thomas",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1864-01%",
-      "new_name": "Thomas Davis (Frankford volunteer, 1864)",
-      "new_source": "newspaper",
-      "note": "Enlisted from Frankford, January 1864; not the Thomas Davis of the 1820 directory. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Spencer, John",
-      "from_source": "ugrr",
-      "context_prefix": "",
-      "issue_like": "CR_1864-03%",
-      "new_name": "John Spencer (Mount Holly, N.J., 1864)",
-      "new_source": "newspaper",
-      "note": "Recorder subscriber at Mount Holly, N.J. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Walker, William",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1864-02%",
-      "new_name": "William Walker (Frankford subscriber, 1864)",
-      "new_source": "newspaper",
-      "note": "Recorder subscriber at Frankford, 1864; not assumed to be Winch's William Walker of 1837. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Jackson, Joshua",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-01-02",
-      "new_name": "Joshua Jackson (New Jersey Grand Lodge, 1864)",
-      "new_source": "newspaper",
-      "note": "Officer of the New Jersey Grand Lodge (Burlington), 1864; not the Philadelphia census Joshua Jackson. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Harris, Elizabeth",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-04%",
-      "new_name": "Elizabeth Harris (Darby, 1864)",
-      "new_source": "newspaper",
-      "note": "Sister who held a festival at Darby for the Recorder, 1864; common name, not assumed to be the census Elizabeth Harris. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "DRAPER, JOHN",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-0%",
-      "new_name": "John Draper (basso, Burris troupe, 1864)",
-      "new_source": "newspaper",
-      "note": "Basso in A. Burris's troupe, 1864; not assumed to be the census John Draper. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Jenkins, Sarah",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-06%",
-      "new_name": "Sarah Jenkins (Good Samaritans, 1864)",
-      "new_source": "newspaper",
-      "note": "Officer of District Grand Lodge No. 2, Good Samaritans and Daughters of Samaria, 1864; common name. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "CARPENTER, WILLIAM",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-01%",
-      "new_name": "William Carpenter (Israel Church, d. 1864)",
-      "new_source": "newspaper",
-      "note": "Died January 1864 in his 59th year, member of the First Colored M. P. (Israel) Church; the paper does not make clear whether in Philadelphia or Washington. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
-    },
-    {
-      "from_name": "Allen, Sarah",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1864-09-17",
-      "new_name": "Sarah Allen (Love and Charity, 1864)",
-      "new_source": "newspaper",
-      "note": "Grand Assistant Scribe of the Independent Grand Tabernacles of Love and Charity, 1864; not Richard Allen's widow Sarah Allen (Winch). Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Armstrong, Elizabeth",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1864-12-31",
-      "new_name": "Elizabeth Armstrong (Bethel bazaar, 1864)",
-      "new_source": "newspaper",
-      "note": "Committee of the Bethel ladies' Wilberforce Bazaar, 1864; not assumed to be the tailoress of 1838. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Jackson, S.",
-      "from_source": "winch",
-      "context_prefix": "",
-      "issue_like": "CR_1864-08-20",
-      "new_name": "S. Jackson (Delaware Conference, 1864)",
-      "new_source": "newspaper",
-      "note": "Colored M.E. preacher elected elder by the Delaware Conference, 1864; not the St. Thomas member of 1794. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Gibbs, Henry",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1864-07-09",
-      "new_name": "Henry Gibbs (Thornberry, 1864)",
-      "new_source": "newspaper",
-      "note": "Recorder subscriber at the Thornberry quarterly meeting, 1864; not the 1820 directory Henry Gibbs. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Watson, William",
-      "from_source": "1820directory",
-      "context_prefix": "",
-      "issue_like": "CR_1864-09-10",
-      "new_name": "William Watson (Frankford, 1864)",
-      "new_source": "newspaper",
-      "note": "At the Frankford meeting electing a Syracuse delegate, 1864; not the 1820 directory William Watson. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "BURTON, JOHN",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-09-10",
-      "new_name": "John Burton (14th USCT, 1864)",
-      "new_source": "newspaper",
-      "note": "Information wanted of John Burton, 14th USCT, 1864. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "DAVIS, ROBERT",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-02-18",
-      "new_name": "Robert Davis (Evesham, N.J., 1865)",
-      "new_source": "newspaper",
-      "note": "Named in the obituary of Eliza Ann Davis, Evesham, N.J. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Dennis, George",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-08-20",
-      "new_name": "George Dennis (West Chester, 1864)",
-      "new_source": "newspaper",
-      "note": "In the West Chester A.M.E. trustees' court case, 1864. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Dolphin, James",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-01-07",
-      "new_name": "James Dolphin (New Jersey Grand Lodge, 1865)",
-      "new_source": "newspaper",
-      "note": "Officer of the New Jersey Grand Lodge (Burlington), 1865. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "GREENWICH, ELIZA",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-01-07",
-      "new_name": "Eliza Greenwich (bride, 1865)",
-      "new_source": "newspaper",
-      "note": "Bride in a January 1865 marriage notice; not assumed to be the census Eliza Greenwich. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Hodges, Wilson",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-02-11",
-      "new_name": "Wilson Hodges (groom, 1865)",
-      "new_source": "newspaper",
-      "note": "Groom in a February 1865 marriage notice. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "ROBINSON, MARY ANN",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-02-25",
-      "new_name": "Mary Robinson (Colored Women's Lincoln Association, d. 1865)",
-      "new_source": "newspaper",
-      "note": "Mrs. Mary Robinson, board of directors of the Colored Women's Lincoln Association, died 1865; printed 'Mary Robinson', not assumed to be the census Mary Ann Robinson. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "THOMPSON, WM",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-02-04",
-      "new_name": "William Thompson (Union Baptist deacon, 1865)",
-      "new_source": "newspaper",
-      "note": "Ordained deacon, Union Baptist Church, 1865; common name. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "WILLIAMS, HANNAH",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-01-21",
-      "new_name": "Hannah Williams (bride, 1865)",
-      "new_source": "newspaper",
-      "note": "Bride in a January 1865 marriage notice; common name. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Williams, Caroline",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-11-26",
-      "new_name": "Caroline Williams (bride, 1864)",
-      "new_source": "newspaper",
-      "note": "Bride in a November 1864 marriage notice; common name. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "Wilson, Samuel",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1864-08-27",
-      "new_name": "Samuel Wilson (54th Mass., 1864)",
-      "new_source": "newspaper",
-      "note": "54th Massachusetts soldier from Philadelphia, a prisoner after Fort Wagner; not the census Samuel Wilson. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "FISHER, JONATHAN",
-      "from_source": "census",
-      "context_prefix": "",
-      "issue_like": "CR_1865-03-04",
-      "new_name": "Jonathan Fisher (Bethel class leader, 1865)",
-      "new_source": "newspaper",
-      "note": "Bethel class leader named in an obituary, 1865. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
-    },
-    {
-      "from_name": "William Sill",
-      "from_source": "newspaper",
-      "context_prefix": "",
-      "issue_like": "CR_1864-10-01",
-      "to_id": 2497,
-      "note": "'Mr. William Sill', post sutler at Camp William Penn (Oct 1, 1864), is William Still. Michiko 2026-11-11."
-    }
-  ],
-  "renames": [
-    {
-      "id": 659,
-      "name": "Colley, Daniel",
-      "aliases": "Colly, Daniel",
-      "note": "Winch heads this entry 'Colly or Colley, D[aniel]' (bootmaker, tanner and currier, 189 S. 6th; Vigilance Committee 1839); the import had taken a later line as his name. Michiko confirmed 2026-11-01."
-    },
-    {
-      "id": 1831,
-      "name": "Mead, Mary",
-      "life_dates": "d. 1854",
-      "note": "Carries the death date from Winch 'Meade, Mary' (d. 1854), merged into this record 2026-11-01."
-    },
-    {
-      "id": 1136,
-      "name": "Gibbs, Rev. Jonathan C.",
-      "life_dates": "1821-1874",
-      "note": "Dates from the 1838 Black Metropolis blog post 'The Gibbs Brothers Run the World' (born 1821, died 1874)."
-    },
-    {
-      "id": 1135,
-      "name": "Gibbs, Jonathan C. Sr.",
-      "aliases": "Gibbs, Jonathan C. | Jonathan Clarkson Gibbs Sr.",
-      "note": "Father, Rev. Jonathan Clarkson Gibbs Sr. (d. April 1831). 'Sr.' added 2026-11-01 (Michiko) to tell him from his son Rev. Jonathan C. Gibbs. 'Rev.' is kept out of the record name so that 1860s 'Jonathan Gibbs' items still reach the issue_like rule that moves them to the son."
-    },
-    {
-      "id": 344576,
-      "name": "Rebecca Lambsong",
-      "aliases": "Rebecca Lamsong",
-      "note": "The Pennsylvania Freeman, July 5, 1838 (Female Vigilant Association roster) prints 'Rebecca Lamsong'; kept as an alias so the printed spelling finds her (Michiko 2026-11-03)."
-    }
-  ],
-  "move_refs": [
-    {
-      "from_id": 1659,
-      "to_id": 344576,
-      "note_prefixes": [
-        "Lamsong or or Lambsong or Lamson, Mrs. Rebecca",
-        "Owns shares in Agric. and Mechanic. Assoc. (1839) Treasurer of the Female Vigilant Committee",
-        "Member of the Female Vigilant Committee."
-      ],
-      "note": "Winch filed Rebecca Lambsong's Female Vigilant notes under 'Lamar, Joseph'. Moved to her record 2026-11-01 (Michiko: keep Joseph Lamar out of the Female Vigilant Committee, but connect him to Rebecca Lambsong; see person_links.json)."
-    }
-  ]
+ "_doc": "Move specific appearances off a shared same-name record onto their own person, BEFORE apply_merges. Run by split_appearances.py right after split_swilliams. Each rule: from (canonical_name + source), the appearances whose context starts with context_prefix, and the new person's canonical_name. 'renames' fix a record's display name by id; 'move_refs' move Winch reference notes (matched by note prefix) from one record to another.",
+ "rules": [
+  {
+   "from_name": "John Allen",
+   "from_source": "newspaper",
+   "context_prefix": "Reform lectures of John Allen in Pittsburgh",
+   "new_name": "John Allen (Massachusetts reform lecturer)",
+   "note": "North Star, Feb. 18, 1848: a Massachusetts land reformer lecturing in Pittsburgh. Not the John Allen who was secretary of the 1827 Protecting Society; split off 2026-11-01 so that record could merge into Winch's Allen, John (Michiko's ruling)."
+  },
+  {
+   "from_name": "White, Joseph",
+   "from_source": "census",
+   "context_prefix": "Institute for Colored Youth -- Association of Alumni",
+   "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
+   "to_name": "White, Joseph",
+   "to_source": "coppin"
+  },
+  {
+   "from_name": "White, Joseph",
+   "from_source": "census",
+   "context_prefix": "Notice: Association of Alumni of the Institute for Colored Youth",
+   "note": "The 1861 ICY Alumni Association treasurer Joseph White is the ICY graduate (Coppin roster), not the 1838 census householder of the same name. Run #76, 2026-11-01.",
+   "to_name": "White, Joseph",
+   "to_source": "coppin"
+  },
+  {
+   "from_name": "Gibbs, Jonathan C.",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_186%",
+   "to_name": "Gibbs, Rev. Jonathan C.",
+   "to_source": "winch",
+   "note": "Winch 'Gibbs, Jonathan C.' is the FATHER (Methodist minister, d. April 1831). Every 1860s Christian Recorder item (ICY and Banneker lectures, SCSA civil-rights committee, 1861 marriages) is the SON, Rev. Jonathan C. Gibbs (b. 1821; Winch 'Gibbs, Rev. Jonathan C.', PA Equal Rights League 1865). Caught in Run #77, 2026-11-01.",
+   "from_id": 1135
+  },
+  {
+   "from_name": "THOMPSON, JOSEPH",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1861-10%",
+   "new_name": "Joseph Thompson (Evesham, N.J.)",
+   "note": "Correspondent from Evesham, N.J. (Burlington Circuit Sabbath School celebration, CR Oct. 1861); not the Philadelphia census Joseph Thompson. Run #77.",
+   "new_source": "newspaper"
+  },
+  {
+   "from_name": "Smith, James W",
+   "from_source": "census",
+   "context_prefix": "Letter from Brother Smith",
+   "new_name": "James W. Smith (correspondent, 1861)",
+   "note": "Signer of 'Letter from Brother Smith' (CR Dec. 21, 1861), place not stated; not linked to the census James W. Smith. Run #77.",
+   "new_source": "newspaper"
+  },
+  {
+   "from_name": "Jonathan C. Gibbs",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_186%",
+   "to_id": 1136,
+   "note": "1860s Christian Recorder items printed 'Jonathan C. Gibbs' are the son, Rev. Jonathan C. Gibbs (Winch id 1136, stable). Needed once the father's record became 'Gibbs, Jonathan C. Sr.' (2026-11-01)."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1862%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore (A.M.E., Trenton; Book Concern president 1862) is not the 1820 city-directory Wm. Moore. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+  },
+  {
+   "from_name": "Still, Wm. sawyer",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_186%",
+   "to_id": 2497,
+   "note": "'Wm. Still' / 'William Still' in the Christian Recorder of 1864-65 (SCSA lecture committee chairman, remitter from Camp William Penn) is William Still, not the 1820 directory sawyer 'Still, Wm.'. Found in the Run #92 link review, 2026-11-14: nine entries from Runs #90-#92 had attached to the sawyer."
+  },
+  {
+   "from_name": "DAVIS, HENRY",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862%",
+   "to_name": "H. Davis",
+   "to_source": "newspaper",
+   "note": "Rev. Henry Davis of Union A.M.E. Church: a common name, not tied to the census householder. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+  },
+  {
+   "from_name": "EMMONS, DANIEL",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862%",
+   "new_name": "Daniel Emmons (Bristol, Bucks County)",
+   "new_source": "newspaper",
+   "note": "Witness in a Bucks County certificate (Bristol); out of town, not the census householder. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+  },
+  {
+   "from_name": "Frisby, James",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862%",
+   "new_name": "James Frisby (Burlington)",
+   "new_source": "newspaper",
+   "note": "Preached Mrs. Schureman's funeral at Burlington, N.J.; out of town, not the census householder (as in Run #78). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+  },
+  {
+   "from_name": "Samuel Johnson",
+   "from_source": "newspaper",
+   "context_prefix": "Bucks County",
+   "issue_like": "CR_1862%",
+   "new_name": "Samuel Johnson (Bristol, Bucks County)",
+   "new_source": "newspaper",
+   "note": "The husband named in a Bucks County certificate; a common name, kept apart from the other Samuel Johnson. Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+  },
+  {
+   "from_name": "Roberson, Richard",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862%",
+   "to_name": "ROBINSON, RICHARD",
+   "to_source": "census",
+   "note": "Rev. Richard Roberson of Frankford = Rev. Richard Robinson (Michiko's ruling; record ROBINSON, RICHARD). Run #79 link review, 2026-11-02 (CR 1862 Q2)."
+  },
+  {
+   "from_name": "Williams, Catharine",
+   "from_source": "census",
+   "context_prefix": "Cayenne pepper outrage at Bethel",
+   "new_name": "Catharine Williams (died at Bethel Church, 1825)",
+   "new_source": "newspaper",
+   "note": "Killed in the crush at Bethel Church, Nov. 20, 1825 (U.S. Gazette, Nov. 22, 1825); cannot be the census householder of the same name. Clippings run, 2026-11-02."
+  },
+  {
+   "from_id": 498,
+   "from_name": "Butler, Thomas Jr.",
+   "from_source": "winch",
+   "context_prefix": "ctators* gallery, to prevent them",
+   "issue_like": "PF_1838-01-25",
+   "to_id": 178,
+   "note": "Jan 1838 Musical Fund Hall gallery ejection (Pa. Freeman, Jan 25, 1838) is the father, not the son. Michiko 2026-11-02."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1862-08-02",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore, pastor of Mount Zion A.M.E. Church, Trenton (Grand Harvest Home notice) is the newspaper W. Moore of Run #79, not tied to the Winch AME cleric of the 1830s-40s on a common name. Run #81 link review, 2026-11-03 (CR 1862 Q3)."
+  },
+  {
+   "from_name": "Irvin, John",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1862-11-29",
+   "new_name": "John Irvin",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): an 1862 contraband-fund donor is not tied to the 1820 directory John Irvin on name alone."
+  },
+  {
+   "from_name": "Campbell, Mary",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862-10-04",
+   "new_name": "Mrs. Mary Campbell (Bethel contraband committee, 1862)",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Mrs. Mary Campbell, secretary of the Bethel contraband committee (wife of Rev. J. P. Campbell, who came to Bethel in 1862), is not tied to a census Mary Campbell on a common name."
+  },
+  {
+   "from_name": "DAVIS, SARAH",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862-10-25",
+   "new_name": "Sarah Davis (Union A.M.E. freedmen's committee, 1862)",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a common name; the 1862 committee member of 538 Vincent St. is kept apart from the census Sarah Davis."
+  },
+  {
+   "from_name": "Young, Edward",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1862-10-25",
+   "new_name": "Edward Young (Union A.M.E. freedmen's meeting, 1862)",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a common name; the 1862 meeting secretary is kept apart from the census Edward Young."
+  },
+  {
+   "from_name": "Miller, Mrs.",
+   "from_source": "dissertation",
+   "context_prefix": "",
+   "issue_like": "CR_1862-12-27",
+   "new_name": "Mrs. Miller (St. Thomas' Sinking Fund fair, 1862)",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a bare 'Mrs. Miller' cannot be tied to the dissertation record."
+  },
+  {
+   "from_name": "Miller, Edward",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1862-11-08",
+   "new_name": "Edward Miller (Snow Hill, N.J.)",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a local preacher at Snow Hill, N.J., not Winch's Philadelphia Edward Miller (paper-maker, 1838)."
+  },
+  {
+   "from_name": "Taylor, Robert",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1862-10-18",
+   "new_name": "Robert Taylor (Burlington, N.J.)",
+   "new_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): a Burlington, N.J. committee member, not Winch's Philadelphia Robert Taylor."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1862-11-15",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1862-11-22",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1862-11-29",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #82 link review, 2026-11-09 (CR 1862 Q4): Rev. William Moore of Trenton (Book Concern executive committee; Frankford Jubilee speaker) is the newspaper W. Moore, as in Run #81."
+  },
+  {
+   "from_name": "Roberson, Richard",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863%",
+   "to_name": "ROBINSON, RICHARD",
+   "to_source": "census",
+   "note": "Rev. Richard Roberson = Rev. Richard Robinson (Michiko's ruling; the Feb 21 issue itself says Robinson is the proper spelling). Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1863%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore of Trenton (Book Concern committee; Recorder agent) is the newspaper W. Moore, as in Runs #79-82. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1863%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "As in Run #79: Rev. William Moore of Trenton is not the 1820 city-directory Wm. Moore. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+  },
+  {
+   "from_name": "Edwin Johnson",
+   "from_source": "newspaper",
+   "context_prefix": "Public meeting at Bethel",
+   "issue_like": "CR_1863-03-21",
+   "new_name": "Edwin Johnson (volunteer, 1863)",
+   "new_source": "newspaper",
+   "note": "One of five men who gave their names for the Massachusetts colored regiment at Bethel, Mar 18, 1863; a common name, kept apart from the earlier Edwin Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+  },
+  {
+   "from_name": "Henry Johnson",
+   "from_source": "newspaper",
+   "context_prefix": "Public meeting at Bethel",
+   "issue_like": "CR_1863-03-21",
+   "new_name": "Henry Johnson (volunteer, 1863)",
+   "new_source": "newspaper",
+   "note": "One of five volunteers for the Massachusetts colored regiment at Bethel, Mar 18, 1863; not the 1828 Troy, N.Y. Henry Johnson. Run #83 link review, 2026-11-09 (CR 1863 Q1)."
+  },
+  {
+   "from_name": "Campbell, Mary",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863-07-18",
+   "to_name": "Mrs. Mary Campbell (Bethel contraband committee, 1862)",
+   "to_source": "newspaper",
+   "note": "Mary Campbell of the Bethel Soldiers' Relief Association committee: the same Bethel women's relief work as the 1862 contraband committee secretary; not tied to a census Mary Campbell on a common name. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+  },
+  {
+   "from_name": "Edward Johnson",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_1863-09-12",
+   "new_name": "Edward Johnson (Love and Charity district deputy, 1863)",
+   "new_source": "newspaper",
+   "note": "District deputy of the Grand Tabernacle (Brothers and Sisters of Love and Charity), elected at West Chester; a common name, kept apart. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+  },
+  {
+   "from_name": "Johnson, Jacob",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1863-09-12",
+   "new_name": "Jacob Johnson (Love and Charity, 1863)",
+   "new_source": "newspaper",
+   "note": "Outer Sentinel of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to Winch's Jacob Johnson. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+  },
+  {
+   "from_name": "Brooks, Henry",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863-09-12",
+   "new_name": "Henry Brooks (Love and Charity district deputy, 1863)",
+   "new_source": "newspaper",
+   "note": "District deputy of the Grand Tabernacle (Love and Charity), elected at West Chester; a common name, not tied to a census Henry Brooks. Run #84 link review, 2026-11-10 (CR 1863 Q3)."
+  },
+  {
+   "from_name": "Still, Wm. sawyer",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_186%",
+   "to_id": 2497,
+   "note": "'Wm. Still' / 'William Still' in the Christian Recorder of 1864-65 (SCSA lecture committee chairman, remitter from Camp William Penn) is William Still, not the 1820 directory sawyer 'Still, Wm.'. Found in the Run #92 link review, 2026-11-14: nine entries from Runs #90-#92 had attached to the sawyer."
+  },
+  {
+   "from_name": "Mrs. Hawkins",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_1863-10-03",
+   "to_id": 2401,
+   "note": "Mrs. Hawkins of the Lombard St. dry-goods store is Sarah S. Shorter Hawkins (Michiko's ruling, Run #82). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "Cooper, Anna Julia",
+   "from_source": "dissertation",
+   "context_prefix": "",
+   "issue_like": "CR_1863%",
+   "new_name": "Anna Cooper (Love and Charity, 1863)",
+   "new_source": "newspaper",
+   "note": "Sister Anna Cooper of the Grand Tabernacle's book committee, Dec. 1863; not the educator Anna Julia Cooper (born 1858). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "Young, Sarah",
+   "from_source": "dissertation",
+   "context_prefix": "",
+   "issue_like": "CR_1863%",
+   "new_name": "Sarah Young (Love and Charity, 1863)",
+   "new_source": "newspaper",
+   "note": "Sister Sarah Young, grand worthy Vice of the Grand Tabernacle, Dec. 1863; not tied to the 1876 boarding-house keeper on a common name. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "ARMSTRONG, WILLIAM",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863%",
+   "new_name": "Dr. William Armstrong (physician, 1863)",
+   "new_source": "newspaper",
+   "note": "Dr. Wm. Armstrong, physician, 240 North Ninth St. (ads from Oct. 1863); not tied to a census William Armstrong on the name alone. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "Turner, Edward",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863-11-14",
+   "new_name": "Edward Turner (Love and Charity, New Jersey, 1863)",
+   "new_source": "newspaper",
+   "note": "G. W. Chaplain of the New Jersey Grand Tabernacle formed at Camden, Oct. 28, 1863; not a Philadelphia census Edward Turner. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "Brooks, Henry",
+   "from_source": "census",
+   "context_prefix": "To All Whom",
+   "issue_like": "CR_1863-1%",
+   "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
+   "to_source": "newspaper",
+   "note": "Henry Brooks of the Love and Charity Grand Tabernacle (West Chester meeting), same man as the Sept. 1863 district deputy. Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "Brooks, Henry",
+   "from_source": "census",
+   "context_prefix": "Grand Tabernacle",
+   "issue_like": "CR_1863-1%",
+   "to_name": "Henry Brooks (Love and Charity district deputy, 1863)",
+   "to_source": "newspaper",
+   "note": "Henry Brooks of the Love and Charity Grand Tabernacle (Oct. and Dec. 1863 sessions). Run #85 link review, 2026-11-10 (CR 1863 Q4)."
+  },
+  {
+   "from_name": "Colley, Daniel",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1863-04-18",
+   "new_name": "Daniel Colley (Lieutenant, 1863)",
+   "new_source": "newspaper",
+   "note": "Speaker as 'Lieutenant Daniel Colley' at the West Philadelphia meeting for the 54th Massachusetts, April 1863; Winch's Daniel Colley was born in 1794, so not assumed to be the same man. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+  },
+  {
+   "from_name": "Williams, Richard",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1863-06-%",
+   "new_name": "Richard Williams (Israel Church, 1863)",
+   "new_source": "newspaper",
+   "note": "President of the incorporation of the F. C. M. P. Israel Church, 1863; Winch's Richard Williams was a member of St. Thomas's in 1794. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+  },
+  {
+   "from_name": "Gibson, Hannah",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1863-06-%",
+   "new_name": "Hannah Gibson (Methodist Protestant, 1863)",
+   "new_source": "newspaper",
+   "note": "Thanked by the Methodist Protestant conference, 1863; Winch's Hannah Gibson is of the Benevolent Daughters of St. Thomas, about 1825. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+  },
+  {
+   "from_name": "Armstrong, E.",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1863-05-%",
+   "new_name": "E. Armstrong (Bethel Sabbath School singer, 1863)",
+   "new_source": "newspaper",
+   "note": "Singer at the Bethel Sabbath School concert, May 1863; not assumed to be the E. Armstrong of the 1847 Gloucester protest. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+  },
+  {
+   "from_name": "Mitchell, Mary",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863-05-16",
+   "new_name": "Mary Mitchell (Mount Holly, N.J., 1863)",
+   "new_source": "newspaper",
+   "note": "Miss Mary Mitchell, subscriber at Mount Holly, N.J.; not a Philadelphia census Mary Mitchell. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+  },
+  {
+   "from_name": "Miller, Eliza",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1863-06-%",
+   "new_name": "Eliza Miller (Methodist Protestant, 1863)",
+   "new_source": "newspaper",
+   "note": "Sister Eliza Miller, thanked by the Methodist Protestant conference, 1863; common name, not assumed to be the census Eliza Miller. Run #86 link review, 2026-11-10 (CR 1863 Q2)."
+  },
+  {
+   "from_name": "Smallwood, James",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1864-05%",
+   "new_name": "James Smallwood (1864 address)",
+   "new_source": "newspaper",
+   "note": "Author of 'Progress of Liberty', an address of May 5, 1864, possibly the ICY student James L. Smallwood; not Winch's hairdresser of 1838. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Davis, Thomas",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1864-01%",
+   "new_name": "Thomas Davis (Frankford volunteer, 1864)",
+   "new_source": "newspaper",
+   "note": "Enlisted from Frankford, January 1864; not the Thomas Davis of the 1820 directory. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Spencer, John",
+   "from_source": "ugrr",
+   "context_prefix": "",
+   "issue_like": "CR_1864-03%",
+   "new_name": "John Spencer (Mount Holly, N.J., 1864)",
+   "new_source": "newspaper",
+   "note": "Recorder subscriber at Mount Holly, N.J. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Walker, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1864-02%",
+   "new_name": "William Walker (Frankford subscriber, 1864)",
+   "new_source": "newspaper",
+   "note": "Recorder subscriber at Frankford, 1864; not assumed to be Winch's William Walker of 1837. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Jackson, Joshua",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-01-02",
+   "new_name": "Joshua Jackson (New Jersey Grand Lodge, 1864)",
+   "new_source": "newspaper",
+   "note": "Officer of the New Jersey Grand Lodge (Burlington), 1864; not the Philadelphia census Joshua Jackson. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Harris, Elizabeth",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-04%",
+   "new_name": "Elizabeth Harris (Darby, 1864)",
+   "new_source": "newspaper",
+   "note": "Sister who held a festival at Darby for the Recorder, 1864; common name, not assumed to be the census Elizabeth Harris. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "DRAPER, JOHN",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-0%",
+   "new_name": "John Draper (basso, Burris troupe, 1864)",
+   "new_source": "newspaper",
+   "note": "Basso in A. Burris's troupe, 1864; not assumed to be the census John Draper. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Jenkins, Sarah",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-06%",
+   "new_name": "Sarah Jenkins (Good Samaritans, 1864)",
+   "new_source": "newspaper",
+   "note": "Officer of District Grand Lodge No. 2, Good Samaritans and Daughters of Samaria, 1864; common name. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "CARPENTER, WILLIAM",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-01%",
+   "new_name": "William Carpenter (Israel Church, d. 1864)",
+   "new_source": "newspaper",
+   "note": "Died January 1864 in his 59th year, member of the First Colored M. P. (Israel) Church; the paper does not make clear whether in Philadelphia or Washington. Run #87-#88 link review, 2026-11-11 (CR 1864 Q1-Q2)."
+  },
+  {
+   "from_name": "Allen, Sarah",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1864-09-17",
+   "new_name": "Sarah Allen (Love and Charity, 1864)",
+   "new_source": "newspaper",
+   "note": "Grand Assistant Scribe of the Independent Grand Tabernacles of Love and Charity, 1864; not Richard Allen's widow Sarah Allen (Winch). Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Armstrong, Elizabeth",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1864-12-31",
+   "new_name": "Elizabeth Armstrong (Bethel bazaar, 1864)",
+   "new_source": "newspaper",
+   "note": "Committee of the Bethel ladies' Wilberforce Bazaar, 1864; not assumed to be the tailoress of 1838. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Jackson, S.",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1864-08-20",
+   "new_name": "S. Jackson (Delaware Conference, 1864)",
+   "new_source": "newspaper",
+   "note": "Colored M.E. preacher elected elder by the Delaware Conference, 1864; not the St. Thomas member of 1794. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Gibbs, Henry",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1864-07-09",
+   "new_name": "Henry Gibbs (Thornberry, 1864)",
+   "new_source": "newspaper",
+   "note": "Recorder subscriber at the Thornberry quarterly meeting, 1864; not the 1820 directory Henry Gibbs. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Watson, William",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1864-09-10",
+   "new_name": "William Watson (Frankford, 1864)",
+   "new_source": "newspaper",
+   "note": "At the Frankford meeting electing a Syracuse delegate, 1864; not the 1820 directory William Watson. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "BURTON, JOHN",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-09-10",
+   "new_name": "John Burton (14th USCT, 1864)",
+   "new_source": "newspaper",
+   "note": "Information wanted of John Burton, 14th USCT, 1864. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "DAVIS, ROBERT",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-02-18",
+   "new_name": "Robert Davis (Evesham, N.J., 1865)",
+   "new_source": "newspaper",
+   "note": "Named in the obituary of Eliza Ann Davis, Evesham, N.J. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Dennis, George",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-08-20",
+   "new_name": "George Dennis (West Chester, 1864)",
+   "new_source": "newspaper",
+   "note": "In the West Chester A.M.E. trustees' court case, 1864. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Dolphin, James",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-01-07",
+   "new_name": "James Dolphin (New Jersey Grand Lodge, 1865)",
+   "new_source": "newspaper",
+   "note": "Officer of the New Jersey Grand Lodge (Burlington), 1865. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "GREENWICH, ELIZA",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-01-07",
+   "new_name": "Eliza Greenwich (bride, 1865)",
+   "new_source": "newspaper",
+   "note": "Bride in a January 1865 marriage notice; not assumed to be the census Eliza Greenwich. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Hodges, Wilson",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-02-11",
+   "new_name": "Wilson Hodges (groom, 1865)",
+   "new_source": "newspaper",
+   "note": "Groom in a February 1865 marriage notice. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "ROBINSON, MARY ANN",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-02-25",
+   "new_name": "Mary Robinson (Colored Women's Lincoln Association, d. 1865)",
+   "new_source": "newspaper",
+   "note": "Mrs. Mary Robinson, board of directors of the Colored Women's Lincoln Association, died 1865; printed 'Mary Robinson', not assumed to be the census Mary Ann Robinson. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "THOMPSON, WM",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-02-04",
+   "new_name": "William Thompson (Union Baptist deacon, 1865)",
+   "new_source": "newspaper",
+   "note": "Ordained deacon, Union Baptist Church, 1865; common name. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "WILLIAMS, HANNAH",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-01-21",
+   "new_name": "Hannah Williams (bride, 1865)",
+   "new_source": "newspaper",
+   "note": "Bride in a January 1865 marriage notice; common name. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Williams, Caroline",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-11-26",
+   "new_name": "Caroline Williams (bride, 1864)",
+   "new_source": "newspaper",
+   "note": "Bride in a November 1864 marriage notice; common name. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "Wilson, Samuel",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1864-08-27",
+   "new_name": "Samuel Wilson (54th Mass., 1864)",
+   "new_source": "newspaper",
+   "note": "54th Massachusetts soldier from Philadelphia, a prisoner after Fort Wagner; not the census Samuel Wilson. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "FISHER, JONATHAN",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-03-04",
+   "new_name": "Jonathan Fisher (Bethel class leader, 1865)",
+   "new_source": "newspaper",
+   "note": "Bethel class leader named in an obituary, 1865. Runs #89-#91 link review, 2026-11-11 (CR Jul 1864 - Mar 1865)."
+  },
+  {
+   "from_name": "William Sill",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_1864-10-01",
+   "to_id": 2497,
+   "note": "'Mr. William Sill', post sutler at Camp William Penn (Oct 1, 1864), is William Still. Michiko 2026-11-11."
+  },
+  {
+   "from_name": "Evans, Elizabeth",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Mrs. E. Evans (Bethel class, 1865)",
+   "new_source": "newspaper",
+   "note": "Donor in the Bethel class presentation to Rev. J. Frisby; not the 1820 directory Elizabeth Evans. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Burton, Mary",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-04%",
+   "new_name": "Mary Burton (Ladies' Union Association, 1865)",
+   "new_source": "newspaper",
+   "note": "Miss Mary Burton of Zoar church, Ladies' Union Association hospital committee; not the census Mary Burton. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "CLARK, HENRY",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Henry Clark (Bethel class, 1865)",
+   "new_source": "newspaper",
+   "note": "Donor, Bethel class of Rev. J. Frisby. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "STOKES, WM",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Wm. Stokes (Bethel class, 1865)",
+   "new_source": "newspaper",
+   "note": "Donor, Bethel class of Rev. J. Frisby. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Stevens, Charlotte",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Charlotte Stevens (Bethel class, 1865)",
+   "new_source": "newspaper",
+   "note": "Donor, Bethel class of Rev. J. Frisby. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Green, Rachel",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Rachel Green (Bethel class, 1865)",
+   "new_source": "newspaper",
+   "note": "Donor, Bethel class of Rev. J. Frisby; not Winch's Rachel Green. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Turner, Hannah",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Hannah Turner (Bethel class, 1865)",
+   "new_source": "newspaper",
+   "note": "Donor, Bethel class of Rev. J. Frisby; not Winch's Hannah Turner. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Dolphin, James",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "James Dolphin",
+   "new_source": "newspaper",
+   "note": "Good Samaritans District Grand Lodge officer, 1865 (own record, as in Runs #89-#91). Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "GOLDSBOROUGH, JAMES",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "James Goldsborough (Good Samaritans, 1865)",
+   "new_source": "newspaper",
+   "note": "Good Samaritans District Grand Lodge officer, 1865. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "JOHNSON, RACHEL",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Rachel Johnson (Chichester, married 1865)",
+   "new_source": "newspaper",
+   "note": "Bride, of Chichester, Pa. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "WRIGHT, MARY",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Mary Wright (Germantown, married 1865)",
+   "new_source": "newspaper",
+   "note": "Bride, of Germantown. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Lewis, Harrison",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-05%",
+   "new_name": "Harrison Lewis (Philadelphia Conference, 1865)",
+   "new_source": "newspaper",
+   "note": "Appointed to Camden, Delaware, at the 1865 Conference. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "SCOTT, JACOB",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-04%",
+   "new_name": "Jacob Scott (Frankford volunteer, 1865)",
+   "new_source": "newspaper",
+   "note": "Volunteer from Frankford, 1865. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "WILLIAMS, WM",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-05%",
+   "new_name": "Wm. Williams (Conference Missionary Society, 1865)",
+   "new_source": "newspaper",
+   "note": "Executive committee, Conference Missionary Society, 1865. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Washington, Charlotte",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Charlotte Washington (1117 Rodman Street, 1865)",
+   "new_source": "newspaper",
+   "note": "Inquirer in an Information Wanted notice. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Washington, Joseph",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Joseph Washington (Union Baptist Church, 1865)",
+   "new_source": "newspaper",
+   "note": "Committee, Union Baptist Church, June 1865. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Brown, Abraham",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-04%",
+   "new_name": "Abraham Brown (John Wesley M. E. Church, 1865)",
+   "new_source": "newspaper",
+   "note": "Signer of the John Wesley M. E. quarterly meeting notice; not Winch's Abraham Brown. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Johnson, Thomas Crawford",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Thomas Johnson (25th U.S.C.T., d. 1865)",
+   "new_source": "newspaper",
+   "note": "Soldier of Co. I, 25th U.S.C.T., a Philadelphian, died 1865; not Winch's Thomas Crawford Johnson. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Williams, Margaret",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-06%",
+   "new_name": "Margaret Williams (obituary signer, 1865)",
+   "new_source": "newspaper",
+   "note": "Signer of an obituary, June 1865; not Winch's Margaret Williams. Run #92 link review, 2026-11-14 (CR Apr-Jun 1865)."
+  },
+  {
+   "from_name": "Still, Wm. sawyer",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_186%",
+   "to_id": 2497,
+   "note": "'Wm. Still' / 'William Still' in the Christian Recorder of 1864-65 (SCSA lecture committee chairman, remitter from Camp William Penn) is William Still, not the 1820 directory sawyer 'Still, Wm.'. Found in the Run #92 link review, 2026-11-14: nine entries from Runs #90-#92 had attached to the sawyer."
+  }
+ ],
+ "renames": [
+  {
+   "id": 659,
+   "name": "Colley, Daniel",
+   "aliases": "Colly, Daniel",
+   "note": "Winch heads this entry 'Colly or Colley, D[aniel]' (bootmaker, tanner and currier, 189 S. 6th; Vigilance Committee 1839); the import had taken a later line as his name. Michiko confirmed 2026-11-01."
+  },
+  {
+   "id": 1831,
+   "name": "Mead, Mary",
+   "life_dates": "d. 1854",
+   "note": "Carries the death date from Winch 'Meade, Mary' (d. 1854), merged into this record 2026-11-01."
+  },
+  {
+   "id": 1136,
+   "name": "Gibbs, Rev. Jonathan C.",
+   "life_dates": "1821-1874",
+   "note": "Dates from the 1838 Black Metropolis blog post 'The Gibbs Brothers Run the World' (born 1821, died 1874)."
+  },
+  {
+   "id": 1135,
+   "name": "Gibbs, Jonathan C. Sr.",
+   "aliases": "Gibbs, Jonathan C. | Jonathan Clarkson Gibbs Sr.",
+   "note": "Father, Rev. Jonathan Clarkson Gibbs Sr. (d. April 1831). 'Sr.' added 2026-11-01 (Michiko) to tell him from his son Rev. Jonathan C. Gibbs. 'Rev.' is kept out of the record name so that 1860s 'Jonathan Gibbs' items still reach the issue_like rule that moves them to the son."
+  },
+  {
+   "id": 344576,
+   "name": "Rebecca Lambsong",
+   "aliases": "Rebecca Lamsong",
+   "note": "The Pennsylvania Freeman, July 5, 1838 (Female Vigilant Association roster) prints 'Rebecca Lamsong'; kept as an alias so the printed spelling finds her (Michiko 2026-11-03)."
+  }
+ ],
+ "move_refs": [
+  {
+   "from_id": 1659,
+   "to_id": 344576,
+   "note_prefixes": [
+    "Lamsong or or Lambsong or Lamson, Mrs. Rebecca",
+    "Owns shares in Agric. and Mechanic. Assoc. (1839) Treasurer of the Female Vigilant Committee",
+    "Member of the Female Vigilant Committee."
+   ],
+   "note": "Winch filed Rebecca Lambsong's Female Vigilant notes under 'Lamar, Joseph'. Moved to her record 2026-11-01 (Michiko: keep Joseph Lamar out of the Female Vigilant Committee, but connect him to Rebecca Lambsong; see person_links.json)."
+  }
+ ]
 }
