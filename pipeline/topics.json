@@ -272,6 +272,116 @@
      "name": "Two Black soldiers forced off a streetcar platform; a Black man beaten for carrying a 'Greeley is coming' placard"
     }
    ]
+  },
+  {
+   "label": "Parades and processions",
+   "slug": "parades-and-processions",
+   "note": "Public parades, street processions and celebrations in which Black Philadelphians and their societies, lodges, schools and regiments marched, along with the debates over whether to march and the attacks on those who did. Entries from New York, Brooklyn, New Haven and Boston are included. Funeral processions are not listed here yet.",
+   "links": [],
+   "articles": [
+    {
+     "issue": "FJ_1827-04-27",
+     "headline": "Meeting of the People of Colour -- commemorating the abolition of domestic slavery in New York (Mutual Relief Hall, April 23, 1827)"
+    },
+    {
+     "issue": "FJ_1827-06-29",
+     "headline": "The Fourth vs. the Fifth of July -- New York's Emancipation Day procession debate, and the April 23 committee's protest"
+    },
+    {
+     "issue": "FJ_1827-07-06",
+     "headline": "New-York's Fourth of July Emancipation celebration -- Oration by Mr. Hamilton; portraits of Jay, Clarkson, Thompson; bust of Boyer"
+    },
+    {
+     "issue": "FJ_1827-07-13",
+     "headline": "New-York's Fifth of July procession -- marshal Samuel Hardenburgk; oration by John Mitchel at Zion Church"
+    },
+    {
+     "issue": "FJ_1828-09-05",
+     "headline": "Tribute of Respect: Boston's coloured inhabitants give a public dinner to Prince Abduhl Rahhaman"
+    },
+    {
+     "issue": "CR_1863-08-08",
+     "headline": "Colored Troops at Camp William Penn (parade postponed)"
+    },
+    {
+     "issue": "CR_1863-10-10",
+     "headline": "Colored Troops' Parade in Philadelphia"
+    },
+    {
+     "issue": "CR_1864-02-27",
+     "headline": "Washington's Birthday: colored troops salute the procession before the Supervisory Committee's office (editorial)"
+    },
+    {
+     "issue": "CR_1864-09-10",
+     "headline": "Notice: Camden, East Camden and Kaighnsville A.M.E. Sabbath Schools to Diamond Cottage"
+    }
+   ],
+   "events": [
+    {
+     "issue": "FJ_1827-03-30",
+     "name": "African Association for Mutual Relief -- seventeenth anniversary celebration"
+    },
+    {
+     "issue": "FJ_1827-04-27",
+     "name": "General Meeting of the People of Colour on commemorating the abolition of domestic slavery in New York"
+    },
+    {
+     "issue": "FJ_1827-06-29",
+     "name": "Meeting of the People of Colour, Mutual Relief Hall, New York"
+    },
+    {
+     "issue": "FJ_1827-07-13",
+     "name": "New-Haven emancipation celebration -- African Church, Temple Street"
+    },
+    {
+     "issue": "FJ_1828-03-21",
+     "name": "Anniversary of the Brooklyn African Woolman Benevolent Society"
+    },
+    {
+     "issue": "FJ_1828-09-05",
+     "name": "Public Dinner (Tribute of Respect) for Prince Abduhl Rahhaman (Ibrahima), Boston"
+    },
+    {
+     "issue": null,
+     "name": "The 1842 \"Lombard Street\" Mob Attack"
+    },
+    {
+     "issue": "PP_014",
+     "name": "West Indian emancipation parade and 'Bias mob' riot"
+    },
+    {
+     "issue": null,
+     "name": "Frank Johnson Guards -- parade with arms under Capt. Henry Cropper (August 16, 1859)"
+    },
+    {
+     "issue": "CR_1862-09-06",
+     "name": "Union Sons and Daughters of Hensoe [VERIFY] Society, Bensalem -- second anniversary"
+    },
+    {
+     "issue": "CR_1863-07-11",
+     "name": "Colored men's procession for H. T. Helmbold dispersed by the Mayor (Fourth of July)"
+    },
+    {
+     "issue": "CR_1863-08-08",
+     "name": "Third Regiment (colored) street parade from Camp William Penn postponed"
+    },
+    {
+     "issue": "CR_1863-10-10",
+     "name": "Parade of the 6th U.S. Colored Regiment and four companies of the 8th through Philadelphia"
+    },
+    {
+     "issue": "CR_1864-09-10",
+     "name": "Camden circuit A.M.E. Sabbath-school procession to Diamond Cottage"
+    },
+    {
+     "issue": "CR_1864-09-17",
+     "name": "Flag presentation to the 45th and 127th U.S.C.T. at Camp William Penn"
+    },
+    {
+     "issue": "PP_004",
+     "name": "Fifteenth Amendment celebration parade and jubilee"
+    }
+   ]
   }
  ]
 }
