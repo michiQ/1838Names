@@ -1,6 +1,6 @@
 # 1838 Mob Attack Statistics -- name matches to confirm
 
-62 sheet rows loaded. Of 50 unique named defenders: 29 linked to existing people, 10 created as new mobstats people, 11 held as ambiguous (NOT linked -- confirm below).
+62 sheet rows loaded. Of 50 unique named defenders: 28 linked to existing people, 10 created as new mobstats people, 12 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json to attach the mob-stats record to the right person:
@@ -12,8 +12,9 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - **James Williams** (mobstats)  <->  Williams, James#2818, Williams, James#2819, Williams, James W.#2820, James H. Williams#14294, James Williams#19966, WILLIAMS, JAMES#354258, Williams, James#358680, Williams, James H.#359536, James M. Williams#365658
 - **Jane Johnson** (mobstats)  <->  Johnson, Jane#1545, Johnson, Jane#351588, Jane Johnson#360029, Jane Johnson#361530, Jane L. Johnson#364270
 - **Mary Moore** (mobstats)  <->  Moore, Mary#1932, Moore, Mary#359325
-- **Robert Purvis** (mobstats)  <->  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364289
-- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Williams, Samuel#367133
+- **Perry Chambers** (mobstats)  <->  Chambers, Perry#356474, Perry M. Chambers#367344
+- **Robert Purvis** (mobstats)  <->  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364289, Robt. Purvis#367299
+- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#367485
 - **William Anderson** (mobstats)  <->  Anderson, William#74, ANDERSON, WM#351801
 - **William Simpson** (mobstats)  <->  Simpson, William#2410, Simpson, Wm.#358454, Wm. T. Simpson#365855
 
@@ -41,7 +42,6 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - Martha Thompson -> Thompson, Martha [census] #357043
 - Mary High -> High, Mary [census] #355311
 - Moses Morton -> MORTON, MOSES [census] #353434
-- Perry Chambers -> Chambers, Perry [census] #356474
 - Richard Duncan -> Richard Duncan [storymap] #359732
 - Thomas Shipley -> Thomas Shipley [newspaper] #148703
 - William Sammons -> Sammons, William [census] #355890

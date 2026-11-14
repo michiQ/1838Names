@@ -816,6 +816,38 @@
    "address": [
     "No. 1113 Pine Street, Philadelphia"
    ]
+  },
+  {
+   "issue": "CR_1865-08-05",
+   "page": 4,
+   "headline": "Coal Yard. Thos. J. Bowers",
+   "address": [
+    "634 Lombard Street, above Sixth, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1865-09-23",
+   "page": 3,
+   "headline": "Stove Store (William Still, 107 North Fifth Street)",
+   "address": [
+    "107 North Fifth Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1865-09-30",
+   "page": 3,
+   "headline": "Mrs. Amelia W. Adams (Select School, Juniper St.)",
+   "address": [
+    "Juniper Street, between Spruce and Pine, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1865-09-30",
+   "page": 3,
+   "headline": "New Grocery and Provision Store (Abraham Fields)",
+   "address": [
+    "South Seventh Street, third door above Lombard, Philadelphia"
+   ]
   }
  ]
 }

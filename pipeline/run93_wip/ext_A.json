@@ -135,7 +135,7 @@
    "headline": "Obituary (Barbara Sayres)",
    "author": "S. S. D.",
    "type": "obituary",
-   "summary": "Died. Barbara, the youngest daughter of Mary and the late Benjamin Sayres, departed this life on the 5th of June, 1865, aged 13 [VERIFY age] years, 10 months, and 9 days. She was an intelligent child and beloved by all. (Verses follow, signed S. S. D. No place is stated.)",
+   "summary": "Died. Barbara, the youngest daughter of Mary and the late Benjamin Sayres, departed this life on the 5th of June, 1865, aged 13 years, 10 months, and 9 days. She was an intelligent child and beloved by all. (Verses follow, signed S. S. D. No place is stated.)",
    "people": [
     [
      "Barbara Sayres",
@@ -272,7 +272,7 @@
     ],
     [
      "Benjamin Syers",
-     "official member, signer [VERIFY surname]"
+     "official member, signer"
     ],
     [
      "Wm. G. Cooper",
@@ -893,6 +893,133 @@
    "type": "letter",
    "summary": "Cape Island, July 15th, 1865. (A letter on the season at Cape Island, N.J.: improvements on the island, colored women there in business for themselves, the insolence of some white Philadelphia visitors, and the remark that guests for the Banneker House come slowly.)",
    "people": []
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 2,
+   "headline": "Editorial Correspondence (Cape Island, N. J.)",
+   "author": "",
+   "type": "editorial",
+   "summary": "Cape Island, N. J., July 25, 1865. We arrived here on last Saturday, the 22d, and stopped at the Banneker House, kept by Mr. and Mrs. Teagle. (The editor reports the killing of an Irishman by a colored hotel waiter whom he had struck, and a threatened mob; the guests at the Banneker House, among them, from Philadelphia, Mr. T. J. Dorsey, Mr. Prosser, Mr. Page, Mr. Ross and a number of others; services on Sabbath the 23d with Brother Cornish, the Elder in charge; 'The Island is well represented with Bethel members. It looks as if one third of the members were here'; and Mrs. Hawkins, 'a highly respectable lady of Philadelphia', keeping a fine store for visitors.)",
+   "people": [
+    [
+     "T. J. Dorsey",
+     "guest at the Banneker House, Cape Island, from Philadelphia (Mr.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 2,
+   "headline": "Cape Island Correspondence. No. II.",
+   "author": "Sea Side",
+   "type": "letter",
+   "summary": "Cape Island, July 24th, 1865. The prospects for a grand season never have been more flattering than at the present time. Every conveyance brings large additions to the present numbers. The hotels and boarding-houses are getting completely crowded with fashionable guests. (Sections: Incidents; Pleasure; A Fatal Affray; Religious; New Comers. The Rev. J. Cornish is on the island to see what he can do towards paying the debts of the Church; the Banneker House 'is the only place for colored guests here'.)",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 2,
+   "headline": "Our Health",
+   "author": "",
+   "type": "editorial",
+   "summary": "We wish to say again, to our very numerous friends, that we have reason to thank Almighty God, that through His kind mercy, and the physician, we are again restored to health. By visiting Cape Island the pure salt air braced us up wonderfully, indeed.",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 2,
+   "headline": "Our Western Tour",
+   "author": "",
+   "type": "editorial",
+   "summary": "We shall, Providence permitting, preach in Cleveland, Ohio, in Rev. John A. Warren's charge, on the 1st Sunday in August, and during our stay there, we expect to visit Oberlin College. The second Sabbath in August, we expect to be in Chicago, with Rev. A. T. Hall. We shall leave there for the Missouri Conference, which meets in Springfield.",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 1,
+   "headline": "Beaufort Correspondence",
+   "author": "T. G. Steward",
+   "type": "letter",
+   "summary": "Beaufort, S. C., July 10th, 1865. As is known by many of the members of our beloved Church who live in the Philadelphia Conference limits, I was one of the favored few drafted by Bishop Payne to go to South Carolina. (He is appointed to the Beaufort River Circuit and writes: 'Much is being done for the elevation and instruction of our people here, through the unequalled industry and untiring perseverance of Miss Mary Still, and other female teachers from the North. Major M. R. Delany is also here.')",
+   "people": [
+    [
+     "Mary Still",
+     "teacher among the freedpeople at Beaufort, S.C. (Miss)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 3,
+   "headline": "Music in the South",
+   "author": "A. Burris",
+   "type": "letter",
+   "summary": "Mr. Editor: Since my last letter appeared in the Recorder, circumstances have thrown me far into the sunny regions of the South. (Dated Natchez, Miss., July 15th, 1865. He recalls 'the many happy moments I have spent in commingling my voice and emotions with the Sabbath school children of my native city', describes a concert by colored performers at the New Orleans Opera House on June 12th that 'would be very likely to make our Philadelphia ladies look about themselves', and his presiding at the piano on June 28th for Prof. P. H. Murray at St. James chapel.)",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 3,
+   "headline": "Letter from Texas (41st U. S. C. Troops)",
+   "author": "M. R. Williams",
+   "type": "letter",
+   "summary": "Brazos, Santiago, Texas, June 30th, 1865. Mr. Editor: I take this opportunity of communicating through the columns of your valuable paper, concerning the treatment of the U. S. C. Troops stationed here. I do not think that the government is aware of our situation. Before being detailed to this post, being of the 25th Army Corps, we composed a part of the Army of the James. (Signed M. R. Williams, Co. E, 41st U. S. C. Troops: half rations, pay once in nine months, the poorest medical attendance, one cup of water per day; 'There is laying here now, in the same condition, the 41st, 8th, 127th, and 45th Regt's, all from Pennsylvania'; 'our average loss is three men per day, for the want of food and water'.)",
+   "people": []
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 3,
+   "headline": "Notice (West Chester Circuit quarterly meetings)",
+   "author": "Jas. V. Pierce",
+   "type": "notice",
+   "summary": "The last three Quarterly Meetings of West Chester Circuit will be as follows: Media, 4th Saturday, and Sunday in July. Lambertown, August 5th and 6th. West Chester, 2d Saturday and Sunday in August. Quarterly Conference, do. do. do. Friends are invited. Jas. V. Pierce, Minister. P. Gardner, Elder.",
+   "people": [
+    [
+     "P. Gardner",
+     "Elder"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 3,
+   "headline": "Married (Ray-Delerworth)",
+   "author": "",
+   "type": "marriage",
+   "summary": "On July 19, 1865, by Rev. James V. Pierce, Mr. James Ray, to Miss Harriet Delerworth [VERIFY], both of Thornsbury township, Chester county.",
+   "people": [
+    [
+     "James Ray",
+     "groom, of Thornsbury township, Chester county"
+    ],
+    [
+     "James V. Pierce",
+     "officiating minister (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 3,
+   "headline": "Died",
+   "author": "",
+   "type": "obituary",
+   "summary": "Gently fell asleep on the bosom of Jesus, May 26th, 1865, at Baltimore, Md., Nathaniel Campbell, aged 75 years. Bro. Campbell was one of the founders of the A. M. E. Church in Baltimore in its earliest days. (Signed J. W. C.) On the 16th inst., Henrietta A., daughter of James and Mary A. Potter, aged 11 months.",
+   "people": [
+    [
+     "Henrietta A. Potter",
+     "deceased, died July 16, 1865, aged 11 months (printed 'Henrietta A., daughter of James and Mary A. Potter')"
+    ],
+    [
+     "James Potter",
+     "father of the deceased"
+    ],
+    [
+     "Mary A. Potter",
+     "mother of the deceased"
+    ]
+   ]
   }
  ],
  "events": [
@@ -1034,7 +1161,7 @@
    "name": "A. M. E. Zion Mission church, 7th street: appeal and commission of a collector",
    "date": "1865-06-27",
    "location": "A. M. E. Zion Mission church, 7th street between Dickerson and Hecker [VERIFY] streets, Philadelphia",
-   "description": "The official members, under date Philadelphia, June 27th, 1865, appoint and commission Rev. H. J. Rhodes, their Presiding Elder in charge, to collect money in 'the hour of our great and pressing embarrassment'. Liabilities over twenty-two hundred dollars; membership less than fifty, 'and, as a class, we are truly the Lord's poor'. Signed Thomas Jones, F. P. Main, Benjamin Syers [VERIFY], Wm. G. Cooper, Ephraim Hammond. Notice marked July 8-3t.",
+   "description": "The official members, under date Philadelphia, June 27th, 1865, appoint and commission Rev. H. J. Rhodes, their Presiding Elder in charge, to collect money in 'the hour of our great and pressing embarrassment'. Liabilities over twenty-two hundred dollars; membership less than fifty, 'and, as a class, we are truly the Lord's poor'. Signed Thomas Jones, F. P. Main, Benjamin Syers, Wm. G. Cooper, Ephraim Hammond. Notice marked July 8-3t.",
    "attendees": [
     [
      "H. J. Rhodes",
@@ -1046,7 +1173,7 @@
     ],
     [
      "Benjamin Syers",
-     "official member [VERIFY surname]"
+     "official member"
     ],
     [
      "Wm. G. Cooper",
@@ -1481,6 +1608,38 @@
      "lecturer (Rev.)"
     ]
    ]
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 3,
+   "name": "West Chester Circuit (A.M.E.): last three Quarterly Meetings and Quarterly Conference",
+   "date": "1865-08-12",
+   "location": "Media, Lambertown and West Chester, Pennsylvania",
+   "description": "The last three Quarterly Meetings of West Chester Circuit: Media, 4th Saturday and Sunday in July (July 22 and 23); Lambertown, August 5th and 6th; West Chester, 2d Saturday and Sunday in August (August 12 and 13), with the Quarterly Conference at the same time. Friends are invited. Signed Jas. V. Pierce, Minister; P. Gardner, Elder. The date given here is that of the West Chester meeting and conference.",
+   "attendees": [
+    [
+     "Jas. V. Pierce",
+     "minister"
+    ],
+    [
+     "P. Gardner",
+     "elder"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1865-07-29",
+   "page": 2,
+   "name": "Cape Island, N.J.: the editor's visit, the Banneker House and the fatal affray of July 23",
+   "date": "1865-07-23",
+   "location": "Cape Island (Cape May), New Jersey",
+   "description": "Two accounts in this issue. The editor (Editorial Correspondence, dated July 25) arrived Saturday July 22 and stopped at the Banneker House, kept by Mr. and Mrs. Teagle; guests there included Mrs. Jordon and son and Bro. Burly and lady, of Baltimore, and from Philadelphia Mr. T. J. Dorsey, Mr. Prosser, Mr. Page, Mr. Ross and others. On Sabbath the 23d he attended the colored church with Mrs. Jordon and Rev. Turpin; Brother Cornish, the Elder in charge, was trying to raise $50; two sisters sat in the pulpit, one of them Sister Murray, a preaching woman. 'The Island is well represented with Bethel members. It looks as if one third of the members were here.' Mrs. Hawkins, 'a highly respectable lady of Philadelphia', keeps a fine store for visitors and does more business than any other store of the kind there (the editor points to her advertisement in the Recorder); Brother and Sister Fields keep a grocery store. Both the editor and the correspondent 'Sea Side' (July 24) report that on that Sabbath a white man (an Irishman, the editor says) struck a colored man employed at a hotel or billiard saloon; the colored man struck back, a brick was thrown and the white man died; two colored men were held, the Irish threatened to mob the colored people and the Mayor advised them to desist. Sea Side adds that the Banneker House is the only place for colored guests on the island.",
+   "attendees": [
+    [
+     "T. J. Dorsey",
+     "guest at the Banneker House, from Philadelphia (Mr.)"
+    ]
+   ]
   }
  ],
  "notes": [
@@ -1511,15 +1670,21 @@
   "CR_1865-07-22: John A. Hughes, superintendent of the Wesley Sabbath School, may be the 'John H. Hughes' of the Love and Charity roster of July 8; both recorded as printed.",
   "CR_1865-07-22 p2: the 8th U.S.C.T. (raised at Camp William Penn) subscription for Wilberforce names about fifty soldiers with companies and sums but no residences; none linked. Names as read: James Daly, Wm. P. Woodlin, Henry Keith, Jacob Andrews, Nelson Searles, Garrett S. Russel, James Russel, Glenalvan Brown, John W. Young, Wm. Devan, Thomas Shenk, Elias Pennington, Scott Russel, Aaron Dexter, George Lane, Emory Deaton, Henry When, Andrew Washington, Joseph Ralf, Paynter Dutton, John W. Peters, William Johnson, George Carter, Charles Butterfield, Andrew J. Buchanan, John Brown, William Jones, James H. Smith, John Waller, John Coy, Wm. W. Smith, John Thomas, Thomas Bonner, Foster Fry, George Davis, Henry Murray, William Hill, George Butler, David Robinson, Hiram Ellis, Robert Howard, Samuel W. Gwin, John Stevens (read at 1000 dpi only; treat spellings as provisional).",
   "CR_1865-07-22 not Philadelphia (not entered): Chaplain Turner from Roanoke Island; R. A. Hall, Cumberland, Md.; 'What shall be done with the Negro? No. 1'; Wm. H. N. Brown, 1st U.S.C.T.; Curse of Caste chapter XXII; R. D. Owen on suffrage; editorials 'The Methodist and the Negro' and 'The War and its Effects'; Fourth of July reports from Louisville (Malcolm Ayres: about thirty thousand in procession, Sabbath schools, Masons, the Aid Society; J. M. Langston spoke) and Easton, Md. (Charles Dobson: Sabbath school procession with four marshals); Brooklyn correspondence; Grand Union Celebration at Owego, N.Y., August 10.",
-  "CR_1865-07-22 repeats not re-entered: Appeal; Dr. H. S. Phillips's notice; West Philadelphia Circuit; A Rare Opportunity; Special Notice; information wanted (Cole, Henry); Lincoln Monument ad (here 'Jacob C. White, Sr., Philadelphia, Pa.' and 'Wm. Whipper, Columbia, Pa.' are legible); all standing ads on pages 3 and 4."
+  "CR_1865-07-22 repeats not re-entered: Appeal; Dr. H. S. Phillips's notice; West Philadelphia Circuit; A Rare Opportunity; Special Notice; information wanted (Cole, Henry); Lincoln Monument ad (here 'Jacob C. White, Sr., Philadelphia, Pa.' and 'Wm. Whipper, Columbia, Pa.' are legible); all standing ads on pages 3 and 4.",
+  "CR_1865-07-29 (Vol. V, No. 30, Whole No. 239; pages 117-120). Read from image crops: page 1 all 7 columns; page 2 all 7 columns; page 3 all 7 columns; page 4 all 7 columns (3 slices per column at 1000 dpi; Married, Died, the West Chester notice and the Lincoln Monument roster again at 1600 dpi).",
+  "CR_1865-07-29: NO announcement of a First of August celebration in Philadelphia appears in this issue, and no Philadelphia Fourth of July report appeared in any of the five July issues. Nothing on the street cars in Philadelphia appears in the five issues either (the only car item is a reprint about the Washington cars, July 15 page 1).",
+  "CR_1865-07-29: 'Mrs. Hawkins, a highly respectable lady of Philadelphia' with a store at Cape Island is Mrs. S. Shorter Hawkins of 615 Lombard Street, whose ad the editor mentions (bare surname, text only). 'Mr. Prosser, Mr. Page, Mr. Ross' are surname-only and not linked. T. J. Dorsey is probably Thomas J. Dorsey the caterer (identification in notes only).",
+  "CR_1865-07-29: 'A. Burris' writing from Natchez is the Philadelphia teacher of vocal music (author only). 'P. Gardner, Elder' of West Chester Circuit is printed Gardner here and 'Peter Gardiner' on July 1 (Chester Circuit); recorded as printed, no identification, per the owner's ruling. Miss Mary Still at Beaufort is William Still's sister (owner's ruling).",
+  "CR_1865-07-29 not Philadelphia (not entered): 'Phrenology No. 9' (J. Anderson Raymond); T. Strother on the Fourth of July at Louisville; Mary E. Turner from Leavenworth; Hollidaysburg Circuit; Curse of Caste chapter XXIII; freedmen in Tennessee; James Lynch at Augusta and on Thomas Hamilton; editorials 'The Old Spirit', 'The Work South among our People', 'The Freedmen and their Rights'; notes on John M. Brown (the Richmond church joined the A.M.E. connexion July 19), G. A. Rue, Charles Burch, the Missouri Conference, Disciplines; the American Baptist Missionary Convention (Alexandria, Va., August 18); 'A Correction' from Charleston; 'What shall be done with the Negro? No. II'; E. Goodelle H. from Louisville. Acknowledgments: Cold Spring, N.J., W. Trusty, 3.00; the rest out of state.",
+  "CR_1865-07-29 new ad, out of town, not entered: Mrs. H. C. Lunn's Boarding House for gentlemen boarders, Second street below Congress Hall, Cape Island, N.J. Repeats not re-entered: Appeal; Dr. H. S. Phillips's notice; Special Notice; Pennsylvania State Equal Rights League annual meeting ad (J. C. White, Jr., July 22-3t); Lincoln Monument ad; all standing ads on pages 3 and 4 (Hawkins is still printed at 615 Lombard Street; Brister 717 Lombard; James W. Brown 139 S. Fifth above Walnut and 1003 Shippen)."
  ],
  "flags": [
-  "CR_1865-07-01 p3 Obituary: Barbara Sayres's age reads '13 years' but the first digit pair could be 18; surname reads Sayres at 1200 dpi. No place of residence is stated, so Philadelphia is assumed only from the paper's local column.",
+  "CR_1865-07-01 p3 Obituary: Barbara Sayres (age 13 and surname confirmed at 1600 dpi): no place of residence is stated, so Philadelphia is not certain.",
   "CR_1865-07-01 p3 'Presents to Ministers': James Frisby's church is not named; the letter is dated Philadelphia and refers to the Recorder of June 10.",
-  "CR_1865-07-08 p2 Love and Charity: the Treasurer's given name reads 'Ellen' B. Randolph but the last letters are blurred (could be Ellee/Ellen) even at 1200 dpi.",
-  "CR_1865-07-08 p2 Zion Mission notice: the second cross street reads 'Hecker' or 'Hecher' (7th street between Dickerson and ... streets); the signer 'Benjamin Syers' could be Syres or Sykes.",
-  "CR_1865-07-08 p2 Aid for Savannah: 'Hornton church' (donor of $4.00) is a doubtful reading; committee member 'H. Ferman' could be Forman or Furman. The committee is given by initials only.",
-  "CR_1865-07-08 p3 Married: groom 'John Mosely' (letters between M and ly unclear) and groom 'Major Zaton' (could be Eaton) are uncertain; both couples are of Delaware and are not linked.",
+  "CR_1865-07-08 p2 Love and Charity: the Treasurer's given name reads 'Ellen' B. Randolph but the last letters are blurred (could be Ellee/Ellen) even at 1600 dpi (reads Ellen or Elloe).",
+  "CR_1865-07-08 p2 Zion Mission notice: the second cross street reads 'Hecker' or 'Hecher' (7th street between Dickerson and ... streets), on both printings (July 8 and July 15) and at 1600 dpi. The signer reads 'Benjamin Syers' in small capitals at 1600 dpi (flag removed).",
+  "CR_1865-07-08 p2 Aid for Savannah: 'Hornton church' (donor of $4.00) is a doubtful reading (Hornton or Horntoe; perhaps Horntown) at 1600 dpi; committee member 'H. Ferman' could be Forman or Furman. The committee is given by initials only.",
+  "CR_1865-07-08 p3 Married: groom 'John Mosely' (reads Mosely or Mossly at 1600 dpi) and groom 'Major Zaton' (could be Eaton) are uncertain; both couples are of Delaware and are not linked.",
   "CR_1865-07-08 p1 Salem letter: the money figures in the letter were not legible enough to record and are left out.",
   "CR_1865-07-15 p3 Married: the place of the Taylor-Smith marriage reads 'Adamboro, Pa.' (possibly Attleboro); bride 'Anna Crosy' of Chicago is unclear and not linked.",
   "CR_1865-07-15 p2 Wilson memoir: the list of consulting physicians (reads Pennybaker, Ludlow, Smith, Hodder, Carson, Allen) is not clear enough to record as names; the institution is printed 'Home for Aged Colored Women'.",
@@ -1528,6 +1693,9 @@
   "CR_1865-07-22 p3 Ladies' Union letter: 'Mrs. Antar' (or Autar/Auter) and 'Miss Bruce' are uncertain; both are surname-only and not linked.",
   "CR_1865-07-22 p3 Excursion: the minister's name is in damaged small capitals and reads 'John Mitchell' with the middle letters unclear.",
   "CR_1865-07-22 p3 Information Wanted: 'Mr. A. L. Hart' (the second initial could be I. or J.) and the house number '427 Lombard St.' (first digit faint) are uncertain; Hart is not linked.",
-  "CR_1865-07-22 p3 Tribute: the president pro tem. reads 'Jas. M'C. Crummill' at 1600 dpi (James McC. Crummell is the expected name); recorded as printed."
+  "CR_1865-07-22 p3 Tribute: the president pro tem. reads 'Jas. M'C. Crummill' at 1600 dpi (James McC. Crummell is the expected name); recorded as printed.",
+  "CR_1865-07-29 p3 Married: the bride reads 'Harriet Delerworth' at 1600 dpi (possibly Dulerworth or Dilworth); not linked.",
+  "CR_1865-07-29 p3 Died: no residence is given for the Potter family; Philadelphia is not stated.",
+  "CR_1865-07-29 p2 Cape Island: the two accounts differ on where the colored man was employed (a hotel waiter according to the editor, a billiard saloon according to Sea Side); both are given."
  ]
 }

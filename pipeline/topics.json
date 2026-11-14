@@ -192,6 +192,10 @@
     {
      "issue": "CR_1865-04-22",
      "headline": "Our Domestic Correspondence (Amityville, N. Y.: speech demanding equal access to the street cars)"
+    },
+    {
+     "issue": "CR_1865-09-23",
+     "headline": "Shameful"
     }
    ],
    "events": [
@@ -278,6 +282,10 @@
     {
      "issue": "CR_1865-06-03",
      "name": "Bishop Campbell on the street cars (lecture 'The War and Its Issues', San Francisco)"
+    },
+    {
+     "issue": "CR_1865-09-23",
+     "name": "Two colored ladies carried off and insulted on a Spruce and Pine Street car"
     }
    ]
   },
@@ -334,6 +342,14 @@
     {
      "issue": "CR_1865-04-29",
      "headline": "Meeting in Frankford"
+    },
+    {
+     "issue": "CR_1865-09-30",
+     "headline": "Great Odd Fellow's Celebration at Baltimore, Md., on the 6th of October"
+    },
+    {
+     "issue": "CR_1865-09-30",
+     "headline": "G. U. O. of O. F. Excursion from Philadelphia to Baltimore"
     }
    ],
    "events": [
@@ -408,6 +424,10 @@
     {
      "issue": "CR_1865-04-29",
      "name": "Frankford -- memorial meeting for President Lincoln at the A. M. E. church"
+    },
+    {
+     "issue": "CR_1865-09-30",
+     "name": "Grand United Order of Odd Fellows: Philadelphia excursion to the Baltimore celebration and parade"
     }
    ]
   }

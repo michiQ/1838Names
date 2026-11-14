@@ -862,6 +862,240 @@
    "issue_like": "CR_186%",
    "to_id": 2497,
    "note": "'Wm. Still' / 'William Still' in the Christian Recorder of 1864-65 (SCSA lecture committee chairman, remitter from Camp William Penn) is William Still, not the 1820 directory sawyer 'Still, Wm.'. Found in the Run #92 link review, 2026-11-14: nine entries from Runs #90-#92 had attached to the sawyer."
+  },
+  {
+   "from_name": "Cooper, Thomas",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1865-09%",
+   "new_name": "Thomas Cooper (Odd Fellows, 1865)",
+   "new_source": "newspaper",
+   "note": "Committee man for the Odd Fellows excursion of 1865; not the 1820 directory Thomas Cooper. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Harris, Daniel",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "Daniel Harris (Wesley Church, 1865)",
+   "new_source": "newspaper",
+   "note": "Official board signer, A.M.E. Wesley Church, 1865; not the 1820 directory Daniel Harris. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1864%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore, pastor of Bethel 1864-65, is the A.M.E. minister of Runs #79-#83 (newspaper W. Moore), not the 1820 directory Wm. Moore. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1864%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore, pastor of Bethel 1864-65, kept with the newspaper W. Moore as in Runs #81-#83; whether he is the Winch A.M.E. cleric of 1835 is an open question for Michiko. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1865%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore, pastor of Bethel 1864-65, is the A.M.E. minister of Runs #79-#83 (newspaper W. Moore), not the 1820 directory Wm. Moore. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Rev. William Moore, pastor of Bethel 1864-65, kept with the newspaper W. Moore as in Runs #81-#83; whether he is the Winch A.M.E. cleric of 1835 is an open question for Michiko. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "BASS, CHARLOTTE",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "Charlotte Bass (d. 1865, Vincennes, Ind.)",
+   "new_source": "newspaper",
+   "note": "Died at Vincennes, Indiana, June 26, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "CLARK, JOSEPH",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "Joseph Clark (married 1865)",
+   "new_source": "newspaper",
+   "note": "Groom of May 18, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "DAVIS, RACHEL",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "Rachel Davis (Information Wanted, 1865)",
+   "new_source": "newspaper",
+   "note": "Signer of an Information Wanted notice, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Harris, Elizabeth",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "Elizabeth Harris (Shiloh Sabbath School, 1865)",
+   "new_source": "newspaper",
+   "note": "One of the young ladies of the Shiloh Baptist Sabbath School, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "SIMPSON, THOMAS",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "Thomas Simpson (married 1865)",
+   "new_source": "newspaper",
+   "note": "Groom, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Stewart, Joseph",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "Joseph Stewart (Information Wanted, 1865)",
+   "new_source": "newspaper",
+   "note": "Signer of an Information Wanted notice, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "TOWNSEND, JAMES",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "James Townsend (Kaighnsville, N.J., 1865)",
+   "new_source": "newspaper",
+   "note": "Harvest Home committee in New Jersey, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "WATSON, REBECCA",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "Rebecca Watson (Frankford, married 1865)",
+   "new_source": "newspaper",
+   "note": "Bride, of Frankford, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Waters, George",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-09%",
+   "new_name": "Rev. George Waters (N.J. camp meeting, 1865)",
+   "new_source": "newspaper",
+   "note": "Minister at a New Jersey camp meeting, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "White, Jane",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-09%",
+   "new_name": "Jane White (married 1865)",
+   "new_source": "newspaper",
+   "note": "Bride, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Young, Edward",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-09%",
+   "new_name": "Edward Young (Masonic Grand Lodge, 1865)",
+   "new_source": "newspaper",
+   "note": "Committee of arrangements, Masonic Grand Lodge, 1865. Common name, not assumed to be the census head of household of 1838 or 1847. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Johnson, J.",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "J. Johnson (Bethel Soldiers' Aid, 1865)",
+   "new_source": "newspaper",
+   "note": "Committee member given by initial only. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Jones, Henry",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-09%",
+   "new_name": "Henry Jones (Atlantic City excursion, 1865)",
+   "new_source": "newspaper",
+   "note": "Committee of arrangements, 1865. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Jones, Thomas",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "Thomas Jones (Zion Mission, 1865)",
+   "new_source": "newspaper",
+   "note": "Signer for the A.M.E. Zion Mission church, 1865. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Mitchell, John",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "John Mitchell (minister, 1865)",
+   "new_source": "newspaper",
+   "note": "Minister named in the Wesley Sabbath School excursion; the reader was not sure of the surname. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Smith, Elizabeth",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "Elizabeth Smith (Wesley Church, 1865)",
+   "new_source": "newspaper",
+   "note": "Festival committee, A.M.E. Wesley Church, 1865. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Potter, James",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "James Potter (1865)",
+   "new_source": "newspaper",
+   "note": "Father in a death notice of 1865; Winch's James Potter was a member of St. Thomas's in 1794. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Randolph, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-08%",
+   "new_name": "William Randolph (married 1865)",
+   "new_source": "newspaper",
+   "note": "Groom, 1865. Common name, not assumed to be the Winch record. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "Miller, Clayton",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "to_name": "Clayton Miller",
+   "to_source": "newspaper",
+   "note": "Michiko, 2026-11-14: Clayton Miller of 1865 keeps his own record until she rules whether he is the Winch man of the 1830s. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "James Wilson",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07-15",
+   "new_name": "James Wilson (father of Dr. James H. Wilson)",
+   "new_source": "newspaper",
+   "note": "Father of Dr. James H. Wilson, a leading member of Bethel, dead before 1865; not the West Chester groom of 1864. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
   }
  ],
  "renames": [

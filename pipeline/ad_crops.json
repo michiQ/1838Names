@@ -1251,6 +1251,54 @@
     0.976
    ],
    "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-08-05",
+   "page": 4,
+   "headline": "Coal Yard. Thos. J. Bowers",
+   "box": [
+    0.565,
+    0.213,
+    0.705,
+    0.3
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-09-23",
+   "page": 3,
+   "headline": "Stove Store (William Still, 107 North Fifth Street)",
+   "box": [
+    0.7,
+    0.87,
+    0.833,
+    0.986
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-09-30",
+   "page": 3,
+   "headline": "Mrs. Amelia W. Adams (Select School, Juniper St.)",
+   "box": [
+    0.292,
+    0.874,
+    0.433,
+    0.914
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-09-30",
+   "page": 3,
+   "headline": "New Grocery and Provision Store (Abraham Fields)",
+   "box": [
+    0.444,
+    0.132,
+    0.58,
+    0.211
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
   }
  ]
 }
