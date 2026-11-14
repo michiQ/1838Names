@@ -1966,5 +1966,43 @@
    }
   ],
   "note": "Michiko 2026-11-13: 'J. Asher' and 'Rev. Mr. Asher' in the Christian Recorder are Rev. Jeremiah Asher of Shiloh Baptist. For review: the Feb. 18, 1865 Lebanon Cemetery notice linked to 'J. Asher' as author falls while he was chaplain of the 6th USCT."
+ },
+ {
+  "keep": {
+   "name": "Richard H. Gleaves",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "Richard Gleaves",
+    "source": "newspaper"
+   },
+   {
+    "name": "R. H. Gleaves",
+    "source": "newspaper"
+   },
+   {
+    "name": "R. Hallowell Gleaves",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-14: the four Gleaves records in the Christian Recorder (Richard Gleaves, Richard H. Gleaves, R. H. Gleaves, R. Hallowell Gleaves) are one man. Not merged: Georgiana Gleaves and 'Mrs. Gleaves' (633 Pine), George Gleaves (1820 directory)."
+ },
+ {
+  "keep": {
+   "id": 312,
+   "name": "Bowers, Thomas J."
+  },
+  "aliases": [
+   {
+    "name": "T. J. Bowers",
+    "source": "newspaper"
+   },
+   {
+    "name": "Thos. J. Bowers",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-14: the T. J. Bowers who advertised coal at 634 Lombard in 1865 is Thomas J. Bowers the singer ('the Colored Mario'), Winch's 'Bowers, Thomas J.'. Not merged: Winch 'Bowers, Thomas' (a schoolboy in 1835), newspaper 'Thos. Bowers', blog 'Thomas Bowers', 'Mrs. T. J. Bowers'."
  }
 ]

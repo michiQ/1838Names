@@ -106,6 +106,15 @@
       "b": 892,
       "note": "Father and son: Thomas Dorsey, the caterer, and William Henry Dorsey. Julie Winch's note on William H. Dorsey reads 'Son of Thomas the caterer' (Blockson). The Colored American Magazine (Feb. 1903, p. 294) says his father was 'one of the three leading caterers of the day'.",
       "_why": "Michiko 2026-11-13: 'William H Dorsey is the son of Thomas Dorsey.'"
+    },
+    {
+      "a": 312,
+      "b": {
+        "name": "Henrietta Duterte",
+        "source": "blog"
+      },
+      "note": "Brother and sister: Thomas J. Bowers, the singer known as 'the Colored Mario', and Henrietta Duterte (born Bowers). In 1865 he advertised a coal and kindling wood depot at 634 Lombard Street, the address of her undertaking business (Christian Recorder, April 22, 1865).",
+      "_why": "Michiko 2026-11-14: 'TJ Bowers is Henrietta Duterte's brother.' The Wikipedia article on Thomas Bowers that she cited names his mother as Henrietta and his siblings as John C. and Sarah Sedgwick Bowers; it does not itself name Henrietta Duterte."
     }
   ]
 }
