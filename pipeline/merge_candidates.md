@@ -36,7 +36,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Banks, Solomon** (winch, 2 appearances, 1 Winch refs, 1 census records, 1 directory records) ↔ **Banks, Soloman J** (census, 2 appearances, 1 census records)
 - [HIGH] **BANKS, MURRELL** (census, 1 census records) ↔ **Banks, Murrel** (1820directory, 1 directory records)
 - [HIGH] **BANTON, WM** (census, 1 census records) ↔ **Wm. C. Banton** (newspaper, 2 appearances)
-- [HIGH] **Bassett, Ebenezer D.** (winch, 25 appearances, 2 Winch refs) ↔ **Bassett, E. D., Jr.** (coppin)
+- [HIGH] **Bassett, Ebenezer D.** (winch, 25 appearances, 1 Winch refs) ↔ **Bassett, E. D., Jr.** (coppin)
 - [HIGH] **BATTIS, JOHN** (census, 1 census records) ↔ **Battis, John hairdresser back 10 Oak (S.) ■ -battis John** (1820directory, 1 directory records)
 - [HIGH] **Battis, John hairdresser back 10 Oak (S.) ■ -battis John** (1820directory, 1 directory records) ↔ **Battis, John** (1811directory, 1 directory records)
 - [HIGH] **Bayard, Charlotte** (winch, 1 Winch refs) ↔ **Bayard, Charlotte E.** (coppin)

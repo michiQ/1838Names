@@ -1880,5 +1880,30 @@
    }
   ],
   "note": "Continental Restaurant, 717 Lombard: the proprietor is printed 'Charles W. Brister' in 1864-65 (bought Cole's eating saloon, Oct 1864); the earlier Continental ad appearances were already linked to Winch Brister, Charles. Michiko 2026-11-11 confirmed the Brister reading."
+ },
+ {
+  "keep": {
+   "name": "Bassett, Shadrack",
+   "source": "winch"
+  },
+  "aliases": [
+   {
+    "name": "BASSET, SHEDRICK REVD",
+    "source": "census"
+   },
+   {
+    "name": "Bassett, Shedrick",
+    "source": "census"
+   },
+   {
+    "name": "Shadrach Bassett",
+    "source": "newspaper"
+   },
+   {
+    "name": "Shadrack Bassett",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko 2026-11-13: the four Shadrack Bassett records and Julie Winch's entry are one man, Rev. Shadrack Bassett of Bethel (d. Feb. 28, 1861, per the Christian Recorder obituary). The Winch record is created by split_bassett.py, which lifts his notes out of Ebenezer D. Bassett's record."
  }
 ]
