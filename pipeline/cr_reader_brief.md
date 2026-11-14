@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, July - September 1865
+# Extraction brief: Christian Recorder, October - December 1865
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,16 +7,15 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/19f25cf0-1195-5d2b-a392-127587d9c568/scratchpad/cr93)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/19f25cf0-1195-5d2b-a392-127587d9c568/scratchpad/cr94)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
   higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt
   ('frame:slug:page'). Pages not in jobs.txt DO NOT EXIST in our copy. Cite by DATE and the issue page (1-4).
-  July-September 1865 (Vol. V, Nos. 26-39): Jul 1 (frames 1-4), Jul 8 (5-8), Jul 15 (9-12), Jul 22 (13-16), Jul 29 (17-20),
-  Aug 5 (21-24), Aug 12 (25-28), Aug 19 (29-32), Aug 26 (33-36), Sep 2 (37-40), Sep 9 (41-44), Sep 16 (frames 46-47 = pp3-4 only;
-  card at frame 45: 'No. 37 first sheet missing'), Sep 23 (48 = p1, 49 = p2, 50 = p3, 52 = p4; frame 51 is a second exposure of
-  p3), Sep 30 (53-56). Crops: render from the PDF with
+  October-December 1865 (Vol. V, Nos. 40-52): 13 complete issues, four frames each, nothing missing: Oct 7 (frames 1-4),
+  Oct 14 (5-8), Oct 21 (9-12), Oct 28 (13-16), Nov 4 (17-20), Nov 11 (21-24), Nov 18 (25-28), Nov 25 (29-32), Dec 2 (33-36),
+  Dec 9 (37-40), Dec 16 (41-44), Dec 23 (45-48), Dec 30 (49-52). Crops: render from the PDF with
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
@@ -26,7 +25,7 @@ name is worse than a missing one, and every uncertainty must be flagged, not smo
   machine). Use the 2000px JPEG (also cropped, e.g. with PIL) to locate things first.
 - OCR and image of a page should be used together: OCR to find what is there, the image to read
   names, addresses and numbers exactly.
-- READ PAGES 1 AND 4 OF EVERY ISSUE IN FULL FROM IMAGE CROPS, column by column (7 columns, about five slices each), on your
+- READ PAGES 1 AND 4 OF EVERY ISSUE IN FULL FROM IMAGE CROPS, column by column (7 columns, about five slices each, ONE column per crop, not two-column or wider strips), on your
   FIRST pass. Do NOT triage these pages from the OCR text or from headings. In the last run all three readers triaged them and
   had to be sent back; a report that says pages 1 and 4 were not read in full will be sent back again. Page 1 carries letters
   and church news, page 4 the ads and notices. Read the local, notice, marriage, death and advertisement columns of pages 2 and 3
@@ -115,16 +114,26 @@ the 24th U.S.C.T.; the 1865 Philadelphia Conference appointments; the Good Samar
 No. 711's anniversary. Standing ads entered in 1864-65 and still running: Hannibal Hotel (620 Pine), Olive Branch boarding house (814 Lombard), Mrs. C. E. Harding (713 Lombard), N. L. Durham, cupping and leeching (911 1/2 Christian), Charles W. Brister's Continental Restaurant (717 Lombard), Mrs. Maria Highgates, shrouding (1026 Barley), Joseph C. and Sarah H. Bustill, wig makers (403 S. Sixth), Mrs. H. S. Duterte, undertaker, Mrs. M. Bennett, herb doctress (S. Seventh below Pine), Wm. H. Longfellow, surgeon dentist (Rodman St.), the Lebanon Cemetery notice. Everything through the June 24, 1865 issue is in the database. A repeated ad is noted once; an ad whose
 address, proprietor or wording has CHANGED is new.
 
-## Watch for in this quarter (July - September 1865)
-- PARADES AND PROCESSIONS (owner tracks this as a topic): the Fourth of July 1865, the First of August (West India
-  emancipation) celebrations, Sabbath-school and society processions, excursions and picnics, receptions of returning
+## Already captured in Run #93 (July - September 1865) -- do NOT re-enter unless changed
+Thos. J. Bowers, Coal Yard (634 Lombard, the larger ad); William Still, Stove Store (107 North Fifth); Mrs. Amelia W. Adams,
+Select School (Juniper St.); Abraham Fields, grocery (South Seventh above Lombard); the Banneker House, Cape Island (Mrs.
+Teagle); the Colored People's National Lincoln Monument ad; C. C. Blue's saloon (610 Pine, editorial notice); the Harrisburg
+annual meeting of the Pennsylvania State Equal Rights League (Aug 9); the call of the National Equal Rights League for
+Cleveland; the Odd Fellows' excursion to the Baltimore celebration of Oct 6 (announcement only: a REPORT of it is new); the
+Masonic Grand Lodges' call for Oct 10 (announcement only); the death and funeral of Rev. Jeremiah Asher; the death of Dr.
+James H. Wilson; 'Shameful' (Spruce and Pine Street car, Sept 23); the Institute for Colored Youth appointments of Fanny
+Jackson and Mary Patterson. Everything through the September 30, 1865 issue is in the database.
+
+## Watch for in this quarter (October - December 1865)
+- PARADES AND PROCESSIONS (owner tracks this as a topic): the Odd Fellows at Baltimore (Oct 6), the Masonic assembly (Oct 10),
+  receptions of returning regiments, Thanksgiving (Dec 7, 1865), the Thirteenth Amendment rejoicings (December), Sabbath-school and society processions, excursions and picnics, receptions of returning
   regiments, lodge turnouts. For each: date, route or place, the marshals, the societies, lodges, schools and bands that
   marched, speakers, and any interference by police or mobs.
 - STREETCAR exclusion (topic): every ejection, petition, meeting, letter, editorial, court case, car company vote.
 - SOCIETY MEETINGS (owner's instruction): every meeting, anniversary, election, installation or notice of a beneficial,
   literary, temperance, relief or burial society, lodge, association or church society, each as its own EVENT with the full
   name as printed, date, place with address, and every officer, committee member and speaker.
-- The Pennsylvania State EQUAL RIGHTS LEAGUE (its annual meeting at Harrisburg in August 1865) and the Philadelphia
+- The Pennsylvania State EQUAL RIGHTS LEAGUE (after its Harrisburg meeting of August 1865), the National League at Cleveland (October 1865) and the Philadelphia
   auxiliaries; the National Equal Rights League; the suffrage question; delegates elected, with names.
 - RETURNING colored regiments and their receptions; Camp William Penn; deaths of soldiers and chaplains; bounty and pension
   notices naming Philadelphians.
