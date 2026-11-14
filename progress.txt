@@ -1340,3 +1340,4 @@ MICHIKO 2026-11-13: merge the four Shadrack Bassett records and Julie's record. 
 - NOT placed: 'Dr. W. H. Johnson, of Albany, New York' (marked 1889). The only candidate, 'William H. Johnson' (8618), carries 1838-39 anti-slavery appearances as well as the c. 1858-59 Phoenix Club rescue, so it may be two men. Asked Michiko.
 - FOR MICHIKO: original sources for the three booklet images; merge 'J. P. Campbell' with 'Jabez P. Campbell', 'J. Asher' and 'Mr. Asher' with 'Jeremiah Asher', 'F. E. W. Harper' with Frances Ellen Watkins Harper, blog 'Jerena Lee' with Winch 'Lee, Jarena'? The Corr lithograph has two small inscriptions at the sides (painter and lithographer) that I could not read with confidence.
 - Counts: 15,000 people (viewer), 1,112 events, 2,777 articles. Smoke test OK.
+2026-11-13 (Michiko): portrait of William Still added to Winch 'Still, William' (she states the photograph is public domain; no source given yet).
