@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, April - June 1865
+# Extraction brief: Christian Recorder, July - September 1865
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,28 +7,33 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/19f25cf0-1195-5d2b-a392-127587d9c568/scratchpad/cr92)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/19f25cf0-1195-5d2b-a392-127587d9c568/scratchpad/cr93)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
   higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt
   ('frame:slug:page'). Pages not in jobs.txt DO NOT EXIST in our copy. Cite by DATE and the issue page (1-4).
-  April-June 1865 (Vol. V, Nos. 13-25): Apr 1 (frames 1-4), Apr 8 (5-8), Apr 15 (9-12), Apr 22 (13-16; printed with heavy black
-  mourning rules for Lincoln), Apr 29 (17-20), May 6 (21-24), May 13 MISSING (card at frame 25: 'No. 19 missing'), May 20 (26-29),
-  May 27 (30-33), Jun 3 (34-37), Jun 10 (38-41), Jun 17 (43-44 = pp3-4 only; card at frame 42: 'No. 24 first sheet missing'),
-  Jun 24 (45-48). Crops: render from the PDF with
+  July-September 1865 (Vol. V, Nos. 26-39): Jul 1 (frames 1-4), Jul 8 (5-8), Jul 15 (9-12), Jul 22 (13-16), Jul 29 (17-20),
+  Aug 5 (21-24), Aug 12 (25-28), Aug 19 (29-32), Aug 26 (33-36), Sep 2 (37-40), Sep 9 (41-44), Sep 16 (frames 46-47 = pp3-4 only;
+  card at frame 45: 'No. 37 first sheet missing'), Sep 23 (48 = p1, 49 = p2, 50 = p3, 52 = p4; frame 51 is a second exposure of
+  p3), Sep 30 (53-56). Crops: render from the PDF with
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
   then Read the png. Write your crops into a folder of your own, `S/crops_<your-label>/`. A single column is ~1/7 of the width;
-  crops of ~1/7 width x ~1/5 height read comfortably. This file's scans are 200ppi native with very large pages: crop.py renders
-  at DPI=400 by default; use `DPI=600 python3 S/crop.py ...` for rechecks. NEVER go above DPI=600 on this file (it exhausts the
-  machine's memory) and run ONE crop at a time. Use the 2000px JPEG (also cropped, e.g. with PIL) to locate things first.
+  crops of ~1/7 width x ~1/5 height read comfortably. This file's scans are 600 ppi with small pages: crop.py renders at
+  DPI=1000 by default; use `DPI=1200 python3 S/crop.py ...` for rechecks. Run ONE crop at a time (two other readers share the
+  machine). Use the 2000px JPEG (also cropped, e.g. with PIL) to locate things first.
 - OCR and image of a page should be used together: OCR to find what is there, the image to read
   names, addresses and numbers exactly.
-- READ PAGES 1 AND 4 OF EVERY ISSUE IN FULL, column by column, from image crops (earlier runs missed items there: page 1 carries
-  letters and church news, page 4 the ads and notices). Pages 2 and 3 carry the editorials, local news, marriages and deaths.
+- READ PAGES 1 AND 4 OF EVERY ISSUE IN FULL FROM IMAGE CROPS, column by column (7 columns, about five slices each), on your
+  FIRST pass. Do NOT triage these pages from the OCR text or from headings. In the last run all three readers triaged them and
+  had to be sent back; a report that says pages 1 and 4 were not read in full will be sent back again. Page 1 carries letters
+  and church news, page 4 the ads and notices. Read the local, notice, marriage, death and advertisement columns of pages 2 and 3
+  from crops as well, and the foot of page 3. This is slow work: expect well over an hour, and take the time.
 - SAVE YOUR JSON AFTER EACH ISSUE (rewrite the whole file each time), so nothing is lost if you are interrupted.
+- In your report, list exactly which pages and columns you read from the image and which you could not read. Never write in
+  the JSON that a page was read in full unless every strip was viewed.
 
 ## Extraction rule (the owner's, for this paper)
 Philadelphia-focused deep read:
@@ -100,38 +105,33 @@ officers; the Philadelphia Grand Lodge installation roster. From Apr-Jun 1862 (R
 Getz, Dean, Metz, Elkinton, Rothermel (coal), insurance, railroads, patent medicines. NEW Black-owned ads or changed notices
 SHOULD be entered. Quarterly-meeting schedules: one short article per notice, link only named preachers/officers.
 
-## Already captured in Runs #89-#91 (July 1864 - March 1865) -- do NOT re-enter unless changed
-Hannibal Hotel (620 Pine); John Oliver's Intelligence Office (1113 Pine); Mrs. S. Shorter Hawkins's fall goods; Olive Branch (814
-Lombard); Mrs. C. E. Harding (713 Lombard); Thos. J. Bowers's coal yard (631 / 634 Lombard); N. L. Durham, cupping and leeching
-(911 1/2 Christian); Charles W. Brister's Continental Restaurant (717 Lombard); Mrs. Highgates, shrouding (1026 Barley); the
-Sansom Street Hall and Masonic Hall mass meetings on the cars; the Syracuse delegates; the Pennsylvania State Equal Rights League
-constitution, officers and the Harrisburg convention (Feb 8-10, 1865); the SCSA lecture course; the 1865 Grand Lodge rosters;
-the Union League Association officers; the Charleston relief meeting; the Lebanon Cemetery notices. Everything through the
-March 25, 1865 issue is in the database.
+## Already captured in Run #92 (April - June 1865) -- do NOT re-enter unless changed
+T. J. Bowers, Coal and Kindling Wood Depot (634 Lombard); R. H. Gleaves, Private Boarding (633 Pine); Georgina Gleaves, trimmings
+(633 Pine); Mrs. H. T. O'Donnell, boarding house (Lombard); Mrs. S. Shorter Hawkins, spring and summer goods (615 Lombard);
+J. J. Lyons, ice cream saloon (1023 Lombard); W. R. DeCordover's Periodical Depot (419 S. Seventh); James C. Clark, M. D. (618
+Pine); Mrs. Ann E. Foster, boarding (1733 Addison); James J. Spelman, military instruction (1031 South); Mrs. M. C. Gibbons's
+Intelligence Office (1113 Pine); Mrs. Mary Stroder, boarding (1132 Lombard); the April 14 procession and flag presentation to
+the 24th U.S.C.T.; the 1865 Philadelphia Conference appointments; the Good Samaritans District Grand Lodge roster; Unity Lodge
+No. 711's anniversary. Everything through the June 24, 1865 issue is in the database. A repeated ad is noted once; an ad whose
+address, proprietor or wording has CHANGED is new.
 
-## Watch for in this quarter (April - June 1865)
-- The FALL OF RICHMOND (Apr 3) and LEE'S SURRENDER (Apr 9): Philadelphia celebrations, illuminations, sermons, the U.S. Colored
-  Troops entering Richmond, letters from Philadelphians in the regiments and from chaplains.
-- LINCOLN'S ASSASSINATION (Apr 14-15), the mourning issue of Apr 22, and the FUNERAL IN PHILADELPHIA (the body lay in state at
-  Independence Hall, Apr 22-24): who among the colored people marched or was refused a place, which churches, lodges and
-  societies took part, resolutions of meetings (name every officer and committee member), memorial sermons at Bethel, Union,
-  Wesley, St. Thomas', the Presbyterian and Baptist churches. Capture each meeting as its own event with its roster.
-- STREETCAR exclusion: every ejection, petition, meeting, letter, editorial, court case, the car companies' votes and any
-  legislative action (owner tracks a 'Streetcar discrimination' topic; mob or police violence on or around the cars counts too).
-- The PHILADELPHIA ANNUAL CONFERENCE of May 1865 and its APPOINTMENTS (enter the appointments whole, as printed), ordinations,
-  resolutions; the A.M.E. mission to the South (Charleston, Savannah, Wilmington, Norfolk), missionaries leaving Philadelphia.
-- The Pennsylvania State EQUAL RIGHTS LEAGUE and its Philadelphia auxiliaries, the suffrage question, celebrations and
-  processions; regiments returning or still at Camp William Penn; deaths of soldiers and chaplains.
-- Freedpeople relief, fairs, Sabbath-school and church anniversaries, ICY examination and commencement (class lists whole),
-  Banneker Institute, lodge and society elections (officer lists whole), the Book Concern.
-- SOCIETY MEETINGS (owner, 2026-11-13: 'look out for society meetings'): every meeting, called meeting, anniversary, election,
-  installation or standing notice of a beneficial, benevolent, literary, temperance, relief or burial society, lodge, tabernacle,
-  union, association or church society (Daughters of Cornish, Woodlin, Nazrey, Dorcas, Love and Charity, Good Samaritans, Odd
-  Fellows, Masons, Banneker Institute, Library Company, Ladies' Union Association, Soldiers' Relief, Publication Society, Sabbath
-  school societies, and any you have not seen before). Enter each as its own EVENT with the society's full name as printed, the
-  date, the meeting place with its address, and every officer, committee member and speaker with the role as printed. A
-  standing notice that only repeats is noted once; a notice with a new date, place or officer is new. Small notices on page 4
-  and at the foot of page 3 are easy to miss: check them in every issue.
+## Watch for in this quarter (July - September 1865)
+- PARADES AND PROCESSIONS (owner tracks this as a topic): the Fourth of July 1865, the First of August (West India
+  emancipation) celebrations, Sabbath-school and society processions, excursions and picnics, receptions of returning
+  regiments, lodge turnouts. For each: date, route or place, the marshals, the societies, lodges, schools and bands that
+  marched, speakers, and any interference by police or mobs.
+- STREETCAR exclusion (topic): every ejection, petition, meeting, letter, editorial, court case, car company vote.
+- SOCIETY MEETINGS (owner's instruction): every meeting, anniversary, election, installation or notice of a beneficial,
+  literary, temperance, relief or burial society, lodge, association or church society, each as its own EVENT with the full
+  name as printed, date, place with address, and every officer, committee member and speaker.
+- The Pennsylvania State EQUAL RIGHTS LEAGUE (its annual meeting at Harrisburg in August 1865) and the Philadelphia
+  auxiliaries; the National Equal Rights League; the suffrage question; delegates elected, with names.
+- RETURNING colored regiments and their receptions; Camp William Penn; deaths of soldiers and chaplains; bounty and pension
+  notices naming Philadelphians.
+- Camp meetings, quarterly meetings, church dedications and corner stones in and near Philadelphia; the A.M.E. mission to the
+  South and missionaries leaving Philadelphia; the Book Concern.
+- Institute for Colored Youth, the public colored schools (teachers named), Banneker Institute, the Lincoln monument funds,
+  freedpeople relief, fairs and festivals.
 - NEW or changed Black-owned ads; marriages and deaths of Philadelphians, with officiating ministers.
 
 ## Known identities (record names as printed; mention the identification in `notes`)
