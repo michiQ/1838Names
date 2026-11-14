@@ -7,7 +7,13 @@ DB = "/tmp/black_metropolis.db"
 OCR_DIR = "/tmp/repo/ocr_text"
 
 PAPER = {"CR": "Christian Recorder", "NS": "The North Star", "CA": "Colored American", "PF": "Pennsylvania Freeman", "FJ": "Freedom's Journal", "PP": "Pencil Pusher (Philadelphia Tribune)",
+         "CAM": "Colored American Magazine (Boston, 1903)",  # NOT the 1837-41 newspaper (code CA). Added 2026-11-13.
          "EL": "Before Black Bohemia: Edmonia Lewis in the Post-Bellum, Pre-Harlem Period (dissertation, Melissa M. Benbow Flowers, Univ. of Delaware, 2024)"}
+
+# Sources that are read and entered by hand and must NOT go through the automatic name matcher.
+# CAM (Colored American Magazine, 1903): a 1903 text; the matcher tied "Camp William Penn" to William Penn and
+# 1903 members to 1838 census namesakes (2026-11-13).
+NO_AUTOMATCH = {"CAM"}
 
 DATE_OVERRIDE = {
   "PP_901": "1912-08-17", "PP_902": "1912-09-21", "PP_903": "1912-11-09", "PP_904": "1912-12-14", "PP_905": "1913-02-01", "PP_906": "1913-04-26", "PP_907": "1913-05-10", "PP_908": "1913-05-17", "PP_909": "1913-05-24", "PP_910": "1913-05-31", "PP_911": "1913-06-07", "PP_912": "1913-06-14", "PP_913": "1913-06-21", "PP_914": "1913-06-28", "PP_915": "1913-07-05", "PP_916": "1913-07-19", "PP_917": "1913-08-09", "PP_918": "1913-08-23", "PP_919": "1913-08-30", "PP_920": "1913-09-06", "PP_921": "1913-09-13", "PP_922": "1913-09-20", "PP_923": "1913-11-22", "PP_924": "1913-12-20", "PP_925": "1914-04-18", "PP_926": "1914-06-27", "PP_927": "1914-09-05", "PP_928": "1914-10-10", "PP_929": "1914-10-17", "PP_930": "1914-11-07",
@@ -75,6 +81,8 @@ def main():
         except sqlite3.OperationalError: pass
     con.execute("DELETE FROM appearances")
     con.execute("DELETE FROM issues")
+    for _p in PAPER.values():   # a paper added to PAPER gets its newspapers row here (2026-11-13)
+        con.execute("INSERT OR IGNORE INTO newspapers(name) VALUES(?)", (_p,))
     con.execute("CREATE TABLE IF NOT EXISTS newspaper_orgs(person_id INT, org TEXT, issue TEXT, page INT)")
     con.execute("DELETE FROM newspaper_orgs")
     people = con.execute("SELECT id, canonical_name FROM people WHERE source NOT IN ('coppin','storymap','1811directory','1838register')").fetchall()  # ICY/Coppin students are a later generation -- do NOT name-match them to 1830s-40s papers (false cross-generation matches); their links come only from the ICY org + confirmed merges
@@ -121,6 +129,7 @@ def main():
                               (np_id, DATE_OVERRIDE.get(slug, date), slug))
             issue_ids[slug] = con.execute("SELECT id FROM issues WHERE filename=?", (slug,)).fetchone()[0]
         iid = issue_ids[slug]
+        if code in NO_AUTOMATCH: continue   # issue is registered; every name comes from the hand extraction
         text = open(path, encoding="utf-8", errors="replace").read()
         clean = re.sub(r"\s+", " ", text)
         toks = [(m.group(0), m.start()) for m in re.finditer(r"[A-Za-z][A-Za-z''\-]*", clean)]

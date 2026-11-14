@@ -371,3 +371,12 @@ review, but build_viewer.py strips them from everything the site displays. Do no
   1100px wide) into `ads_hires/`. `build_ads.py` uses that file when it exists, else crops the 2000px page JPEG.
   Run it after adding ads for a new quarter (jobs.txt is the same frame:slug:page map used for OCR), and again
   after changing a box. The film scans are about 3900px wide per page, so that is the ceiling.
+
+## Colored American Magazine, 1903: the American Negro Historical Society article (added 2026-11-13)
+
+- Source: H. Harrison Wayman, "The American Negro Historical Society of Philadelphia, and Its Officers," *The Colored American Magazine* (Boston), vol. 6 no. 4, February 1903, pp. 287-294. Michiko's `Colored American.pdf` (Drive id 1Pnz1CJDEgXb7M7ObNumxGwZDLMeufgZ4, in Newspapers/Christian Recorder) is an 8-page excerpt of the scan at https://coloredamerican.org/?page_id=773 (The Digital Colored American Magazine, CC BY-NC 4.0; Beinecke copy). 400 ppi colour page images.
+- This is NOT the *Colored American* newspaper of 1837-41. Paper code `CAM`, issue slug `CAM_1903-02`, and page numbers are the printed ones (287-294), so files are `pages/CAM_1903-02_p287.jpg` and so on.
+- `ocr_text/CAM_1903-02_p*.txt` is a hand-corrected transcription in reading order (the top of p. 287, the end of another piece, is left out). `CAM` is in `NO_AUTOMATCH` in `match_names.py`: the issue is registered but the automatic name matcher is skipped, because a 1903 text matched 1838 namesakes (and "Camp William Penn" matched William Penn). Every link comes from `pipeline/extractions_wayman1903.json`.
+- Entries: one article; one event for the Society's officers and roll; six "Sketch and portrait of ..." events, one per officer. The first part of each sketch description ends with `Portrait: clippings/CAM_1903-02_p<page>_<name>-portrait.jpg`, so the portrait link shows on the person's card. `event_orgs.json` files the roll under "American Negro Historical Society" and the six sketches under no organization.
+- Portrait crops were cut from the page scans with the captions (p. 291 turned upright). `match_names.py` now inserts a `newspapers` row for every name in `PAPER`, so a new paper code needs no manual database step.
+
