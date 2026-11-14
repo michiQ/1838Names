@@ -113,8 +113,23 @@
         "name": "Henrietta Duterte",
         "source": "blog"
       },
-      "note": "Brother and sister: Thomas J. Bowers, the singer known as 'the Colored Mario', and Henrietta Duterte (born Bowers). In 1865 he advertised a coal and kindling wood depot at 634 Lombard Street, the address of her undertaking business (Christian Recorder, April 22, 1865).",
-      "_why": "Michiko 2026-11-14: 'TJ Bowers is Henrietta Duterte's brother.' The Wikipedia article on Thomas Bowers that she cited names his mother as Henrietta and his siblings as John C. and Sarah Sedgwick Bowers; it does not itself name Henrietta Duterte."
+      "note": "Brother and sister: Thomas J. Bowers, the singer known as 'the Colored Mario', and Henrietta Duterte (born Bowers, named for their mother). John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). In 1865 he advertised a coal and kindling wood depot at 634 Lombard Street, the address of her undertaking business (Christian Recorder, April 22, 1865).",
+      "_why": "Michiko 2026-11-14: 'TJ Bowers is Henrietta Duterte's brother'; she then supplied the will of John C. Bowers, clothier, which names both as his siblings."
+    },
+    {
+      "a": 305,
+      "b": {
+        "name": "Henrietta Duterte",
+        "source": "blog"
+      },
+      "note": "Brother and sister: John C. Bowers, clothier, and Henrietta S. Duterte. John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). He left his three sisters a mortgage of $2,400 given by their mother on the house No. 838 Lombard Street.",
+      "_why": "Michiko 2026-11-14, from the will of John C. Bowers."
+    },
+    {
+      "a": 305,
+      "b": 312,
+      "note": "Brothers: John C. Bowers, clothier, and Thomas J. Bowers. John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). He left Thomas his gold watch and seal ring, 'a present from my sister Ellen Seth in San Francisco California now deceased'.",
+      "_why": "Michiko 2026-11-14, from the will of John C. Bowers."
     }
   ]
 }
