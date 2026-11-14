@@ -1096,6 +1096,15 @@
    "new_name": "James Wilson (father of Dr. James H. Wilson)",
    "new_source": "newspaper",
    "note": "Father of Dr. James H. Wilson, a leading member of Bethel, dead before 1865; not the West Chester groom of 1864. Run #93 link review, 2026-11-14 (CR Jul-Sep 1865)."
+  },
+  {
+   "from_name": "George, Daniel",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-07%",
+   "new_name": "Daniel George (1865)",
+   "new_source": "newspaper",
+   "note": "Michiko, 2026-11-14: Daniel George, vice president of the SCSA suffrage meeting of July 17, 1865, is NOT Winch's Daniel George (Secretary, Angolian Society, 1819)."
   }
  ],
  "renames": [
