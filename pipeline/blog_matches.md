@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 198 linked to existing people, 229 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 199 linked to existing people, 228 created as new blog people, 52 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -158,7 +158,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Jane Eleanor Datcher
 - Jane Vasham
 - Jean Jacques Dessalines
-- Jerena Lee
 - Jessie Redmon Fauset
 - Jill Scott
 - Joe Frazier

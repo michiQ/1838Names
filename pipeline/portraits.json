@@ -75,14 +75,6 @@
   },
   {
    "id": 361000,
-   "name": "J. P. Campbell",
-   "thumb": "portraits/Cheyney_Dorsey_j-p-campbell.jpg",
-   "full": "clippings/Cheyney_Dorsey_Collection_Bishop_J_P_Campbell.jpg",
-   "caption": "Bishop J. P. Campbell",
-   "credit": "Cheyney University, Dorsey Collection. Clipping marked 'Weekly Gazette, Mar. 24, 1883, Phila.'"
-  },
-  {
-   "id": 361445,
    "name": "Jabez P. Campbell",
    "thumb": "portraits/Cheyney_Dorsey_j-p-campbell.jpg",
    "full": "clippings/Cheyney_Dorsey_Collection_Bishop_J_P_Campbell.jpg",
@@ -106,14 +98,6 @@
    "credit": "Public domain image, from the 1838 Black Metropolis walking tour booklet."
   },
   {
-   "id": 360034,
-   "name": "Jerena Lee",
-   "thumb": "portraits/1838BM_booklet_jarena-lee.jpg",
-   "full": "clippings/1838BM_booklet_Jarena_Lee.jpg",
-   "caption": "Jarena Lee",
-   "credit": "Public domain image, from the 1838 Black Metropolis walking tour booklet."
-  },
-  {
    "id": 359991,
    "name": "Henrietta Duterte",
    "thumb": "portraits/1838BM_booklet_henrietta-duterte.jpg",
@@ -130,20 +114,68 @@
    "credit": "Public domain image, from the 1838 Black Metropolis walking tour booklet."
   },
   {
-   "id": 365988,
-   "name": "F. E. W. Harper",
-   "thumb": "portraits/1838BM_booklet_frances-e-w-harper.jpg",
-   "full": "clippings/1838BM_booklet_Frances_Ellen_Watkins_Harper.jpg",
-   "caption": "Frances Ellen Watkins Harper",
-   "credit": "Public domain image, from the 1838 Black Metropolis walking tour booklet."
-  },
-  {
    "id": 2497,
    "name": "Still, William",
    "thumb": "portraits/william-still.jpg",
    "full": "clippings/William_Still_portrait.jpg",
    "caption": "William Still",
    "credit": "Public domain photograph."
+  },
+  {
+   "id": 555,
+   "name": "Catto, Octavius V.",
+   "thumb": "portraits/octavius-v-catto.jpg",
+   "full": "clippings/Octavius_V_Catto_portrait.jpg",
+   "caption": "Octavius V. Catto",
+   "credit": "Public domain image."
+  },
+  {
+   "id": 2773,
+   "name": "White, Jacob",
+   "thumb": "portraits/jacob-c-white-sr.jpg",
+   "full": "clippings/Jacob_C_White_Sr_portrait.jpg",
+   "caption": "Jacob C. White Sr.",
+   "credit": "Public domain image."
+  },
+  {
+   "id": 59208,
+   "name": "Jacob C. White Sr.",
+   "thumb": "portraits/jacob-c-white-sr.jpg",
+   "full": "clippings/Jacob_C_White_Sr_portrait.jpg",
+   "caption": "Jacob C. White Sr.",
+   "credit": "Public domain image."
+  },
+  {
+   "id": 363813,
+   "name": "J. C. White, Sr.",
+   "thumb": "portraits/jacob-c-white-sr.jpg",
+   "full": "clippings/Jacob_C_White_Sr_portrait.jpg",
+   "caption": "Jacob C. White Sr.",
+   "credit": "Public domain image."
+  },
+  {
+   "id": 3037,
+   "name": "Jacob C. White Jr.",
+   "thumb": "portraits/jacob-c-white-jr.jpg",
+   "full": "clippings/Jacob_C_White_Jr_portrait.jpg",
+   "caption": "Jacob C. White Jr.",
+   "credit": "Public domain image."
+  },
+  {
+   "id": 365655,
+   "name": "J. C. White, Jr.",
+   "thumb": "portraits/jacob-c-white-jr.jpg",
+   "full": "clippings/Jacob_C_White_Jr_portrait.jpg",
+   "caption": "Jacob C. White Jr.",
+   "credit": "Public domain image."
+  },
+  {
+   "id": 31159,
+   "name": "Lewis, Edmonia",
+   "thumb": "portraits/edmonia-lewis.jpg",
+   "full": "clippings/Edmonia_Lewis_portrait.jpg",
+   "caption": "Edmonia Lewis",
+   "credit": "Public domain image."
   }
  ]
 }

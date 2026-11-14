@@ -1146,9 +1146,13 @@
    {
     "name": "Francis E. Watkins Harper",
     "source": "newspaper"
+   },
+   {
+    "name": "F. E. W. Harper",
+    "source": "newspaper"
    }
   ],
-  "note": "Frances Ellen Watkins Harper -- poet/abolitionist; her 'Poems on Miscellaneous Subjects' reviewed in the Christian Recorder (No.20, 1854). Folds the blog-source duplicate into the ugrr record. Confirmed by Michiko 2026-08-19 (Run #72). Newspaper 'Francis E. Watkins Harper' (CR Sept 27, 1862, letter on the war and the colonization scheme) folded in: Michiko approved 2026-11-03 (Run #81 merge candidate 3)."
+  "note": "Frances Ellen Watkins Harper -- poet/abolitionist; her 'Poems on Miscellaneous Subjects' reviewed in the Christian Recorder (No.20, 1854). Folds the blog-source duplicate into the ugrr record. Confirmed by Michiko 2026-08-19 (Run #72). Newspaper 'Francis E. Watkins Harper' (CR Sept 27, 1862, letter on the war and the colonization scheme) folded in: Michiko approved 2026-11-03 (Run #81 merge candidate 3). Newspaper 'F. E. W. Harper' (Christian Recorder 1865 lectures) folded in: Michiko 2026-11-13."
  },
  {
   "keep": "Bundy, Mrs.",
@@ -1905,5 +1909,48 @@
    }
   ],
   "note": "Michiko 2026-11-13: the four Shadrack Bassett records and Julie Winch's entry are one man, Rev. Shadrack Bassett of Bethel (d. Feb. 28, 1861, per the Christian Recorder obituary). The Winch record is created by split_bassett.py, which lifts his notes out of Ebenezer D. Bassett's record."
+ },
+ {
+  "keep": {
+   "name": "Jabez P. Campbell",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "J. P. Campbell",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-13: 'J. P. Campbell' and 'Jabez P. Campbell' are one man, Bishop Jabez Pitt Campbell of the A.M.E. Church. Not merged: Winch's James, Joseph S., Joshua B. and Joshua E. Campbell, the census Joshua Campbell, the storymap 'Judge Campbell'."
+ },
+ {
+  "keep": {
+   "name": "Lee, Jarena",
+   "source": "winch"
+  },
+  "aliases": [
+   {
+    "name": "Jerena Lee",
+    "source": "blog"
+   }
+  ],
+  "note": "Michiko 2026-11-13: the blog record 'Jerena Lee' is Winch's Jarena Lee. Not merged: census 'LEE, JEREANNA' (1838) and 'Lee, Jarana' (1847)."
+ },
+ {
+  "keep": {
+   "name": "Jeremiah Asher",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "J. Asher",
+    "source": "newspaper"
+   },
+   {
+    "name": "Mr. Asher",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-13: 'J. Asher' and 'Rev. Mr. Asher' in the Christian Recorder are Rev. Jeremiah Asher of Shiloh Baptist. For review: the Feb. 18, 1865 Lebanon Cemetery notice linked to 'J. Asher' as author falls while he was chaplain of the 6th USCT."
  }
 ]
