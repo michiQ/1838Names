@@ -1143,6 +1143,114 @@
     0.497
    ],
    "check": "Private Boarding at 633 Pine Street ... R. H. GLEAVES, Proprietor, April 22 (placed 2026-11-14)"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "headline": "A Card. Mrs. H. T. O'Donnell, boarding house",
+   "box": [
+    0.562,
+    0.045,
+    0.702,
+    0.126
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "headline": "Mrs. S. Shorter Hawkins: Spring & Summer Goods",
+   "box": [
+    0.702,
+    0.29,
+    0.846,
+    0.451
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "headline": "Ice Cream Saloon: J. J. Lyons, No. 1023 Lombard Street",
+   "box": [
+    0.705,
+    0.635,
+    0.85,
+    0.68
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "headline": "W. R. DeCordover's Periodical Depot, 419 South Seventh Street",
+   "box": [
+    0.841,
+    0.828,
+    0.981,
+    0.89
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "headline": "James C. Clark, M. D. (Eclectic), No. 618 Pine Street",
+   "box": [
+    0.841,
+    0.893,
+    0.981,
+    0.967
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 3,
+   "headline": "To The Travelling Public. No. 1733 Addison Street, Philadelphia. Boarding and Lodging House",
+   "box": [
+    0.428,
+    0.292,
+    0.572,
+    0.409
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 4,
+   "headline": "Trimmings and Fancy Goods. 633 Pine Street, Philada. Georgina Gleaves",
+   "box": [
+    0.565,
+    0.512,
+    0.705,
+    0.612
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 4,
+   "headline": "Military Instruction given to companies, associations, &c.",
+   "box": [
+    0.84,
+    0.848,
+    0.975,
+    0.893
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-06-03",
+   "page": 4,
+   "headline": "Help Wanted. Agency for the employment of help, No. 1113 Pine Street",
+   "box": [
+    0.703,
+    0.918,
+    0.84,
+    0.976
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
   }
  ]
 }

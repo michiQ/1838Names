@@ -1273,12 +1273,12 @@
    ]
   },
   {
-   "issue": "CR_1865-05-20",
+   "issue": "CR_1865-06-03",
    "page": 3,
    "headline": "Ice Cream Saloon: J. J. Lyons, No. 1023 Lombard Street",
    "author": "",
-   "type": "notice",
-   "summary": "Ice Cream Saloon. J. J. Lyons, No. 1023 Lombard Street, Philada., invites all lovers of Ice-Cream and other delicacies to give him a call.",
+   "type": "advertisement",
+   "summary": "Ice Cream Saloon. J. J. Lyons, No. 1023 Lombard Street, Philada., invites all lovers of Ice-Cream and other delicacies to give him a call. (First seen in the issue of 1865-05-20; cited here from the June 3, 1865 printing.)",
    "people": [
     [
      "J. J. Lyons",
@@ -1547,12 +1547,12 @@
    ]
   },
   {
-   "issue": "CR_1865-05-06",
+   "issue": "CR_1865-06-03",
    "page": 3,
    "headline": "W. R. DeCordover's Periodical Depot, 419 South Seventh Street",
    "author": "",
-   "type": "notice",
-   "summary": "W. R. DeCordover's Periodical Depot, 419 South Seventh Street, Philada. Daily and Weekly papers always on hand. New York Ledger, Anglo-African, Harper's Weekly, &c., for sale. Also, Stationery.",
+   "type": "advertisement",
+   "summary": "W. R. DeCordover's Periodical Depot, 419 South Seventh Street, Philada. Daily and Weekly papers always on hand. New York Ledger, Anglo-African, Harper's Weekly, &c., for sale. Also, Stationery. (First seen in the issue of 1865-05-06; cited here from the June 3, 1865 printing.)",
    "people": [
     [
      "W. R. DeCordover",
@@ -1561,13 +1561,18 @@
    ]
   },
   {
-   "issue": "CR_1865-05-06",
+   "issue": "CR_1865-06-03",
    "page": 3,
-   "headline": "Dr. Clark, M. D. (Eclectic), No. 618 Pine Street",
+   "headline": "James C. Clark, M. D. (Eclectic), No. 618 Pine Street",
    "author": "",
-   "type": "notice",
-   "summary": "James C. Clark, M. D. (Eclectic.) No. 618 Pine Street, Philadelphia, Pennsylv'a. Office hours: from 7 to 9 A. M., from 12 to 2 P. M., from 6 to 9 P. M. Also, particular attention directed to all classes of Ulcers, recent or chronic. Treatment and cure, without the use of Mercury or any other injurious drug, warranted. The card is dated January 7. (The first initials were read 'James C.' on the May 6 printing and 'James O.' on the June 3 printing; not linked.)",
-   "people": []
+   "type": "advertisement",
+   "summary": "James C. Clark, M. D. (Eclectic.) No. 618 Pine Street, Philadelphia, Pennsylv'a. Office hours: from 7 to 9 A. M., from 12 to 2 P. M., from 6 to 9 P. M. Also, particular attention directed to all classes of Ulcers, recent or chronic. Treatment and cure, without the use of Mercury or any other injurious drug, warranted. The card is dated January 7. (The June 3 printing reads 'James C. Clark' clearly.) (First seen in the issue of 1865-05-06; cited here from the June 3, 1865 printing.)",
+   "people": [
+    [
+     "James C. Clark",
+     "physician (Eclectic), No. 618 Pine Street"
+    ]
+   ]
   },
   {
    "issue": "CR_1865-06-03",
@@ -1831,7 +1836,7 @@
    "page": 3,
    "headline": "To The Travelling Public. No. 1733 Addison Street, Philadelphia. Boarding and Lodging House",
    "author": "",
-   "type": "notice",
+   "type": "advertisement",
    "summary": "I most respectfully inform my friends and the public generally, that I have taken the large and commodious dwelling, No. 1733 Addison Street, Philadelphia, and have opened it as a first-class Boarding and Lodging House. I beg leave to refer to Mr. James W. Brown, Philadelphia. Mrs. Ann E. Foster. N. B. Hot and Cold Baths. Terms reasonable.",
    "people": [
     [
@@ -1849,8 +1854,8 @@
    "page": 3,
    "headline": "A Card. Mrs. H. T. O'Donnell, boarding house",
    "author": "",
-   "type": "notice",
-   "summary": "Mrs. H. T. O'Donnell, formerly of No. 740 South St., Philada., has removed to No. 913 [VERIFY number] Lombard Street, and has opened a boarding house for the accommodation of Ladies and Gentlemen who may pass through Philadelphia, and also those who may wish to spend some time in our city. May 1, 6mo.",
+   "type": "advertisement",
+   "summary": "Mrs. H. T. O'Donnell, formerly of No. 740 South St., Philada., has removed to No. 913 Lombard Street, and has opened a boarding house for the accommodation of Ladies and Gentlemen who may pass through Philadelphia, and also those who may wish to spend some time in our city. May 1, 6mo.",
    "people": [
     [
      "H. T. O'Donnell",
@@ -1863,7 +1868,7 @@
    "page": 3,
    "headline": "Mrs. S. Shorter Hawkins: Spring & Summer Goods",
    "author": "",
-   "type": "notice",
+   "type": "advertisement",
    "summary": "Mrs. S. Shorter Hawkins would respectfully call the attention of her friends and the public generally to a well selected stock of Spring & Summer Goods, which will be sold at the lowest cash prices. Balmorals and hoop-skirts. Call and see at the old stand, S. Shorter Hawkins, 615 Lombard Street, Philada.",
    "people": [
     [
@@ -1877,7 +1882,7 @@
    "page": 4,
    "headline": "Trimmings and Fancy Goods. 633 Pine Street, Philada. Georgina Gleaves",
    "author": "",
-   "type": "notice",
+   "type": "advertisement",
    "summary": "Georgina Gleaves has just opened a large assortment of Ladies' Trimmings, Hosiery, Gloves, Flannels, Balmorals and Hoop skirts. Gentlemen's Furnishing Goods. Combs, brushes, soaps, choice perfumery and fancy articles. A general assortment of Stationery. Ladies' Dresses and Under clothing made to order.",
    "people": [
     [
@@ -1891,7 +1896,7 @@
    "page": 4,
    "headline": "Help Wanted. Agency for the employment of help, No. 1113 Pine Street",
    "author": "",
-   "type": "notice",
+   "type": "advertisement",
    "summary": "Help Wanted at Mrs. M. C. Gibbons' Agency for the employment of help, at No. 1113 Pine Street, Philada. Also operating on the Sewing Machine, together with fashionable dressmaking. Sept 24, 6m.",
    "people": [
     [
@@ -1905,7 +1910,7 @@
    "page": 4,
    "headline": "Military Instruction given to companies, associations, &c.",
    "author": "",
-   "type": "notice",
+   "type": "advertisement",
    "summary": "Military Instruction given to Companies, Associations, &c. Terms Moderate. Address James J. Spelman, 1031 South Street, Philadelphia.",
    "people": [
     [
