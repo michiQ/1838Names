@@ -112,7 +112,7 @@ J. J. Lyons, ice cream saloon (1023 Lombard); W. R. DeCordover's Periodical Depo
 Pine); Mrs. Ann E. Foster, boarding (1733 Addison); James J. Spelman, military instruction (1031 South); Mrs. M. C. Gibbons's
 Intelligence Office (1113 Pine); Mrs. Mary Stroder, boarding (1132 Lombard); the April 14 procession and flag presentation to
 the 24th U.S.C.T.; the 1865 Philadelphia Conference appointments; the Good Samaritans District Grand Lodge roster; Unity Lodge
-No. 711's anniversary. Everything through the June 24, 1865 issue is in the database. A repeated ad is noted once; an ad whose
+No. 711's anniversary. Standing ads entered in 1864-65 and still running: Hannibal Hotel (620 Pine), Olive Branch boarding house (814 Lombard), Mrs. C. E. Harding (713 Lombard), N. L. Durham, cupping and leeching (911 1/2 Christian), Charles W. Brister's Continental Restaurant (717 Lombard), Mrs. Maria Highgates, shrouding (1026 Barley), Joseph C. and Sarah H. Bustill, wig makers (403 S. Sixth), Mrs. H. S. Duterte, undertaker, Mrs. M. Bennett, herb doctress (S. Seventh below Pine), Wm. H. Longfellow, surgeon dentist (Rodman St.), the Lebanon Cemetery notice. Everything through the June 24, 1865 issue is in the database. A repeated ad is noted once; an ad whose
 address, proprietor or wording has CHANGED is new.
 
 ## Watch for in this quarter (July - September 1865)
