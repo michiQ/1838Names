@@ -124,6 +124,14 @@ March 25, 1865 issue is in the database.
   processions; regiments returning or still at Camp William Penn; deaths of soldiers and chaplains.
 - Freedpeople relief, fairs, Sabbath-school and church anniversaries, ICY examination and commencement (class lists whole),
   Banneker Institute, lodge and society elections (officer lists whole), the Book Concern.
+- SOCIETY MEETINGS (owner, 2026-11-13: 'look out for society meetings'): every meeting, called meeting, anniversary, election,
+  installation or standing notice of a beneficial, benevolent, literary, temperance, relief or burial society, lodge, tabernacle,
+  union, association or church society (Daughters of Cornish, Woodlin, Nazrey, Dorcas, Love and Charity, Good Samaritans, Odd
+  Fellows, Masons, Banneker Institute, Library Company, Ladies' Union Association, Soldiers' Relief, Publication Society, Sabbath
+  school societies, and any you have not seen before). Enter each as its own EVENT with the society's full name as printed, the
+  date, the meeting place with its address, and every officer, committee member and speaker with the role as printed. A
+  standing notice that only repeats is noted once; a notice with a new date, place or officer is new. Small notices on page 4
+  and at the foot of page 3 are easy to miss: check them in every issue.
 - NEW or changed Black-owned ads; marriages and deaths of Philadelphians, with officiating ministers.
 
 ## Known identities (record names as printed; mention the identification in `notes`)
