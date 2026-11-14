@@ -1,5 +1,5 @@
 {
- "_note": "H. Harrison Wayman, 'The American Negro Historical Society of Philadelphia, and Its Officers,' The Colored American Magazine (Boston), vol. 6 no. 4, February 1903, pp. 287-294. Added 2026-11-13 at Michiko's request from 'Colored American.pdf' (Drive id 1Pnz1CJDEgXb7M7ObNumxGwZDLMeufgZ4), an 8-page excerpt of the scan at https://coloredamerican.org/?page_id=773 (site licensed CC BY-NC 4.0; copy from the James Weldon Johnson Memorial Collection, Beinecke Library, Yale). Issue slug CAM_1903-02, page numbers are the printed ones. This magazine is NOT the Colored American newspaper of 1837-41 (code CA). 'new:cam1903' keeps William Potter, George Garnett and Mary Harper apart from older namesakes; Hans Shadd and Robert Jones follow the records Bolivar's 1913 column on the Society already links to. Robert Adger the father, John Chapman, James Byrd/Bird and the other names in the sketches are text only.",
+ "_note": "H. Harrison Wayman, 'The American Negro Historical Society of Philadelphia, and Its Officers,' The Colored American Magazine (Boston), vol. 6 no. 4, February 1903, pp. 287-294. Added 2026-11-13 at Michiko's request from 'Colored American.pdf' (Drive id 1Pnz1CJDEgXb7M7ObNumxGwZDLMeufgZ4), an 8-page excerpt of the scan at https://coloredamerican.org/?page_id=773 (site licensed CC BY-NC 4.0; copy from the James Weldon Johnson Memorial Collection, Beinecke Library, Yale). Issue slug CAM_1903-02, page numbers are the printed ones. This magazine is NOT the Colored American newspaper of 1837-41 (code CA). 'new:cam1903' keeps William Potter (Michiko 2026-11-13: not the same man as Winch's) and Mary Harper apart from older namesakes. Michiko 2026-11-13: George Garnett is probably the George Garnett married in 1864 (linked by name); 'James Byrd on Sixth street' and 'Bird's School' = Winch's James Bird (id 224). Hans Shadd and Robert Jones follow the records that Bolivar's Nov. 9, 1912 column on the Society (PP_903) links to; Michiko is undecided and will read that column. Robert Adger the father, John Chapman and the other names in the sketches are text only.",
  "articles": [
   {
    "issue": "CAM_1903-02",
@@ -83,8 +83,7 @@
     ],
     [
      "George Garnett",
-     "on the roll (Mr.)",
-     "new:cam1903"
+     "on the roll (Mr.)"
     ],
     [
      "Mrs. Henry L. Phillips",
@@ -180,6 +179,11 @@
     [
      "Edward F. Harris",
      "subject of the sketch; portrait on p. 292"
+    ],
+    [
+     "James Bird",
+     "named: Harris attended 'the renowned school of James Byrd on Sixth street'",
+     224
     ]
    ]
   },
@@ -198,6 +202,11 @@
     [
      "Frank Johnson",
      "named: his band cap was in Dorsey's museum"
+    ],
+    [
+     "James Bird",
+     "named: Dorsey attended 'Bird's School'",
+     224
     ]
    ]
   }

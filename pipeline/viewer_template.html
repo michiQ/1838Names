@@ -75,6 +75,10 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 .vsplit:hover,.vsplit.on{background:rgba(212,162,78,.25)}
 #right h2{font-size:17px;color:var(--gold);font-weight:normal;margin-bottom:2px}
 #right .dates{color:var(--dim);font-style:italic;font-size:13px;margin-bottom:10px}
+.pfig{margin:2px 0 12px;display:flex;gap:12px;align-items:flex-end}
+.pfig img{display:block;width:132px;height:auto;border:1px solid var(--line);border-radius:4px;background:#e9dccb}
+.pfig figcaption{font-size:12.5px;line-height:1.35;color:var(--ink,inherit)}
+.pfig figcaption span{display:block;color:var(--dim);font-style:italic;font-size:11.5px;margin-top:2px}
 #right h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin:16px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px}
 .card{background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:9px 11px;margin-bottom:8px;font-size:13px}
 .card .src{color:var(--teal);font-size:11.5px;margin-top:4px}
@@ -682,6 +686,8 @@ function select(pid){
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', +r.dataset.id===pid));
   let h = `<h2>${esc(p.name)}</h2><div class="dates">${esc(p.dates||'')}${p.src==='winch'?' · in Winch reference':p.src==='census'?' · from census records':p.src==='1820directory'?' · from the 1820 city directory':p.src==='1811directory'?' · from the 1811 city directory':p.src==='1838register'?' · from the 1838 Register of Trades':p.src==='ugrr'?" · from William Still's Underground Railroad":p.src==='coppin'?' · Institute for Colored Youth (per F. J. Coppin)':p.src==='storymap'?' · from the 1838 Black Metropolis StoryMaps':p.src==='blog'?' · from the 1838 Black Metropolis blog':p.src==='mobstats'?' · from the 1838 Mob Attack Statistics':' · found in newspapers'}</div>`;
   if(p.aka) h += `<div class="dates" style="margin-top:-8px">also recorded as: ${esc(p.aka)}</div>`;
+  // portrait (pipeline/portraits.json, 2026-11-13): the thumbnail opens the larger crop with its printed caption
+  if(p.pic) h += `<figure class="pfig"><a href="${esc(p.pic.f)}" target="_blank" rel="noopener" title="Open the larger picture"><img src="${esc(p.pic.t)}" alt="Portrait of ${esc(p.pic.c||p.name)}" loading="lazy"></a><figcaption>${esc(p.pic.c)}${p.pic.s?`<span>${esc(p.pic.s)}</span>`:''}</figcaption></figure>`;
   if(p.orgs?.length) h += `<div class="orgchips">${p.orgs.map(o=>`<span data-o="${esc(o)}">${esc(o)}</span>`).join('')}</div>`;
   // articles authored
   const arts = (p.articles||[]).map(x=>A.get(x.a)).filter(Boolean);
@@ -1761,6 +1767,8 @@ syncFab();
   function label(h){ const f=h.split('/').pop().replace(/\.(jpe?g|png)$/i,'');
     const m=f.match(/^([A-Z]+)_(\d{4}-\d{2}-\d{2})_p(\d+)$/);
     if(m){ const P=(typeof PAPERS!=='undefined'&&PAPERS[m[1]])||m[1]; return P+', '+m[2]+', page '+m[3]; }
+    const cm=f.match(/^CAM_1903-02_p(\d+)(?:_(.+))?$/);
+    if(cm) return 'Colored American Magazine, February 1903, page '+cm[1]+(cm[2]?' (clipped from the scan)':'');
     const c=f.match(/^([A-Z]+)_(\d{4}-\d{2}-\d{2})_p(\d+)_/);
     if(c){ const CP={PI:'Philadelphia Inquirer',USG:'United States Gazette',FDP:"Frederick Douglass' Paper",PF:'Pennsylvania Freeman',FJ:"Freedom's Journal",BS:'Baltimore Sun'};
       const SRC={FDP:' (New York Heritage)',PI:' (Newspapers.com clipping)',USG:' (Newspapers.com clipping)',BS:' (Newspapers.com clipping)',PF:' (clipped from the scan)',FJ:' (clipped from the scan)'};

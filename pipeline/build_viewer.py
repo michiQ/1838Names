@@ -408,6 +408,18 @@ for o in orgs_out:
             people[pid].setdefault("orgs", []).append(o["name"])
 print("orgs (>=2 members):", len(orgs_out), "| top:", [(o['name'], len(o['members'])) for o in orgs_out[:5]])
 
+# Portraits on person cards (pipeline/portraits.json, added 2026-11-13). A wrong id or name stops the build.
+_pp = os.path.join(os.path.dirname(TPL), "portraits.json")
+if os.path.exists(_pp):
+    _root = os.path.dirname(os.path.dirname(TPL))
+    for pt in json.load(open(_pp, encoding="utf-8"))["portraits"]:
+        if pt["id"] not in people or people[pt["id"]]["name"] != pt["name"]:
+            raise SystemExit(f"portraits.json: person {pt['id']} is not '{pt['name']}' (found: {people.get(pt['id'], {}).get('name')})")
+        for k in ("thumb", "full"):
+            if not os.path.exists(os.path.join(_root, pt[k])):
+                raise SystemExit(f"portraits.json: missing file {pt[k]}")
+        people[pt["id"]]["pic"] = {"t": pt["thumb"], "f": pt["full"], "c": pt.get("caption", ""), "s": pt.get("credit", "")}
+
 # Northern Liberties tour profiles (curated biographies + page-anchored PDF citations)
 if has_table("nolibs_profiles"):
     for pid, story, cite, url in con.execute("SELECT person_id, story, cite, url FROM nolibs_profiles"):

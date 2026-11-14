@@ -1,0 +1,53 @@
+{
+ "_doc": "Portraits shown at the top of a person's card (added 2026-11-13, Michiko). Each entry: 'id' and 'name' of the person record (build_viewer.py stops if the id is gone or its name no longer matches, so a merge or re-numbering cannot silently put a face on the wrong person), 'thumb' (small image in portraits/, about 440px wide, picture only), 'full' (the larger crop with its printed caption, in clippings/; opens when the thumbnail is clicked), 'caption' and 'credit' (shown under the picture). To add a portrait: save both images, add an entry, rebuild.",
+ "portraits": [
+  {
+   "id": 5,
+   "name": "Adger, Robert M.",
+   "thumb": "portraits/CAM_1903-02_robert-m-adger.jpg",
+   "full": "clippings/CAM_1903-02_p290_robert-m-adger-portrait.jpg",
+   "caption": "Robert Mara Adger",
+   "credit": "The Colored American Magazine, February 1903, p. 290"
+  },
+  {
+   "id": 14243,
+   "name": "Theophilus J. Minton",
+   "thumb": "portraits/CAM_1903-02_theophilus-j-minton.jpg",
+   "full": "clippings/CAM_1903-02_p291_theophilus-j-minton-portrait.jpg",
+   "caption": "Theophilus J. Minton",
+   "credit": "The Colored American Magazine, February 1903, p. 291"
+  },
+  {
+   "id": 366457,
+   "name": "Henry L. Phillips",
+   "thumb": "portraits/CAM_1903-02_henry-l-phillips.jpg",
+   "full": "clippings/CAM_1903-02_p291_henry-l-phillips-portrait.jpg",
+   "caption": "Rev. Henry L. Phillips",
+   "credit": "The Colored American Magazine, February 1903, p. 291"
+  },
+  {
+   "id": 366458,
+   "name": "Thomas H. Ringgold",
+   "thumb": "portraits/CAM_1903-02_thomas-h-ringgold.jpg",
+   "full": "clippings/CAM_1903-02_p294_thomas-h-ringgold-portrait.jpg",
+   "caption": "Thomas H. Ringgold",
+   "credit": "The Colored American Magazine, February 1903, p. 294"
+  },
+  {
+   "id": 366459,
+   "name": "Edward F. Harris",
+   "thumb": "portraits/CAM_1903-02_edward-f-harris.jpg",
+   "full": "clippings/CAM_1903-02_p292_edward-f-harris-portrait.jpg",
+   "caption": "Edward F. Harris",
+   "credit": "The Colored American Magazine, February 1903, p. 292"
+  },
+  {
+   "id": 892,
+   "name": "Dorsey, William H.",
+   "thumb": "portraits/CAM_1903-02_william-h-dorsey.jpg",
+   "full": "clippings/CAM_1903-02_p294_william-h-dorsey-portrait.jpg",
+   "caption": "William H. Dorsey",
+   "credit": "The Colored American Magazine, February 1903, p. 294"
+  }
+ ]
+}
