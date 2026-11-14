@@ -848,6 +848,31 @@
    "address": [
     "South Seventh Street, third door above Lombard, Philadelphia"
    ]
+  },
+  {
+   "issue": "CR_1865-10-14",
+   "page": 3,
+   "headline": "New Fall and Winter Dry Goods (S. Shorter Hawkins)",
+   "address": [
+    "615 Lombard Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1865-12-02",
+   "page": 4,
+   "headline": "Joseph H. Cole, Continental Eating Saloon",
+   "address": [
+    "418 South Sixth Street, opposite Bethel Church, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1865-12-02",
+   "page": 4,
+   "headline": "James W. Brown, Steam-Dyeing, Scouring and Repairing Works (S. Fifth above Walnut; Shippen St.)",
+   "address": [
+    "South Fifth Street above Walnut, Philadelphia",
+    "Shippen Street, Philadelphia"
+   ]
   }
  ]
 }

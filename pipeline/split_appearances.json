@@ -1105,6 +1105,131 @@
    "new_name": "Daniel George (1865)",
    "new_source": "newspaper",
    "note": "Michiko, 2026-11-14: Daniel George, vice president of the SCSA suffrage meeting of July 17, 1865, is NOT Winch's Daniel George (Secretary, Angolian Society, 1819)."
+  },
+  {
+   "from_name": "George, Daniel",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-1%",
+   "new_name": "Daniel George (1865)",
+   "new_source": "newspaper",
+   "note": "Michiko ruled the 1865 Daniel George is not Winch's 1819 man; the Harrisburg reception committee man and the Rev. Daniel George of the M.E. Church at Media are filed with the July 1865 vice president, as the same name in the same circle. [check with Michiko] Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "DAVIS, HENRY",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-10%",
+   "new_name": "Henry Davis (New York preachers, 1865)",
+   "new_source": "newspaper",
+   "note": "Signer of a New York District preachers notice; not a Philadelphia census man. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Davis, William H",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-12-02",
+   "new_name": "William H. Davis (married 1865)",
+   "new_source": "newspaper",
+   "note": "Groom, Dec. 1865; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Davis, William H",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-12-16",
+   "new_name": "Wm. H. Davis (Amateur's Companion, 1865)",
+   "new_source": "newspaper",
+   "note": "Professor of music, publisher of the 'Amateur's Companion', 436 Lynd or Lloyd St., 1865; not assumed to be the census man or the groom. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "SMITH, REBECCA",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-10%",
+   "new_name": "Rebecca Smith (married Oct. 1865)",
+   "new_source": "newspaper",
+   "note": "Bride; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "SMITH, REBECCA",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-12%",
+   "new_name": "Rebecca Smith (married Dec. 1865)",
+   "new_source": "newspaper",
+   "note": "Bride; common name, not assumed to be the October bride. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "HARRIS, ANN",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-11%",
+   "new_name": "Ann Harris (married 1865)",
+   "new_source": "newspaper",
+   "note": "Bride; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "LEWIS, JANE",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-12%",
+   "new_name": "Mrs. Jane Lewis (724 Russell St., 1865)",
+   "new_source": "newspaper",
+   "note": "Collector for the Wesley fair, 1865; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Purnell, John",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-12%",
+   "new_name": "John Purnell (married 1865)",
+   "new_source": "newspaper",
+   "note": "Groom; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Ross, Richard",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-12%",
+   "new_name": "Richard Ross (married 1865)",
+   "new_source": "newspaper",
+   "note": "Groom; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "DAVIS, SARAH",
+   "from_source": "census",
+   "context_prefix": "",
+   "issue_like": "CR_1865-11%",
+   "new_name": "Sarah Davis (1865)",
+   "new_source": "newspaper",
+   "note": "Officer of a women's society, 1865; common name. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Brown, Joshua",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-11%",
+   "new_name": "Joshua Brown (d. 1865)",
+   "new_source": "newspaper",
+   "note": "Died about Nov. 6-8, 1865; common name, not assumed to be the Winch man. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Parker, Richard",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-10%",
+   "new_name": "Richard Parker (Information Wanted, 1865)",
+   "new_source": "newspaper",
+   "note": "Formerly enslaved in Virginia, seeking his wife and children from 251 N. 18th St., 1865; not the Winch Richard Parker. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "White, Jacob C., Sr.",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-1%",
+   "to_id": 3037,
+   "note": "Secretary of the Pennsylvania State Equal Rights League, printed 'Jacob C. White' without Jr. in the Nov. 11 notice; the same proceedings name the secretary as Jacob C. White, Jr. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
   }
  ],
  "renames": [

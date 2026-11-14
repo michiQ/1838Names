@@ -1299,6 +1299,42 @@
     0.211
    ],
    "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-10-14",
+   "page": 3,
+   "headline": "New Fall and Winter Dry Goods (S. Shorter Hawkins)",
+   "box": [
+    0.697,
+    0.79,
+    0.838,
+    0.96
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-12-02",
+   "page": 4,
+   "headline": "Joseph H. Cole, Continental Eating Saloon",
+   "box": [
+    0.836,
+    0.779,
+    0.995,
+    0.85
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-12-02",
+   "page": 4,
+   "headline": "James W. Brown, Steam-Dyeing, Scouring and Repairing Works (S. Fifth above Walnut; Shippen St.)",
+   "box": [
+    0.836,
+    0.726,
+    0.995,
+    0.778
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
   }
  ]
 }
