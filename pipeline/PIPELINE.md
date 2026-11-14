@@ -88,6 +88,18 @@ Before pushing ANY change to viewer_template.html, run `node pipeline/smoke_test
 The full-network map used to run community detection + a 260-tick force settle over ~1131
 nodes synchronously every time it opened, which froze the tab (~0.5-5s on real devices).
 Three viewer-only changes fixed this (no data/DB change; every other view untouched):
+- **RETIRED 2026-11-14 (Michiko): the all-connections map.** At 15,000+ people it was too big to use and the
+  bake stopped finishing (25+ min). The "All connections" button is gone; buildFullGraph() and the bake script
+  stay in the code but are no longer run. Do NOT re-bake after a run. Replaced by:
+  * **Organization map** (button over the graph): one dot per organization with 3+ members, lines for shared
+    members (weight = number shared). Layout computed in build_viewer.py (_orgmap: Kamada-Kawai on the largest
+    connected group, distance 1/(1+log2 shared); organizations with no shared members in rows underneath) and
+    shipped as DATA.orgmap {n:[[orgIndex,x,y,members]], l:[[a,b,shared]]}. Click a dot -> selectOrg().
+  * **Events timeline** (button over the graph): every event on one year axis (46 px/year), stacked bubbles,
+    size by number of linked people, hollow = dated only by the newspaper issue; undated events listed below.
+    Laid out in the browser on first open. Click -> selectEvent().
+  * **+ Expand** (toggle over the graph): in the one-person/one-event view, clicking a person or event adds its
+    connections (top 15 people, events of 12 or fewer people; event attendees up to 30) instead of navigating.
 - **Baked layout (instant first open):** `pipeline/bake_fullmap_node.js` (pure Node, no browser --
   added 2026-08-14 because the cloud sandbox can't install Chromium: ARM + no root + proxied apt;
   it reuses the smoke_test DOM stub and drives buildFullGraph+tick directly, ~15s) or the original

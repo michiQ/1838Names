@@ -53,6 +53,28 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #allbtn{position:absolute;top:8px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer}
 #allbtn:hover{border-color:var(--gold)}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
+#mapbtns{position:absolute;top:8px;right:14px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100% - 28px)}
+#mapbtns button{background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 12px;border-radius:14px;cursor:pointer}
+#mapbtns button:hover{border-color:var(--gold)}
+#mapbtns button[aria-pressed="true"]{background:#33290f;border-color:var(--gold)}
+.ovl{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--org:#a8466e;--ev:#a5472a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
+.ovl.on{display:flex}
+.ovbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
+.ovbar button{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px "Libre Caslon Text",Georgia,serif;padding:6px 12px;cursor:pointer}
+.ovbar .ttl{letter-spacing:.12em;font-size:13px;color:var(--dim)}
+.ovlede{font-size:14px;max-width:80ch;margin:12px 16px 4px;line-height:1.5}
+.ovlede b{color:var(--gold)}
+#omwrap{flex:1;position:relative;min-height:0}
+#omcv{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#omtip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--gold);border-radius:4px;padding:5px 9px;font-size:13px;max-width:280px;display:none;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+#omzoom{position:absolute;right:12px;bottom:12px;display:flex;flex-direction:column;gap:4px}
+#omzoom button{width:34px;height:34px;font:18px Georgia;background:var(--panel);border:1px solid var(--line);border-radius:4px;cursor:pointer;color:var(--ink)}
+#evscroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;min-height:0}
+#evsvg{display:block}
+#evsvg circle{cursor:pointer}
+#evsvg circle:hover,#evsvg circle:focus{stroke:var(--ink);stroke-width:2;outline:none}
+#evnodate{margin:6px 16px 24px;font-size:13.5px}
+#evnodate a{color:var(--gold);cursor:pointer;text-decoration:underline}
 #legend span{margin-right:14px}
 /* mini ego panel -- opens on click in the "all connections" full map so you can see a
    node's complete real connections without disturbing the stable main layout. Flex
@@ -134,6 +156,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
     padding:10px 18px;border-radius:22px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.5);z-index:4}
   #detailFab.hide{display:none!important}
   #allbtn{font-size:11px;padding:6px 12px;top:6px;right:10px}
+  #mapbtns{top:6px;right:10px;gap:4px} #mapbtns button{font-size:11px;padding:5px 9px}
   #legend{font-size:9.5px;max-width:56vw;top:8px}
   #legend span{display:block;margin-right:0}
   #miniPanel{left:8px;right:8px;top:auto;bottom:60px;width:auto;height:42vh;max-height:340px;max-width:calc(100vw - 16px)}
@@ -271,7 +294,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
       <span><i class="dot" style="background:#b4552d"></i>event</span>
       <span><i class="dot" style="background:#d18aa8"></i>organization</span>
     </div>
-    <button id="allbtn">⦿ All connections</button>
+    <div id="mapbtns"><button id="expbtn" aria-pressed="false" title="When on, clicking a person or event in this view adds their connections instead of moving to them">+ Expand</button><button id="orgmapbtn" title="Map of organizations linked by shared members">Organization map</button><button id="evtlbtn" title="Every event on one timeline">Events timeline</button></div>
     <div id="miniPanel">
       <div id="miniHead"><span id="miniTitle"></span><button id="miniClose" title="close">✕</button></div>
       <canvas id="miniCv"></canvas>
@@ -806,7 +829,7 @@ function select(pid){
     for(const n of nodes) n.sel = (n.type==='p' && n.id===pid);
     setHighlight(existing || null);
     openMiniPanel('p', pid, p.name);
-  } else { setHighlight(null); buildGraph(pid); }
+  } else if(!window._noRebuild){ setHighlight(null); buildGraph(pid); }
 }
 
 // Turn web addresses and repo-hosted source files (manuscripts/...) in an event description into links
@@ -834,7 +857,7 @@ function selectEvent(eid){
     for(const n of nodes) n.sel = (n.type==='e' && n.id===eid);
     setHighlight(existing || null);
     openMiniPanel('e', eid, e.name);
-  } else { setHighlight(null); buildEventGraph(eid); }
+  } else if(!window._noRebuild){ setHighlight(null); buildEventGraph(eid); }
 }
 function buildEventGraph(eid){
   const e=E.get(eid); nodes=[]; links=[];
@@ -1359,16 +1382,43 @@ function buildFullGraph(){
   window._bigSettle = 235;   // remaining settle ticks, drained by draw() at ~6/frame
   window._simTTL=0;
 }
-const allbtn=document.getElementById('allbtn');
-allbtn.addEventListener('click',()=>{
-  window._fullView=!window._fullView;
-  allbtn.classList.toggle('on',window._fullView);
-  document.getElementById('hint').textContent = window._fullView
-    ? 'tap a node for its connections · drag empty space to rotate / tilt / turn the map · drag a bubble to move it (it stays put) · pinch or scroll to zoom'
+// The all-connections map was retired 2026-11-14 (Michiko): too big to use. buildFullGraph() is kept
+// but no longer reachable; the Organization map and Events timeline overlays (below) replace it.
+// "+ Expand": in the one-person view, clicking a person or event adds its connections to the
+// picture instead of moving to it, so you can walk outward one step at a time.
+const expbtn=document.getElementById('expbtn');
+window._expand=false;
+expbtn.addEventListener('click',()=>{
+  window._expand=!window._expand; expbtn.setAttribute('aria-pressed',window._expand);
+  document.getElementById('hint').textContent = window._expand
+    ? 'expand is on: tap a person or event to add their connections · tap + Expand again to turn it off'
     : 'drag to pan · pinch or scroll to zoom · tap a node to navigate';
-  if(window._fullView) buildFullGraph();
-  else { window._bigSettle=0; closeMiniPanel(); if(window._sel) buildGraph(window._sel); }
 });
+function expandNode(n){
+  const have=new Map(nodes.map(m=>[m.type+m.id,m]));
+  const was=nodes.map(m=>m.fixed); nodes.forEach(m=>m.fixed=true);
+  const add=(id,type,label)=>{ const k=type+id; if(have.has(k)) return have.get(k);
+    const a=Math.random()*Math.PI*2, d=40+Math.random()*40;
+    const m={id,type,label,r:6,x:n.x+Math.cos(a)*d,y:n.y+Math.sin(a)*d,z:0,vx:0,vy:0,vz:0};
+    have.set(k,m); nodes.push(m); return m; };
+  const linked=new Set(links.map(l=>l.s.type+l.s.id+'|'+l.t.type+l.t.id));
+  const link=(s,t,w,faint)=>{ const k1=s.type+s.id+'|'+t.type+t.id, k2=t.type+t.id+'|'+s.type+s.id;
+    if(s===t||linked.has(k1)||linked.has(k2)) return; linked.add(k1); links.push({s,t,w,faint}); };
+  if(n.type==='p'){
+    const nb=[...(NBR.get(n.id)||new Map()).entries()].sort((a,b)=>b[1]-a[1]).slice(0,15);
+    for(const [q,w] of nb){ const op=P.get(q); if(op) link(n,add(q,'p',op.name),Math.min(w,4)); }
+    const p=P.get(n.id);
+    for(const x of (p&&p.events)||[]){ const e=E.get(x.e); if(!e) continue;
+      if(have.has('e'+e.id)||e.att.length<=12) link(n,add(e.id,'e',e.name),3); }
+  } else if(n.type==='e'){
+    const e=E.get(n.id);
+    for(const [q] of ((e&&e.att)||[]).slice(0,30)){ const op=P.get(q); if(op) link(n,add(q,'p',op.name),2); }
+  }
+  sizeByDegree(nodes,links,5,20,2.6);
+  for(let it=0;it<160;it++) tick();
+  nodes.forEach((m,i)=>{ m.fixed = i<was.length ? was[i] : false; });
+  n.expanded=true;
+}
 function draw(){
   ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
   ctx.clearRect(0,0,cv.clientWidth,cv.clientHeight);
@@ -1534,7 +1584,11 @@ function pointerUp(x,y){
   if(dragN && wasClick && dragStart){
     dragN.x=dragStart.x; dragN.y=dragStart.y; dragN.z=dragStart.z; dragN.vx=dragN.vy=dragN.vz=0;
   }
-  if(dragN && wasClick){
+  if(dragN && wasClick && window._expand && !window._fullView && (dragN.type==='p'||dragN.type==='e') && dragN!==nodes[0]){
+    expandNode(dragN); setHighlight(dragN);
+    window._noRebuild=true;
+    try{ if(dragN.type==='p') select(dragN.id); else selectEvent(dragN.id); } finally { window._noRebuild=false; } }
+  else if(dragN && wasClick){
     setHighlight(dragN);
     if(dragN.type==='p') select(dragN.id);
     else if(dragN.type==='e') selectEvent(dragN.id);
@@ -1627,6 +1681,152 @@ syncFab();
 // Deep link (2026-11-01): index.html#p<id> opens that person (used by the business ads page)
 (function(){ try{ const tm=(location.hash||'').match(/^#t-([a-z0-9-]+)$/); if(tm && T.get(tm[1])) setTimeout(()=>selectTopic(tm[1]),0); }catch(e){} })();
 (function(){ try{ const m=(location.hash||'').match(/^#p(\d+)$/); if(m && typeof select==='function' && P.get(+m[1])) setTimeout(()=>select(+m[1]),0); }catch(e){} })();
+</script>
+<div id="omview" class="ovl" role="dialog" aria-modal="true" aria-label="Organization map">
+ <div class="ovbar"><button class="ovclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">ORGANIZATION MAP</span></div>
+ <p class="ovlede">Each dot is an organization with three or more people on record; a bigger dot means more members. A line joins two organizations that <b>share members</b>, and it is darker when they share more. Point at a dot to see its name and links; click it to open the organization and its people. Drag to move around, scroll or pinch to zoom.</p>
+ <div id="omwrap"><canvas id="omcv"></canvas><div id="omtip"></div><div id="omzoom"><button data-z="1.3" title="Zoom in">+</button><button data-z="0.77" title="Zoom out">&minus;</button></div></div>
+</div>
+<div id="evview" class="ovl" role="dialog" aria-modal="true" aria-label="Events timeline">
+ <div class="ovbar"><button class="ovclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">EVENTS TIMELINE</span></div>
+ <p class="ovlede">Every event in the database, placed by its date and stacked where events crowd together. A bigger bubble means more people are linked to the event. A hollow bubble is dated only by the newspaper issue that reported it, not by the event itself. Point at a bubble for its name and date; click it to open the event with its people and organizations. Scroll sideways to move through time.</p>
+ <div id="evscroll"><svg id="evsvg" xmlns="http://www.w3.org/2000/svg"></svg><p id="evnodate"></p></div>
+</div>
+<script>
+// Organization map and Events timeline (2026-11-14, Michiko): replace the all-connections map.
+(function(){
+  if(typeof DATA==='undefined'||!DATA||typeof document.addEventListener!=='function') return;
+  const esc2=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const back=fn=>setTimeout(()=>{ try{ fn(); if(typeof isMobile==='function'&&isMobile()&&typeof closeLeftDrawer==='function') closeLeftDrawer(); }catch(err){} },60);
+  function wire(el,onOpen){
+    let isOpen=false;
+    function open(){ el.classList.add('on'); isOpen=true; try{ history.pushState({ovl:el.id},''); }catch(err){}
+      if(typeof isMobile==='function'&&isMobile()&&typeof closeLeftDrawer==='function') closeLeftDrawer(); onOpen(); }
+    function close(fromPop){ if(!isOpen) return; isOpen=false; el.classList.remove('on'); if(!fromPop){ try{ history.back(); }catch(err){} } }
+    el.querySelector('.ovclose').addEventListener('click',()=>close(false));
+    window.addEventListener('popstate',()=>close(true));
+    document.addEventListener('keydown',ev=>{ if(ev.key==='Escape') close(false); });
+    return {open,close};
+  }
+  // ---------------- organization map ----------------
+  const OM=DATA.orgmap, omv=document.getElementById('omview');
+  if(OM&&omv){
+    const cv=document.getElementById('omcv'), cx=cv.getContext('2d'), tip=document.getElementById('omtip');
+    const N=OM.n.map(([oi,x,y,m])=>({oi,x,y,m,name:DATA.orgs[oi].name,r:Math.min(26,3+Math.sqrt(m)*1.25),nb:[]}));
+    const byOi=new Map(N.map(n=>[n.oi,n]));
+    const L=OM.l.map(([a,b,w])=>{const s=byOi.get(a),t=byOi.get(b); s.nb.push([t,w]); t.nb.push([s,w]); return {s,t,w};});
+    const SORTED=[...N].sort((a,b)=>b.m-a.m);
+    let v={x:0,y:0,k:1}, hov=null, W=0, H=0, dpr=1, fitted=false;
+    function fit(){ const r=cv.getBoundingClientRect(); dpr=window.devicePixelRatio||1; W=r.width; H=r.height;
+      cv.width=W*dpr; cv.height=H*dpr; if(!fitted){ const xs=N.map(n=>n.x), ys=N.map(n=>n.y), x0=Math.min(...xs), x1=Math.max(...xs), y0=Math.min(...ys), y1=Math.max(...ys);
+        v.k=Math.min(W/(x1-x0+80), H/(y1-y0+80)); v.x=-(x0+x1)/2; v.y=-(y0+y1)/2; fitted=true; } draw(); }
+    const sx=x=>W/2+(x+v.x)*v.k, sy=y=>H/2+(y+v.y)*v.k;
+    function draw(){
+      cx.setTransform(dpr,0,0,dpr,0,0); cx.clearRect(0,0,W,H);
+      const hn=hov?new Set([hov,...hov.nb.map(z=>z[0])]):null;
+      for(const l of L){
+        const on=hov&&(l.s===hov||l.t===hov);
+        if(hov&&!on) continue;
+        cx.strokeStyle=on?'rgba(168,70,110,.75)':`rgba(111,99,82,${Math.min(.5,.06+l.w*.045)})`;
+        cx.lineWidth=on?Math.min(5,1+Math.log2(l.w+1)):Math.min(3,.5+Math.log2(l.w)*.6);
+        cx.beginPath(); cx.moveTo(sx(l.s.x),sy(l.s.y)); cx.lineTo(sx(l.t.x),sy(l.t.y)); cx.stroke();
+      }
+      if(hov){ cx.strokeStyle='rgba(111,99,82,.10)'; cx.lineWidth=.5; }
+      for(const n of N){
+        const dim=hn&&!hn.has(n), r=Math.max(2.5,n.r*Math.sqrt(v.k));
+        cx.globalAlpha=dim?.25:1; cx.fillStyle=n===hov?'#7a2a4c':'#a8466e';
+        cx.beginPath(); cx.arc(sx(n.x),sy(n.y),r,0,Math.PI*2); cx.fill();
+        cx.strokeStyle='#fbf8f2'; cx.lineWidth=1; cx.stroke();
+      }
+      cx.globalAlpha=1; cx.font='12px Georgia'; cx.textAlign='center';
+      // labels: biggest organizations first, and skip any label that would overlap one already drawn
+      const boxes=[];
+      const order = hn ? [hov,...[...hn].filter(n=>n!==hov).sort((a,b)=>b.m-a.m)] : SORTED;
+      for(const n of order){
+        const r=Math.max(2.5,n.r*Math.sqrt(v.k)), t=n.name.length>42?n.name.slice(0,40)+'…':n.name, X=sx(n.x), Y=sy(n.y)+r+12;
+        if(X<-200||X>W+200||Y<-20||Y>H+20) continue;
+        const w=cx.measureText(t).width, bx=[X-w/2-2,Y-11,X+w/2+2,Y+3];
+        if(boxes.some(b=>bx[0]<b[2]&&bx[2]>b[0]&&bx[1]<b[3]&&bx[3]>b[1])) continue;
+        if(!hn && boxes.length>=Math.round(18*Math.max(1,v.k*v.k))) break;
+        boxes.push(bx);
+        cx.lineWidth=3; cx.strokeStyle='rgba(243,237,226,.9)'; cx.strokeText(t,X,Y); cx.fillStyle=n===hov?'#7a2a4c':'#2a2118'; cx.fillText(t,X,Y);
+      }
+    }
+    function pick(px,py){ let best=null,bd=1e9; for(const n of N){ const r=Math.max(2.5,n.r*Math.sqrt(v.k))+6, d=Math.hypot(sx(n.x)-px,sy(n.y)-py); if(d<r&&d<bd){bd=d;best=n;} } return best; }
+    function showTip(n,px,py){ if(!n){ tip.style.display='none'; return; }
+      const top=[...n.nb].sort((a,b)=>b[1]-a[1]).slice(0,4).map(([o,w])=>`${esc2(o.name)} (${w})`).join('<br>');
+      tip.innerHTML=`<b>${esc2(n.name)}</b><br>${n.m} people on record · shares members with ${n.nb.length} organization${n.nb.length===1?'':'s'}${top?'<br><span style="color:#6f6352">Most shared: '+top+'</span>':''}`;
+      tip.style.display='block'; tip.style.left=Math.min(px+14,W-290)+'px'; tip.style.top=Math.min(py+14,H-110)+'px'; }
+    let drag=null, moved=false, pts=new Map(), pinch=0;
+    cv.addEventListener('pointerdown',e=>{ cv.setPointerCapture(e.pointerId); pts.set(e.pointerId,[e.offsetX,e.offsetY]); drag=[e.offsetX,e.offsetY]; moved=false;
+      if(pts.size===2){ const [a,b]=[...pts.values()]; pinch=Math.hypot(a[0]-b[0],a[1]-b[1]); } });
+    cv.addEventListener('pointermove',e=>{
+      if(pts.has(e.pointerId)) pts.set(e.pointerId,[e.offsetX,e.offsetY]);
+      if(pts.size===2){ const [a,b]=[...pts.values()], d=Math.hypot(a[0]-b[0],a[1]-b[1]); if(pinch){ v.k=Math.max(.2,Math.min(8,v.k*d/pinch)); } pinch=d; moved=true; draw(); return; }
+      if(drag){ const dx=e.offsetX-drag[0], dy=e.offsetY-drag[1]; if(Math.abs(dx)+Math.abs(dy)>3) moved=true;
+        if(moved){ v.x+=dx/v.k; v.y+=dy/v.k; drag=[e.offsetX,e.offsetY]; tip.style.display='none'; draw(); } return; }
+      const n=pick(e.offsetX,e.offsetY); if(n!==hov){ hov=n; draw(); } cv.style.cursor=n?'pointer':'grab'; showTip(n,e.offsetX,e.offsetY); });
+    cv.addEventListener('pointerup',e=>{ pts.delete(e.pointerId); if(pts.size<2) pinch=0;
+      if(drag&&!moved){ const n=pick(e.offsetX,e.offsetY);
+        if(n){ if(e.pointerType!=='mouse'&&hov!==n){ hov=n; draw(); showTip(n,e.offsetX,e.offsetY); }
+               else { om.close(false); back(()=>selectOrg(n.name)); } }
+        else { hov=null; draw(); showTip(null); } }
+      drag=null; });
+    cv.addEventListener('pointerleave',()=>{ if(!drag){ hov=null; draw(); showTip(null); } });
+    cv.addEventListener('wheel',e=>{ e.preventDefault(); const f=e.deltaY<0?1.15:1/1.15;
+      const wx=(e.offsetX-W/2)/v.k-v.x, wy=(e.offsetY-H/2)/v.k-v.y; v.k=Math.max(.2,Math.min(8,v.k*f));
+      v.x=(e.offsetX-W/2)/v.k-wx; v.y=(e.offsetY-H/2)/v.k-wy; draw(); },{passive:false});
+    omv.querySelectorAll('#omzoom button').forEach(b=>b.addEventListener('click',()=>{ v.k=Math.max(.2,Math.min(8,v.k*+b.dataset.z)); draw(); }));
+    window.addEventListener('resize',()=>{ if(omv.classList.contains('on')) fit(); });
+    const om=wire(omv,()=>requestAnimationFrame(fit));
+    document.getElementById('orgmapbtn').addEventListener('click',om.open);
+  }
+  // ---------------- events timeline ----------------
+  const evv=document.getElementById('evview');
+  if(evv){
+    const svg=document.getElementById('evsvg'); let built=false;
+    function frac(d){ const m=String(d||'').match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/); if(!m) return null;
+      return +m[1]+((+m[2]||6)-1)/12+((+m[3]||15)-1)/365; }
+    function build(){
+      if(built) return; built=true;
+      const PX=46, items=[], nod=[];
+      for(const e of DATA.events){
+        let t=frac(e.date), byIssue=false;
+        if(t==null&&e.issue){ const m=e.issue.match(/_(\d{4}(?:-\d{2}(?:-\d{2})?)?)/); if(m){ t=frac(m[1]); byIssue=true; } }
+        if(t==null){ nod.push(e); continue; }
+        items.push({e,t,byIssue,r:Math.min(17,2.6+Math.sqrt(e.att.length)*1.35)});
+      }
+      items.sort((a,b)=>a.t-b.t||b.r-a.r);
+      const y0=Math.floor(Math.min(...items.map(i=>i.t))/10)*10, y1=Math.ceil((Math.max(...items.map(i=>i.t))+0.01)/10)*10;
+      const X=t=>40+(t-y0)*PX;
+      const placed=[];
+      for(const it of items){
+        it.x=X(it.t); const near=placed.filter(p=>Math.abs(p.x-it.x)<p.r+it.r+1);
+        const cands=[it.r+1]; for(const p of near){ const dx=p.x-it.x, need=p.r+it.r+1; if(Math.abs(dx)<need){ const h=Math.sqrt(need*need-dx*dx); cands.push(p.y+h); } }
+        cands.sort((a,b)=>a-b);
+        for(const c of cands){ if(c<it.r+1) continue; if(near.every(p=>Math.hypot(p.x-it.x,p.y-c)>=p.r+it.r+0.9)){ it.y=c; break; } }
+        if(it.y==null) it.y=Math.max(...cands); placed.push(it);
+      }
+      const top=Math.max(...placed.map(p=>p.y+p.r))+18, Wd=X(y1)+40, Hd=top+46;
+      let h=`<g font-family="Georgia" font-size="12" fill="#6f6352">`;
+      for(let y=y0;y<=y1;y++){ const x=X(y), dec=y%10===0;
+        h+=`<line x1="${x}" x2="${x}" y1="${dec?14:top-6}" y2="${top+(dec?8:4)}" stroke="${dec?'#d9cfbd':'#e4dccd'}"/>`;
+        if(dec) h+=`<text x="${x}" y="${top+24}" text-anchor="middle" font-size="13" fill="#2a2118">${y}</text>`; }
+      h+=`<line x1="30" x2="${Wd-20}" y1="${top}" y2="${top}" stroke="#2a2118" stroke-width="1.5"/></g>`;
+      for(const it of placed){ const e=it.e, cy=top-it.y;
+        const tt=`${e.name} · ${e.date||('issue of '+(e.issue||'').replace(/^[A-Z]+_/,'')+', date of event not given')} · ${e.att.length} ${e.att.length===1?'person':'people'}`;
+        h+=`<circle tabindex="0" data-e="${e.id}" cx="${it.x.toFixed(1)}" cy="${cy.toFixed(1)}" r="${it.r.toFixed(1)}" fill="${it.byIssue?'#fbf8f2':'#a5472a'}" fill-opacity="${it.byIssue?1:.82}" stroke="#a5472a" stroke-width="${it.byIssue?1.4:.6}"><title>${esc2(tt)}</title></circle>`; }
+      svg.setAttribute('width',Wd); svg.setAttribute('height',Hd); svg.setAttribute('viewBox',`0 0 ${Wd} ${Hd}`); svg.innerHTML=h;
+      document.getElementById('evnodate').innerHTML = nod.length ? `<b>No date (${nod.length}):</b> `+nod.map(e=>`<a data-e="${e.id}">${esc2(e.name)}</a>`).join(' · ') : '';
+      const go=id=>{ ev.close(false); back(()=>selectEvent(id)); };
+      svg.addEventListener('click',x=>{ const c=x.target.closest('circle'); if(c) go(+c.dataset.e); });
+      svg.addEventListener('keydown',x=>{ const c=x.target.closest('circle'); if(c&&(x.key==='Enter'||x.key===' ')){ x.preventDefault(); go(+c.dataset.e); } });
+      document.getElementById('evnodate').addEventListener('click',x=>{ const a=x.target.closest('a[data-e]'); if(a) go(+a.dataset.e); });
+    }
+    const ev=wire(evv,build);
+    document.getElementById('evtlbtn').addEventListener('click',ev.open);
+  }
+})();
 </script>
 <div id="tlview" role="dialog" aria-modal="true" aria-label="Organization timelines">
  <div id="tlbar"><button id="tlclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">ORGANIZATION TIMELINES</span></div>

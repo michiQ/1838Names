@@ -524,6 +524,42 @@ if os.path.exists(_tp_path):
         data["topics"].append({"label": t["label"], "slug": t["slug"], "note": t.get("note", ""),
                                "links": t.get("links", []), "articles": aids, "events": eids})
         print("topic:", t["label"], "|", len(aids), "articles,", len(eids), "events")
+# Organization map (2026-11-14, Michiko): replaces the all-connections map. One dot per organization with
+# 3+ members; a line joins two organizations that share members (weight = number shared). The layout is
+# worked out here once (networkx spring layout, fixed seed) so the page opens it instantly.
+def _orgmap(orgs):
+    import itertools, math
+    import networkx as nx
+    idx = [i for i, o in enumerate(orgs) if len(o["members"]) >= 3]
+    mem = {i: set(orgs[i]["members"]) for i in idx}
+    G = nx.Graph(); G.add_nodes_from(idx)
+    for a, b in itertools.combinations(idx, 2):
+        s = len(mem[a] & mem[b])
+        if s: G.add_edge(a, b, weight=s, lw=math.log1p(s))
+    # lay out the largest connected group with a force layout; organizations with no shared members
+    # (or in small separate groups) go in a row underneath, so they don't stretch the picture
+    comps = sorted(nx.connected_components(G), key=len, reverse=True)
+    core = G.subgraph(comps[0]).copy()
+    for a_, b_, d_ in core.edges(data=True): d_["lw"] = 1 + math.log2(d_["weight"])
+    # Kamada-Kawai on distances that shrink as two organizations share more members: spreads the
+    # dense middle better than a plain spring layout
+    for a_, b_, d_ in core.edges(data=True): d_["dist"] = 1.0 / (1 + math.log2(d_["weight"]))
+    pos = nx.kamada_kawai_layout(core, weight="dist")
+    xs = [p[0] for p in pos.values()]; ys = [p[1] for p in pos.values()]
+    cx, cy = (max(xs) + min(xs)) / 2, (max(ys) + min(ys)) / 2
+    sc = 1000 / max(max(xs) - min(xs), max(ys) - min(ys), 1e-9)
+    pos = {i: ((p[0] - cx) * sc, (p[1] - cy) * sc) for i, p in pos.items()}
+    rest = [i for c in comps[1:] for i in sorted(c, key=lambda i: -len(mem[i]))]
+    y = max(p[1] for p in pos.values()) + 110
+    per = 12
+    for j, i in enumerate(rest):
+        pos[i] = (-500 + (j % per) * (1000 / (per - 1)), y + (j // per) * 70)
+    cx, cy, sc = 0, 0, 1
+    nodes = [[i, round(pos[i][0], 1), round(pos[i][1], 1), len(mem[i])] for i in idx]
+    links = [[a, b, d["weight"]] for a, b, d in G.edges(data=True)]
+    return {"n": nodes, "l": links}
+data["orgmap"] = _orgmap(data["orgs"])
+print("org map:", len(data["orgmap"]["n"]), "organizations,", len(data["orgmap"]["l"]), "shared-member lines")
 # Organization Timelines tab (2026-11-01, Michiko): lanes built from the finished people/orgs/events
 import timeline_data
 data["timeline"] = timeline_data.build(people, events, data["orgs"], os.path.dirname(os.path.abspath(TPL)))
