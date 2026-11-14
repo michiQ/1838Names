@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, July 1864 - March 1865
+# Extraction brief: Christian Recorder, April - June 1865
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/editor;
@@ -7,21 +7,28 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-## Inputs (scratch dir S = /tmp/claude-0/-home-claude/8f46bdc5-7aa7-5a99-9c93-97b7c6b3014b/scratchpad/cr64q3 for July-September 1864, .../cr64q4 for October-December 1864, or .../cr65q1 for January-March 1865; your launch message says which)
+## Inputs (scratch dir S = /tmp/claude-0/-home-claude/19f25cf0-1195-5d2b-a392-127587d9c568/scratchpad/cr92)
 - OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
 - Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
-  higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt ('frame:slug:page'). Each S has its own q.pdf, crop.py and jobs.txt, so frame numbers belong to that S only. Pages are numbered continuously through each volume; cite the ISSUE page as in jobs.txt. Library cards on the film mark missing sheets; pages not in jobs.txt DO NOT EXIST in our copy.
-  July-September 1864 (cr64q3): Jul 2 (frames 2-3 = pp3-4 only), Jul 9 (4-7), Jul 16 (8-11), Jul 23 (12-15), Jul 30 (16-19), Aug 6 (20-23), Aug 13 (25-26 = pp3-4 only), Aug 20 (27-30), Aug 27 (31-34), Sep 3 (35-38), Sep 10 (39-42), Sep 17 (43-46), Sep 24 (47-50). Frames 1 and 24 are cards.
-  October-December 1864 (cr64q4): Oct 1 (1-4), Oct 8 (5-8), Oct 15 (9-12), Oct 22 (14-15 = pp3-4), Oct 29 (17-18 = pp3-4), Nov 5 (20-21 = pp3-4), Nov 12 (22-25), Nov 19 MISSING, Nov 26 (28-31, plus the two-page THANKSGIVING SUPPLEMENT at frames 32-33, filed as Nov 26 pages 5 and 6), Dec 3 (34-37), Dec 10 (38-41), Dec 17 (42-45), Dec 24 (47 = p1, 48 = p3, 49 = p4; p2 missing), Dec 31 (51-54; first sheet torn). Frames 13, 16, 19, 26, 27, 46, 50 are cards.
-  January-March 1865 (cr65q1; Vol. V): Jan 7 (2-5), Jan 14 (6-7 = pp1-2 only), Jan 21 (8-9 = pp3-4 only; confirm from the running heads), Jan 28 (11-12 = pp1-2 only), Feb 4 (14-17), Feb 11 (19-20 = pp3-4 only), Feb 18 (21-24), Feb 25 (25-28), Mar 4 (29-32), Mar 11 MISSING, Mar 18 (35-38), Mar 25 (40-43). Frames 1, 10, 13, 18, 33, 34, 39 are cards. Cite by DATE. Crops: render from the PDF with
+  higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt
+  ('frame:slug:page'). Pages not in jobs.txt DO NOT EXIST in our copy. Cite by DATE and the issue page (1-4).
+  April-June 1865 (Vol. V, Nos. 13-25): Apr 1 (frames 1-4), Apr 8 (5-8), Apr 15 (9-12), Apr 22 (13-16; printed with heavy black
+  mourning rules for Lincoln), Apr 29 (17-20), May 6 (21-24), May 13 MISSING (card at frame 25: 'No. 19 missing'), May 20 (26-29),
+  May 27 (30-33), Jun 3 (34-37), Jun 10 (38-41), Jun 17 (43-44 = pp3-4 only; card at frame 42: 'No. 24 first sheet missing'),
+  Jun 24 (45-48). Crops: render from the PDF with
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
   ```
-  then Read the png. A single column is ~1/7 of the width; crops of ~1/7 width x ~1/5 height
-  read comfortably (crop.py renders at 1000dpi by default, env DPI=1600 for rechecks; this file's scans are 600ppi native). Use the 2000px JPEG (also cropped, e.g. with PIL) to locate things first.
+  then Read the png. Write your crops into a folder of your own, `S/crops_<your-label>/`. A single column is ~1/7 of the width;
+  crops of ~1/7 width x ~1/5 height read comfortably. This file's scans are 200ppi native with very large pages: crop.py renders
+  at DPI=400 by default; use `DPI=600 python3 S/crop.py ...` for rechecks. NEVER go above DPI=600 on this file (it exhausts the
+  machine's memory) and run ONE crop at a time. Use the 2000px JPEG (also cropped, e.g. with PIL) to locate things first.
 - OCR and image of a page should be used together: OCR to find what is there, the image to read
   names, addresses and numbers exactly.
+- READ PAGES 1 AND 4 OF EVERY ISSUE IN FULL, column by column, from image crops (earlier runs missed items there: page 1 carries
+  letters and church news, page 4 the ads and notices). Pages 2 and 3 carry the editorials, local news, marriages and deaths.
+- SAVE YOUR JSON AFTER EACH ISSUE (rewrite the whole file each time), so nothing is lost if you are interrupted.
 
 ## Extraction rule (the owner's, for this paper)
 Philadelphia-focused deep read:
@@ -93,16 +100,30 @@ officers; the Philadelphia Grand Lodge installation roster. From Apr-Jun 1862 (R
 Getz, Dean, Metz, Elkinton, Rothermel (coal), insurance, railroads, patent medicines. NEW Black-owned ads or changed notices
 SHOULD be entered. Quarterly-meeting schedules: one short article per notice, link only named preachers/officers.
 
-## Watch for in these quarters (July 1864 - March 1865)
-- BLACK SOLDIERS: Camp William Penn regiments (6th, 8th, 22nd, 24th, 25th, 32nd, 41st, 43rd, 45th, 127th USCT): departures, letters
-  from Philadelphians, casualties (the Crater, July 30, 1864; Petersburg; New Market Heights; Fort Fisher), chaplains, pay.
-- The NATIONAL CONVENTION OF COLORED MEN at Syracuse (Oct 4-7, 1864) and the founding of the NATIONAL / PENNSYLVANIA EQUAL RIGHTS
-  LEAGUE (Philadelphia meetings, officers, the Harrisburg state convention, Feb 1865): capture delegates and officers.
-- STREETCAR exclusion: every ejection, petition, meeting, letter, editorial, court case (owner tracks a 'Streetcar discrimination'
-  topic; mob or police violence on or around the cars counts too).
-- The 1864 election, emancipation in Maryland (Nov 1864), the 13th Amendment (Jan 31, 1865) and any Philadelphia celebrations.
-- Freedpeople relief, fairs, Sabbath-school and church anniversaries, ICY and Banneker Institute, lodge and society elections
-  (officer lists whole), the Book Concern, Weaver as General Editor, new church buildings and missions.
+## Already captured in Runs #89-#91 (July 1864 - March 1865) -- do NOT re-enter unless changed
+Hannibal Hotel (620 Pine); John Oliver's Intelligence Office (1113 Pine); Mrs. S. Shorter Hawkins's fall goods; Olive Branch (814
+Lombard); Mrs. C. E. Harding (713 Lombard); Thos. J. Bowers's coal yard (631 / 634 Lombard); N. L. Durham, cupping and leeching
+(911 1/2 Christian); Charles W. Brister's Continental Restaurant (717 Lombard); Mrs. Highgates, shrouding (1026 Barley); the
+Sansom Street Hall and Masonic Hall mass meetings on the cars; the Syracuse delegates; the Pennsylvania State Equal Rights League
+constitution, officers and the Harrisburg convention (Feb 8-10, 1865); the SCSA lecture course; the 1865 Grand Lodge rosters;
+the Union League Association officers; the Charleston relief meeting; the Lebanon Cemetery notices. Everything through the
+March 25, 1865 issue is in the database.
+
+## Watch for in this quarter (April - June 1865)
+- The FALL OF RICHMOND (Apr 3) and LEE'S SURRENDER (Apr 9): Philadelphia celebrations, illuminations, sermons, the U.S. Colored
+  Troops entering Richmond, letters from Philadelphians in the regiments and from chaplains.
+- LINCOLN'S ASSASSINATION (Apr 14-15), the mourning issue of Apr 22, and the FUNERAL IN PHILADELPHIA (the body lay in state at
+  Independence Hall, Apr 22-24): who among the colored people marched or was refused a place, which churches, lodges and
+  societies took part, resolutions of meetings (name every officer and committee member), memorial sermons at Bethel, Union,
+  Wesley, St. Thomas', the Presbyterian and Baptist churches. Capture each meeting as its own event with its roster.
+- STREETCAR exclusion: every ejection, petition, meeting, letter, editorial, court case, the car companies' votes and any
+  legislative action (owner tracks a 'Streetcar discrimination' topic; mob or police violence on or around the cars counts too).
+- The PHILADELPHIA ANNUAL CONFERENCE of May 1865 and its APPOINTMENTS (enter the appointments whole, as printed), ordinations,
+  resolutions; the A.M.E. mission to the South (Charleston, Savannah, Wilmington, Norfolk), missionaries leaving Philadelphia.
+- The Pennsylvania State EQUAL RIGHTS LEAGUE and its Philadelphia auxiliaries, the suffrage question, celebrations and
+  processions; regiments returning or still at Camp William Penn; deaths of soldiers and chaplains.
+- Freedpeople relief, fairs, Sabbath-school and church anniversaries, ICY examination and commencement (class lists whole),
+  Banneker Institute, lodge and society elections (officer lists whole), the Book Concern.
 - NEW or changed Black-owned ads; marriages and deaths of Philadelphians, with officiating ministers.
 
 ## Known identities (record names as printed; mention the identification in `notes`)
@@ -127,6 +148,7 @@ SHOULD be entered. Quarterly-meeting schedules: one short article per notice, li
 - 1863 Q3 rulings (owner): the 'Jacob C. White' of the 6th USCT flag list is the elder; 'J. C. White, Jr.' is the son. A. L. Stanford =
   Anthony L. Stanford; U. B. Vidal = Ulysses B. Vidal; T./Theo. Gould = Theodore Gould (record as printed). Rev. Peter Gardiner /
   Gardener and Dr. P. Gardiner are under review: record exactly as printed, no identification.
+- Rulings of 2026-11-13 (owner): 'J. P. Campbell' and 'Jabez P. Campbell' are one record (Bishop Campbell); 'J. Asher' and 'Rev. Mr. Asher' = Rev. Jeremiah Asher; 'F. E. W. Harper' = Frances Ellen Watkins Harper; 'J. C. White, Sr.' = Jacob C. White Sr. and 'J. C. White, Jr.' = Jacob C. White Jr. Record all of them as printed. The Continental Restaurant proprietor is Charles W. Brister.
 - 1864-65 rulings (owner, 2026-11-11): 'William Sill', post sutler = William Still. 'Jacob C. White' / 'J. C. White' printed without Jr. on
   the SCSA committee and as Lebanon Cemetery secretary = the father (Jacob C. White Sr.).
 - 1864 rulings (owner): mob or police violence against Black passengers on or around the street cars belongs in the streetcar topic
