@@ -57,7 +57,7 @@ for e in E:
     e['description']=re.sub(r'^(STREETCAR exclusion|PARADE|SOCIETY MEETING|STREETCAR|PROCESSION)[.:]\s*','',e['description'])
 for a in A:
     if a['headline'].startswith('James W. Brown, Steam-Dyeing'): a['issue']='CR_1865-12-02'; a['summary']+=' (First printed Dec. 2, 1865, page 4; also Dec. 9.)'
-KEEP_AD=('New Fall and Winter Dry Goods (S. Shorter','Joseph H. Cole, Continental')
+KEEP_AD=('New Fall and Winter Dry Goods (S. Shorter','Joseph H. Cole, Continental','James W. Brown, Steam-Dyeing',"Colored Soldiers' and Seamen's U. S. Government Claim",'U.S. Agency for Colored Soldiers')
 for a in A:
     if a['type']=='advertisement' and not a['headline'].startswith(KEEP_AD): a['type']='notice'
 # Michiko's rulings, 2026-11-14

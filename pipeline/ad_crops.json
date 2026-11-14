@@ -1335,6 +1335,30 @@
     0.778
    ],
    "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-10-28",
+   "page": 3,
+   "headline": "Colored Soldiers' and Seamen's U. S. Government Claim Office (John J. Keefe, Jr.)",
+   "box": [
+    0.292,
+    0.648,
+    0.432,
+    0.772
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1865-11-04",
+   "page": 3,
+   "headline": "U.S. Agency for Colored Soldiers and Seamen",
+   "box": [
+    0.303,
+    0.287,
+    0.442,
+    0.425
+   ],
+   "check": "placed 2026-11-14; box set against the high-resolution render from the film"
   }
  ]
 }

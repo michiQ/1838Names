@@ -1230,6 +1230,44 @@
    "issue_like": "CR_1865-1%",
    "to_id": 3037,
    "note": "Secretary of the Pennsylvania State Equal Rights League, printed 'Jacob C. White' without Jr. in the Nov. 11 notice; the same proceedings name the secretary as Jacob C. White, Jr. Run #94 link review, 2026-11-14 (CR Oct-Dec 1865)."
+  },
+  {
+   "from_name": "Gibbs, Rev. Jonathan C.",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-1%",
+   "new_name": "Jonathan C. Gibbs (Philadelphia, 1865)",
+   "new_source": "newspaper",
+   "note": "A 'Rev. Jonathan C. Gibbs' of Philadelphia is printed as officiating minister (Nov 11, 1865) and as League vice president and member (Nov-Dec 1865), but the Winch man was in the South by then; may be a misprint for R. F. Gibbs. Kept apart. Michiko, 2026-11-14 (Run #94).",
+   "from_id": 1136
+  },
+  {
+   "from_name": "Jonathan C. Gibbs",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_1865-1%",
+   "new_name": "Jonathan C. Gibbs (Philadelphia, 1865)",
+   "new_source": "newspaper",
+   "note": "A 'Rev. Jonathan C. Gibbs' of Philadelphia is printed as officiating minister (Nov 11, 1865) and as League vice president and member (Nov-Dec 1865), but the Winch man was in the South by then; may be a misprint for R. F. Gibbs. Kept apart. Michiko, 2026-11-14 (Run #94)."
+  },
+  {
+   "from_name": "Needham, James",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1865-1%",
+   "to_name": "Needham, James F.",
+   "to_source": "coppin",
+   "note": "James Needham, Treasurer of the Pennsylvania State Equal Rights League from July 1865 and Philadelphia member, printed without the F., is the son, James F. Needham. Michiko, 2026-11-14 (Run #94).",
+   "from_id": 1996
+  },
+  {
+   "from_name": "James Needham",
+   "from_source": "newspaper",
+   "context_prefix": "",
+   "issue_like": "CR_1865-1%",
+   "to_name": "Needham, James F.",
+   "to_source": "coppin",
+   "note": "James Needham, Treasurer of the Pennsylvania State Equal Rights League from July 1865 and Philadelphia member, printed without the F., is the son, James F. Needham. Michiko, 2026-11-14 (Run #94)."
   }
  ],
  "renames": [
