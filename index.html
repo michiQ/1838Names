@@ -265,7 +265,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
   <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades &#8594;</a>
-  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-14 18:59</span>
+  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-14 19:02</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
@@ -1690,7 +1690,7 @@ syncFab();
 </div>
 <div id="evview" class="ovl" role="dialog" aria-modal="true" aria-label="Events timeline">
  <div class="ovbar"><button class="ovclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">EVENTS TIMELINE</span></div>
- <p class="ovlede">Every event in the database, placed by its date and stacked where events crowd together. A bigger bubble means more people are linked to the event. A hollow bubble is dated only by the newspaper issue that reported it, not by the event itself. Point at a bubble for its name and date; click it to open the event with its people and organizations. It opens at the earliest years; scroll sideways to move through time (the busiest years, 1861 to 1865, are toward the right).</p>
+ <p class="ovlede">Every event in the database, placed by its date and stacked where events crowd together. A bigger bubble means more people are linked to the event. A hollow bubble is dated only by the newspaper issue that reported it, not by the event itself. Point at a bubble for its name and date; click it to open the event with its people and organizations. Years with no events are squeezed into narrow shaded strips. It opens at the earliest years; scroll sideways to move through time (the busiest years, 1861 to 1865, are toward the right).</p>
  <div id="evscroll"><svg id="evsvg" xmlns="http://www.w3.org/2000/svg"></svg><p id="evnodate"></p></div>
 </div>
 <script>
@@ -1798,7 +1798,10 @@ syncFab();
       }
       items.sort((a,b)=>a.t-b.t||b.r-a.r);
       const y0=Math.floor(Math.min(...items.map(i=>i.t))/10)*10, y1=Math.ceil((Math.max(...items.map(i=>i.t))+0.01)/10)*10;
-      const X=t=>40+(t-y0)*PX;
+      // years with no events are squeezed to a narrow strip so the empty stretches don't fill the screen
+      const cnt={}; items.forEach(i=>{const y=Math.floor(i.t); cnt[y]=(cnt[y]||0)+1;});
+      const yw=y=>cnt[y]?PX:9, off={}; let acc=40; for(let y=y0;y<=y1;y++){ off[y]=acc; acc+=yw(y); }
+      const X=t=>{ const y=Math.floor(t); return (off[y]!=null?off[y]:acc)+(t-y)*yw(y); };
       const placed=[];
       for(const it of items){
         it.x=X(it.t); const near=placed.filter(p=>Math.abs(p.x-it.x)<p.r+it.r+1);
@@ -1809,6 +1812,7 @@ syncFab();
       }
       const top=Math.max(...placed.map(p=>p.y+p.r))+18, Wd=X(y1)+40, Hd=top+46;
       let h=`<g font-family="Georgia" font-size="12" fill="#6f6352">`;
+      for(let y=y0;y<y1;y++) if(!cnt[y]) h+=`<rect x="${X(y)}" y="14" width="9" height="${top-14}" fill="#ece4d5"/>`;
       for(let y=y0;y<=y1;y++){ const x=X(y), dec=y%10===0;
         h+=`<line x1="${x}" x2="${x}" y1="${dec?14:top-6}" y2="${top+(dec?8:4)}" stroke="${dec?'#d9cfbd':'#e4dccd'}"/>`;
         if(dec) h+=`<text x="${x}" y="${top+24}" text-anchor="middle" font-size="13" fill="#2a2118">${y}</text>`; }
