@@ -4,16 +4,39 @@
 <meta charset="utf-8">
 <title>1838 Black Metropolis — People & Papers Network</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon_1838.png">
+<script>/* theme switch (2026-11-14, Michiko): light (1838 house colors) by default, dark on request; remembered per browser */
+(function(){var t='light';try{t=localStorage.getItem('bm-theme')||'light';}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-:root{--bg:#16130e;--panel:#221d15;--ink:#efe7d8;--dim:#a89c86;--gold:#d4a24e;--rust:#b4552d;--teal:#4e8f83;--line:#3a3226}
+:root{--n-sel:#d4a24e;--n-p:#4e8f83;--n-e:#b4552d;--n-o:#d18aa8;--bg:#16130e;--panel:#221d15;--ink:#efe7d8;--dim:#a89c86;--gold:#d4a24e;--rust:#b4552d;--teal:#4e8f83;--line:#3a3226}
 *{box-sizing:border-box;margin:0}
 #ocrNotice{display:flex;align-items:center;gap:10px;justify-content:center;background:#2a2214;border-bottom:1px solid var(--gold);color:var(--ink);font:12.5px/1.55 Georgia;padding:9px 18px;text-align:center}
 #ocrNotice span{max-width:1080px}
 #ocrNotice b{color:var(--gold);font-weight:bold}
 html{overscroll-behavior:none}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 Georgia,'Times New Roman',serif;height:100vh;display:flex;flex-direction:column;overflow:hidden;overscroll-behavior:none;-webkit-tap-highlight-color:transparent}
-header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+#logo{width:52px;height:52px;border-radius:50%;display:block;background:#fff}
+#logoLink{flex:0 0 auto;line-height:0}
+#themeBtn{font:13px Georgia;color:var(--gold);background:transparent;border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer;white-space:nowrap}
+#themeBtn:hover{border-color:var(--gold)}
+html[data-theme="light"]{color-scheme:light;--n-sel:#ce9033;--n-p:#a3a66e;--n-e:#aa3d1d;--n-o:#8e6fa6;--bg:#f6efe2;--panel:#fbf7ef;--ink:#23271d;--dim:#62645a;--gold:#aa3d1d;--rust:#aa3d1d;--teal:#5e6a3a;--line:#ddd2bd}
+html[data-theme="light"] header h1{color:#393d32}
+html[data-theme="light"] #ocrNotice{background:#efe3c8;border-bottom-color:#aa3d1d}
+html[data-theme="light"] #adsLink:hover,html[data-theme="light"] #tradesLink:hover,html[data-theme="light"] .tchip:hover{background:#efe3c8}
+html[data-theme="light"] #tabs button.on,html[data-theme="light"] #filters .chip.on,html[data-theme="light"] #mapbtns button[aria-pressed="true"]{background:#393d32;color:#f1e3c8;border-color:#393d32}
+html[data-theme="light"] .prow{border-bottom-color:#ebe2d1}
+html[data-theme="light"] .prow:hover{background:#f3ead8}
+html[data-theme="light"] .prow.sel{background:#efe3c8;border-left-color:#aa3d1d}
+html[data-theme="light"] .b-w{background:#f1e3c8;color:#8a5a12} html[data-theme="light"] .b-n{background:#e1ebdf;color:#2f5a4f} html[data-theme="light"] .b-c{background:#ece4f2;color:#6c4e86}
+html[data-theme="light"] .b-d{background:#e6edd6;color:#4c6224} html[data-theme="light"] .b-u{background:#f4e2cc;color:#8a4f12} html[data-theme="light"] .b-m{background:#f3dcd5;color:#8f2f1a}
+html[data-theme="light"] .b-i{background:#dfe8f0;color:#2f5476} html[data-theme="light"] .b-s{background:#f2dde2;color:#8a3346} html[data-theme="light"] .b-bl{background:#dceceb;color:#2c6460}
+html[data-theme="light"] .orgchips span{background:#ece4f2;color:#5e4478}
+html[data-theme="light"] #miniHead{background:#efe3c8}
+html[data-theme="light"] #miniPanel{box-shadow:0 4px 20px rgba(57,61,50,.25)}
+html[data-theme="light"] .card q a:hover{color:#7a2a12}
+html[data-theme="light"] .vsplit:hover,html[data-theme="light"] .vsplit.on{background:rgba(170,61,29,.18)}
 header h1{font-size:19px;font-weight:normal;letter-spacing:.06em}
 header h1 b{color:var(--gold)}
 #adsLink,#tradesLink{font:13px Georgia;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:3px 12px;text-decoration:none;white-space:nowrap}
@@ -135,6 +158,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 @media (max-width:860px){
   header{position:relative;padding:10px 14px 10px 50px;gap:4px}
   header h1{font-size:14px}
+  #logo{width:34px;height:34px}
   header .sub{display:none}
   #menuBtn{display:flex;align-items:center;justify-content:center;position:absolute;left:10px;top:8px;
     width:34px;height:34px;background:var(--panel);border:1px solid var(--line);border-radius:6px;
@@ -144,6 +168,9 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   #left{position:fixed;top:0;left:0;bottom:0;width:86vw;max-width:340px;z-index:20;
     padding-top:52px;transform:translateX(-100%);transition:transform .22s ease;box-shadow:6px 0 24px rgba(0,0,0,.5)}
   #left.open{transform:translateX(0)}
+  #left:not(.open){box-shadow:none}
+  html[data-theme="light"] #left.open{box-shadow:6px 0 24px rgba(57,61,50,.25)}
+  html[data-theme="light"] #drawerBackdrop{background:rgba(35,39,29,.35)}
   #leftClose{display:flex;align-items:center;justify-content:center;position:absolute;top:6px;right:6px;
     width:36px;height:36px;background:none;border:0;color:var(--dim);font-size:20px;cursor:pointer;z-index:2}
   #search{font-size:16px}
@@ -265,8 +292,8 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 </div>
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
-  <h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades &#8594;</a>
+  <a id="logoLink" href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener" title="1838 Black Metropolis"><img id="logo" src="logo_1838.jpg" alt="1838 Black Metropolis seal"></a><h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
+  <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades &#8594;</a> <button id="themeBtn" type="button" title="Switch between light and dark colors"></button>
   <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build __BUILD__</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
@@ -292,10 +319,10 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   </div>
   <div id="center">
     <div id="legend">
-      <span><i class="dot" style="background:#d4a24e"></i>person (selected)</span>
-      <span><i class="dot" style="background:#4e8f83"></i>connected person</span>
-      <span><i class="dot" style="background:#b4552d"></i>event</span>
-      <span><i class="dot" style="background:#d18aa8"></i>organization</span>
+      <span><i class="dot" style="background:var(--n-sel)"></i>person (selected)</span>
+      <span><i class="dot" style="background:var(--n-p)"></i>connected person</span>
+      <span><i class="dot" style="background:var(--n-e)"></i>event</span>
+      <span><i class="dot" style="background:var(--n-o)"></i>organization</span>
     </div>
     <div id="mapbtns"><button id="expbtn" aria-pressed="false" title="When on, clicking a person or event in this view adds their connections instead of moving to them">+ Expand</button><button id="orgmapbtn" title="Map of organizations linked by shared members">Organization map</button><button id="evtlbtn" title="Every event on one timeline">Events timeline</button></div>
     <div id="miniPanel">
@@ -365,6 +392,10 @@ const DATA = /*__DATA__*/null;
 // Refreshed by pipeline/precompute_fullmap.js; injected by build_viewer.py. (2026-07-28)
 const BAKED_FULLMAP = /*__FULLMAP__*/null;
 window._fullLayoutCache = BAKED_FULLMAP ? new Map(BAKED_FULLMAP) : null;
+// graph colors follow the light/dark switch
+function TH(){ const L=document.documentElement.getAttribute('data-theme')!=='dark';
+  return L ? {sel:'#ce9033',p:'#a3a66e',e:'#aa3d1d',o:'#8e6fa6',ring:'#23271d',pin:'rgba(35,39,29,.5)',hl:'rgba(170,61,29,',faint:'rgba(57,61,50,',line:'rgba(57,61,50,',lblSel:'#23271d',lbl:'#2f3228',halo:'rgba(246,239,226,.85)',faintA:.16,lineA:.32}
+           : {sel:'#d4a24e',p:'#4e8f83',e:'#b4552d',o:'#d18aa8',ring:'#efe7d8',pin:'rgba(239,231,216,.6)',hl:'rgba(232,196,120,',faint:'rgba(168,156,134,',line:'rgba(212,162,78,',lblSel:'#efe7d8',lbl:'#c9bda6',halo:'rgba(22,19,14,.7)',faintA:.10,lineA:.25}; }
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
 const A = new Map(DATA.articles.map(a=>[a.id,a]));
@@ -1067,22 +1098,22 @@ function drawMini(){
   miniCtx.translate(miniCv.clientWidth/2+miniView.x, miniCv.clientHeight/2+miniView.y);
   miniCtx.scale(miniView.k, miniView.k);
   for(const l of miniLinks){
-    miniCtx.strokeStyle = l.faint ? 'rgba(168,156,134,.3)' : 'rgba(212,162,78,.55)';
+    const th=TH(); miniCtx.strokeStyle = l.faint ? th.faint+'.3)' : th.line+'.55)';
     miniCtx.lineWidth = l.faint ? 0.6 : Math.min(1+l.w*.3,3);
     miniCtx.beginPath(); miniCtx.moveTo(l.s.x,l.s.y); miniCtx.lineTo(l.t.x,l.t.y); miniCtx.stroke();
   }
   for(const n of miniNodes){
     miniCtx.beginPath(); miniCtx.arc(n.x,n.y,Math.max(1.5,n.r),0,7);
-    miniCtx.fillStyle = n.fixed ? '#d4a24e' : n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : '#4e8f83';
+    const th=TH(); miniCtx.fillStyle = n.fixed ? th.sel : n.type==='e' ? th.e : n.type==='o' ? th.o : th.p;
     miniCtx.fill();
-    if(n.fixed){ miniCtx.strokeStyle='#efe7d8'; miniCtx.lineWidth=1.2; miniCtx.stroke(); }
+    if(n.fixed){ miniCtx.strokeStyle=TH().ring; miniCtx.lineWidth=1.2; miniCtx.stroke(); }
   }
   miniCtx.textAlign='center';
   for(const n of miniNodes){
     if(!n.fixed && miniNodes.length>25 && n.r<6) continue;   // keep dense ego-networks readable
     const label = n.label.length>20 ? n.label.slice(0,19)+'…' : n.label;
     miniCtx.font = n.fixed ? 'bold 10.5px Georgia' : '9px Georgia';
-    miniCtx.fillStyle = n.fixed ? '#efe7d8' : '#c9bda6';
+    miniCtx.fillStyle = n.fixed ? TH().lblSel : TH().lbl;
     miniCtx.fillText(label, n.x, n.y+n.r+9);
   }
   miniCtx.restore();
@@ -1389,6 +1420,13 @@ function buildFullGraph(){
 // but no longer reachable; the Organization map and Events timeline overlays (below) replace it.
 // "+ Expand": in the one-person view, clicking a person or event adds its connections to the
 // picture instead of moving to it, so you can walk outward one step at a time.
+const themeBtn=document.getElementById('themeBtn');
+function paintThemeBtn(){ const d=document.documentElement.getAttribute('data-theme')==='dark';
+  themeBtn.textContent = d ? '\u2600 Light' : '\u263E Dark'; themeBtn.setAttribute('aria-label', d ? 'Switch to light colors' : 'Switch to dark colors'); }
+paintThemeBtn();
+themeBtn.addEventListener('click',()=>{ const t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',t); try{ localStorage.setItem('bm-theme',t); }catch(e){}
+  paintThemeBtn(); try{ if(typeof drawMini==='function') drawMini(); }catch(e){} });
 const expbtn=document.getElementById('expbtn');
 window._expand=false;
 expbtn.addEventListener('click',()=>{
@@ -1423,6 +1461,7 @@ function expandNode(n){
   n.expanded=true;
 }
 function draw(){
+  const th=TH();
   ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
   ctx.clearRect(0,0,cv.clientWidth,cv.clientHeight);
   ctx.save();
@@ -1444,8 +1483,8 @@ function draw(){
     const depth = is3d ? Math.max(.15, Math.min(1, ((l.s.ps+l.t.ps)/2 - .55)*2.2)) : 1;
     const onHl = hlN && (l.s===hlN || l.t===hlN);
     const dimF = hlN && !onHl ? 0.18 : 1;
-    ctx.strokeStyle = onHl ? `rgba(232,196,120,${Math.max(.55,.8*depth)})`
-      : l.faint ? `rgba(168,156,134,${.10*depth*dimF})` : `rgba(212,162,78,${.25*depth*dimF})`;
+    ctx.strokeStyle = onHl ? `${th.hl}${Math.max(.55,.8*depth)})`
+      : l.faint ? `${th.faint}${th.faintA*depth*dimF})` : `${th.line}${th.lineA*depth*dimF})`;
     ctx.lineWidth=((l.faint&&!onHl?0.6:Math.min(1+l.w*.3,3))+(onHl?0.7:0))*((l.s.ps+l.t.ps)/2||1);
     ctx.beginPath();ctx.moveTo(l.s.px,l.s.py);ctx.lineTo(l.t.px,l.t.py);ctx.stroke(); }
   const showAll = nodes.length<=160 || view.k>=1.5;
@@ -1455,11 +1494,11 @@ function draw(){
     const isHl = !hlN || n===hlN || (hl && hl.has(n));
     ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
     ctx.beginPath();ctx.arc(n.px,n.py,Math.max(1.5,n.r*n.ps),0,7);
-    ctx.fillStyle = (n.fixed||n.sel) ? '#d4a24e'
-      : n.type==='e' ? '#b4552d' : n.type==='o' ? '#d18aa8' : '#4e8f83';
+    ctx.fillStyle = (n.fixed||n.sel) ? th.sel
+      : n.type==='e' ? th.e : n.type==='o' ? th.o : th.p;
     ctx.fill();
-    if(n.fixed||n.sel){ctx.strokeStyle='#efe7d8';ctx.lineWidth=1.5;ctx.stroke();}
-    else if(n.pin){ctx.strokeStyle='rgba(239,231,216,.6)';ctx.lineWidth=1.2;ctx.stroke();}
+    if(n.fixed||n.sel){ctx.strokeStyle=th.ring;ctx.lineWidth=1.5;ctx.stroke();}
+    else if(n.pin){ctx.strokeStyle=th.pin;ctx.lineWidth=1.2;ctx.stroke();}
   }
   // ---- label pass ----
   // Which labels show is recomputed only a few times a second (and when the view,
@@ -1510,8 +1549,8 @@ function draw(){
     const label = n.label.length>26 ? n.label.slice(0,25)+'…' : n.label;
     ctx.font=((n.fixed||n.sel)?'bold 12px':'10.5px')+' Georgia';
     ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
-    ctx.fillStyle=(n.fixed||n.sel)?'#efe7d8':'#c9bda6';
-    ctx.textAlign='center'; ctx.fillText(label,n.px,n.py+n.r*n.ps+11);
+    ctx.textAlign='center'; ctx.lineJoin='round'; ctx.lineWidth=3; ctx.strokeStyle=th.halo; ctx.strokeText(label,n.px,n.py+n.r*n.ps+11);
+    ctx.fillStyle=(n.fixed||n.sel)?th.lblSel:th.lbl; ctx.fillText(label,n.px,n.py+n.r*n.ps+11);
   }
   ctx.globalAlpha = 1;
   ctx.restore();
