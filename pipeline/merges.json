@@ -2077,5 +2077,44 @@
    }
   ],
   "note": "Michiko 2026-11-18: 'Bolivar, W. Carl' (Coppin) is William Carl Bolivar, the journalist and bibliophile (1849-1914); merged into 'William Carl Bolivar'. NOT merged: his father George W. Bolivar (Winch 281, the sailmaker in Forten's loft) and Virginia Bolivar Warrick (Coppin)."
+ },
+ {
+  "keep": {
+   "name": "Francis Wood",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "Frank Wood",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-18: same man on the Excelsior Base Ball Club. Bolivar (Tribune, May 3, 1913) and the Recorder (Feb 24, 1866) print the name two ways; 'Frank Wood' merged into 'Francis Wood'."
+ },
+ {
+  "keep": {
+   "name": "James H. Francis",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "J. H. Francis",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-18: same man on the Excelsior Base Ball Club. Bolivar (Tribune, May 3, 1913) and the Recorder (Feb 24, 1866) print the name two ways; 'J. H. Francis' merged into 'James H. Francis'."
+ },
+ {
+  "keep": {
+   "name": "George W. A. Scott",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "George W. Scott",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-18: same man on the Excelsior Base Ball Club. Bolivar (Tribune, May 3, 1913) and the Recorder (Feb 24, 1866) print the name two ways; 'George W. Scott' merged into 'George W. A. Scott'."
  }
 ]

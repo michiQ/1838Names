@@ -80,12 +80,12 @@ def build(people, events, orgs, here):
                 r2 = next((a[1] for a in e["att"] if a[0] == pid), "")
                 d = e.get("date") or ""
                 if re.match(r"\d{4}", d):
-                    y = int(d[:4]); got.append((y, y, role or r2 or "", e["name"] + ", " + d))
+                    y = int(d[:4]); got.append((y, y, role or r2 or "", e["name"] + ", " + d, e["id"]))
                 else:   # event dated only by the newspaper issue that reported it (2026-11-18)
                     mi = re.search(r"_(\d{4})-(\d\d)-(\d\d)", e.get("issue") or "")
                     if mi:
                         y = int(mi.group(1))
-                        got.append((y, y, role or r2 or "", e["name"] + ", reported in the issue of " + "-".join(mi.groups())))
+                        got.append((y, y, role or r2 or "", e["name"] + ", reported in the issue of " + "-".join(mi.groups()), e["id"]))
             if not got and "i" in src:
                 m = re.search(r"_(\d{4})-\d\d-\d\d", src["i"])
                 if m:
@@ -100,13 +100,13 @@ def build(people, events, orgs, here):
                 got.append((y, y, role, cite or ("W. C. Bolivar, Philadelphia Tribune, 1913" if "PP_" in src.get("i", "") else "Winch")))
             if not got:
                 undated += 1; continue
-            for a, b, rl, sc in got:
+            for a, b, rl, sc, *ev in got:
                 if a > 1880: continue
                 k = (pid, a)
                 if k in seen: continue
                 seen.add(k)
                 rl = re.sub(r"\s+", " ", rl or "").strip(" .")
-                att.append([a, b, pid, rl, sc, 1 if OFF.search(rl) and not rl.lower().startswith("shareholder") else 0])
+                att.append([a, b, pid, rl, sc, 1 if OFF.search(rl) and not rl.lower().startswith("shareholder") else 0] + ([ev[0]] if ev else []))  # 7th item: event id, so the viewer can link the entry and its scan (2026-11-18)
         att.sort(key=lambda x: (x[0], -x[5]))
         lane = {"name": L["label"], "cat": L["cat"], "note": note, "undated": undated, "att": att}
         if L.get("marks"): lane["marks"] = L["marks"]

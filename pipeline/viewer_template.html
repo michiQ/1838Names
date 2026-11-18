@@ -274,6 +274,8 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #tldetail li{font-size:13.5px;line-height:1.35}
 #tldetail .pn{background:none;border:0;padding:0;color:var(--gold);font:bold 13.5px "Libre Caslon Text",Georgia,serif;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:rgba(138,100,24,.35);text-underline-offset:2px}
 #tldetail .pn:hover{text-decoration-color:var(--gold)}
+#tldetail .evl{background:none;border:0;padding:0;font:inherit;color:var(--gold);cursor:pointer;text-align:left;text-decoration:underline dotted}
+#tldetail .s a,#tldetail .ys a{color:var(--gold)}
 #tldetail .r{color:var(--dim)}
 #tldetail .ys{font:10.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim);margin:-2px 0 8px}
 #tldetail .s{display:block;font:10.5px "IBM Plex Mono",ui-monospace,Menlo,monospace;color:var(--dim)}
@@ -1931,10 +1933,13 @@ syncFab();
     Object.keys(by).sort().forEach(y=>{
       const L=by[y].slice().sort((a,b)=>b[5]-a[5]||nm(a[2]).localeCompare(nm(b[2])));
       const one=L.every(a=>a[4]===L[0][4]&&a[1]===a[0])&&L.length>1?L[0][4]:'';
-      const li=a=>`<li><button class="pn" data-pid="${a[2]}">${e(nm(a[2]))}</button>${a[3]&&!/^member\b/i.test(a[3])?` <span class="r">${e(a[3])}</span>`:''}${one?'':`<span class="s">${a[1]>a[0]?a[0]+'–'+a[1]+' · ':''}${e(a[4])}</span>`}</li>`;
+      // 2026-11-18 (Michiko): a record that comes from an event links to the full entry and to the scanned page
+      const EV=id=>id&&(DATA.events||[]).find(v=>v.id===id);
+      const evl=a=>{const v=EV(a[6]); return v?`<button class="evl" data-e="${v.id}" title="Open the full entry">${e(a[4])}</button>${typeof srcLinks==='function'?srcLinks(v.issue,v.pg):''}`:e(a[4]);};
+      const li=a=>`<li><button class="pn" data-pid="${a[2]}">${e(nm(a[2]))}</button>${a[3]&&!/^member\b/i.test(a[3])?` <span class="r">${e(a[3])}</span>`:''}${one?'':`<span class="s">${a[1]>a[0]?a[0]+'–'+a[1]+' · ':''}${evl(a)}</span>`}</li>`;
       const off=L.filter(a=>a[5]), rest=L.filter(a=>!a[5]);
       const single=Object.keys(by).length===1, first=single?L:(off.length?off:rest.slice(0,8)), hid=single?[]:(off.length?rest:rest.slice(8));
-      h+=`<div class="yr"><h3>${y} · ${L.length} name${L.length>1?'s':''}</h3>${one?`<div class="ys">${e(one)}</div>`:''}<ul>${first.map(li).join('')}</ul>`;
+      h+=`<div class="yr"><h3>${y} · ${L.length} name${L.length>1?'s':''}</h3>${one?`<div class="ys">${evl(L[0])}</div>`:''}<ul>${first.map(li).join('')}</ul>`;
       if(hid.length) h+=`<ul hidden>${hid.map(li).join('')}</ul><button class="more">${off.length?'and':'show'} ${hid.length} more</button>`;
       h+='</div>';
     });
@@ -1951,6 +1956,8 @@ syncFab();
   det.addEventListener('click',ev=>{
     if(ev.target.closest('.tlx')){ sel=-1; render(); return; }
     const m=ev.target.closest('.more'); if(m){m.previousElementSibling.hidden=false; m.remove(); return;}
+    const v=ev.target.closest('.evl'); if(v){ const eid=+v.dataset.e; close(false);
+      setTimeout(()=>{ try{ selectEvent(eid); if(typeof isMobile==='function'&&isMobile()&&typeof closeLeftDrawer==='function') closeLeftDrawer(); }catch(err){} },60); return; }
     const p=ev.target.closest('.pn'); if(p){ const pid=+p.dataset.pid; close(false);
       setTimeout(()=>{ try{ select(pid); if(typeof isMobile==='function'&&isMobile()&&typeof closeLeftDrawer==='function') closeLeftDrawer(); }catch(err){} },60); }
   });
