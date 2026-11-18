@@ -79,13 +79,22 @@ def build(people, events, orgs, here):
                 e = events[src["e"]]
                 r2 = next((a[1] for a in e["att"] if a[0] == pid), "")
                 d = e.get("date") or ""
-                if re.match(r"\d{4}", d):
-                    y = int(d[:4]); got.append((y, y, role or r2 or "", e["name"] + ", " + d, e["id"]))
+                dm = re.match(r"\d{4}", d) or re.match(r"(?:c\.|ca\.|circa|about)\s*(1[78]\d\d)", d)   # "c. 1866" counts as 1866 (2026-11-18)
+                if dm:
+                    y = int(dm.group(dm.lastindex or 0)); got.append((y, y, role or r2 or "", e["name"] + ", " + d, e["id"]))
                 else:   # event dated only by the newspaper issue that reported it (2026-11-18)
                     mi = re.search(r"_(\d{4})-(\d\d)-(\d\d)", e.get("issue") or "")
                     if mi:
                         y = int(mi.group(1))
                         got.append((y, y, role or r2 or "", e["name"] + ", reported in the issue of " + "-".join(mi.groups()), e["id"]))
+            if not got and L.get("events"):   # lane-level fallback: date the person by a named event they were at (2026-11-18)
+                for e in events.values():
+                    if e["name"] in L["events"] and any(x[0] == pid for x in e["att"]):
+                        dm = re.search(r"1[78]\d\d", e.get("date") or "")
+                        if dm:
+                            y = int(dm.group(0))
+                            got.append((y, y, next((x[1] for x in e["att"] if x[0] == pid), ""), e["name"] + ", " + e["date"], e["id"]))
+                            break
             if not got and "i" in src:
                 m = re.search(r"_(\d{4})-\d\d-\d\d", src["i"])
                 if m:

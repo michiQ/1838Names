@@ -1434,3 +1434,8 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - Michiko: on the union convention lane she could not see the newspaper clipping. Cause: lane boxes in Org timelines listed each record's source as plain text with no link. Fix (all lanes): timeline_data.py now carries the event id on each record; in the lane box the source line opens the full event entry, followed by "view page", "full issue" and "Internet Archive" links.
 - merges.json +3 (Michiko): Frank Wood into Francis Wood; J. H. Francis into James H. Francis; George W. Scott into George W. A. Scott.
 - apply_merges + build_viewer. Viewer: 15,669 people, 1,330 events, 3,318 articles. Smoke test 4 OK.
+
+2026-11-18. Pythian Club bubble on Org timelines (staging only).
+- Michiko: the Pythian lane showed no bubble. Cause: the founding event is dated "c. 1866", which the timeline builder did not read as a year, so everyone fell under "no date". Fix: timeline_data.py now reads "c. 1866" style dates; lanes may also list "events" whose attendees are dated by that event (set for the Pythian and Excelsior lanes).
+- Result: Pythian Club 10 names at 1866 (1 with no year, St. George B. Taylor, known only from Bolivar's 1912 column); Excelsior 15 dated. Side effect of the date fix on other lanes: Phoenix Club 10 now dated; Institute for Colored Youth 6 more dated.
+- build_viewer only. Smoke test 4 OK.
