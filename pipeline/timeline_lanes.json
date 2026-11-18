@@ -906,12 +906,19 @@
    "pas": null
   },
   {
-   "label": "Prince Hall Grand Lodge of Pennsylvania (Masons)",
+   "label": "Grand Lodge of Pennsylvania, Masonic Hall, South Eleventh Street (Grand Masters Needham, Davis, Durham)",
    "cat": "aid",
    "orgs": [
-    "Grand Lodge of Pennsylvania",
-    "R. W. Grand Lodge of Pennsylvania",
-    "Grand Lodge for the State of Pennsylvania"
+    "Grand Lodge of Pennsylvania, Masonic Hall, South Eleventh Street"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Grand Lodge for the State of Pennsylvania, Union Hall, South Seventh Street (Grand Masters Wellington, Miller)",
+   "cat": "aid",
+   "orgs": [
+    "Grand Lodge for the State of Pennsylvania, Union Hall, South Seventh Street"
    ],
    "kw": null,
    "pas": null
@@ -1197,14 +1204,31 @@
    "pas": null
   },
   {
-   "label": "Wesley A.M.E. Church, Hurst Street",
+   "label": "Wesley A.M.E. Church, Hurst Street (Little Wesley)",
    "cat": "church",
    "orgs": [
     "A.M.E. Wesley Church",
     "Wesley A.M.E. Church",
     "Wesley Church",
     "Wesley A. M. E. Church, Hurst St",
-    "AME Wesley Church"
+    "AME Wesley Church",
+    "Little Wesley Church",
+    "Love-feast at Little Wesley Church",
+    "Circle, Wesley A.M.E. Church",
+    "and Love Feast, Wesley A.M.E. Church",
+    "Close of A. L. Stanford's pastorate at Wesley A.M.E. Church, Hurst St",
+    "Bishop Willis Nazrey preaches at Wesley A.M.E. Church"
+   ],
+   "kw": "AME Wesley Church",
+   "pas": null
+  },
+  {
+   "label": "Zion Wesley Church (Big Wesley)",
+   "cat": "church",
+   "orgs": [
+    "Zion Wesleyan M. E. Church (Big Wesley)",
+    "Zion Wesley Church",
+    "Organ presentation at Zion Wesley Church"
    ],
    "kw": null,
    "pas": null
