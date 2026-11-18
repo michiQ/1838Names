@@ -5,7 +5,7 @@ auto-linked. To confirm a same-person match, add a group to `merges.json` (keep 
 existing record; source-qualify the storymap alias), e.g.:
 `{"keep": "Catto, Octavius V.", "aliases": [{"name": "Octavius V. Catto", "source": "storymap"}]}`
 
-40 of 97 StoryMap people share a name with an existing record:
+41 of 97 StoryMap people share a name with an existing record:
 
 - **Benjamin Jackson** (storymap)  ↔  Jackson, Benjamin (winch), Benjamin Jackson (blog), Benjamin Jackson (newspaper)
 - **Charles Black** (storymap)  ↔  Black, Charles (winch), Black, Charles (winch), BLACK, CHARLES (census), Charles Black (blog)
@@ -27,6 +27,7 @@ existing record; source-qualify the storymap alias), e.g.:
 - **Jacob Griffith** (storymap)  ↔  Griffith, Jacob (census), Jacob Griffith (blog)
 - **James J. G. Bias** (storymap)  ↔  Bias, James J. G. (newspaper), Bias, James J. G. (1838register)
 - **James Jones** (storymap)  ↔  Jones, James (winch)
+- **James Powell** (storymap)  ↔  James Powell (newspaper)
 - **Jane Johnson** (storymap)  ↔  Johnson, Jane (winch), Johnson, Jane (ugrr), Jane Johnson (blog), Jane Johnson (mobstats), Jane Johnson (newspaper)
 - **John Mercer Langston** (storymap)  ↔  Langston, John Mercer (dissertation)
 - **John Nicholson** (storymap)  ↔  Nicholson, John (winch)
