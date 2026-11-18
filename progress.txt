@@ -1483,3 +1483,10 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 2026-11-18. Selected events stay red (staging only).
 - Michiko approved: events keep the event color when selected or pinned, as organizations do. Gold now only ever marks a selected person. The dark ring and bold label still mark the selection. Main graph and mini map.
 - build_viewer only. Smoke test 4 OK.
+
+2026-11-18. PROMOTE #29 to production.
+- Michiko asked for the promote and gave the prod-push password in chat (not recorded anywhere).
+- Prod was at 575e556. Promote commit 5963f8a (parent prod/main) carries the staging tree at 30e3621. Verified after push: prod tree = staging tree = 4f1b4ca. `git log -S` for the password: 0 hits; no file contains it.
+- The prod repo had to be added to the session with push access through the GitHub connection before the push was accepted (the first attempt was refused by the git proxy).
+- Contents: Run #95 (CR Jan-Mar 1866) and its ads, header buttons, org timelines sweep, 1864 union convention, Richard Allen source and 1791-1794 events, merges, jewel tone dots.
+- HANDOFF_2026-11-18.md written (supersedes Nov 17).
