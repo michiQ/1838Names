@@ -76,13 +76,10 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #allbtn{position:absolute;top:8px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer}
 #allbtn:hover{border-color:var(--gold)}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
-#mapbtns{position:absolute;top:8px;right:14px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100% - 28px)}
-#mapbtns button{background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 12px;border-radius:14px;cursor:pointer}
+#mapbtns{display:flex;flex-direction:column;gap:4px;margin-left:auto;align-items:stretch}
+#mapbtns button{background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:4px 14px;border-radius:14px;cursor:pointer;white-space:nowrap}
 #mapbtns button:hover{border-color:var(--gold)}
 #mapbtns button[aria-pressed="true"]{background:#33290f;border-color:var(--gold)}
-#evbackbtn{position:absolute;top:38px;left:14px;z-index:8;display:none;background:var(--sel);border:1px solid var(--gold);color:var(--ink);font:12px Georgia;padding:6px 12px;border-radius:14px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-#evbackbtn:hover{background:var(--panel)}
-#evbackbtn.on{display:inline-block}
 .ovl{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--org:#a8466e;--ev:#a5472a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
 .ovl.on{display:flex}
 .ovbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
@@ -189,7 +186,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
     padding:10px 18px;border-radius:22px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.5);z-index:4}
   #detailFab.hide{display:none!important}
   #allbtn{font-size:11px;padding:6px 12px;top:6px;right:10px}
-  #mapbtns{top:6px;right:10px;gap:4px} #mapbtns button{font-size:11px;padding:5px 9px}
+  #mapbtns{flex-direction:row;flex-wrap:wrap;gap:4px;margin-left:0;flex-basis:100%} #mapbtns button{font-size:11px;padding:5px 9px}
   #legend{font-size:9.5px;max-width:56vw;top:8px}
   #legend span{display:block;margin-right:0}
   #miniPanel{left:8px;right:8px;top:auto;bottom:60px;width:auto;height:42vh;max-height:340px;max-width:calc(100vw - 16px)}
@@ -210,7 +207,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 @media (max-width:600px){#scanbar .ttl{display:none}#scanbar{gap:6px;padding:8px}}
 /* Organization Timelines overlay (2026-11-01) */
 #tabs button{font-size:12px;letter-spacing:.05em;padding:7px 4px}
-#tabs button#tab-t{flex:1.3}
 #tlview{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--aid:#a5472a;--edu:#2f6f64;--rights:#8a6418;--vig:#34507a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
 #tlview.on{display:flex}
 #tlbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
@@ -297,13 +293,14 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <a id="logoLink" href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener" title="1838 Black Metropolis"><img id="logo" src="logo_1838.jpg" alt="1838 Black Metropolis seal"></a><h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
   <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades &#8594;</a> <button id="themeBtn" type="button" title="Switch between light and dark colors"></button>
-  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-18 08:03</span>
+  <div id="mapbtns"><button id="orgmapbtn" title="Map of organizations linked by shared members">Org map</button><button id="evtlbtn" title="Every event on one timeline">Events timeline</button><button id="tab-t" title="Organization timelines">Org timelines</button></div>
+  <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build 2026-11-18 08:42</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>
 <div id="wrap">
   <div id="left">
     <button id="leftClose" aria-label="Close menu" title="Close">✕</button>
-    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button><button id="tab-t" title="Organization timelines">TIMELINES</button></div>
+    <div id="tabs"><button id="tab-p" class="on">PEOPLE</button><button id="tab-e">EVENTS</button><button id="tab-o">ORGS</button></div>
     <input id="search" placeholder="Search a name… e.g. Cornish" autocomplete="off">
     <div id="filters">
       <span class="chip on" data-f="all">All</span>
@@ -327,8 +324,6 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
       <span><i class="dot" style="background:var(--n-e)"></i>event</span>
       <span><i class="dot" style="background:var(--n-o)"></i>organization</span>
     </div>
-    <div id="mapbtns"><button id="orgmapbtn" title="Map of organizations linked by shared members">Organization map</button><button id="evtlbtn" title="Every event on one timeline">Events timeline</button></div>
-    <button id="evbackbtn" title="Return to the Events timeline">&#8617; Back to timeline</button>
     <div id="miniPanel">
       <div id="miniHead"><span id="miniTitle"></span><button id="miniClose" title="close">✕</button></div>
       <canvas id="miniCv"></canvas>
@@ -741,7 +736,7 @@ function srcLinks(slug,pg){
   return h;
 }
 function esc(t){return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
-function select(pid){ if(window._hideEvBack) window._hideEvBack();
+function select(pid){
   const p = P.get(pid); if(!p) return;
   window._sel = pid;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', +r.dataset.id===pid));
@@ -876,7 +871,7 @@ function linkify(s){
   return s.replace(/(https?:\/\/[^\s<"]+[^\s<".,;)]|(?:manuscripts|clippings)\/[A-Za-z0-9_\/.-]+\.(?:jpg|jpeg|png|pdf))/g,
     u=>`<a href="${u}" target="_blank" rel="noopener">${/^clippings\//.test(u) ? (/clippings\/FDP_/.test(u)?'view page':'view clipping') : /^manuscripts\//.test(u) ? 'view ' + u.split('/').pop().replace(/\.(jpe?g|png|pdf)$/i,'').replace(/^.*_p(\d+)$/,'p.$1').replace(/^.*_(\d+)$/,'photo $1') : u}</a>`);
 }
-function selectEvent(eid){ if(window._hideEvBack) window._hideEvBack();
+function selectEvent(eid){
   const e = E.get(eid); if(!e) return;
   document.querySelectorAll('.prow').forEach(r=>r.classList.toggle('sel', r.dataset.t==='e' && +r.dataset.id===eid));
   let h = `<h2>${esc(e.name)}</h2><div class="dates">${esc(e.date||'date unknown')}${e.loc?' · '+esc(e.loc):''}</div>${topicChips(e)}`;
@@ -930,7 +925,7 @@ function buildEventGraph(eid){
 }
 // clicking an organization (in the ORGS tab or on an org node) shows the org itself
 // as the centered node with all its members connected around it, plus the detail panel
-function selectOrg(name){ if(window._hideEvBack) window._hideEvBack();
+function selectOrg(name){
   const oi=(DATA.orgs||[]).findIndex(o=>o.name===name); if(oi<0) return;
   const o=DATA.orgs[oi];
   const mem=o.members.filter(q=>P.has(q));
@@ -1797,7 +1792,7 @@ syncFab();
   // ---------------- events timeline ----------------
   const evv=document.getElementById('evview');
   if(evv){
-    const svg=document.getElementById('evsvg'); let built=false; let evLastScroll=null, evRestore=null;
+    const svg=document.getElementById('evsvg'); let built=false;
     function frac(d){ const m=String(d||'').match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/); if(!m) return null;
       return +m[1]+((+m[2]||6)-1)/12+((+m[3]||15)-1)/365; }
     function build(){
@@ -1835,17 +1830,13 @@ syncFab();
         h+=`<circle tabindex="0" data-e="${e.id}" cx="${it.x.toFixed(1)}" cy="${cy.toFixed(1)}" r="${it.r.toFixed(1)}" fill="${it.byIssue?'#fbf8f2':'#a5472a'}" fill-opacity="${it.byIssue?1:.82}" stroke="#a5472a" stroke-width="${it.byIssue?1.4:.6}"><title>${esc2(tt)}</title></circle>`; }
       svg.setAttribute('width',Wd); svg.setAttribute('height',Hd); svg.setAttribute('viewBox',`0 0 ${Wd} ${Hd}`); svg.innerHTML=h;
       document.getElementById('evnodate').innerHTML = nod.length ? `<b>No date (${nod.length}):</b> `+nod.map(e=>`<a data-e="${e.id}">${esc2(e.name)}</a>`).join(' · ') : '';
-      const go=id=>{ const sc=document.getElementById('evscroll'); evLastScroll={left:sc.scrollLeft,top:sc.scrollTop}; ev.close(false); back(()=>{ selectEvent(id); if(window._showEvBack) window._showEvBack(); }); };
+      const go=id=>{ ev.close(false); back(()=>selectEvent(id)); };
       svg.addEventListener('click',x=>{ const c=x.target.closest('circle'); if(c) go(+c.dataset.e); });
       svg.addEventListener('keydown',x=>{ const c=x.target.closest('circle'); if(c&&(x.key==='Enter'||x.key===' ')){ x.preventDefault(); go(+c.dataset.e); } });
       document.getElementById('evnodate').addEventListener('click',x=>{ const a=x.target.closest('a[data-e]'); if(a) go(+a.dataset.e); });
     }
-    const ev=wire(evv,()=>{ build(); const sc=document.getElementById('evscroll'); const rs=evRestore; evRestore=null; requestAnimationFrame(()=>{ if(rs){ sc.scrollLeft=rs.left; sc.scrollTop=rs.top; } else { sc.scrollTop=sc.scrollHeight; sc.scrollLeft=0; } }); });
-    const evBackBtn=document.getElementById('evbackbtn');
-    window._showEvBack=()=>{ if(evBackBtn) evBackBtn.classList.add('on'); };
-    window._hideEvBack=()=>{ if(evBackBtn) evBackBtn.classList.remove('on'); };
-    if(evBackBtn) evBackBtn.addEventListener('click',()=>{ window._hideEvBack(); evRestore=evLastScroll; ev.open(); });
-    document.getElementById('evtlbtn').addEventListener('click',()=>{ if(window._hideEvBack) window._hideEvBack(); ev.open(); });
+    const ev=wire(evv,()=>{ build(); const sc=document.getElementById('evscroll'); requestAnimationFrame(()=>{ sc.scrollTop=sc.scrollHeight; sc.scrollLeft=0; }); });
+    document.getElementById('evtlbtn').addEventListener('click',ev.open);
   }
 })();
 </script>
