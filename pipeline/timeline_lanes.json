@@ -1,5 +1,5 @@
 {
- "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights|vig); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own. marks = [year, text] for a dated fact with no named people (drawn as a hollow dot).",
+ "_doc": "Lanes for the Organization Timelines tab (build_viewer.py -> timeline_data.py). Each lane: label shown; cat (aid|edu|rights|vig|church|sport); orgs = database organization names whose members feed the lane; kw = regex searched in Julie Winch's notes, taking the year written right after the society's name (e.g. 'Member, Daughters of Absalom (1827)'); pas = row number in pas1838_beneficial.json (founding year and 1837 figures); pasNote = why a match is only probable. Rows of the 1838 PAS table not listed here are added automatically as lanes of their own. marks = [year, text] for a dated fact with no named people (drawn as a hollow dot).",
  "lanes": [
   {
    "label": "Free African Society",
@@ -387,7 +387,12 @@
    "cat": "aid",
    "orgs": [
     "Grand Tabernacle of Pennsylvania, Grand United Order of Brothers and Sisters of Love and Charity",
-    "Grand United Order of Brothers and Sisters of Love and Charity"
+    "Grand United Order of Brothers and Sisters of Love and Charity",
+    "Grand Tabernacle",
+    "Grand Tabernacle of Pennsylvania",
+    "Independent Grand Tabernacles of Love and Charity of Pennsylvania",
+    "Grand Tabernacle of Love",
+    "General Grand Tabernacle of Accepted Order of Brothers"
    ],
    "kw": "Love and Charity",
    "pas": null
@@ -707,7 +712,8 @@
    "label": "Library Company of Colored Persons",
    "cat": "edu",
    "orgs": [
-    "Philadelphia Library Company of Colored Persons"
+    "Philadelphia Library Company of Colored Persons",
+    "Philadelphia Library Company (of Colored Persons)"
    ],
    "kw": "Library Company of Colo",
    "pas": null
@@ -734,7 +740,8 @@
    "label": "Banneker Institute",
    "cat": "edu",
    "orgs": [
-    "Banneker Institute"
+    "Banneker Institute",
+    "Banneker Institute of Philadelphia"
    ],
    "kw": "Banneker Institute",
    "pas": null
@@ -865,7 +872,8 @@
    "cat": "rights",
    "orgs": [
     "Social, Civil and Statistical Association of the Colored People of Pennsylvania",
-    "Social, Civil and Statistical Association"
+    "Social, Civil and Statistical Association",
+    "Statistical Association of the Colored People of Pennsylvania"
    ],
    "kw": "Social, Civil and Statistical",
    "pas": null
@@ -895,6 +903,435 @@
     "African Insurance Company"
    ],
    "kw": "African Insurance Company",
+   "pas": null
+  },
+  {
+   "label": "Prince Hall Grand Lodge of Pennsylvania (Masons)",
+   "cat": "aid",
+   "orgs": [
+    "Grand Lodge of Pennsylvania",
+    "R. W. Grand Lodge of Pennsylvania",
+    "Grand Lodge for the State of Pennsylvania"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Grand United Order of Odd Fellows",
+   "cat": "aid",
+   "orgs": [
+    "Grand United Order of Odd Fellows",
+    "Mount Olive Lodge No. 964, G.U.O. of O.F",
+    "No. 711, Grand United Order of Odd Fellows"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Good Samaritans and Daughters of Samaria, District Grand Lodge No. 2",
+   "cat": "aid",
+   "orgs": [
+    "No. 2, Independent Order of Good Samaritans",
+    "District Grand Lodge No. 2, Independent Order of Good Samaritans and Daughters of Samaria",
+    "Good Samaritans District Grand Lodge No. 2",
+    "2, Independent Order of Good Samaritans",
+    "Good Samaritans and Daughters of Samaria District Grand Lodge No. 2",
+    "District Grand Lodge No. 2, I.O. of Good Samaritans and Daughters of Samaria"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Ladies' Union Association",
+   "cat": "aid",
+   "orgs": [
+    "Ladies' Union Association",
+    "Ladies' Union Association of Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Soldiers' relief societies at Bethel Church",
+   "cat": "aid",
+   "orgs": [
+    "Soldiers' Relief Association",
+    "Soldiers' Aid Society of Bethel A. M. E. Church",
+    "Soldiers' Circle Society of Bethel"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Dorcas Society of Bethel Church",
+   "cat": "aid",
+   "orgs": [
+    "Dorcas Society",
+    "Dorcas Society of Bethel Church",
+    "Dorcas Society of A.M.E. Bethel Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Children's Aid Society of St. Thomas' Church",
+   "cat": "aid",
+   "orgs": [
+    "Children's Aid Society of St. Thomas' Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Union Freedmen's Relief Association of West Philadelphia",
+   "cat": "aid",
+   "orgs": [
+    "Union Freedmen's Relief Association of West Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Publication Society of Philadelphia",
+   "cat": "aid",
+   "orgs": [
+    "Publication Society of Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Young Men's Union Literary Association",
+   "cat": "edu",
+   "orgs": [
+    "Young Men's Union"
+   ],
+   "kw": "Young Men's Union",
+   "pas": null
+  },
+  {
+   "label": "Reading Room Society of Philadelphia",
+   "cat": "edu",
+   "orgs": [
+    "Reading Room Society of Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Demosthenian Institute",
+   "cat": "edu",
+   "orgs": [
+    "Demosthenian Institute"
+   ],
+   "kw": "Demosthenian Institute",
+   "pas": null
+  },
+  {
+   "label": "First National Colored Convention, Bethel Church (1830)",
+   "cat": "rights",
+   "orgs": [
+    "First National Colored Convention, Bethel Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Union League Association",
+   "cat": "rights",
+   "orgs": [
+    "Union League Association",
+    "Colored People'n Union League"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Pennsylvania Abolition Society",
+   "cat": "rights",
+   "orgs": [
+    "Pennsylvania Abolition Society"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "American Anti-Slavery Society",
+   "cat": "rights",
+   "orgs": [
+    "American Anti-Slavery Society"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Pennsylvania Anti-Slavery Society",
+   "cat": "rights",
+   "orgs": [
+    "Pennsylvania Anti-Slavery Society",
+    "Pennsylvania State Anti-Slavery Society",
+    "Eastern District Pennsylvania Anti-Slavery Society"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Anti-Slavery Society of the City and County of Philadelphia",
+   "cat": "rights",
+   "orgs": [
+    "Anti-Slavery Society of the City and County of Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Philadelphia City Anti-Slavery Society",
+   "cat": "rights",
+   "orgs": [
+    "Philadelphia City Anti-Slavery Society"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Union Anti-Slavery Society of Philadelphia",
+   "cat": "rights",
+   "orgs": [
+    "Union Anti-Slavery Society of Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Junior Anti-Slavery Society",
+   "cat": "rights",
+   "orgs": [
+    "Junior Anti-Slavery Society"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Philadelphia Female Anti-Slavery Society",
+   "cat": "rights",
+   "orgs": [
+    "Philadelphia Female Anti-Slavery Society"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "American Free Produce Association",
+   "cat": "rights",
+   "orgs": [
+    "American Free Produce Association",
+    "Free Produce Convention"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Phoenix Club",
+   "cat": "vig",
+   "orgs": [
+    "Phoenix Club"
+   ],
+   "kw": null,
+   "pas": null,
+   "marks": [
+    [
+     1858,
+     "About 1858-1859: a council at the Phoenix Club, 922 South Street, in the rescue of a fugitive from Charleston (W. C. Bolivar, Philadelphia Tribune, Feb. 15, 1913)."
+    ]
+   ]
+  },
+  {
+   "label": "Olive Cricket Club",
+   "cat": "sport",
+   "orgs": [
+    "Olive Cricket Club"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Excelsior Base Ball Club",
+   "cat": "sport",
+   "orgs": [
+    "Excelsior Base Ball Club"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Pythian Club",
+   "cat": "sport",
+   "orgs": [
+    "Pythian Club"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Bethel A.M.E. Church",
+   "cat": "church",
+   "orgs": [
+    "Bethel Church",
+    "Bethel A.M.E. Church",
+    "Bethel A. M. E. Church",
+    "A.M.E. Bethel Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Union A.M.E. Church, Coates Street",
+   "cat": "church",
+   "orgs": [
+    "Union A.M.E. Church",
+    "Union A. M. E. Church",
+    "A. M. E. Union Church",
+    "A.M.E. Union Church, Philadelphia"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Wesley A.M.E. Church, Hurst Street",
+   "cat": "church",
+   "orgs": [
+    "A.M.E. Wesley Church",
+    "Wesley A.M.E. Church",
+    "Wesley Church",
+    "Wesley A. M. E. Church, Hurst St",
+    "AME Wesley Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Zion A.M.E. Mission Church, Seventh Street",
+   "cat": "church",
+   "orgs": [
+    "Zion A.M.E. Mission Church",
+    "for the Zion A.M.E. Mission Church",
+    "Zion A. M. E. Mission Church",
+    "Zion Mission Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Philadelphia Annual Conference of the A.M.E. Church",
+   "cat": "church",
+   "orgs": [
+    "Philadelphia Annual Conference of the A.M.E. Church",
+    "Philadelphia Annual Conference of the A. M. E. Church",
+    "Philadelphia Annual Conference"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Missionary Society of the Philadelphia Annual Conference",
+   "cat": "church",
+   "orgs": [
+    "Missionary Society of the Philadelphia Annual Conference"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Sabbath School Association of the Philadelphia District",
+   "cat": "church",
+   "orgs": [
+    "Sabbath School Association of the Philadelphia District"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "St. Thomas African Episcopal Church",
+   "cat": "church",
+   "orgs": [
+    "St. Thomas African Episcopal Church",
+    "St. Thomas' Colored Episcopal Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Church of the Crucifixion",
+   "cat": "church",
+   "orgs": [
+    "Church of the Crucifixion",
+    "Crucifixion Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "First African Presbyterian Church, Seventh Street",
+   "cat": "church",
+   "orgs": [
+    "First African Presbyterian Church",
+    "Seventh Street Presbyterian Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Central Presbyterian Church, Lombard Street",
+   "cat": "church",
+   "orgs": [
+    "Central Presbyterian Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "First African Baptist Church",
+   "cat": "church",
+   "orgs": [
+    "First African Baptist Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Shiloh Baptist Church",
+   "cat": "church",
+   "orgs": [
+    "Shiloh Baptist Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Union Baptist Church, Minster Street",
+   "cat": "church",
+   "orgs": [
+    "Union Baptist Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "African Zoar Methodist Church",
+   "cat": "church",
+   "orgs": [
+    "African Zoar Methodist Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "First Colored Methodist Protestant Church",
+   "cat": "church",
+   "orgs": [
+    "First Colored Methodist Protestant Church, Pennsylvania District"
+   ],
+   "kw": null,
    "pas": null
   }
  ]

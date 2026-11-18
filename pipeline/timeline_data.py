@@ -81,6 +81,11 @@ def build(people, events, orgs, here):
                 d = e.get("date") or ""
                 if re.match(r"\d{4}", d):
                     y = int(d[:4]); got.append((y, y, role or r2 or "", e["name"] + ", " + d))
+                else:   # event dated only by the newspaper issue that reported it (2026-11-18)
+                    mi = re.search(r"_(\d{4})-(\d\d)-(\d\d)", e.get("issue") or "")
+                    if mi:
+                        y = int(mi.group(1))
+                        got.append((y, y, role or r2 or "", e["name"] + ", reported in the issue of " + "-".join(mi.groups())))
             if not got and "i" in src:
                 m = re.search(r"_(\d{4})-\d\d-\d\d", src["i"])
                 if m:
