@@ -1083,18 +1083,10 @@
    "pas": null
   },
   {
-   "label": "Anti-Slavery Society of the City and County of Philadelphia",
+   "label": "Anti-Slavery Society of the City and County of Philadelphia (Philadelphia City Anti-Slavery Society)",
    "cat": "rights",
    "orgs": [
-    "Anti-Slavery Society of the City and County of Philadelphia"
-   ],
-   "kw": null,
-   "pas": null
-  },
-  {
-   "label": "Philadelphia City Anti-Slavery Society",
-   "cat": "rights",
-   "orgs": [
+    "Anti-Slavery Society of the City and County of Philadelphia",
     "Philadelphia City Anti-Slavery Society"
    ],
    "kw": null,
@@ -1180,7 +1172,7 @@
    "pas": null
   },
   {
-   "label": "Bethel A.M.E. Church",
+   "label": "Bethel A.M.E. Church (Mother Bethel)",
    "cat": "church",
    "orgs": [
     "Bethel Church",
@@ -1223,12 +1215,23 @@
    "pas": null
   },
   {
-   "label": "Zion Wesley Church (Big Wesley)",
+   "label": "Wesley A.M.E. Zion Church, Lombard Street (Big Wesley)",
    "cat": "church",
    "orgs": [
     "Zion Wesleyan M. E. Church (Big Wesley)",
     "Zion Wesley Church",
     "Organ presentation at Zion Wesley Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "A.M.E. Zion Philadelphia Annual Conference",
+   "cat": "church",
+   "orgs": [
+    "A.M.E. Zion Philadelphia District Annual Conference",
+    "A.M.E. Zion Philadelphia Annual Conference",
+    "Philadelphia Annual Conference of the A.M.E. Zion Church"
    ],
    "kw": null,
    "pas": null
