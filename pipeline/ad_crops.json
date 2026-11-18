@@ -1359,6 +1359,102 @@
     0.425
    ],
    "check": "placed 2026-11-14; box set against the high-resolution render from the film"
+  },
+  {
+   "issue": "CR_1866-01-06",
+   "page": 3,
+   "headline": "Advertisement -- Mrs. Edith Mayhew (shrouding)",
+   "box": [
+    0.427,
+    0.424,
+    0.575,
+    0.506
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-01-20",
+   "page": 3,
+   "headline": "Advertisement -- Mrs. G. A. Brown, Indian Doctress (Newtown, Bucks Co.)",
+   "box": [
+    0.426,
+    0.822,
+    0.573,
+    0.98
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-01-20",
+   "page": 3,
+   "headline": "Advertisement -- Dr. Jonathan Davis (738 S. 11th St.)",
+   "box": [
+    0.705,
+    0.615,
+    0.857,
+    0.673
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-02-03",
+   "page": 3,
+   "headline": "House of Application for Colored People -- Mrs. Maria Butler (advertisement)",
+   "box": [
+    0.416,
+    0.572,
+    0.577,
+    0.663
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-02-03",
+   "page": 4,
+   "headline": "Navigation for Colored Men (advertisement)",
+   "box": [
+    0.566,
+    0.905,
+    0.723,
+    0.975
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-03-03",
+   "page": 3,
+   "headline": "Leizeare Brown's Boot and Shoe Depot (advertisement)",
+   "box": [
+    0.417,
+    0.742,
+    0.577,
+    0.81
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-03-03",
+   "page": 4,
+   "headline": "J. B. Rodgers, Book, Newspaper and Job Printing Office (advertisement)",
+   "box": [
+    0.848,
+    0.893,
+    0.982,
+    0.965
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-03-24",
+   "page": 3,
+   "headline": "Freedmen's Employment Office (advertisement)",
+   "box": [
+    0.415,
+    0.573,
+    0.573,
+    0.623
+   ],
+   "check": "placed 2026-11-18, Run #95; box set against the film render"
   }
  ]
 }
