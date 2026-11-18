@@ -1468,3 +1468,10 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - extractions_allen1880.json +1 event: "Breaking ground for the African Church: Richard Allen puts the first spade in the ground", c. 1793, pp. 17-18, Allen linked, counted for St. Thomas. Allen does not describe the opening service of the finished building.
 - manuscripts/Allen_LifeExperience_1880/: scans of pp. 14-16 added (transcription file still covers pp. 17-20 only).
 - Full rebuild. Viewer: 15,668 people, 1,333 events, 3,318 articles. Smoke test 4 OK.
+
+2026-11-18. Dot colors: palette A, "Jewel tones" (staging only).
+- Michiko chose palette A from five options shown in chat. Light theme only; dark theme dots unchanged; nothing else restyled.
+- Network dots: person (selected) #c8871e, connected person #2f6f64, event #a5472a, organization #5b3f86 (CSS vars and the canvas TH() colors).
+- Org timelines categories: aid #a5472a, edu #1f6f78, rights #b07a12, vig #2c4a7c, church #6a3d8f, sport #3f7a3a.
+- Org map dots: #5b3f86 (hover #3d2a5c), to match the organization color. Events timeline dots were already #a5472a.
+- build_viewer only. Smoke test 4 OK.

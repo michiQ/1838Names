@@ -21,7 +21,7 @@ header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18
 #logoLink{flex:0 0 auto;line-height:0}
 #themeBtn{font:13px Georgia;color:var(--gold);background:transparent;border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer;white-space:nowrap}
 #themeBtn:hover{border-color:var(--gold)}
-html[data-theme="light"]{color-scheme:light;--n-sel:#ce9033;--n-p:#a3a66e;--n-e:#aa3d1d;--n-o:#8e6fa6;--bg:#f6efe2;--panel:#fbf7ef;--ink:#23271d;--dim:#62645a;--gold:#aa3d1d;--rust:#aa3d1d;--teal:#5e6a3a;--line:#ddd2bd}
+html[data-theme="light"]{color-scheme:light;--n-sel:#c8871e;--n-p:#2f6f64;--n-e:#a5472a;--n-o:#5b3f86;--bg:#f6efe2;--panel:#fbf7ef;--ink:#23271d;--dim:#62645a;--gold:#aa3d1d;--rust:#aa3d1d;--teal:#5e6a3a;--line:#ddd2bd}
 html[data-theme="light"] header h1{color:#393d32}
 html[data-theme="light"] #ocrNotice{background:#efe3c8;border-bottom-color:#aa3d1d}
 html[data-theme="light"] #adsLink:hover,html[data-theme="light"] #tradesLink:hover,html[data-theme="light"] #mapbtns button:hover,html[data-theme="light"] .tchip:hover{background:#efe3c8}
@@ -80,7 +80,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #mapbtns button{background:none;border:1px solid var(--gold);color:var(--gold);font:13px Georgia;padding:3px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
 #mapbtns button:hover{background:#33290f}
 #mapbtns button[aria-pressed="true"]{background:#33290f;border-color:var(--gold)}
-.ovl{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--org:#a8466e;--ev:#a5472a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
+.ovl{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--org:#5b3f86;--ev:#a5472a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
 .ovl.on{display:flex}
 .ovbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
 .ovbar button{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px "Libre Caslon Text",Georgia,serif;padding:6px 12px;cursor:pointer}
@@ -207,7 +207,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 @media (max-width:600px){#scanbar .ttl{display:none}#scanbar{gap:6px;padding:8px}}
 /* Organization Timelines overlay (2026-11-01) */
 #tabs button{font-size:12px;letter-spacing:.05em;padding:7px 4px}
-#tlview{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--aid:#a5472a;--edu:#2f6f64;--rights:#8a6418;--vig:#34507a;--church:#6b4a8a;--sport:#4f7a2c;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
+#tlview{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--aid:#a5472a;--edu:#1f6f78;--rights:#b07a12;--vig:#2c4a7c;--church:#6a3d8f;--sport:#3f7a3a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
 #tlview.on{display:flex}
 #tlbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
 #tlbar button{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px "Libre Caslon Text",Georgia,serif;padding:6px 12px;cursor:pointer}
@@ -396,7 +396,7 @@ const BAKED_FULLMAP = /*__FULLMAP__*/null;
 window._fullLayoutCache = BAKED_FULLMAP ? new Map(BAKED_FULLMAP) : null;
 // graph colors follow the light/dark switch
 function TH(){ const L=document.documentElement.getAttribute('data-theme')!=='dark';
-  return L ? {sel:'#ce9033',p:'#a3a66e',e:'#aa3d1d',o:'#8e6fa6',ring:'#23271d',pin:'rgba(35,39,29,.5)',hl:'rgba(170,61,29,',faint:'rgba(57,61,50,',line:'rgba(57,61,50,',lblSel:'#23271d',lbl:'#2f3228',halo:'rgba(246,239,226,.85)',faintA:.16,lineA:.32}
+  return L ? {sel:'#c8871e',p:'#2f6f64',e:'#a5472a',o:'#5b3f86',ring:'#23271d',pin:'rgba(35,39,29,.5)',hl:'rgba(170,61,29,',faint:'rgba(57,61,50,',line:'rgba(57,61,50,',lblSel:'#23271d',lbl:'#2f3228',halo:'rgba(246,239,226,.85)',faintA:.16,lineA:.32}
            : {sel:'#d4a24e',p:'#4e8f83',e:'#b4552d',o:'#d18aa8',ring:'#efe7d8',pin:'rgba(239,231,216,.6)',hl:'rgba(232,196,120,',faint:'rgba(168,156,134,',line:'rgba(212,162,78,',lblSel:'#efe7d8',lbl:'#c9bda6',halo:'rgba(22,19,14,.7)',faintA:.10,lineA:.25}; }
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
@@ -1740,7 +1740,7 @@ syncFab();
       if(hov){ cx.strokeStyle='rgba(111,99,82,.10)'; cx.lineWidth=.5; }
       for(const n of N){
         const dim=hn&&!hn.has(n), r=Math.max(2.5,n.r*Math.sqrt(v.k));
-        cx.globalAlpha=dim?.25:1; cx.fillStyle=n===hov?'#7a2a4c':'#a8466e';
+        cx.globalAlpha=dim?.25:1; cx.fillStyle=n===hov?'#3d2a5c':'#5b3f86';
         cx.beginPath(); cx.arc(sx(n.x),sy(n.y),r,0,Math.PI*2); cx.fill();
         cx.strokeStyle='#fbf8f2'; cx.lineWidth=1; cx.stroke();
       }
@@ -1755,7 +1755,7 @@ syncFab();
         if(boxes.some(b=>bx[0]<b[2]&&bx[2]>b[0]&&bx[1]<b[3]&&bx[3]>b[1])) continue;
         if(!hn && boxes.length>=Math.round(18*Math.max(1,v.k*v.k))) break;
         boxes.push(bx);
-        cx.lineWidth=3; cx.strokeStyle='rgba(243,237,226,.9)'; cx.strokeText(t,X,Y); cx.fillStyle=n===hov?'#7a2a4c':'#2a2118'; cx.fillText(t,X,Y);
+        cx.lineWidth=3; cx.strokeStyle='rgba(243,237,226,.9)'; cx.strokeText(t,X,Y); cx.fillStyle=n===hov?'#3d2a5c':'#2a2118'; cx.fillText(t,X,Y);
       }
     }
     function pick(px,py){ let best=null,bd=1e9; for(const n of N){ const r=Math.max(2.5,n.r*Math.sqrt(v.k))+6, d=Math.hypot(sx(n.x)-px,sy(n.y)-py); if(d<r&&d<bd){bd=d;best=n;} } return best; }
