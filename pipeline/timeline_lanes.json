@@ -1220,10 +1220,17 @@
    "orgs": [
     "Zion Wesleyan M. E. Church (Big Wesley)",
     "Zion Wesley Church",
-    "Organ presentation at Zion Wesley Church"
+    "Organ presentation at Zion Wesley Church",
+    "First Colored Wesley Church"
    ],
    "kw": null,
-   "pas": null
+   "pas": null,
+   "marks": [
+    [
+     1864,
+     "June 14-16, 1864: delegates of the A.M.E. and A.M.E. Zion General Conferences met here on a basis of union (Christian Recorder, July 9, 1864)."
+    ]
+   ]
   },
   {
    "label": "A.M.E. Zion Philadelphia Annual Conference",
@@ -1232,6 +1239,15 @@
     "A.M.E. Zion Philadelphia District Annual Conference",
     "A.M.E. Zion Philadelphia Annual Conference",
     "Philadelphia Annual Conference of the A.M.E. Zion Church"
+   ],
+   "kw": null,
+   "pas": null
+  },
+  {
+   "label": "Convention on the union of the A.M.E. and A.M.E. Zion Churches (1864)",
+   "cat": "church",
+   "orgs": [
+    "Convention on the union of the A.M.E. and A.M.E. Zion Churches (1864)"
    ],
    "kw": null,
    "pas": null
