@@ -1475,3 +1475,7 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - Org timelines categories: aid #a5472a, edu #1f6f78, rights #b07a12, vig #2c4a7c, church #6a3d8f, sport #3f7a3a.
 - Org map dots: #5b3f86 (hover #3d2a5c), to match the organization color. Events timeline dots were already #a5472a.
 - build_viewer only. Smoke test 4 OK.
+
+2026-11-18. Selected organizations stay purple (staging only).
+- Michiko: organizations were showing orange, not purple. Cause: the selected or pinned node was always drawn in the "selected" gold, whatever its type. Organizations now keep the organization color when selected or pinned; the dark ring and bold label still mark the selection. Same change in the mini map. Events and people still turn gold when selected (not asked; flagged).
+- build_viewer only. Smoke test 4 OK.
