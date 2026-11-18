@@ -1479,3 +1479,7 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 2026-11-18. Selected organizations stay purple (staging only).
 - Michiko: organizations were showing orange, not purple. Cause: the selected or pinned node was always drawn in the "selected" gold, whatever its type. Organizations now keep the organization color when selected or pinned; the dark ring and bold label still mark the selection. Same change in the mini map. Events and people still turn gold when selected (not asked; flagged).
 - build_viewer only. Smoke test 4 OK.
+
+2026-11-18. Selected events stay red (staging only).
+- Michiko approved: events keep the event color when selected or pinned, as organizations do. Gold now only ever marks a selected person. The dark ring and bold label still mark the selection. Main graph and mini map.
+- build_viewer only. Smoke test 4 OK.

@@ -1106,7 +1106,7 @@ function drawMini(){
   }
   for(const n of miniNodes){
     miniCtx.beginPath(); miniCtx.arc(n.x,n.y,Math.max(1.5,n.r),0,7);
-    const th=TH(); miniCtx.fillStyle = n.type==='o' ? th.o : n.fixed ? th.sel : n.type==='e' ? th.e : th.p;
+    const th=TH(); miniCtx.fillStyle = n.type==='o' ? th.o : n.type==='e' ? th.e : n.fixed ? th.sel : th.p;
     miniCtx.fill();
     if(n.fixed){ miniCtx.strokeStyle=TH().ring; miniCtx.lineWidth=1.2; miniCtx.stroke(); }
   }
@@ -1462,9 +1462,9 @@ function draw(){
     const isHl = !hlN || n===hlN || (hl && hl.has(n));
     ctx.globalAlpha = depth * (isHl ? 1 : 0.18);
     ctx.beginPath();ctx.arc(n.px,n.py,Math.max(1.5,n.r*n.ps),0,7);
-    // organizations stay purple even when selected; the dark ring still marks the selection (Michiko 2026-11-18)
-    ctx.fillStyle = n.type==='o' ? th.o : (n.fixed||n.sel) ? th.sel
-      : n.type==='e' ? th.e : th.p;
+    // organizations stay purple and events stay red even when selected; gold means a selected person only.
+    // The dark ring and bold label still mark the selection (Michiko 2026-11-18)
+    ctx.fillStyle = n.type==='o' ? th.o : n.type==='e' ? th.e : (n.fixed||n.sel) ? th.sel : th.p;
     ctx.fill();
     if(n.fixed||n.sel){ctx.strokeStyle=th.ring;ctx.lineWidth=1.5;ctx.stroke();}
     else if(n.pin){ctx.strokeStyle=th.pin;ctx.lineWidth=1.2;ctx.stroke();}
