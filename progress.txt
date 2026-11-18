@@ -1439,3 +1439,12 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - Michiko: the Pythian lane showed no bubble. Cause: the founding event is dated "c. 1866", which the timeline builder did not read as a year, so everyone fell under "no date". Fix: timeline_data.py now reads "c. 1866" style dates; lanes may also list "events" whose attendees are dated by that event (set for the Pythian and Excelsior lanes).
 - Result: Pythian Club 10 names at 1866 (1 with no year, St. George B. Taylor, known only from Bolivar's 1912 column); Excelsior 15 dated. Side effect of the date fix on other lanes: Phoenix Club 10 now dated; Institute for Colored Youth 6 more dated.
 - build_viewer only. Smoke test 4 OK.
+
+2026-11-18. New source: Richard Allen, Life, Experience, and Gospel Labors (1880 printing), pp. 17-20 (staging only).
+- Michiko put lifeexperiencego1880alle.pdf in Drive "Newspapers/Early Churches" (public domain; https://archive.org/details/lifeexperiencego1880alle). Only pages 17-20 wanted. Printed pages 17-20 are PDF pages 21-24.
+- manuscripts/Allen_LifeExperience_1880/: RA_1880_p17.jpg to p20.jpg (page scans) and RA_1880_pp17-20.txt (transcription: Internet Archive OCR corrected against the page images).
+- timeline_lanes.json marks: Bethel A.M.E. Church (Mother Bethel) founded 1794 (p. 20: "In July 1794 ... The house was called Bethel"); St. Thomas African Episcopal Church founded 1793 as the African Church (pp. 17-18, built by Allen and Absalom Jones; Michiko: Allen does not yet call it St. Thomas, but it is).
+- NOTE: page 17 itself prints no year. "1793" is printed on page 19 ("In 1793 a committee was appointed from the African Church"). The St. Thomas note cites pp. 17-18 for the building and p. 19 for the year, and links all three scans.
+- No people or events were added from the book (William Gray, William Wilcher, Absalom Jones are named on p. 17).
+- viewer_template.html: lane founding notes now turn scan paths into "view p.N" links; footer credits the book; timeline intro mentions it.
+- build_viewer only. Smoke test 4 OK.
