@@ -2047,5 +2047,35 @@
    }
   ],
   "note": "Michiko 2026-11-14: the T. J. Bowers who advertised coal at 634 Lombard in 1865 is Thomas J. Bowers the singer ('the Colored Mario'), Winch's 'Bowers, Thomas J.'. Not merged: Winch 'Bowers, Thomas' (a schoolboy in 1835), newspaper 'Thos. Bowers', blog 'Thomas Bowers', 'Mrs. T. J. Bowers'."
+ },
+ {
+  "keep": {
+   "name": "William Nesbit",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "William Nesbitt",
+    "source": "newspaper"
+   },
+   {
+    "name": "Wm. Nesbit",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-18: all William Nesbit newspaper variants are one man (William Nesbit of Altoona, the Pennsylvania State Equal Rights League leader). 'William Nesbitt' and 'Wm. Nesbit' merged into 'William Nesbit'."
+ },
+ {
+  "keep": {
+   "name": "William Carl Bolivar",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "Bolivar, W. Carl",
+    "source": "coppin"
+   }
+  ],
+  "note": "Michiko 2026-11-18: 'Bolivar, W. Carl' (Coppin) is William Carl Bolivar, the journalist and bibliophile (1849-1914); merged into 'William Carl Bolivar'. NOT merged: his father George W. Bolivar (Winch 281, the sailmaker in Forten's loft) and Virginia Bolivar Warrick (Coppin)."
  }
 ]
