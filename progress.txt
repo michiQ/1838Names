@@ -1455,3 +1455,9 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - event_orgs.json: the event counts for St. Thomas African Episcopal Church, so the four men appear at 1793 on that lane.
 - TO REVIEW: Bishop Richard Allen has two records, "Allen, Richard" (Winch) and "Richard Allen" (newspapers); not merged. Wilcher may be the man other sources spell Wiltshire; not linked.
 - Full rebuild. Viewer: 15,670 people, 1,331 events, 3,318 articles. Smoke test 4 OK.
+
+2026-11-18. Richard Allen merged; Bethel opening event; events timeline places "c." dates (staging only).
+- merges.json (Michiko): newspaper record "Richard Allen" and blog record "Richard Allen" merged into Winch "Allen, Richard" (Bishop Allen). Keyed by name and source, not id: an id-keyed version did not survive a clean rebuild. Not merged: Allen, Richard Jr. and the directory/register entries.
+- extractions_allen1880.json +1 event: "Opening of Bethel Church by Bishop Asbury", 1794-07, from pp. 19-20; Richard Allen linked; Asbury and Dickins named in the description only. event_orgs: counts for Bethel A.M.E. Church, so Allen shows at 1794 on the Bethel lane.
+- Events timeline (Michiko: update it with the new data): events dated "c. YYYY" were all sitting under "No date". They are now placed at that year. 12 events moved onto the timeline, including the c. 1787 St. George's expulsion, the c. 1793 lot committee and the c. 1866 ball clubs. The timeline now starts at 1780. One event is left with no date (Rev. William J. Laws).
+- Full rebuild, run twice to confirm. Viewer: 15,668 people, 1,332 events, 3,318 articles. Smoke test 4 OK.

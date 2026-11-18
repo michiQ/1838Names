@@ -1796,7 +1796,7 @@ syncFab();
   const evv=document.getElementById('evview');
   if(evv){
     const svg=document.getElementById('evsvg'); let built=false;
-    function frac(d){ const m=String(d||'').match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/); if(!m) return null;
+    function frac(d){ const m=String(d||'').match(/^(?:c\.\s*)?(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/); if(!m) return null;   // 'c. 1793' is placed at 1793 (2026-11-18)
       return +m[1]+((+m[2]||6)-1)/12+((+m[3]||15)-1)/365; }
     function build(){
       if(built) return; built=true;
