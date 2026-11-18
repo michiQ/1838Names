@@ -1448,3 +1448,10 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - No people or events were added from the book (William Gray, William Wilcher, Absalom Jones are named on p. 17).
 - viewer_template.html: lane founding notes now turn scan paths into "view p.N" links; footer credits the book; timeline intro mentions it.
 - build_viewer only. Smoke test 4 OK.
+
+2026-11-18. Lot committee of the African Church added from Richard Allen's book (staging only).
+- New file pipeline/extractions_allen1880.json: one event, "Committee to find a lot for the African Church (Richard Allen, Absalom Jones, William Gray, William Wilcher)", from pp. 17-18, dated "c. 1793" (the book gives no date for the committee; 1793 is printed on p. 19). Description links the three page scans and the Internet Archive book.
+- People linked: Richard Allen (newspaper record), Jones, Absalom (Winch), William Gray (already in the 1793 yellow fever event), William Wilcher (new).
+- event_orgs.json: the event counts for St. Thomas African Episcopal Church, so the four men appear at 1793 on that lane.
+- TO REVIEW: Bishop Richard Allen has two records, "Allen, Richard" (Winch) and "Richard Allen" (newspapers); not merged. Wilcher may be the man other sources spell Wiltshire; not linked.
+- Full rebuild. Viewer: 15,670 people, 1,331 events, 3,318 articles. Smoke test 4 OK.
