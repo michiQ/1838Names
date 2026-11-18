@@ -1423,3 +1423,9 @@ MICHIKO 2026-11-18: "First Colored Wesley Church" (1863 organ-fund entertainment
 - FINDING: the Recorder does not print a list of the 25 A.M.E. delegates in any issue on file for May-July 1864, and the circular says the Articles were "signed by the delegates of both connections" without printing the names. The A.M.E. list would be in the printed Minutes of the 1864 General Conference or in the genuine circular.
 - [VERIFY] readings: J. J. Whitier, J. R. Cox, B. Meckell (Zion); R. J. R?e, N. E. Conf., and the initial of McIntosh (A.M.E.). "Giles" and "Cain" among the vice-presidents are printed without initials.
 - Full rebuild. Viewer: 15,672 people, 1,330 events, 3,318 articles. Smoke test 4 OK.
+
+2026-11-18. Header buttons and ball clubs (staging only).
+- Header: Org map, Events timeline and Org timelines now use the same outlined pill style as Business ads and 1838 trades and sit on the title row with them, wrapping on narrow screens. The stacked column and the blank band it caused are gone. Arrows removed from Business ads and 1838 trades (Michiko).
+- event_orgs.json values may now be a list of organizations (build_viewer.py). "Founding of the Excelsior and Pythian base ball clubs" (Bolivar, Tribune, May 3, 1913) now counts for both the Excelsior Base Ball Club and the Pythian Club, so Octavius V. Catto and the other nine appear on both lanes (Michiko: they were all together in the founding of the two teams).
+- NOTE: Bolivar says the Excelsiors formed first and the Pythians, captained by Catto, absorbed Excelsior stars. He does not name Catto as an Excelsior. Possible duplicate people to review: Frank Wood / Francis Wood, James H. Francis / J. H. Francis, George W. A. Scott / George W. Scott.
+- build_viewer only. Viewer: 15,672 people, 1,330 events, 3,318 articles. Smoke test 4 OK.

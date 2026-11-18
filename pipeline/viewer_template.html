@@ -24,7 +24,7 @@ header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18
 html[data-theme="light"]{color-scheme:light;--n-sel:#ce9033;--n-p:#a3a66e;--n-e:#aa3d1d;--n-o:#8e6fa6;--bg:#f6efe2;--panel:#fbf7ef;--ink:#23271d;--dim:#62645a;--gold:#aa3d1d;--rust:#aa3d1d;--teal:#5e6a3a;--line:#ddd2bd}
 html[data-theme="light"] header h1{color:#393d32}
 html[data-theme="light"] #ocrNotice{background:#efe3c8;border-bottom-color:#aa3d1d}
-html[data-theme="light"] #adsLink:hover,html[data-theme="light"] #tradesLink:hover,html[data-theme="light"] .tchip:hover{background:#efe3c8}
+html[data-theme="light"] #adsLink:hover,html[data-theme="light"] #tradesLink:hover,html[data-theme="light"] #mapbtns button:hover,html[data-theme="light"] .tchip:hover{background:#efe3c8}
 html[data-theme="light"] #tabs button.on,html[data-theme="light"] #filters .chip.on,html[data-theme="light"] #mapbtns button[aria-pressed="true"]{background:#393d32;color:#f1e3c8;border-color:#393d32}
 html[data-theme="light"] .prow{border-bottom-color:#ebe2d1}
 html[data-theme="light"] .prow:hover{background:#f3ead8}
@@ -76,9 +76,9 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 #allbtn{position:absolute;top:8px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:6px 13px;border-radius:14px;cursor:pointer}
 #allbtn:hover{border-color:var(--gold)}
 #allbtn.on{background:#33290f;border-color:var(--gold)}
-#mapbtns{display:flex;flex-direction:column;gap:4px;margin-left:auto;align-items:stretch}
-#mapbtns button{background:var(--panel);border:1px solid var(--line);color:var(--gold);font:12px Georgia;padding:4px 14px;border-radius:14px;cursor:pointer;white-space:nowrap}
-#mapbtns button:hover{border-color:var(--gold)}
+#mapbtns{display:contents}
+#mapbtns button{background:none;border:1px solid var(--gold);color:var(--gold);font:13px Georgia;padding:3px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+#mapbtns button:hover{background:#33290f}
 #mapbtns button[aria-pressed="true"]{background:#33290f;border-color:var(--gold)}
 .ovl{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--org:#a8466e;--ev:#a5472a;color:var(--ink);color-scheme:light;font-family:"Libre Caslon Text",Georgia,serif;position:fixed;inset:0;z-index:9000;background:var(--bg);display:none;flex-direction:column}
 .ovl.on{display:flex}
@@ -186,7 +186,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
     padding:10px 18px;border-radius:22px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.5);z-index:4}
   #detailFab.hide{display:none!important}
   #allbtn{font-size:11px;padding:6px 12px;top:6px;right:10px}
-  #mapbtns{flex-direction:row;flex-wrap:wrap;gap:4px;margin-left:0;flex-basis:100%} #mapbtns button{font-size:11px;padding:5px 9px}
+
   #legend{font-size:9.5px;max-width:56vw;top:8px}
   #legend span{display:block;margin-right:0}
   #miniPanel{left:8px;right:8px;top:auto;bottom:60px;width:auto;height:42vh;max-height:340px;max-width:calc(100vw - 16px)}
@@ -292,8 +292,9 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 <header>
   <button id="menuBtn" aria-label="Open menu" title="Open menu">☰</button>
   <a id="logoLink" href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener" title="1838 Black Metropolis"><img id="logo" src="logo_1838.jpg" alt="1838 Black Metropolis seal"></a><h1><b>1838 BLACK METROPOLIS</b> · People &amp; Papers Network</h1>
-  <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads &#8594;</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades &#8594;</a> <button id="themeBtn" type="button" title="Switch between light and dark colors"></button>
+  <a id="adsLink" href="ads.html" title="Advertisements by Black business owners, cut from the newspapers">Business ads</a> <a id="tradesLink" href="trades.html" title="The 1838 Register of Trades of the Colored People, by trade">1838 trades</a>
   <div id="mapbtns"><button id="orgmapbtn" title="Map of organizations linked by shared members">Org map</button><button id="evtlbtn" title="Every event on one timeline">Events timeline</button><button id="tab-t" title="Organization timelines">Org timelines</button></div>
+  <button id="themeBtn" type="button" title="Switch between light and dark colors"></button>
   <span class="sub">This database connects people, events and organizations in Philadelphia prior to 1900. Its foundation is the 1838 and 1847 censuses of the free Black population, informed by over 30 years of research by historian Julie Winch. To this we added 19th-century newspapers that were freely available, church histories, school histories and more. This is constantly growing. Sources are listed at the bottom of the page. · build __BUILD__</span>
 </header>
 <div id="drawerBackdrop" class="hide"></div>

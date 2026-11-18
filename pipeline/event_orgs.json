@@ -1,5 +1,5 @@
 {
- "_note": "Hand-reviewed event -> organization overrides (2026-10-31, Michiko's org-list consolidation). build_viewer.py derives an event's organization from its name by rule; any event listed here uses this value instead. null = the event is a meeting/occasion only and adds nobody to an organization. Edit freely.",
+ "_note": "Hand-reviewed event -> organization overrides (2026-10-31, Michiko's org-list consolidation). build_viewer.py derives an event's organization from its name by rule; any event listed here uses this value instead. null = the event is a meeting/occasion only and adds nobody to an organization. Edit freely. A value may also be a list of organization names; the event then counts for each one.",
  "events": {
   "Adjourned Meeting of the People of Color, New York City (Mutual Relief Society notice)": "New York African Mutual Relief Society",
   "Anniversary of the life and death of Rt. Rev. Richard Allen, Bethel Church": null,
@@ -75,6 +75,10 @@
   "Convention of A. M. E. and A. M. E. Zion delegates on church union, Wesley Church": "Convention on the union of the A.M.E. and A.M.E. Zion Churches (1864)",
   "Reopening of Wesley Church, Lombard St., renovated for the (A.M.E. Zion) General Conference": "Zion Wesleyan M. E. Church (Big Wesley)",
   "Sacrament of the Lord, Brick Wesley Church (A. M. E. Zion)": "Zion Wesleyan M. E. Church (Big Wesley)",
-  "A.M.E. / A.M.E. Zion union convention": "Convention on the union of the A.M.E. and A.M.E. Zion Churches (1864)"
+  "A.M.E. / A.M.E. Zion union convention": "Convention on the union of the A.M.E. and A.M.E. Zion Churches (1864)",
+  "Founding of the Excelsior and Pythian base ball clubs": [
+   "Excelsior Base Ball Club",
+   "Pythian Club"
+  ]
  }
 }

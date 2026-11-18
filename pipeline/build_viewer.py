@@ -342,9 +342,11 @@ for e in events.values():
     org_name = EVENT_ORG_OVERRIDES[nm] if nm in EVENT_ORG_OVERRIDES else event_org_name(nm)
     if not org_name:
         continue
-    for pid, _ in e["att"]:
-        if pid in people:
-            add_org(pid, org_name, {"e": e["id"]})
+    # an override may name several organizations (a list): the event then counts for each (2026-11-18)
+    for one_org in (org_name if isinstance(org_name, list) else [org_name]):
+        for pid, _ in e["att"]:
+            if pid in people:
+                add_org(pid, one_org, {"e": e["id"]})
 # Hand-curated organizations (pipeline/curated_orgs.json, Michiko 2026-11-01: the vigilance committees
 # kept as separate groups, plus the Frank Johnson Guards and Williams Assembly). Automatic labels in
 # "drop" are removed first, then each curated org gets exactly the listed members, each with its role
