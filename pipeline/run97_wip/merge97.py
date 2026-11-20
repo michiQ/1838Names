@@ -50,13 +50,15 @@ def fold(keep, drops, key, note, lst):
 sal = art("CR_1866-07-07", "Ice Cream")
 sal_drops = [art("CR_1866-08-04", "Ice Cream"), art("CR_1866-09-08", "Ice Cream")]
 for d in sal_drops: A.remove(d)
+sal["headline"] = "Ice Cream Saloon -- Mrs. J. Culquhoon, No. 913 Lombard Street"
+sal["people"] = [["Mrs. J. Culquhoon", "proprietor, ice cream saloon, No. 913 Lombard Street"]]
 sal["_repeats"] = ["1866-07-14", "1866-07-21", "1866-07-28", "1866-08-04", "1866-08-11",
                    "1866-08-18", "1866-09-08", "1866-09-15", "1866-09-22"]
 sal["summary"] += (" (Standing ad, p3, Jul 7 through Sep 22, 1866. Three readers read every printing at "
                    "DPI=1600 independently: the surname prints C?lq?houn, with C, l, q, h, o, u, n certain and "
-                   "the vowel after C and the letter after q uncertain; best reading Colquhoun. No. 913 Lombard "
+                   "the vowel after C and the letter after q uncertain; Michiko, 2026-11-20: the name is Culquhoon. No. 913 Lombard "
                    "Street is clear on Jul 7-28 and Aug 4. Not 'Culyahouse'. This is the 'Mrs. J.' ice cream "
-                   "saloon left off the ads page in Run #96.)")
+                   "saloon left off the ads page in Run #96; its first printing, Jun 16, is in extractions91. This Jul 7 printing is the clearest impression and is the one on the ads page.)")
 
 # 2) William Still, coal yard, Washington Ave. (changed from the captured 107 N. Fifth St. coal/stoves ad).
 still = art("CR_1866-07-07", "Coal Yard")

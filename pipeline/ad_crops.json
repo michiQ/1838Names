@@ -1625,7 +1625,7 @@
     0.714,
     0.906
    ],
-   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 5; number clear on the Jul 28 p3 printing at 1600 dpi, blurred here"
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 5; the house number is not legible with confidence on any of the nine printings (Jul 21-Sep 29 read variously 1319/1340/1440/1448/1338), so the address is shown without it"
   },
   {
    "issue": "CR_1866-09-22",
@@ -1674,6 +1674,18 @@
     0.601
    ],
    "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 3"
+  },
+  {
+   "issue": "CR_1866-07-07",
+   "page": 3,
+   "headline": "Ice Cream Saloon -- Mrs. J. Culquhoon, No. 913 Lombard Street",
+   "box": [
+    0.43,
+    0.097,
+    0.57,
+    0.138
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: the name is Culquhoon); col 4 top, 'ICE CREAM SALOON' through 'June 16--3m'; clearest printing of the Jun 16 ad"
   }
  ]
 }

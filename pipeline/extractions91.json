@@ -1172,11 +1172,16 @@
   {
    "issue": "CR_1866-06-16",
    "page": 3,
-   "headline": "Ice Cream Saloon -- Mrs. J. [surname illegible] (new advertisement)",
+   "headline": "Ice Cream Saloon -- Mrs. J. Culquhoon (new advertisement)",
    "author": "",
    "type": "advertisement",
-   "summary": "Mrs. J. [surname VERIFY] has lately opened an ice cream saloon at No. [9?]13 Lombard Street [VERIFY], Philadelphia, for the accommodation of ladies and gentlemen, and hopes to share the patronage of her friends; she will also supply families. Dated June 16 (3m) -- a new standing ad. Proprietor's surname and the street number are obscured by paper bleed-through and could not be read with confidence.",
-   "people": []
+   "summary": "Mrs. J. Culquhoon has lately opened an ice cream saloon at No. 913 Lombard Street, Philadelphia, for the accommodation of ladies and gentlemen, and hopes to share the patronage of her friends; she will also supply families. Dated June 16 (3m) -- a new standing ad. This first printing is blurred by bleed-through; the name and number are read from the clearer July-September 1866 printings (Michiko, 2026-11-20: the surname is Culquhoon).",
+   "people": [
+    [
+     "Mrs. J. Culquhoon",
+     "proprietor, ice cream saloon, No. 913 Lombard Street"
+    ]
+   ]
   },
   {
    "issue": "CR_1866-06-16",
