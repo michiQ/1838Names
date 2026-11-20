@@ -1491,6 +1491,18 @@
     0.992
    ],
    "check": "placed Run #96, 2026-11-19; col 6 foot, 'To Rent. A Large Furnished Room ... Apply to Robert Jones, No. 6 North 8th St.' (print reads No. 6, not 5)"
+  },
+  {
+   "issue": "CR_1866-04-14",
+   "page": 3,
+   "headline": "Security Life Insurance Co. advertisement (Jos. C. Bustill, solicitor)",
+   "box": [
+    0.575,
+    0.76,
+    0.703,
+    0.978
+   ],
+   "check": "placed Run #96 addendum, 2026-11-19 (Michiko); col 5 foot, 'SECURITY / Life Insurance Co. Of New York' through the references, incl. Ezra Willits Gen'l Agent and Jos. C. Bustill, Solicitor, 403 S. Sixth St."
   }
  ]
 }
