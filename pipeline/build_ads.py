@@ -23,13 +23,20 @@ def nice_date(slug):
 
 
 def clean_head(h):
+    h = _VER_BRACKET.sub("", h)
     h = re.sub(r"\s*\((?:advertisements?|advertisement,[^)]*)\)\s*$", "", h, flags=re.I)
     h = re.sub(r"^Business notice:\s*", "", h, flags=re.I)
     h = re.sub(r"\s+(?:\u2014|--)\s+", ", ", h)   # no em dashes in titles (Michiko's preference)
     return h.strip()
 
 
+_VER_BRACKET = re.compile(r"\s*\[[^\[\]]*?\bVERIFY\b[^\[\]]*\]", re.I)   # same rule as build_viewer.py
+
+
 def display_name(n):
+    # Michiko 2026-11-01: no "VERIFY" in the public listings; strip it at display (Run #97 fix: the ads page
+    # showed one, from a record name carrying "[VERIFY]").
+    n = _VER_BRACKET.sub("", n or "").strip()
     m = re.match(r"^([^,]+),\s*(.+)$", n or "")
     if m and not re.match(r"^(Jr|Sr)\.?$", m.group(2)):
         g = re.match(r"^(.*?)\s+((?:Jr|Sr)\.?)$", m.group(2))

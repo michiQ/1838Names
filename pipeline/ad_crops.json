@@ -1503,6 +1503,105 @@
     0.978
    ],
    "check": "placed Run #96 addendum, 2026-11-19 (Michiko); col 5 foot, 'SECURITY / Life Insurance Co. Of New York' through the references, incl. Ezra Willits Gen'l Agent and Jos. C. Bustill, Solicitor, 403 S. Sixth St."
+  },
+  {
+   "issue": "CR_1866-07-07",
+   "page": 3,
+   "headline": "Coal Yard (William Still, Washington Avenue)",
+   "box": [
+    0.43,
+    0.35,
+    0.57,
+    0.473
+   ],
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 4, 'COAL YARD' through 'July 7 \\'66--1y' (William Still; changed from the 107 N. Fifth coal/stoves ad)"
+  },
+  {
+   "issue": "CR_1866-07-07",
+   "page": 3,
+   "headline": "Georgina Gleaves has removed to 1028 Lombard Street",
+   "box": [
+    0.43,
+    0.682,
+    0.57,
+    0.774
+   ],
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 4, 'Georgina Gleaves has removed to 1028 Lombard Street' through 'July 7--1y' (changed ad; was 633 Pine)"
+  },
+  {
+   "issue": "CR_1866-07-28",
+   "page": 3,
+   "headline": "A. T. Jones' Auction Dry Goods and Trimmings, No. 718 Lombard Street",
+   "box": [
+    0.3,
+    0.623,
+    0.434,
+    0.7
+   ],
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 3, 'Dry Goods!!' through 'July 28--6mo'; printed A. T. here, A. I. in Aug, A. J. on Sep 1 (Sep 1 editorial: A. J. Jones)"
+  },
+  {
+   "issue": "CR_1866-08-11",
+   "page": 3,
+   "headline": "James W. Brown, clothing dyed, renovated and repaired at the New Store, No. 14 South Sixth Street (changed ad)",
+   "box": [
+    0.301,
+    0.727,
+    0.441,
+    0.808
+   ],
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 3 (this page's columns sit right of the 1/7 grid), 'Gentlemen!' through 'N.B.--Clothing made to order'"
+  },
+  {
+   "issue": "CR_1866-09-15",
+   "page": 3,
+   "headline": "Help Wanted -- employment office, 1019 Rodman street (M. A. Williams)",
+   "box": [
+    0.177,
+    0.04,
+    0.309,
+    0.083
+   ],
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 2 top, 'HELP WANTED' through 'Sept 15--4t' (M. A. Williams; was 615 Jayne in Run #95)"
+  },
+  {
+   "issue": "CR_1866-09-22",
+   "page": 3,
+   "headline": "J. H. Moore's China, Glass, and Queensware Store, No. 706 Lombard Street (advertisement)",
+   "box": [
+    0.29,
+    0.68,
+    0.432,
+    0.758
+   ],
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 3, 'J. H. Moore's' through 'Sept. 22--3mo'"
+  },
+  {
+   "issue": "CR_1866-07-14",
+   "page": 3,
+   "headline": "Miss E. E. Hunter, Fashionable Dress and Cloak Maker, at Mrs. S. S. Hawkins's store, Cape May",
+   "box": [
+    0.433,
+    0.536,
+    0.57,
+    0.632
+   ],
+   "philadelphia": false,
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); col 4; OUT OF TOWN (Cape May): Miss E. E. Hunter at Mrs. S. S. Hawkins's summer store; Michiko may set philadelphia true"
+  },
+  {
+   "issue": "CR_1866-08-04",
+   "page": 3,
+   "headline": "Banneker House, Cape Island, N.J. (advertisement)",
+   "philadelphia": false,
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); OUT OF TOWN (Cape Island, N.J.; H. Z. Wilkins, proprietor); no box set"
+  },
+  {
+   "issue": "CR_1866-08-11",
+   "page": 3,
+   "headline": "Mrs. Emeline Williams, private boarding house, Cape May, N.J.",
+   "philadelphia": false,
+   "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); OUT OF TOWN (Cape May); no box set"
   }
  ]
 }

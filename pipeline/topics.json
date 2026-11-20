@@ -212,6 +212,10 @@
     {
      "issue": "CR_1866-04-07",
      "headline": "What High-Toned Men Think (streetcar exclusion)"
+    },
+    {
+     "issue": "CR_1866-09-29",
+     "headline": "Philadelphia a Paradox (editorial)"
     }
    ],
    "events": [
@@ -302,6 +306,10 @@
     {
      "issue": "CR_1865-09-23",
      "name": "Two colored ladies carried off and insulted on a Spruce and Pine Street car"
+    },
+    {
+     "issue": "CR_1866-09-01",
+     "name": "Pennsylvania State Equal Rights League -- annual meeting, evening session (continued report)"
     }
    ]
   },
@@ -460,6 +468,22 @@
     {
      "issue": "CR_1865-10-28",
      "name": "Reception of the colored soldiers of Pennsylvania at Harrisburg (Garnet League), Nov. 14, 1865"
+    },
+    {
+     "issue": "CR_1866-07-07",
+     "name": "Sunday School Picnic of the Central Presbyterian and Shiloh Baptist churches (and melee)"
+    },
+    {
+     "issue": "CR_1866-08-11",
+     "name": "Centenary Sabbath School walk and harvest home of the Union Sabbath School of the A.M.E. Bethel Church of Frankford"
+    },
+    {
+     "issue": "CR_1866-07-28",
+     "name": "First Grand Pic-Nic of the Equal Rights League at Reading, with the Delany Guards"
+    },
+    {
+     "issue": "CR_1866-09-15",
+     "name": "Emancipation celebration at West Chester (4th anniversary of the Proclamation)"
     }
    ]
   },
@@ -612,6 +636,10 @@
     {
      "issue": "CR_1866-06-30",
      "headline": "Major Martin R. Delany, U.S.C.T. (appointment at Hilton Head)"
+    },
+    {
+     "issue": "CR_1866-09-29",
+     "headline": "Our Missionaries Going South (Revs. Charles Pearce and C. L. Bradwell)"
     }
    ],
    "events": [
@@ -646,6 +674,30 @@
     {
      "issue": "NS_1848-02-18",
      "name": "Philomethean Society meeting and colonization debate, Albany"
+    },
+    {
+     "issue": "CR_1866-07-21",
+     "name": "Arrival of Rev. Theophilus Steward from South Carolina; Rev. Charles L. Bradwell from Savannah"
+    },
+    {
+     "issue": "CR_1866-09-01",
+     "name": "Rev. Henry M. Turner arrives in Philadelphia from the Georgia mission"
+    },
+    {
+     "issue": "CR_1866-09-08",
+     "name": "T. G. Steward: transfer from the Philadelphia Conference to the South Carolina mission (account)"
+    },
+    {
+     "issue": "CR_1866-09-08",
+     "name": "Miss Mary A. Still returns from the Beaufort, S.C. mission"
+    },
+    {
+     "issue": "CR_1866-09-29",
+     "name": "Philadelphians in the South Carolina and Georgia missions (Cain and Turner letters)"
+    },
+    {
+     "issue": "CR_1866-09-29",
+     "name": "Richard Gleaves leaves Philadelphia for Beaufort, S.C."
     }
    ]
   }

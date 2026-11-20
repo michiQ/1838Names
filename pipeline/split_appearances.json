@@ -1268,6 +1268,96 @@
    "to_name": "Needham, James F.",
    "to_source": "coppin",
    "note": "James Needham, Treasurer of the Pennsylvania State Equal Rights League from July 1865 and Philadelphia member, printed without the F., is the son, James F. Needham. Michiko, 2026-11-14 (Run #94)."
+  },
+  {
+   "from_name": "Lee, J. wilow Elbow aliey [see Lea",
+   "from_source": "1820directory",
+   "context_prefix": "Acknowledgments",
+   "issue_like": "CR_1866-09-15",
+   "new_name": "J. Lee",
+   "new_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): J. Lee, a Recorder subscriber at Salem, N.J., is not the 1820 Philadelphia directory J. Lee."
+  },
+  {
+   "from_name": "Collins, Henry",
+   "from_source": "winch",
+   "context_prefix": "Information Wanted",
+   "issue_like": "CR_1866-09-22",
+   "new_name": "Henry Collins",
+   "new_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): the Henry Collins sought in an Information Wanted notice (formerly enslaved in Queen Ann County, Md.) is not Winch's Philadelphia Henry Collins."
+  },
+  {
+   "from_name": "Jones, George W.",
+   "from_source": "winch",
+   "context_prefix": "St. John's Tabernacle",
+   "issue_like": "CR_1866-08-18",
+   "new_name": "George W. Jones",
+   "new_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): George W. Jones, owner of the grove near New Centreville, Chester Co., is not tied to Winch's George W. Jones on a common name."
+  },
+  {
+   "from_name": "Atkins, John",
+   "from_source": "winch",
+   "context_prefix": "Bush meeting near West Chester",
+   "issue_like": "CR_1866-08-25",
+   "new_name": "John Atkins",
+   "new_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): John Atkins on the West Chester bush-meeting committee (Chester Co.) is not tied to Winch's John Atkins on a common name."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1866-07%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1866-07%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1866-08%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1866-08%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, William",
+   "from_source": "winch",
+   "context_prefix": "",
+   "issue_like": "CR_1866-09%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "",
+   "issue_like": "CR_1866-09%",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
   }
  ],
  "renames": [
