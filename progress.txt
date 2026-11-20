@@ -1505,3 +1505,6 @@ RUN #96, 2026-11-19: Christian Recorder 1866 Q2 (Apr 7 - Jun 30, 1866; 13 issues
 - STAGING only. Production untouched; prod-push password gate not invoked.
 
 ADDENDUM RUN #96, 2026-11-19 (Michiko: "yes all of them"): the three migration candidates are now tagged under the Migrations topic -- the June 2 'Public meeting for teachers and preachers for the Freedmen' (Fourth Street Baptist); both South Carolina Annual Conference (A.M.E.) southern-mission reports (June 2 and June 9); and 'Major Martin R. Delany, U.S.C.T.' at Hilton Head (June 30). Migrations now 36 articles. build_viewer only; smoke test 4 OK. Staging only.
+2026-11-19. PROMOTE #30 to production.
+- Michiko asked for the promote and gave the prod-push password in chat (not recorded anywhere).
+- Prod was at 5963f8a. Promote commit 8b2afbc (parent prod/main) carries the staging tree at 3391b0e: Run #96 (Christian Recorder Apr-Jun 1866), Migrations topic tags, Security Life Insurance ad. Verified after push: prod tree = staging tree.
