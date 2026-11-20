@@ -1455,6 +1455,42 @@
     0.623
    ],
    "check": "placed 2026-11-18, Run #95; box set against the film render"
+  },
+  {
+   "issue": "CR_1866-04-28",
+   "page": 3,
+   "headline": "Great Union Intelligence Office (advertisement)",
+   "box": [
+    0.688,
+    0.79,
+    0.858,
+    0.942
+   ],
+   "check": "placed Run #96, 2026-11-19; col 6, 'WANTED! The Great Union Intelligence Office' through 'E. Demund & Co.' (first printing; also ran May 19 & 26)"
+  },
+  {
+   "issue": "CR_1866-05-26",
+   "page": 3,
+   "headline": "Mrs. Sarah Irons -- shrouding and laying out of the dead (advertisement)",
+   "box": [
+    0.573,
+    0.343,
+    0.738,
+    0.477
+   ],
+   "check": "placed Run #96, 2026-11-19; col 5, 'SHROUDING / Laying Out of the Dead / Mrs. Sarah Irons' through 'No. 619 Pine Street'"
+  },
+  {
+   "issue": "CR_1866-05-19",
+   "page": 3,
+   "headline": "Room to Rent for Societies -- Robert Jones (advertisement)",
+   "box": [
+    0.7,
+    0.898,
+    0.882,
+    0.992
+   ],
+   "check": "placed Run #96, 2026-11-19; col 6 foot, 'To Rent. A Large Furnished Room ... Apply to Robert Jones, No. 6 North 8th St.' (print reads No. 6, not 5)"
   }
  ]
 }

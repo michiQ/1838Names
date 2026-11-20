@@ -33,7 +33,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **John Bowers** (blog)  ↔  Bowers, John#304, Bowers, John C.#305
 - **John Francis Cook Jr.** (blog)  ↔  Bowers, John C.#305, John Sellers Jr.#358765, John Atkinson Jr.#359641
 - **Joseph G. Anderson** (blog)  ↔  Anderson, Joseph#67, Joseph G. Anderson#14303
-- **Joseph Smith** (blog)  ↔  Smith, Joseph#354428, Smith, Joseph#358476, Rev. Joseph R. Smith#360872, Joseph Smith#361023, Joseph H. Smith#361234
+- **Joseph Smith** (blog)  ↔  Smith, Joseph#354428, Smith, Joseph#358476, Rev. Joseph R. Smith#360872, Joseph Smith#361023, Joseph H. Smith#361234, Joseph P. Smith#368774
 - **Mary Adelaide Jones** (blog)  ↔  Jones, Mary#1607, Mrs. Mary Jones#361096, Mary L. Jones#363549
 - **Mary Hill** (blog)  ↔  Hill, Mary#355963, Mary A. Hill#360592
 - **Morris Brown** (blog)  ↔  Brown, Morris Sr.#398, BROWN, MORRIS#352069, Morris Brown#359790
@@ -43,7 +43,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265, Robert T. Jones#365240
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
 - **Robert Purvis** (blog)  ↔  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364296
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#368558
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#368810
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Stephen Smith** (blog)  ↔  Smith, Stephen#2436, Mrs. Stephen Smith#364846
@@ -55,7 +55,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **William Henry Dorsey** (blog)  ↔  Dorsey, William#891, Dorsey, William H.#892, DORSEY, WILLIAM#352432, William Dorsey#359637
 - **William Minton** (blog)  ↔  Minton, William H.#359316, William H. Minton#363793
 - **William Parker** (blog)  ↔  William Parker#169762, Parker, William#356888, Parker, William#358281
-- **William Still** (blog)  ↔  Still, William#2497, Still, William W.#359472
+- **William Still** (blog)  ↔  Still, William#2497, Still, William W.#359472, Mrs. William Still#368800
 - **William Watson** (blog)  ↔  Watson, William#358635, William Watson#360593
 
 ## Newly created as blog-only people (review: merge variants / delete non-subjects)
