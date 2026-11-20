@@ -1358,6 +1358,87 @@
    "to_name": "W. Moore",
    "to_source": "newspaper",
    "note": "Run #97 link review, 2026-11-20 (CR 1866 Q3): in Jul-Sep 1866 Rev. William Moore is at Trenton (harvest homes, Evesham camp meeting, the Philadelphia Conference Centenary committee); he is the newspaper W. Moore, as in Runs #79-#82, not the Winch A.M.E. cleric of the 1830s-40s nor the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "DAVIS, SARAH",
+   "from_source": "census",
+   "context_prefix": "Grand Fair for the Book Concern",
+   "issue_like": "CR_1866-09-29",
+   "new_name": "Sarah Davis",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Mrs. Sarah Davis, a vice president of the Book Concern Fair committee (1866) is kept as its own record, not linked to the census head of household 'DAVIS, SARAH' on a common name."
+  },
+  {
+   "from_name": "Davis, William H",
+   "from_source": "census",
+   "context_prefix": "Grand Lecture",
+   "issue_like": "CR_1866-07-14",
+   "new_name": "William H. Davis",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): William H. Davis, on the committee for Mrs. Harper's lecture at Union church (1866) is kept as its own record, not linked to the census head of household 'Davis, William H' on a common name."
+  },
+  {
+   "from_name": "Johnson, Daniel",
+   "from_source": "census",
+   "context_prefix": "Notice: M. W. Grand Lodge",
+   "issue_like": "CR_1866-09-22",
+   "new_name": "Daniel Johnson",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Daniel Johnson, Grand Recording Secretary of the M. W. Grand Lodge of Pennsylvania (1866) is kept as its own record, not linked to the census head of household 'Johnson, Daniel' on a common name."
+  },
+  {
+   "from_name": "Johnson, Daniel",
+   "from_source": "census",
+   "context_prefix": "M. W. Grand Lodge of Pennsylvania",
+   "issue_like": "CR_1866-09-22",
+   "new_name": "Daniel Johnson",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Daniel Johnson, Grand Recording Secretary of the M. W. Grand Lodge of Pennsylvania (1866) is kept as its own record, not linked to the census head of household 'Johnson, Daniel' on a common name."
+  },
+  {
+   "from_name": "Brooks, Henry",
+   "from_source": "census",
+   "context_prefix": "Died: Amelia Brooks",
+   "issue_like": "CR_1866-09-01",
+   "new_name": "Henry Brooks",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Henry Brooks, husband of Amelia Brooks (d. 1866) is kept as its own record, not linked to the census head of household 'Brooks, Henry' on a common name."
+  },
+  {
+   "from_name": "Harris, Elizabeth",
+   "from_source": "census",
+   "context_prefix": "Memoir of Elizabeth Harris",
+   "issue_like": "CR_1866-07-28",
+   "new_name": "Elizabeth Harris",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Mrs. Elizabeth Harris of Bethel (d. 1866) is kept as its own record, not linked to the census head of household 'Harris, Elizabeth' on a common name."
+  },
+  {
+   "from_name": "Harris, Elizabeth",
+   "from_source": "census",
+   "context_prefix": "Philadelphia Affairs: Sudden Death",
+   "issue_like": "CR_1866-07-28",
+   "new_name": "Elizabeth Harris",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Mrs. Elizabeth Harris of Bethel (d. 1866) is kept as its own record, not linked to the census head of household 'Harris, Elizabeth' on a common name."
+  },
+  {
+   "from_name": "Thompson, Harriet",
+   "from_source": "census",
+   "context_prefix": "Marriages",
+   "issue_like": "CR_1866-08-25",
+   "new_name": "Harriet Thompson",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Harriet Thompson, bride of Aug 21, 1866 is kept as its own record, not linked to the census head of household 'Thompson, Harriet' on a common name."
+  },
+  {
+   "from_name": "Ross, Richard",
+   "from_source": "census",
+   "context_prefix": "Marriages",
+   "issue_like": "CR_1866-08-25",
+   "new_name": "Richard Ross",
+   "new_source": "newspaper",
+   "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Richard Ross, groom of Aug 16, 1866 is kept as its own record, not linked to the census head of household 'Ross, Richard' on a common name."
   }
  ],
  "renames": [

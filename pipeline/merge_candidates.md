@@ -79,7 +79,7 @@ Records are never merged automatically; aliases preserve every original spelling
 - [HIGH] **Brister, J.** (winch, 3 appearances, 1 Winch refs) ↔ **Brister, James** (census, 2 census records)
 - [HIGH] **Brister, J.** (winch, 3 appearances, 1 Winch refs) ↔ **Brister, James** (coppin)
 - [HIGH] **BROOKS, JOHN** (census, 8 appearances, 3 census records) ↔ **J. D. Brooks** (newspaper, 4 appearances)
-- [HIGH] **Brooks, Henry** (census, 13 appearances, 1 census records) ↔ **H. Brooks** (newspaper, 1 appearances)
+- [HIGH] **Brooks, Henry** (census, 12 appearances, 1 census records) ↔ **H. Brooks** (newspaper, 1 appearances)
 - [HIGH] **Brooks, Hannah** (1820directory, 1 directory records) ↔ **H. Brooks** (newspaper, 1 appearances)
 - [HIGH] **Bull, Francis** (winch, 1 Winch refs) ↔ **Bull, Francis T** (census, 1 census records)
 - [HIGH] **Bull, Francis J.** (winch, 1 Winch refs) ↔ **BULL, FRANCIS** (census, 1 census records)

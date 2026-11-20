@@ -82,7 +82,7 @@ fold(hu, [art("CR_1866-08-11", "Hunter")], "people", "(Standing ad; also ran Aug
 
 # 6) Jones's auction dry goods, No. 718 Lombard (the New Hall). Name printed three ways.
 jn = art("CR_1866-07-28", "Jones' Auction")
-jn["people"] = [["A. T. Jones", "proprietor, auction dry goods and trimmings, No. 718 Lombard Street (as printed Jul 28)"]]
+jn["people"] = [["A. T. Jones", "proprietor, auction dry goods and trimmings, No. 718 Lombard Street (as printed Jul 28; also printed A. P., A. I. and A. J., one man per Michiko 2026-11-20)"]]
 for d in [art("CR_1866-08-11", "Jones' Auction"), art("CR_1866-09-01", "Jones' Auction")]:
     A.remove(d)
 jn["_repeats"] = ["1866-08-04", "1866-08-11", "1866-08-18", "1866-08-25", "1866-09-01"]

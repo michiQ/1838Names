@@ -2133,5 +2133,26 @@
    }
   ],
   "note": "Michiko 2026-11-18: the newspaper record 'Richard Allen' is Bishop Richard Allen, founder of Bethel (Winch 'Allen, Richard'). All nine of its events are the bishop's (1787 St. George's, 1793 yellow fever and African Church lot committee, 1814 muster, 1816 General Conference, 1817 conventions, 1827 daughter's marriage, 1830 convention). NOT merged: Allen, Richard Jr. and the directory/register entries of the same name. The 1838 Black Metropolis blog record 'Richard Allen' (founder of the A.M.E. Church) is merged in too."
+ },
+ {
+  "keep": {
+   "name": "A. T. Jones",
+   "source": "newspaper"
+  },
+  "aliases": [
+   {
+    "name": "A. P. Jones",
+    "source": "newspaper"
+   },
+   {
+    "name": "A. I. Jones",
+    "source": "newspaper"
+   },
+   {
+    "name": "A. J. Jones",
+    "source": "newspaper"
+   }
+  ],
+  "note": "Michiko 2026-11-20 (Run #97): the auction dry goods and trimmings dealer at No. 718 Lombard St. (the New Hall) is one man, A. T. Jones. The Recorder prints him A. P. (Jul 14 p2), A. T. (Jul 28 p3 ad), A. I. (Aug ads) and A. J. (Jul 28 p2, Sep 1 p2 and p4)."
  }
 ]

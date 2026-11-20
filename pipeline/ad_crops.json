@@ -1602,6 +1602,78 @@
    "headline": "Mrs. Emeline Williams, private boarding house, Cape May, N.J.",
    "philadelphia": false,
    "check": "placed Run #97, 2026-11-20; box set on the gridded 2000px page JPEG (same paper-area frame as the film render); OUT OF TOWN (Cape May); no box set"
+  },
+  {
+   "issue": "CR_1866-07-07",
+   "page": 3,
+   "headline": "Houston & Boling, dealers in flour, starch, soaps, &c., South Street",
+   "box": [
+    0.572,
+    0.045,
+    0.703,
+    0.188
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 5 top; ownership not established"
+  },
+  {
+   "issue": "CR_1866-09-01",
+   "page": 4,
+   "headline": "Organs for Sale -- church organs built by Joseph H. Carter",
+   "box": [
+    0.571,
+    0.833,
+    0.714,
+    0.906
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 5; number clear on the Jul 28 p3 printing at 1600 dpi, blurred here"
+  },
+  {
+   "issue": "CR_1866-09-22",
+   "page": 3,
+   "headline": "Lodgings -- 410 Gaskill Street",
+   "box": [
+    0.145,
+    0.284,
+    0.288,
+    0.318
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 2"
+  },
+  {
+   "issue": "CR_1866-09-29",
+   "page": 3,
+   "headline": "'It is Invaluable' -- Macamoose Tonic prepared by Rev. I. R. Gates",
+   "box": [
+    0.01,
+    0.247,
+    0.17,
+    0.331
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 1 editorial puff 'It is Invaluable' (Rev. I. R. Gates)"
+  },
+  {
+   "issue": "CR_1866-09-29",
+   "page": 3,
+   "headline": "To the People of Color -- lessons in French, English and Spanish (C. A. M[?], 804 Lombard St.)",
+   "box": [
+    0.158,
+    0.782,
+    0.297,
+    0.853
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 2; signer 'C. A. M...' not certain"
+  },
+  {
+   "issue": "CR_1866-09-29",
+   "page": 3,
+   "headline": "Wanted: apprentices, 401 South Seventh Street",
+   "box": [
+    0.3,
+    0.566,
+    0.44,
+    0.601
+   ],
+   "check": "placed Run #97 addendum, 2026-11-20 (Michiko: 'add them all'); box set on the gridded page JPEG, checked on the film render; col 3"
   }
  ]
 }
