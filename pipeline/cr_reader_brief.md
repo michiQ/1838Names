@@ -19,15 +19,14 @@ the issue you are reading.
   higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt
   ('frame:slug:page'). Pages not in jobs.txt DO NOT EXIST in our copy. Cite by DATE and the issue page (1-4).
   July-September 1866 (Vol. VI, Nos. 27-39): 13 issues, continuous pagination 105-156. ONE issue is missing a leaf
-  in our copy: **August 11 (No. 32)** is present as pages 2-3 only (pages 1 and 4 missing). Its two frames are out
-  of order on the film: frame 22 is page 3 and frame 23 is page 2. **Frame 21 is a dark target card, not a page:
-  ignore it.** All other issues are complete (four pages). Frame map (frame:date:page):
+  in our copy: **August 11 (No. 32)** is present as pages 3-4 only (pages 1 and 2 missing): frame 22 is page 3
+  (numbered 127) and frame 23 is page 4 (numbered 128). **Frame 21 is a dark target card, not a page: ignore it.** All other issues are complete (four pages). Frame map (frame:date:page):
   - Jul 7 (No.27): f1=p1, f2=p2, f3=p3, f4=p4
   - Jul 14 (No.28): f5=p1, f6=p2, f7=p3, f8=p4
   - Jul 21 (No.29): f9=p1, f10=p2, f11=p3, f12=p4
   - Jul 28 (No.30): f13=p1, f14=p2, f15=p3, f16=p4
   - Aug 4 (No.31): f17=p1, f18=p2, f19=p3, f20=p4
-  - Aug 11 (No.32): f23=p2, f22=p3  (p1 and p4 MISSING; f21 is a target card)
+  - Aug 11 (No.32): f22=p3, f23=p4  (p1 and p2 MISSING; f21 is a target card)
   - Aug 18 (No.33): f24=p1, f25=p2, f26=p3, f27=p4
   - Aug 25 (No.34): f28=p1, f29=p2, f30=p3, f31=p4
   - Sep 1 (No.35): f32=p1, f33=p2, f34=p3, f35=p4
@@ -54,7 +53,7 @@ the issue you are reading.
   headings. In past runs readers triaged them and had to be sent back; a report that says pages 1 and 4 were not read in
   full will be sent back again. Page 1 carries letters and church news, page 4 the ads and notices. Read the local, notice,
   marriage, death and advertisement columns of pages 2 and 3 from crops as well, and the foot of page 3. (For the short
-  issue, read in full whatever pages are present: August 11 is pages 2-3 only, so read BOTH of its pages in full.)
+  issue, read in full whatever pages are present: August 11 is pages 3-4 only, so read BOTH of its pages in full.)
   This is slow work: expect well over an hour, and take the time.
 - SAVE YOUR JSON AFTER EACH ISSUE (rewrite the whole file each time), so nothing is lost if you are interrupted.
 - In your report, list exactly which pages and columns you read from the image and which you could not read. Never write in
