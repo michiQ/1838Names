@@ -1439,6 +1439,87 @@
    "new_name": "Richard Ross",
    "new_source": "newspaper",
    "note": "Run #97 addendum, 2026-11-20 (Michiko: keep separate): Richard Ross, groom of Aug 16, 1866 is kept as its own record, not linked to the census head of household 'Ross, Richard' on a common name."
+  },
+  {
+   "from_name": "Bond, Charles",
+   "from_source": "census",
+   "context_prefix": "Death of Mrs. Emily Bond",
+   "issue_like": "CR_1866-12-08",
+   "new_name": "Charles Bond",
+   "new_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Charles Bond, husband of Mrs. Emily Bond (d. 1866), kept apart from the census head of household."
+  },
+  {
+   "from_name": "Davis, William H",
+   "from_source": "census",
+   "context_prefix": "Letter from Union Church",
+   "issue_like": "CR_1866-11-17",
+   "to_name": "William H. Davis",
+   "to_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): William H. Davis of the Bishop Campbell Bible Class (Union A.M.E.) goes to the newspaper William H. Davis, as ruled in Run #97."
+  },
+  {
+   "from_name": "Davis, William H",
+   "from_source": "census",
+   "context_prefix": "Bishop Campbell Bible Class",
+   "issue_like": "CR_1866-11-17",
+   "to_name": "William H. Davis",
+   "to_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): as above."
+  },
+  {
+   "from_name": "King, William",
+   "from_source": "census",
+   "context_prefix": "Married (Nov. 10, 1866)",
+   "issue_like": "CR_1866-11-10",
+   "new_name": "William King",
+   "new_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): William King, groom of 1866, kept apart from the census head of household."
+  },
+  {
+   "from_name": "THOMAS, HENRY",
+   "from_source": "census",
+   "context_prefix": "Married (Norristown",
+   "issue_like": "CR_1866-10-20",
+   "new_name": "Henry Thomas",
+   "new_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Henry Thomas of Blackwoodtown, N.J., groom of 1866, is not the Philadelphia census man."
+  },
+  {
+   "from_name": "WILLIAMS, NANCY",
+   "from_source": "census",
+   "context_prefix": "Fair for the benefit of St. Thomas",
+   "issue_like": "CR_1866-12-22",
+   "new_name": "Nancy Williams",
+   "new_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Mrs. Nancy Williams of the St. Thomas fair committee, kept apart from the census head of household."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "Notice: Grand Rally",
+   "issue_like": "CR_1866-12-29",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Rev. Wm. Moore of 1866 goes to the newspaper W. Moore, as in Runs #79-#82 and #97, not the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "Bethel A.M.E. Church -- funeral",
+   "issue_like": "CR_1866-11-03",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Rev. Wm. Moore of 1866 goes to the newspaper W. Moore, as in Runs #79-#82 and #97, not the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "Moore, Wm.",
+   "from_source": "1820directory",
+   "context_prefix": "Church at Princeton",
+   "issue_like": "CR_1866-11-10",
+   "to_name": "W. Moore",
+   "to_source": "newspaper",
+   "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Rev. Wm. Moore of 1866 goes to the newspaper W. Moore, as in Runs #79-#82 and #97, not the 1820 city-directory Wm. Moore."
   }
  ],
  "renames": [

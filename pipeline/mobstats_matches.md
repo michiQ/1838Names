@@ -14,7 +14,7 @@ Add a group to merges.json to attach the mob-stats record to the right person:
 - **Mary Moore** (mobstats)  <->  Moore, Mary#1932, Moore, Mary#359325
 - **Perry Chambers** (mobstats)  <->  Chambers, Perry#356474, Perry M. Chambers#367344
 - **Robert Purvis** (mobstats)  <->  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364289, Robt. Purvis#367299
-- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#369433
+- **Samuel Williams** (mobstats)  <->  WILLIAMS, SAMUEL#351596, Samuel Williams#360166, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#369724
 - **William Anderson** (mobstats)  <->  Anderson, William#74, ANDERSON, WM#351801
 - **William Simpson** (mobstats)  <->  Simpson, William#2410, Simpson, Wm.#358454, Wm. T. Simpson#365855
 

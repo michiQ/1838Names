@@ -216,6 +216,30 @@
     {
      "issue": "CR_1866-09-29",
      "headline": "Philadelphia a Paradox (editorial)"
+    },
+    {
+     "issue": "CR_1866-11-10",
+     "headline": "Forbidden to Ride on the Street Cars (poem, with preface)"
+    },
+    {
+     "issue": "CR_1866-12-01",
+     "headline": "A Great Work to Be Done (editorial; streetcars)"
+    },
+    {
+     "issue": "CR_1866-12-15",
+     "headline": "The Soldier's Widow (poem; streetcar exclusion)"
+    },
+    {
+     "issue": "CR_1866-12-22",
+     "headline": "Jottings by the Way: Evidences of Progress (Newark, New York, Brooklyn; Philadelphia streetcars and the soldiers)"
+    },
+    {
+     "issue": "CR_1866-12-29",
+     "headline": "Brutal Outrage, and Its More Brutal Apologist (streetcar case)"
+    },
+    {
+     "issue": "CR_1866-12-22",
+     "headline": "The Colored Soldiers and Sailors' Convention (letter)"
     }
    ],
    "events": [
@@ -310,6 +334,10 @@
     {
      "issue": "CR_1866-09-01",
      "name": "Pennsylvania State Equal Rights League -- annual meeting, evening session (continued report)"
+    },
+    {
+     "issue": "CR_1866-12-29",
+     "name": "Mass meeting of colored citizens of Philadelphia to elect delegates to the National Convention"
     }
    ]
   },
@@ -484,6 +512,14 @@
     {
      "issue": "CR_1866-09-15",
      "name": "Emancipation celebration at West Chester (4th anniversary of the Proclamation)"
+    },
+    {
+     "issue": "CR_1866-10-20",
+     "name": "Reunion and parade of colored soldiers, Woodstown, N.J. (Philadelphia band)"
+    },
+    {
+     "issue": "CR_1866-12-22",
+     "name": "Independent Order of Odd Fellows turnout and presentation of gold medal to D. B. Bowser"
     }
    ]
   },
@@ -640,6 +676,14 @@
     {
      "issue": "CR_1866-09-29",
      "headline": "Our Missionaries Going South (Revs. Charles Pearce and C. L. Bradwell)"
+    },
+    {
+     "issue": "CR_1866-10-13",
+     "headline": "Personal Items: Rev. R. H. Cain leaves for Charleston; E. D. Bassett to lecture at Charleston"
+    },
+    {
+     "issue": "CR_1866-10-20",
+     "headline": "Personal Items: Miss Mary Still sails for Savannah; Mrs. Mary Augusta Johnson teaching at Woodbury"
     }
    ],
    "events": [

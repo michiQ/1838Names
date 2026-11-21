@@ -1686,6 +1686,18 @@
     0.138
    ],
    "check": "placed Run #97 addendum, 2026-11-20 (Michiko: the name is Culquhoon); col 4 top, 'ICE CREAM SALOON' through 'June 16--3m'; clearest printing of the Jun 16 ad"
+  },
+  {
+   "issue": "CR_1866-11-17",
+   "page": 3,
+   "headline": "Shrouding: Mrs. Sarah Irons (changed address)",
+   "box": [
+    0.43,
+    0.103,
+    0.57,
+    0.214
+   ],
+   "check": "placed Run #98, 2026-11-20; col 4 top; house number on Union St. reads 320 or 820 at 1600 dpi (also printed Dec 1866), so the address is shown without it"
   }
  ]
 }
