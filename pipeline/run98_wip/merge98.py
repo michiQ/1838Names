@@ -33,6 +33,15 @@ fold(art("CR_1866-11-03", "A. Upham, advertisement"), [art("CR_1866-12-01", "Uph
 fold(ev("CR_1866-12-01", "Wilmington"), [ev("CR_1866-12-08", "Wilmington")], "attendees",
      "(Notice reprinted Dec 8, 1866.)", E)
 
+# Michiko 2026-11-21: the Stockholders' address pamphlet (Blockson Collection) is signed James W. Purnell.
+lh = ev("CR_1866-11-17", "Liberty Hall, Lombard Street -- dedication")
+lh["attendees"] = [(["James W. Purnell", "read the Stockholders' address (printed 'J. W. Parnell'); a stockholder", 2169] if p[0].startswith("J. W. Parnell") else p) for p in lh["attendees"]]
+lh["description"] = lh["description"].replace("Mr. J. W. Parnell [VERIFY]", "Mr. J. W. Parnell (James W. Purnell, a stockholder, per the pamphlet Address of the Stockholders of Liberty Hall)")
+for a in A:
+    if a["issue"] == "CR_1866-11-17":
+        a["people"] = [(["James W. Purnell", p[1].replace(" [VERIFY]", "") + " (printed 'J. W. Parnell')"] if p[0].startswith("J. W. Parnell") else p) for p in a.get("people", [])]
+        a["summary"] = a.get("summary", "").replace("J. W. Parnell [VERIFY]", "J. W. Parnell (James W. Purnell)")
+
 N += [
  "[MERGE] Book Concern (Great Union) Fair at Liberty Hall, printed as: the call (Oct 6 p3), postponement (Nov 3 p2), opening fixed for Nov 15 (Nov 10 p2), opening (Nov 24 p2), in progress with officers (Dec 1 p2), closing Nov 29 (Dec 8 p2), prizes (Dec 15 p2). Left separate for Michiko.",
  "[MERGE] Institute for Colored Youth commencement/examination: Nov 3 p2 and Nov 10 p2. Left separate.",
