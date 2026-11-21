@@ -1,135 +1,143 @@
 {
-  "_doc": "Hand-curated connections between two people (Michiko). Shown on both profiles and drawn as a link on the map.",
-  "links": [
-    {
-      "a": 1659,
-      "b": 344576,
-      "note": "Julie Winch filed Rebecca Lambsong's Female Vigilant Committee notes under Joseph Lamar's entry, along with the Lambsong household on Culvert Street.",
-      "_why": "Michiko 2026-11-01: keep Lamar out of the Female Vigilant Committee but connect him to Rebecca Lambsong."
-    },
-    {
-      "a": 1136,
-      "b": 1140,
-      "note": "Brothers: Rev. Jonathan C. Gibbs (b. 1821) and Mifflin Wistar Gibbs (b. 1823).",
-      "_why": "Michiko 2026-11-01: 'Mifflin Wistar Gibbs is his brother.'"
-    },
-    {
-      "a": 1685,
-      "b": 1680,
-      "note": "Father and daughter: Stephen Laws's will (made March 22, 1814) names his wife Jane and children Leah, Wesley and Anna Laws. Will Book 5, p. 235, #37 (Winch)."
-    },
-    {
-      "a": 1685,
-      "b": 1687,
-      "note": "Father and son: Stephen Laws's will (made March 22, 1814) names his wife Jane and children Leah, Wesley and Anna Laws. Will Book 5, p. 235, #37 (Winch)."
-    },
-    {
-      "a": 2496,
-      "b": 2497,
-      "note": "Sister and brother: Mary Still and William Still.",
-      "_why": "Michiko 2026-11-02: 'Mount Holley Mary Still is William Still's sister for sure.'"
-    },
-    {
-      "a": {
-        "name": "Abraham Shadd",
-        "source": "newspaper"
-      },
-      "b": {
-        "name": "Mary Ann Shadd Cary",
-        "source": "blog"
-      },
-      "note": "Father and daughter: Abraham D. Shadd and Mary Ann Shadd Cary.",
-      "_why": "Michiko 2026-11-02: 'Abram Shadd is Abraham Shadd father to Mary Ann Shadd Cary.'"
-    },
-    {
-      "a": {
-        "name": "Francis A. Duterte",
-        "source": "census"
-      },
-      "b": {
-        "name": "Henrietta Duterte",
-        "source": "blog"
-      },
-      "note": "Husband and wife: Francis A. Duterte, coffin maker, and Henrietta Duterte, who carried on the undertaking business at 634 Lombard St.",
-      "_why": "Michiko 2026-11-02: 'FA Duterte is her husband.'"
-    },
-    {
-      "a": {
-        "name": "John Allen",
-        "source": "newspaper"
-      },
-      "b": 31,
-      "note": "Father and son: Richard Allen and his son John Allen, secretary of the Protecting Society of the City and County of Philadelphia (1828).",
-      "_why": "Michiko 2026-11-03: 'John Allen is Richard Allen's son.'"
-    },
-    {
-      "a": 359990,
-      "b": 1529,
-      "note": "Husband and wife: Helen (Ellen) Appo, a scholar at Arthur Donaldson's school in 1809-11 (Juvenile Magazine, July 1813), married the bandleader Francis (Frank) Johnson.",
-      "_why": "Michiko 2026-11-08"
-    },
-    {
-      "a": 278,
-      "b": 277,
-      "note": "Son and father: Robert Bogle (printed Robert Bougal / Bogal), a scholar at Arthur Donaldson's school in 1813, was the son of the caterer Robert Bogle.",
-      "_why": "Michiko 2026-11-08: the Bougal children are the Bogle children"
-    },
-    {
-      "a": 274,
-      "b": 277,
-      "note": "Daughter and father: Ann Maria Bogle (printed Ann Maria Bogal), a scholar at Arthur Donaldson's school in 1813, was the daughter of the caterer Robert Bogle.",
-      "_why": "Michiko 2026-11-08: the Bougal children are the Bogle children"
-    },
-    {
-      "a": 1695,
-      "b": {
-        "name": "Caroline R. LeCount",
-        "source": "newspaper"
-      },
-      "note": "Uncle and niece: Joseph Le Count, a night scholar at Arthur Donaldson's school (1809-13), was the uncle of the educator Caroline R. Le Count.",
-      "_why": "Michiko 2026-11-08: 'I think they're the same Joseph LeCount. Uncle to Carolyn.'"
-    },
-    {
-      "a": {
-        "name": "Lambsong",
-        "source": "census"
-      },
-      "b": {
-        "name": "Rebecca Lambsong",
-        "source": "newspaper"
-      },
-      "note": "Husband and wife: Lambsong, confectioner, Culvert above Apple (1838 Register of Trades and 1838 census, no first name given), was Rebecca Lambsong's husband.",
-      "_why": "Michiko 2026-11-08: 'Lambsong the confectioner is Rebecca Lambsong's husband.'"
-    },
-    {
-      "a": 889,
-      "b": 892,
-      "note": "Father and son: Thomas Dorsey, the caterer, and William Henry Dorsey. Julie Winch's note on William H. Dorsey reads 'Son of Thomas the caterer' (Blockson). The Colored American Magazine (Feb. 1903, p. 294) says his father was 'one of the three leading caterers of the day'.",
-      "_why": "Michiko 2026-11-13: 'William H Dorsey is the son of Thomas Dorsey.'"
-    },
-    {
-      "a": 312,
-      "b": {
-        "name": "Henrietta Duterte",
-        "source": "blog"
-      },
-      "note": "Brother and sister: Thomas J. Bowers, the singer known as 'the Colored Mario', and Henrietta Duterte (born Bowers, named for their mother). John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). In 1865 he advertised a coal and kindling wood depot at 634 Lombard Street, the address of her undertaking business (Christian Recorder, April 22, 1865).",
-      "_why": "Michiko 2026-11-14: 'TJ Bowers is Henrietta Duterte's brother'; she then supplied the will of John C. Bowers, clothier, which names both as his siblings."
-    },
-    {
-      "a": 305,
-      "b": {
-        "name": "Henrietta Duterte",
-        "source": "blog"
-      },
-      "note": "Brother and sister: John C. Bowers, clothier, and Henrietta S. Duterte. John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). He left his three sisters a mortgage of $2,400 given by their mother on the house No. 838 Lombard Street.",
-      "_why": "Michiko 2026-11-14, from the will of John C. Bowers."
-    },
-    {
-      "a": 305,
-      "b": 312,
-      "note": "Brothers: John C. Bowers, clothier, and Thomas J. Bowers. John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). He left Thomas his gold watch and seal ring, 'a present from my sister Ellen Seth in San Francisco California now deceased'.",
-      "_why": "Michiko 2026-11-14, from the will of John C. Bowers."
-    }
-  ]
+ "_doc": "Hand-curated connections between two people (Michiko). Shown on both profiles and drawn as a link on the map.",
+ "links": [
+  {
+   "a": 1659,
+   "b": 344576,
+   "note": "Julie Winch filed Rebecca Lambsong's Female Vigilant Committee notes under Joseph Lamar's entry, along with the Lambsong household on Culvert Street.",
+   "_why": "Michiko 2026-11-01: keep Lamar out of the Female Vigilant Committee but connect him to Rebecca Lambsong."
+  },
+  {
+   "a": 1136,
+   "b": 1140,
+   "note": "Brothers: Rev. Jonathan C. Gibbs (b. 1821) and Mifflin Wistar Gibbs (b. 1823).",
+   "_why": "Michiko 2026-11-01: 'Mifflin Wistar Gibbs is his brother.'"
+  },
+  {
+   "a": 1685,
+   "b": 1680,
+   "note": "Father and daughter: Stephen Laws's will (made March 22, 1814) names his wife Jane and children Leah, Wesley and Anna Laws. Will Book 5, p. 235, #37 (Winch)."
+  },
+  {
+   "a": 1685,
+   "b": 1687,
+   "note": "Father and son: Stephen Laws's will (made March 22, 1814) names his wife Jane and children Leah, Wesley and Anna Laws. Will Book 5, p. 235, #37 (Winch)."
+  },
+  {
+   "a": 2496,
+   "b": 2497,
+   "note": "Sister and brother: Mary Still and William Still.",
+   "_why": "Michiko 2026-11-02: 'Mount Holley Mary Still is William Still's sister for sure.'"
+  },
+  {
+   "a": {
+    "name": "Abraham Shadd",
+    "source": "newspaper"
+   },
+   "b": {
+    "name": "Mary Ann Shadd Cary",
+    "source": "blog"
+   },
+   "note": "Father and daughter: Abraham D. Shadd and Mary Ann Shadd Cary.",
+   "_why": "Michiko 2026-11-02: 'Abram Shadd is Abraham Shadd father to Mary Ann Shadd Cary.'"
+  },
+  {
+   "a": {
+    "name": "Francis A. Duterte",
+    "source": "census"
+   },
+   "b": {
+    "name": "Henrietta Duterte",
+    "source": "blog"
+   },
+   "note": "Husband and wife: Francis A. Duterte, coffin maker, and Henrietta Duterte, who carried on the undertaking business at 634 Lombard St.",
+   "_why": "Michiko 2026-11-02: 'FA Duterte is her husband.'"
+  },
+  {
+   "a": {
+    "name": "John Allen",
+    "source": "newspaper"
+   },
+   "b": 31,
+   "note": "Father and son: Richard Allen and his son John Allen, secretary of the Protecting Society of the City and County of Philadelphia (1828).",
+   "_why": "Michiko 2026-11-03: 'John Allen is Richard Allen's son.'"
+  },
+  {
+   "a": 359990,
+   "b": 1529,
+   "note": "Husband and wife: Helen (Ellen) Appo, a scholar at Arthur Donaldson's school in 1809-11 (Juvenile Magazine, July 1813), married the bandleader Francis (Frank) Johnson.",
+   "_why": "Michiko 2026-11-08"
+  },
+  {
+   "a": 278,
+   "b": 277,
+   "note": "Son and father: Robert Bogle (printed Robert Bougal / Bogal), a scholar at Arthur Donaldson's school in 1813, was the son of the caterer Robert Bogle.",
+   "_why": "Michiko 2026-11-08: the Bougal children are the Bogle children"
+  },
+  {
+   "a": 274,
+   "b": 277,
+   "note": "Daughter and father: Ann Maria Bogle (printed Ann Maria Bogal), a scholar at Arthur Donaldson's school in 1813, was the daughter of the caterer Robert Bogle.",
+   "_why": "Michiko 2026-11-08: the Bougal children are the Bogle children"
+  },
+  {
+   "a": 1695,
+   "b": {
+    "name": "Caroline R. LeCount",
+    "source": "newspaper"
+   },
+   "note": "Uncle and niece: Joseph Le Count, a night scholar at Arthur Donaldson's school (1809-13), was the uncle of the educator Caroline R. Le Count.",
+   "_why": "Michiko 2026-11-08: 'I think they're the same Joseph LeCount. Uncle to Carolyn.'"
+  },
+  {
+   "a": {
+    "name": "Lambsong",
+    "source": "census"
+   },
+   "b": {
+    "name": "Rebecca Lambsong",
+    "source": "newspaper"
+   },
+   "note": "Husband and wife: Lambsong, confectioner, Culvert above Apple (1838 Register of Trades and 1838 census, no first name given), was Rebecca Lambsong's husband.",
+   "_why": "Michiko 2026-11-08: 'Lambsong the confectioner is Rebecca Lambsong's husband.'"
+  },
+  {
+   "a": 889,
+   "b": 892,
+   "note": "Father and son: Thomas Dorsey, the caterer, and William Henry Dorsey. Julie Winch's note on William H. Dorsey reads 'Son of Thomas the caterer' (Blockson). The Colored American Magazine (Feb. 1903, p. 294) says his father was 'one of the three leading caterers of the day'.",
+   "_why": "Michiko 2026-11-13: 'William H Dorsey is the son of Thomas Dorsey.'"
+  },
+  {
+   "a": 312,
+   "b": {
+    "name": "Henrietta Duterte",
+    "source": "blog"
+   },
+   "note": "Brother and sister: Thomas J. Bowers, the singer known as 'the Colored Mario', and Henrietta Duterte (born Bowers, named for their mother). John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). In 1865 he advertised a coal and kindling wood depot at 634 Lombard Street, the address of her undertaking business (Christian Recorder, April 22, 1865).",
+   "_why": "Michiko 2026-11-14: 'TJ Bowers is Henrietta Duterte's brother'; she then supplied the will of John C. Bowers, clothier, which names both as his siblings."
+  },
+  {
+   "a": 305,
+   "b": {
+    "name": "Henrietta Duterte",
+    "source": "blog"
+   },
+   "note": "Brother and sister: John C. Bowers, clothier, and Henrietta S. Duterte. John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). He left his three sisters a mortgage of $2,400 given by their mother on the house No. 838 Lombard Street.",
+   "_why": "Michiko 2026-11-14, from the will of John C. Bowers."
+  },
+  {
+   "a": 305,
+   "b": 312,
+   "note": "Brothers: John C. Bowers, clothier, and Thomas J. Bowers. John C. Bowers's will names 'my sisters Henrietta S Duterte, Hannah Miller, and Sarah Bowers', 'my dear Mother Henrietta Bowers' and 'my brother Thomas J Bowers' (Wills, No. 752-791, 1873; Ancestry.com, Pennsylvania, U.S., Wills and Probate Records, 1683-1993, Lehi, UT: Ancestry.com Operations, Inc., 2015). He left Thomas his gold watch and seal ring, 'a present from my sister Ellen Seth in San Francisco California now deceased'.",
+   "_why": "Michiko 2026-11-14, from the will of John C. Bowers."
+  },
+  {
+   "a": {
+    "name": "Joseph Carter",
+    "source": "newspaper"
+   },
+   "b": 5,
+   "note": "Robert M. Adger served a partial apprenticeship under organ builder Joseph Carter (W. C. Bolivar, 'Pencil Pusher Points,' Philadelphia Tribune, Jun 20, 1914)."
+  }
+ ]
 }
