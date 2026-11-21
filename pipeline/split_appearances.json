@@ -1520,6 +1520,38 @@
    "to_name": "W. Moore",
    "to_source": "newspaper",
    "note": "Run #98 link review, 2026-11-20 (CR 1866 Q4; Michiko's 'keep separate' rule for common-name census links): Rev. Wm. Moore of 1866 goes to the newspaper W. Moore, as in Runs #79-#82 and #97, not the 1820 city-directory Wm. Moore."
+  },
+  {
+   "from_name": "ALLEN, ROBERT",
+   "from_source": "census",
+   "context_prefix": "Address of the Stockholders of Liberty Hall",
+   "new_name": "Robert Allen",
+   "new_source": "newspaper",
+   "note": "Michiko 2026-11-21 (keep separate): Robert Allen, Liberty Hall stockholder (1866 pamphlet; Bolivar, Tribune, Nov 16, 1912), is his own record, not 'ALLEN, ROBERT' (census)."
+  },
+  {
+   "from_name": "ALLEN, ROBERT",
+   "from_source": "census",
+   "context_prefix": "Purchase and remodeling of Liberty Hall",
+   "new_name": "Robert Allen",
+   "new_source": "newspaper",
+   "note": "Michiko 2026-11-21 (keep separate): Robert Allen, Liberty Hall stockholder (1866 pamphlet; Bolivar, Tribune, Nov 16, 1912), is his own record, not 'ALLEN, ROBERT' (census)."
+  },
+  {
+   "from_name": "Jones, Henry",
+   "from_source": "winch",
+   "context_prefix": "Address of the Stockholders of Liberty Hall",
+   "new_name": "Henry Jones",
+   "new_source": "newspaper",
+   "note": "Michiko 2026-11-21 (keep separate): Henry Jones, Liberty Hall stockholder (1866 pamphlet; Bolivar, Tribune, Nov 16, 1912), is his own record, not 'Jones, Henry' (winch)."
+  },
+  {
+   "from_name": "Jones, Henry",
+   "from_source": "winch",
+   "context_prefix": "Purchase and remodeling of Liberty Hall",
+   "new_name": "Henry Jones",
+   "new_source": "newspaper",
+   "note": "Michiko 2026-11-21 (keep separate): Henry Jones, Liberty Hall stockholder (1866 pamphlet; Bolivar, Tribune, Nov 16, 1912), is his own record, not 'Jones, Henry' (winch)."
   }
  ],
  "renames": [

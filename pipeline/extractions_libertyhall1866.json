@@ -58,7 +58,7 @@
   }
  ],
  "notes": [
-  "Robert Allen, Henry Jones and Robert Adger link to the same records as the existing Bolivar event 'Purchase and remodeling of Liberty Hall' (census ALLEN, ROBERT; Winch Jones, Henry; Winch Adger, Robert M.), for consistency. Open for Michiko: whether the stockholder is Robert Adger Sr. rather than Robert M. Adger [VERIFY]."
+  "Michiko 2026-11-21: Robert Allen and Henry Jones are kept as their own records (split_appearances.json), here and in Bolivar's 'Purchase and remodeling of Liberty Hall' event. Robert Adger is Robert M. Adger: there is only one."
  ],
  "flags": []
 }
