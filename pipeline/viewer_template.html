@@ -21,9 +21,9 @@ header{padding:14px 22px;border-bottom:1px solid var(--line);display:flex;gap:18
 #logoLink{flex:0 0 auto;line-height:0}
 #themeBtn{font:13px Georgia;color:var(--gold);background:transparent;border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer;white-space:nowrap}
 #themeBtn:hover{border-color:var(--gold)}
-html[data-theme="light"]{color-scheme:light;--n-sel:#c8871e;--n-p:#2f6f64;--n-e:#a5472a;--n-o:#5b3f86;--bg:#f6efe2;--panel:#fbf7ef;--ink:#23271d;--dim:#62645a;--gold:#aa3d1d;--rust:#aa3d1d;--teal:#5e6a3a;--line:#ddd2bd}
+html[data-theme="light"]{color-scheme:light;--n-sel:#c8871e;--n-p:#2f6f64;--n-e:#3b6a9c;--n-o:#8e3f7a;--bg:#f6efe2;--panel:#fbf7ef;--ink:#23271d;--dim:#62645a;--gold:#8a6418;--rust:#7a4a1e;--teal:#5e6a3a;--line:#ddd2bd}
 html[data-theme="light"] header h1{color:#393d32}
-html[data-theme="light"] #ocrNotice{background:#efe3c8;border-bottom-color:#aa3d1d}
+html[data-theme="light"] #ocrNotice{background:#efe3c8;border-bottom-color:#8a6418}
 html[data-theme="light"] #adsLink:hover,html[data-theme="light"] #tradesLink:hover,html[data-theme="light"] #mapbtns button:hover,html[data-theme="light"] .tchip:hover{background:#efe3c8}
 html[data-theme="light"] #tabs button.on,html[data-theme="light"] #filters .chip.on,html[data-theme="light"] #mapbtns button[aria-pressed="true"]{background:#393d32;color:#f1e3c8;border-color:#393d32}
 html[data-theme="light"] .prow{border-bottom-color:#ebe2d1}
@@ -396,7 +396,7 @@ const BAKED_FULLMAP = /*__FULLMAP__*/null;
 window._fullLayoutCache = BAKED_FULLMAP ? new Map(BAKED_FULLMAP) : null;
 // graph colors follow the light/dark switch
 function TH(){ const L=document.documentElement.getAttribute('data-theme')!=='dark';
-  return L ? {sel:'#c8871e',p:'#2f6f64',e:'#a5472a',o:'#5b3f86',ring:'#23271d',pin:'rgba(35,39,29,.5)',hl:'rgba(170,61,29,',faint:'rgba(57,61,50,',line:'rgba(57,61,50,',lblSel:'#23271d',lbl:'#2f3228',halo:'rgba(246,239,226,.85)',faintA:.16,lineA:.32}
+  return L ? {sel:'#c8871e',p:'#2f6f64',e:'#3b6a9c',o:'#8e3f7a',ring:'#23271d',pin:'rgba(35,39,29,.5)',hl:'rgba(138,100,24,',faint:'rgba(57,61,50,',line:'rgba(57,61,50,',lblSel:'#23271d',lbl:'#2f3228',halo:'rgba(246,239,226,.85)',faintA:.16,lineA:.32}
            : {sel:'#d4a24e',p:'#4e8f83',e:'#b4552d',o:'#d18aa8',ring:'#efe7d8',pin:'rgba(239,231,216,.6)',hl:'rgba(232,196,120,',faint:'rgba(168,156,134,',line:'rgba(212,162,78,',lblSel:'#efe7d8',lbl:'#c9bda6',halo:'rgba(22,19,14,.7)',faintA:.10,lineA:.25}; }
 const P = new Map(DATA.people.map(p=>[p.id,p]));
 const E = new Map(DATA.events.map(e=>[e.id,e]));
