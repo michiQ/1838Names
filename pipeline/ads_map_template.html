@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Ads Map · 1838 Black Metropolis</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Business ads map (2026-11-22): same parchment palette as the Business ads page */
+:root{--bg:#f3ede2;--panel:#fbf8f2;--ink:#2a2118;--dim:#6f6352;--line:#d9cfbd;--gold:#8a6418;--sel:#efe3c9;--rust:#a5472a;
+  --display:"Libre Caslon Display","Libre Caslon Text",Georgia,serif;--body:"Libre Caslon Text",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body)}
+a{color:var(--gold)}
+.top{display:flex;align-items:center;gap:12px;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+.top a.back{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px var(--body);padding:6px 12px;text-decoration:none;white-space:nowrap}
+.top .ttl{font:12px var(--mono);letter-spacing:.12em;color:var(--dim)}
+main{max-width:1240px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:14px}
+.eyebrow{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+h1{font:400 clamp(28px,5vw,44px)/1.05 var(--display);margin:0;text-wrap:balance}
+.lede{max-width:72ch;margin:0}
+#mapwrap{position:relative;border:1px solid var(--line);border-radius:4px;background:#fffdf8;overflow:hidden;height:min(74vh,760px);min-height:420px;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#mapwrap.drag{cursor:grabbing}
+#map{display:block;width:100%;height:100%}
+.zb{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.zb button{width:40px;height:40px;border:1px solid var(--gold);background:var(--panel);color:var(--ink);border-radius:4px;font:20px/1 var(--body);cursor:pointer}
+.zb button:focus-visible,.mk:focus-visible,.offlist button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.st{stroke:#c9bca4;stroke-width:5;stroke-linecap:round}
+.st.minor{stroke:#ddd2bd;stroke-width:2.5}
+.river{fill:#cfe0e6}
+.lbl{font:11px var(--mono);fill:#6f6352;paint-order:stroke;stroke:#fffdf8;stroke-width:3px}
+.lbl.big{font-size:12px;fill:#4d4335}
+.mk{cursor:pointer}
+.mk circle.d{fill:#fffdf8;stroke-width:3}
+.mk.approx circle.d{stroke-dasharray:4 3}
+.mk text.e{font-size:17px;text-anchor:middle;dominant-baseline:central}
+.mk text.n{font:700 10px var(--mono);fill:#fff;text-anchor:middle;dominant-baseline:central}
+.cl circle{fill:var(--ink);stroke:#fffdf8;stroke-width:2}
+.cl text{font:700 12px var(--mono);fill:#f3ede2;text-anchor:middle;dominant-baseline:central}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{display:inline-flex;width:26px;height:26px;border-radius:50%;border:3px solid;background:#fffdf8;align-items:center;justify-content:center;font-style:normal;font-size:14px}
+.note{font-size:13px;color:var(--dim);max-width:90ch;margin:0}
+h2{font:400 22px/1.2 var(--display);margin:10px 0 0}
+.offlist{list-style:none;margin:0;padding:0;columns:2 320px;column-gap:24px}
+.offlist li{break-inside:avoid;padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.offlist button{all:unset;cursor:pointer;color:var(--gold);font-weight:700}
+.offlist small{display:block;color:var(--dim);font:11px var(--mono)}
+#pop{position:fixed;inset:0;background:rgba(42,33,24,.55);display:none;z-index:20;align-items:center;justify-content:center;padding:14px}
+#pop.on{display:flex}
+#card{background:var(--panel);border:1px solid var(--gold);border-radius:6px;max-width:560px;width:100%;max-height:92vh;overflow:auto;-webkit-overflow-scrolling:touch}
+#card .hd{position:sticky;top:0;background:var(--sel);border-bottom:1px solid var(--line);padding:10px 12px;display:flex;gap:10px;align-items:flex-start}
+#card .hd div{flex:1;font-size:13.5px;line-height:1.35;overflow-wrap:anywhere}
+#card .hd button{border:1px solid var(--gold);background:var(--panel);color:var(--ink);border-radius:4px;font:13px var(--body);padding:6px 12px;cursor:pointer}
+#card article{padding:12px;border-bottom:1px solid var(--line)}
+#card article:last-child{border-bottom:0}
+#card img{display:block;width:100%;height:auto;background:#fff;border:1px solid var(--line);filter:sepia(.25) contrast(1.05)}
+#card h3{font:400 17px/1.25 var(--body);margin:8px 0 2px}
+#card .src{font:11px var(--mono);color:var(--dim)}
+#card .who a{font-weight:700}
+#card .pn{font-size:12.5px;color:var(--dim);margin-top:4px}
+@media (max-width:600px){#mapwrap{height:68vh}.lbl{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="top"><a class="back" href="ads.html">&#8592; Business ads</a><span class="ttl">1838 BLACK METROPOLIS · BUSINESS ADS MAP</span></div>
+<main>
+<div class="eyebrow">Where the businesses were</div>
+<h1>Business ads on the street grid</h1>
+<p class="lede">{{N_ON}} newspaper ads placed at {{N_PLACES}} addresses. Tap an icon to read the ad. Drag to move the map; pinch, scroll or use the buttons to zoom. A dark circle with a number is several addresses close together: tap it to zoom in.</p>
+<div id="mapwrap" role="application" aria-label="Map of business ads by street address">
+  <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div class="zb"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">&minus;</button><button id="zfit" aria-label="Show the whole map" title="Whole map">&#9633;</button></div>
+</div>
+<div class="legend" id="legend" aria-label="Icon key"></div>
+<p class="note"><b>How the icons are placed.</b> This is a drawn street grid, not a surveyed map: every block is the same size, and an icon is right to the block and the side of the street, not to the doorway. Philadelphia renumbered its houses in 1857, so ads from 1857 on are placed by house number (913 Lombard is in the 900 block, north side). Earlier ads carry old house numbers and are placed only from a cross street named in the ad. A dashed ring means the spot is approximate. Shippen Street is today's Bainbridge Street.</p>
+<h2>Not on the map ({{N_OFF}})</h2>
+<p class="note">These ads give no house number or cross street, are on a street not yet located, or lie outside this part of the city.</p>
+<ul class="offlist" id="off"></ul>
+</main>
+<div id="pop" role="dialog" aria-modal="true" aria-label="Business ad"><div id="card"></div></div>
+<script>
+const PLACES=/*PLACES*/[];
+const OFF=/*OFF*/[];
+const LEGEND=/*LEGEND*/[];
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// grid: x = numbered street (east is right, so x is flipped), y = blocks south of Market
+const X0=0.2,X1=18.6,Y0=-5.0,Y1=12.1;
+const NS=[[1,'Front'],[2,'2nd'],[3,'3rd'],[4,'4th'],[5,'5th'],[6,'6th'],[7,'7th'],[8,'8th'],[9,'9th'],[10,'10th'],[11,'11th'],[12,'12th'],[13,'13th'],[14,'Broad'],[15,'15th'],[16,'16th'],[17,'17th'],[18,'18th']];
+const EW=[[-4,'Callowhill'],[-3,'Vine'],[-2,'Race'],[-1,'Arch'],[0,'Market'],[1,'Chestnut'],[2,'Walnut'],[3,'Spruce'],[4,'Pine'],[5,'Lombard'],[6,'South'],[7,'Shippen'],[8,'Catharine'],[9,'Christian'],[10,'Carpenter'],[11,'Washington Av.']];
+const MINOR=[[-3.4,'Wood',11.6,13],[-1.5,'Cherry',5.6,6.7],[-1.5,'Cherry',12.6,13.6],[0.5,'Jayne',5.6,6.7],[1.5,'Sansom',16.6,17.8],[4.5,'Barley',9.7,10.8],[4.5,'Addison',16.8,17.9],[5.5,'Rodman',9.7,11.8],[5.5,'Gaskill',3.6,4.7]];
+const MINORNS=[[9.5,'Raspberry',2.4,3.2],[10.5,'Currant Al.',2.0,2.9],[13.5,'Juniper',3.0,4.0]];
+const wrap=document.getElementById('mapwrap'),svg=document.getElementById('map');
+let W=0,H=0,k=40,cx=8.2,cy=4.2;            // k = pixels per block; (cx,cy) = grid point at the centre
+const sx=x=>W/2+(cx-x)*k, sy=y=>H/2+(y-cy)*k;
+function fit(core){
+  W=wrap.clientWidth;H=wrap.clientHeight;
+  if(core){const kx=W/12.5,ky=H/10.5;k=Math.max(Math.min(kx,ky),26);cx=8.3;cy=4.3;}
+  else{k=Math.min(W/(X1-X0),H/(Y1-Y0));cx=(X0+X1)/2;cy=(Y0+Y1)/2;}
+  draw();
+}
+function clamp(){k=Math.max(14,Math.min(k,420));cx=Math.max(X0,Math.min(cx,X1));cy=Math.max(Y0,Math.min(cy,Y1));}
+function draw(){
+  clamp();W=wrap.clientWidth;H=wrap.clientHeight;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  let s=`<rect class="river" x="${sx(0.75)}" y="${sy(Y0)-50}" width="${Math.max(0,W-sx(0.75))+400}" height="${(Y1-Y0)*k+100}"/>`;
+  if(sx(0.45)<W) s+=`<text class="lbl" transform="translate(${sx(0.45)},${Math.min(Math.max(sy(cy),60),H-60)}) rotate(90)" text-anchor="middle">Delaware River</text>`;
+  for(const [y,n] of EW){s+=`<line class="st" x1="${sx(X1-0.3)}" y1="${sy(y)}" x2="${sx(0.8)}" y2="${sy(y)}"/>`;}
+  for(const [x,n] of NS){s+=`<line class="st" x1="${sx(x)}" y1="${sy(Y0+0.4)}" x2="${sx(x)}" y2="${sy(Y1-0.3)}"/>`;}
+  if(k>=30){for(const [y,n,a,b] of MINOR){s+=`<line class="st minor" x1="${sx(b)}" y1="${sy(y)}" x2="${sx(a)}" y2="${sy(y)}"/>`;if(k>=55)s+=`<text class="lbl" x="${sx(b)+4}" y="${sy(y)-5}">${n}</text>`;}
+    for(const [x,n,a,b] of MINORNS){s+=`<line class="st minor" x1="${sx(x)}" y1="${sy(a)}" x2="${sx(x)}" y2="${sy(b)}"/>`;if(k>=55)s+=`<text class="lbl" x="${sx(x)+5}" y="${sy(a)+12}">${n}</text>`;}}
+  // street names: pinned to the left edge (east-west) and the top edge (north-south) so they stay readable
+  const stepN=k<26?2:1;
+  for(const [y,n] of EW){const py=sy(y);if(py>24&&py<H-6)s+=`<text class="lbl big" x="8" y="${py-6}">${n}</text>`;}
+  NS.forEach(([x,n],i)=>{const px=sx(x);if(px>70&&px<W-56&&(i%stepN===0))s+=`<text class="lbl big" x="${px}" y="16" text-anchor="middle">${n}</text>`;});
+  // markers, grouped when they would overlap on screen
+  const R=15,pts=PLACES.map((p,i)=>({i,p,x:sx(p.x),y:sy(p.y)})).filter(o=>o.x>-30&&o.x<W+30&&o.y>-30&&o.y<H+30);
+  const groups=[];
+  const D=R*2.15;for(const o of pts){let g=groups.find(g=>Math.hypot(g.x-o.x,g.y-o.y)<D);
+    if(g){g.m.push(o);g.x=g.m.reduce((a,b)=>a+b.x,0)/g.m.length;g.y=g.m.reduce((a,b)=>a+b.y,0)/g.m.length;}else groups.push({x:o.x,y:o.y,m:[o]});}
+  for(let again=true,n=0;again&&n<6;n++){again=false;       // merge groups that drifted together
+    for(let i=0;i<groups.length;i++)for(let j=groups.length-1;j>i;j--){const a=groups[i],b=groups[j];
+      if(Math.hypot(a.x-b.x,a.y-b.y)<D){a.m=a.m.concat(b.m);a.x=a.m.reduce((s,o)=>s+o.x,0)/a.m.length;a.y=a.m.reduce((s,o)=>s+o.y,0)/a.m.length;groups.splice(j,1);again=true;}}}
+  for(const g of groups){
+    if(g.m.length>1){const n=g.m.reduce((a,o)=>a+o.p.ads.length,0);
+      s+=`<g class="mk cl" tabindex="0" role="button" data-c="${g.m.map(o=>o.i).join(',')}" aria-label="${g.m.length} addresses, ${n} ads: zoom in"><circle cx="${g.x}" cy="${g.y}" r="${R+2}"/><text x="${g.x}" y="${g.y}">${n}</text></g>`;}
+    else{const o=g.m[0],p=o.p,a=p.ads[p.ads.length-1];
+      s+=`<g class="mk${p.approx?' approx':''}" tabindex="0" role="button" data-p="${o.i}" aria-label="${esc(a.lab)}: ${esc(p.ads.map(r=>r.t).join('; '))}"><circle class="d" cx="${o.x}" cy="${o.y}" r="${R}" stroke="${a.col}"/><text class="e" x="${o.x}" y="${o.y+1}">${a.emo}</text>`+
+        (p.ads.length>1?`<circle cx="${o.x+R-2}" cy="${o.y-R+2}" r="8" fill="${a.col}"/><text class="n" x="${o.x+R-2}" y="${o.y-R+2.5}">${p.ads.length}</text>`:'')+`</g>`;}
+  }
+  svg.innerHTML=s;
+}
+function zoomAt(f,px,py){const gx=cx-(px-W/2)/k,gy=cy+(py-H/2)/k;k*=f;clamp();cx=gx+(px-W/2)/k;cy=gy-(py-H/2)/k;draw();}
+// pointer pan and pinch
+const ptr=new Map();let moved=0,pd=0;
+wrap.addEventListener('pointerdown',e=>{if(e.target.closest('.zb'))return;ptr.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=0;if(ptr.size===2){const [a,b]=[...ptr.values()];pd=Math.hypot(a.x-b.x,a.y-b.y);}});
+wrap.addEventListener('pointermove',e=>{const p=ptr.get(e.pointerId);if(!p)return;
+  if(ptr.size===1){const dx=e.clientX-p.x,dy=e.clientY-p.y;moved+=Math.abs(dx)+Math.abs(dy);if(moved>6){wrap.classList.add('drag');cx+=dx/k;cy-=dy/k;p.x=e.clientX;p.y=e.clientY;draw();}}
+  else if(ptr.size===2){p.x=e.clientX;p.y=e.clientY;const [a,b]=[...ptr.values()];const d=Math.hypot(a.x-b.x,a.y-b.y),r=wrap.getBoundingClientRect();moved=99;
+    if(pd>0)zoomAt(d/pd,(a.x+b.x)/2-r.left,(a.y+b.y)/2-r.top);pd=d;}});
+const up=e=>{ptr.delete(e.pointerId);wrap.classList.remove('drag');};
+wrap.addEventListener('pointerup',up);wrap.addEventListener('pointercancel',up);wrap.addEventListener('pointerleave',up);
+wrap.addEventListener('wheel',e=>{e.preventDefault();const r=wrap.getBoundingClientRect();zoomAt(e.deltaY<0?1.25:0.8,e.clientX-r.left,e.clientY-r.top);},{passive:false});
+document.getElementById('zin').onclick=()=>zoomAt(1.5,W/2,H/2);
+document.getElementById('zout').onclick=()=>zoomAt(1/1.5,W/2,H/2);
+document.getElementById('zfit').onclick=()=>fit(false);
+function act(t){const g=t.closest('.mk');if(!g)return;
+  if(g.dataset.p!==undefined){const p=PLACES[+g.dataset.p];show(p.ads,p);}
+  else{const m=g.dataset.c.split(',').map(i=>PLACES[+i]);const xs=m.map(p=>p.x),ys=m.map(p=>p.y);
+    const gx=(Math.min(...xs)+Math.max(...xs))/2,gy=(Math.min(...ys)+Math.max(...ys))/2;
+    const span=Math.max(Math.max(...xs)-Math.min(...xs),Math.max(...ys)-Math.min(...ys),0.05);
+    k=Math.max(k*1.8,Math.min(Math.min(W,H)*0.55/span,420));cx=gx;cy=gy;draw();}}
+svg.addEventListener('click',e=>{if(moved>6)return;act(e.target);});
+svg.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();act(e.target);}});
+// the ad pop-up
+const pop=document.getElementById('pop'),card=document.getElementById('card');let last=null;
+function show(ads,p){last=document.activeElement;
+  const addr=[...new Set(ads.flatMap(a=>a.addr))];
+  card.innerHTML=`<div class="hd"><div>${addr.map(esc).join('<br>')||'No address in the ad'}${p&&p.note?`<div class="pn">${p.approx?'Approximate spot: ':'Placed: '}${esc(p.note)}</div>`:''}${!p&&ads[0].why?`<div class="pn">Not on the map: ${esc(ads[0].why)}</div>`:''}</div><button id="cls">Close</button></div>`+
+    ads.map(a=>`<article><a href="${esc(a.img)}" target="_blank" rel="noopener" title="Open the ad image"><img src="${esc(a.img)}" alt="${esc(a.t)}, ${esc(a.paper)}, ${esc(a.date)}"></a><h3>${a.emo} ${esc(a.t)}</h3><div class="src">${esc(a.paper)} · ${esc(a.date)} · <a href="pages/${esc(a.issue)}_p${a.page}.jpg" target="_blank" rel="noopener">page ${a.page}</a></div>${a.people.length?`<div class="who">${a.people.map(q=>`<a href="index.html#p${q[0]}">${esc(q[1])}</a>`).join(', ')}</div>`:''}</article>`).join('');
+  pop.classList.add('on');card.scrollTop=0;document.getElementById('cls').focus();}
+function hide(){pop.classList.remove('on');if(last&&last.focus)try{last.focus();}catch(_){}}
+pop.addEventListener('click',e=>{if(e.target===pop||e.target.id==='cls')hide();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hide();});
+document.getElementById('legend').innerHTML=LEGEND.map(l=>`<span><i style="border-color:${l[1]}">${l[0]}</i>${esc(l[2])}</span>`).join('');
+document.getElementById('off').innerHTML=OFF.map((a,i)=>`<li><button data-o="${i}">${a.emo} ${esc(a.t)}</button><small>${esc(a.date)} · ${esc(a.addr.join('; ')||'no address')} · ${esc(a.why)}</small></li>`).join('');
+document.getElementById('off').addEventListener('click',e=>{const b=e.target.closest('button');if(b)show([OFF[+b.dataset.o]],null);});
+addEventListener('resize',()=>draw());
+fit(true);
+</script>
+</body>
+</html>
