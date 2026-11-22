@@ -148,6 +148,7 @@ OWNER_PLACED = [
     ("Mrs. H. T. O'Donnell, boarding house", "913 Lombard Street"),
     ("Mrs. H. S. Duterte, General Undertaker", "634 Lombard Street"),
     ("Lodging (Mrs. Julia A. Brown)", "610 South 8th Street"),
+    ("Fine Cake Bakery, Confectionary and Ice Cream Saloon", "801 South Street"),
     # Michiko 2026-11-22: Thomas J. Bowers was at 634 Lombard. His 1864 ad was read as "631 Lombard Street, above Sixth".
     ("Coal Yard (Thos. J. Bowers)", "634 Lombard Street",
      "The house number in this 1864 ad was read as 631. Thomas J. Bowers's yard was at 634 Lombard, as his 1865 ads print, and it is placed there."),
