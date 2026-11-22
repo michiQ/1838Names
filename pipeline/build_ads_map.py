@@ -117,18 +117,19 @@ def place_one(addr, iso):
             return None, why
     for key, x, y, approx, note in SPECIAL:
         if key in addr:
-            return (x, y, approx, note), None
+            on_ew = any(abs(abs(y - v) - d) < 0.006 for v in EW.values() for d in (0, SIDE))
+            return (x, y, approx, note, "h" if on_ew else "v"), None
     if iso < "1857":
         return None, "old (pre-1857) house number and no cross street in the ad"
     m = NS_RE.search(addr)
     if m and m.group(3).lower() in ORD:
         n = int(m.group(1)); x = ORD[m.group(3).lower()]
         y = n / 100.0 * (-1 if m.group(2)[0] in "Nn" else 1)
-        return (x + (-SIDE if n % 2 else SIDE), y, False, ""), None
+        return (x + (-SIDE if n % 2 else SIDE), y, False, "", "v"), None
     m = EW_RE.search(addr)
     if m and m.group(2).lower() in EW:
         n = int(m.group(1)); y = EW[m.group(2).lower()]
-        return (n / 100.0, y + (-SIDE if n % 2 else SIDE), False, ""), None
+        return (n / 100.0, y + (-SIDE if n % 2 else SIDE), False, "", "h"), None
     if re.search(r"\d", addr):
         return None, "street not located on this grid"
     return None, "no house number"
@@ -150,7 +151,7 @@ def main():
             reason = reason or why
         if got and -4.9 <= got[1] <= 11.9 and 0.6 <= got[0] <= 18.4:
             key = (round(got[0], 2), round(got[1], 2))
-            pl = places.setdefault(key, {"x": key[0], "y": key[1], "approx": got[2], "note": got[3], "ads": []})
+            pl = places.setdefault(key, {"x": key[0], "y": key[1], "approx": got[2], "note": got[3], "o": got[4], "ads": []})
             pl["ads"].append(rec); n_on += 1
         else:
             rec["why"] = reason or "outside the map area"; off.append(rec)
@@ -168,7 +169,6 @@ def main():
     tpl = open(os.path.join(HERE, "ads_map_template.html"), encoding="utf-8").read()
     out = (tpl.replace("/*PLACES*/[]", json.dumps(P, ensure_ascii=False, separators=(",", ":")))
               .replace("/*OFF*/[]", json.dumps(off, ensure_ascii=False, separators=(",", ":")))
-              .replace("/*LEGEND*/[]", json.dumps(legend, ensure_ascii=False, separators=(",", ":")))
               .replace("{{N_ON}}", str(n_on)).replace("{{N_PLACES}}", str(len(P))).replace("{{N_OFF}}", str(len(off))))
     open(os.path.join(ROOT, "ads_map.html"), "w", encoding="utf-8").write(out)
     print(f"ads map: {n_on} ads at {len(P)} places; {len(off)} not placed; {len(out)} bytes")

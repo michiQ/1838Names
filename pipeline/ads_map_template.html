@@ -29,18 +29,14 @@ h1{font:400 clamp(28px,5vw,44px)/1.05 var(--display);margin:0;text-wrap:balance}
 .st{stroke:#c9bca4;stroke-width:5;stroke-linecap:round}
 .st.minor{stroke:#ddd2bd;stroke-width:2.5}
 .river{fill:#cfe0e6}
-.lbl{font:11px var(--mono);fill:#6f6352;paint-order:stroke;stroke:#fffdf8;stroke-width:3px}
-.lbl.big{font-size:12px;fill:#4d4335}
+.lbl{font:700 11px var(--mono);fill:#5a4e3c;paint-order:stroke;stroke:#fffdf8;stroke-width:4px;stroke-linejoin:round}
+.lbl.big{font-size:13px;fill:#2a2118;letter-spacing:.04em}
+.lead{stroke:#8a6418;stroke-width:1;opacity:.55}
 .mk{cursor:pointer}
 .mk circle.d{fill:#fffdf8;stroke-width:3}
 .mk.approx circle.d{stroke-dasharray:4 3}
-.mk text.e{font-size:17px;text-anchor:middle;dominant-baseline:central}
+.mk text.e{text-anchor:middle;dominant-baseline:central}
 .mk text.n{font:700 10px var(--mono);fill:#fff;text-anchor:middle;dominant-baseline:central}
-.cl circle{fill:var(--ink);stroke:#fffdf8;stroke-width:2}
-.cl text{font:700 12px var(--mono);fill:#f3ede2;text-anchor:middle;dominant-baseline:central}
-.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px}
-.legend span{display:inline-flex;align-items:center;gap:6px}
-.legend i{display:inline-flex;width:26px;height:26px;border-radius:50%;border:3px solid;background:#fffdf8;align-items:center;justify-content:center;font-style:normal;font-size:14px}
 .note{font-size:13px;color:var(--dim);max-width:90ch;margin:0}
 h2{font:400 22px/1.2 var(--display);margin:10px 0 0}
 .offlist{list-style:none;margin:0;padding:0;columns:2 320px;column-gap:24px}
@@ -68,13 +64,12 @@ h2{font:400 22px/1.2 var(--display);margin:10px 0 0}
 <main>
 <div class="eyebrow">Where the businesses were</div>
 <h1>Business ads on the street grid</h1>
-<p class="lede">{{N_ON}} newspaper ads placed at {{N_PLACES}} addresses. Tap an icon to read the ad. Drag to move the map; pinch, scroll or use the buttons to zoom. A dark circle with a number is several addresses close together: tap it to zoom in.</p>
+<p class="lede">{{N_ON}} newspaper ads placed at {{N_PLACES}} addresses. Tap an icon to read the ad. Drag to move the map; pinch, scroll or use the buttons to zoom. Where businesses stood close together, their icons are lined up along the street in house-number order; zoom in to see them settle onto their blocks.</p>
 <div id="mapwrap" role="application" aria-label="Map of business ads by street address">
   <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
   <div class="zb"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">&minus;</button><button id="zfit" aria-label="Show the whole map" title="Whole map">&#9633;</button></div>
 </div>
-<div class="legend" id="legend" aria-label="Icon key"></div>
-<p class="note"><b>How the icons are placed.</b> This is a drawn street grid, not a surveyed map: every block is the same size, and an icon is right to the block and the side of the street, not to the doorway. Philadelphia renumbered its houses in 1857, so ads from 1857 on are placed by house number (913 Lombard is in the 900 block, north side). Earlier ads carry old house numbers and are placed only from a cross street named in the ad. A dashed ring means the spot is approximate. Shippen Street is today's Bainbridge Street.</p>
+<p class="note"><b>How the icons are placed.</b> This is a drawn street grid, not a surveyed map: every block is the same size, and an icon is right to the block and the side of the street, not to the doorway. Philadelphia renumbered its houses in 1857, so ads from 1857 on are placed by house number (913 Lombard is in the 900 block, north side). Earlier ads carry old house numbers and are placed only from a cross street named in the ad. An icon with a dashed ring is an approximate spot: the ad gives an old house number or a small alley, so it is placed from the nearest cross street it names. Shippen Street is today's Bainbridge Street.</p>
 <h2>Not on the map ({{N_OFF}})</h2>
 <p class="note">These ads give no house number or cross street, are on a street not yet located, or lie outside this part of the city.</p>
 <ul class="offlist" id="off"></ul>
@@ -83,7 +78,6 @@ h2{font:400 22px/1.2 var(--display);margin:10px 0 0}
 <script>
 const PLACES=/*PLACES*/[];
 const OFF=/*OFF*/[];
-const LEGEND=/*LEGEND*/[];
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 // grid: x = numbered street (east is right, so x is flipped), y = blocks south of Market
 const X0=0.2,X1=18.6,Y0=-5.0,Y1=12.1;
@@ -100,7 +94,7 @@ function fit(core){
   else{k=Math.min(W/(X1-X0),H/(Y1-Y0));cx=(X0+X1)/2;cy=(Y0+Y1)/2;}
   draw();
 }
-function clamp(){k=Math.max(14,Math.min(k,420));cx=Math.max(X0,Math.min(cx,X1));cy=Math.max(Y0,Math.min(cy,Y1));}
+function clamp(){k=Math.max(14,Math.min(k,900));cx=Math.max(X0,Math.min(cx,X1));cy=Math.max(Y0,Math.min(cy,Y1));}
 function draw(){
   clamp();W=wrap.clientWidth;H=wrap.clientHeight;
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
@@ -110,25 +104,24 @@ function draw(){
   for(const [x,n] of NS){s+=`<line class="st" x1="${sx(x)}" y1="${sy(Y0+0.4)}" x2="${sx(x)}" y2="${sy(Y1-0.3)}"/>`;}
   if(k>=30){for(const [y,n,a,b] of MINOR){s+=`<line class="st minor" x1="${sx(b)}" y1="${sy(y)}" x2="${sx(a)}" y2="${sy(y)}"/>`;if(k>=55)s+=`<text class="lbl" x="${sx(b)+4}" y="${sy(y)-5}">${n}</text>`;}
     for(const [x,n,a,b] of MINORNS){s+=`<line class="st minor" x1="${sx(x)}" y1="${sy(a)}" x2="${sx(x)}" y2="${sy(b)}"/>`;if(k>=55)s+=`<text class="lbl" x="${sx(x)+5}" y="${sy(a)+12}">${n}</text>`;}}
-  // street names: pinned to the left edge (east-west) and the top edge (north-south) so they stay readable
-  const stepN=k<26?2:1;
-  for(const [y,n] of EW){const py=sy(y);if(py>24&&py<H-6)s+=`<text class="lbl big" x="8" y="${py-6}">${n}</text>`;}
-  NS.forEach(([x,n],i)=>{const px=sx(x);if(px>70&&px<W-56&&(i%stepN===0))s+=`<text class="lbl big" x="${px}" y="16" text-anchor="middle">${n}</text>`;});
-  // markers, grouped when they would overlap on screen
-  const R=15,pts=PLACES.map((p,i)=>({i,p,x:sx(p.x),y:sy(p.y)})).filter(o=>o.x>-30&&o.x<W+30&&o.y>-30&&o.y<H+30);
-  const groups=[];
-  const D=R*2.15;for(const o of pts){let g=groups.find(g=>Math.hypot(g.x-o.x,g.y-o.y)<D);
-    if(g){g.m.push(o);g.x=g.m.reduce((a,b)=>a+b.x,0)/g.m.length;g.y=g.m.reduce((a,b)=>a+b.y,0)/g.m.length;}else groups.push({x:o.x,y:o.y,m:[o]});}
-  for(let again=true,n=0;again&&n<6;n++){again=false;       // merge groups that drifted together
-    for(let i=0;i<groups.length;i++)for(let j=groups.length-1;j>i;j--){const a=groups[i],b=groups[j];
-      if(Math.hypot(a.x-b.x,a.y-b.y)<D){a.m=a.m.concat(b.m);a.x=a.m.reduce((s,o)=>s+o.x,0)/a.m.length;a.y=a.m.reduce((s,o)=>s+o.y,0)/a.m.length;groups.splice(j,1);again=true;}}}
-  for(const g of groups){
-    if(g.m.length>1){const n=g.m.reduce((a,o)=>a+o.p.ads.length,0);
-      s+=`<g class="mk cl" tabindex="0" role="button" data-c="${g.m.map(o=>o.i).join(',')}" aria-label="${g.m.length} addresses, ${n} ads: zoom in"><circle cx="${g.x}" cy="${g.y}" r="${R+2}"/><text x="${g.x}" y="${g.y}">${n}</text></g>`;}
-    else{const o=g.m[0],p=o.p,a=p.ads[p.ads.length-1];
-      s+=`<g class="mk${p.approx?' approx':''}" tabindex="0" role="button" data-p="${o.i}" aria-label="${esc(a.lab)}: ${esc(p.ads.map(r=>r.t).join('; '))}"><circle class="d" cx="${o.x}" cy="${o.y}" r="${R}" stroke="${a.col}"/><text class="e" x="${o.x}" y="${o.y+1}">${a.emo}</text>`+
-        (p.ads.length>1?`<circle cx="${o.x+R-2}" cy="${o.y-R+2}" r="8" fill="${a.col}"/><text class="n" x="${o.x+R-2}" y="${o.y-R+2.5}">${p.ads.length}</text>`:'')+`</g>`;}
-  }
+  // street names written on the streets themselves, repeated so one is always in view
+  const stx=Math.max(1,Math.floor(W/k/2.2)),sty=Math.max(1,Math.floor(H/k/2.2));
+  const j0=Math.floor(cx-W/2/k)-1,j1=Math.ceil(cx+W/2/k)+1,i0=Math.floor(cy-H/2/k)-1,i1=Math.ceil(cy+H/2/k)+1;
+  for(const [y,n] of EW){const py=sy(y);if(py<10||py>H-4)continue;
+    for(let j=j0;j<=j1;j++){if(((j%stx)+stx)%stx)continue;const gx=j+0.5;if(gx<1||gx>18)continue;s+=`<text class="lbl big" x="${sx(gx)}" y="${py+4}" text-anchor="middle">${n}</text>`;}}
+  for(const [x,n] of NS){const px=sx(x);if(px<10||px>W-10)continue;
+    for(let i=i0;i<=i1;i++){if(((i%sty)+sty)%sty)continue;const gy=i+0.5;if(gy<Y0+0.6||gy>Y1-0.4)continue;s+=`<text class="lbl big" x="${px}" y="${sy(gy)+4}" text-anchor="middle">${n}</text>`;}}
+  // icons: every address gets its own icon. Close neighbours are slid apart ALONG their street, in house-number order.
+  const R=Math.max(9,Math.min(15,k*0.2)),G=2*R+3;
+  const pts=PLACES.map((p,i)=>({i,p,x:sx(p.x),y:sy(p.y),tx:sx(p.x),ty:sy(p.y)}));
+  const rows={};for(const o of pts){const key=o.p.o==='h'?'h'+o.p.y:'v'+o.p.x;(rows[key]=rows[key]||[]).push(o);}
+  for(const key in rows){const r=rows[key],ax=key[0]==='h'?'x':'y';r.sort((a,b)=>a[ax]-b[ax]);
+    for(let it=0;it<60;it++){let mv=false;for(let i=1;i<r.length;i++){const d=r[i][ax]-r[i-1][ax];if(d<G-0.01){const h=(G-d)/2;r[i-1][ax]-=h;r[i][ax]+=h;mv=true;}}if(!mv)break;}}
+  for(const o of pts){if(o.x<-30||o.x>W+30||o.y<-30||o.y>H+30)continue;
+    const p=o.p,a=p.ads[p.ads.length-1];
+    if(Math.hypot(o.x-o.tx,o.y-o.ty)>R*0.9){const lx=p.o==='h'?o.tx:o.x,ly=p.o==='h'?o.y:o.ty;s+=`<line class="lead" x1="${lx}" y1="${ly}" x2="${o.x}" y2="${o.y}"/>`;}
+    s+=`<g class="mk${p.approx?' approx':''}" tabindex="0" role="button" data-p="${o.i}" aria-label="${esc(a.lab)}: ${esc(p.ads.map(r=>r.t).join('; '))}"><circle class="d" cx="${o.x}" cy="${o.y}" r="${R}" stroke="${a.col}"/><text class="e" font-size="${Math.round(R*1.15)}" x="${o.x}" y="${o.y+1}">${a.emo}</text>`+
+      (p.ads.length>1?`<circle cx="${o.x+R-2}" cy="${o.y-R+2}" r="7" fill="${a.col}"/><text class="n" x="${o.x+R-2}" y="${o.y-R+2.5}">${p.ads.length}</text>`:'')+`</g>`;}
   svg.innerHTML=s;
 }
 function zoomAt(f,px,py){const gx=cx-(px-W/2)/k,gy=cy+(py-H/2)/k;k*=f;clamp();cx=gx+(px-W/2)/k;cy=gy-(py-H/2)/k;draw();}
@@ -146,11 +139,7 @@ document.getElementById('zin').onclick=()=>zoomAt(1.5,W/2,H/2);
 document.getElementById('zout').onclick=()=>zoomAt(1/1.5,W/2,H/2);
 document.getElementById('zfit').onclick=()=>fit(false);
 function act(t){const g=t.closest('.mk');if(!g)return;
-  if(g.dataset.p!==undefined){const p=PLACES[+g.dataset.p];show(p.ads,p);}
-  else{const m=g.dataset.c.split(',').map(i=>PLACES[+i]);const xs=m.map(p=>p.x),ys=m.map(p=>p.y);
-    const gx=(Math.min(...xs)+Math.max(...xs))/2,gy=(Math.min(...ys)+Math.max(...ys))/2;
-    const span=Math.max(Math.max(...xs)-Math.min(...xs),Math.max(...ys)-Math.min(...ys),0.05);
-    k=Math.max(k*1.8,Math.min(Math.min(W,H)*0.55/span,420));cx=gx;cy=gy;draw();}}
+  const p=PLACES[+g.dataset.p];show(p.ads,p);}
 svg.addEventListener('click',e=>{if(moved>6)return;act(e.target);});
 svg.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();act(e.target);}});
 // the ad pop-up
@@ -163,7 +152,6 @@ function show(ads,p){last=document.activeElement;
 function hide(){pop.classList.remove('on');if(last&&last.focus)try{last.focus();}catch(_){}}
 pop.addEventListener('click',e=>{if(e.target===pop||e.target.id==='cls')hide();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')hide();});
-document.getElementById('legend').innerHTML=LEGEND.map(l=>`<span><i style="border-color:${l[1]}">${l[0]}</i>${esc(l[2])}</span>`).join('');
 document.getElementById('off').innerHTML=OFF.map((a,i)=>`<li><button data-o="${i}">${a.emo} ${esc(a.t)}</button><small>${esc(a.date)} · ${esc(a.addr.join('; ')||'no address')} · ${esc(a.why)}</small></li>`).join('');
 document.getElementById('off').addEventListener('click',e=>{const b=e.target.closest('button');if(b)show([OFF[+b.dataset.o]],null);});
 addEventListener('resize',()=>draw());
