@@ -141,6 +141,15 @@ NOPLACE = [
     ("abv. Poplar", "outside the map area"), ("Franklin Hall", "a concert notice, not a business address"),
 ]
 
+# ---- addresses the ad itself does not print (or prints without a number), supplied by Michiko from her research.
+#      title substring -> address to place it at. The pop-up says the address is not from the ad.
+OWNER_PLACED = [
+    ("Organs for Sale, church organs built by Joseph H. Carter", "1249 South Street"),
+    ("Mrs. H. T. O'Donnell, boarding house", "913 Lombard Street"),
+    ("Mrs. H. S. Duterte, General Undertaker", "634 Lombard Street"),
+    ("Lodging (Mrs. Julia A. Brown)", "610 South 8th Street"),
+]
+
 # ---- business type -> (emoji, ring colour, label); first match on the ad title wins
 TYPES = [
     (r"dentist", "🦷", "#2f7fb8", "Dentist"),
@@ -272,6 +281,13 @@ def main():
             if p:
                 got = p; break
             reason = reason or why
+        if not got:
+            for key, where in OWNER_PLACED:
+                if key in a["title"]:
+                    p, why = place_one(where, "1860")
+                    if p:
+                        got = p
+                        rec["own"] = f"This ad does not print a house number. It is placed at {where} from 1838 Black Metropolis research."
         if got and Y_MIN <= got[1] <= Y_MAX and X_MIN <= got[0] <= X_MAX:
             key = (round(got[0], 1), round(got[1], 1))
             pl = places.setdefault(key, {"x": key[0], "y": key[1], "approx": got[2], "note": got[3], "o": got[4], "ads": []})

@@ -160,9 +160,9 @@ svg.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDef
 // the ad pop-up
 const pop=document.getElementById('pop'),card=document.getElementById('card');let last=null;
 function show(ads,p){last=document.activeElement;
-  const addr=[...new Set(ads.flatMap(a=>a.addr))];
+  const addr=[...new Set(ads.filter(a=>!a.own).flatMap(a=>a.addr))];if(!addr.length)ads.forEach(a=>a.addr.forEach(x=>addr.includes(x)||addr.push(x)));
   card.innerHTML=`<div class="hd"><div>${addr.map(esc).join('<br>')||'No address in the ad'}${p&&p.note?`<div class="pn">${p.approx?'Approximate spot. ':''}${esc(p.note)}</div>`:''}${!p&&ads[0].why?`<div class="pn">Not on the map: ${esc(ads[0].why)}</div>`:''}</div><button id="cls">Close</button></div>`+
-    ads.map(a=>`<article><a href="${esc(a.img)}" target="_blank" rel="noopener" title="Open the ad image"><img src="${esc(a.img)}" alt="${esc(a.t)}, ${esc(a.paper)}, ${esc(a.date)}"></a><h3>${a.emo} ${esc(a.t)}</h3><div class="src">${esc(a.paper)} · ${esc(a.date)} · <a href="pages/${esc(a.issue)}_p${a.page}.jpg" target="_blank" rel="noopener">page ${a.page}</a></div>${a.people.length?`<div class="who">${a.people.map(q=>`<a href="index.html#p${q[0]}">${esc(q[1])}</a>`).join(', ')}</div>`:''}</article>`).join('');
+    ads.map(a=>`<article><a href="${esc(a.img)}" target="_blank" rel="noopener" title="Open the ad image"><img src="${esc(a.img)}" alt="${esc(a.t)}, ${esc(a.paper)}, ${esc(a.date)}"></a><h3>${a.emo} ${esc(a.t)}</h3>${a.own?`<div class="pn">${esc(a.own)}</div>`:''}<div class="src">${esc(a.paper)} · ${esc(a.date)} · <a href="pages/${esc(a.issue)}_p${a.page}.jpg" target="_blank" rel="noopener">page ${a.page}</a></div>${a.people.length?`<div class="who">${a.people.map(q=>`<a href="index.html#p${q[0]}">${esc(q[1])}</a>`).join(', ')}</div>`:''}</article>`).join('');
   pop.classList.add('on');card.scrollTop=0;document.getElementById('cls').focus();}
 function hide(){pop.classList.remove('on');if(last&&last.focus)try{last.focus();}catch(_){}}
 pop.addEventListener('click',e=>{if(e.target===pop||e.target.id==='cls')hide();});
