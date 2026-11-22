@@ -148,6 +148,9 @@ OWNER_PLACED = [
     ("Mrs. H. T. O'Donnell, boarding house", "913 Lombard Street"),
     ("Mrs. H. S. Duterte, General Undertaker", "634 Lombard Street"),
     ("Lodging (Mrs. Julia A. Brown)", "610 South 8th Street"),
+    # Michiko 2026-11-22: Thomas J. Bowers was at 634 Lombard. His 1864 ad was read as "631 Lombard Street, above Sixth".
+    ("Coal Yard (Thos. J. Bowers)", "634 Lombard Street",
+     "The house number in this 1864 ad was read as 631. Thomas J. Bowers's yard was at 634 Lombard, as his 1865 ads print, and it is placed there."),
 ]
 
 # ---- business type -> (emoji, ring colour, label); first match on the ad title wins
@@ -281,13 +284,12 @@ def main():
             if p:
                 got = p; break
             reason = reason or why
-        if not got:
-            for key, where in OWNER_PLACED:
-                if key in a["title"]:
-                    p, why = place_one(where, "1860")
-                    if p:
-                        got = p
-                        rec["own"] = f"This ad does not print a house number. It is placed at {where} from 1838 Black Metropolis research."
+        for entry in OWNER_PLACED:                          # Michiko's placements come first
+            if entry[0] in a["title"]:
+                p, why = place_one(entry[1], "1860")
+                if p:
+                    got = p
+                    rec["own"] = entry[2] if len(entry) > 2 else f"This ad does not print a house number. It is placed at {entry[1]} from 1838 Black Metropolis research."
         if got and Y_MIN <= got[1] <= Y_MAX and X_MIN <= got[0] <= X_MAX:
             key = (round(got[0], 1), round(got[1], 1))
             pl = places.setdefault(key, {"x": key[0], "y": key[1], "approx": got[2], "note": got[3], "o": got[4], "ads": []})
