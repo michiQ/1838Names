@@ -1741,6 +1741,39 @@
    "headline": "Freedman's Cheap Store, Smalls & Gleaves, Beaufort, S. C. (advertisement)",
    "philadelphia": false,
    "check": "Beaufort, S.C. (R. H. Gleaves, formerly of Philadelphia): out of town, off ads.html (Run #99)"
+  },
+  {
+   "issue": "CR_1867-02-23",
+   "page": 3,
+   "headline": "Blind Sam concerts at National Hall (advertisement)",
+   "box": [
+    0.425,
+    0.337,
+    0.578,
+    0.613
+   ],
+   "check": "col 4, NATIONAL HALL through 'Feb. 23-1t' (Run #99; Michiko 2026-11-23: put it on the ads page)"
+  }
+ ],
+ "extras": [
+  {
+   "img": "sources/dorsey_box25_sb3_blind_tom_no2_1893.jpg",
+   "full": "sources/dorsey_box25_sb3_blind_tom_no2_1893_photo.jpg",
+   "title": "The Blind Musician: Blind Tom No. 2 and Rev. Dr. Manley, Bainbridge Street Church",
+   "paper": "Dorsey Collection",
+   "date": "April 27, 1893",
+   "iso": "1893-04-27",
+   "people": [
+    [
+     "W. H. Coffey",
+     "newspaper"
+    ]
+   ],
+   "addr": [
+    "Bainbridge Street Church, Bainbridge Street below Twelfth"
+   ],
+   "where": "Broadside. Dorsey Collection, Box 25 (SB-3)",
+   "link_label": "full photo"
   }
  ]
 }

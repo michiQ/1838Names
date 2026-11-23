@@ -133,6 +133,10 @@ SPECIAL.append(("615 Jayne Street", lambda: (interp(GRID_X, 6.15), (centre("MARK
                 "Jayne Street (today Ranstead) ran between Market and Chestnut; placed between Sixth and Seventh, as the ad says."))
 SPECIAL.append(("1230 Wood St.", lambda: (geocode(1230, "WOOD ST") or by_block(1230, "WOOD ST", "h"))[:2] + ("h",), False,
                 "Placed at the Wood Street address. The ad also gives 1618 North 11th St., which is north of this map."))
+SPECIAL.append(("National Hall, Market Street above Twelfth", lambda: on_ew("MARKET ST", "12TH ST", 40), True,
+                "National Hall, Market Street above Twelfth, as the ad says (no house number)."))
+SPECIAL.append(("Bainbridge Street below Twelfth", lambda: on_ew("BAINBRIDGE ST", "12TH ST", -30), True,
+                "Bainbridge Street below Twelfth, as the broadside says (no house number)."))
 # addresses we deliberately do not place, with the reason shown to the reader
 NOPLACE = [
     ("Helmuth", "street not yet located"), ("Russell", "street not yet located"),
@@ -174,7 +178,7 @@ TYPES = [
     (r"dry goods|trimming|hosiery|notion|fancy goods|goods|removed to|Shorter Hawkins", "🧵", "#8e44ad", "Dry goods and trimmings"),
     (r"china|queensware|glass", "🫖", "#4b6cb7", "China and glass"),
     (r"book depository|book-store|periodical|printing", "📚", "#7b5e2a", "Books and printing"),
-    (r"piano|music|organ", "🎹", "#33415c", "Music"),
+    (r"piano|music|organ|concert", "🎹", "#33415c", "Music"),
     (r"school|teacher|lessons|navigation|military instruction", "🎓", "#3d4f8f", "Schools and lessons"),
     (r"boarding|lodg|hotel|travelling public|house of application", "🛏️", "#55606e", "Boarding and lodging"),
     (r"intelligence|employment|help wanted", "💼", "#46627f", "Employment office"),
@@ -277,7 +281,7 @@ def main():
     places = {}; off = []; n_on = 0
     for a in ADS:
         emo, col, lab = ad_type(a["title"])
-        rec = {"t": a["title"], "img": a["img"], "paper": a["paper"], "date": a["date"], "iso": a["iso"], "issue": a["issue"],
+        rec = {"t": a["title"], "img": a["img"], "paper": a["paper"], "date": a["date"], "iso": a["iso"], "issue": a["issue"], "full": a.get("full", ""),
                "page": a["page"], "people": a["people"], "addr": a["addr"], "emo": emo, "col": col, "lab": lab}
         got = None; reason = "no address in the ad" if not a["addr"] else None
         for ad in a["addr"]:

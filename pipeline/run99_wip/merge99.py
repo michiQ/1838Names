@@ -45,6 +45,10 @@ b = art("CR_1867-01-05", "Boling", "A2"); b["headline"] = "Obituary (Mary E. Bol
 fold(ev("CR_1867-01-19", "Equal Rights League", "A"), [ev("CR_1867-01-19", "SUPPLEMENT", "A2")], "attendees",
      "(Officers and closing business from the foot of column 6 and column 7, read in a second pass: E. Weaver of Pennsylvania on the Executive Committee.)", E)
 
+# Michiko 2026-11-23: the Eddys are one man. Bethel Feb 9 p3 prints Deacons Joshua Eddy and Josiah Eddy; link once.
+bc = ev("CR_1867-02-09", "Bethel Church: Bishop Campbell")
+bc["attendees"].append(["Josiah Eddy", "deacon (Rev.), assisting at the Lord's Supper; printed 'Joshua Eddy, Josiah Eddy' as two names, one man by Michiko's ruling"])
+
 nerl = ev("CR_1867-01-19", "Equal Rights League convention"); nerl["date"] = "1867-01-10"
 
 # Names the readers could not settle: out of the links, kept in the text
@@ -70,8 +74,8 @@ N += [
  "[MERGE] Streetcar bill, as the Recorder printed it: Senate passes (Feb 9 p2), text of the bill and 'House has passed' (Feb 16 p2), stalled in the House (Feb 23 p2), Common Council resolution (Mar 2 p3), House passes the Sunday car bill (Mar 9 p3), House adopts first section (Mar 16 p2), passed both houses (Mar 23 p2 and p3), Gov. Geary signs (Mar 30 p3). Each kept as its own item. The Feb 16 'House has passed' line contradicts the Feb 23 editorial: recorded as printed.",
  "[CHECK] Mrs. Sarah Irons, Union Street: 320 on two February printings (one at 1600 dpi) and more likely 320 in March; not certain. The ads page keeps the card without a number.",
  "[CHECK] J. H. Moore's china store is No. 716 Lombard in every Jan-Mar 1867 printing (the Sep 22, 1866 printing read 706).",
- "[CHECK] Dr. T. M. Kennard (ad) vs 'Rev. Thomas W. Kinnard' (Feb p2 item): recorded as printed, not merged.",
- "[CHECK] 'Joshua Eddy' and 'Josiah Eddy' are printed side by side as two deacons (Feb 1867): this conflicts with the one-Eddy ruling. Recorded as printed for Michiko.",
+ "[RULED] Dr. T. M. Kennard (ad), 'Rev. Thomas W. Kinnard' (Feb 9 p2) and the 1854 dentist Thomas M. Kinnard are one person (Michiko, 2026-11-23): merges.json.",
+ "[RULED] 'Joshua Eddy' and 'Josiah Eddy', printed side by side as two deacons (Feb 9, 1867), are one man, J. P. B. Eddy (Michiko, 2026-11-23).",
  "[EDITOR] Masthead lines unchanged all quarter (Weaver Publisher, Lynch Editor). Lynch was away (Cincinnati, ill at Galena) and returned Jan 25 ('Our Western Trip', Feb 2); preached at Hurst Street Wesley Mar 3; left Mar 8 to visit the Baltimore and southern conferences. The terms box gives the office as 631 Pine.",
  "[BACKFILL] Mar 2 (No. 9) and Mar 30 (No. 13): first sheet (pages 1-2) missing on the film. Jan 5 (No. 1) pages 1-2 torn, about half of each lost.",
  "[IA] The Internet Archive item for Jan-Mar 1867 is probably christianrecorder_1867_v7_no1_to_13 (Michiko's file name), but it could not be confirmed from here, so no Archive link was added for 1867.",

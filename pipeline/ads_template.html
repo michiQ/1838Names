@@ -56,17 +56,18 @@ h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);margin:0;text-wrap:balance}
 <main>
   <div class="eyebrow">From the newspapers in the 1838 Names Database</div>
   <h1>Business Ads</h1>
-  <p class="lede">Advertisements placed by Black business owners, teachers and institutions, cut from the pages of <i>Freedom&rsquo;s Journal</i> (1827&ndash;1828) and the <i>Christian Recorder</i> (1854&ndash;1863). Undertakers, dentists, coal dealers, bakers, clothiers, boarding houses, music teachers. Addresses appear as printed in the ad, in the old street numbering. Click an ad to read it larger; click a name to open that person in the database.</p>
+  <p class="lede">Advertisements placed by Black business owners, teachers and institutions, cut from the pages of <i>Freedom&rsquo;s Journal</i> (1827&ndash;1828) and the <i>Christian Recorder</i> (1854&ndash;1867), with broadsides from the Dorsey Collection. Undertakers, dentists, coal dealers, bakers, clothiers, boarding houses, music teachers. Addresses appear as printed in the ad, in the old street numbering. Click an ad to read it larger; click a name to open that person in the database.</p>
   <div class="wip"><b>Work in progress.</b> More ads are added as we read more issues. This page shows Philadelphia businesses only. Ads from other cities stay in the database.</div>
   <div class="controls" role="group" aria-label="Filter the ads">
     <button class="chip" data-p="" aria-pressed="true">All papers</button>
     <button class="chip" data-p="Freedom's Journal" aria-pressed="false">Freedom&rsquo;s Journal</button>
     <button class="chip" data-p="Christian Recorder" aria-pressed="false">Christian Recorder</button>
+    <button class="chip" data-p="Dorsey Collection" aria-pressed="false">Dorsey Collection</button>
     <input id="q" type="search" placeholder="Search a name, trade or street… e.g. coal" aria-label="Search the ads">
     <span class="count" id="count"></span>
   </div>
   <div class="grid" id="grid"></div>
-  <p class="foot">Images are cropped from the newspaper page scans in the database: <i>Freedom&rsquo;s Journal</i> courtesy the Center for Research Libraries, the <i>Christian Recorder</i> courtesy the Internet Archive. Each card links to its full page. For a sharper image of a <i>Christian Recorder</i> page, follow the Internet Archive link on the card. &copy; 1838 Black Metropolis, Inc., <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.</p>
+  <p class="foot">Images are cropped from the newspaper page scans in the database: <i>Freedom&rsquo;s Journal</i> courtesy the Center for Research Libraries, the <i>Christian Recorder</i> courtesy the Internet Archive, broadsides photographed in the Dorsey Collection. Each card links to its full page. For a sharper image of a <i>Christian Recorder</i> page, follow the Internet Archive link on the card. &copy; 1838 Black Metropolis, Inc., <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.</p>
 </main>
 <div id="zoom" role="dialog" aria-modal="true" aria-label="Advertisement"><div class="bar"><button id="zclose">&#8592; Back</button><span id="zt"></span><button id="zpage">Whole page</button><a id="zia" target="_blank" rel="noopener" hidden>Internet Archive</a></div><div class="wrap"><img id="zimg" alt=""></div></div>
 <script>
@@ -80,7 +81,7 @@ function render(){
   document.getElementById('count').textContent=L.length+' ad'+(L.length===1?'':'s');
   document.getElementById('grid').innerHTML=L.map(a=>{const i=ADS.indexOf(a);
     return `<article class="card">${a.addr.length?`<div class="addr">${a.addr.map(x=>`<div>${e(x)}</div>`).join('')}</div>`:''}<button class="img" data-i="${i}" aria-label="Read this ad larger"><img src="${e(a.img)}" alt="${e(a.title)}, ${e(a.paper)}, ${e(a.date)}" loading="lazy"></button>
-    <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · <a href="pages/${e(a.issue)}_p${a.page}.jpg" class="pg" data-i="${i}">page ${a.page}</a>${a.ia?` · <a href="${e(a.ia)}" target="_blank" rel="noopener" title="This quarter of the paper on the Internet Archive, at full resolution">Internet Archive</a>`:''}</div>
+    <div class="meta"><h2>${e(a.title)}</h2><div class="src">${e(a.paper)} · ${e(a.date)} · ${a.full&&a.where?`${e(a.where.replace(/^Broadside\. /,""))} · `:""}${a.full?`<a href="${e(a.full)}" target="_blank" rel="noopener">${e(a.link_label)}</a>`:`<a href="pages/${e(a.issue)}_p${a.page}.jpg" class="pg" data-i="${i}">page ${a.page}</a>`}${a.ia?` · <a href="${e(a.ia)}" target="_blank" rel="noopener" title="This quarter of the paper on the Internet Archive, at full resolution">Internet Archive</a>`:''}</div>
     ${a.people.length?`<div class="who">${a.people.map(p=>`<a href="index.html#p${p[0]}">${e(p[1])}</a>`).join(', ')}</div>`:''}</div></article>`;}).join('')
     || '<p class="count">No ads match.</p>';
 }

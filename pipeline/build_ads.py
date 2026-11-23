@@ -90,6 +90,21 @@ def main():
                     "iso": iss.split("_")[1], "page": pg, "title": clean_head(hl), "people": ppl,
                     "addr": addrs.get(key(iss, pg, hl), []), "where": c.get("where", ""), "note": c.get("note_public", ""),
                     "ia": next((r["url"] for r in IA_RULES if r["from"] <= iss <= r["to"]), "")})
+    # 2026-11-23: items that are not newspaper ads (broadsides and handbills Michiko photographs in archives).
+    # Listed in ad_crops.json "extras" with their own image; people are looked up by name + source.
+    for x in crops.get("extras", []):
+        ppl = []
+        for nm, src in x.get("people", []):
+            r = con.execute("SELECT id, canonical_name FROM people WHERE canonical_name=? AND source=?", (nm, src)).fetchone()
+            if not r:
+                r = con.execute("SELECT id, canonical_name FROM people WHERE source=? AND ('|' || replace(aliases, ' | ', '|') || '|') LIKE ?",
+                                (src, f"%|{nm}|%")).fetchone()
+            if r: ppl.append([r[0], display_name(r[1])])
+            else: print("   extra: no person record for", nm, src)
+        out.append({"img": x["img"], "full": x.get("full", x["img"]), "link_label": x.get("link_label", "full image"),
+                    "issue": "", "paper": x["paper"], "date": x["date"], "iso": x["iso"], "page": 0, "title": x["title"],
+                    "people": ppl, "addr": x.get("addr", []), "where": x.get("where", ""), "note": x.get("note_public", ""), "ia": ""})
+    out.sort(key=lambda a: a["iso"])
     tpl = open(os.path.join(HERE, "ads_template.html"), encoding="utf-8").read()
     page = tpl.replace("/*__ADS__*/[]", json.dumps(out, ensure_ascii=False, separators=(",", ":")))
     open(os.path.join(ROOT, "ads.html"), "w", encoding="utf-8").write(page)
