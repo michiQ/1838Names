@@ -240,6 +240,54 @@
     {
      "issue": "CR_1866-12-22",
      "headline": "The Colored Soldiers and Sailors' Convention (letter)"
+    },
+    {
+     "issue": "CR_1867-01-05",
+     "headline": "Despising the Little Ones (Philadelphia street cars; Judge Thompson's decision; Gray's Ferry Passenger Railway)"
+    },
+    {
+     "issue": "CR_1867-01-12",
+     "headline": "Colored Soldiers' and Sailors' National Convention (letter on its aims; Spruce and Pine St. car case)"
+    },
+    {
+     "issue": "CR_1867-02-09",
+     "headline": "Outrageous Conduct of a City Car Conductor (Pine street car)"
+    },
+    {
+     "issue": "CR_1867-02-09",
+     "headline": "All Honor to Our State Senate (streetcar bill passes the Senate)"
+    },
+    {
+     "issue": "CR_1867-02-16",
+     "headline": "News of the Week: Pennsylvania -- street-car bill (States and Territories)"
+    },
+    {
+     "issue": "CR_1867-02-23",
+     "headline": "Pennsylvania Slow to Redeem Herself (streetcar bill stalls in the House)"
+    },
+    {
+     "issue": "CR_1867-03-02",
+     "headline": "News of the Week -- City: Common Council resolution for the Sunday-car bill and that colored persons be permitted to ride"
+    },
+    {
+     "issue": "CR_1867-03-09",
+     "headline": "Pushed off of a Car"
+    },
+    {
+     "issue": "CR_1867-03-16",
+     "headline": "Riding in the Street Cars (editorial)"
+    },
+    {
+     "issue": "CR_1867-03-23",
+     "headline": "Another Triumph of Liberty (editorial on the Pennsylvania anti-exclusion car bill)"
+    },
+    {
+     "issue": "CR_1867-03-23",
+     "headline": "News of the Week -- Pennsylvania: 'The colored Passenger bill has been passed by both branches of the Legislature'"
+    },
+    {
+     "issue": "CR_1867-03-30",
+     "headline": "News of the Week -- Pennsylvania: Gov. Geary signs the bill prohibiting exclusion of colored persons from public conveyances; Sunday Car bill defeated"
     }
    ],
    "events": [
@@ -338,6 +386,30 @@
     {
      "issue": "CR_1866-12-29",
      "name": "Mass meeting of colored citizens of Philadelphia to elect delegates to the National Convention"
+    },
+    {
+     "issue": "CR_1867-02-16",
+     "name": "Street-car bill meeting at Scott's Church"
+    },
+    {
+     "issue": "CR_1867-03-02",
+     "name": "Philadelphia Common Council -- resolution recommending the Sunday Car bill and that colored persons be permitted to ride"
+    },
+    {
+     "issue": "CR_1867-03-09",
+     "name": "Ejection of Mrs. Sarah G. Thompson from a city railroad car; conductor arrested"
+    },
+    {
+     "issue": "CR_1867-03-16",
+     "name": "Pennsylvania House adopts first section of the streetcar bill (colored passengers' right to ride)"
+    },
+    {
+     "issue": "CR_1867-03-23",
+     "name": "Pennsylvania Legislature passes the bill to prevent exclusion from railroad cars on account of color (House passage; awaiting Gov. Geary)"
+    },
+    {
+     "issue": "CR_1867-03-30",
+     "name": "Governor Geary signs the Pennsylvania act prohibiting exclusion of colored persons from public conveyances; Sunday Car bill defeated 12-14"
     }
    ]
   },
@@ -684,6 +756,10 @@
     {
      "issue": "CR_1866-10-20",
      "headline": "Personal Items: Miss Mary Still sails for Savannah; Mrs. Mary Augusta Johnson teaching at Woodbury"
+    },
+    {
+     "issue": "CR_1867-03-23",
+     "headline": "From the General Book Steward (Portsmouth, Va.; Philadelphia teachers Miss Amelia Mills and Miss Brown)"
     }
    ],
    "events": [
