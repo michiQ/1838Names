@@ -1,0 +1,60 @@
+{
+ "articles": [
+  {
+   "issue": "CR_1867-06-29",
+   "page": 1,
+   "headline": "Letter from Our Traveling Book Agent (funeral of Brother Henry Williams [VERIFY], Mount Holly; Burlington)",
+   "author": "T. Gould",
+   "type": "letter",
+   "summary": "Mr. Editor.--Last Sabbath I left Burlington and walked to Mount Holly. I preached for the friends there, at [hour blurred] o'clock. We had a very pleasant time. At [hour blurred] o'clock the funeral of Brother Henry [VERIFY] Williams took place. He departed this life on the morning of the 12th inst., in the 47th year of his age.",
+   "people": [
+    [
+     "Henry Williams [VERIFY]",
+     "deceased, Mount Holly N.J.; local preacher, class leader, trustee, sexton and Sabbath School superintendent of the A.M.E. Church; Past Grand Master, Masonic order; Sons of Temperance (given name printed blurred, read 'Henry')"
+    ],
+    [
+     "James Frisby [VERIFY]",
+     "preached the funeral discourse (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-06-29",
+   "page": 1,
+   "headline": "Charleston Correspondence (progress of the A.M.E. missionary work in South Carolina)",
+   "author": "R. H. C.",
+   "type": "letter",
+   "summary": "The progress of the Missionary Work. Rapid increase of the work since Conference. Great Camp Meetings. ... Mr. Editor.--The mighty progress of the cause of truth, awakens sensations of pleasure to the Christian minister ... Since the last annual Conference held in Wilmington, N. C., we have had to record constant accessions to our Church in every direction.",
+   "people": []
+  }
+ ],
+ "events": [
+  {
+   "issue": "CR_1867-06-29",
+   "page": 1,
+   "name": "Funeral procession of Brother Henry Williams [VERIFY], Mount Holly, N.J. (Sons of Temperance and Masonic lodge)",
+   "date": "1867-06-23",
+   "location": "A.M.E. Church and cemetery, Mount Holly, N.J.",
+   "description": "Reported by T. Gould, Agent, A.M.E. Book Concern (Theodore Gould, the travelling agent). On 'last Sabbath' (computed as Sunday June 23, 1867; the letter is undated, so the date is inferred) the funeral of Brother Henry [VERIFY] Williams, who died the morning of the 12th inst. in his 47th year. He was a local preacher, class leader, trustee, sexton and Sabbath School superintendent of the A.M.E. Church, a Past Grand Master in the Masonic Order and a life member of the Grand Lodge; 'the Burlington Lodge turned out as citizens'. The Sons of Temperance turned out five divisions (four colored, one white), met in their hall, formed into line and marched to the house of the deceased, where bearers were detailed. Procession order to the church: the ministers, the corpse, the friends, the Sons of Temperance, the Masonic Lodge, and the citizens. Church filled, as many outside in the yard. Rev. James Frisby [VERIFY] preached from Rev. 14:13, citing an acquaintance of nearly twenty years. Procession then to the cemetery. He was born in the South, left as a lad 'for the sake of freedom', did not see his mother for 25 years until after the war, then brought her to his home; survived by wife and aged mother. Gould then returned to Burlington, where Brother Jackson, the local preacher, preached and Gould closed; he got subscribers and a donation 'to be acknowledged hereafter'. PARADES/PROCESSIONS topic (funeral procession, mixed-race temperance divisions); MIGRATION (self-emancipated Southerner reunited with mother).",
+   "attendees": [
+    [
+     "T. Gould",
+     "Agent, A.M.E. Book Concern; preached at Mount Holly and Burlington (Rev.)"
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  "CR_1867-06-29 p1 READ FROM CROPS, ALL 7 COLUMNS x 5 SLICES (frame 48, DPI 1000): col1 masthead box (General Book Steward Rev. Elisha Weaver, No. 631 Pine; corresponding editors S. T. Tanner, A. L. Stanford, L. Patterson, W. W. Grimes, Samuel Watts, Aeneas McIntosh, M. M. Clark, T. M. D. Ward, standing, already captured May 4), poem 'The Old Church' by Mrs. C. H.(?) Livingston (skip), Charleston Correspondence begins; col2 Charleston cont. (signed R. H. C.) and 'From Louisiana'; col3 Louisiana cont. (signed C. F. C. Smith(?), Natchitoches, La., May 30, 1867) and Rev. F. L. Carter, Little Rock, Ark. item; col4 Letter from our Traveling Book Agent (T. Gould) and Selected: 'Total Abstinence'; col5 Total Abstinence cont., 'Progress Never Did Run Smooth'; col6 Progress cont. (German Reformed Messenger), 'An Inner View of Rome' (Carleton, Boston Journal), 'Walter Scott'; col7 Scott cont., 'How Our Ancestors Lived', 'Fire on the Hearth' (Homespun, Hurd & Houghton), 'The Country Choir'. Masthead line: 'Rev. Elisha Weaver, Editor.' (as ext_C notes).",
+  "CR_1867-06-29 p1 'T. Gould, Agent, A.M.E. Book Concern' = Rev. Theodore Gould, the Travelling Agent (Lynch's Valedictory, ext_C). Recorded as printed.",
+  "CR_1867-06-29 p1 Charleston Correspondence (R. H. C. = presumably Rev. R. H. Cain, pastor of Emanuel Church, Charleston; MIGRATIONS topic, A.M.E. South Carolina mission). Text only, non-Philadelphia: camp meeting seven miles from Charleston on the Old Folks' Home farm under Emanuel Church (R. H. Cain pastor), Morris St. charge (Rev. 'Itroce'(?) H. Williams pastor) and Hayne's Chapel, about ten thousand attending over ten days; Mars Saulters(?) at Aiken; Abraham Hamilton, Orangeburg district (Lewisville and Fort Mott; church dedicated at Lewisville); William Thomas, Summerville Circuit; William E. Johnson, Sumter; John Graham; appeal that the churches North aid 'brother John M. Brown' to send $300 to sustain the missionaries. None linked.",
+  "CR_1867-06-29 p1 'From Louisiana' (Natchitoches, May 30): Republican clubs; parish delegates Cyrus W. Stauffer (white) and Charles Seroy(?) to the State Executive Convention at New Orleans, June 10; 32 freedmen's schools; A.M.E. church building under Rev. E. Hayward; P.S. Stauffer shot by 'Judge Jorue'(?). Signed C. F. C. Smith(?). Text only.",
+  "CR_1867-06-29 p1 Rev. F. L. Carter, Little Rock, Ark.: church finished and enlarged; week-day school 90, Sunday school 100 scholars. Text only.",
+  "CR_1867-06-29 p1 'Brother Jackson, the local preacher' at Burlington: surname only, not linked."
+ ],
+ "flags": [
+  "CR_1867-06-29 p1 col4: deceased 'Brother Henry Williams' of Mount Holly: given name blurred at DPI 1000 and 1600 (reads 'Hoory'/'Henry'); [VERIFY], not linked. Very common name in any case.",
+  "CR_1867-06-29 p1 col4: 'Rev. James Frisby' who preached the funeral: b/h ambiguous at DPI 1600 ('Frishy'/'Frisby'); [VERIFY], not linked.",
+  "CR_1867-06-29 p1: funeral date 'last Sabbath' inferred as 1867-06-23 (letter undated); death 'the 12th inst.' taken as June 12, 1867."
+ ]
+}
