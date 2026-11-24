@@ -1,4 +1,4 @@
-# Extraction brief: Christian Recorder, January - March 1867
+# Extraction brief: Christian Recorder, April - June 1867
 
 You are extracting names, articles and events from issues of *The Christian Recorder*
 (Philadelphia, organ of the A.M.E. Church; Rev. Elisha Weaver, General Book Steward/Publisher;
@@ -7,36 +7,34 @@ database**, a public-history project recovering the free Black community of ante
 Philadelphia (c. 1780-1865). The owner is a historian who values source-critical rigor: a wrong
 name is worse than a missing one, and every uncertainty must be flagged, not smoothed over.
 
-NOTE for this quarter: in Oct-Dec 1866 every page-1 masthead printed "Rev. Elisha Weaver, Publisher," and every page-2
-editorial box "Rev. James Lynch, Editor," but Lynch went South on Oct 23, 1866 and Weaver edited in his absence. Check each
-issue: if the editor or publisher line CHANGES this quarter, or Lynch's return or departure is reported, say so in your notes.
-Record editors/publishers exactly as printed. Vol. VII begins with Jan 5, 1867 (No. 1, Whole No. 313); pagination restarts at 1.
+NOTE for this quarter: in Jan-Mar 1867 the masthead printed "Rev. Elisha Weaver, Publisher" and the page-2 box "Rev. James
+Lynch, Editor". The June 29 masthead reads "Rev. Elisha Weaver, EDITOR" and the page-2 box drops Lynch: report exactly when and how
+the editorship changed (Lynch's departure, Weaver named editor), and record editors/publishers as printed.
 
-## Inputs (scratch dir S = /home/claude/run99_scratch)
-- OCR text: `S/txt/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
+## Inputs (scratch dir S = /home/claude/1838names/pipeline/run100_wip; OCR text and page images live in the repo)
+- OCR text: `/home/claude/1838names/ocr_text/CR_<date>_p<N>.txt` -- one file per page, 7 columns per page separated by
   `[column N]` markers, top to bottom within each column. Microfilm OCR: names are often garbled.
-- Page images: `S/jpg/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
+- Page images: `/home/claude/1838names/pages/CR_<date>_p<N>.jpg` (2000px wide, whole page). For READING names you need
   higher resolution: render a crop from the source PDF instead. Frame numbers: ALWAYS look the frame up in S/jobs.txt
   ('frame:slug:page'). Pages not in jobs.txt DO NOT EXIST in our copy. Cite by DATE and the issue page (1-4).
-  January-March 1867 (Vol. VII, Nos. 1-13): 13 issues, pagination 1-52. In our copy:
-  **March 2 (No. 9) and March 30 (No. 13) are pages 3-4 only** (the film carries a card "first sheet missing" for each,
-  frames 34 and 49). **January 5 (No. 1) pages 1 and 2 are badly torn**: about half of each page is lost (page 1's left
-  half, page 2's right half); read what survives and say which columns are gone. All other issues are complete.
-  **Frame 1 is a target card, not a page; frames 34 and 49 are "first sheet missing" cards.** January 5 was filmed out of
-  order: frame 4 is page 4 and frame 5 is page 3. Frame map (frame:date:page), confirmed from mastheads and page numbers:
-  - Jan 5 (No.1): f2=p1 (torn), f3=p2 (torn), f5=p3, f4=p4
-  - Jan 12 (No.2): f6=p1, f7=p2, f8=p3, f9=p4
-  - Jan 19 (No.3): f10=p1, f11=p2, f12=p3, f13=p4
-  - Jan 26 (No.4): f14=p1, f15=p2, f16=p3, f17=p4
-  - Feb 2 (No.5): f18=p1, f19=p2, f20=p3, f21=p4
-  - Feb 9 (No.6): f22=p1, f23=p2, f24=p3, f25=p4
-  - Feb 16 (No.7): f26=p1, f27=p2, f28=p3, f29=p4
-  - Feb 23 (No.8): f30=p1, f31=p2, f32=p3, f33=p4
-  - Mar 2 (No.9): f35=p3, f36=p4  (p1 and p2 MISSING)
-  - Mar 9 (No.10): f37=p1, f38=p2, f39=p3, f40=p4
-  - Mar 16 (No.11): f41=p1, f42=p2, f43=p3, f44=p4
-  - Mar 23 (No.12): f45=p1, f46=p2, f47=p3, f48=p4
-  - Mar 30 (No.13): f50=p3, f51=p4  (p1 and p2 MISSING)
+  April-June 1867 (Vol. VII, Nos. 14-26): 13 issues, pagination 53-104. In our copy:
+  **April 13 (No. 15) and May 11 (No. 19) are pages 3-4 only** (the film carries a card "first sheet missing" for each,
+  frames 5 and 20). **May 18's page 1 was filmed twice** (frames 23 and 24; we use 24, use 23 to recheck a blurred word).
+  **June 29 was filmed out of order**: frame 50 is page 4 and frame 51 is page 3. Frame map (frame:date:page), confirmed
+  from mastheads and page numbers:
+  - Apr 6 (No.14): f1=p1, f2=p2, f3=p3, f4=p4
+  - Apr 13 (No.15): f6=p3, f7=p4  (p1 and p2 MISSING)
+  - Apr 20 (No.16): f8=p1, f9=p2, f10=p3, f11=p4
+  - Apr 27 (No.17): f12=p1, f13=p2, f14=p3, f15=p4
+  - May 4 (No.18): f16=p1, f17=p2, f18=p3, f19=p4
+  - May 11 (No.19): f21=p3, f22=p4  (p1 and p2 MISSING)
+  - May 18 (No.20): f24=p1 (dup f23), f25=p2, f26=p3, f27=p4
+  - May 25 (No.21): f28=p1, f29=p2, f30=p3, f31=p4
+  - Jun 1 (No.22): f32=p1, f33=p2, f34=p3, f35=p4
+  - Jun 8 (No.23): f36=p1, f37=p2, f38=p3, f39=p4
+  - Jun 15 (No.24): f40=p1, f41=p2, f42=p3, f43=p4
+  - Jun 22 (No.25): f44=p1, f45=p2, f46=p3, f47=p4
+  - Jun 29 (No.26): f48=p1, f49=p2, f51=p3, f50=p4
   Crops: render from the PDF with
   ```
   python3 S/crop.py <frame> <x0frac> <y0frac> <x1frac> <y1frac> <out.png>
@@ -58,7 +56,7 @@ Record editors/publishers exactly as printed. Vol. VII begins with Jan 5, 1867 (
   full will be sent back again. Page 1 carries letters and church news, page 4 the ads and notices. Read the local, notice,
   marriage, death and advertisement columns of pages 2 and 3 from crops as well, INCLUDING EVERY AD COLUMN OF PAGE 3 (one
   column per crop, five slices; do not check them on the overview image), and the foot of page 3. (For the short issues, read
-  in full whatever pages are present: March 2 and March 30 are pages 3-4 only, so read BOTH of their pages in full.)
+  in full whatever pages are present: April 13 and May 11 are pages 3-4 only, so read BOTH of their pages in full.)
   This is slow work: expect well over an hour, and take the time.
 - SAVE YOUR JSON AFTER EACH ISSUE (rewrite the whole file each time), so nothing is lost if you are interrupted.
 - In your report, list exactly which pages and columns you read from the image and which you could not read. Never write in
@@ -118,11 +116,11 @@ Format example (taken from an earlier quarter; the structure is what matters):
   ("W. T. Jones"). Expand nothing you cannot see; do not normalize spellings.
 - Dates ISO (yyyy-mm-dd) when the date of the event is stated or computable; else omit `date`.
 
-## Topics to WATCH FOR this quarter (January - March 1867)
+## Topics to WATCH FOR this quarter (April - June 1867)
 Tag these in your notes and make sure each is captured as an article/event with full rosters:
-- STREETCAR exclusion (topic, the big one this quarter): the Pennsylvania legislature took up the bill again in the 1867
-  session. Capture every ejection, petition, meeting, letter, editorial, court case, legislative vote and its aftermath (the
-  Equal Rights League's Railroads committee: D. B. Bowser, W. D. Forten, O. V. Catto; William Still's earlier campaign).
+- STREETCAR exclusion (topic): Governor Geary signed the law in March 1867 forbidding exclusion from the cars. Capture every
+  first ride, refusal, arrest, prosecution or fine of a conductor or company, celebration meeting, letter and editorial about
+  how the law worked in practice (watch for Caroline R. Le Count, O. V. Catto, the Equal Rights League's Railroads committee).
 - PARADES AND PROCESSIONS (owner tracks this as a topic): New Year's and Emancipation Day (January 1) observances,
   Washington's birthday, Sabbath-school and society processions, lodge turnouts, funeral processions. For each: date, route
   or place, marshals, societies, lodges, schools, military companies and bands, speakers, any interference by police or mobs.
@@ -137,8 +135,9 @@ Tag these in your notes and make sure each is captured as an article/event with 
 - LIBERTY HALL (the former ICY building on Lombard St., dedicated Nov 1866): every meeting, concert, lecture or fair held
   there, and stockholder business.
 - THE BOOK CONCERN (Great Union) FAIR aftermath: reports of proceeds, thanks to committees, prizes awarded.
-- THE PHILADELPHIA ANNUAL CONFERENCE: notices of the spring 1867 session, its place and date, committees; and any South
-  Carolina, Baltimore or New York conference reports naming Philadelphia clergy.
+- THE PHILADELPHIA ANNUAL CONFERENCE (spring 1867 session): place, dates, committees, examinations, ordinations, and the full
+  1867 appointments (record every Philadelphia-district appointment as printed); also the Baltimore, New York and South Carolina
+  conference reports naming Philadelphia clergy.
 - SOCIETY MEETINGS (owner's instruction): every meeting, anniversary, election, installation or notice of a beneficial,
   literary, temperance, relief or burial society, lodge (Masons, Odd Fellows, Good Samaritans), association, school or church
   society, each as its own EVENT with the full name as printed, date, place with address, and every officer and speaker.
@@ -154,10 +153,17 @@ Tag these in your notes and make sure each is captured as an article/event with 
   the Zion Mission (Seventh below Dickerson).
 - NEW or changed Black-owned ads; marriages and deaths of Philadelphians, with officiating ministers.
 
-## Already captured (through December 29, 1866) -- do NOT re-enter unless the ad/notice has CHANGED
-Everything in the Christian Recorder THROUGH THE DECEMBER 29, 1866 ISSUE is already in the database (Runs #74-#98). A repeated
-ad or standing notice is entered once; an ad whose address, proprietor or wording has CHANGED is new. Many of the ads below
-will still be running in Jan-Mar 1867: note the repeat, do not re-enter.
+## Already captured (through March 30, 1867) -- do NOT re-enter unless the ad/notice has CHANGED
+Everything in the Christian Recorder THROUGH THE MARCH 30, 1867 ISSUE is already in the database (Runs #74-#99). A repeated
+ad or standing notice is entered once; an ad whose address, proprietor or wording has CHANGED is new.
+
+### Run #99 (January - March 1867) -- note repeats, do NOT re-enter
+Ads: Dr. T. M. Kennard & Bro. (832 Carpenter); J. H. Moore's china store For Sale (716 Lombard); M. A. Williams, boxes (1019 Rodman);
+the Blind Sam concerts (National Hall; A. M. Green manager); Mrs. Sarah Irons, shrouding (Union St.; 320 likely: report the number if
+a printing shows it clearly). Captured: the streetcar bill through Senate, House, Common Council and Gov. Geary's signature; Mrs. Sarah G.
+Thompson pushed off a car (conductor bound over); the NERL in Washington (officers, Jan 10); Amelia Mills and Miss Brown teaching in
+Virginia. Rulings: the Eddys are ONE man (J. P. B. / Joshua / Josiah Eddy); Thomas M. Kinnard / Thomas Kennard / Dr. T. M. Kennard are one
+man; Charles W. Brister (Continental Restaurant) = Winch Brister, Charles; S. Morgan Smith is NOT Stephen Smith.
 
 ### Run #98 (October - December 1866) -- note repeats, do NOT re-enter
 Ads: Mrs. Sarah Irons, shrouding and laying out the dead, moved to Union Street (number 320 or 820 not settled: if a Jan-Mar
