@@ -288,6 +288,14 @@
     {
      "issue": "CR_1867-03-30",
      "headline": "News of the Week -- Pennsylvania: Gov. Geary signs the bill prohibiting exclusion of colored persons from public conveyances; Sunday Car bill defeated"
+    },
+    {
+     "issue": "CR_1867-04-27",
+     "headline": "From a Philadelphian (letter on the car bill, from the Freedmen's Village, Arlington, Va.)"
+    },
+    {
+     "issue": "CR_1867-05-04",
+     "headline": "Book notice: William Still's pamphlet on the city railway cars"
     }
    ],
    "events": [
@@ -410,6 +418,14 @@
     {
      "issue": "CR_1867-03-30",
      "name": "Governor Geary signs the Pennsylvania act prohibiting exclusion of colored persons from public conveyances; Sunday Car bill defeated 12-14"
+    },
+    {
+     "issue": "CR_1867-04-20",
+     "name": "Union League Association (colored people's) -- grand re-union celebrating the passage of the city railway bill"
+    },
+    {
+     "issue": "CR_1867-05-04",
+     "name": "Colored People's Union League -- Grand Reunion Festival"
     }
    ]
   },
@@ -482,6 +498,10 @@
     {
      "issue": "CR_1865-11-18",
      "headline": "The Harrisburg Celebration"
+    },
+    {
+     "issue": "CR_1867-05-25",
+     "headline": "Funeral of Dr. James Mc. C. Crummill"
     }
    ],
    "events": [
@@ -523,7 +543,7 @@
     },
     {
      "issue": "CR_1862-09-06",
-     "name": "Union Sons and Daughters of Hensoe [VERIFY] Society, Bensalem -- second anniversary"
+     "name": "Union Sons and Daughters of Hensoe (?) Society, Bensalem -- second anniversary"
     },
     {
      "issue": "CR_1863-07-11",
@@ -592,6 +612,14 @@
     {
      "issue": "CR_1866-12-22",
      "name": "Independent Order of Odd Fellows turnout and presentation of gold medal to D. B. Bowser"
+    },
+    {
+     "issue": "CR_1867-04-20",
+     "name": "Union baptism by immersion of thirty-three converts of the Philadelphia A.M.E. churches at the Delaware River"
+    },
+    {
+     "issue": "CR_1867-06-29",
+     "name": "Funeral procession of Brother Henry Williams (?), Mount Holly, N.J. (Sons of Temperance and Masonic lodge)"
     }
    ]
   },
@@ -760,6 +788,18 @@
     {
      "issue": "CR_1867-03-23",
      "headline": "From the General Book Steward (Portsmouth, Va.; Philadelphia teachers Miss Amelia Mills and Miss Brown)"
+    },
+    {
+     "issue": "CR_1867-06-08",
+     "headline": "Our Appointment (editor appointed to Bethel; wishes to go South)"
+    },
+    {
+     "issue": "CR_1867-06-22",
+     "headline": "Our Ex-Editor (Lynch commissioned by the Union Republican Congressional Committee for Mississippi)"
+    },
+    {
+     "issue": "CR_1867-06-01",
+     "headline": "Bishop Wayman Gone Southward"
     }
    ],
    "events": [
@@ -818,6 +858,14 @@
     {
      "issue": "CR_1866-09-29",
      "name": "Richard Gleaves leaves Philadelphia for Beaufort, S.C."
+    },
+    {
+     "issue": "CR_1867-04-20",
+     "name": "Liberty Hall -- farewell complimentary concert to Mr. A. Burris by the Delmonico Band, before his leaving for missionary labors South"
+    },
+    {
+     "issue": "CR_1867-05-25",
+     "name": "Union A.M.E. Church Sabbath school and Bishop Campbell Bible Class farewell to A. Husare (?)"
     }
    ]
   }
