@@ -57,9 +57,42 @@
      "subscriber, Cape Island, N.J."
     ]
    ]
+  },
+  {
+   "issue": "CR_1867-06-22",
+   "page": 3,
+   "headline": "Quarterly Meetings, Bordentown Circuit (notice)",
+   "author": "Peter Gardiner",
+   "type": "notice",
+   "summary": "Quarterly Meeting for Bordentown Circuit: at Cookstown, June 29th and 30th; at Allentown, the first Friday, Saturday and Sunday in July; Quarterly Conference at Bordentown, 13th of July, at 2 o'clock. Peter Gardiner, Preacher in charge. June 22-1t.",
+   "people": []
+  },
+  {
+   "issue": "CR_1867-06-22",
+   "page": 3,
+   "headline": "Temperance meeting at Bethany Mission postponed (notice)",
+   "author": "",
+   "type": "notice",
+   "summary": "The public Temperance meeting announced for the Bethany Mission, Brandywine street above Fifteenth, was postponed to Monday evening next, at 8 o'clock. Addresses by Edwin H. Coates, Esq., General Wagner and others.",
+   "people": []
   }
  ],
- "events": [],
+ "events": [
+  {
+   "issue": "CR_1867-06-22",
+   "page": 3,
+   "name": "Bordentown Circuit (A.M.E.) quarterly meetings and Quarterly Conference",
+   "date": "1867-07-13",
+   "location": "Cookstown, Allentown and Bordentown, N.J.",
+   "description": "Bordentown Circuit quarterly meetings: Cookstown June 29-30, 1867; Allentown the first Friday, Saturday and Sunday in July; Quarterly Conference at Bordentown July 13th at 2 o'clock. Peter Gardiner, preacher in charge (appointed to Bordentown by the 1867 Philadelphia Conference, as captured in ext_C).",
+   "attendees": [
+    [
+     "Peter Gardiner",
+     "preacher in charge, Bordentown Circuit (Rev.)"
+    ]
+   ]
+  }
+ ],
  "notes": [
   "CR_1867-06-15 READ FROM CROPS by C2 (DPI 1000, one column per crop, five slices each): p1 (f40) cols 1-7 s1-5 plus foot of col 7; p2 (f41) col 1 s1-3 (box, contents, Editor's Valedictory, Trustees' meeting) and the Correction letter (col 5) at DPI 1600; p3 (f42) cols 2-7 s1-5 plus the head of cols 3-7; p4 (f43) cols 1-7 s1-5 plus the head of cols 1, 5, 6, 7. Not read from crops by C2: p2 cols 2-4 and 6-7 (editorial/correspondence: A Voice from England, Manhood Suffrage in D.C., From Chicago, Correspondence from England, Georgia Conference, Bishop Quinn, Wilmington N.C., Providential Legislation, Was Thomas Pious or Profane, Early Life of Jesus, An Old Story, A Plea for Youthful Enthusiasm; contents list shows NO Local column this week); p3 col 1 (news).",
   "CR_1867-06-15 p1 (read in full from crops): masthead and box; poem; 'Theological: Sermon on Education' by Rev. Dr. Baldwin (Society for the Promotion of Collegiate and Theological Education at the West; visited Wilberforce University at Xenia; to be continued); 'Religion No Deception' by Rev. W. V. [surname illegible, printed like 'Hotwald'] (text only); 'On Repeating Old Sermons'; 'The Dignity of the Pastorate'; 'The Pulpit'; 'Individual Effort'; 'The Daily Prayer Meeting'; 'Bible Studies'. Devotional/selected matter: no Philadelphia names to enter.",
@@ -74,13 +107,24 @@
   "CR_1867-06-22 p2 'Afflicted with Envy-Mania' (new entry): defends the retiring editor Lynch against the Zion's Standard (A.M.E. Zion paper), whose chief editor is said to have undervalued the African Civilization Society's orphan work, threatened to 'expose' Bishop Payne's mission to England, attacked the American Missionary Association and Mr. John Langston (inspector of the Freedmen's Bureau; non-Philadelphia, text only). 'Our ex-editor never ... wrote a line in reference to the editor of the Standard but what was kind.' Editorship topic.",
   "CR_1867-06-22 p2 'Our Work' (editorial, text only): nearly eleven months remain before the Fourteenth General Conference, to convene May 4th, 1868, at Washington, D.C.; membership grown from 50,000 to between 150,000 and 200,000; University buildings at Xenia destroyed; missionary work under Rev. J. M. Brown; the Book Concern and the Christian Recorder praised.",
   "CR_1867-06-22 p2 'Read This' (text only, MIGRATIONS/teachers South topic): 'To Teachers and others interested in the education of the Freedmen. The Friend's Freedmen's Association of this city intend to re-open the several schools under their care in North Carolina, and at Danville, Va., on the first 2d day (the 2d) of Ninth month next, and those on the peninsula of Virginia, on the first 2d day (the 4th) of Eleventh month'; about ten graded schools with Normal classes, 150 to 300 pupils each; invitation 'extended alike to persons of both sexes, white and colored'; applications to M. E. Sheerman [VERIFY], Actuary, No. 30[?] Cherry street, Philadelphia. Signed J. Wistar Evans, Chairman; Yardly Warner, Thomas Cowan [VERIFY], John B. Garrett, Committee on Appointment of Teachers. Philadelphia 5th month, 1867. A white (Quaker) Philadelphia association: names kept in text only, not linked.",
-  "CR_1867-06-22 p2 other (text only): 'Bishop Campbell' letter praising Bishop J. P. Campbell's political speech at New Orleans, May 15, signed John H. Morris [?], Leavenworth, Kansas, June 6th 1867; 'A.M.E. Church', Little Rock, Ark., May 27, Brother Thomas Johnson to 'Bro. Lynch'; Sabbath Schools letter signed N. H. Ashbey [?]; 'Distinguished Female Vocalist in Chicago' (Mrs. Charlotte Alexander of Cincinnati, singing school in Bethel Church, Chicago). Acknowledgments: only the Bridgeton/Cape Island N.J. entries are entered (Philadelphia Conference N.J. circuits); Rev. Theodore Gould linked as Philadelphia Conference clergy. 'R. Dunn' (common name) and 'J. W[?]der' (illegible) not linked."
+  "CR_1867-06-22 p2 other (text only): 'Bishop Campbell' letter praising Bishop J. P. Campbell's political speech at New Orleans, May 15, signed John H. Morris [?], Leavenworth, Kansas, June 6th 1867; 'A.M.E. Church', Little Rock, Ark., May 27, Brother Thomas Johnson to 'Bro. Lynch'; Sabbath Schools letter signed N. H. Ashbey [?]; 'Distinguished Female Vocalist in Chicago' (Mrs. Charlotte Alexander of Cincinnati, singing school in Bethel Church, Chicago). Acknowledgments: only the Bridgeton/Cape Island N.J. entries are entered (Philadelphia Conference N.J. circuits); Rev. Theodore Gould linked as Philadelphia Conference clergy. 'R. Dunn' (common name) and 'J. W[?]der' (illegible) not linked.",
+  "CR_1867-06-22 READ FROM CROPS by C2 (DPI 1000, one column per crop, five slices each): p1 (f44) cols 1-7 s1-5; p2 (f45) as listed in the p2 note; p3 (f46) cols 2-7 s1-5 plus the head strip of cols 2-7; p4 (f47) cols 1-7 s1-5 plus the head strip of cols 1-7. Rechecks at DPI 1600: Bordentown notice dates, Mrs. Irons's house number, M. A. Williams's number, Acknowledgments.",
+  "CR_1867-06-22 p1 (read in full from crops): masthead 'Rev. Elisha Weaver, Publisher' with box (General Book Steward, No. 631 Pine; corresponding editors: Baltimore Conference B. T. Tanner; Philadelphia A. L. Stanford; New York L. Patterson; New England W. W. Grimes; Ohio, Indiana, Missouri (M. M. Clark), California (T. M. D. Ward)); poem 'Die Schoenste Perle'; Rev. Dr. Baldwin's Sermon on Education concluded (mentions the Philadelphia Conference's course of study and Wilberforce); 'The Dawn of a New Era' (signed from Portsmouth, Va., May 1867, on Virginia Republicans: text only); 'Eternity'; 'The Lost One Found'; 'If I Had Thought It Was Jesus'; 'Treading Under Foot the Son of God' (Guthrie); 'The Contrast: Now and Then'; 'A Plea for Youthful Enthusiasm' (F. W. Robertson); 'Southern Episcopalians and the Freedmen' (N.C. convention); 'Something Higher'; type-founders' and trade items. No Philadelphia Black names to enter.",
+  "CR_1867-06-22 p4 (read in full from crops): col 1 'To the Children' by Phoebe Cary, Home Circle 'The Mysterious Characters'; col 2 'A Whirlpool in a Raindrop', 'Products of the Sandwich Islands', 'Gone' by Frank Foxcroft, 'Nelly's Prayer'; col 3 'Allan's Little Sermon', 'Some Facts about Sabbath Schools' (Peter Thompson, a Quaker, established one in Philadelphia in 1791: historical, text only), 'Effects of Coffee and Wine'; col 4 'The Good Wife', 'Beethoven', 'A True Lady'; cols 5-7 ads, ALL repeats of June 15 (not re-entered): Matlack 904 Market; Newspaper Laws; Lincoln House; Dr. J. Stephens & Co.; A. Upham 630 Pine; Sheba Lodge (A. Cropper, P. G.; S. Young, P. G.) and Sumner and Wilson Lodge No. 8 (Masonic Hall, South Eleventh St.); Agents Wanted (L. Stebbins, Hartford, Conn.); Empire State House (Widow T. L. Jinnings, Long Branch, N.J., June 8 1867-6m); Ayer; Dr. David Rosell 907 Lombard; Dandridge Kelly (Baltimore); Magarge No. 32 S. Sixth; William Still coal yard; Thomas Charnock No. 427 S. 6th; Bowers' Coal Depot (Thomas J. Bowers, 634 Lombard); Book Depository No. 631 Pine; Mrs. H. S. Duterte (No. 634 Lombard); F. Champion (No. 53 Myrtle Ave., Brooklyn); Avery College (George B. Vashon); James W. Brown steam-dyeing; Globe Hotel (Mrs. William P. Powell); Mrs. S. Shorter Hawkins No. 615 Lombard; W. P. Powell attorney; Leizeare Brown 907 South St.; Hammonton Culturist; Wm. H. Longfellow No. 1126 Rodman; Jas. B. Rodgers (successor to Wm. S. Young) 52 & 54 N. Sixth.",
+  "CR_1867-06-22 p3 ad columns 4-7 (read in full from crops): all repeats of June 15 (see that note), not re-entered. Readings: Rev. Theo. Doughty Miller's sermon ad repeated (author's number on Quince Street again illegible); Mrs. Edith Mayhew No. 257 Raspberry; Mrs. Sarah Irons 'No. [3 or 8]20 Union Street' (first digit broken at DPI 1600; standing reading 320); Olive Branch Boarding House No. 814 Lombard (proprietor printed 'Mrs. H. M. Cropper' on June 15; the June 22 head strip prints 'Mrs. R. B. Cropper'? blurred, standing ad not changed); Perry & Co. (309 and 609 Chestnut; Granville Stokes' old stand: white-run); M. A. Williams, boxes, prints 'No. 1619 Rodman St.' at DPI 1600 this week (standing ad 1019 Rodman: a misprint or broken type, not re-entered).",
+  "CR_1867-06-22 p3 col 2 correction/addition to ext_C entries 'Notice: Public Temperance Meeting, Bethany Mission' and the event 'Public temperance meeting and proposed Temperance Society, Bethany Mission' (June 15 p3): the June 22 printing announces the meeting POSTPONED to Monday evening next (June 24, 1867), at 8 o'clock, Bethany Mission, Brandywine street above Fifteenth, and names the speakers 'Edwin H. Coates, Esq., General Wagner and others'. So the speaker read 'Edwin H. Cowles(?)' by C is Edwin H. Coates; General Wagner is probably Gen. Louis Wagner (white, Philadelphia). Both are text only, not linked. Bethany Mission was a white Presbyterian mission; whether this is a Black congregation is not stated.",
+  "CR_1867-06-22 p3 col 3 (C's entries checked on crops, no change needed): Rose Redmon notice ('in care of Robert Davis' reads Davis); 'Mount Hope' circuit notice (Isaiah S. Taylor): the circuit name prints like 'Mount Hope' but is blurred, leave as C has it; Information Wanted (Atkinson/Applewhite; M. J. P. Scott; Julia Cranly); Marriages (Langley/Thomas by Rev. J. B. Reeve; Bishop/Leff and Rowland/Carter by Rev. Wm. Moore); Whipper & Purnell; A Rare Opportunity; Dr. William Armstrong.",
+  "CR_1867-06-22 p3 col 2 (news) also read: News of the Week (Georgia Supreme Court, Tennessee registration, Arkansas, Louisiana, Texas, city items, foreign news): no Philadelphia Black names. The Bristol/Bensalem/the Hill quarterly-meeting notice (E. Laws, D. P. Seaton) repeats from June 15 (in ext_C)."
  ],
  "flags": [
   "CR_1867-06-15 p3: 'Rev. Theo. Doughty Miller' (Masonry and Christianity ad): 'Doughty' partly broken in the type even at DPI 1600; the author's house number on Quince Street is illegible; 'higher orders of [Masonry]' word illegible. Name kept [VERIFY], not linked.",
   "CR_1867-06-15 p1: byline of 'Religion No Deception' illegible (Rev. W. V. ...); text only.",
   "CR_1867-06-15 p2 Correction: signer 'Geo. H. Wil...' and 'Iris D. Cliff' still uncertain at DPI 1600 (no other printing in this run).",
   "CR_1867-06-22 p2 Acknowledgments: 'J. W[?]der' (Bridgeton) illegible at DPI 1600; not linked. 'E. Goold' printed so (likely a Gould of Bridgeton; kept as printed).",
-  "CR_1867-06-22 p2 'Read This': actuary 'M. E. Sheerman' and his number on Cherry street, and committee man 'Thomas Cowan', uncertain; text only."
+  "CR_1867-06-22 p2 'Read This': actuary 'M. E. Sheerman' and his number on Cherry street, and committee man 'Thomas Cowan', uncertain; text only.",
+  "CR_1867-06-22 p3: Mrs. Sarah Irons's number on Union Street prints with a broken first digit (3 or 8) at DPI 1600; standing reading 320 (ext_C) kept.",
+  "CR_1867-06-22 p3: M. A. Williams prints '1619 Rodman' (standing 1019); probably a misprint, not re-entered.",
+  "CR_1867-06-22 p3: Bethany Mission speaker 'Edwin H. Coates' (read at DPI 1000, clear) supersedes C's 'Cowles(?)'; text only.",
+  "CR_1867-06-22 p3 col 7 head: the Olive Branch proprietor prints like 'Mrs. R. B. Cropper' on the head strip (blurred); ext_C and earlier runs have 'Mrs. H. M. Cropper'. Not re-entered; owner may wish to recheck an earlier printing."
  ]
 }
