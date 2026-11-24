@@ -1882,7 +1882,12 @@
    "author": "",
    "type": "notice",
    "summary": "NOW READY! Masonry and Christianity! Rev. Theo. Doughty Miller's Great Sermon, as delivered before the higher orders of [Masonry], at the Central Presbyterian church. Sold at 25 cents per copy, and may be had of the Committee or of the author, [No. illegible] Quince Street. Every Mason and every opposer of Masonry should have a copy. May 25-4 on ha.(?) (Also ran June 29, 1867.)",
-   "people": []
+   "people": [
+    [
+     "Theodore D. Miller",
+     "author of the sermon (printed 'Rev. Theo. Doughty Miller'; Rev. Theodore D. Miller of Pearl Street Baptist, Michiko 2026-11-24)"
+    ]
+   ]
   },
   {
    "issue": "CR_1867-06-22",
@@ -3821,7 +3826,8 @@
   "[CHECK] Mrs. Sarah Irons, Union Street: readers split between 320 and 820; a high-resolution check of the Apr 27 - May 25 printings reads 820 (first figure closed on the left), June 1 and 22 were read 320. Owner to rule; the ads page keeps the card without a number.",
   "[EDITOR] Weaver Publisher / Lynch Editor through June 8. The Conference appointed Lynch to Bethel (Jun 1); Lynch's 'Our Appointment' and 'Valedictory' (Jun 8); Book Concern trustees accept his resignation and name Weaver to the editorial chair (Jun 13, printed Jun 15); editor line gone from page 2 (Jun 22); masthead 'Rev. Elisha Weaver, Editor' (Jun 29). Bethel then under 'Rev. H. Dorrell' [VERIFY].",
   "[BACKFILL] Apr 13 (No. 15) and May 11 (No. 19): first sheet (pages 1-2) missing on the film. May 18 page 1 filmed twice (frames 23, 24). Jun 29 pages 3-4 filmed in reverse order.",
-  "[IA] Internet Archive item for Apr-Jun 1867 probably christianrecorder_1867_v7_no14_26 (Michiko's file name); not confirmed, so no Archive link added."
+  "[IA] Internet Archive item for Apr-Jun 1867 probably christianrecorder_1867_v7_no14_26 (Michiko's file name); not confirmed, so no Archive link added.",
+  "Michiko 2026-11-24: Sarah Irons's number is 320 Union Street. The Masonry and Christianity sermon is by Rev. Theodore D. Miller of Pearl Street Baptist."
  ],
  "flags": [
   "[Reader A] CR_1867-04-06 p2: 'Mr. Abram Flrid' as printed (DPI 1600 still reads 'Flrid'); probably Abram Field. Kept [VERIFY].",
