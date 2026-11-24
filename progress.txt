@@ -1578,3 +1578,4 @@ Open for Michiko: Sarah Irons 320 or 820 Union St. (high-res check of five print
   (any topic can get one by adding that block).
 - Viewer: deep links index.html#a<article id> and #e<event id>; new article panel (selectArticle) with people named;
   topic article headlines are clickable; header button "Streetcar timeline".
+- Michiko 2026-11-24: merged the Theodore D. Miller records (Theo. Doughty / Theo. D. / T. D. / Theodore Doughty / Theodore D. / Theo. / Theodore Miller) into one, newspaper records only (merges.json). People 16,314 -> 16,308 in viewer. Rebuild STABLE.
