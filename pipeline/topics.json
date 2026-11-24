@@ -10,6 +10,11 @@
      "title": "The Law In Her Pocket: A Look into Black Philadelphia's Struggles and Victories in Public Transit in the 19th Century",
      "source": "1838 Black Metropolis blog",
      "url": "https://www.1838blackmetropolis.org/site/post/black-philadelphia-transit-victories/"
+    },
+    {
+     "title": "In 1840 Philly, Westward Keeling Used Classified Newspaper Ads to Protest Racism",
+     "url": "https://www.1838blackmetropolis.com/post/westward-keeling-an-1840s-activist-living-an-extraordinary-ordinary-life",
+     "source": "1838 Black Metropolis blog"
     }
    ],
    "articles": [
@@ -426,18 +431,22 @@
     {
      "issue": "CR_1867-05-04",
      "name": "Colored People's Union League -- Grand Reunion Festival"
+    },
+    {
+     "issue": "",
+     "name": "Araminta Keeling, 14, made to ride on top of a stagecoach; her father Westward F. Keeling protests in the Public Ledger"
     }
    ],
    "timeline": {
     "file": "streetcar.html",
     "title": "Streetcar Discrimination in Philadelphia",
-    "intro": "Philadelphia's city passenger railways refused to carry Black riders, or forced them to stand on the front platform, from the time the horse cars began running in 1858. This timeline follows the ejections, letters, mass meetings, petitions, lectures and court cases reported in the newspapers we have read, through the state law of March 1867 that forbade the exclusion and what happened after it. Earlier entries on omnibuses and railroads in other places are included for context.",
+    "intro": "Black Philadelphians were fighting for the right to ride long before the streetcar. In 1837 the Colored American denounced the treatment of a Black man turned away from a New York omnibus, and in November 1840 Westward Keeling of Philadelphia bought space in the Public Ledger to protest that his 14-year-old daughter Araminta had been made to ride on top of a stagecoach in the cold. When the city's horse-drawn passenger railways began running in 1858, they refused to carry Black riders inside, or made them stand on the front platform. This timeline follows the ejections and attacks, and the organized answer to them: letters, mass meetings, petitions, lectures and court cases, through the state law of March 1867 that forbade the exclusion, and what happened after it.",
     "phases": [
      {
       "from": "0000",
       "to": "1860-12-31",
       "title": "Before the war",
-      "note": "Exclusion on omnibuses and railroads, here and in other cities."
+      "note": "The fight began with omnibuses, stagecoaches and railroads, decades before the horse cars."
      },
      {
       "from": "1861-01-01",
@@ -469,7 +478,346 @@
       "title": "Remembered later",
       "note": "Later recollections, such as William Carl Bolivar's columns in the Philadelphia Tribune."
      }
-    ]
+    ],
+    "incidents": [
+     {
+      "y": 1837,
+      "when": "June 1837",
+      "place": "elsewhere",
+      "what": "A Black man refused by an omnibus driver on Broadway, New York, and threatened with a whip",
+      "ref": {
+       "a": {
+        "issue": "CA_1837-06-10",
+        "headline": "Colored man ejected from a Broadway omnibus -- editorial rebuke"
+       }
+      }
+     },
+     {
+      "y": 1840,
+      "when": "November 1840",
+      "place": "Philadelphia",
+      "what": "Araminta Keeling, 14, made to ride on top of a stagecoach from West Philadelphia to Lombard Street; her father protests in the Public Ledger",
+      "ref": {
+       "e": {
+        "issue": "",
+        "name": "Araminta Keeling, 14, made to ride on top of a stagecoach; her father Westward F. Keeling protests in the Public Ledger"
+       }
+      }
+     },
+     {
+      "y": 1861,
+      "when": "reported January 1861 (ejected earlier)",
+      "place": "Philadelphia",
+      "what": "George W. Goines forcibly ejected by conductor McCandless; he sues and loses in the District Court",
+      "ref": {
+       "a": {
+        "issue": "CR_1861-01-26",
+        "headline": "The Rights of Colored People (Goines vs. McCandless)"
+       }
+      }
+     },
+     {
+      "y": 1861,
+      "when": "January 26, 1861",
+      "place": "elsewhere",
+      "what": "Rev. Elisha Weaver and Bishop Nazrey ordered to the back seats on the West Jersey Railroad",
+      "ref": {
+       "a": {
+        "issue": "CR_1861-02-02",
+        "headline": "Our Visit to Gouldtown"
+       }
+      }
+     },
+     {
+      "y": 1861,
+      "when": "July 1861",
+      "place": "Philadelphia",
+      "what": "The A.M.E. Book Steward and his party put in the Jim Crow car on the Pennsylvania Railroad leaving Philadelphia",
+      "ref": {
+       "a": {
+        "issue": "CR_1861-08-03",
+        "headline": "From Our General Book Steward"
+       }
+      }
+     },
+     {
+      "y": 1862,
+      "when": "winter 1861 to 1862",
+      "place": "Philadelphia",
+      "what": "Rev. Alexander Crummell driven from the city cars after lecturing in Philadelphia",
+      "ref": {
+       "a": {
+        "issue": "CR_1862-06-21",
+        "headline": "Pass It Around! (Blyden and Crummell ejected from Philadelphia city cars)"
+       }
+      }
+     },
+     {
+      "y": 1862,
+      "when": "March 3, 1862",
+      "place": "Philadelphia",
+      "what": "Mrs. Palmer, in poor health, thrust out of a Spruce Street car in a storm",
+      "ref": {
+       "e": {
+        "issue": "CR_1862-03-15",
+        "name": "Mrs. Palmer ejected from a Philadelphia street car (Spruce St. near Tenth)"
+       }
+      }
+     },
+     {
+      "y": 1862,
+      "when": "April 1862",
+      "place": "elsewhere",
+      "what": "Weaver's sister-in-law, with two small children, kept out of the cars at Harrisburg",
+      "ref": {
+       "a": {
+        "issue": "CR_1862-04-26",
+        "headline": "Western Tour (Weaver's journey to the Ohio Conference, Zanesville)"
+       }
+      }
+     },
+     {
+      "y": 1862,
+      "when": "June 1862",
+      "place": "Philadelphia",
+      "what": "Rev. Edward W. Blyden of Liberia, with a lady, driven from the cars at the Kensington depot",
+      "ref": {
+       "a": {
+        "issue": "CR_1862-06-21",
+        "headline": "Pass It Around! (Blyden and Crummell ejected from Philadelphia city cars)"
+       }
+      }
+     },
+     {
+      "y": 1862,
+      "when": "November 1862",
+      "place": "Philadelphia",
+      "what": "Rev. Richard Roberson, about 70, forced onto the front platform, struck and injured; he dies days later",
+      "ref": {
+       "e": {
+        "issue": "CR_1862-11-15",
+        "name": "Father Roberson injured while forced to ride on the front platform of a city railway car"
+       }
+      }
+     },
+     {
+      "y": 1863,
+      "when": "May 1863",
+      "place": "Philadelphia",
+      "what": "Rev. Mr. Logan (probably J. W. Loguen), a former slave, ordered out of his seat onto the platform",
+      "ref": {
+       "e": {
+        "issue": "CR_1863-05-16",
+        "name": "Lecture by Rev. Mr. Logan at Wesley church"
+       }
+      }
+     },
+     {
+      "y": 1863,
+      "when": "July 1863",
+      "place": "Philadelphia",
+      "what": "The Recorder's editor made to ride the front platform, where a disloyal colonel joins him",
+      "ref": {
+       "a": {
+        "issue": "CR_1863-08-01",
+        "headline": "A Disloyal Colonel"
+       }
+      }
+     },
+     {
+      "y": 1863,
+      "when": "September 9, 1863",
+      "place": "Philadelphia",
+      "what": "A badly injured woman, fallen on the track at Market Street, refused a seat inside and made to ride the platform",
+      "ref": {
+       "a": {
+        "issue": "CR_1863-09-19",
+        "headline": "Railway Injustice (from the Press)"
+       }
+      }
+     },
+     {
+      "y": 1863,
+      "when": "October 14, 1863",
+      "place": "Philadelphia",
+      "what": "The Recorder's editor refused a seat on car No. 48 and kept standing on the platform",
+      "ref": {
+       "e": {
+        "issue": "CR_1863-10-17",
+        "name": "Streetcar discrimination: the editor denied a seat on the front of car No. 48"
+       }
+      }
+     },
+     {
+      "y": 1863,
+      "when": "October 1863",
+      "place": "Philadelphia",
+      "what": "William Anthony abused, nearly beaten and short-changed on a Sixth Street car",
+      "ref": {
+       "e": {
+        "issue": "CR_1863-10-17",
+        "name": "Streetcar discrimination: Mr. William Anthony abused and short-changed on a Sixth Street car"
+       }
+      }
+     },
+     {
+      "y": 1863,
+      "when": "December 11, 1863",
+      "place": "Philadelphia",
+      "what": "William Still put off a car between Germantown and the city",
+      "ref": {
+       "e": {
+        "issue": "CR_1863-12-26",
+        "name": "William Still put off a city passenger car between Germantown and the city (streetcar discrimination)"
+       }
+      }
+     },
+     {
+      "y": 1864,
+      "when": "March 14, 1864",
+      "place": "Philadelphia",
+      "what": "James W. Brown chased by a mob of soldiers and seized by the neck inside a passenger car",
+      "ref": {
+       "e": {
+        "issue": "CR_1864-03-26",
+        "name": "Mob assault on James W. Brown at Tenth and Washington Streets"
+       }
+      }
+     },
+     {
+      "y": 1864,
+      "when": "June 1864",
+      "place": "elsewhere",
+      "what": "Mrs. Ellen Anderson, a soldier's widow, ejected from an Eighth Avenue car in New York; the company then opens its cars",
+      "ref": {
+       "a": {
+        "issue": "CR_1864-07-09",
+        "headline": "Justice Restored (editorial on the Philadelphia passenger railways, with the New York Ellen Anderson case)"
+       }
+      }
+     },
+     {
+      "y": 1864,
+      "when": "July 1864",
+      "place": "Philadelphia",
+      "what": "Rev. William J. Alston of St. Thomas' refused a Lombard and South Street car while carrying his dying child",
+      "ref": {
+       "a": {
+        "issue": "CR_1864-07-23",
+        "headline": "The Colored People and the City Railways (with Rev. Wm. Johnson Alston's letter to the Press)"
+       }
+      }
+     },
+     {
+      "y": 1865,
+      "when": "March 1865",
+      "place": "Philadelphia",
+      "what": "Two Black soldiers in uniform forced off the front platform of a city car",
+      "ref": {
+       "e": {
+        "issue": "CR_1865-03-25",
+        "name": "Two Black soldiers forced off a streetcar platform; a Black man beaten for carrying a 'Greeley is coming' placard"
+       }
+      }
+     },
+     {
+      "y": 1865,
+      "when": "August 17, 1865",
+      "place": "Philadelphia",
+      "what": "Two women on a Spruce and Pine car: one kicked off, the other carried to the depot and insulted; their suit is thrown out in 1866",
+      "ref": {
+       "e": {
+        "issue": "CR_1865-09-23",
+        "name": "Two colored ladies carried off and insulted on a Spruce and Pine Street car"
+       }
+      }
+     },
+     {
+      "y": 1866,
+      "when": "February 1866",
+      "place": "Philadelphia",
+      "what": "Four men refuse to leave a Pine Street car; the crew runs the car off the track",
+      "ref": {
+       "a": {
+        "issue": "CR_1866-02-24",
+        "headline": "Street-car exclusion items (Philadelphia)"
+       }
+      }
+     },
+     {
+      "y": 1866,
+      "when": "February 1866",
+      "place": "Philadelphia",
+      "what": "A colored lady of the city sues a railway company for forcibly ejecting her",
+      "ref": {
+       "a": {
+        "issue": "CR_1866-02-24",
+        "headline": "Street-car exclusion items (Philadelphia)"
+       }
+      }
+     },
+     {
+      "y": 1866,
+      "when": "March 1866",
+      "place": "Philadelphia",
+      "what": "Frances Ellen Watkins Harper excluded from a city railroad car",
+      "ref": {
+       "a": {
+        "issue": "CR_1866-04-07",
+        "headline": "What High-Toned Men Think (streetcar exclusion)"
+       }
+      }
+     },
+     {
+      "y": 1866,
+      "when": "November 1866",
+      "place": "Philadelphia",
+      "what": "A woman made to leave a passenger car that had stopped for her",
+      "ref": {
+       "a": {
+        "issue": "CR_1866-11-10",
+        "headline": "Forbidden to Ride on the Street Cars (poem, with preface)"
+       }
+      }
+     },
+     {
+      "y": 1867,
+      "when": "January 1867",
+      "place": "Philadelphia",
+      "what": "Mr. and Mrs. Robinson and a friend refuse to leave a Pine Street car; it is lifted off the track and stripped",
+      "ref": {
+       "a": {
+        "issue": "CR_1867-02-09",
+        "headline": "Outrageous Conduct of a City Car Conductor (Pine street car)"
+       }
+      }
+     },
+     {
+      "y": 1867,
+      "when": "February 1867",
+      "place": "elsewhere",
+      "what": "Miss Jane M. Lynch, a freedmen's teacher, put out of the ladies' car on the Philadelphia and Baltimore Railroad",
+      "ref": {
+       "a": {
+        "issue": "CR_1867-02-09",
+        "headline": "All Honor to Our State Senate (streetcar bill passes the Senate)"
+       }
+      }
+     },
+     {
+      "y": 1867,
+      "when": "March 1867",
+      "place": "Philadelphia",
+      "what": "Mrs. Sarah G. Thompson pushed from a car; she complains to the Mayor and the conductor is arrested",
+      "ref": {
+       "e": {
+        "issue": "CR_1867-03-09",
+        "name": "Ejection of Mrs. Sarah G. Thompson from a city railroad car; conductor arrested"
+       }
+      }
+     }
+    ],
+    "incidents_intro": "Each bar counts the separate times a Black rider was put off, refused, forced onto the platform or attacked, as reported in the papers we have read so far. An incident reported in several issues is counted once. These are only the cases that reached print, and only in the issues read so far; the papers themselves said such treatment happened every day."
    }
   },
   {

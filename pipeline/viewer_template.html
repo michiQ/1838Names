@@ -434,6 +434,28 @@ function selectArticle(aid){
   if(isMobile() && !window._suppressAutoOpen) openRightDrawer();
   right.querySelectorAll('.pl[data-p]').forEach(el=>el.addEventListener('click',()=>select(+el.dataset.p)));
   try{ history.replaceState(null,'','#a'+aid); }catch(err){}
+  // the graph follows the article too (2026-11-24, Michiko: links from the streetcar timeline
+  // looked like they went to the default person because the graph still showed him)
+  window._sel = null;
+  if(window._fullView){ for(const n of nodes) n.sel=false; setHighlight(null); }
+  else if(!window._noRebuild){ setHighlight(null); buildArticleGraph(aid, ppl); }
+}
+function buildArticleGraph(aid, ppl){
+  const a=A.get(aid); nodes=[]; links=[];
+  const nmap=new Map();
+  function addNode(id,type,label,r){ if(nmap.has(type+id))return nmap.get(type+id);
+    const n={id,type,label,r,x:(Math.random()-.5)*80,y:(Math.random()-.5)*80,z:0,vx:0,vy:0,vz:0};
+    nmap.set(type+id,n); nodes.push(n); return n;}
+  const hl=a.hl.length>60 ? a.hl.slice(0,a.hl.lastIndexOf(' ',57))+'…' : a.hl;
+  const center=addNode(aid,'a',hl,15); center.x=0; center.y=0; center.fixed=true; center.sel=true;
+  for(const [q] of ppl){ const op=P.get(q); if(!op) continue;
+    const n=addNode(q,'p',op.name,8); links.push({s:center,t:n,w:3}); }
+  const ids=ppl.map(([q])=>q);
+  for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
+    const w=(NBR.get(ids[i])||new Map()).get(ids[j]); if(w>3){
+      const x=nmap.get('p'+ids[i]),y=nmap.get('p'+ids[j]); if(x&&y)links.push({s:x,t:y,w:1,faint:true});}}
+  view={x:0,y:0,k:1};
+  for(let it=0;it<300;it++) tick();
 }
 if(document.addEventListener) document.addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('.tchip'); if(b){ev.stopPropagation(); selectTopic(b.dataset.topic);}});
 const PAPERS = {CA:'Colored American', PF:'Pennsylvania Freeman', FJ:"Freedom's Journal", PP:'Pencil Pusher (Phila. Tribune)', NS:'The North Star', CR:'Christian Recorder', CAM:'Colored American Magazine (1903)'};
@@ -1164,6 +1186,7 @@ miniCv.addEventListener('click', e=>{
   if(n.type==='p') select(n.id);
   else if(n.type==='e') selectEvent(n.id);
   else if(n.type==='o' && n.org) selectOrg(n.org);
+  else if(n.type==='a') selectArticle(n.id);
 });
 // resizable mini panel -- drag the bottom-right corner grip to expand/contract it,
 // remembered across visits the same way the main #right detail panel's width is
@@ -1615,6 +1638,7 @@ function pointerUp(x,y){
     setHighlight(dragN);
     if(dragN.type==='p') select(dragN.id);
     else if(dragN.type==='e') selectEvent(dragN.id);
+    else if(dragN.type==='a') selectArticle(dragN.id);
     else if(dragN.type==='o' && dragN.org){ selectOrg(dragN.org); } }
   else if(!dragN && wasClick){ setHighlight(null); }   // click/tap empty space clears highlight
   if(dragN && !wasClick && window._fullView) dragN.pin = true;  // pulled nodes stick where you put them

@@ -519,7 +519,7 @@ if os.path.exists(_tp_path):
             if not hit: raise SystemExit(f"topics.json: no article {k}")
             for a in hit: a.setdefault("tp", []).append(t["slug"]); aids.append(a["id"])
         for k in t.get("events", []):
-            hit = [e for e in events.values() if e["issue"] == k["issue"] and e["name"] == k["name"]]
+            hit = [e for e in events.values() if (e["issue"] or "") == (k["issue"] or "") and e["name"] == k["name"]]
             if not hit: raise SystemExit(f"topics.json: no event {k}")
             for e in hit: e.setdefault("tp", []).append(t["slug"]); eids.append(e["id"])
         aids.sort(key=lambda i: (_idate.get(articles[i]["issue"]) or "9999", articles[i]["pg"] or 0))

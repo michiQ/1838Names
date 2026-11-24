@@ -1,6 +1,6 @@
 # Blog archive -- name matches to confirm
 
-74 posts loaded. Of 479 unique names: 198 linked to existing people, 228 created as new blog people, 53 held as ambiguous (NOT linked -- confirm below).
+74 posts loaded. Of 479 unique names: 199 linked to existing people, 227 created as new blog people, 53 held as ambiguous (NOT linked -- confirm below).
 
 ## Ambiguous (same name as MORE THAN ONE existing record -- not auto-linked)
 Add a group to merges.json (id-qualified) to attach the blog mentions to the right one:
@@ -44,7 +44,7 @@ Add a group to merges.json (id-qualified) to attach the blog mentions to the rig
 - **Robert Jones** (blog)  ↔  Jones, Robert#1611, Jones, Robert#1612, Robert Jones#8628, JONES, ROBERT#353052, Jones, Robert H#357223, Jones, Robert C.#359265, Robert T. Jones#365240
 - **Robert Patterson** (blog)  ↔  Robert Patterson#359756, Robert Patterson#360453
 - **Robert Purvis** (blog)  ↔  Purvis, Robert#2178, Robert E. Purvis#364230, Robert Purvis#364296
-- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#370578
+- **Samuel Williams** (blog)  ↔  WILLIAMS, SAMUEL#351596, WILLIAMS, SAMUEL#360594, Williams, Samuel#360595, Williams, Samuel#360596, Williams, Samuel#360597, Samuel Williams#367383, Williams, Samuel#370723
 - **Sarah Jones** (blog)  ↔  Jones, Sarah#1613, Jones, Sarah#1614, Jones, Miss Sarah#1615, JONES, SARAH#353053, Jones, Sarah E.#359266
 - **Sarah Lewis** (blog)  ↔  Sarah Lewis#309587, LEWIS, SARAH#353177
 - **Stephen Smith** (blog)  ↔  Smith, Stephen#2436, Mrs. Stephen Smith#364846
@@ -76,7 +76,6 @@ e.g. honorific/nickname variants of existing people, or national/modern figures 
 - Ann Clinton
 - Annie Wood
 - Anthony Benezet
-- Araminta Keeling
 - Arcadio Rodaniche
 - Benjamin Bacon
 - Benjamin Rush
