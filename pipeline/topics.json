@@ -427,7 +427,50 @@
      "issue": "CR_1867-05-04",
      "name": "Colored People's Union League -- Grand Reunion Festival"
     }
-   ]
+   ],
+   "timeline": {
+    "file": "streetcar.html",
+    "title": "Streetcar Discrimination in Philadelphia",
+    "intro": "Philadelphia's city passenger railways refused to carry Black riders, or forced them to stand on the front platform, from the time the horse cars began running in 1858. This timeline follows the ejections, letters, mass meetings, petitions, lectures and court cases reported in the newspapers we have read, through the state law of March 1867 that forbade the exclusion and what happened after it. Earlier entries on omnibuses and railroads in other places are included for context.",
+    "phases": [
+     {
+      "from": "0000",
+      "to": "1860-12-31",
+      "title": "Before the war",
+      "note": "Exclusion on omnibuses and railroads, here and in other cities."
+     },
+     {
+      "from": "1861-01-01",
+      "to": "1862-12-31",
+      "title": "1861 and 1862",
+      "note": "Riders put off the cars, and the first letters and editorials in the Christian Recorder."
+     },
+     {
+      "from": "1863-01-01",
+      "to": "1864-12-31",
+      "title": "1863 and 1864",
+      "note": "Soldiers and their families refused, mass meetings at Sansom Street Hall and Masonic Hall, the Union League's appeal to the railway companies, and William Still's committee."
+     },
+     {
+      "from": "1865-01-01",
+      "to": "1866-12-31",
+      "title": "1865 and 1866",
+      "note": "The Social, Civil and Statistical Association's lecture course, petitions to the legislature, Senator Lowry's speech, and continued ejections."
+     },
+     {
+      "from": "1867-01-01",
+      "to": "1867-12-31",
+      "title": "1867: the law",
+      "note": "The bill passes the Senate and House and Governor Geary signs it in March. Then the first test cases and the celebrations."
+     },
+     {
+      "from": "1868-01-01",
+      "to": "9999",
+      "title": "Remembered later",
+      "note": "Later recollections, such as William Carl Bolivar's columns in the Philadelphia Tribune."
+     }
+    ]
+   }
   },
   {
    "label": "Parades and processions",

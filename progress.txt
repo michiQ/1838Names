@@ -1568,3 +1568,13 @@ issue_urls += 13 (Drive). No Internet Archive link (item not confirmed).
 REBUILD NOTE: /tmp/rebuild.sh must include split_bassett (between split_swilliams and split_appearances), and must start from the committed black_metropolis.db (`git show HEAD:black_metropolis.db > /tmp/black_metropolis.db`); a stale /tmp db made the rebuild unstable and broke portraits.json ids. With both, two rebuilds were identical.
 Totals: 16,314 people (viewer), 1,660 events, 3,889 articles, 131 ads. Smoke test 4 OK; 0 VERIFY on index.html, ads.html, ads_map.html. Staging only.
 Open for Michiko: Sarah Irons 320 or 820 Union St. (high-res check of five printings reads 820; two readers read 320); Rev. Theo. D. Miller of the Masonry sermon = Rev. Theodore D. Miller of Pearl Street Baptist?; new Bethel pastor printed 'H. Dorrell' / 'Deaton Dorsell'; Union League re-union dated Apr 20 in one report and Apr 26 in the other; Olive Branch proprietor printed 'R. B.' Cropper on Jun 22 (usually H. M.).
+
+2026-11-24 RULINGS + STREETCAR TIMELINE
+- Michiko ruled: Sarah Irons shrouding ad = No. 320 Union Street (extractions93, ad_addresses updated).
+- Michiko ruled: Masonry and Christianity sermon author = Rev. Theodore D. Miller of Pearl Street Baptist (extractions95).
+  Open: several possible duplicate Miller records (Theo. Doughty / Theo. D. / Theodore Doughty / Theodore D. / Theo. / Theodore Miller) not merged; awaiting ruling.
+- New page streetcar.html: timeline of the streetcar-discrimination topic, 103 entries in 6 phases, search + filters,
+  links back to the viewer. Built by pipeline/build_topic_timeline.py, driven by a "timeline" block in topics.json
+  (any topic can get one by adding that block).
+- Viewer: deep links index.html#a<article id> and #e<event id>; new article panel (selectArticle) with people named;
+  topic article headlines are clickable; header button "Streetcar timeline".
