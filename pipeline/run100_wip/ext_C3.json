@@ -26,6 +26,61 @@
    "type": "letter",
    "summary": "The progress of the Missionary Work. Rapid increase of the work since Conference. Great Camp Meetings. ... Mr. Editor.--The mighty progress of the cause of truth, awakens sensations of pleasure to the Christian minister ... Since the last annual Conference held in Wilmington, N. C., we have had to record constant accessions to our Church in every direction.",
    "people": []
+  },
+  {
+   "issue": "CR_1867-06-29",
+   "page": 3,
+   "headline": "Information Wanted (Edward Island, last heard of at Annapolis, Md.; his sister Mary Philips, at the Christian Recorder office)",
+   "author": "Mary Philips",
+   "type": "notice",
+   "summary": "Information wanted of Edward Island, my brother. When I last heard from him he was in Annapolis, Md. Any one knowing his whereabouts will please inform him that his sister would like him to call at the office of the Christian Recorder, and take her to live with him. Mary Philips. N. B.--Ministers please notice. June 29--1t.",
+   "people": [
+    [
+     "Edward Island",
+     "sought brother; last heard of at Annapolis, Md. (surname printed in the paper's s/a-confusable type, read 'Island')"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-06-29",
+   "page": 3,
+   "headline": "Quarterly Meeting: Snow Hill Circuit (N.J.)",
+   "author": "John W. Stevenson",
+   "type": "notice",
+   "summary": "Quarterly meeting for the Snow Hill Circuit will be as follows: July 7th, Snow Hill. July 14th, Jordentown. July 21st, Milford. We hope the brethren and friends everywhere will come and help us. Quarterly Conference at Snow on the 6th, at 1 o'clock. John W. Stevenson, Minister in charge. June 29th--1t.",
+   "people": []
+  },
+  {
+   "issue": "CR_1867-06-29",
+   "page": 3,
+   "headline": "Acknowledgments (subscriptions and remittances received)",
+   "author": "",
+   "type": "notice",
+   "summary": "Galveston, Texas, per H. Reedy, $3.00; Atlanta, Ga., Rev. W. J. Gaines, $14.25; Keokuk, Iowa, per Rev. J. W. Malone, Arms, $1.25; Yellow Springs, O., L. S. Morris, 2.50; Bloomington, Illinois, Wm. Mabines(?), 4.80; Nashville, Tenn., per Rev. J. W. Malone, A. Alexander, F. Hardy, each $2.50; Bridgton, New Jersey, per Rev. D. Draper, S. R. Harris, $2.50; Pittsburgh, Pa., Rev. J. A. Shorter, 10.00; Jefferson City, Mo., Rev. E. N. Doan(?), $2.00; Rev. Theo. Gould, 20.00.",
+   "people": [
+    [
+     "Theo. Gould",
+     "remitted $20.00 (Rev.; the Book Concern travelling agent)"
+    ],
+    [
+     "D. Draper",
+     "forwarded Bridgeton N.J. remittance (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-06-29",
+   "page": 3,
+   "headline": "Now Ready! Masonry and Christianity! Rev. Theo. Doughty [VERIFY] Miller's Great Sermon (advertisement)",
+   "author": "",
+   "type": "advertisement",
+   "summary": "Now Ready! Masonry and Christianity! Rev. Theo. Doughty [VERIFY] Miller's Great Sermon. As delivered before the ... orders of Masons, at the ... Presbyterian church ... [price] 25 cents per copy ... may be had of the Committee ... Quince(?) Street. Every Mason ... should have a copy. May 25(?)--4 weeks. (Body type too faded to transcribe.)",
+   "people": [
+    [
+     "Theo. Doughty Miller [VERIFY]",
+     "author of the sermon (Rev.)"
+    ]
+   ]
   }
  ],
  "events": [
@@ -51,11 +106,23 @@
   "CR_1867-06-29 p1 'From Louisiana' (Natchitoches, May 30): Republican clubs; parish delegates Cyrus W. Stauffer (white) and Charles Seroy(?) to the State Executive Convention at New Orleans, June 10; 32 freedmen's schools; A.M.E. church building under Rev. E. Hayward; P.S. Stauffer shot by 'Judge Jorue'(?). Signed C. F. C. Smith(?). Text only.",
   "CR_1867-06-29 p1 Rev. F. L. Carter, Little Rock, Ark.: church finished and enlarged; week-day school 90, Sunday school 100 scholars. Text only.",
   "CR_1867-06-29 p1 'Brother Jackson, the local preacher' at Burlington: surname only, not linked.",
-  "CR_1867-06-29 p4 READ FROM CROPS, ALL 7 COLUMNS x 5 SLICES (frame 50, DPI 1000; page 104, dated June 29, 1867). Contents: col1 poem 'The Sweetest Word' (Herbert Newbury(?)), Home Circle 'Little George's Prayer' (Cara(?) Montrose, Ger. Ref. Messenger); col2 cont. and \"It Keeps It in Mind\" (American Messenger); col3 'The Little Children's Mission' (A. M. B., Methodist Home Journal), 'Physical Exercise' (Westminster Gazette), 'The Nation's Revenue'; col4 'The Word Money' (Prof. Whitney), 'The Three Nails and the Marks They Made' (Youth's Magazine): all SKIP-rule selections. cols5-7 standing ads, ALL REPEATS already entered or noted (not re-entered): E. Matlack & Son, 904 Market St.; Newspaper Laws; Lincoln House, Cincinnati; Dr. J. Stephens & Co. Cornea Restorers; A. Upham, 630 Pine (white, skip); Directory of I. O. of Good Samaritans: Sheba Lodge (Juvenile; meets 2d Thursday, Masonic Hall, South Eleventh St.; A. Cropper, P. G., S. Young, P. G.) and Sumner and Wilson Lodge, No. 8; Agents Wanted (L. Stebbins, Hartford); Empire State House, Widow T. L. Jinnings, Long Branch N.J. (dated June 8, 1867; noted by ext_C at Jun 8); Ayer's Cathartic Pills (skip); Dr. David Rosell, 907 Lombard; Dandridge Kelly restaurant, Saratoga and Davis Sts., Baltimore; Charles Magarge & Co., paper, 32 S. Sixth; William Still, Coal Yard, Nos. 1216, 1218 & 1220 Washington Ave. (dated Philadelphia, June 15th, 1866); Thomas Charnock, undertaker, No. 427 South 6th St., second door below Bethel Church; Bowers' Coal Depot, Thomas J. Bowers, 634 Lombard; Book Depository of the A.M.E. Church, No. 631 Pine (as ext_C noted from Jun 1); Mrs. H. S. Duterte, general undertaker (No. 634 Lombard); F. Champion's clothing store, No. 12 Myrtle Ave., Brooklyn; Avery College, Allegheny City (George B. Vashon, A.M., Principal); James W. Brown, Steam-Dyeing, Scouring and Repairing Works (S. Fifth St. above Walnut and Shippen St.; formerly with Granville Stokes, Chestnut St.; street numbers too small to improve on readers A-C); Globe Hotel, Mrs. William P. Powell, No. 2 Dover St., New York; W. P. Powell, attorney and solicitor, Nos. 1 and 2 Dover St., New York; Dry Goods, Mrs. S. Shorter Hawkins, No. 615 Lombard; Leizeare Brown's Boot and Shoe Depot, 907 South St. (fourth door above Ninth); 'To Fruit Growers', Hammonton Culturist, E. Matlack; Wm. H. Longfellow, surgeon dentist, No. 1128 Rodman St., between 11th & 12th and Lombard & South Sts.; Jas. B. Rodgers printing office, 52 & 54 North Sixth St. No new or changed Black-owned ad on p4."
+  "CR_1867-06-29 p4 READ FROM CROPS, ALL 7 COLUMNS x 5 SLICES (frame 50, DPI 1000; page 104, dated June 29, 1867). Contents: col1 poem 'The Sweetest Word' (Herbert Newbury(?)), Home Circle 'Little George's Prayer' (Cara(?) Montrose, Ger. Ref. Messenger); col2 cont. and \"It Keeps It in Mind\" (American Messenger); col3 'The Little Children's Mission' (A. M. B., Methodist Home Journal), 'Physical Exercise' (Westminster Gazette), 'The Nation's Revenue'; col4 'The Word Money' (Prof. Whitney), 'The Three Nails and the Marks They Made' (Youth's Magazine): all SKIP-rule selections. cols5-7 standing ads, ALL REPEATS already entered or noted (not re-entered): E. Matlack & Son, 904 Market St.; Newspaper Laws; Lincoln House, Cincinnati; Dr. J. Stephens & Co. Cornea Restorers; A. Upham, 630 Pine (white, skip); Directory of I. O. of Good Samaritans: Sheba Lodge (Juvenile; meets 2d Thursday, Masonic Hall, South Eleventh St.; A. Cropper, P. G., S. Young, P. G.) and Sumner and Wilson Lodge, No. 8; Agents Wanted (L. Stebbins, Hartford); Empire State House, Widow T. L. Jinnings, Long Branch N.J. (dated June 8, 1867; noted by ext_C at Jun 8); Ayer's Cathartic Pills (skip); Dr. David Rosell, 907 Lombard; Dandridge Kelly restaurant, Saratoga and Davis Sts., Baltimore; Charles Magarge & Co., paper, 32 S. Sixth; William Still, Coal Yard, Nos. 1216, 1218 & 1220 Washington Ave. (dated Philadelphia, June 15th, 1866); Thomas Charnock, undertaker, No. 427 South 6th St., second door below Bethel Church; Bowers' Coal Depot, Thomas J. Bowers, 634 Lombard; Book Depository of the A.M.E. Church, No. 631 Pine (as ext_C noted from Jun 1); Mrs. H. S. Duterte, general undertaker (No. 634 Lombard); F. Champion's clothing store, No. 12 Myrtle Ave., Brooklyn; Avery College, Allegheny City (George B. Vashon, A.M., Principal); James W. Brown, Steam-Dyeing, Scouring and Repairing Works (S. Fifth St. above Walnut and Shippen St.; formerly with Granville Stokes, Chestnut St.; street numbers too small to improve on readers A-C); Globe Hotel, Mrs. William P. Powell, No. 2 Dover St., New York; W. P. Powell, attorney and solicitor, Nos. 1 and 2 Dover St., New York; Dry Goods, Mrs. S. Shorter Hawkins, No. 615 Lombard; Leizeare Brown's Boot and Shoe Depot, 907 South St. (fourth door above Ninth); 'To Fruit Growers', Hammonton Culturist, E. Matlack; Wm. H. Longfellow, surgeon dentist, No. 1128 Rodman St., between 11th & 12th and Lombard & South Sts.; Jas. B. Rodgers printing office, 52 & 54 North Sixth St. No new or changed Black-owned ad on p4.",
+  "CR_1867-06-29 p3 READ FROM CROPS, COLUMNS 2-7 x 5 SLICES (frame 51, DPI 1000; page 103). Col1 not re-read (news summary, not assigned). Col2: news summary (Indians, coal, Freedmen, Foreign, Mexico, Exposition: skip), Acknowledgments, Snow Hill Quarterly Meeting, Information Wanted (Edward Island). Col3: Notices (West Chester circuit; Burlington circuit; Samuel Aaron's Division Sons of Temperance picnic; Fair Haven/Riceville/Red Bank presentations to Rev. Henderson Davis; Camden quarterly meeting; Mount Rees circuit), Died (Mahaly Alfred, Tenn.), Whipper & Purnell, A Rare Opportunity (J. H. S.), Dr. William Armstrong. Col4: Masonry and Christianity sermon ad, Country Boarding (Mrs. Amelia Anderson, Woodbury), Rare Chance for a Dentist (Sarah Mc. C. Crummill, 119(?) North Third St.), Dr. S. J. Williams (York, Pa.), Country Boarding (George Longstreth, Bucks Co.), Rev. I. R. Gates' Macamoose, Wilberforce University (three ads, Bishop D. A. Payne), Doctor John Willard (St. Louis), The Adams' House, Baltimore (Mrs. Martha A. Adams), S. F. Balderston & Son, Dr. T. M. Kennard & Bro. (832 Carpenter and 717 Lombard). Col5: Dr. McLane's/Fleming Brothers (skip). Col6: Pennsylvania Central Railroad (skip), Jones' One Price Clothing, Perry & Co. (skip), Mrs. Edith Mayhew (257 Raspberry), A. J. Jone's auction dry goods (No. 718 Lombard; printed 'A. J.'; = A. T. Jones per owner ruling), T. J. Bowers coal, Mrs. Sarah Irons (No. 320 Union St.), Singer. Col7: Olive Branch Boarding House (Mrs. H. M. Cropper, No. 814 Lombard as others read), Mrs. M. Bennett herb doctress, Bustill wig makers (No. 403 South Sixth), Reimer's gallery, Hudson's City Hotel (Baltimore, Dr. D. Hudson), Mrs. Maria Butler House of Application (No. 1718 Sansom St., clear here), Freedman's Cheap Store (Smalls & Gleaves, Beaufort S.C.; printed 'R. H. Gleaves'), M. A. Williams boxes (1019 Rodman). All ads except the Masonry sermon are repeats already entered or noted; not re-entered.",
+  "CORRECTION to ext_C: CR_1867-06-29, p3, 'Notices: quarterly meetings (West Chester, Burlington, Camden)': the Camden (Macedonia) notice also names 'Rev. J. Turpin' preaching at 7 1/2 o'clock (after Rev. Wm. Moore at 10 1/2 and Rev. James Hollen at 3); quarterly meeting June 30th, love feast doors open 7, begins 8 1/2. Signed J. B. Hamilton. Burlington notice dates: Burlington July 11th(?), Mount Holly July 20th (Quarterly Conference), Evesham July 25th, 1867; signed J. M. Mitchell, Pastor.",
+  "CORRECTION to ext_C: CR_1867-06-29 (and the Jun 15 note 'Mount Hope(?) circuit'): the circuit prints 'Mount Rees Circuit' (quarterly meetings June 22 and 23 Wilkesbarre; Bloom June 30; Danville(?) July 7; Abington July 14; Mount Rees July 21; Scranton July 28; Isaiah S. Taylor, Pastor; dated June 10, 1867). 'Rees' read at DPI 1000, not certain; not linked (northeastern Pa.).",
+  "CORRECTION to ext_C: the 'Masonry and Christianity' sermon ad (ext_C's Jun note reads 'Fred Doughty Miller'): the June 29 printing reads 'REV THEO DOU[gh]TY MILLER'S' at DPI 1600; 'THEO' is clear. Probably Rev. Theodore Doughty Miller, Baptist minister of Philadelphia (identification for the owner, not from this item). Entered once here as a new article.",
+  "CR_1867-06-29 p3 Samuel Aaron's Division Sons of Temperance (ext_C event): rechecked at DPI 1600; the committee names do not improve (Nelson Quann(?), James Lockman(?), Elwood Stevens(?), Alfred Buck(?), Joseph Mosely(?)) and the division number reads 'No. 10?' (last digit unclear). Grand picnic in the Grove near Mount Holly, Thursday July 4th, 1867. ext_C's caution stands.",
+  "CR_1867-06-29 p3 Snow Hill Circuit: J. W. Stevenson was appointed to Snowhill at the 1867 Philadelphia Conference (ext_C Jun 1 appointments). 'Jordentown' presumably Jordantown/Lawnside N.J.; 'Snow' = Snow Hill.",
+  "CR_1867-06-29 p3 Acknowledgments: all remitters outside Philadelphia (Texas, Ga., Iowa, Ohio, Ill., Tenn., Bridgeton N.J., Pittsburgh, Mo.); only Rev. Theo. Gould and Rev. D. Draper (Philadelphia Conference clergy) linked."
  ],
  "flags": [
   "CR_1867-06-29 p1 col4: deceased 'Brother Henry Williams' of Mount Holly: given name blurred at DPI 1000 and 1600 (reads 'Hoory'/'Henry'); [VERIFY], not linked. Very common name in any case.",
   "CR_1867-06-29 p1 col4: 'Rev. James Frisby' who preached the funeral: b/h ambiguous at DPI 1600 ('Frishy'/'Frisby'); [VERIFY], not linked.",
-  "CR_1867-06-29 p1: funeral date 'last Sabbath' inferred as 1867-06-23 (letter undated); death 'the 12th inst.' taken as June 12, 1867."
+  "CR_1867-06-29 p1: funeral date 'last Sabbath' inferred as 1867-06-23 (letter undated); death 'the 12th inst.' taken as June 12, 1867.",
+  "CR_1867-06-29 p3 col4: 'Doughty' in 'Rev. Theo. Doughty Miller' is partly obscured at DPI 1600 ('DOU..TY'); [VERIFY], not linked. Sermon place and committee address illegible.",
+  "CR_1867-06-29 p3 col7: Mrs. M. Bennett's number reads 'No. 405' or '406' S. Seventh St. at DPI 1600 (last digit unresolved; other readers have 404/406).",
+  "CR_1867-06-29 p3 col3: West Chester preacher signature still unreadable at DPI 1600 ('John(?) P. Cornish'); ext_C flag stands.",
+  "CR_1867-06-29 p3 col2: acknowledgment names 'Wm. Mabines' and 'Rev. E. N. Doan' uncertain (text only).",
+  "CR_1867-06-29 p3 col2: 'Edward Island' read with the paper's s/a type confusion (printed like 'Ialand'); recorded as Island, low risk but note."
  ]
 }

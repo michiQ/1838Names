@@ -13,6 +13,50 @@
      "author of the sermon (Rev.); printed 'Rev. Theo. Doughty Miller's'; middle name partly broken in the type"
     ]
    ]
+  },
+  {
+   "issue": "CR_1867-06-22",
+   "page": 2,
+   "headline": "Afflicted with Envy-Mania (editorial on the Zion's Standard and the retiring editor)",
+   "author": "",
+   "type": "editorial",
+   "summary": "The many kind and complimentary words spoken by several of our exchanges, in reference to the retiring editor, Rev. James Lynch, affords pleasure to all connected with our office, as we know the worth of the man we lose. One single exchange paper, one only, has spoken unkindly, and that is the Zion's Standard.",
+   "people": [
+    [
+     "James Lynch",
+     "retiring editor (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-06-22",
+   "page": 2,
+   "headline": "Acknowledgments (Bridgeton and Cape Island, N.J., entries)",
+   "author": "",
+   "type": "notice",
+   "summary": "Acknowledgments. Madison, Indiana, Wm. E. Shannon and Anderson Gray, each $2.50; New Harmony, Ind. ... New Orleans, La., Rev. Jno. Turner, $75.00; Hagerstown, Md. ... [Lexing]ton, Ky., per Rev. J. C. Embry, E. A. Loving; New York, P. R. Smith, $2.00. Per Rev. Theodore Gould, Agent, Bridgeton, N.J., E. Goold, S. A. Boyer, each $2.50, R. Dunn, J. W[?]der, Jno. C. Pierce, each $1.25. Cape Island, N.J., Jno. W. Clement, $1.25.",
+   "people": [
+    [
+     "Theodore Gould",
+     "agent, Bridgeton, N.J. (Rev.)"
+    ],
+    [
+     "E. Goold",
+     "subscriber, Bridgeton, N.J. (printed 'Goold')"
+    ],
+    [
+     "S. A. Boyer",
+     "subscriber, Bridgeton, N.J."
+    ],
+    [
+     "Jno. C. Pierce",
+     "subscriber, Bridgeton, N.J."
+    ],
+    [
+     "Jno. W. Clement",
+     "subscriber, Cape Island, N.J."
+    ]
+   ]
   }
  ],
  "events": [],
@@ -25,11 +69,18 @@
   "CR_1867-06-15 p3 correction to ext_C note ('Fred Doughty Miller' sermon ad): the ad prints 'REV THEO DOUGHTY MILLER'S Great Sermon' (checked at DPI 1600), i.e. Rev. Theodore D. Miller, pastor of the Pearl Street (First African) Baptist Church, as named in ext_B (sermon on Masonry) and ext_A (Theo. D. Miller, G. C.). Entered here as a new ad (first time entered). Identification is the reader's, owner to confirm.",
   "CR_1867-06-15 p2 'Correction (Excelsior Base Ball Club concert)' (existing entry): rechecked at DPI 1600. Medal recipient prints 'Iris D. Cliff' (the D could be an O); signer prints 'Geo. H. Wil[?]s' or similar, Cor. Sec'y E. B. B. C.: still not certain. Keep both [VERIFY] as in ext_C.",
   "CR_1867-06-15 p3 'Marriages (Philadelphia entries)' (existing entry): on the crop the first officiant reads 'Rev. J. H. Reeve' (blurred; June 22 prints 'Rev. J. B. Reeve', probably the same Presbyterian minister); the bride's father prints 'Charles C. Jnnous' (J/I ambiguous). Leave as [VERIFY] in ext_C.",
-  "CR_1867-06-15 p2: the contents list confirms no 'Local' column this week; Notices, Information Wanted and Marriages are on p3 (col 3, already entered by C)."
+  "CR_1867-06-15 p2: the contents list confirms no 'Local' column this week; Notices, Information Wanted and Marriages are on p3 (col 3, already entered by C).",
+  "CR_1867-06-22 p2 READ FROM CROPS by C2: col 1 s1-5 (contents; 'Afflicted with Envy-Mania'; 'Our Work'); col 3 s4-5 ('Bishop Campbell' letter; 'Read This'); col 4 s1 and s5 (end of 'Read This'; 'A.M.E. Church', Little Rock; Sabbath Schools letter end; Acknowledgments); col 5 s1 (Acknowledgments end; 'Distinguished Female Vocalist in Chicago'); Acknowledgments head of col 5 rechecked at DPI 1600. C had already read col 2 (Our Ex-Editor, Local, Diggs, Chicago letter). NOT read from crops by C2: p2 col 3 s1-3, col 4 s2-4 (Letter from Ripley, Ohio; Wilberforce University; 'Apology for African Methodism'; Sabbath Schools), cols 5 s2-5, 6, 7 (Christian Nurture, Evangelical Reunion, New School Assembly, Lookout Mountain Institute, The Societies, American Sunday School Union, Pulpit Ingenuity). The contents list shows no Marriages or Deaths on p2 (they are on p3).",
+  "CR_1867-06-22 p2 'Afflicted with Envy-Mania' (new entry): defends the retiring editor Lynch against the Zion's Standard (A.M.E. Zion paper), whose chief editor is said to have undervalued the African Civilization Society's orphan work, threatened to 'expose' Bishop Payne's mission to England, attacked the American Missionary Association and Mr. John Langston (inspector of the Freedmen's Bureau; non-Philadelphia, text only). 'Our ex-editor never ... wrote a line in reference to the editor of the Standard but what was kind.' Editorship topic.",
+  "CR_1867-06-22 p2 'Our Work' (editorial, text only): nearly eleven months remain before the Fourteenth General Conference, to convene May 4th, 1868, at Washington, D.C.; membership grown from 50,000 to between 150,000 and 200,000; University buildings at Xenia destroyed; missionary work under Rev. J. M. Brown; the Book Concern and the Christian Recorder praised.",
+  "CR_1867-06-22 p2 'Read This' (text only, MIGRATIONS/teachers South topic): 'To Teachers and others interested in the education of the Freedmen. The Friend's Freedmen's Association of this city intend to re-open the several schools under their care in North Carolina, and at Danville, Va., on the first 2d day (the 2d) of Ninth month next, and those on the peninsula of Virginia, on the first 2d day (the 4th) of Eleventh month'; about ten graded schools with Normal classes, 150 to 300 pupils each; invitation 'extended alike to persons of both sexes, white and colored'; applications to M. E. Sheerman [VERIFY], Actuary, No. 30[?] Cherry street, Philadelphia. Signed J. Wistar Evans, Chairman; Yardly Warner, Thomas Cowan [VERIFY], John B. Garrett, Committee on Appointment of Teachers. Philadelphia 5th month, 1867. A white (Quaker) Philadelphia association: names kept in text only, not linked.",
+  "CR_1867-06-22 p2 other (text only): 'Bishop Campbell' letter praising Bishop J. P. Campbell's political speech at New Orleans, May 15, signed John H. Morris [?], Leavenworth, Kansas, June 6th 1867; 'A.M.E. Church', Little Rock, Ark., May 27, Brother Thomas Johnson to 'Bro. Lynch'; Sabbath Schools letter signed N. H. Ashbey [?]; 'Distinguished Female Vocalist in Chicago' (Mrs. Charlotte Alexander of Cincinnati, singing school in Bethel Church, Chicago). Acknowledgments: only the Bridgeton/Cape Island N.J. entries are entered (Philadelphia Conference N.J. circuits); Rev. Theodore Gould linked as Philadelphia Conference clergy. 'R. Dunn' (common name) and 'J. W[?]der' (illegible) not linked."
  ],
  "flags": [
   "CR_1867-06-15 p3: 'Rev. Theo. Doughty Miller' (Masonry and Christianity ad): 'Doughty' partly broken in the type even at DPI 1600; the author's house number on Quince Street is illegible; 'higher orders of [Masonry]' word illegible. Name kept [VERIFY], not linked.",
   "CR_1867-06-15 p1: byline of 'Religion No Deception' illegible (Rev. W. V. ...); text only.",
-  "CR_1867-06-15 p2 Correction: signer 'Geo. H. Wil...' and 'Iris D. Cliff' still uncertain at DPI 1600 (no other printing in this run)."
+  "CR_1867-06-15 p2 Correction: signer 'Geo. H. Wil...' and 'Iris D. Cliff' still uncertain at DPI 1600 (no other printing in this run).",
+  "CR_1867-06-22 p2 Acknowledgments: 'J. W[?]der' (Bridgeton) illegible at DPI 1600; not linked. 'E. Goold' printed so (likely a Gould of Bridgeton; kept as printed).",
+  "CR_1867-06-22 p2 'Read This': actuary 'M. E. Sheerman' and his number on Cherry street, and committee man 'Thomas Cowan', uncertain; text only."
  ]
 }
