@@ -207,11 +207,15 @@
    "headline": "Directory of I. O. of Good Samaritans and Daughters of Samaria",
    "author": "",
    "type": "notice",
-   "summary": "Sheba Lodge, Juvenile I. O. of Good Samaritans and D. of Samaria, meets 2d Thursday of each month at 2 o'clock P.M. at Masonic Hall, South Eleventh Street; A. Cropper, F. O.; S. Young [VERIFY, printed YOUNO], P. O. (Feb 23, 1 yr). Sumner and Wilson Lodge, No. 6, I. O. of Good Samaritans and Daughters of Samaria, meets second and fourth Thursdays each month at Masonic Hall, South Eleventh Street, Philadelphia, at 8 o'clock (apr 6 '67 1y).",
+   "summary": "Sheba Lodge, Juvenile I. O. of Good Samaritans and D. of Samaria, meets 2d Thursday of each month at 2 o'clock P.M. at Masonic Hall, South Eleventh Street; A. Cropper, F. O.; S. Young (printed YOUNO; clear as YOUNG on May 18), P. O. (Feb 23, 1 yr). Sumner and Wilson Lodge, No. 6, I. O. of Good Samaritans and Daughters of Samaria, meets second and fourth Thursdays each month at Masonic Hall, South Eleventh Street, Philadelphia, at 8 o'clock (apr 6 '67 1y).",
    "people": [
     [
      "A. Cropper",
-     "F. O., Sheba Lodge (Juvenile Good Samaritans)"
+     "officer, Sheba Lodge (Juvenile Good Samaritans)"
+    ],
+    [
+     "S. Young",
+     "P. O./P. G., Sheba Lodge"
     ]
    ]
   },
@@ -328,6 +332,121 @@
    "type": "advertisement",
    "summary": "A pleasant country boarding house will open in Bucks County June 1st, 1867, three quarters of a mile from Schenck's Station. George Longstreth, proprietor, Bridge Water Post-Office, Bucks Co., Pa. (May 11-4t). Race of proprietor not stated.",
    "people": []
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 1,
+   "headline": "Bone and Sinew for the Book Concern",
+   "author": "I. C. Wears",
+   "type": "letter",
+   "summary": "For the Christian Recorder. Proposes raising $50,000 for the Book Concern by issuing scrip in denominations from 25 cents to $5, redeemable in books, to be authorized by the General Conference.",
+   "people": []
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 2,
+   "headline": "Editorial items: Please Pay Up; Great Missionary Meeting; Sermon on Masonry",
+   "author": "",
+   "type": "editorial",
+   "summary": "Please Pay Up: subscribers asked to remit to Elisha Weaver, Box 2975. Mr. Wears's plan for the Book Concern noted. The Board of Managers of the Parent Home and Foreign Missionary Society (Corresponding Secretary Rev. John M. Brown) to meet in Philadelphia. Sermon on Masonry by Rev. Theodore D. Miller, pastor of the Pearl Street Baptist Church of this city. Rev. Henry Davis in impaired health.",
+   "people": [
+    [
+     "Elisha Weaver",
+     "publisher (Rev.)"
+    ],
+    [
+     "John M. Brown",
+     "Corresponding Secretary (Rev.)"
+    ],
+    [
+     "Theodore D. Miller",
+     "pastor, Pearl Street Baptist Church, Philadelphia (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 2,
+   "headline": "Death of Mr. James Mc. C. Crummell",
+   "author": "",
+   "type": "obituary",
+   "summary": "Death of Mr. James Mc. C. Crummell [first name printed blurred, VERIFY] at his residence on Tuesday last (May 14, 1867); a dentist, also in the printing business; member of the Masonic and Odd Fellows' orders.",
+   "people": [
+    [
+     "James Mc. C. Crummell",
+     "deceased, dentist [VERIFY given name]"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 2,
+   "headline": "Personal items: Stephen Smith; Miss E. Handy; W. C. Banton; A. L. Stanford",
+   "author": "",
+   "type": "notice",
+   "summary": "Rev. Stephen Smith of our city chosen President at the Baltimore presentation of a portrait of Henry Winter Davis. Miss E. Handy, teacher of the colored public school at Kingsessing, bitten by a mastiff. W. C. Banton [VERIFY], superintendent of the Bethel Sabbath School, delegated to the State Sabbath School Convention soon to meet in this city. Rev. A. L. Stanford arrived from Savannah with his family; appointed to Ebenezer Church, Baltimore. 'Men of the Times' (May 4) was by Mrs. Lucia Stanton Day of Ohio.",
+   "people": [
+    [
+     "Stephen Smith",
+     "president, Baltimore portrait presentation (Rev.)"
+    ],
+    [
+     "E. Handy",
+     "teacher, colored public school, Kingsessing (Miss)"
+    ],
+    [
+     "A. L. Stanford",
+     "minister, moved Savannah to Baltimore (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 3,
+   "headline": "Information wanted: Allen Valentine",
+   "author": "",
+   "type": "notice",
+   "summary": "Information wanted of Allen Valentine, formerly of Plymouth N.C. (sister-in-law Ellen Nickens). Address Rev. James U. [VERIFY surname], 1829 Addison St., Philadelphia (May 18-1t). Other notices (Jinkins of Bloomington Ill., Silas, Grant) text only.",
+   "people": [
+    [
+     "Allen Valentine",
+     "sought"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 3,
+   "headline": "Deaths: Mrs. Sarah Tady; Catherine Olive E. Leonard; Mrs. Mary J. Hooper",
+   "author": "",
+   "type": "obituary",
+   "summary": "Mrs. Sarah Tady, born Baltimore 1788, came to Philadelphia at 16, married, later moved to Burlington N.J.; died April 24, 1867, aged 79 (signed Henry Davis). In this city, April 12, Catherine Olive E., youngest daughter of Rev. Chauncey and Mary A. Leonard, aged 6 years 10 months 28 days. April 26, 1867, Mrs. Mary J. Hooper, Treasurer of Sheba Lodge, Juvenile I. O. of Good Samaritans and Daughters of Samaria; the lodge resolved to drape its regalia for three months (signed A. Cropper and S. Young). Eliza Espeletta (Brooklyn) and Fannie Spriggs (Baltimore) text only.",
+   "people": [
+    [
+     "Sarah Tady",
+     "deceased, Phila./Burlington"
+    ],
+    [
+     "Catherine Olive E. Leonard",
+     "deceased child"
+    ],
+    [
+     "Chauncey Leonard",
+     "father (Rev.)"
+    ],
+    [
+     "Mary A. Leonard",
+     "mother"
+    ],
+    [
+     "Mary J. Hooper",
+     "deceased, Treasurer of Sheba Lodge"
+    ],
+    [
+     "A. Cropper",
+     "Sheba Lodge officer"
+    ]
+   ]
   }
  ],
  "events": [
@@ -546,13 +665,79 @@
    "description": "The Christian public invited to the quarterly meeting at West Chester on the 3d Sunday in May (May 19). Love feast in the morning, doors open at 9; preparation sermon at 2 o'clock by Rev. D. Darrell [VERIFY]. Signed John Frisbee [VERIFY, small caps blurred], pastor (May 11-1t).",
    "attendees": [],
    "date": "1867-05-19"
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 2,
+   "name": "Complimentary concert to Mrs. Ferman at Liberty Hall",
+   "location": "Liberty Hall, Lombard St., Philadelphia",
+   "description": "A Compliment to Mrs. Ferman: on the 8th inst. (May 8) a grand complimentary concert was given at Liberty Hall, Lombard street, to Mrs. Ferman by the Wilmington Band. Artists: Madam Brown, soprano; Mr. Mares, tenor; Mr. Morris, basso; Prof. Hazzard, pianist. Mrs. Ferman does business in the hall, which is in her care. (Liberty Hall topic; surname-only names not linked.)",
+   "attendees": [],
+   "date": "1867-05-08"
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 2,
+   "name": "Daughters of Cornish -- anniversary",
+   "location": "Liberty Hall, Lombard St., Philadelphia",
+   "description": "The Daughters of Cornish, a female benevolent organization of about 200 members, Mrs. Carter President, to hold (or held) its anniversary at Liberty Hall this month; speeches by Revs. Stephen Smith, Allston, Weaver and Lynch. (Society meeting; Liberty Hall topic.)",
+   "attendees": [
+    [
+     "Stephen Smith",
+     "speaker (Rev.)"
+    ]
+   ]
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 3,
+   "name": "Parent Home and Foreign Missionary Society of the A.M.E. Church -- annual meeting",
+   "location": "Study of Bethel Church, Philadelphia",
+   "description": "Special notice: annual meeting of the Board of Managers, May 23d at 2 p.m., in the study of Bethel Church, Philadelphia, during the session of the Philadelphia Conference; anniversary meeting the evening of the 23d. Board by conference: Baltimore, Revs. R. Wayman, Wm. H. Hopkins, Wm. H. Waters; Philadelphia, Revs. Stephen Smith, Wm. Moore, E. Weaver; New York, Henry Davis, Deaton Dorrill, Joshua Woodlin; New England, J. P. Shreaves, John Barley, Ebenezer Williams; Ohio, James A. Shorter, John A. Warren, Jesse Devine; Missouri, W. R. Revels, Page Tyler, B. L. Brooks; Louisiana, Chas. Burch, John Turner, M. M. Clark; South Carolina, R. W. Cain, A. T. Carr, Wm. W. Brown; Georgia/Florida, H. M. Turner, C. H. Pierce, David Picket; Virginia, Geo. T. Watkins, J. R. V. Thomas, J. D. S. Hall; California, Thos. M. D. Ward. Robert F. Wayman, chairman; John M. Brown, corresponding secretary, Mission Rooms 84 North St., Baltimore; after May 16 care of Rev. James Lynch, Editor of the Recorder, No. 661 [sic; 631?] Pine Street, Philadelphia (April 27-tf). Only Philadelphia Conference members and bishops linked.",
+   "attendees": [
+    [
+     "Stephen Smith",
+     "board member, Philadelphia Conference (Rev.)"
+    ],
+    [
+     "Wm. Moore",
+     "board member, Philadelphia Conference (Rev.)"
+    ],
+    [
+     "E. Weaver",
+     "board member, Philadelphia Conference (Rev.)"
+    ],
+    [
+     "John M. Brown",
+     "corresponding secretary (Rev.)"
+    ],
+    [
+     "James Lynch",
+     "editor of the Recorder, forwarding address (Rev.)"
+    ]
+   ],
+   "date": "1867-05-23"
+  },
+  {
+   "issue": "CR_1867-05-18",
+   "page": 3,
+   "name": "Mount Pisgah A.M.E. Church, West Philadelphia -- grand rally",
+   "location": "A.M.E. Mount Pisgah Church, Fortieth and Locust Streets, West Philadelphia",
+   "description": "Special notice: grand rally at the A.M.E. Mount Pisgah Church, Fortieth and Locust Streets, West Philadelphia, Sunday May 26, 1867, to raise $1,000 toward a new church. H. J. Rhodes, pastor (May 18-1t). (Recorded as printed; not merged with H. G. Rhodes.)",
+   "attendees": [
+    [
+     "H. J. Rhodes",
+     "pastor"
+    ]
+   ],
+   "date": "1867-05-26"
   }
  ],
  "notes": [
   "May 4 masthead: 'Rev. Elisha Weaver, Publisher'; page 2 editorial box 'Rev. James Lynch, Editor' (as in Jan-Mar).",
   "Page 2 running head misprinted 'May 27' (page 70); content is the May 4 issue.",
   "Pages read from image crops: p1 all 7 columns x 5 slices; p2 columns 5, 6, 7 x 5 slices plus column 4 slice 4 (cols 1-3 editorial/reading matter, read on overview only); p3 columns 2-7 x 5 slices (column 1 not cropped); p4 all 7 columns x 5 slices.",
-  "Standing ads repeated, not re-entered: Book Depository (now printed No. 631 Pine), Mrs. H. S. Duterte (634 Lombard), Mrs. S. Shorter Hawkins (615 Lombard), William Still coal yard (1216-1220 Washington Ave.), Thomas Charnock (427 S. 6th), Leizeare Brown (907 South), Wm. H. Longfellow (1126 Rodman), Jas. B. Rodgers printing (52 & 54 N. Sixth), Dr. David Rosell (907 Lombard), James W. Brown steam-dyeing, Dr. T. M. Kennard & Bro. (832 Carpenter), Edith Mayhew (257 Raspberry), A. T. Jones (printed 'A. J. Jone's', 718 Lombard), Olive Branch (Mrs. H. M. Cropper, 814 Lombard), Mrs. M. Bennett (406 S. Seventh), Bustill wig makers (403 S. Sixth), Maria Butler house of application (1718 Sansom), M. A. Williams boxes (1019 Rodman), Macamoose (Gates), T. J. Bowers coal (printed 631 or 634 Lombard, see flag).",
+  "Standing ads repeated, not re-entered: Book Depository (now printed No. 631 Pine), Mrs. H. S. Duterte (634 Lombard), Mrs. S. Shorter Hawkins (615 Lombard), William Still coal yard (1216-1220 Washington Ave.), Thomas Charnock (427 S. 6th), Leizeare Brown (907 South), Wm. H. Longfellow (1126 Rodman), Jas. B. Rodgers printing (52 & 54 N. Sixth), Dr. David Rosell (907 Lombard), James W. Brown steam-dyeing, Dr. T. M. Kennard & Bro. (832 Carpenter), Edith Mayhew (257 Raspberry), A. T. Jones (printed 'A. J. Jone's', 718 Lombard), Olive Branch (Mrs. H. M. Cropper, 814 Lombard), Mrs. M. Bennett (406 S. Seventh), Bustill wig makers (403 S. Sixth), Maria Butler house of application (1718 Sansom), M. A. Williams boxes (1019 Rodman), Macamoose (Gates), T. J. Bowers coal (634 Lombard; the May 4 printing is broken, May 11 printing clear).",
   "White-run ads skipped: Ayer's, Upham (630 Pine), E. Matlack & Son (904 Market), Charles Magarge & Co., Jones' One Price, S. F. Balderston, Singer, Pa. Central RR, Dr. J. Stephens, Reimer. Out of town text only: Avery College (George B. Vashon), Globe Hotel and W. P. Powell (New York), F. Champion (Brooklyn), Lincoln House (Cincinnati), Dr. J. W. Creek and Dandrige Kelly (Baltimore), Smalls & Gleaves (Beaufort S.C.).",
   "Mrs. Sarah Irons (Union St.) printing at 1600 dpi still does not settle 320 vs 820.",
   "Page 2 col 6-7: Bishop Payne's statement on the 1866 commission (John Turner, Charles Burch, Henry M. Turner) to the M.E. Church South and Dr. Crary's plan of union; non-local.",
@@ -565,21 +750,29 @@
   "T. J. Bowers coal depot reads clearly '634 Lombard' on May 11 p4 and p3; the May 4 '63?' reading is resolved as 634.",
   "Parrett notice: Rev. Jacob M. Mitchell's address prints '513 Lombard st.' on May 11 vs '613' on May 4 [see flag].",
   "Good Samaritans directory on May 11 p4 prints 'A. Cropper, P. G.' (May 4 read F. O.) and 'Sumner and Wilson Lodge, No. 8' (May 4 read No. 6).",
-  "Standing ads repeated on May 11 (not re-entered): Book Depository 631 Pine, Duterte, Hawkins 615 Lombard, Still coal yard, Charnock, Leizeare Brown, Longfellow 1126 Rodman, Rodgers, Rosell, J. W. Brown steam dyeing (No. 13? S. Fifth above Walnut and No. 1003 Shippen; formerly with Granville Stokes, No. 608 Chestnut), Kennard 832 Carpenter, Mayhew 257 Raspberry, A. J. Jone's (=A. T. Jones) 718 Lombard, Bowers coal 634 Lombard, Irons 820 Union, Olive Branch 814 Lombard, Bennett 406 S. Seventh, Bustill wig makers 403 S. Sixth, Maria Butler 1718 Sansom, M. A. Williams 1019 Rodman. White/out-of-town ads skipped."
+  "Standing ads repeated on May 11 (not re-entered): Book Depository 631 Pine, Duterte, Hawkins 615 Lombard, Still coal yard, Charnock, Leizeare Brown, Longfellow 1126 Rodman, Rodgers, Rosell, J. W. Brown steam dyeing (No. 13? S. Fifth above Walnut and No. 1003 Shippen; formerly with Granville Stokes, No. 608 Chestnut), Kennard 832 Carpenter, Mayhew 257 Raspberry, A. J. Jone's (=A. T. Jones) 718 Lombard, Bowers coal 634 Lombard, Irons 820 Union, Olive Branch 814 Lombard, Bennett 406 S. Seventh, Bustill wig makers 403 S. Sixth, Maria Butler 1718 Sansom, M. A. Williams 1019 Rodman. White/out-of-town ads skipped.",
+  "May 18 masthead 'Rev. Elisha Weaver, Publisher'; page 2 box still 'Rev. James Lynch, Editor'.",
+  "May 18 pages read from image crops: p1 all 7 columns x 5 slices; p2 columns 1-4 x 5 slices (cols 5-7 reading matter seen on overview only, NOT cropped); p3 columns 2-7 x 5 slices (col 1 not cropped); p4 all 7 columns x 5 slices.",
+  "May 18 p1: out-of-town letters (Georgetown S.C., Elkton Md., Carlisle Pa., Chicago, Little Rock, Jefferson City, St. Louis, Terre Haute) text only. Poem on death of Mr. Wm. A. Nickols by Arabella C. Ross, text only.",
+  "May 18 p2: 'Men of the Times' author identified by the paper as Mrs. Lucia Stanton Day of Ohio (May 4 signature read Louis Stanton Day): not Philadelphia, not linked.",
+  "May 18 p3: Missionary Society notice prints Lynch's address 'No. 661 Pine Street'; the Book Concern is at 631 Pine: probable misprint.",
+  "May 18 p3-4 ads all standing repeats (Macamoose, Kennard, Mayhew, A. T. Jones, Bowers 634 Lombard, Irons Union St., Olive Branch, Bennett, Bustill 403 S. Sixth, Maria Butler, M. A. Williams, Book Depository 631 Pine, Duterte, Hawkins 615 Lombard, Leizeare Brown, Still coal yard, Charnock, Longfellow, Rodgers, Rosell, J. W. Brown steam dyeing). Good Samaritans directory now reads 'A. Cropper, F. G.; S. YOUNG, P. G.' clearly, and 'Sumner and Wilson Lodge, No. 8'. This resolves the May 4 'S. YOUNO' flag as S. Young.",
+  "Philadelphia Annual Conference was scheduled to open in Philadelphia May 18 (Bishop Wayman); no proceedings printed in May 18 issue. See May 25."
  ],
  "flags": [
   "CR_1867-05-04 p2: committee name read 'G. W. Gaines' [VERIFY]; not linked.",
   "CR_1867-05-04 p2: concert honoree 'A. Harris' [VERIFY].",
   "CR_1867-05-04 p3: Union A.M.E. pastor printed blurred, read 'R. P. Gibbs' [VERIFY].",
   "CR_1867-05-04 p3: marriage 'Amos B. Seynes' and bride's father 'James Clay' [VERIFY]; not linked.",
-  "CR_1867-05-04 p4: Sheba Lodge P.O. printed 'S. YOUNO' = S. Young? [VERIFY]; not linked.",
-  "CR_1867-05-04 p4: T. J. Bowers coal depot number printed '63? Lombard' (third digit broken: 631 or 634) [VERIFY]; standing ad recorded at 634.",
   "CR_1867-05-04 p1: Bethel parsonage letter pseudonym read 'Progress' [VERIFY].",
   "CR_1867-05-04 p1: 'Men of the Times' signature read 'Louis Stanton Day' [VERIFY].",
   "CR_1867-05-11 p3: Harvest Home committee 'Mrs. Lows' (Laws?) and 'Mrs. D. Moce' [VERIFY]; surname-only, not linked.",
   "CR_1867-05-11 p3: West Chester pastor's signature 'John Frisbee' and preacher 'Rev. D. Darrell' [VERIFY]; not linked.",
   "CR_1867-05-11 p3: Macamoose depot 'No. 613 Race street' [VERIFY number and street; small type].",
   "CR_1867-05-11 p3: Rev. Jacob M. Mitchell's address printed 513 Lombard (May 11) vs 613 Lombard (May 4) [VERIFY which is correct].",
-  "CR_1867-05-11 p3: officiant printed 'Rev. J. H. Reeve'; May 4 printed 'J. B. Reeve' (Central Presbyterian): probable misprint, recorded as printed."
+  "CR_1867-05-11 p3: officiant printed 'Rev. J. H. Reeve'; May 4 printed 'J. B. Reeve' (Central Presbyterian): probable misprint, recorded as printed.",
+  "CR_1867-05-18 p2: 'James Mc. C. Crummell' given name blurred [VERIFY].",
+  "CR_1867-05-18 p2: Bethel Sabbath School superintendent 'W. C. Banton' [VERIFY surname, could be Hanton]; not linked.",
+  "CR_1867-05-18 p3: Valentine notice care-of 'Rev. James U.' surname unreadable [VERIFY]; not linked."
  ]
 }
