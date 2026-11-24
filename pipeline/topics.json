@@ -435,6 +435,10 @@
     {
      "issue": "",
      "name": "Araminta Keeling, 14, made to ride on top of a stagecoach; her father Westward F. Keeling protests in the Public Ledger"
+    },
+    {
+     "issue": "",
+     "name": "Robert Smalls ordered to give up his seat on a Philadelphia streetcar; he leaves the car rather than ride the platform"
     }
    ],
    "timeline": {
@@ -602,6 +606,18 @@
      },
      {
       "y": 1863,
+      "when": "spring 1863",
+      "place": "Philadelphia",
+      "what": "A woman carrying a child and a basket allowed onto a Green and Coates Street car only after the conductor asked the passengers whether anyone objected; they all said no",
+      "ref": {
+       "a": {
+        "issue": "CR_1863-05-02",
+        "headline": "An Incident (Green and Coates St. passenger car)"
+       }
+      }
+     },
+     {
+      "y": 1863,
       "when": "May 1863",
       "place": "Philadelphia",
       "what": "Rev. Mr. Logan (probably J. W. Loguen), a former slave, ordered out of his seat onto the platform",
@@ -705,6 +721,18 @@
        "a": {
         "issue": "CR_1864-07-23",
         "headline": "The Colored People and the City Railways (with Rev. Wm. Johnson Alston's letter to the Press)"
+       }
+      }
+     },
+     {
+      "y": 1864,
+      "when": "1864",
+      "place": "Philadelphia",
+      "what": "Robert Smalls, hero of the Planter, ordered to give up his seat to a white passenger; he leaves the car rather than ride the platform",
+      "ref": {
+       "e": {
+        "issue": "",
+        "name": "Robert Smalls ordered to give up his seat on a Philadelphia streetcar; he leaves the car rather than ride the platform"
        }
       }
      },
@@ -817,7 +845,7 @@
       }
      }
     ],
-    "incidents_intro": "Each bar counts the separate times a Black rider was put off, refused, forced onto the platform or attacked, as reported in the papers we have read so far. An incident reported in several issues is counted once. These are only the cases that reached print, and only in the issues read so far; the papers themselves said such treatment happened every day."
+    "incidents_intro": "Each bar counts the separate times a Black rider was put off, refused, forced onto the platform, attacked, or made to ask the white passengers' leave to ride, as reported in the sources we have read so far. An incident reported in several issues is counted once. These are only the cases that reached print, and only in the issues read so far; the papers themselves said such treatment happened every day."
    }
   },
   {

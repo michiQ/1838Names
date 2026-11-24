@@ -77,7 +77,8 @@ ol.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--li
 ol.tl li{position:relative;margin:0 0 16px;padding:0}
 ol.tl li::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--panel);border:2px solid var(--gold)}
 ol.tl li.ev::before{background:var(--teal);border-color:var(--teal)}
-.when{font:12px var(--mono);color:var(--dim);letter-spacing:.03em}
+.when{font:600 14.5px var(--mono);color:var(--ink);letter-spacing:.02em}
+.when .loc{font-weight:400;font-size:12px;color:var(--dim)}
 .kind{font:10.5px var(--mono);text-transform:uppercase;letter-spacing:.12em;border-radius:3px;padding:1px 6px;margin-left:6px;border:1px solid var(--line);color:var(--dim)}
 li.ev .kind{color:var(--teal);border-color:var(--teal)}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:10px 14px;margin-top:4px}
@@ -195,7 +196,7 @@ def make(cfg, topic, articles, events, people, issues, urls, ia_urls, jpeg_slugs
             link = f'index.html#{it["k"]}{it["id"]}'
             kind = "Event" if it["k"] == "e" else ("Article" if it.get("ty") not in ("advertisement", "notice") else it["ty"].capitalize())
             when = esc(nice_date(it["date"])) or "date unknown"
-            if it.get("loc"): when += f' &middot; {esc(it["loc"])}'
+            if it.get("loc"): when += f' <span class="loc">&middot; {esc(it["loc"])}</span>'
             search = esc((it["title"] + " " + it["text"] + " " + " ".join(people[p]["name"] for p, _ in it["ppl"] if p in people)).lower())
             mine = inc_by_item.get((it["k"], it["id"]), [])
             badges = "".join(f'<div class="ibadge{"" if x["place"] == "Philadelphia" else " o"}"><b>Incident {x["n"]}</b>, {esc(x["when"])}: {esc(x["what"])}</div>' for x in mine)
@@ -263,7 +264,7 @@ def make(cfg, topic, articles, events, people, issues, urls, ia_urls, jpeg_slugs
                        f'(<a href="#i{x["key"][0]}{x["key"][1]}">on the timeline</a> &middot; <a href="index.html#{x["key"][0]}{x["key"][1]}">in the database</a>)</li>'
                        for x in incs)
         chart = f"""<section class="inc" aria-labelledby="inch"><h2 id="inch">Riders put off, refused and attacked</h2>
-<div class="tiles"><div class="tile"><b>{len(incs)}</b><span>incidents found in print</span></div>
+<div class="tiles"><div class="tile"><b>{len(incs)}</b><span>incidents found so far</span></div>
 <div class="tile"><b>{nph}</b><span>in Philadelphia</span></div>
 <div class="tile"><b>{first_ph["y"]}</b><span>earliest in Philadelphia so far</span></div></div>
 <p class="lede">{esc(cfg.get("incidents_intro", ""))}</p>
