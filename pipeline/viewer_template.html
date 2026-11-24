@@ -85,6 +85,7 @@ canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
 .ovbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel)}
 .ovbar button{background:var(--sel);color:var(--ink);border:1px solid var(--gold);border-radius:4px;font:13px "Libre Caslon Text",Georgia,serif;padding:6px 12px;cursor:pointer}
 .ovbar .ttl{letter-spacing:.12em;font-size:13px;color:var(--dim)}
+.lic{font:13px/1.5 "Libre Caslon Text",Georgia,serif;color:#2a2118;background:#efe3c9;border-bottom:1px solid #d9cfbd;padding:8px 16px;text-align:center;flex:none}.lic a{color:#8a6418}.lic b{font-weight:700}@media (max-width:600px){.lic{font-size:12px;text-align:left;padding:7px 12px}}
 .ovlede{font-size:14px;max-width:80ch;margin:12px 16px 4px;line-height:1.5}
 @media (max-width:640px){.ovlede{font-size:12.5px;margin:8px 12px 2px;line-height:1.4}}
 .ovlede b{color:var(--gold)}
@@ -1734,11 +1735,13 @@ syncFab();
 </script>
 <div id="omview" class="ovl" role="dialog" aria-modal="true" aria-label="Organization map">
  <div class="ovbar"><button class="ovclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">ORGANIZATION MAP</span></div>
+ <div class="lic" role="note" aria-label="License"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> &copy; 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>. <b>This means if you use this research, you must ask permission and you must attribute. You also cannot change any interpretations herein.</b></div>
  <p class="ovlede">Each dot is an organization with three or more people on record; a bigger dot means more members. A line joins two organizations that <b>share members</b>, and it is darker when they share more. Point at a dot (on a phone, tap it) to see its name and the organizations it shares members with; click it, or tap it again, to open the organization and its people. Drag to move around, scroll or pinch to zoom.</p>
  <div id="omwrap"><canvas id="omcv"></canvas><div id="omtip"></div><div id="omzoom"><button data-z="1.3" title="Zoom in">+</button><button data-z="0.77" title="Zoom out">&minus;</button></div></div>
 </div>
 <div id="evview" class="ovl" role="dialog" aria-modal="true" aria-label="Events timeline">
  <div class="ovbar"><button class="ovclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">EVENTS TIMELINE</span></div>
+ <div class="lic" role="note" aria-label="License"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> &copy; 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>. <b>This means if you use this research, you must ask permission and you must attribute. You also cannot change any interpretations herein.</b></div>
  <p class="ovlede">Every event in the database, placed by its date and stacked where events crowd together. A bigger bubble means more people are linked to the event. A hollow bubble is dated only by the newspaper issue that reported it, not by the event itself. Point at a bubble for its name and date; click it to open the event with its people and organizations. Years with no events are squeezed into narrow shaded strips. It opens at the earliest years; scroll sideways to move through time (the busiest years, 1861 to 1865, are toward the right).</p>
  <div id="evscroll"><svg id="evsvg" xmlns="http://www.w3.org/2000/svg"></svg><p id="evnodate"></p></div>
 </div>
@@ -1889,6 +1892,7 @@ syncFab();
 </script>
 <div id="tlview" role="dialog" aria-modal="true" aria-label="Organization timelines">
  <div id="tlbar"><button id="tlclose" title="Close and go back to the database">&#8592; Back</button><span class="ttl">ORGANIZATION TIMELINES</span></div>
+ <div class="lic" role="note" aria-label="License"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> &copy; 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>. <b>This means if you use this research, you must ask permission and you must attribute. You also cannot change any interpretations herein.</b></div>
  <div id="tlscroll">
   <div id="tlwip"><b>Work in progress.</b> These timelines are still being built and will change as we add sources.</div>
   <div><p id="tllede">Each row is one Black Philadelphia organization. A dot marks a year when the database has people in it; bigger dots mean more names, and a ringed dot means officers were named. A diamond marks the founding year given in the 1838 Pennsylvania Abolition Society report, and a small square marks that report&rsquo;s 1837 membership count. A hollow circle marks another dated note, such as the founding dates and 1813 counts Arthur Donaldson printed in <i>The Juvenile Magazine</i>, or the founding of the African Church and of Bethel as Richard Allen told it. The thin line runs from the first record to the last. These are the years our sources cover, not closing dates. Click a row to open its details right below it, including the 1838 report figures; click a name to open that person in the database.</p></div>

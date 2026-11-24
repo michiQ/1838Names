@@ -287,6 +287,7 @@ def make(cfg, topic, articles, events, people, issues, urls, ia_urls, jpeg_slugs
 </head>
 <body>
 <div class="top"><a class="back" href="index.html#t-{esc(topic["slug"])}">&#8592; Database</a><span class="ttl">1838 BLACK METROPOLIS &middot; TIMELINE</span></div>
+<style>.lic{{font:13px/1.5 "Libre Caslon Text",Georgia,serif;color:#2a2118;background:#efe3c9;border-bottom:1px solid #d9cfbd;padding:8px 16px;text-align:center;flex:none}}.lic a{{color:#8a6418}}.lic b{{font-weight:700}}@media (max-width:600px){{.lic{{font-size:12px;text-align:left;padding:7px 12px}}}}</style><div class="lic" role="note" aria-label="License"><a href="https://www.1838blackmetropolis.com/" target="_blank" rel="noopener">1838 Black Metropolis Historiography, AI Visuals, and Interpretation</a> &copy; 2023, 2024, 2025, 2026 by 1838 Black Metropolis, Inc., is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>. <b>This means if you use this research, you must ask permission and you must attribute. You also cannot change any interpretations herein.</b></div>
 <main>
 <div class="eyebrow">A topic in the 1838 Names Database</div>
 <h1>{esc(cfg.get("title", topic["label"]))}</h1>
