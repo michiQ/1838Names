@@ -301,6 +301,14 @@
     {
      "issue": "CR_1867-05-04",
      "headline": "Book notice: William Still's pamphlet on the city railway cars"
+    },
+    {
+     "issue": "CR_1867-10-12",
+     "headline": "More Outrages (street-car harassment)"
+    },
+    {
+     "issue": "CR_1867-11-16",
+     "headline": "Before the Supreme Court -- the Miles railroad-car exclusion case"
     }
    ],
    "events": [
@@ -841,6 +849,30 @@
        "e": {
         "issue": "CR_1867-03-09",
         "name": "Ejection of Mrs. Sarah G. Thompson from a city railroad car; conductor arrested"
+       }
+      }
+     },
+     {
+      "y": 1867,
+      "when": "October 1867",
+      "place": "Philadelphia",
+      "what": "After the fall election, 'negro-hating Democrats' insult and ill-treat colored ladies and gentlemen who try to ride the street cars; one woman would have been injured had the conductor and some passengers not intervened",
+      "ref": {
+       "a": {
+        "issue": "CR_1867-10-12",
+        "headline": "More Outrages (street-car harassment)"
+       }
+      }
+     },
+     {
+      "y": 1867,
+      "when": "November 1867",
+      "place": "Pennsylvania",
+      "what": "The Pennsylvania Supreme Court decides against Mrs. Miles, forcibly ejected from a railroad car, holding the company was within its rights; the editor notes the ruling speaks only to the time before the March 1867 law",
+      "ref": {
+       "a": {
+        "issue": "CR_1867-11-16",
+        "headline": "Before the Supreme Court -- the Miles railroad-car exclusion case"
        }
       }
      }

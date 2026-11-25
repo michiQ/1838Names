@@ -1789,6 +1789,42 @@
     0.965
    ],
    "check": "Dentists and Herb Doctors. Dr. T. M. Kennard & Bro. ... 832 Carpenter Street and 717 Lombard Street"
+  },
+  {
+   "issue": "CR_1867-10-05",
+   "page": 3,
+   "headline": "R. M. Adger's furniture store (advertisement)",
+   "box": [
+    0.55,
+    0.585,
+    0.72,
+    0.632
+   ],
+   "check": "Adger furniture, col 5, FURNITURE header through N.B. line [box measured against page image]"
+  },
+  {
+   "issue": "CR_1867-12-28",
+   "page": 3,
+   "headline": "Boarding and Lodging -- Mrs. Addison Foster",
+   "box": [
+    0.13,
+    0.893,
+    0.315,
+    0.952
+   ],
+   "check": "Foster boarding, col 2, bottom of page [box measured against page image]"
+  },
+  {
+   "issue": "CR_1867-09-07",
+   "page": 3,
+   "headline": "House of Application for Colored People (Mrs. Maria Butler, 1718 Sansom St.)",
+   "box": [
+    0.845,
+    0.714,
+    1.0,
+    0.778
+   ],
+   "check": "Butler House of Application, col 7 [box measured against page image]"
   }
  ],
  "extras": [

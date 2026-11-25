@@ -1146,6 +1146,30 @@
     "832 Carpenter Street, Philadelphia",
     "717 Lombard Street, Philadelphia"
    ]
+  },
+  {
+   "issue": "CR_1867-10-05",
+   "page": 3,
+   "headline": "R. M. Adger's furniture store (advertisement)",
+   "address": [
+    "No. 716 Lombard Street, under Liberty Hall, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1867-12-28",
+   "page": 3,
+   "headline": "Boarding and Lodging -- Mrs. Addison Foster",
+   "address": [
+    "No. 1458 Lombard Street, Philadelphia"
+   ]
+  },
+  {
+   "issue": "CR_1867-09-07",
+   "page": 3,
+   "headline": "House of Application for Colored People (Mrs. Maria Butler, 1718 Sansom St.)",
+   "address": [
+    "No. 1718 Sansom Street, Philadelphia"
+   ]
   }
  ]
 }
